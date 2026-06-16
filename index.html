@@ -511,14 +511,18 @@ tr:hover td{background:rgba(255,255,255,.014)}
     if(cl) cl.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
   }
 
-  var _intl=null, _news=null;
+  var _intl={updated:'--',data:{}}, _news={updated:'--',items:[]};
+  var _intlOk=false, _newsOk=false;
+  function tryRender(){
+    if(_intlOk||_newsOk) render(_intl,_news);
+  }
   function fetchAll(){
     var t=Date.now();
     fetch('data/intl.json?_='+t).then(function(r){return r.json();}).then(function(d){
-      _intl=d; if(_news) render(_intl,_news);
+      _intl=d; _intlOk=true; tryRender();
     }).catch(function(){});
     fetch('data/news.json?_='+t).then(function(r){return r.json();}).then(function(d){
-      _news=d; if(_intl) render(_intl,_news);
+      _news=d; _newsOk=true; tryRender();
     }).catch(function(){});
   }
 
