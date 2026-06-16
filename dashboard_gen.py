@@ -41,7 +41,7 @@ def pnl_color(v):
     return "#10b981" if v >= 0 else "#ef4444"
 
 def stock_card_html(stock):
-    """長榮航太 (2645.TW) 看板卡片"""
+    """長榮航太 (2645.TW) 看板卡片 — 左右雙欄美化版"""
     if not stock:
         return ""
 
@@ -53,111 +53,262 @@ def stock_card_html(stock):
     sig_color   = stock.get("signal_color", "#9ca3af")
     hold_advice = stock.get("hold_advice", "─")
     hold_color  = stock.get("hold_color",  "#9ca3af")
-    score       = stock.get("score", 0)
-    rsi         = stock.get("rsi", 0)
-    ma5         = stock.get("ma5", 0)
-    ma10        = stock.get("ma10", 0)
-    ma20        = stock.get("ma20", 0)
-    reasons     = stock.get("reasons", [])
+    total_score = stock.get("total_score", stock.get("score", 0))
+    tech_score  = stock.get("tech_score", 0)
     updated     = stock.get("updated", "")
-    trend_label = stock.get("trend_label", "")
-    support     = stock.get("support", 0)
-    resistance  = stock.get("resistance", 0)
+    rsi         = stock.get("rsi", 0)
+    k_val       = stock.get("k", 0)
+    d_val       = stock.get("d", 0)
+    macd        = stock.get("macd", 0)
+    macds       = stock.get("macds", 0)
+    ma5         = stock.get("ma5", 0)
+    ma20        = stock.get("ma20", 0)
+    ma60        = stock.get("ma60", 0)
+    tech_details = stock.get("tech_details", [])
+    inst        = stock.get("inst", {})
+    retail      = stock.get("retail", {})
+    weekly      = stock.get("weekly", {})
     forecast    = stock.get("forecast", [])
+    trend_label = stock.get("trend_label", "")
     daily_vol   = stock.get("daily_vol_pct", 0)
 
-    chg_color = "#10b981" if chg_pct >= 0 else "#ef4444"
-    chg_arrow = "▲" if chg_pct >= 0 else "▼"
-    score_color = "#10b981" if score >= 0 else "#ef4444"
+    chg_color   = "#10b981" if chg_pct >= 0 else "#ef4444"
+    chg_arrow   = "▲" if chg_pct >= 0 else "▼"
+    score_color = "#10b981" if total_score >= 0 else "#ef4444"
+    rsi_color   = "#10b981" if 45 < rsi < 72 else ("#f59e0b" if rsi >= 72 else "#ef4444")
 
-    # 原因列表
-    reason_html = "".join(
-        f'<div style="font-size:.72rem;color:#94a3b8;padding:2px 0">• {e(r)}</div>'
-        for r in reasons
+    # ── 三大法人 5日表格 ──────────────────────────────────
+    def num_fmt(v):
+        if v > 0:   return f'<span style="color:#10b981">+{v//1000:.0f}k</span>'
+        if v < 0:   return f'<span style="color:#ef4444">{v//1000:.0f}k</span>'
+        return '<span style="color:#6b7280">─</span>'
+
+    inst_rows_html = ""
+    for row in inst.get("rows", []):
+        inst_rows_html += (
+            f'<tr>'
+            f'<td style="color:#94a3b8;padding:4px 3px">{row["date"]}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["foreign"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["trust"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["dealer"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px;font-weight:700">{num_fmt(row["total"])}</td>'
+            f'</tr>'
+        )
+
+    t5f  = inst.get("total_foreign", 0)
+    t5t  = inst.get("total_trust", 0)
+    t5d  = inst.get("total_dealer", 0)
+    inst_mood       = inst.get("mood", "─")
+    inst_mood_color = "#10b981" if inst_mood == "偏多" else ("#ef4444" if inst_mood == "偏空" else "#9ca3af")
+
+    # ── 散戶情緒 ─────────────────────────────────────────
+    retail_mood       = retail.get("mood", "─")
+    retail_mood_color = "#10b981" if "樂觀" in retail_mood else ("#ef4444" if "悲觀" in retail_mood else "#9ca3af")
+    vol_ratio         = retail.get("vol_ratio", 1.0)
+    vol_bar_w         = min(int(vol_ratio / 3.0 * 100), 100)
+    vol_color         = "#f59e0b" if vol_ratio > 1.5 else ("#10b981" if vol_ratio >= 0.8 else "#6b7280")
+    retail_signals    = retail.get("signals", [])
+    retail_sig_html   = "".join(
+        f'<div style="font-size:.72rem;color:#94a3b8;padding:2px 0">{s["icon"]} {e(s["text"])}</div>'
+        for s in retail_signals
     )
 
-    # 半年走勢表
-    def trend_arrow(t):
-        return "▲" if t == "up" else ("▼" if t == "down" else "─")
-    def trend_col(t):
-        return "#10b981" if t == "up" else ("#ef4444" if t == "down" else "#9ca3af")
+    # ── 技術面細節 ────────────────────────────────────────
+    tech_detail_html = "".join(
+        f'<div style="font-size:.72rem;padding:3px 0;border-bottom:1px solid #0f172a">'
+        f'<span style="margin-right:4px">{d["icon"]}</span>'
+        f'<span style="color:#cbd5e1">{e(d["text"])}</span>'
+        f'<span style="float:right;color:{"#10b981" if d["score"]>0 else "#ef4444" if d["score"]<0 else "#6b7280"}'
+        f';font-weight:700">{d["score"]:+d}</span>'
+        f'</div>'
+        for d in tech_details
+    )
+
+    # ── 下週預估 ─────────────────────────────────────────
+    wp_low    = weekly.get("proj_low", 0)
+    wp_high   = weekly.get("proj_high", 0)
+    wp_center = weekly.get("proj_center", 0)
+    wp_trend  = weekly.get("trend_bias", "")
+    wp_hint   = weekly.get("op_hint", "")
+    wp_sup    = weekly.get("support", 0)
+    wp_res    = weekly.get("resistance", 0)
+    trend_color = "#10b981" if "多" in wp_trend else ("#ef4444" if "空" in wp_trend else "#9ca3af")
+
+    # ── 半年走勢 ─────────────────────────────────────────
+    def ta(t): return "▲" if t == "up" else ("▼" if t == "down" else "─")
+    def tc(t): return "#10b981" if t == "up" else ("#ef4444" if t == "down" else "#9ca3af")
 
     fc_rows = ""
     for fc in forecast:
-        ta = trend_arrow(fc["trend"])
-        tc = trend_col(fc["trend"])
         chg = fc["chg_pct"]
         cc  = "#10b981" if chg >= 0 else "#ef4444"
         fc_rows += (
             f'<tr>'
-            f'<td style="color:#94a3b8">{fc["month"]}</td>'
-            f'<td style="color:{tc};font-weight:700">{ta} {fc["price"]}</td>'
-            f'<td style="color:{cc}">{chg:+.1f}%</td>'
-            f'<td style="color:#6b7280;font-size:.7rem">{fc["price_low"]} ~ {fc["price_high"]}</td>'
+            f'<td style="color:#94a3b8;padding:4px 3px">{fc["month"]}</td>'
+            f'<td style="color:{tc(fc["trend"])};font-weight:700;padding:4px 3px">{ta(fc["trend"])} {fc["price"]}</td>'
+            f'<td style="color:{cc};padding:4px 3px">{chg:+.1f}%</td>'
+            f'<td style="color:#6b7280;font-size:.68rem;padding:4px 3px">{fc["price_low"]}~{fc["price_high"]}</td>'
             f'</tr>'
         )
 
     return f"""
-<div class="card" style="border:1px solid #334155">
-  <div class="stitle">✈️ {e(name)} ({e(symbol)}) &nbsp;·&nbsp; {e(updated)} 更新</div>
+<div class="card" style="padding:0;overflow:hidden">
 
-  <!-- 目前價格 -->
-  <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
-    <div style="font-size:1.8rem;font-weight:800">NT${last_close:.2f}</div>
-    <div style="font-size:1rem;font-weight:700;color:{chg_color}">{chg_arrow} {chg_pct:+.2f}%</div>
+  <!-- 標題列 -->
+  <div style="background:linear-gradient(90deg,#162032,#0e1829);
+              padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
+    <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ {e(name)} ({e(symbol)})</div>
+    <div style="font-size:.6rem;color:#64748b">{e(updated)} 更新</div>
   </div>
 
-  <!-- 明日預測 + 續抱建議 -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
-    <div style="background:#0f172a;border-radius:10px;padding:12px;text-align:center">
-      <div style="font-size:.65rem;color:#6b7280;margin-bottom:4px">明日預測</div>
-      <div style="font-size:1.1rem;font-weight:800;color:{sig_color}">{e(signal_text)}</div>
-      <div style="font-size:.72rem;color:{score_color};margin-top:4px">評分 {score:+d}</div>
+  <div style="padding:14px 14px 0">
+
+  <!-- 左右雙欄 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+
+    <!-- 左：價格 + 信號 + 指標 -->
+    <div>
+      <div style="background:#080f1e;border-radius:10px;padding:12px;margin-bottom:8px;text-align:center">
+        <div style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
+        <div style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
+        <div style="font-size:.6rem;color:#475569;margin-top:4px">MA5 {ma5:.1f} · MA20 {ma20:.1f} · MA60 {ma60:.1f}</div>
+      </div>
+      <div style="background:{sig_color}1a;border:1.5px solid {sig_color};
+                  border-radius:10px;padding:10px;margin-bottom:8px;text-align:center">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:3px">明日預測</div>
+        <div style="font-size:1rem;font-weight:900;color:{sig_color}">{e(signal_text)}</div>
+        <div style="font-size:.65rem;margin-top:4px">
+          <span style="color:{score_color};font-weight:700">綜合 {total_score:+d}</span>
+          <span style="color:#475569"> · 技術 {tech_score:+d} · 法人 {inst.get("score",0):+d} · 散戶 {retail.get("score",0):+d}</span>
+        </div>
+      </div>
+      <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:8px">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:3px">續抱建議</div>
+        <div style="font-size:.75rem;font-weight:700;color:{hold_color};line-height:1.4">{e(hold_advice)}</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px">
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">RSI</div>
+          <div style="font-size:.88rem;font-weight:800;color:{rsi_color}">{rsi:.0f}</div>
+        </div>
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">K/D</div>
+          <div style="font-size:.72rem;font-weight:700;color:#f59e0b">{k_val:.0f}/{d_val:.0f}</div>
+        </div>
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">MACD</div>
+          <div style="font-size:.72rem;font-weight:700;color:{"#10b981" if macd > macds else "#ef4444"}">{"金叉" if macd > macds else "死叉"}</div>
+        </div>
+      </div>
     </div>
-    <div style="background:#0f172a;border-radius:10px;padding:12px;text-align:center">
-      <div style="font-size:.65rem;color:#6b7280;margin-bottom:4px">續抱建議</div>
-      <div style="font-size:.82rem;font-weight:700;color:{hold_color};line-height:1.35">{e(hold_advice)}</div>
+
+    <!-- 右：三大法人 -->
+    <div>
+      <div style="background:#080f1e;border-radius:10px;padding:10px;height:100%">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px;letter-spacing:.05em">
+          🏦 三大法人 近5日（千股）
+        </div>
+        <table style="width:100%;border-collapse:collapse;font-size:.66rem">
+          <tr>
+            <th style="color:#475569;padding:2px 2px;text-align:left">日期</th>
+            <th style="color:#3b82f6;padding:2px 2px;text-align:right">外資</th>
+            <th style="color:#8b5cf6;padding:2px 2px;text-align:right">投信</th>
+            <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
+            <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
+          </tr>
+          {inst_rows_html if inst_rows_html else '<tr><td colspan="5" style="color:#4b5563;text-align:center;padding:8px">暫無資料</td></tr>'}
+        </table>
+        <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
+          <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
+            <span style="font-size:.62rem">外資 {num_fmt(t5f)}</span>
+            <span style="font-size:.62rem">投信 {num_fmt(t5t)}</span>
+            <span style="font-size:.62rem">自營 {num_fmt(t5d)}</span>
+          </div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap">
+            <div style="background:{inst_mood_color}22;border:1px solid {inst_mood_color};
+                        border-radius:5px;padding:2px 7px;font-size:.65rem;
+                        font-weight:700;color:{inst_mood_color}">法人 {inst_mood}</div>
+            <div style="background:{retail_mood_color}22;border:1px solid {retail_mood_color};
+                        border-radius:5px;padding:2px 7px;font-size:.65rem;
+                        font-weight:700;color:{retail_mood_color}">散戶 {retail_mood}</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- 技術指標 -->
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px">
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">RSI</div>
-      <div style="font-size:.9rem;font-weight:700;color:{'#10b981' if 45<rsi<72 else '#f59e0b' if rsi>=72 else '#ef4444'}">{rsi:.0f}</div>
+  <!-- 散戶情緒 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">👥 散戶情緒推估</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+      <div style="font-size:.8rem;font-weight:700;color:{retail_mood_color}">{retail_mood}</div>
+      <div style="flex:1">
+        <div style="font-size:.58rem;color:#475569;margin-bottom:2px">成交量 / 20日均量</div>
+        <div style="background:#162032;border-radius:4px;height:7px;overflow:hidden">
+          <div style="background:{vol_color};height:100%;width:{vol_bar_w}%;border-radius:4px"></div>
+        </div>
+      </div>
+      <div style="font-size:.75rem;font-weight:700;color:{vol_color}">{vol_ratio:.1f}x</div>
     </div>
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">支撐</div>
-      <div style="font-size:.9rem;font-weight:700;color:#10b981">{support}</div>
-    </div>
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">壓力</div>
-      <div style="font-size:.9rem;font-weight:700;color:#ef4444">{resistance}</div>
-    </div>
+    {retail_sig_html if retail_sig_html else '<div style="font-size:.7rem;color:#475569">量能正常，無特殊訊號</div>'}
   </div>
 
-  <!-- 信號依據 -->
-  <div style="margin-bottom:12px">
-    {reason_html}
+  <!-- 技術面評分依據 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">📊 技術面評分依據</div>
+    {tech_detail_html if tech_detail_html else '<div style="font-size:.7rem;color:#475569">技術資料載入中</div>'}
+  </div>
+
+  <!-- 下週走勢預估 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:8px">📅 下週走勢預估（5個交易日）</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+      <div style="background:#162032;border-radius:8px;padding:8px">
+        <div style="font-size:.58rem;color:#6b7280;margin-bottom:3px">預估區間</div>
+        <div style="font-size:.85rem;font-weight:800">
+          <span style="color:#10b981">{wp_low}</span>
+          <span style="color:#475569"> ~ </span>
+          <span style="color:#ef4444">{wp_high}</span>
+        </div>
+        <div style="font-size:.62rem;color:#475569;margin-top:2px">中心 {wp_center}</div>
+      </div>
+      <div style="background:#162032;border-radius:8px;padding:8px">
+        <div style="font-size:.58rem;color:#6b7280;margin-bottom:3px">支撐 / 壓力</div>
+        <div style="font-size:.75rem;font-weight:700">
+          <span style="color:#10b981">{wp_sup}</span>
+          <span style="color:#475569"> / </span>
+          <span style="color:#ef4444">{wp_res}</span>
+        </div>
+        <div style="font-size:.62rem;color:{trend_color};margin-top:2px;font-weight:600">{wp_trend}</div>
+      </div>
+    </div>
+    <div style="background:rgba(99,102,241,.08);border-left:3px solid #6366f1;
+                padding:7px 10px;border-radius:0 6px 6px 0;font-size:.7rem;color:#a5b4fc">
+      💡 {e(wp_hint)}
+    </div>
   </div>
 
   <!-- 半年走勢預測 -->
-  <div style="border-top:1px solid #334155;padding-top:10px">
-    <div style="font-size:.68rem;color:#6b7280;margin-bottom:8px;letter-spacing:.08em">
-      📅 半年走勢預測 &nbsp;·&nbsp; {e(trend_label)} &nbsp;·&nbsp; 日波動率 {daily_vol:.1f}%
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <div style="font-size:.6rem;color:#6b7280">📈 半年走勢預測</div>
+      <div style="font-size:.6rem;color:#475569">{e(trend_label)} · 日波動率 {daily_vol:.1f}%</div>
     </div>
-    <table style="font-size:.78rem">
-      <tr>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">月份</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">預估價</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">變動</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">區間（±1σ）</th>
+    <table style="width:100%;border-collapse:collapse;font-size:.75rem">
+      <tr style="border-bottom:1px solid #1e3050">
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:left">月份</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">預估價</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">變動</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">±1σ區間</th>
       </tr>
       {fc_rows}
     </table>
-    <div style="font-size:.62rem;color:#4b5563;margin-top:6px">
-      ⚠️ 走勢預測基於線性回歸 + 技術指標，僅供參考，不構成投資建議
+    <div style="font-size:.6rem;color:#374151;margin-top:6px;text-align:center">
+      ⚠️ 線性回歸預測，僅供參考，不構成投資建議
     </div>
+  </div>
+
   </div>
 </div>"""
 
@@ -895,137 +1046,180 @@ def generate_html(signal, records, stock=None):
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>台指期看板</title>
+<title>台指期智能看板</title>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-:root{{--bg:#0f172a;--card:#1e293b;--card2:#334155;
-      --g:#10b981;--r:#ef4444;--txt:#f1f5f9;--muted:#94a3b8;--border:#334155}}
-body{{background:var(--bg);color:var(--txt);
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-  padding:14px;max-width:520px;margin:0 auto;-webkit-font-smoothing:antialiased}}
-.card{{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px}}
-.stitle{{font-size:.68rem;color:var(--muted);text-transform:uppercase;
-  letter-spacing:.1em;margin-bottom:10px}}
-.lbl{{font-size:.75rem;color:var(--muted);margin-bottom:2px}}
-.big-num{{font-size:1.6rem;font-weight:800}}
+:root{{
+  --bg:#080f1e;--card:#0e1829;--card2:#162032;--card3:#1c2940;
+  --g:#10b981;--r:#ef4444;--y:#f59e0b;--b:#3b82f6;--p:#8b5cf6;
+  --txt:#f1f5f9;--muted:#64748b;--border:#1e3050;
+}}
+html{{scroll-behavior:smooth}}
+body{{
+  background:var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 0%,rgba(16,60,100,.3) 0%,transparent 55%),
+    radial-gradient(ellipse at 80% 100%,rgba(16,185,129,.07) 0%,transparent 45%);
+  color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif;
+  min-height:100vh;-webkit-font-smoothing:antialiased;
+}}
+.card{{
+  background:var(--card);border-radius:16px;padding:16px;margin-bottom:12px;
+  border:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,.35);
+  transition:border-color .2s;
+}}
+.card:hover{{border-color:#2d4468}}
+.stitle{{
+  font-size:.65rem;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.12em;margin-bottom:10px;
+  display:flex;align-items:center;gap:6px;
+}}
+.stitle::before{{
+  content:'';display:block;width:3px;height:11px;
+  background:var(--g);border-radius:2px;flex-shrink:0;
+}}
+.lbl{{font-size:.72rem;color:var(--muted);margin-bottom:2px}}
+.big-num{{font-size:1.6rem;font-weight:800;letter-spacing:-.5px}}
 .row2{{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:start}}
 .box2{{background:var(--card2);border-radius:10px;padding:12px}}
 .row3{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}}
-.box3{{background:var(--card2);border-radius:10px;padding:12px;text-align:center;
-  border-top:3px solid var(--border)}}
-.bar-row{{display:flex;align-items:center;gap:6px;margin-bottom:5px}}
-.bar-date{{width:34px;color:var(--muted);font-size:.72rem;text-align:right;flex-shrink:0}}
-.bar-wrap{{flex:1;height:22px;background:var(--card2);border-radius:4px;overflow:hidden}}
-.bar-fill{{height:100%;border-radius:4px;display:flex;align-items:center;
-  padding:0 6px;min-width:40px}}
-.bar-fill span{{font-size:.72rem;font-weight:600;white-space:nowrap;color:#fff}}
-.bar-win{{background:linear-gradient(90deg,#059669,#10b981)}}
-.bar-lose{{background:linear-gradient(90deg,#b91c1c,#ef4444)}}
-table{{width:100%;border-collapse:collapse;font-size:.82rem}}
-th{{color:var(--muted);font-weight:600;font-size:.68rem;text-align:left;
-  padding:5px 4px;border-bottom:1px solid var(--border)}}
-td{{padding:8px 4px;border-bottom:1px solid var(--border);vertical-align:middle}}
+.box3{{background:var(--card2);border-radius:10px;padding:12px;text-align:center;border-top:3px solid var(--border)}}
+.bar-row{{display:flex;align-items:center;gap:6px;margin-bottom:4px}}
+.bar-date{{width:32px;color:var(--muted);font-size:.7rem;text-align:right;flex-shrink:0}}
+.bar-wrap{{flex:1;height:22px;background:var(--card2);border-radius:5px;overflow:hidden}}
+.bar-fill{{height:100%;border-radius:5px;display:flex;align-items:center;padding:0 8px;min-width:44px}}
+.bar-fill span{{font-size:.7rem;font-weight:600;white-space:nowrap;color:#fff}}
+.bar-win{{background:linear-gradient(90deg,#065f46,#10b981)}}
+.bar-lose{{background:linear-gradient(90deg,#7f1d1d,#ef4444)}}
+table{{width:100%;border-collapse:collapse;font-size:.8rem}}
+th{{color:var(--muted);font-weight:600;font-size:.65rem;text-align:left;
+  padding:6px 4px;border-bottom:1px solid var(--border)}}
+td{{padding:8px 4px;border-bottom:1px solid rgba(30,48,80,.5);vertical-align:middle}}
 tr:last-child td{{border-bottom:none}}
-.badge-buy{{background:rgba(16,185,129,.2);color:var(--g);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;font-weight:600;white-space:nowrap}}
-.badge-sell{{background:rgba(239,68,68,.2);color:var(--r);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;font-weight:600;white-space:nowrap}}
-.badge-hold{{background:rgba(148,163,184,.15);color:var(--muted);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;white-space:nowrap}}
+tr:hover td{{background:rgba(255,255,255,.015)}}
+.badge-buy{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.3);
+  padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:600;white-space:nowrap}}
+.badge-sell{{background:rgba(239,68,68,.15);color:var(--r);border:1px solid rgba(239,68,68,.3);
+  padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:600;white-space:nowrap}}
+.badge-hold{{background:rgba(100,116,139,.15);color:var(--muted);border:1px solid var(--border);
+  padding:2px 9px;border-radius:20px;font-size:.7rem;white-space:nowrap}}
 .intl-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}}
-.intl-item{{background:var(--card2);border-radius:10px;padding:10px 12px}}
-.news-row{{padding:9px 0;border-bottom:1px solid var(--border);
-  font-size:.82rem;line-height:1.4}}
+.intl-item{{background:var(--card2);border-radius:10px;padding:10px 12px;
+  border:1px solid var(--border);transition:border-color .2s}}
+.intl-item:hover{{border-color:#2d4468}}
+.news-row{{padding:9px 0;border-bottom:1px solid rgba(30,48,80,.5);font-size:.8rem;line-height:1.45}}
 .news-row:last-child{{border-bottom:none}}
-.news-tag{{display:inline-block;font-size:.68rem;padding:1px 6px;border-radius:4px;
-  margin-right:5px;vertical-align:middle;white-space:nowrap}}
-.tag-pos{{background:rgba(16,185,129,.2);color:var(--g)}}
-.tag-neg{{background:rgba(239,68,68,.2);color:var(--r)}}
-.tag-neu{{background:rgba(148,163,184,.12);color:var(--muted)}}
-.srow{{display:flex;align-items:center;gap:8px;margin-bottom:9px}}
-.slbl{{width:62px;font-size:.76rem;color:var(--muted);flex-shrink:0}}
-.sbar-wrap{{flex:1;height:18px;background:var(--card2);border-radius:4px;position:relative}}
+.news-tag{{display:inline-block;font-size:.65rem;padding:2px 7px;border-radius:5px;
+  margin-right:6px;vertical-align:middle;white-space:nowrap;font-weight:600}}
+.tag-pos{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
+.tag-neg{{background:rgba(239,68,68,.15);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
+.tag-neu{{background:rgba(100,116,139,.12);color:var(--muted);border:1px solid var(--border)}}
+.srow{{display:flex;align-items:center;gap:8px;margin-bottom:10px}}
+.slbl{{width:64px;font-size:.74rem;color:var(--muted);flex-shrink:0}}
+.sbar-wrap{{flex:1;height:16px;background:var(--card2);border-radius:4px;position:relative;overflow:hidden}}
+/* ── 主版型 ── */
+.pw{{max-width:980px;margin:0 auto;padding:16px}}
+.top-bar{{margin-bottom:14px}}
+.main-grid{{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+.col-l,.col-r{{min-width:0}}
+.signal-hero{{
+  border-radius:18px;padding:22px 18px;margin-bottom:12px;text-align:center;
+  position:relative;overflow:hidden;
+}}
+.signal-hero::before{{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,.06),transparent 60%);
+  pointer-events:none;
+}}
+.chip{{
+  display:inline-flex;align-items:center;gap:3px;
+  border-radius:20px;padding:3px 10px;font-size:.67rem;font-weight:600;
+}}
+.chip-g{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.25)}}
+.chip-b{{background:rgba(59,130,246,.15);color:var(--b);border:1px solid rgba(59,130,246,.25)}}
+@media(max-width:680px){{
+  .main-grid{{grid-template-columns:1fr}}
+  .col-r{{order:-1}}
+}}
 </style>
 </head>
 <body>
+<div class="pw">
 
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-  <div style="font-size:1.2rem;font-weight:700">📈 台指期智能看板</div>
-  <div style="font-size:.72rem;color:var(--muted)">{now} 更新</div>
+<!-- ══ 頂部標題 ══ -->
+<div class="top-bar" style="display:flex;justify-content:space-between;align-items:center">
+  <div>
+    <div style="font-size:1.15rem;font-weight:800;letter-spacing:-.3px">📈 台指期智能看板</div>
+    <div style="font-size:.65rem;color:var(--muted);margin-top:2px">微型台指期貨 MXF</div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:.6rem;color:var(--muted)">{now} 更新</div>
+    <div style="display:flex;gap:5px;margin-top:4px;justify-content:flex-end">
+      <span class="chip chip-g">台指 {last_close:,.0f}</span>
+      <span class="chip chip-b">RSI {tw_rsi:.0f}</span>
+    </div>
+  </div>
 </div>
 
-<!-- 夜盤預覽 -->
+<!-- ══ 全寬：夜盤/黃金/今日 ══ -->
 {night_html}
-
-<!-- 黃金警示 -->
 {gold_html}
-
-<!-- 今日狀態 -->
 {today_card}
 
-<!-- 明日信號 -->
-<div style="background:{sig_bg};border-radius:16px;padding:22px 18px;
-            margin-bottom:12px;text-align:center">
-  <div style="font-size:1.85rem;font-weight:800">{sig_label}</div>
-  <div style="font-size:.95rem;opacity:.9;margin-top:6px">{trade_date}</div>
-  <div style="font-size:.85rem;opacity:.85;background:rgba(0,0,0,.2);
-              border-radius:8px;padding:8px 12px;margin-top:10px">{sig_action}</div>
-  <div style="font-size:.73rem;opacity:.7;margin-top:6px">{score_detail}</div>
+<!-- ══ 雙欄主體 ══ -->
+<div class="main-grid">
+
+<!-- ── 左欄 ── -->
+<div class="col-l">
+
+<div class="signal-hero" style="background:{sig_bg}">
+  <div style="font-size:2rem;font-weight:900;line-height:1.1">{sig_label}</div>
+  <div style="font-size:.88rem;opacity:.85;margin-top:5px">{trade_date}</div>
+  <div style="background:rgba(0,0,0,.25);border-radius:10px;padding:8px 14px;
+              margin-top:10px;font-size:.82rem;opacity:.9">{sig_action}</div>
+  <div style="font-size:.7rem;opacity:.6;margin-top:6px">{score_detail}</div>
 </div>
 
-<!-- 長榮航太 -->
-{stock_html}
-
-<!-- 買賣操作建議 -->
-{buy_sell_html}
-
-<!-- 今日結算 -->
-{today_html}
-
-<!-- 實際累計 -->
-{real_stats_html}
-
-<!-- 模擬回測 精準版 -->
-{sim_stats_html}
-
-<!-- 模擬回測 寬鬆版 -->
-{sim_v70_stats_html}
-
-<!-- 模擬回測 高頻版 -->
-{sim_v60_stats_html}
-
-<!-- 模擬回測 超高頻版 -->
-{sim_v50_stats_html}
-
-<!-- 評分明細 -->
 <div class="card">
-  <div class="stitle">今日評分明細</div>
+  <div class="stitle">評分明細</div>
   {score_html}
 </div>
 
-<!-- 近期損益條 -->
+{buy_sell_html}
+{today_html}
+{real_stats_html}
+{sim_stats_html}
+{sim_v70_stats_html}
+{sim_v60_stats_html}
+{sim_v50_stats_html}
 {bars_html}
-
-<!-- 交易記錄 -->
 {table_html}
 
-<!-- 國際市場 -->
-{intl_html}
+</div><!-- col-l -->
 
-<!-- 新聞 -->
+<!-- ── 右欄 ── -->
+<div class="col-r">
+
+{stock_html}
+{jin10_html}
+{intl_html}
 {news_html}
 
-<!-- 金十數據即時快訊 -->
-{jin10_html}
+</div><!-- col-r -->
+</div><!-- main-grid -->
 
-<div style="text-align:center;color:var(--muted);font-size:.68rem;padding:18px 0 6px">
-  ⚠️ 本看板為輔助參考，不構成投資建議<br>
-  微型台指(MXF)每點 NT$10 ｜ 建議停損 20~30 點（NT$200~300）
+<!-- ══ 底部 ══ -->
+<div style="text-align:center;color:var(--muted);font-size:.64rem;
+            padding:18px 0 8px;margin-top:6px;border-top:1px solid var(--border)">
+  ⚠️ 本看板為輔助參考，不構成投資建議 ｜ 微型台指(MXF) 每點 NT$10<br>
+  建議停損 20~30 點（NT$200~300）｜ 資料僅作技術分析使用
 </div>
 
+</div><!-- pw -->
 </body>
 </html>"""
 
