@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """台指期 HTML 看板產生器 — 暗色主題，手機電腦通用"""
 
-import json, os, subprocess
+import json, os, subprocess, math
 import pandas as pd
 from datetime import datetime
 
@@ -152,7 +152,7 @@ def stock_card_html(stock):
         )
 
     return f"""
-<div class="card" style="padding:0;overflow:hidden">
+<div class="card stock-premium-card" style="padding:0;overflow:hidden">
 
   <!-- 標題列 -->
   <div style="background:linear-gradient(90deg,#162032,#0e1829);
@@ -843,66 +843,106 @@ def generate_html(signal, records, stock=None):
             jin10_init = _f.read().replace("</", "<\\/")   # 防止 HTML 注入
 
     jin10_html = f"""
-<div class="card" id="jin10-card">
+<div class="card j10-card" id="jin10-card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
     <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
-    <div style="font-size:.65rem;color:#6b7280" id="jin10-meta">載入中…</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span id="jin10-status-dot" style="display:inline-block;width:7px;height:7px;
+            border-radius:50%;background:#64748b"></span>
+      <span style="font-size:.62rem;color:#64748b" id="jin10-meta">─</span>
+    </div>
   </div>
-  <div id="jin10-mood" style="margin-bottom:10px"></div>
+  <div id="jin10-mood" style="margin-bottom:10px">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 等待快訊資料…</div>
+  </div>
   <div id="jin10-list"></div>
-  <div style="font-size:.62rem;color:#4b5563;margin-top:8px;text-align:center">
-    每5分鐘自動更新 · <span id="jin10-countdown">5:00</span> 後刷新
+  <div style="display:flex;justify-content:space-between;align-items:center;
+              margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
+    <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
+    <div style="font-size:.62rem;color:#475569">
+      <span id="jin10-countdown">5:00</span> 後刷新
+    </div>
   </div>
 </div>
 
 <script>
 (function(){{
   var INIT = {jin10_init};
-  var BASE = window.location.href.replace(/\\/[^\\/]*$/, '');
+  var _fetching = false;
 
-  function tagCss(css){{
-    if(css==='pos') return 'background:rgba(16,185,129,.2);color:#10b981';
-    if(css==='neg') return 'background:rgba(239,68,68,.2);color:#ef4444';
-    return 'background:rgba(148,163,184,.12);color:#94a3b8';
+  function tagStyle(css){{
+    if(css==='pos') return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
+    if(css==='neg') return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
+    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
+  }}
+
+  function setDot(state){{
+    var dot = document.getElementById('jin10-status-dot');
+    if(!dot) return;
+    dot.style.background = state==='ok'?'#10b981':state==='err'?'#ef4444':'#f59e0b';
+    dot.style.animation  = state==='fetching'?'blink 1s infinite':'none';
   }}
 
   function render(d){{
-    if(!d || !d.items) return;
-    var mc = d.mood_color || '#9ca3af';
+    if(!d || !d.items || !d.items.length){{
+      document.getElementById('jin10-mood').innerHTML =
+        '<div style="color:#475569;font-size:.78rem;padding:8px 0">目前無法取得最新快訊，將於下次刷新重試</div>';
+      document.getElementById('jin10-meta').textContent = '資料暫無';
+      setDot('err');
+      return;
+    }}
+    var mc = d.mood_color || '#64748b';
     document.getElementById('jin10-mood').innerHTML =
-      '<div style="display:flex;gap:10px;align-items:center">'
-      +'<div style="background:'+mc+';color:#fff;border-radius:8px;padding:6px 14px;font-size:.9rem;font-weight:800">'+d.mood+'</div>'
-      +'<div style="font-size:.75rem;color:#9ca3af">多:'+d.bull+' 空:'+d.bear+' 淨:'+((d.score>=0?'+':'')+d.score)+'</div>'
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
+      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+
+         ';border-radius:8px;padding:5px 12px;font-size:.88rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.73rem;color:#94a3b8">多 <b style=\\"color:#10b981\\">'+d.bull+'</b>'
+      +' ／ 空 <b style=\\"color:#ef4444\\">'+d.bear+'</b>'
+      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
     var html = '';
     d.items.slice(0,15).forEach(function(it){{
-      html += '<div style="padding:7px 0;border-bottom:1px solid #1e293b;font-size:.8rem;line-height:1.4">'
-        +'<span style="'+tagCss(it.tag_css)+';font-size:.65rem;padding:1px 5px;border-radius:4px;margin-right:5px;white-space:nowrap">'+it.tag+'</span>'
-        +'<span style="color:#94a3b8;font-size:.68rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
-        +it.content
+      html += '<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
+        +'font-size:.78rem;line-height:1.45">'
+        +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
+        +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
+        +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
+        +'<span style="color:#cbd5e1">'+it.content+'</span>'
         +'</div>';
     }});
     document.getElementById('jin10-list').innerHTML = html;
-    document.getElementById('jin10-meta').textContent = d.updated+' 更新';
+    document.getElementById('jin10-meta').textContent = d.updated ? d.updated.slice(11,16)+' 更新' : '已更新';
+    setDot('ok');
   }}
 
   function fetchNews(){{
-    fetch('data/jin10_news.json?t='+Date.now())
-      .then(function(r){{ return r.json(); }})
-      .then(function(d){{ render(d); }})
-      .catch(function(){{}});
+    if(_fetching) return;
+    _fetching = true;
+    setDot('fetching');
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var tid  = setTimeout(function(){{ if(ctrl) ctrl.abort(); }}, 9000);
+    fetch('data/jin10_news.json?t='+Date.now(), ctrl ? {{signal:ctrl.signal}} : {{}})
+      .then(function(r){{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }})
+      .then(function(d){{
+        clearTimeout(tid); _fetching = false;
+        render(d);
+      }})
+      .catch(function(err){{
+        clearTimeout(tid); _fetching = false;
+        setDot('err');
+        document.getElementById('jin10-meta').textContent = '更新失敗，稍後重試';
+      }});
   }}
 
-  // 初始渲染（靜態資料）
+  // 初始渲染
   render(INIT);
 
-  // 倒計時 + 5分鐘自動刷新
+  // 倒計時 + 定時刷新
   var secs = 300;
   setInterval(function(){{
     secs--;
     if(secs <= 0){{ secs = 300; fetchNews(); }}
-    var m = Math.floor(secs/60);
-    var s = secs%60;
+    var m = Math.floor(secs/60), s = secs%60;
     var el = document.getElementById('jin10-countdown');
     if(el) el.textContent = m+':'+(s<10?'0':'')+s;
   }}, 1000);
@@ -975,24 +1015,41 @@ def generate_html(signal, records, stock=None):
       </table>
     </div>"""
 
-    # ── 國際市場 ─────────────────────────────────────────
+    # ── 國際市場（加 NaN 防護）────────────────────────────
     intl_html = ""
     if signal.get("intl_data"):
-        items = []
-        for name, d in signal["intl_data"].items():
-            sv    = d["signal"]
-            chg   = d["chg_pct"]
-            arrow = "▲" if sv == 1 else ("▼" if sv == -1 else "─")
-            color = "#10b981" if sv == 1 else ("#ef4444" if sv == -1 else "#9ca3af")
-            items.append(f"""<div class="intl-item">
-              <div class="lbl">{e(name)}</div>
-              <div style="font-size:1.05rem;font-weight:700;color:{color}">{arrow} {chg:+.2f}%</div>
-              <div style="font-size:.68rem;color:#6b7280">{e(d['desc'])}</div>
-            </div>""")
-        intl_html = f"""<div class="card">
-          <div class="stitle">🌐 國際市場概況</div>
-          <div class="intl-grid">{"".join(items)}</div>
-        </div>"""
+        def _safe_chg(v):
+            try:
+                f = float(v)
+                return 0.0 if (math.isnan(f) or math.isinf(f)) else f
+            except Exception:
+                return 0.0
+
+        intl_rows = []
+        for iname, d in signal["intl_data"].items():
+            sv    = int(d.get("signal", 0))
+            chg   = _safe_chg(d.get("chg_pct", 0))
+            note  = e(d.get("note", f"{chg:+.2f}%"))
+            desc  = e(d.get("desc", ""))
+            if sv == 1:
+                ic, arrow, bg = "#10b981", "▲", "rgba(16,185,129,.08)"
+            elif sv == -1:
+                ic, arrow, bg = "#ef4444", "▼", "rgba(239,68,68,.08)"
+            else:
+                ic, arrow, bg = "#64748b",  "─", "transparent"
+            intl_rows.append(
+                f'<div class="intl-item" style="background:{bg}">'
+                f'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">{e(iname)}</div>'
+                f'<div style="font-size:1rem;font-weight:800;color:{ic}">{arrow} {chg:+.2f}%</div>'
+                f'<div style="font-size:.65rem;color:#475569;margin-top:2px">{desc}</div>'
+                f'</div>'
+            )
+        intl_html = (
+            '<div class="card">'
+            '<div class="stitle">🌐 國際市場概況</div>'
+            f'<div class="intl-grid">{"".join(intl_rows)}</div>'
+            '</div>'
+        )
 
     # ── 新聞 ─────────────────────────────────────────────
     news_html = ""
@@ -1014,33 +1071,114 @@ def generate_html(signal, records, stock=None):
     # ── 長榮航太看板 ─────────────────────────────────────
     stock_html = stock_card_html(stock or {})
 
-    # ── 評分明細 ─────────────────────────────────────────
-    def sbar(label, val, max_abs):
-        pct    = (val + max_abs) / (2 * max_abs) * 100
-        center = 50
-        if val >= 0:
-            left, width = center, pct - center
-        else:
-            left, width = pct, center - pct
-        color = "#10b981" if val >= 0 else "#ef4444"
-        vc    = "#10b981" if val >= 0 else "#ef4444"
-        return f"""<div class="srow">
-          <span class="slbl">{label}</span>
-          <div class="sbar-wrap">
-            <div style="position:absolute;left:50%;width:1px;height:100%;background:#374151"></div>
-            <div style="position:absolute;left:{left:.1f}%;width:{width:.1f}%;
-                        height:100%;background:{color};opacity:.85;border-radius:3px"></div>
-          </div>
-          <span style="font-size:.85rem;font-weight:700;color:{vc};width:26px;text-align:right">{val:+d}</span>
-        </div>"""
-
-    score_html = (sbar("台灣技術", tw_s, 5)
-                 + sbar("國際市場", int_s, 7)
-                 + sbar("新聞情緒", nws_s, 2)
-                 + (sbar("黃金警示", gold_contribution, 2) if gold else ""))
-
-    # ── 組合 ─────────────────────────────────────────────
+    # ── 評分視覺化 ───────────────────────────────────────
     gold_contribution = gold.get("signal", 0)
+
+    def dim_bar(label, val, max_abs, icon=""):
+        """單維度小條（台灣色系：多=紅，空=綠）"""
+        safe_max = max_abs if max_abs > 0 else 1
+        clamped  = max(-safe_max, min(safe_max, val))
+        center   = 50.0
+        fill_pct = abs(clamped) / safe_max * 48   # 最大48%
+        if val >= 0:
+            l, w = center, fill_pct
+            fc = "#ef4444"   # 多頭=紅（台灣色系）
+            vc = "#ef4444"
+        else:
+            l, w = center - fill_pct, fill_pct
+            fc = "#22c55e"   # 空頭=綠（台灣色系）
+            vc = "#22c55e"
+        bar_tag = (f'<div style="position:absolute;left:{l:.1f}%;width:{w:.1f}%;'
+                   f'height:100%;background:{fc};border-radius:3px;'
+                   f'transition:width .4s ease"></div>')
+        return (f'<div class="srow">'
+                f'<span class="slbl">{icon}{label}</span>'
+                f'<div class="sbar-wrap">'
+                f'<div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div>'
+                f'{bar_tag}'
+                f'</div>'
+                f'<span style="font-size:.82rem;font-weight:700;color:{vc};'
+                f'width:28px;text-align:right;flex-shrink:0">{val:+d}</span>'
+                f'</div>')
+
+    dim_bars_html = (
+        dim_bar("台灣技術", tw_s,           5,  "📊 ")
+        + dim_bar("國際市場", int_s,         7,  "🌐 ")
+        + dim_bar("新聞情緒", nws_s,         2,  "📰 ")
+        + (dim_bar("黃金警示", gold_contribution, 2, "🥇 ") if gold else "")
+    )
+
+    # 總分大計儀表盤
+    _max_total = 16
+    _clamped   = max(-_max_total, min(_max_total, total_sc))
+    _thresh_pct_lo = (-thresh + _max_total) / (2 * _max_total) * 100
+    _thresh_pct_hi = (thresh  + _max_total) / (2 * _max_total) * 100
+    _score_pct     = (_clamped + _max_total) / (2 * _max_total) * 100
+    _center_pct    = 50.0
+    if total_sc >= 0:
+        _fl, _fw = _center_pct, _score_pct - _center_pct
+        _fc = "#ef4444"; _fc2 = "#b91c1c"
+    else:
+        _fl, _fw = _score_pct, _center_pct - _score_pct
+        _fc = "#22c55e"; _fc2 = "#15803d"
+    _score_label = ("🔴 偏多" if total_sc >= thresh else
+                    "🟢 偏空" if total_sc <= -thresh else "⚪ 中性")
+    _score_color = ("#ef4444" if total_sc >= thresh else
+                    "#22c55e" if total_sc <= -thresh else "#64748b")
+
+    score_meter_html = f"""
+<div class="card">
+  <div class="stitle">📊 五維評分系統</div>
+
+  <!-- 總分大計儀表 -->
+  <div style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
+      <div style="font-size:.65rem;color:#64748b">總評分</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.4rem;font-weight:900;color:{_score_color}">{total_sc:+d}</span>
+        <span style="font-size:.78rem;font-weight:700;color:{_score_color}">{_score_label}</span>
+        <span style="font-size:.65rem;color:#475569">門檻 ±{thresh}</span>
+      </div>
+    </div>
+    <!-- 主進度條 -->
+    <div style="position:relative;height:22px;background:#0d1829;border-radius:6px;
+                overflow:visible;border:1px solid #1e3050">
+      <!-- 空頭標籤 -->
+      <div style="position:absolute;left:3px;top:50%;transform:translateY(-50%);
+                  font-size:.55rem;color:#22c55e;z-index:2">空</div>
+      <!-- 多頭標籤 -->
+      <div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);
+                  font-size:.55rem;color:#ef4444;z-index:2">多</div>
+      <!-- 填充 -->
+      <div style="position:absolute;left:{_fl:.1f}%;width:{max(_fw,0):.1f}%;height:100%;
+                  background:linear-gradient(90deg,{_fc2},{_fc});
+                  border-radius:5px;opacity:.9;transition:all .5s ease"></div>
+      <!-- 中線 -->
+      <div style="position:absolute;left:50%;width:2px;height:100%;
+                  background:#334155;transform:translateX(-50%)"></div>
+      <!-- 門檻線 -->
+      <div style="position:absolute;left:{_thresh_pct_lo:.1f}%;width:1px;height:100%;
+                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <div style="position:absolute;left:{_thresh_pct_hi:.1f}%;width:1px;height:100%;
+                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <!-- 分數氣泡 -->
+      <div style="position:absolute;left:{_score_pct:.1f}%;top:-18px;transform:translateX(-50%);
+                  background:{_fc};color:#fff;font-size:.6rem;font-weight:700;
+                  padding:1px 5px;border-radius:4px;white-space:nowrap;z-index:3">
+        {total_sc:+d}
+        <div style="position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);
+                    width:0;height:0;border-left:4px solid transparent;
+                    border-right:4px solid transparent;border-top:4px solid {_fc}"></div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:.58rem;color:#334155">
+      <span>-{_max_total}</span><span>-{thresh}</span><span>0</span><span>+{thresh}</span><span>+{_max_total}</span>
+    </div>
+  </div>
+
+  <!-- 各維度條 -->
+  {dim_bars_html}
+</div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -1051,175 +1189,384 @@ def generate_html(signal, records, stock=None):
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>台指期智能看板</title>
 <style>
+/* ── Reset & Variables ─────────────────────────────── */
 *{{box-sizing:border-box;margin:0;padding:0}}
 :root{{
-  --bg:#080f1e;--card:#0e1829;--card2:#162032;--card3:#1c2940;
-  --g:#10b981;--r:#ef4444;--y:#f59e0b;--b:#3b82f6;--p:#8b5cf6;
-  --txt:#f1f5f9;--muted:#64748b;--border:#1e3050;
+  --bg:     #060d1a;
+  --surf:   #0b1628;
+  --card:   #0d1b2e;
+  --card2:  #132236;
+  --card3:  #1a2d45;
+  --border: #1e3254;
+  --blt:    #253d5e;     /* border light */
+
+  --g:   #10b981;  /* 綠（西方多頭 / 台灣空頭）*/
+  --r:   #ef4444;  /* 紅（西方空頭 / 台灣多頭）*/
+  --y:   #f59e0b;
+  --b:   #3b82f6;
+  --p:   #8b5cf6;
+  --c:   #06b6d4;
+
+  --txt:     #e2e8f0;
+  --txt2:    #94a3b8;
+  --muted:   #5a7494;
+
+  --shadow: 0 4px 24px rgba(0,0,0,.5);
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:20px;
 }}
-html{{scroll-behavior:smooth}}
+
+/* ── Base ─────────────────────────────────────────── */
+html{{scroll-behavior:smooth;font-size:16px}}
 body{{
   background:var(--bg);
   background-image:
-    radial-gradient(ellipse at 20% 0%,rgba(16,60,100,.3) 0%,transparent 55%),
-    radial-gradient(ellipse at 80% 100%,rgba(16,185,129,.07) 0%,transparent 45%);
+    radial-gradient(ellipse 70% 40% at 15% 0%,rgba(30,80,150,.22),transparent),
+    radial-gradient(ellipse 50% 30% at 85% 100%,rgba(16,185,129,.06),transparent);
   color:var(--txt);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif;
-  min-height:100vh;-webkit-font-smoothing:antialiased;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",
+               "PingFang TC","Microsoft JhengHei",sans-serif;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
 }}
+
+/* ── Card ─────────────────────────────────────────── */
 .card{{
-  background:var(--card);border-radius:16px;padding:16px;margin-bottom:12px;
-  border:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,.35);
-  transition:border-color .2s;
+  background:var(--card);
+  border-radius:var(--r-lg);
+  padding:16px;
+  margin-bottom:12px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  transition:border-color .2s,box-shadow .2s;
+  position:relative;
+  overflow:hidden;
 }}
-.card:hover{{border-color:#2d4468}}
+.card::before{{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.025),transparent 50%);
+}}
+.card:hover{{border-color:var(--blt);box-shadow:0 6px 32px rgba(0,0,0,.6)}}
+
+/* 長榮航太 精緻卡（與台指期主題視覺隔離）*/
+.stock-premium-card{{
+  background:linear-gradient(145deg,#0a1929 0%,#0d1f35 100%);
+  border-color:#1d3553;
+}}
+.stock-premium-card:hover{{border-color:#2a4a6e}}
+
+/* ── Typography ────────────────────────────────────── */
 .stitle{{
-  font-size:.65rem;color:var(--muted);text-transform:uppercase;
-  letter-spacing:.12em;margin-bottom:10px;
+  font-size:.62rem;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.14em;
+  margin-bottom:12px;
   display:flex;align-items:center;gap:6px;
 }}
 .stitle::before{{
-  content:'';display:block;width:3px;height:11px;
-  background:var(--g);border-radius:2px;flex-shrink:0;
+  content:'';flex-shrink:0;
+  width:3px;height:12px;
+  background:var(--b);border-radius:2px;
 }}
-.lbl{{font-size:.72rem;color:var(--muted);margin-bottom:2px}}
-.big-num{{font-size:1.6rem;font-weight:800;letter-spacing:-.5px}}
+.lbl{{font-size:.7rem;color:var(--txt2);margin-bottom:2px;line-height:1.3}}
+.big-num{{font-size:1.55rem;font-weight:800;letter-spacing:-.6px;line-height:1.1}}
+
+/* ── Layout Primitives ─────────────────────────────── */
 .row2{{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:start}}
-.box2{{background:var(--card2);border-radius:10px;padding:12px}}
+.box2{{background:var(--card2);border-radius:var(--r-md);padding:12px}}
 .row3{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}}
-.box3{{background:var(--card2);border-radius:10px;padding:12px;text-align:center;border-top:3px solid var(--border)}}
+.box3{{
+  background:var(--card2);border-radius:var(--r-md);padding:12px;
+  text-align:center;border-top:3px solid var(--border);
+}}
+
+/* ── Tables ────────────────────────────────────────── */
+.tbl-wrap{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
+table{{width:100%;border-collapse:collapse;font-size:.78rem}}
+th{{
+  color:var(--muted);font-weight:600;font-size:.62rem;
+  text-align:left;padding:7px 5px;
+  border-bottom:1px solid var(--border);white-space:nowrap;
+}}
+td{{padding:8px 5px;border-bottom:1px solid rgba(30,50,84,.4);vertical-align:middle}}
+tr:last-child td{{border-bottom:none}}
+tr:hover td{{background:rgba(255,255,255,.014)}}
+
+/* ── Badges ────────────────────────────────────────── */
+.badge-buy{{
+  background:rgba(16,185,129,.12);color:var(--g);
+  border:1px solid rgba(16,185,129,.25);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600;white-space:nowrap;
+}}
+.badge-sell{{
+  background:rgba(239,68,68,.12);color:var(--r);
+  border:1px solid rgba(239,68,68,.25);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600;white-space:nowrap;
+}}
+.badge-hold{{
+  background:rgba(90,116,148,.12);color:var(--muted);
+  border:1px solid var(--border);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;white-space:nowrap;
+}}
+
+/* ── News tags ─────────────────────────────────────── */
+.news-row{{padding:9px 0;border-bottom:1px solid rgba(30,50,84,.4);font-size:.78rem;line-height:1.48}}
+.news-row:last-child{{border-bottom:none}}
+.news-tag{{
+  display:inline-block;font-size:.62rem;padding:2px 6px;border-radius:5px;
+  margin-right:5px;vertical-align:middle;white-space:nowrap;font-weight:600;
+}}
+.tag-pos{{background:rgba(16,185,129,.12);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
+.tag-neg{{background:rgba(239,68,68,.12);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
+.tag-neu{{background:rgba(90,116,148,.1);color:var(--muted);border:1px solid var(--border)}}
+
+/* ── International grid ────────────────────────────── */
+.intl-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}}
+.intl-item{{
+  background:var(--card2);border-radius:var(--r-md);
+  padding:10px 12px;border:1px solid var(--border);
+  transition:border-color .2s,background .2s;
+}}
+.intl-item:hover{{border-color:var(--blt);background:var(--card3)}}
+
+/* ── Score bars ────────────────────────────────────── */
+.srow{{display:flex;align-items:center;gap:8px;margin-bottom:9px}}
+.slbl{{width:72px;font-size:.72rem;color:var(--txt2);flex-shrink:0}}
+.sbar-wrap{{flex:1;height:14px;background:var(--card2);border-radius:4px;position:relative;overflow:hidden}}
+
+/* ── PnL bars ──────────────────────────────────────── */
 .bar-row{{display:flex;align-items:center;gap:6px;margin-bottom:4px}}
-.bar-date{{width:32px;color:var(--muted);font-size:.7rem;text-align:right;flex-shrink:0}}
+.bar-date{{width:30px;color:var(--muted);font-size:.68rem;text-align:right;flex-shrink:0}}
 .bar-wrap{{flex:1;height:22px;background:var(--card2);border-radius:5px;overflow:hidden}}
 .bar-fill{{height:100%;border-radius:5px;display:flex;align-items:center;padding:0 8px;min-width:44px}}
-.bar-fill span{{font-size:.7rem;font-weight:600;white-space:nowrap;color:#fff}}
+.bar-fill span{{font-size:.68rem;font-weight:600;white-space:nowrap;color:#fff}}
 .bar-win{{background:linear-gradient(90deg,#065f46,#10b981)}}
 .bar-lose{{background:linear-gradient(90deg,#7f1d1d,#ef4444)}}
-table{{width:100%;border-collapse:collapse;font-size:.8rem}}
-th{{color:var(--muted);font-weight:600;font-size:.65rem;text-align:left;
-  padding:6px 4px;border-bottom:1px solid var(--border)}}
-td{{padding:8px 4px;border-bottom:1px solid rgba(30,48,80,.5);vertical-align:middle}}
-tr:last-child td{{border-bottom:none}}
-tr:hover td{{background:rgba(255,255,255,.015)}}
-.badge-buy{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.3);
-  padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:600;white-space:nowrap}}
-.badge-sell{{background:rgba(239,68,68,.15);color:var(--r);border:1px solid rgba(239,68,68,.3);
-  padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:600;white-space:nowrap}}
-.badge-hold{{background:rgba(100,116,139,.15);color:var(--muted);border:1px solid var(--border);
-  padding:2px 9px;border-radius:20px;font-size:.7rem;white-space:nowrap}}
-.intl-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}}
-.intl-item{{background:var(--card2);border-radius:10px;padding:10px 12px;
-  border:1px solid var(--border);transition:border-color .2s}}
-.intl-item:hover{{border-color:#2d4468}}
-.news-row{{padding:9px 0;border-bottom:1px solid rgba(30,48,80,.5);font-size:.8rem;line-height:1.45}}
-.news-row:last-child{{border-bottom:none}}
-.news-tag{{display:inline-block;font-size:.65rem;padding:2px 7px;border-radius:5px;
-  margin-right:6px;vertical-align:middle;white-space:nowrap;font-weight:600}}
-.tag-pos{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
-.tag-neg{{background:rgba(239,68,68,.15);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
-.tag-neu{{background:rgba(100,116,139,.12);color:var(--muted);border:1px solid var(--border)}}
-.srow{{display:flex;align-items:center;gap:8px;margin-bottom:10px}}
-.slbl{{width:64px;font-size:.74rem;color:var(--muted);flex-shrink:0}}
-.sbar-wrap{{flex:1;height:16px;background:var(--card2);border-radius:4px;position:relative;overflow:hidden}}
-/* ── 主版型 ── */
-.pw{{max-width:980px;margin:0 auto;padding:16px}}
-.top-bar{{margin-bottom:14px}}
-.main-grid{{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
-.col-l,.col-r{{min-width:0}}
-.signal-hero{{
-  border-radius:18px;padding:22px 18px;margin-bottom:12px;text-align:center;
-  position:relative;overflow:hidden;
-}}
-.signal-hero::before{{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(255,255,255,.06),transparent 60%);
-  pointer-events:none;
-}}
+
+/* ── Chip tags ─────────────────────────────────────── */
 .chip{{
   display:inline-flex;align-items:center;gap:3px;
-  border-radius:20px;padding:3px 10px;font-size:.67rem;font-weight:600;
+  border-radius:20px;padding:3px 10px;font-size:.65rem;font-weight:600;
 }}
-.chip-g{{background:rgba(16,185,129,.15);color:var(--g);border:1px solid rgba(16,185,129,.25)}}
-.chip-b{{background:rgba(59,130,246,.15);color:var(--b);border:1px solid rgba(59,130,246,.25)}}
-@media(max-width:680px){{
-  .main-grid{{grid-template-columns:1fr}}
+.chip-g{{background:rgba(16,185,129,.12);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
+.chip-b{{background:rgba(59,130,246,.12);color:var(--b);border:1px solid rgba(59,130,246,.2)}}
+.chip-y{{background:rgba(245,158,11,.12);color:var(--y);border:1px solid rgba(245,158,11,.2)}}
+.chip-r{{background:rgba(239,68,68,.12);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
+
+/* ── Hero signal card ──────────────────────────────── */
+.signal-hero{{
+  border-radius:var(--r-xl);padding:24px 20px;margin-bottom:12px;
+  text-align:center;position:relative;overflow:hidden;
+}}
+.signal-hero::before{{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 55%);
+}}
+.signal-hero::after{{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+}}
+
+/* ── Tabs ──────────────────────────────────────────── */
+.tab-nav{{
+  display:flex;gap:4px;margin-bottom:12px;
+  background:var(--card2);border-radius:10px;padding:4px;
+  border:1px solid var(--border);
+}}
+.tab-btn{{
+  flex:1;padding:7px 4px;border-radius:7px;border:none;
+  background:transparent;color:var(--muted);
+  font-size:.7rem;font-weight:600;cursor:pointer;
+  transition:background .2s,color .2s;white-space:nowrap;
+}}
+.tab-btn.active{{
+  background:var(--card3);color:var(--txt);
+  box-shadow:0 1px 4px rgba(0,0,0,.3);
+}}
+.tab-btn:hover:not(.active){{color:var(--txt2);background:rgba(255,255,255,.04)}}
+.tab-pane{{display:none}}
+.tab-pane.active{{display:block}}
+
+/* ── Accordion ─────────────────────────────────────── */
+.acc-btn{{
+  width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;background:var(--card2);border:1px solid var(--border);
+  border-radius:var(--r-md);color:var(--txt2);font-size:.75rem;font-weight:600;
+  cursor:pointer;transition:background .2s;margin-bottom:8px;
+}}
+.acc-btn:hover{{background:var(--card3)}}
+.acc-body{{display:none;margin-bottom:8px}}
+.acc-body.open{{display:block}}
+.acc-arrow{{transition:transform .25s;font-size:.7rem}}
+.acc-btn.open .acc-arrow{{transform:rotate(180deg)}}
+
+/* ── Jin10 dot blink ───────────────────────────────── */
+@keyframes blink{{0%,100%{{opacity:1}}50%{{opacity:.3}}}}
+
+/* ── Layout ────────────────────────────────────────── */
+.pw{{max-width:980px;margin:0 auto;padding:16px 14px}}
+.main-grid{{display:grid;grid-template-columns:55% 45%;gap:14px}}
+.col-l,.col-r{{min-width:0}}
+
+/* ── Responsive ────────────────────────────────────── */
+@media(max-width:700px){{
+  .main-grid{{grid-template-columns:1fr;gap:0}}
   .col-r{{order:-1}}
+  .row3{{grid-template-columns:repeat(3,1fr)}}
+  .intl-grid{{grid-template-columns:repeat(2,1fr)}}
+}}
+@media(max-width:400px){{
+  .row3{{grid-template-columns:1fr 1fr}}
+  body{{font-size:15px}}
 }}
 </style>
 </head>
 <body>
 <div class="pw">
 
-<!-- ══ 頂部標題 ══ -->
-<div class="top-bar" style="display:flex;justify-content:space-between;align-items:center">
+<!-- ══════════════ TOP BAR ══════════════════════════ -->
+<div style="display:flex;justify-content:space-between;align-items:center;
+            margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--border)">
   <div>
-    <div style="font-size:1.15rem;font-weight:800;letter-spacing:-.3px">📈 台指期智能看板</div>
-    <div style="font-size:.65rem;color:var(--muted);margin-top:2px">微型台指期貨 MXF</div>
+    <div style="font-size:1.1rem;font-weight:800;letter-spacing:-.3px">
+      📈 台指期智能看板
+    </div>
+    <div style="font-size:.62rem;color:var(--muted);margin-top:3px">
+      微型台指期貨 MXF &nbsp;·&nbsp; 每點 NT$10
+    </div>
   </div>
   <div style="text-align:right">
-    <div style="font-size:.6rem;color:var(--muted)">{now} 更新</div>
-    <div style="display:flex;gap:5px;margin-top:4px;justify-content:flex-end">
-      <span class="chip chip-g">台指 {last_close:,.0f}</span>
-      <span class="chip chip-b">RSI {tw_rsi:.0f}</span>
+    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">{now} 更新</div>
+    <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
+      <span class="chip chip-b">台指 {last_close:,.0f}</span>
+      <span class="chip chip-{'g' if tw_rsi < 70 else 'y' if tw_rsi < 80 else 'r'}">RSI {tw_rsi:.0f}</span>
+      <span class="chip chip-{'r' if total_sc >= thresh else 'g' if total_sc <= -thresh else 'chip-b'}">
+        {'多' if total_sc >= thresh else '空' if total_sc <= -thresh else '中'} {total_sc:+d}
+      </span>
     </div>
   </div>
 </div>
 
-<!-- ══ 全寬：夜盤/黃金/今日 ══ -->
+<!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
 {night_html}
 {gold_html}
 {today_card}
 
-<!-- ══ 雙欄主體 ══ -->
+<!-- ══════════════ MAIN 2-COLUMN GRID ═══════════════ -->
 <div class="main-grid">
 
-<!-- ── 左欄 ── -->
+<!-- ══ LEFT COLUMN ══════════════════════════════════ -->
 <div class="col-l">
 
-<div class="signal-hero" style="background:{sig_bg}">
-  <div style="font-size:2rem;font-weight:900;line-height:1.1">{sig_label}</div>
-  <div style="font-size:.88rem;opacity:.85;margin-top:5px">{trade_date}</div>
-  <div style="background:rgba(0,0,0,.25);border-radius:10px;padding:8px 14px;
-              margin-top:10px;font-size:.82rem;opacity:.9">{sig_action}</div>
-  <div style="font-size:.7rem;opacity:.6;margin-top:6px">{score_detail}</div>
+<!-- 明日信號英雄卡 -->
+<div class="signal-hero" style="background:{sig_bg};margin-bottom:12px">
+  <div style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
+    {sig_label}
+  </div>
+  <div style="font-size:.85rem;opacity:.85;margin-top:6px">{trade_date}</div>
+  <div style="background:rgba(0,0,0,.28);border-radius:10px;
+              padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
+    {sig_action}
+  </div>
+  <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">{score_detail}</div>
 </div>
 
-<div class="card">
-  <div class="stitle">評分明細</div>
-  {score_html}
-</div>
+<!-- 五維評分儀表 -->
+{score_meter_html}
 
-{buy_sell_html}
-{today_html}
-{real_stats_html}
-{sim_stats_html}
-{sim_v70_stats_html}
-{sim_v60_stats_html}
-{sim_v50_stats_html}
-{bars_html}
-{table_html}
+<!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
+<div class="card" style="padding:12px">
+
+  <!-- Tab 導航 -->
+  <div class="tab-nav" id="main-tabs">
+    <button class="tab-btn active" onclick="switchTab('t-signals',this,'main-tabs')">
+      📋 今日訊號
+    </button>
+    <button class="tab-btn" onclick="switchTab('t-backtest',this,'main-tabs')">
+      📊 回測統計
+    </button>
+    <button class="tab-btn" onclick="switchTab('t-records',this,'main-tabs')">
+      📁 交易記錄
+    </button>
+  </div>
+
+  <!-- Tab 1：今日四版本買賣訊號 + 實際累計 -->
+  <div class="tab-pane active" id="t-signals">
+    {today_html}
+    {real_stats_html}
+    {buy_sell_html}
+  </div>
+
+  <!-- Tab 2：歷史回測統計（預設收納） -->
+  <div class="tab-pane" id="t-backtest">
+    {sim_stats_html}
+    {sim_v70_stats_html}
+    {sim_v60_stats_html}
+    {sim_v50_stats_html}
+  </div>
+
+  <!-- Tab 3：近期損益 + 完整記錄 -->
+  <div class="tab-pane" id="t-records">
+    {bars_html}
+    <div class="tbl-wrap">{table_html}</div>
+  </div>
+
+</div><!-- card tabs -->
 
 </div><!-- col-l -->
 
-<!-- ── 右欄 ── -->
+<!-- ══ RIGHT COLUMN ═════════════════════════════════ -->
 <div class="col-r">
 
+<!-- 長榮航太精緻卡（獨立主題，premium class 已在 stock_card_html 內設定）-->
 {stock_html}
+
+<!-- 金十數據 -->
 {jin10_html}
+
+<!-- 國際市場 -->
 {intl_html}
+
+<!-- 新聞 -->
 {news_html}
 
 </div><!-- col-r -->
 </div><!-- main-grid -->
 
-<!-- ══ 底部 ══ -->
-<div style="text-align:center;color:var(--muted);font-size:.64rem;
-            padding:18px 0 8px;margin-top:6px;border-top:1px solid var(--border)">
-  ⚠️ 本看板為輔助參考，不構成投資建議 ｜ 微型台指(MXF) 每點 NT$10<br>
-  建議停損 20~30 點（NT$200~300）｜ 資料僅作技術分析使用
+<!-- ══════════════ FOOTER ════════════════════════════ -->
+<div style="text-align:center;color:var(--muted);font-size:.62rem;
+            padding:20px 0 10px;margin-top:8px;border-top:1px solid var(--border);
+            line-height:1.8">
+  ⚠️ 本看板為輔助參考，不構成投資建議<br>
+  微型台指(MXF) 每點 NT$10 ｜ 建議停損 20～30 點（NT$200～$300）<br>
+  <span style="color:#334155">台灣色系：紅＝多頭漲勢，綠＝空頭跌勢</span>
 </div>
 
 </div><!-- pw -->
+
+<!-- ══════════════ JS ═════════════════════════════════ -->
+<script>
+/* ── Tab 切換 ─────────────────────────────────────── */
+function switchTab(targetId, btn, navId) {{
+  var nav = document.getElementById(navId);
+  if (!nav) return;
+  // 收合所有 pane（找最近的 card 父層）
+  var card = nav.closest ? nav.closest('.card') : nav.parentElement;
+  var panes = card.querySelectorAll('.tab-pane');
+  var btns  = nav.querySelectorAll('.tab-btn');
+  panes.forEach(function(p){{ p.classList.remove('active'); }});
+  btns.forEach(function(b){{ b.classList.remove('active'); }});
+  var target = document.getElementById(targetId);
+  if (target) target.classList.add('active');
+  if (btn)    btn.classList.add('active');
+}}
+
+/* ── Accordion ─────────────────────────────────────── */
+function toggleAcc(btnEl) {{
+  btnEl.classList.toggle('open');
+  var body = btnEl.nextElementSibling;
+  if (body) body.classList.toggle('open');
+}}
+</script>
 </body>
 </html>"""
 
