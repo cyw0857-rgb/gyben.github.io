@@ -1139,43 +1139,73 @@ def generate_html(signal, records, stock=None):
     if(dot){dot.style.background=sourceLabel.indexOf('LIVE')>=0?'#10b981':'#f59e0b';dot.style.animation=sourceLabel.indexOf('LIVE')>=0?'blink 1s infinite':'';}
   }
 
-  /* ── Yahoo Finance 即時 API（透過 CORS proxy）── */
-  var YF_SYMS = MARKETS.map(function(m){return m.s;}).join(',');
-  var YF_BASE = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
-                +encodeURIComponent(YF_SYMS)+'&lang=en&region=US';
-  /* 試三種途徑：直連 → proxy1 → proxy2 */
-  var YF_URLS = [
-    YF_BASE,
-    'https://corsproxy.io/?'+encodeURIComponent(YF_BASE),
-    'https://api.allorigins.win/raw?url='+encodeURIComponent(YF_BASE)
+  /* ── Yahoo Finance 即時 API（多端點 + 多Proxy 輪試）── */
+  /* 關鍵：corsproxy.io 直接取 ? 後面整個字串作為目標URL，不需對整個URL再encode
+           allorigins.win 用 ?url= 參數，才需要 encodeURIComponent             */
+  var _SYM = MARKETS.map(function(m){return m.s.replace(/\^/g,'%5E');}).join('%2C');
+  var _YFQ = 'https://query2.finance.yahoo.com/v7/finance/quote?symbols='
+           + _SYM + '&lang=en&region=US&corsDomain=finance.yahoo.com';
+  var _YFS = 'https://query2.finance.yahoo.com/v7/finance/spark?symbols='
+           + _SYM + '&range=1d&interval=1m';
+
+  function _pQ(d){  /* parse quote */
+    var res=(d.quoteResponse||{}).result||[];
+    if(!res.length) throw new Error('empty');
+    var byS={};
+    res.forEach(function(q){byS[q.symbol]=q;});
+    var its=[];
+    MARKETS.forEach(function(m){
+      var q=byS[m.s]; if(!q) return;
+      var chg=q.regularMarketChangePercent||0, price=q.regularMarketPrice||0;
+      its.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
+    });
+    if(!its.length) throw new Error('no items');
+    return its;
+  }
+  function _pS(d){  /* parse spark */
+    var res=(d.spark||{}).result||[];
+    if(!res.length) throw new Error('empty');
+    var byS={};
+    res.forEach(function(r){
+      if(r&&r.response&&r.response[0]) byS[r.symbol]=r.response[0].meta;
+    });
+    var its=[];
+    MARKETS.forEach(function(m){
+      var meta=byS[m.s]; if(!meta) return;
+      var price=meta.regularMarketPrice||0;
+      var prev=meta.previousClose||meta.chartPreviousClose||0;
+      if(!prev||!price) return;
+      var chg=(price-prev)/prev*100;
+      its.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
+    });
+    if(!its.length) throw new Error('no items');
+    return its;
+  }
+
+  /* 5條路線：直連quote→直連spark→proxy+quote→proxy+spark→allorigins+quote */
+  var _AT=[
+    {u:_YFQ,  p:_pQ},
+    {u:_YFS,  p:_pS},
+    {u:'https://corsproxy.io/?'+_YFQ,  p:_pQ},
+    {u:'https://corsproxy.io/?'+_YFS,  p:_pS},
+    {u:'https://api.allorigins.win/raw?url='+encodeURIComponent(_YFQ), p:_pQ}
   ];
-  var _yfIdx = 0;   /* 目前使用第幾條 */
+  var _ai=0;  /* 記住上次成功的路線 */
+  setInterval(function(){_ai=0;}, 5*60*1000);  /* 每5分鐘重試從頭 */
 
   function fetchYahoo(){
-    var urls = YF_URLS.slice(_yfIdx);   /* 從當前有效的開始試 */
-    function tryNext(i){
-      if(i >= urls.length) return Promise.reject(new Error('all failed'));
-      return fetch(urls[i])
-        .then(function(r){return r.json();})
-        .then(function(data){
-          var res=(data.quoteResponse||{}).result||[];
-          if(!res.length) throw new Error('empty');
-          _yfIdx = _yfIdx + i;   /* 記住哪條成功 */
-          var bySymbol={};
-          res.forEach(function(q){bySymbol[q.symbol]=q;});
-          var items=[];
-          MARKETS.forEach(function(m){
-            var q=bySymbol[m.s];
-            if(!q) return;
-            var chg=q.regularMarketChangePercent||0;
-            var price=q.regularMarketPrice||0;
-            items.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
-          });
-          return items;
+    function tryFrom(i){
+      if(i>=_AT.length) return Promise.reject(new Error('all failed'));
+      var a=_AT[i];
+      return fetch(a.u).then(function(r){return r.json();})
+        .then(function(d){
+          var its=a.p(d);
+          _ai=i;  /* 記住此成功路線 */
+          return its;
         })
-        .catch(function(){ return tryNext(i+1); });
+        .catch(function(){return tryFrom(i+1);});
     }
-    return tryNext(0);
+    return tryFrom(_ai);
   }
 
   /* ── Fallback: intl.json ── */
@@ -1193,14 +1223,16 @@ def generate_html(signal, records, stock=None):
       });
   }
 
-  var _useYahoo=true;
+  var _useLive=true;
+  /* 每10分鐘重試 Yahoo（若之前因CORS放棄）*/
+  setInterval(function(){_useLive=true;}, 10*60*1000);
 
   function loadOnce(){
-    if(_useYahoo){
+    if(_useLive){
       fetchYahoo()
         .then(function(items){renderGrid(items,'● LIVE');})
         .catch(function(){
-          _useYahoo=false;   /* Yahoo CORS 失敗，改用 JSON */
+          _useLive=false;
           fetchJson().then(function(r){renderGrid(r.items,'JSON '+r.updated);}).catch(function(){});
         });
     } else {
@@ -1209,12 +1241,12 @@ def generate_html(signal, records, stock=None):
   }
 
   window.intlLoad=function(){
-    _useYahoo=true;   /* 手動刷新時重試 Yahoo */
+    _useLive=true; _ai=0;  /* 手動刷新時重試 */
     loadOnce();
   };
 
   loadOnce();
-  setInterval(loadOnce, 30000);   /* 每30秒 */
+  setInterval(loadOnce, 30000);  /* 每30秒 */
 })();
 </script>"""
 
@@ -1871,7 +1903,7 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 
 <!-- 明日信號英雄卡（全寬） -->
 <div class="signal-hero" style="background:{sig_bg};margin-bottom:12px">
-  <div style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
+  <div id="hero-sig-label" style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
     {sig_label}
   </div>
   <div style="font-size:.85rem;opacity:.85;margin-top:6px">{trade_date}</div>
@@ -2026,6 +2058,27 @@ function toggleAcc(btnEl) {{
   }}
   setTimeout(poll,120000);      /* 載入後2分鐘先查一次（可能開到舊頁） */
   setInterval(poll,300000);     /* 之後每5分鐘 */
+}})();
+
+/* ── 明日→今日 標籤自動切換 ───────────────────────── */
+(function(){{
+  var TRADE_DATE='{trade_date}';  /* e.g. "2026-06-17" */
+  function todayStr(){{
+    var d=new Date();
+    return d.getFullYear()+'-'
+      +String(d.getMonth()+1).padStart(2,'0')+'-'
+      +String(d.getDate()).padStart(2,'0');
+  }}
+  function patchLabels(){{
+    if(TRADE_DATE>todayStr()) return;  /* 還沒到那天，不換 */
+    var el=document.getElementById('hero-sig-label');
+    if(el) el.innerHTML=el.innerHTML.replace(/明天/g,'今天');
+  }}
+  patchLabels();  /* 頁面載入時立即判斷 */
+  /* 凌晨零點再執行一次 */
+  var now=new Date();
+  var msToMid=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1)-now;
+  setTimeout(patchLabels, msToMid+500);
 }})();
 </script>
 </body>
