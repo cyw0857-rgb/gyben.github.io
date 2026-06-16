@@ -1059,47 +1059,56 @@ def generate_html(signal, records, stock=None):
       </table>
     </div>"""
 
-    # ── 國際市場（加 NaN 防護）────────────────────────────
-    intl_html = ""
-    if signal.get("intl_data"):
-        def _safe_chg(v):
-            try:
-                f = float(v)
-                return 0.0 if (math.isnan(f) or math.isinf(f)) else f
-            except Exception:
-                return 0.0
+    # ── 國際市場（JS 即時渲染，從 data/intl.json 取資料）──────
+    intl_html = """<div class="card" id="intl-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b" id="intl-meta">載入中…</span>
+      <button onclick="intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
+  <div id="intl-grid" class="intl-grid">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0;grid-column:1/-1">⏳ 載入中…</div>
+  </div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每10分鐘自動更新</div>
+</div>
 
-        intl_rows = []
-        for iname, d in signal["intl_data"].items():
-            sv    = int(d.get("signal", 0))
-            chg   = _safe_chg(d.get("chg_pct", 0))
-            note  = e(d.get("note", f"{chg:+.2f}%"))
-            desc  = e(d.get("desc", ""))
-            if sv == 1:
-                ic, arrow, bg = "#10b981", "▲", "rgba(16,185,129,.08)"
-            elif sv == -1:
-                ic, arrow, bg = "#ef4444", "▼", "rgba(239,68,68,.08)"
-            else:
-                ic, arrow, bg = "#64748b",  "─", "transparent"
-            intl_rows.append(
-                f'<div class="intl-item" style="background:{bg}">'
-                f'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">{e(iname)}</div>'
-                f'<div style="font-size:1rem;font-weight:800;color:{ic}">{arrow} {chg:+.2f}%</div>'
-                f'<div style="font-size:.65rem;color:#475569;margin-top:2px">{desc}</div>'
-                f'</div>'
-            )
-        intl_html = (
-            '<div class="card">'
-            '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">'
-            '<div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>'
-            f'<div style="display:flex;align-items:center;gap:6px">'
-            f'<span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>'
-            '<button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>'
-            '</div>'
-            '</div>'
-            f'<div class="intl-grid">{"".join(intl_rows)}</div>'
-            '</div>'
-        )
+<script>
+(function(){
+  function render(d){
+    if(!d||!d.data){
+      document.getElementById('intl-meta').textContent='載入失敗';
+      return;
+    }
+    var html='';
+    Object.keys(d.data).forEach(function(name){
+      var it=d.data[name];
+      var sv=it.signal||0;
+      var chg=it.chg_pct||0;
+      var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
+      var arrow=sv===1?'▲':sv===-1?'▼':'─';
+      var bg=sv===1?'rgba(16,185,129,.08)':sv===-1?'rgba(239,68,68,.08)':'transparent';
+      html+='<div class="intl-item" style="background:'+bg+'">'
+        +'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">'+name+'</div>'
+        +'<div style="font-size:1rem;font-weight:800;color:'+ic+'">'+arrow+' '+(chg>=0?'+':'')+chg.toFixed(2)+'%</div>'
+        +'<div style="font-size:.65rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
+        +'</div>';
+    });
+    document.getElementById('intl-grid').innerHTML=html;
+    document.getElementById('intl-meta').textContent=d.updated+' 更新';
+  }
+  window.intlLoad=function(){
+    document.getElementById('intl-meta').textContent='更新中…';
+    fetch('data/intl.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(render)
+      .catch(function(){document.getElementById('intl-meta').textContent='載入失敗';});
+  };
+  intlLoad();
+  setInterval(intlLoad,600000);   /* 每10分鐘 */
+})();
+</script>"""
 
     # ── 新聞（JS 即時渲染，從 data/news.json 取資料）────────
     news_html = """<div class="card" id="news-card">

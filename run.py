@@ -37,6 +37,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  新聞抓取失敗（繼續產生看板）")
 
+# 2c. 更新國際市場指數（同步寫入 data/intl.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "intl_fetch.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  國際市場抓取失敗（繼續產生看板）")
+
 # 3. 執行看板產生
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "dashboard_gen.py")],
