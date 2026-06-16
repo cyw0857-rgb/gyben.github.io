@@ -1,0 +1,37 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    - cron: '30 0 * * 1-5'   # 08:30 TST (Mon-Fri)
+    - cron: '45 5 * * 1-5'   # 13:45 TST (Mon-Fri)
+  workflow_dispatch:           # 手動觸發按鈕
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas numpy feedparser requests beautifulsoup4
+
+      - name: Run signal engine + stock signal + dashboard
+        run: python run.py morning
+
+      - name: Commit and push
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@github.com"
+          git add index.html data/
+          git diff --cached --quiet || git commit -m "Auto update $(TZ='Asia/Taipei' date +'%Y-%m-%d %H:%M') TST"
+          git push

@@ -1,0 +1,56 @@
+====================================================
+台指期信號看板 — GitHub Pages 上傳步驟
+網址結果：https://gyben.github.io
+====================================================
+
+【第一步：建立 GitHub 帳號】
+1. 打開 https://github.com
+2. 點 Sign up
+3. Username 填：gyben（或你想要的名字）
+   → 網址就會是 https://gyben.github.io
+4. Email 填你的信箱
+5. 完成驗證
+
+【第二步：建立 Repository（倉庫）】
+1. 登入後點右上角 "+" → New repository
+2. Repository name 填：gyben.github.io
+   （注意：名稱必須是「帳號名.github.io」才能當網站）
+3. 選 Public（公開）
+4. 勾選 "Add a README file"
+5. 點 Create repository
+
+【第三步：上傳這個資料夾的檔案】
+1. 在你的電腦，打開「終端機」(Terminal)
+2. 複製以下指令貼上執行（一行一行）：
+
+   cd /Users/yanwen/台指期公開看板
+   git init
+   git remote add origin https://github.com/gyben/gyben.github.io.git
+   git add .
+   git commit -m "Initial upload"
+   git branch -M main
+   git push -u origin main
+
+   （第一次會要求輸入 GitHub 帳號密碼，密碼要用 Personal Access Token，
+    去 GitHub → Settings → Developer settings → Personal access tokens 產生）
+
+【第四步：開啟 GitHub Pages】
+1. 進入你的 Repository 頁面
+2. 點上方 Settings
+3. 左側選 Pages
+4. Source 選 "Deploy from a branch"
+5. Branch 選 main，資料夾選 / (root)
+6. 點 Save
+
+約 2-3 分鐘後，網址 https://gyben.github.io 就上線了！
+
+【第五步：確認自動更新有開啟】
+1. Repository 頁面點 Actions 頁籤
+2. 應該看到 "Update Dashboard" 這個 workflow
+3. 點進去，點 "Run workflow" 手動測試一次
+4. 成功的話每天 08:30 和 13:45 會自動更新
+
+====================================================
+完成！把 https://gyben.github.io 傳給朋友就好
+每個交易日早上 08:30 自動更新當日信號
+====================================================
