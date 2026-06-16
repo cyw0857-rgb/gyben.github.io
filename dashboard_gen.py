@@ -68,9 +68,13 @@ def stock_card_html(stock):
     inst        = stock.get("inst", {})
     retail      = stock.get("retail", {})
     weekly      = stock.get("weekly", {})
-    forecast    = stock.get("forecast", [])
-    trend_label = stock.get("trend_label", "")
-    daily_vol   = stock.get("daily_vol_pct", 0)
+    forecast     = stock.get("forecast", [])
+    trend_label  = stock.get("trend_label", "")
+    daily_vol    = stock.get("daily_vol_pct", 0)
+    model_acc    = stock.get("model_accuracy", 0)
+    model_samples= stock.get("model_samples", 0)
+    total_ret    = stock.get("total_return", 0)
+    ipo_date     = stock.get("ipo_date", "─")
 
     chg_color   = "#10b981" if chg_pct >= 0 else "#ef4444"
     chg_arrow   = "▲" if chg_pct >= 0 else "▼"
@@ -134,19 +138,17 @@ def stock_card_html(stock):
     wp_res    = weekly.get("resistance", 0)
     trend_color = "#10b981" if "多" in wp_trend else ("#ef4444" if "空" in wp_trend else "#9ca3af")
 
-    # ── 半年走勢 ─────────────────────────────────────────
+    # ── 月度走勢預測 ─────────────────────────────────────
     def ta(t): return "▲" if t == "up" else ("▼" if t == "down" else "─")
     def tc(t): return "#10b981" if t == "up" else ("#ef4444" if t == "down" else "#9ca3af")
 
     fc_rows = ""
     for fc in forecast:
-        chg = fc["chg_pct"]
-        cc  = "#10b981" if chg >= 0 else "#ef4444"
+        note = fc.get("model_note", "")
         fc_rows += (
             f'<tr>'
             f'<td style="color:#94a3b8;padding:4px 3px">{fc["month"]}</td>'
-            f'<td style="color:{tc(fc["trend"])};font-weight:700;padding:4px 3px">{ta(fc["trend"])} {fc["price"]}</td>'
-            f'<td style="color:{cc};padding:4px 3px">{chg:+.1f}%</td>'
+            f'<td style="color:{tc(fc["trend"])};font-weight:700;padding:4px 3px">{ta(fc["trend"])} {note or fc["price"]}</td>'
             f'<td style="color:#6b7280;font-size:.68rem;padding:4px 3px">{fc["price_low"]}~{fc["price_high"]}</td>'
             f'</tr>'
         )
@@ -292,23 +294,25 @@ def stock_card_html(stock):
     </div>
   </div>
 
-  <!-- 半年走勢預測 -->
+  <!-- 月度方向預測 -->
   <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:14px">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-      <div style="font-size:.6rem;color:#6b7280">📈 半年走勢預測</div>
-      <div style="font-size:.6rem;color:#475569">{e(trend_label)} · 日波動率 {daily_vol:.1f}%</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div style="font-size:.6rem;color:#6b7280">📅 月線方向預測（MA5/MA10 交叉模型）</div>
+      <div style="font-size:.6rem;color:{'#10b981' if model_acc>=70 else '#f59e0b'}">準確率 {model_acc:.0f}% / {model_samples}筆</div>
+    </div>
+    <div style="font-size:.6rem;color:#475569;margin-bottom:6px">
+      {e(trend_label)} · 上市({ipo_date})累計 <span style="color:{'#10b981' if total_ret>=0 else '#ef4444'};font-weight:700">{total_ret:+.1f}%</span>
     </div>
     <table style="width:100%;border-collapse:collapse;font-size:.75rem">
       <tr style="border-bottom:1px solid #1e3050">
         <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:left">月份</th>
-        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">預估價</th>
-        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">變動</th>
-        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">±1σ區間</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:left">預測方向</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">±σ波動區間</th>
       </tr>
       {fc_rows}
     </table>
-    <div style="font-size:.6rem;color:#374151;margin-top:6px;text-align:center">
-      ⚠️ 線性回歸預測，僅供參考，不構成投資建議
+    <div style="font-size:.6rem;color:#374155;margin-top:6px">
+      ⚠️ 方向預測（非精確價格）· 每月月底重新判斷 · {model_acc:.0f}%準確率基於{model_samples}筆回測
     </div>
   </div>
 
