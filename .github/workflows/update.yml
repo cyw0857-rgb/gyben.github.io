@@ -2,9 +2,10 @@ name: Update Dashboard
 
 on:
   schedule:
-    - cron: '30 0 * * 1-5'   # 08:30 TST (Mon-Fri)
-    - cron: '45 5 * * 1-5'   # 13:45 TST (Mon-Fri)
-  workflow_dispatch:           # 手動觸發按鈕
+    - cron: '*/30 0-5 * * 1-5'  # 每30分鐘 08:00-13:30 TST (Mon-Fri)
+    - cron: '45 5 * * 1-5'      # 13:45 TST (Mon-Fri)
+    - cron: '0 6 * * 1-5'       # 14:00 TST (Mon-Fri)
+  workflow_dispatch:              # 手動觸發按鈕
 
 jobs:
   update:

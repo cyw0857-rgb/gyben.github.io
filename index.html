@@ -249,15 +249,26 @@ tr:hover td{background:rgba(255,255,255,.014)}
     </div>
   </div>
   <div style="text-align:right">
-    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">2026-06-16 23:17 更新</div>
+    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
+      資料：2026-06-16 23:17 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+    </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
       <span class="chip chip-b">台指 45,809</span>
       <span class="chip chip-g">RSI 59</span>
-      <span class="chip chip-r">
-        多 +7
+      <span class="chip chip-chip-b">
+        中 +3
       </span>
     </div>
   </div>
+</div>
+
+<!-- ══════════════ 更新通知條 ══════════════════════ -->
+<div id="update-banner" onclick="window.location.reload()"
+     style="display:none;background:rgba(59,130,246,.12);border:1px solid #3b82f6;
+            border-radius:10px;padding:10px 14px;margin-bottom:12px;cursor:pointer;
+            justify-content:space-between;align-items:center">
+  <span style="font-size:.82rem;color:#93c5fd">📡 資料已更新，點此重新載入看板</span>
+  <span style="font-size:.75rem;color:#60a5fa">🔄 重新載入</span>
 </div>
 
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
@@ -435,9 +446,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-06-17</div>
   <div style="background:rgba(0,0,0,.28);border-radius:10px;
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
-    訊號不足，總分 +7，未達門檻 ±7
+    訊號不足，總分 +3，未達門檻 ±7
   </div>
-  <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +2 ＋ 國際市場 +7 ＋ 新聞 -2 ＝ 總分 +7（門檻 ±7）</div>
+  <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +2 ＋ 國際市場 +7 ＋ 新聞 -2 ＝ 總分 +3（門檻 ±7）</div>
 </div>
 
 <!-- 五維評分儀表 -->
@@ -450,8 +461,8 @@ tr:hover td{background:rgba(255,255,255,.014)}
     <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
       <div style="font-size:.65rem;color:#64748b">總評分</div>
       <div style="display:flex;align-items:center;gap:8px">
-        <span style="font-size:1.4rem;font-weight:900;color:#ef4444">+7</span>
-        <span style="font-size:.78rem;font-weight:700;color:#ef4444">🔴 偏多</span>
+        <span style="font-size:1.4rem;font-weight:900;color:#64748b">+3</span>
+        <span style="font-size:.78rem;font-weight:700;color:#64748b">⚪ 中性</span>
         <span style="font-size:.65rem;color:#475569">門檻 ±7</span>
       </div>
     </div>
@@ -465,7 +476,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
       <div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);
                   font-size:.55rem;color:#ef4444;z-index:2">多</div>
       <!-- 填充 -->
-      <div style="position:absolute;left:50.0%;width:21.9%;height:100%;
+      <div style="position:absolute;left:50.0%;width:9.4%;height:100%;
                   background:linear-gradient(90deg,#b91c1c,#ef4444);
                   border-radius:5px;opacity:.9;transition:all .5s ease"></div>
       <!-- 中線 -->
@@ -477,10 +488,10 @@ tr:hover td{background:rgba(255,255,255,.014)}
       <div style="position:absolute;left:71.9%;width:1px;height:100%;
                   background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
       <!-- 分數氣泡 -->
-      <div style="position:absolute;left:71.9%;top:-18px;transform:translateX(-50%);
+      <div style="position:absolute;left:59.4%;top:-18px;transform:translateX(-50%);
                   background:#ef4444;color:#fff;font-size:.6rem;font-weight:700;
                   padding:1px 5px;border-radius:4px;white-space:nowrap;z-index:3">
-        +7
+        +3
         <div style="position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);
                     width:0;height:0;border-left:4px solid transparent;
                     border-right:4px solid transparent;border-top:4px solid #ef4444"></div>
@@ -1048,6 +1059,37 @@ function toggleAcc(btnEl) {
   var body = btnEl.nextElementSibling;
   if (body) body.classList.toggle('open');
 }
+
+/* ── 即時時鐘 + 新資料偵測 ──────────────────────── */
+(function(){
+  /* 時鐘 */
+  function tick(){
+    var d=new Date(),h=d.getHours(),m=d.getMinutes(),s=d.getSeconds();
+    var el=document.getElementById('live-clock');
+    if(el) el.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  }
+  tick(); setInterval(tick,1000);
+
+  /* 新資料輪詢（每5分鐘） */
+  var SIG_AT='2026-06-16 23:17',STK_AT='2026-06-16 23:17',notified=false;
+  function showBanner(){
+    if(notified) return; notified=true;
+    var b=document.getElementById('update-banner');
+    if(b) b.style.display='flex';
+  }
+  function poll(){
+    fetch('data/signal.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(function(d){if(d.generated_at&&d.generated_at!==SIG_AT) showBanner();})
+      .catch(function(){});
+    fetch('data/stock_2645.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(function(d){if(d.updated&&d.updated!==STK_AT) showBanner();})
+      .catch(function(){});
+  }
+  setTimeout(poll,120000);      /* 載入後2分鐘先查一次（可能開到舊頁） */
+  setInterval(poll,300000);     /* 之後每5分鐘 */
+})();
 </script>
 </body>
 </html>

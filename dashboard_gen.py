@@ -315,6 +315,8 @@ def stock_card_html(stock):
 
 def generate_html(signal, records, stock=None):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    sig_generated_at = signal.get("generated_at", now)
+    stock_updated    = (stock or {}).get("updated", "─")
 
     # ── 分類記錄 ─────────────────────────────────────────
     def _filter(st):
@@ -1468,7 +1470,9 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
     </div>
   </div>
   <div style="text-align:right">
-    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">{now} 更新</div>
+    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
+      資料：{sig_generated_at} &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+    </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
       <span class="chip chip-b">台指 {last_close:,.0f}</span>
       <span class="chip chip-{'g' if tw_rsi < 70 else 'y' if tw_rsi < 80 else 'r'}">RSI {tw_rsi:.0f}</span>
@@ -1477,6 +1481,15 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
       </span>
     </div>
   </div>
+</div>
+
+<!-- ══════════════ 更新通知條 ══════════════════════ -->
+<div id="update-banner" onclick="window.location.reload()"
+     style="display:none;background:rgba(59,130,246,.12);border:1px solid #3b82f6;
+            border-radius:10px;padding:10px 14px;margin-bottom:12px;cursor:pointer;
+            justify-content:space-between;align-items:center">
+  <span style="font-size:.82rem;color:#93c5fd">📡 資料已更新，點此重新載入看板</span>
+  <span style="font-size:.75rem;color:#60a5fa">🔄 重新載入</span>
 </div>
 
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
@@ -1587,6 +1600,37 @@ function toggleAcc(btnEl) {{
   var body = btnEl.nextElementSibling;
   if (body) body.classList.toggle('open');
 }}
+
+/* ── 即時時鐘 + 新資料偵測 ──────────────────────── */
+(function(){{
+  /* 時鐘 */
+  function tick(){{
+    var d=new Date(),h=d.getHours(),m=d.getMinutes(),s=d.getSeconds();
+    var el=document.getElementById('live-clock');
+    if(el) el.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  }}
+  tick(); setInterval(tick,1000);
+
+  /* 新資料輪詢（每5分鐘） */
+  var SIG_AT='{sig_generated_at}',STK_AT='{stock_updated}',notified=false;
+  function showBanner(){{
+    if(notified) return; notified=true;
+    var b=document.getElementById('update-banner');
+    if(b) b.style.display='flex';
+  }}
+  function poll(){{
+    fetch('data/signal.json?_='+Date.now())
+      .then(function(r){{return r.json();}})
+      .then(function(d){{if(d.generated_at&&d.generated_at!==SIG_AT) showBanner();}})
+      .catch(function(){{}});
+    fetch('data/stock_2645.json?_='+Date.now())
+      .then(function(r){{return r.json();}})
+      .then(function(d){{if(d.updated&&d.updated!==STK_AT) showBanner();}})
+      .catch(function(){{}});
+  }}
+  setTimeout(poll,120000);      /* 載入後2分鐘先查一次（可能開到舊頁） */
+  setInterval(poll,300000);     /* 之後每5分鐘 */
+}})();
 </script>
 </body>
 </html>"""
