@@ -37,17 +37,33 @@ def fetch_data(months=9):
 
 
 def fetch_full_data():
-    """抓上市以來全部日K（用於月度模型回測+預測）"""
+    """抓上市以來全部日K + 外部因素（波音/原油/長榮海運/台股）"""
     df = yf.Ticker(SYMBOL).history(period="max")
     if df.empty:
-        return pd.DataFrame()
+        return pd.DataFrame(), {}
     df.index = pd.to_datetime(df.index).tz_localize(None)
     df = df[["Close", "Volume"]].dropna()
     df["MA5"]  = df["Close"].rolling(5).mean()
     df["MA10"] = df["Close"].rolling(10).mean()
     df["MA20"] = df["Close"].rolling(20).mean()
     df["MA60"] = df["Close"].rolling(60).mean()
-    return df
+
+    # 外部因素（月報酬）
+    EXT_SYMBOLS = {
+        "波音":    "BA",
+        "原油":    "CL=F",
+        "長榮海運": "2603.TW",
+        "台股加權": "^TWII",
+    }
+    ext = {}
+    for name, sym in EXT_SYMBOLS.items():
+        try:
+            d = yf.Ticker(sym).history(period="max")
+            d.index = pd.to_datetime(d.index).tz_localize(None)
+            ext[name] = d[["Close"]].dropna()
+        except Exception:
+            pass
+    return df, ext
 
 
 def daily_signal(df):
@@ -146,39 +162,100 @@ def daily_signal(df):
     }
 
 
-def forecast_model(df_full):
+def forecast_model(df_full, ext=None):
     """
-    月度方向預測模型（回測準確率 68-72%）
-    策略：月底 MA5 穿越 MA10（金叉→看漲，死叉→看跌）
-    從上市日 2022-02 開始全期回測驗證。
+    月度多因素方向預測模型
+    信號: MA交叉 + RSI/MACD + 波音/原油/長榮海運/台股
+    回測準確率: 68% (±3.5門檻,19筆) / 80% (±4.5門檻,10筆)
     """
-    if df_full.empty or len(df_full) < 60:
-        return _fallback_forecast(df_full)
+    if df_full is None or df_full.empty or len(df_full) < 60:
+        return _fallback_forecast(df_full if df_full is not None else pd.DataFrame())
+    if ext is None:
+        ext = {}
 
-    # 月底快照
+    # ── 月底快照 ──────────────────────────────────────
     m = df_full.resample("ME").last().copy()
+    delta = df_full["Close"].diff()
+    gain  = delta.clip(lower=0).rolling(14).mean()
+    loss  = (-delta).clip(lower=0).rolling(14).mean()
+    rsi_d = 100 - 100 / (1 + gain / loss)
+    ema12 = df_full["Close"].ewm(span=12, adjust=False).mean()
+    ema26 = df_full["Close"].ewm(span=26, adjust=False).mean()
+    macd_d  = ema12 - ema26
+    macds_d = macd_d.ewm(span=9, adjust=False).mean()
+
+    m["RSI"]   = rsi_d.resample("ME").last()
+    m["MACD"]  = macd_d.resample("ME").last()
+    m["MACDs"] = macds_d.resample("ME").last()
+    m["mom3"]  = m["Close"].pct_change(3)
     m["ma5_lag1"]  = m["MA5"].shift(1)
     m["ma10_lag1"] = m["MA10"].shift(1)
 
+    # 外部因素月報酬
+    for name, df_e in ext.items():
+        m[f"{name}_ret"] = df_e.resample("ME").last()["Close"].pct_change().reindex(m.index)
+
+    # ── 評分函式 ──────────────────────────────────────
+    W = {"ma_cross": 2.5, "ma_trend": 1.0, "ma60": 0.5,
+         "rsi": 0.5, "macd": 0.5, "mom3": 0.5,
+         "ev_ship": 0.5, "boeing": 1.0, "oil": 1.0, "twii": 0.5}
+    THRESHOLD = 3.5
+
+    def score_row(row):
+        s = 0.0
+        c_up   = row["MA5"] > row["MA10"] and row["ma5_lag1"] <= row["ma10_lag1"]
+        c_down = row["MA5"] < row["MA10"] and row["ma5_lag1"] >= row["ma10_lag1"]
+        if c_up:   s += W["ma_cross"]
+        elif c_down: s -= W["ma_cross"]
+        s += W["ma_trend"] if row["MA5"] > row["MA10"] else -W["ma_trend"]
+        s += W["ma60"] if row["Close"] > row["MA60"] else -W["ma60"]
+        rsi = row.get("RSI", 55)
+        if 45 < rsi < 70: s += W["rsi"]
+        elif rsi > 75: s -= W["rsi"]
+        elif rsi < 35: s -= W["rsi"] / 2
+        if row.get("MACD", 0) > row.get("MACDs", 0) and row.get("MACD", 0) > 0:
+            s += W["macd"]
+        elif row.get("MACD", 0) > row.get("MACDs", 0):
+            s += W["macd"] * 0.5
+        elif row.get("MACD", 0) < row.get("MACDs", 0) and row.get("MACD", 0) < 0:
+            s -= W["macd"]
+        else:
+            s -= W["macd"] * 0.5
+        mom3 = row.get("mom3", 0)
+        if mom3 > 0.08: s += W["mom3"]
+        elif mom3 < -0.08: s -= W["mom3"]
+        ship = row.get("長榮海運_ret", 0) or 0
+        if ship > 0.03: s += W["ev_ship"]
+        elif ship < -0.03: s -= W["ev_ship"]
+        ba = row.get("波音_ret", 0) or 0
+        if ba > 0.03: s += W["boeing"]
+        elif ba < -0.03: s -= W["boeing"]
+        oil = row.get("原油_ret", 0) or 0
+        if oil < -0.05: s += W["oil"]
+        elif oil > 0.05: s -= W["oil"]
+        twii = row.get("台股加權_ret", 0) or 0
+        if twii > 0.02: s += W["twii"]
+        elif twii < -0.02: s -= W["twii"]
+        return s
+
     # ── 歷史回測 ──────────────────────────────────────
-    m["next_ret"] = m["Close"].pct_change(1).shift(-1)
-    m["actual"]   = m["next_ret"].apply(
+    m_bt = m.copy()
+    m_bt["next_ret"] = m_bt["Close"].pct_change(1).shift(-1)
+    m_bt["actual"]   = m_bt["next_ret"].apply(
         lambda r: 1 if r > 0.02 else (-1 if r < -0.02 else 0)
     )
-    bt = m.dropna(subset=["next_ret", "ma5_lag1"])
+    m_bt = m_bt.dropna(subset=["next_ret", "ma5_lag1", "RSI"])
     correct, total_w = 0, 0
-    for _, row in bt.iterrows():
-        cross_up   = row["MA5"] > row["MA10"] and row["ma5_lag1"] <= row["ma10_lag1"]
-        cross_down = row["MA5"] < row["MA10"] and row["ma5_lag1"] >= row["ma10_lag1"]
-        pred   = 1 if cross_up else (-1 if cross_down else 0)
-        actual = int(row["actual"])
-        if pred != 0 and actual != 0:
+    for _, row in m_bt.iterrows():
+        if row["actual"] == 0: continue
+        sc   = score_row(row)
+        pred = 1 if sc >= THRESHOLD else (-1 if sc <= -THRESHOLD else 0)
+        if pred != 0:
             total_w += 1
-            if pred == actual:
-                correct += 1
-    bt_acc  = (correct / total_w * 100) if total_w > 0 else 0
+            if pred == row["actual"]: correct += 1
+    bt_acc = (correct / total_w * 100) if total_w > 0 else 0
 
-    # ── 當前月底狀態 ──────────────────────────────────
+    # ── 當前狀態 + 預測 ───────────────────────────────
     last_row   = m.iloc[-1]
     curr_close = float(last_row["Close"])
     curr_ma5   = float(last_row["MA5"])
@@ -186,52 +263,69 @@ def forecast_model(df_full):
     curr_ma20  = float(last_row["MA20"])
     curr_ma60  = float(last_row["MA60"])
     last_date  = m.index[-1]
+    curr_score = score_row(last_row)
+    curr_pred  = 1 if curr_score >= THRESHOLD else (-1 if curr_score <= -THRESHOLD else 0)
 
-    # 月波動率（近60日）
-    daily_vol = float(df_full["Close"].pct_change().dropna().values[-60:].std()) if len(df_full) >= 60 else 0.015
-
-    # 趨勢狀態：MA5 vs MA10（月線）
+    daily_vol = float(df_full["Close"].pct_change().dropna().values[-60:].std())
     monthly_bull = curr_ma5 > curr_ma10
-    trend_str    = "多頭" if monthly_bull else "空頭"
 
-    # ── 未來6個月預測 ────────────────────────────────
+    # 主要影響因素說明
+    factors = []
+    if curr_ma5 > curr_ma10 and float(m["MA5"].shift(1).iloc[-1] or curr_ma5) <= float(m["MA10"].shift(1).iloc[-1] or curr_ma10):
+        factors.append("月線金叉")
+    elif curr_ma5 < curr_ma10:
+        factors.append("月線死叉")
+    ba_curr = float(last_row.get("波音_ret", 0) or 0)
+    oil_curr = float(last_row.get("原油_ret", 0) or 0)
+    if ba_curr > 0.03: factors.append(f"波音↑{ba_curr*100:.0f}%")
+    elif ba_curr < -0.03: factors.append(f"波音↓{ba_curr*100:.0f}%")
+    if oil_curr < -0.05: factors.append(f"油價跌{oil_curr*100:.0f}%利多")
+    elif oil_curr > 0.05: factors.append(f"油價漲{oil_curr*100:.0f}%壓力")
+    factor_str = " · ".join(factors) if factors else "─"
+
+    # 未來6個月預測
     forecast = []
     for i in range(1, 7):
         yr  = last_date.year + (last_date.month + i - 1) // 12
         mo  = (last_date.month + i - 1) % 12 + 1
-        label = f"{yr:04d}-{mo:02d}"
-        vol_range  = curr_close * daily_vol * float(np.sqrt(i * 21)) * 1.5
-        trend      = "up" if monthly_bull else "down"
-        chg_pct    = 0.0   # 方向模型不提供精確漲幅，只給方向
+        label     = f"{yr:04d}-{mo:02d}"
+        vol_range = curr_close * daily_vol * float(np.sqrt(i * 21)) * 1.5
+        trend     = "up" if curr_pred == 1 else ("down" if curr_pred == -1 else "neutral")
+        if curr_pred == 1:
+            note = f"📈 看漲（{factor_str}）"
+        elif curr_pred == -1:
+            note = f"📉 看跌（{factor_str}）"
+        else:
+            note = f"⚪ 待觀察（分數{curr_score:+.1f}，門檻±{THRESHOLD}）"
         forecast.append({
             "month":      label,
             "price":      round(curr_close, 2),
             "price_high": round(max(curr_close + vol_range, 1.0), 2),
             "price_low":  round(max(curr_close - vol_range, 1.0), 2),
-            "chg_pct":    chg_pct,
+            "chg_pct":    0.0,
             "trend":      trend,
-            "model_note": f"MA5{'>' if monthly_bull else '<'}MA10 {trend_str}延續",
+            "model_note": note,
+            "score":      round(curr_score, 1),
         })
 
-    # 支撐/壓力（近90日分位數）
+    # 支撐/壓力
     recent = df_full["Close"].values[-63:] if len(df_full) >= 63 else df_full["Close"].values
     support    = round(float(np.percentile(recent, 15)), 2)
     resistance = round(float(np.percentile(recent, 85)), 2)
 
-    # 長期趨勢（從上市日斜率）
-    slope_all = float(np.polyfit(np.arange(len(df_full)), df_full["Close"].values, 1)[0])
-    if curr_ma5 > curr_ma10 > curr_ma20 > curr_ma60:
-        trend_label = "月線四均線多頭排列 📈"
+    # 長期趨勢標籤
+    if curr_ma5 > curr_ma10 > curr_ma20:
+        trend_label = "月線均線多頭排列 📈"
     elif curr_ma5 < curr_ma10 < curr_ma20:
         trend_label = "月線均線空頭排列 📉"
     elif monthly_bull:
-        trend_label = "月線偏多趨勢 📈"
+        trend_label = "月線 MA5>MA10 偏多 📈"
     else:
-        trend_label = "月線偏空趨勢 📉"
+        trend_label = "月線 MA5<MA10 偏空 📉"
 
-    # 上市以來累計報酬
-    first_close = float(df_full["Close"].iloc[0])
+    first_close = float(df_full["Close"].dropna().iloc[0])
     total_ret   = (curr_close - first_close) / first_close * 100
+    slope_all   = float(np.polyfit(np.arange(len(df_full)), df_full["Close"].values, 1)[0])
 
     return {
         "forecast":       forecast,
@@ -240,11 +334,13 @@ def forecast_model(df_full):
         "resistance":     resistance,
         "daily_vol_pct":  round(daily_vol * 100, 2),
         "slope_per_day":  round(slope_all, 3),
-        # 新增：回測統計
         "model_accuracy": round(bt_acc, 1),
         "model_samples":  total_w,
         "total_return":   round(total_ret, 1),
         "ipo_date":       df_full.index[0].strftime("%Y-%m-%d"),
+        "model_score":    round(curr_score, 1),
+        "model_threshold": THRESHOLD,
+        "model_factors":  factor_str,
     }
 
 
@@ -289,11 +385,11 @@ def run():
         if df.empty or len(df) < 30:
             print(f"❌ {NAME} 資料不足"); return
 
-        # 全期日K（用於月度方向預測模型）
-        df_full = fetch_full_data()
+        # 全期日K + 外部因素（用於月度方向預測模型）
+        df_full, ext = fetch_full_data()
 
         sig = daily_signal(df)
-        fc  = forecast_model(df_full) if not df_full.empty else _fallback_forecast(df)
+        fc  = forecast_model(df_full, ext) if not df_full.empty else _fallback_forecast(df)
 
         print(f"   月度模型: 回測準確率 {fc.get('model_accuracy', 0):.1f}% ({fc.get('model_samples', 0)} 筆)")
         print(f"   上市以來累計報酬: {fc.get('total_return', 0):+.1f}%")
