@@ -943,18 +943,32 @@ def generate_html(signal, records, stock=None):
       +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
     var html='';
-    d.items.slice(0,15).forEach(function(it){
+    d.items.slice(0,15).forEach(function(it,i){
       html+='<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
         +'font-size:.78rem;line-height:1.45">'
         +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
         +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
         +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
-        +'<span style="color:#cbd5e1">'+it.content+'</span>'
+        +'<span id="jt-'+i+'" style="color:#cbd5e1">'+it.content+'</span>'
         +'</div>';
     });
     document.getElementById('jin10-list').innerHTML=html;
     document.getElementById('jin10-meta').textContent=d.updated+' 更新';
     setDot('ok');
+    /* 簡體→繁體翻譯 */
+    var contents=d.items.slice(0,15).map(function(it){return it.content;});
+    var joined=contents.join('\n');
+    fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=zh-TW&dt=t&q='+encodeURIComponent(joined))
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('\n');
+        contents.forEach(function(_,i){
+          var el=document.getElementById('jt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});
   }
 
   function j10Load(){
@@ -1121,7 +1135,7 @@ def generate_html(signal, records, stock=None):
   </div>
   <div id="news-mood" style="margin-bottom:8px"></div>
   <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新</div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新 · 標題自動翻譯為繁體中文</div>
 </div>
 
 <script>
@@ -1131,6 +1145,37 @@ def generate_html(signal, records, stock=None):
     if(sv===-1) return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
     return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
   }
+
+  function renderNews(items){
+    var html='';
+    items.slice(0,14).forEach(function(n,i){
+      var sv=n.sent_val||0;
+      html+='<div class="news-row">'
+        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
+        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
+        +'<span id="nt-'+i+'" style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
+        +'</div>';
+    });
+    document.getElementById('news-list').innerHTML=html;
+  }
+
+  function translateTitles(items){
+    var list=items.slice(0,14);
+    var joined=list.map(function(n){return n.title;}).join('\n');
+    var url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q='+encodeURIComponent(joined);
+    fetch(url)
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('\n');
+        list.forEach(function(n,i){
+          var el=document.getElementById('nt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});  /* 翻譯失敗保留英文 */
+  }
+
   function render(d){
     if(!d||!d.items||!d.items.length){
       document.getElementById('news-meta').textContent='載入失敗';
@@ -1145,18 +1190,16 @@ def generate_html(signal, records, stock=None):
       +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
       +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
-    var html='';
-    d.items.slice(0,14).forEach(function(n){
-      var sv=n.sent_val||0;
-      html+='<div class="news-row">'
-        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
-        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
-        +'<span style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
-        +'</div>';
-    });
-    document.getElementById('news-list').innerHTML=html;
-    document.getElementById('news-meta').textContent=d.updated+' 更新';
+    renderNews(d.items);
+    document.getElementById('news-meta').textContent=d.updated+' 更新（翻譯中…）';
+    translateTitles(d.items);
+    /* 翻譯完成後更新 meta（用延遲估算） */
+    setTimeout(function(){
+      var el=document.getElementById('news-meta');
+      if(el&&el.textContent.indexOf('翻譯中')>=0) el.textContent=d.updated+' 更新';
+    },3000);
   }
+
   window.newsLoad=function(){
     document.getElementById('news-meta').textContent='更新中…';
     fetch('data/news.json?_='+Date.now())
@@ -1165,7 +1208,7 @@ def generate_html(signal, records, stock=None):
       .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
   };
   newsLoad();
-  setInterval(newsLoad,900000);   /* 每15分鐘自動刷新 */
+  setInterval(newsLoad,900000);
 })();
 </script>"""
 

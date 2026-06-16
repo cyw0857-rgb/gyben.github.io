@@ -388,18 +388,34 @@ tr:hover td{background:rgba(255,255,255,.014)}
       +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
     var html='';
-    d.items.slice(0,15).forEach(function(it){
+    d.items.slice(0,15).forEach(function(it,i){
       html+='<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
         +'font-size:.78rem;line-height:1.45">'
         +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
         +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
         +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
-        +'<span style="color:#cbd5e1">'+it.content+'</span>'
+        +'<span id="jt-'+i+'" style="color:#cbd5e1">'+it.content+'</span>'
         +'</div>';
     });
     document.getElementById('jin10-list').innerHTML=html;
     document.getElementById('jin10-meta').textContent=d.updated+' 更新';
     setDot('ok');
+    /* 簡體→繁體翻譯 */
+    var contents=d.items.slice(0,15).map(function(it){return it.content;});
+    var joined=contents.join('
+');
+    fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=zh-TW&dt=t&q='+encodeURIComponent(joined))
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('
+');
+        contents.forEach(function(_,i){
+          var el=document.getElementById('jt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});
   }
 
   function j10Load(){
@@ -1001,7 +1017,55 @@ tr:hover td{background:rgba(255,255,255,.014)}
 </div>
 
 <!-- ══════════════ 國際市場 ══════════════════════════ -->
-<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div><div style="display:flex;align-items:center;gap:6px"><span style="font-size:.6rem;color:#64748b">2026-06-16 23:17</span><button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button></div></div><div class="intl-grid"><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">S&amp;P500</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +1.51%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">美股漲→台股漲</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">NASDAQ</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.80%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">科技股連動</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">費城半導體</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.87%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">對台股影響最大</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">VIX恐慌</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ -9.90%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">&lt;20樂觀 &gt;25恐慌</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">日經225</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.81%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">亞股風向球</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">韓KOSPI</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.00%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">半導體競爭對手</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美元指數</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.17%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">強美元→外資匯出</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">黃金</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.38%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">避險情緒指標</div></div><div class="intl-item" style="background:rgba(239,68,68,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">原油</div><div style="font-size:1rem;font-weight:800;color:#ef4444">▼ -5.34%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">油漲→通膨預期</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美債10Y</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.89%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">殖利率高→股市壓力</div></div></div></div>
+<div class="card" id="intl-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b" id="intl-meta">載入中…</span>
+      <button onclick="intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
+  <div id="intl-grid" class="intl-grid">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0;grid-column:1/-1">⏳ 載入中…</div>
+  </div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每10分鐘自動更新</div>
+</div>
+
+<script>
+(function(){
+  function render(d){
+    if(!d||!d.data){
+      document.getElementById('intl-meta').textContent='載入失敗';
+      return;
+    }
+    var html='';
+    Object.keys(d.data).forEach(function(name){
+      var it=d.data[name];
+      var sv=it.signal||0;
+      var chg=it.chg_pct||0;
+      var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
+      var arrow=sv===1?'▲':sv===-1?'▼':'─';
+      var bg=sv===1?'rgba(16,185,129,.08)':sv===-1?'rgba(239,68,68,.08)':'transparent';
+      html+='<div class="intl-item" style="background:'+bg+'">'
+        +'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">'+name+'</div>'
+        +'<div style="font-size:1rem;font-weight:800;color:'+ic+'">'+arrow+' '+(chg>=0?'+':'')+chg.toFixed(2)+'%</div>'
+        +'<div style="font-size:.65rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
+        +'</div>';
+    });
+    document.getElementById('intl-grid').innerHTML=html;
+    document.getElementById('intl-meta').textContent=d.updated+' 更新';
+  }
+  window.intlLoad=function(){
+    document.getElementById('intl-meta').textContent='更新中…';
+    fetch('data/intl.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(render)
+      .catch(function(){document.getElementById('intl-meta').textContent='載入失敗';});
+  };
+  intlLoad();
+  setInterval(intlLoad,600000);   /* 每10分鐘 */
+})();
+</script>
 
 <!-- ══════════════ 新聞 ══════════════════════════════ -->
 <div class="card" id="news-card">
@@ -1014,7 +1078,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div id="news-mood" style="margin-bottom:8px"></div>
   <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新</div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新 · 標題自動翻譯為繁體中文</div>
 </div>
 
 <script>
@@ -1024,6 +1088,39 @@ tr:hover td{background:rgba(255,255,255,.014)}
     if(sv===-1) return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
     return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
   }
+
+  function renderNews(items){
+    var html='';
+    items.slice(0,14).forEach(function(n,i){
+      var sv=n.sent_val||0;
+      html+='<div class="news-row">'
+        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
+        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
+        +'<span id="nt-'+i+'" style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
+        +'</div>';
+    });
+    document.getElementById('news-list').innerHTML=html;
+  }
+
+  function translateTitles(items){
+    var list=items.slice(0,14);
+    var joined=list.map(function(n){return n.title;}).join('
+');
+    var url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q='+encodeURIComponent(joined);
+    fetch(url)
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('
+');
+        list.forEach(function(n,i){
+          var el=document.getElementById('nt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});  /* 翻譯失敗保留英文 */
+  }
+
   function render(d){
     if(!d||!d.items||!d.items.length){
       document.getElementById('news-meta').textContent='載入失敗';
@@ -1038,18 +1135,16 @@ tr:hover td{background:rgba(255,255,255,.014)}
       +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
       +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
-    var html='';
-    d.items.slice(0,14).forEach(function(n){
-      var sv=n.sent_val||0;
-      html+='<div class="news-row">'
-        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
-        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
-        +'<span style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
-        +'</div>';
-    });
-    document.getElementById('news-list').innerHTML=html;
-    document.getElementById('news-meta').textContent=d.updated+' 更新';
+    renderNews(d.items);
+    document.getElementById('news-meta').textContent=d.updated+' 更新（翻譯中…）';
+    translateTitles(d.items);
+    /* 翻譯完成後更新 meta（用延遲估算） */
+    setTimeout(function(){
+      var el=document.getElementById('news-meta');
+      if(el&&el.textContent.indexOf('翻譯中')>=0) el.textContent=d.updated+' 更新';
+    },3000);
   }
+
   window.newsLoad=function(){
     document.getElementById('news-meta').textContent='更新中…';
     fetch('data/news.json?_='+Date.now())
@@ -1058,7 +1153,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
       .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
   };
   newsLoad();
-  setInterval(newsLoad,900000);   /* 每15分鐘自動刷新 */
+  setInterval(newsLoad,900000);
 })();
 </script>
 
