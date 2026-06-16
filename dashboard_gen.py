@@ -1270,65 +1270,222 @@ def generate_html(signal, records, stock=None):
     _score_color = ("#ef4444" if total_sc >= thresh else
                     "#22c55e" if total_sc <= -thresh else "#64748b")
 
+    _inst_s = int(signal.get("inst_score", 0))
+    _static_s = tw_s + _inst_s   # 台灣技術 + 法人籌碼（日線，不即時）
+
     score_meter_html = f"""
-<div class="card">
+<div class="card" id="live-score-card" style="margin-bottom:12px">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
     <div class="stitle" style="margin-bottom:0">📊 五維評分系統</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>
-      <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+      <span style="width:7px;height:7px;background:#10b981;border-radius:50%;display:inline-block;animation:blink 1s infinite"></span>
+      <span style="font-size:.6rem;color:#10b981;font-weight:700">LIVE</span>
+      <span id="ls-clock" style="font-size:.6rem;color:#475569"></span>
     </div>
   </div>
 
-  <!-- 總分大計儀表 -->
+  <!-- 總分儀表（JS填充） -->
   <div style="margin-bottom:14px">
     <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
       <div style="font-size:.65rem;color:#64748b">總評分</div>
       <div style="display:flex;align-items:center;gap:8px">
-        <span style="font-size:1.4rem;font-weight:900;color:{_score_color}">{total_sc:+d}</span>
-        <span style="font-size:.78rem;font-weight:700;color:{_score_color}">{_score_label}</span>
+        <span id="ls-total-num" style="font-size:1.4rem;font-weight:900;color:#64748b">--</span>
+        <span id="ls-total-label" style="font-size:.78rem;font-weight:700;color:#64748b">載入中</span>
         <span style="font-size:.65rem;color:#475569">門檻 ±{thresh}</span>
       </div>
     </div>
-    <!-- 主進度條 -->
-    <div style="position:relative;height:22px;background:#0d1829;border-radius:6px;
-                overflow:visible;border:1px solid #1e3050">
-      <!-- 空頭標籤 -->
-      <div style="position:absolute;left:3px;top:50%;transform:translateY(-50%);
-                  font-size:.55rem;color:#22c55e;z-index:2">空</div>
-      <!-- 多頭標籤 -->
-      <div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);
-                  font-size:.55rem;color:#ef4444;z-index:2">多</div>
-      <!-- 填充 -->
-      <div style="position:absolute;left:{_fl:.1f}%;width:{max(_fw,0):.1f}%;height:100%;
-                  background:linear-gradient(90deg,{_fc2},{_fc});
-                  border-radius:5px;opacity:.9;transition:all .5s ease"></div>
-      <!-- 中線 -->
-      <div style="position:absolute;left:50%;width:2px;height:100%;
-                  background:#334155;transform:translateX(-50%)"></div>
-      <!-- 門檻線 -->
-      <div style="position:absolute;left:{_thresh_pct_lo:.1f}%;width:1px;height:100%;
-                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
-      <div style="position:absolute;left:{_thresh_pct_hi:.1f}%;width:1px;height:100%;
-                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
-      <!-- 分數氣泡 -->
-      <div style="position:absolute;left:{_score_pct:.1f}%;top:-18px;transform:translateX(-50%);
-                  background:{_fc};color:#fff;font-size:.6rem;font-weight:700;
-                  padding:1px 5px;border-radius:4px;white-space:nowrap;z-index:3">
-        {total_sc:+d}
-        <div style="position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);
-                    width:0;height:0;border-left:4px solid transparent;
-                    border-right:4px solid transparent;border-top:4px solid {_fc}"></div>
+    <div style="position:relative;height:22px;background:#0d1829;border-radius:6px;overflow:visible;border:1px solid #1e3050">
+      <div style="position:absolute;left:3px;top:50%;transform:translateY(-50%);font-size:.55rem;color:#22c55e;z-index:2">空</div>
+      <div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);font-size:.55rem;color:#ef4444;z-index:2">多</div>
+      <div id="ls-fill" style="position:absolute;left:50%;width:0%;height:100%;border-radius:5px;opacity:.9;transition:all .6s ease"></div>
+      <div style="position:absolute;left:50%;width:2px;height:100%;background:#334155;transform:translateX(-50%)"></div>
+      <div style="position:absolute;left:{_thresh_pct_lo:.1f}%;width:1px;height:100%;background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <div style="position:absolute;left:{_thresh_pct_hi:.1f}%;width:1px;height:100%;background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <div id="ls-bubble" style="position:absolute;left:50%;top:-18px;transform:translateX(-50%);background:#475569;color:#fff;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:4px;white-space:nowrap;z-index:3;transition:all .6s ease">--
+        <div style="position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #475569" id="ls-bubble-arrow"></div>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:.58rem;color:#334155">
-      <span>-{_max_total}</span><span>-{thresh}</span><span>0</span><span>+{thresh}</span><span>+{_max_total}</span>
+      <span>-16</span><span>-{thresh}</span><span>0</span><span>+{thresh}</span><span>+16</span>
     </div>
   </div>
 
-  <!-- 各維度條 -->
-  {dim_bars_html}
-</div>"""
+  <!-- 維度條（JS填充） -->
+  <div id="ls-dims"></div>
+
+  <!-- 四策略勝率 -->
+  <div style="margin-top:10px;padding-top:10px;border-top:1px solid #1e3254">
+    <div style="font-size:.58rem;color:#475569;margin-bottom:7px;letter-spacing:.06em">四策略勝率（回測）</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+      <div style="background:#0d1829;border-radius:8px;padding:8px 10px;border:1px solid #1e3254">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <span style="font-size:.62rem;color:#94a3b8">精準版</span>
+          <span style="font-size:.8rem;font-weight:800;color:#3b82f6">{wr100:.0f}%</span>
+        </div>
+        <div style="height:5px;background:#132236;border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:{wr100:.0f}%;background:#3b82f6;border-radius:3px"></div>
+        </div>
+        <div style="font-size:.58rem;color:#334155;margin-top:3px">{n100} 筆</div>
+      </div>
+      <div style="background:#0d1829;border-radius:8px;padding:8px 10px;border:1px solid #1e3254">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <span style="font-size:.62rem;color:#94a3b8">優化版</span>
+          <span style="font-size:.8rem;font-weight:800;color:#8b5cf6">{wr70:.0f}%</span>
+        </div>
+        <div style="height:5px;background:#132236;border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:{wr70:.0f}%;background:#8b5cf6;border-radius:3px"></div>
+        </div>
+        <div style="font-size:.58rem;color:#334155;margin-top:3px">{n70} 筆</div>
+      </div>
+      <div style="background:#0d1829;border-radius:8px;padding:8px 10px;border:1px solid #1e3254">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <span style="font-size:.62rem;color:#94a3b8">高頻版</span>
+          <span style="font-size:.8rem;font-weight:800;color:#10b981">{wr60:.0f}%</span>
+        </div>
+        <div style="height:5px;background:#132236;border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:{wr60:.0f}%;background:#10b981;border-radius:3px"></div>
+        </div>
+        <div style="font-size:.58rem;color:#334155;margin-top:3px">{n60} 筆</div>
+      </div>
+      <div style="background:#0d1829;border-radius:8px;padding:8px 10px;border:1px solid #1e3254">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <span style="font-size:.62rem;color:#94a3b8">超高頻</span>
+          <span style="font-size:.8rem;font-weight:800;color:#f59e0b">{wr50:.0f}%</span>
+        </div>
+        <div style="height:5px;background:#132236;border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:{wr50:.0f}%;background:#f59e0b;border-radius:3px"></div>
+        </div>
+        <div style="font-size:.58rem;color:#334155;margin-top:3px">{n50} 筆</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 資料時間戳 -->
+  <div id="ls-meta" style="font-size:.58rem;color:#334155;margin-top:8px;text-align:right"></div>
+</div>
+
+<script>
+(function(){{
+  var TW_S    = {tw_s};
+  var INST_S  = {_inst_s};
+  var THRESH  = {thresh};
+  var MAX_TOT = 16;
+
+  var INTL_W = {{
+    '費城半導體':3,'NASDAQ':2,'S&P500':2,'道瓊':1,
+    '日經225':1,'韓KOSPI':1,'恒生指數':1,
+    '上證指數':0,'台股加權':0,'VIX恐慌':0,
+    '美元指數':1,'黃金':0,'原油':1,'美債10Y':1,'比特幣':0
+  }};
+
+  function calcIntl(intl){{
+    var s=0;
+    for(var k in intl){{
+      var w=(INTL_W[k]!==undefined)?INTL_W[k]:1;
+      if(!w) continue;
+      s+=(intl[k].signal||0)*w;
+    }}
+    return s;
+  }}
+
+  function calcPsy(intl){{
+    var vd=intl['VIX恐慌']||{{}};
+    var vix=vd.price||20, vc=vd.chg_pct||0, s=0;
+    if(vix<14) s+=2; else if(vix<18) s+=1;
+    else if(vix<23) s+=0; else if(vix<28) s-=1;
+    else if(vix<35) s-=2; else s-=3;
+    if(vc>15) s-=2; else if(vc>8) s-=1; else if(vc<-10) s+=1;
+    var gd=intl['黃金']||{{}}, gc=gd.chg_pct||0;
+    if(gc>1.5&&vix>25) s-=2; else if(gc<-1&&vix<18) s+=1;
+    var dd=intl['美元指數']||{{}}, dc=dd.chg_pct||0;
+    if(dc>0.5) s-=1; else if(dc<-0.4) s+=1;
+    return s;
+  }}
+
+  function calcNews(items){{
+    if(!items||!items.length) return 0;
+    var b=0,r=0;
+    items.forEach(function(n){{if(n.sent_val===1) b++; else if(n.sent_val===-1) r++;}});
+    return Math.max(-2,Math.min(2,b-r));
+  }}
+
+  function dimBar(label, val, maxAbs, icon){{
+    var c=Math.max(-maxAbs,Math.min(maxAbs,val));
+    var fill=Math.abs(c)/maxAbs*45;
+    var fc=val>=0?'#ef4444':'#22c55e';
+    var lp=val>=0?50:50-fill;
+    var vs=(val>=0?'+':'')+val;
+    return '<div class="srow"><span class="slbl">'+icon+label+'</span>'
+      +'<div class="sbar-wrap"><div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div>'
+      +'<div style="position:absolute;left:'+lp.toFixed(1)+'%;width:'+fill.toFixed(1)+'%;height:100%;background:'+fc+';border-radius:3px;transition:width .5s ease,left .5s ease"></div>'
+      +'</div><span style="font-size:.82rem;font-weight:700;color:'+fc+';width:28px;text-align:right;flex-shrink:0">'+vs+'</span></div>';
+  }}
+
+  function render(intlData, newsData){{
+    var intl  = intlData.data || {{}};
+    var items = newsData.items || [];
+    var int_s = calcIntl(intl);
+    var psy_s = calcPsy(intl);
+    var gld_s = (intl['黃金']||{{}}).signal || 0;
+    var nws_s = calcNews(items);
+    var total = TW_S + INST_S + int_s + psy_s + gld_s + nws_s;
+    var clamp = Math.max(-MAX_TOT, Math.min(MAX_TOT, total));
+    var sPct  = (clamp + MAX_TOT) / (2*MAX_TOT) * 100;
+    var lc, ll, grad, lp, lw;
+    if(total >= THRESH)  {{ lc='#ef4444'; ll='🔴 偏多'; }}
+    else if(total<=-THRESH) {{ lc='#22c55e'; ll='🟢 偏空'; }}
+    else {{ lc='#64748b'; ll='⚪ 中性'; }}
+    if(total>=0) {{ grad='linear-gradient(90deg,#b91c1c,#ef4444)'; lp=50; lw=sPct-50; }}
+    else         {{ grad='linear-gradient(90deg,#15803d,#22c55e)'; lp=sPct; lw=50-sPct; }}
+    lw=Math.max(0,lw);
+
+    var tn=document.getElementById('ls-total-num');
+    var tl=document.getElementById('ls-total-label');
+    var fill=document.getElementById('ls-fill');
+    var bub=document.getElementById('ls-bubble');
+    var arr=document.getElementById('ls-bubble-arrow');
+    if(tn){{ tn.textContent=(total>=0?'+':'')+total; tn.style.color=lc; }}
+    if(tl){{ tl.textContent=ll; tl.style.color=lc; }}
+    if(fill){{ fill.style.left=lp+'%'; fill.style.width=lw+'%'; fill.style.background=grad; }}
+    if(bub){{ bub.style.left=sPct+'%'; bub.style.background=lc; }}
+    if(arr){{ arr.style.borderTopColor=lc; }}
+    var bubTxt=bub?bub.firstChild:null;
+    if(bubTxt&&bubTxt.nodeType===3) bubTxt.nodeValue=(total>=0?'+':'')+total;
+
+    var vix=((intl['VIX恐慌']||{{}}).price||0).toFixed(1);
+    var dims=document.getElementById('ls-dims');
+    if(dims) dims.innerHTML=
+      dimBar('台灣技術',TW_S,5,'📊 ')+
+      dimBar('國際市場',int_s,7,'🌐 ')+
+      dimBar('市場心理',psy_s,5,'🧠 ')+
+      dimBar('黃金',gld_s,2,'🥇 ')+
+      dimBar('新聞情緒',nws_s,2,'📰 ')+
+      '<div style="font-size:.58rem;color:#475569;margin-top:4px">VIX='+vix+'</div>';
+
+    var meta=document.getElementById('ls-meta');
+    if(meta) meta.textContent='市場 '+intlData.updated+' · 新聞 '+(newsData.updated||'--');
+
+    /* 時鐘 */
+    var d=new Date(),h=d.getHours(),m=d.getMinutes(),s=d.getSeconds();
+    var cl=document.getElementById('ls-clock');
+    if(cl) cl.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  }}
+
+  var _intl=null, _news=null;
+  function fetchAll(){{
+    var t=Date.now();
+    fetch('data/intl.json?_='+t).then(function(r){{return r.json();}}).then(function(d){{
+      _intl=d; if(_news) render(_intl,_news);
+    }}).catch(function(){{}});
+    fetch('data/news.json?_='+t).then(function(r){{return r.json();}}).then(function(d){{
+      _news=d; if(_intl) render(_intl,_news);
+    }}).catch(function(){{}});
+  }}
+
+  fetchAll();
+  setInterval(fetchAll, 5000);
+}})();
+</script>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -1554,8 +1711,9 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 
 /* ── Layout ────────────────────────────────────────── */
 .pw{{max-width:900px;margin:0 auto;padding:16px 14px}}
-.two-col{{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;margin-bottom:0}}
+.two-col{{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;margin-bottom:0}}
 .two-col>.card,.two-col>[id$="-card"],.two-col>.j10-card{{margin-bottom:12px}}
+.two-col>div>div.card{{height:100%;box-sizing:border-box}}
 
 /* ── Responsive ────────────────────────────────────── */
 @media(max-width:700px){{
