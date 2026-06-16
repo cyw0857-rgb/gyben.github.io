@@ -29,6 +29,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  長榮航太信號失敗（繼續產生看板）")
 
+# 2b. 更新新聞（同步寫入 data/news.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "news_fetch.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  新聞抓取失敗（繼續產生看板）")
+
 # 3. 執行看板產生
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "dashboard_gen.py")],

@@ -1101,28 +1101,64 @@ def generate_html(signal, records, stock=None):
             '</div>'
         )
 
-    # ── 新聞 ─────────────────────────────────────────────
-    news_html = ""
-    if signal.get("news"):
-        rows = []
-        for n in signal["news"][:12]:
-            sv  = n.get("sent_val", 0)
-            css = "tag-pos" if sv == 1 else ("tag-neg" if sv == -1 else "tag-neu")
-            ico = "✅" if sv == 1 else ("⚠️" if sv == -1 else "⚪")
-            rows.append(f"""<div class="news-row">
-              <span class="news-tag {css}">{ico} {e(n.get('label',''))}</span>
-              {e(n.get('title',''))}
-            </div>""")
-        news_html = f"""<div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-            <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
-            <div style="display:flex;align-items:center;gap:6px">
-              <span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>
-              <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
-            </div>
-          </div>
-          {"".join(rows)}
-        </div>"""
+    # ── 新聞（JS 即時渲染，從 data/news.json 取資料）────────
+    news_html = """<div class="card" id="news-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b" id="news-meta">載入中…</span>
+      <button onclick="newsLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
+  <div id="news-mood" style="margin-bottom:8px"></div>
+  <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新</div>
+</div>
+
+<script>
+(function(){
+  function tagStyle(sv){
+    if(sv===1)  return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
+    if(sv===-1) return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
+    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
+  }
+  function render(d){
+    if(!d||!d.items||!d.items.length){
+      document.getElementById('news-meta').textContent='載入失敗';
+      document.getElementById('news-list').innerHTML='<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 新聞載入失敗，請稍後再試</div>';
+      return;
+    }
+    var mc=d.mood_color||'#64748b';
+    document.getElementById('news-mood').innerHTML=
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
+      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+';border-radius:8px;padding:4px 10px;font-size:.82rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.72rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
+      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
+      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
+      +'</div>';
+    var html='';
+    d.items.slice(0,14).forEach(function(n){
+      var sv=n.sent_val||0;
+      html+='<div class="news-row">'
+        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
+        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
+        +'<span style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
+        +'</div>';
+    });
+    document.getElementById('news-list').innerHTML=html;
+    document.getElementById('news-meta').textContent=d.updated+' 更新';
+  }
+  window.newsLoad=function(){
+    document.getElementById('news-meta').textContent='更新中…';
+    fetch('data/news.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(render)
+      .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
+  };
+  newsLoad();
+  setInterval(newsLoad,900000);   /* 每15分鐘自動刷新 */
+})();
+</script>"""
 
     # ── 長榮航太看板 ─────────────────────────────────────
     stock_html = stock_card_html(stock or {})

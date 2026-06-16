@@ -1,0 +1,45 @@
+name: News Live Update
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # 每15分鐘（GitHub Actions 延遲最慢約20分鐘）
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install
+        run: pip install feedparser --quiet
+
+      - name: Fetch News
+        id: fetch
+        run: |
+          python news_fetch.py
+          if git diff --quiet -- data/news.json 2>/dev/null && [ -f data/news.json ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Push if changed
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config user.name "News Bot"
+          git config user.email "bot@github.com"
+          git add data/news.json
+          git commit -m "News $(TZ='Asia/Taipei' date +'%H:%M') TST"
+          git pull --rebase origin main || true
+          git push origin main
