@@ -38,31 +38,35 @@ def safe(v):
 
 
 def get_prices(symbol):
-    """取得前日收盤 & 當前最新價。
-    盤中優先使用 5分K 拿即時價，否則用日K。
+    """取得前日收盤 & 當前最新價（單一 API 呼叫）。
+    用 5分K period=5d 一次拿完所有資料。
     回傳 (prev_close, current_price) 或 (0, 0)
     """
     ticker = yf.Ticker(symbol)
-
-    # 先抓日K取得前日收盤
-    daily = ticker.history(period="5d")
-    if len(daily) < 2:
-        return 0.0, 0.0
-    prev = safe(daily.iloc[-2]["Close"])
-
-    # 嘗試5分K取即時最新價
     try:
-        intra = ticker.history(period="1d", interval="5m")
-        if len(intra) >= 1:
-            curr = safe(intra.iloc[-1]["Close"])
-            if curr > 0:
-                return prev, curr
+        # 一次抓5天5分K（含盤中最新）
+        hist = ticker.history(period="5d", interval="5m")
+        if len(hist) < 2:
+            raise ValueError("not enough bars")
+        curr = safe(hist.iloc[-1]["Close"])
+        # 找前一個交易日最後一根
+        today = hist.index[-1].date()
+        prev_bars = hist[hist.index.date < today]
+        if len(prev_bars) == 0:
+            raise ValueError("no prev day")
+        prev = safe(prev_bars.iloc[-1]["Close"])
+        if prev > 0 and curr > 0:
+            return prev, curr
     except Exception:
         pass
-
-    # fallback: 日K最後一根
-    curr = safe(daily.iloc[-1]["Close"])
-    return prev, curr
+    # fallback: 日K
+    try:
+        daily = ticker.history(period="5d")
+        if len(daily) >= 2:
+            return safe(daily.iloc[-2]["Close"]), safe(daily.iloc[-1]["Close"])
+    except Exception:
+        pass
+    return 0.0, 0.0
 
 
 def run():

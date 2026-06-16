@@ -1139,28 +1139,43 @@ def generate_html(signal, records, stock=None):
     if(dot){dot.style.background=sourceLabel.indexOf('LIVE')>=0?'#10b981':'#f59e0b';dot.style.animation=sourceLabel.indexOf('LIVE')>=0?'blink 1s infinite':'';}
   }
 
-  /* ── Yahoo Finance 即時 API ── */
+  /* ── Yahoo Finance 即時 API（透過 CORS proxy）── */
   var YF_SYMS = MARKETS.map(function(m){return m.s;}).join(',');
-  var YF_URL  = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='+encodeURIComponent(YF_SYMS)+'&lang=en&region=US&corsDomain=finance.yahoo.com';
+  var YF_BASE = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
+                +encodeURIComponent(YF_SYMS)+'&lang=en&region=US';
+  /* 試三種途徑：直連 → proxy1 → proxy2 */
+  var YF_URLS = [
+    YF_BASE,
+    'https://corsproxy.io/?'+encodeURIComponent(YF_BASE),
+    'https://api.allorigins.win/raw?url='+encodeURIComponent(YF_BASE)
+  ];
+  var _yfIdx = 0;   /* 目前使用第幾條 */
 
   function fetchYahoo(){
-    return fetch(YF_URL)
-      .then(function(r){return r.json();})
-      .then(function(data){
-        var res=(data.quoteResponse||{}).result||[];
-        if(!res.length) throw new Error('empty');
-        var bySymbol={};
-        res.forEach(function(q){bySymbol[q.symbol]=q;});
-        var items=[];
-        MARKETS.forEach(function(m){
-          var q=bySymbol[m.s];
-          if(!q) return;
-          var chg=q.regularMarketChangePercent||0;
-          var price=q.regularMarketPrice||0;
-          items.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
-        });
-        return items;
-      });
+    var urls = YF_URLS.slice(_yfIdx);   /* 從當前有效的開始試 */
+    function tryNext(i){
+      if(i >= urls.length) return Promise.reject(new Error('all failed'));
+      return fetch(urls[i])
+        .then(function(r){return r.json();})
+        .then(function(data){
+          var res=(data.quoteResponse||{}).result||[];
+          if(!res.length) throw new Error('empty');
+          _yfIdx = _yfIdx + i;   /* 記住哪條成功 */
+          var bySymbol={};
+          res.forEach(function(q){bySymbol[q.symbol]=q;});
+          var items=[];
+          MARKETS.forEach(function(m){
+            var q=bySymbol[m.s];
+            if(!q) return;
+            var chg=q.regularMarketChangePercent||0;
+            var price=q.regularMarketPrice||0;
+            items.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
+          });
+          return items;
+        })
+        .catch(function(){ return tryNext(i+1); });
+    }
+    return tryNext(0);
   }
 
   /* ── Fallback: intl.json ── */
