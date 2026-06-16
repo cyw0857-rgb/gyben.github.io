@@ -76,10 +76,6 @@ def run():
         except Exception:
             pass
 
-    new_first = items[0]["title"]
-    if new_first == old_first:
-        print(f"⏭  新聞無變化，跳過更新"); return False
-
     bull  = sum(1 for i in items if i["sent_val"] ==  1)
     bear  = sum(1 for i in items if i["sent_val"] == -1)
     score = bull - bear

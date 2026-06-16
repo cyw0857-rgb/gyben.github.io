@@ -2,10 +2,18 @@ name: Update Dashboard
 
 on:
   schedule:
-    - cron: '*/30 0-5 * * 1-5'  # 每30分鐘 08:00-13:30 TST (Mon-Fri)
-    - cron: '45 5 * * 1-5'      # 13:45 TST (Mon-Fri)
-    - cron: '0 6 * * 1-5'       # 14:00 TST (Mon-Fri)
-  workflow_dispatch:              # 手動觸發按鈕
+    # ── 台灣日盤 08:00-14:00 TST = UTC 00:00-06:00 ──────────────
+    - cron: '*/30 0-5 * * 1-5'   # 每30分 週一~五
+    - cron: '45 5 * * 1-5'        # 13:45 TST
+    - cron: '0 6 * * 1-5'         # 14:00 TST
+
+    # ── 美股盤中 TST 22:30-04:00 = UTC 14:30-20:00 ───────────────
+    - cron: '*/30 14-20 * * 0-4'  # 每30分 週日~週四 UTC (=TST 週一~週五凌晨)
+
+    # ── 每日 06:00 TST (UTC 22:00) 盤後摘要 ──────────────────────
+    - cron: '0 22 * * *'           # 每天 06:00 TST
+
+  workflow_dispatch:               # 手動觸發
 
 jobs:
   update:
@@ -16,20 +24,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install yfinance pandas numpy feedparser requests beautifulsoup4
+          pip install yfinance pandas numpy feedparser requests beautifulsoup4 --quiet
 
-      - name: Fetch Jin10 news (before dashboard build)
+      - name: Fetch Jin10 news
         run: python jin10_fetch.py || echo "Jin10 fetch failed, continuing"
 
-      - name: Run signal engine + stock signal + dashboard
+      - name: Run signal engine + dashboard
         run: python run.py morning
 
       - name: Commit and push
@@ -38,4 +49,5 @@ jobs:
           git config user.email "bot@github.com"
           git add index.html data/
           git diff --cached --quiet || git commit -m "Auto update $(TZ='Asia/Taipei' date +'%Y-%m-%d %H:%M') TST"
+          git pull --rebase origin main || true
           git push

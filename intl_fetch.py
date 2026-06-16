@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""國際市場指數獨立抓取 — yfinance，每10分鐘執行"""
+"""國際市場指數獨立抓取 — yfinance，每10分鐘執行
+   美股開盤時間(台灣)：22:30-04:00，使用5分K即時價格
+"""
 
 import json, os, math
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import yfinance as yf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,20 +37,59 @@ def safe(v):
         return 0.0
 
 
+def get_prices(symbol):
+    """取得前日收盤 & 當前最新價。
+    盤中優先使用 5分K 拿即時價，否則用日K。
+    回傳 (prev_close, current_price) 或 (0, 0)
+    """
+    ticker = yf.Ticker(symbol)
+
+    # 先抓日K取得前日收盤
+    daily = ticker.history(period="5d")
+    if len(daily) < 2:
+        return 0.0, 0.0
+    prev = safe(daily.iloc[-2]["Close"])
+
+    # 嘗試5分K取即時最新價
+    try:
+        intra = ticker.history(period="1d", interval="5m")
+        if len(intra) >= 1:
+            curr = safe(intra.iloc[-1]["Close"])
+            if curr > 0:
+                return prev, curr
+    except Exception:
+        pass
+
+    # fallback: 日K最後一根
+    curr = safe(daily.iloc[-1]["Close"])
+    return prev, curr
+
+
 def run():
-    print("🌐 抓取國際市場指數...", flush=True)
+    tst = datetime.now(timezone(timedelta(hours=8)))
+    print(f"🌐 抓取國際市場指數... ({tst.strftime('%H:%M')} TST)", flush=True)
+
+    # 讀取舊資料，抓失敗時保留舊值
+    old_data = {}
+    if os.path.exists(OUT):
+        try:
+            old_data = json.load(open(OUT, encoding="utf-8")).get("data", {})
+        except Exception:
+            pass
+
     results = {}
     for name, symbol, category, desc in MARKETS:
         try:
-            hist = yf.Ticker(symbol).history(period="5d")
-            if len(hist) < 2:
-                print(f"  ⚠️ {name} 資料不足")
-                continue
-            prev = safe(hist.iloc[-2]["Close"])
-            curr = safe(hist.iloc[-1]["Close"])
+            prev, curr = get_prices(symbol)
             if prev <= 0 or curr <= 0:
-                print(f"  ⚠️ {name} 資料異常（價格為0）"); continue
-            chg  = (curr - prev) / prev * 100
+                if name in old_data:
+                    results[name] = old_data[name]   # 保留舊值
+                    print(f"  ⏩ {name} 沿用舊值")
+                else:
+                    print(f"  ⚠️ {name} 資料異常，略過")
+                continue
+
+            chg = (curr - prev) / prev * 100
 
             if name == "VIX恐慌":
                 sig  = 1 if curr < 20 else (-1 if curr > 25 else 0)
@@ -81,13 +122,13 @@ def run():
             print(f"  {arrow} {name:<9} {note}", flush=True)
         except Exception as ex:
             print(f"  ❌ {name} 失敗: {ex}")
+            if name in old_data:
+                results[name] = old_data[name]
 
-    if not results:
-        print("❌ 全部指數抓取失敗"); return
-
+    # 無論如何都寫檔（保持 updated 時間戳新鮮）
     out = {
-        "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "data":    results,
+        "updated": tst.strftime("%Y-%m-%d %H:%M"),
+        "data":    results or old_data,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
