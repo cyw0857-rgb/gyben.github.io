@@ -2,7 +2,7 @@ name: Intl Markets Update
 
 on:
   schedule:
-    - cron: '*/10 * * * *'   # 每10分鐘（全天候，抓美股/亞股/歐股即時）
+    - cron: '*/5 * * * *'    # 每5分鐘（瀏覽器 Yahoo API 失敗時的 fallback）
   workflow_dispatch:
 
 jobs:

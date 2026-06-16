@@ -1113,49 +1113,128 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
     <div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>
     <div style="display:flex;align-items:center;gap:6px">
+      <span id="intl-live-dot" style="width:7px;height:7px;background:#475569;border-radius:50%;display:inline-block"></span>
       <span style="font-size:.6rem;color:#64748b" id="intl-meta">載入中…</span>
-      <button onclick="intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+      <button onclick="window.intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
   <div id="intl-grid" class="intl-grid">
     <div style="color:#475569;font-size:.78rem;padding:8px 0;grid-column:1/-1">⏳ 載入中…</div>
   </div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每10分鐘自動更新</div>
 </div>
 
 <script>
 (function(){
-  function render(d){
-    if(!d||!d.data){
-      document.getElementById('intl-meta').textContent='載入失敗';
-      return;
-    }
+  /* ── 指數設定（symbol→顯示名 + desc）── */
+  var MARKETS = [
+    {n:'S&P500',    s:'^GSPC',    d:'美股漲→台股漲'},
+    {n:'道瓊',      s:'^DJI',     d:'藍籌股風向球'},
+    {n:'NASDAQ',    s:'^IXIC',    d:'科技股連動'},
+    {n:'費城半導體', s:'^SOX',     d:'對台股影響最大'},
+    {n:'VIX恐慌',   s:'^VIX',     d:'<20樂觀 >25恐慌'},
+    {n:'日經225',   s:'^N225',    d:'亞股風向球'},
+    {n:'韓KOSPI',   s:'^KS11',    d:'半導體競爭對手'},
+    {n:'恒生指數',  s:'^HSI',     d:'港股/中概股連動'},
+    {n:'台股加權',  s:'^TWII',    d:'台股現貨參考'},
+    {n:'美元指數',  s:'DX-Y.NYB', d:'強美元→外資匯出'},
+    {n:'黃金',      s:'GC=F',     d:'避險情緒指標'},
+    {n:'原油',      s:'CL=F',     d:'油漲→通膨預期'},
+    {n:'美債10Y',   s:'^TNX',     d:'殖利率高→股市壓力'},
+    {n:'比特幣',    s:'BTC-USD',  d:'風險偏好指標'}
+  ];
+
+  function calcSig(name, chgPct, price){
+    if(name==='VIX恐慌')   return price<20?1:(price>25?-1:0);
+    if(name==='美元指數')  return chgPct>0.3?-1:(chgPct<-0.3?1:0);
+    if(name==='美債10Y')   return chgPct>3?-1:(chgPct<-3?1:0);
+    if('黃金比特幣原油'.indexOf(name)>=0) return chgPct>0.5?1:(chgPct<-0.5?-1:0);
+    return chgPct>0?1:(chgPct<0?-1:0);
+  }
+
+  function renderGrid(items, sourceLabel){
     var html='';
-    Object.keys(d.data).forEach(function(name){
-      var it=d.data[name];
-      var sv=it.signal||0;
-      var chg=it.chg_pct||0;
+    items.forEach(function(it){
+      var sv=it.sig, chg=it.chg;
       var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
       var arrow=sv===1?'▲':sv===-1?'▼':'─';
       var bg=sv===1?'rgba(16,185,129,.08)':sv===-1?'rgba(239,68,68,.08)':'transparent';
+      var px=it.price>0?'<div style="font-size:.6rem;color:#475569;margin-top:1px">'+(it.price<10?it.price.toFixed(2):it.price.toFixed(it.price>100?0:2))+'</div>':'';
       html+='<div class="intl-item" style="background:'+bg+'">'
-        +'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">'+name+'</div>'
+        +'<div style="font-size:.62rem;color:#94a3b8;margin-bottom:2px">'+it.name+'</div>'
         +'<div style="font-size:1rem;font-weight:800;color:'+ic+'">'+arrow+' '+(chg>=0?'+':'')+chg.toFixed(2)+'%</div>'
-        +'<div style="font-size:.65rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
+        +px
+        +'<div style="font-size:.58rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
         +'</div>';
     });
-    document.getElementById('intl-grid').innerHTML=html;
-    document.getElementById('intl-meta').textContent=d.updated+' 更新';
+    document.getElementById('intl-grid').innerHTML=html||'<div style="color:#475569;font-size:.78rem;grid-column:1/-1">暫無資料</div>';
+    var now=new Date(),h=now.getHours(),m=now.getMinutes(),s=now.getSeconds();
+    var ts=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    document.getElementById('intl-meta').textContent=ts+' · '+sourceLabel;
+    var dot=document.getElementById('intl-live-dot');
+    if(dot){dot.style.background=sourceLabel.indexOf('LIVE')>=0?'#10b981':'#f59e0b';dot.style.animation=sourceLabel.indexOf('LIVE')>=0?'blink 1s infinite':'';}
   }
-  window.intlLoad=function(){
-    document.getElementById('intl-meta').textContent='更新中…';
-    fetch('data/intl.json?_='+Date.now())
+
+  /* ── Yahoo Finance 即時 API ── */
+  var YF_SYMS = MARKETS.map(function(m){return m.s;}).join(',');
+  var YF_URL  = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='+encodeURIComponent(YF_SYMS)+'&lang=en&region=US&corsDomain=finance.yahoo.com';
+
+  function fetchYahoo(){
+    return fetch(YF_URL)
       .then(function(r){return r.json();})
-      .then(render)
-      .catch(function(){document.getElementById('intl-meta').textContent='載入失敗';});
+      .then(function(data){
+        var res=(data.quoteResponse||{}).result||[];
+        if(!res.length) throw new Error('empty');
+        var bySymbol={};
+        res.forEach(function(q){bySymbol[q.symbol]=q;});
+        var items=[];
+        MARKETS.forEach(function(m){
+          var q=bySymbol[m.s];
+          if(!q) return;
+          var chg=q.regularMarketChangePercent||0;
+          var price=q.regularMarketPrice||0;
+          items.push({name:m.n,desc:m.d,chg:chg,price:price,sig:calcSig(m.n,chg,price)});
+        });
+        return items;
+      });
+  }
+
+  /* ── Fallback: intl.json ── */
+  function fetchJson(){
+    return fetch('data/intl.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(function(d){
+        var items=[];
+        MARKETS.forEach(function(m){
+          var it=(d.data||{})[m.n];
+          if(!it) return;
+          items.push({name:m.n,desc:m.d,chg:it.chg_pct||0,price:it.price||0,sig:it.signal||0});
+        });
+        return {items:items, updated:d.updated};
+      });
+  }
+
+  var _useYahoo=true;
+
+  function loadOnce(){
+    if(_useYahoo){
+      fetchYahoo()
+        .then(function(items){renderGrid(items,'● LIVE');})
+        .catch(function(){
+          _useYahoo=false;   /* Yahoo CORS 失敗，改用 JSON */
+          fetchJson().then(function(r){renderGrid(r.items,'JSON '+r.updated);}).catch(function(){});
+        });
+    } else {
+      fetchJson().then(function(r){renderGrid(r.items,'JSON '+r.updated);}).catch(function(){});
+    }
+  }
+
+  window.intlLoad=function(){
+    _useYahoo=true;   /* 手動刷新時重試 Yahoo */
+    loadOnce();
   };
-  intlLoad();
-  setInterval(intlLoad,600000);   /* 每10分鐘 */
+
+  loadOnce();
+  setInterval(loadOnce, 30000);   /* 每30秒 */
 })();
 </script>
 
