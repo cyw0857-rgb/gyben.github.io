@@ -921,7 +921,9 @@ def generate_html(signal, records, stock=None):
     setDot('fetching');
     var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
     var tid  = setTimeout(function(){{ if(ctrl) ctrl.abort(); }}, 9000);
-    fetch('data/jin10_news.json?t='+Date.now(), ctrl ? {{signal:ctrl.signal}} : {{}})
+    fetch('data/jin10_news.json?t='+Date.now(),
+      Object.assign({{cache:'no-store',headers:{{'Cache-Control':'no-cache'}}}},
+                    ctrl ? {{signal:ctrl.signal}} : {{}}))
       .then(function(r){{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }})
       .then(function(d){{
         clearTimeout(tid); _fetching = false;
@@ -1404,7 +1406,7 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 
 /* ── Layout ────────────────────────────────────────── */
 .pw{{max-width:980px;margin:0 auto;padding:16px 14px}}
-.main-grid{{display:grid;grid-template-columns:55% 45%;gap:14px}}
+.main-grid{{display:grid;grid-template-columns:55% 45%;gap:14px;align-items:start}}
 .col-l,.col-r{{min-width:0}}
 
 /* ── Responsive ────────────────────────────────────── */
