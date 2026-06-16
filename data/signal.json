@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-06-15 20:45",
+  "generated_at": "2026-06-16 23:17",
   "mode": "morning",
-  "signal_date": "2026-06-15",
-  "trade_date": "2026-06-16",
+  "signal_date": "2026-06-16",
+  "trade_date": "2026-06-17",
   "direction": 0,
   "total_score": 7,
   "tw_score": 2,
-  "intl_score": 8,
+  "intl_score": 7,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 0,
-  "foreign_fut_net": -2914,
+  "inst_score": -1,
+  "foreign_fut_net": -3145,
   "foreign_cash_b": 0,
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 7,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±7",
-  "tw_last_close": 45396.98828125,
-  "tw_chg_pct": 2.7801130493521287,
-  "tw_ma5": 44129.09375,
-  "tw_ma10": 44691.312109375,
-  "tw_rsi": 57.71161414471376,
-  "tw_macd": 1104.7882039474061,
-  "tw_macds": 1347.4878668266356,
+  "tw_last_close": 45809.19140625,
+  "tw_chg_pct": 3.713353015059151,
+  "tw_ma5": 44211.534375,
+  "tw_ma10": 44732.532421875,
+  "tw_rsi": 59.10087425726114,
+  "tw_macd": 1137.6705045171984,
+  "tw_macds": 1354.0643269405941,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 43750.25234375,
   "tw_ma10_p2": 44685.404296875,
   "tw_ma20_p2": 43568.71875,
-  "tw_ma20": 43793.9771484375,
+  "tw_ma20": 43814.5873046875,
   "stats_real": {
     "total": 0,
     "wins": 0,
@@ -145,91 +145,91 @@
     "streak": 0
   },
   "gold": {
-    "price_usd": 4364.60009765625,
-    "chg_pct": 3.549231261120996,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +3.5%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️"
+    "price_usd": 4344.2998046875,
+    "chg_pct": 0.376612862465342,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.4%，影響中性"
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7431.4599609375,
-      "chg_pct": 0.5025513873057041,
+      "price": 7543.35009765625,
+      "chg_pct": 1.5056279291940737,
       "signal": 1,
-      "note": "+0.50%",
+      "note": "+1.51%",
       "desc": "美股漲→台股漲"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25888.83984375,
-      "chg_pct": 0.3067831463903489,
+      "price": 26612.439453125,
+      "chg_pct": 2.7950252454039153,
       "signal": 1,
-      "note": "+0.31%",
+      "note": "+2.80%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13371.4697265625,
-      "chg_pct": 1.5186592380902246,
+      "price": 13755.138671875,
+      "chg_pct": 2.8693102041755325,
       "signal": 1,
-      "note": "+1.52%",
+      "note": "+2.87%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.639999389648438,
-      "chg_pct": -5.882358017962736,
+      "price": 15.930000305175781,
+      "chg_pct": -9.898189874395486,
       "signal": 1,
-      "note": "VIX=16.6(低恐慌)",
+      "note": "VIX=15.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 69317.5,
-      "chg_pct": 4.994636453302235,
+      "price": 66020.0390625,
+      "chg_pct": 2.8072970781990656,
       "signal": 1,
-      "note": "+4.99%",
+      "note": "+2.81%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 8545.98046875,
-      "chg_pct": 5.199164233060254,
-      "signal": 1,
-      "note": "+5.20%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.51399993896484,
-      "chg_pct": -0.23659153988486842,
+      "price": 99.58200073242188,
+      "chg_pct": -0.16842031837406016,
       "signal": 0,
-      "note": "-0.24%(中性)",
+      "note": "-0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4364.60009765625,
-      "chg_pct": 3.549231261120996,
-      "signal": -1,
-      "note": "+3.55%(避險↑)",
+      "price": 4344.2998046875,
+      "chg_pct": 0.376612862465342,
+      "signal": 0,
+      "note": "+0.38%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.08000183105469,
-      "chg_pct": -5.655037202737414,
+      "price": 76.44000244140625,
+      "chg_pct": -5.337458276896285,
       "signal": -1,
-      "note": "-5.66%",
+      "note": "-5.34%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.453000068664551,
-      "chg_pct": -0.757742812080994,
+      "price": 4.447000026702881,
+      "chg_pct": -0.8914633821049083,
       "signal": 0,
-      "note": "4.45%(-0.76%)",
+      "note": "4.45%(-0.89%)",
       "desc": "殖利率高→股市壓力"
     }
   },
@@ -248,18 +248,6 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says US Won’t Renew USMCA, Signaling Yearly Reviews - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump threatens tariffs on 60 trading partners including UK and Canada over ‘for",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "WATCH: Trump says he's 'not looking to renew' U.S. trade deal with Canada and Me",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -271,6 +259,18 @@
       "sent_val": -1
     },
     {
+      "label": "川普動態",
+      "title": "Trump says EU has until July 4 to approve last year’s trade deal or it will face",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
       "label": "關稅/貿易",
       "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
       "sentiment": "⚠️偏空",
@@ -278,69 +278,69 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How to Win a Trade War - Paul Krugman | Substack",
+      "title": "US reciprocal trade deals built to push America's trade partners away from China",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Fiscal and Economic Effects of Tariffs - Econofact",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. and China seek to repair damage from tariff war that sent trade into a free",
+      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Why Is Taiwan Semiconductor Stock Gaining Monday? - Benzinga",
+      "title": "What Makes Taiwan Semiconductor Manufacturing (TSM) a Strong Bet? - Yahoo Financ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Potential Google-Samsung deal highlights Taiwan Semiconductor's strains: Wedbush",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "TSMC and Amkor Technology Announce Long Term Partnership to Accelerate Advanced ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "AI computing capacity bottleneck easing? Report: Taiwan Semiconductor's CoWoS sh",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan Semiconductor VP Makes $75K Stock Purchase - Benzinga",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) is This Famous Billionaire’s Biggest AI Stock Holding",
+      "title": "Aletheia Capital raises Taiwan Semi stock price target on capacity expansion - I",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "FX Weekly Overview (Brazil Issue) - StoneX",
+      "title": "Fed set to make interest rate decision as inflation hits 3-year high - ABC News ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Kevin Warsh's Fed is not expected to make any change to rates for a while, accor",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Dot Plot Remains the Fed's Most Powerful Market Signal - StoneX",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Kevin Warsh's first Fed meeting could bring unwelcome news for Trump - USA Today",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Oil Tumbles to $80 on Iran Deal. Could Fed Rate Cuts Be Back in Play? - 24/7 Wal",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Stock Market Investors Get an Urgent Warning From the Bond Market. History Says ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The Fed's Two-Day Meeting Starts Today—Here's What You Need to Know - Investoped",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }

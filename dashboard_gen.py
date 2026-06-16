@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """台指期 HTML 看板產生器 — 暗色主題，手機電腦通用"""
 
-import json, os, subprocess
+import json, os, subprocess, math
 import pandas as pd
 from datetime import datetime
 
@@ -41,7 +41,7 @@ def pnl_color(v):
     return "#10b981" if v >= 0 else "#ef4444"
 
 def stock_card_html(stock):
-    """長榮航太 (2645.TW) 看板卡片"""
+    """長榮航太 (2645.TW) 看板卡片 — 左右雙欄美化版"""
     if not stock:
         return ""
 
@@ -53,111 +53,262 @@ def stock_card_html(stock):
     sig_color   = stock.get("signal_color", "#9ca3af")
     hold_advice = stock.get("hold_advice", "─")
     hold_color  = stock.get("hold_color",  "#9ca3af")
-    score       = stock.get("score", 0)
-    rsi         = stock.get("rsi", 0)
-    ma5         = stock.get("ma5", 0)
-    ma10        = stock.get("ma10", 0)
-    ma20        = stock.get("ma20", 0)
-    reasons     = stock.get("reasons", [])
+    total_score = stock.get("total_score", stock.get("score", 0))
+    tech_score  = stock.get("tech_score", 0)
     updated     = stock.get("updated", "")
-    trend_label = stock.get("trend_label", "")
-    support     = stock.get("support", 0)
-    resistance  = stock.get("resistance", 0)
+    rsi         = stock.get("rsi", 0)
+    k_val       = stock.get("k", 0)
+    d_val       = stock.get("d", 0)
+    macd        = stock.get("macd", 0)
+    macds       = stock.get("macds", 0)
+    ma5         = stock.get("ma5", 0)
+    ma20        = stock.get("ma20", 0)
+    ma60        = stock.get("ma60", 0)
+    tech_details = stock.get("tech_details", [])
+    inst        = stock.get("inst", {})
+    retail      = stock.get("retail", {})
+    weekly      = stock.get("weekly", {})
     forecast    = stock.get("forecast", [])
+    trend_label = stock.get("trend_label", "")
     daily_vol   = stock.get("daily_vol_pct", 0)
 
-    chg_color = "#10b981" if chg_pct >= 0 else "#ef4444"
-    chg_arrow = "▲" if chg_pct >= 0 else "▼"
-    score_color = "#10b981" if score >= 0 else "#ef4444"
+    chg_color   = "#10b981" if chg_pct >= 0 else "#ef4444"
+    chg_arrow   = "▲" if chg_pct >= 0 else "▼"
+    score_color = "#10b981" if total_score >= 0 else "#ef4444"
+    rsi_color   = "#10b981" if 45 < rsi < 72 else ("#f59e0b" if rsi >= 72 else "#ef4444")
 
-    # 原因列表
-    reason_html = "".join(
-        f'<div style="font-size:.72rem;color:#94a3b8;padding:2px 0">• {e(r)}</div>'
-        for r in reasons
+    # ── 三大法人 5日表格 ──────────────────────────────────
+    def num_fmt(v):
+        if v > 0:   return f'<span style="color:#10b981">+{v//1000:.0f}k</span>'
+        if v < 0:   return f'<span style="color:#ef4444">{v//1000:.0f}k</span>'
+        return '<span style="color:#6b7280">─</span>'
+
+    inst_rows_html = ""
+    for row in inst.get("rows", []):
+        inst_rows_html += (
+            f'<tr>'
+            f'<td style="color:#94a3b8;padding:4px 3px">{row["date"]}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["foreign"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["trust"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px">{num_fmt(row["dealer"])}</td>'
+            f'<td style="text-align:right;padding:4px 3px;font-weight:700">{num_fmt(row["total"])}</td>'
+            f'</tr>'
+        )
+
+    t5f  = inst.get("total_foreign", 0)
+    t5t  = inst.get("total_trust", 0)
+    t5d  = inst.get("total_dealer", 0)
+    inst_mood       = inst.get("mood", "─")
+    inst_mood_color = "#10b981" if inst_mood == "偏多" else ("#ef4444" if inst_mood == "偏空" else "#9ca3af")
+
+    # ── 散戶情緒 ─────────────────────────────────────────
+    retail_mood       = retail.get("mood", "─")
+    retail_mood_color = "#10b981" if "樂觀" in retail_mood else ("#ef4444" if "悲觀" in retail_mood else "#9ca3af")
+    vol_ratio         = retail.get("vol_ratio", 1.0)
+    vol_bar_w         = min(int(vol_ratio / 3.0 * 100), 100)
+    vol_color         = "#f59e0b" if vol_ratio > 1.5 else ("#10b981" if vol_ratio >= 0.8 else "#6b7280")
+    retail_signals    = retail.get("signals", [])
+    retail_sig_html   = "".join(
+        f'<div style="font-size:.72rem;color:#94a3b8;padding:2px 0">{s["icon"]} {e(s["text"])}</div>'
+        for s in retail_signals
     )
 
-    # 半年走勢表
-    def trend_arrow(t):
-        return "▲" if t == "up" else ("▼" if t == "down" else "─")
-    def trend_col(t):
-        return "#10b981" if t == "up" else ("#ef4444" if t == "down" else "#9ca3af")
+    # ── 技術面細節 ────────────────────────────────────────
+    tech_detail_html = "".join(
+        f'<div style="font-size:.72rem;padding:3px 0;border-bottom:1px solid #0f172a">'
+        f'<span style="margin-right:4px">{d["icon"]}</span>'
+        f'<span style="color:#cbd5e1">{e(d["text"])}</span>'
+        f'<span style="float:right;color:{"#10b981" if d["score"]>0 else "#ef4444" if d["score"]<0 else "#6b7280"}'
+        f';font-weight:700">{d["score"]:+d}</span>'
+        f'</div>'
+        for d in tech_details
+    )
+
+    # ── 下週預估 ─────────────────────────────────────────
+    wp_low    = weekly.get("proj_low", 0)
+    wp_high   = weekly.get("proj_high", 0)
+    wp_center = weekly.get("proj_center", 0)
+    wp_trend  = weekly.get("trend_bias", "")
+    wp_hint   = weekly.get("op_hint", "")
+    wp_sup    = weekly.get("support", 0)
+    wp_res    = weekly.get("resistance", 0)
+    trend_color = "#10b981" if "多" in wp_trend else ("#ef4444" if "空" in wp_trend else "#9ca3af")
+
+    # ── 半年走勢 ─────────────────────────────────────────
+    def ta(t): return "▲" if t == "up" else ("▼" if t == "down" else "─")
+    def tc(t): return "#10b981" if t == "up" else ("#ef4444" if t == "down" else "#9ca3af")
 
     fc_rows = ""
     for fc in forecast:
-        ta = trend_arrow(fc["trend"])
-        tc = trend_col(fc["trend"])
         chg = fc["chg_pct"]
         cc  = "#10b981" if chg >= 0 else "#ef4444"
         fc_rows += (
             f'<tr>'
-            f'<td style="color:#94a3b8">{fc["month"]}</td>'
-            f'<td style="color:{tc};font-weight:700">{ta} {fc["price"]}</td>'
-            f'<td style="color:{cc}">{chg:+.1f}%</td>'
-            f'<td style="color:#6b7280;font-size:.7rem">{fc["price_low"]} ~ {fc["price_high"]}</td>'
+            f'<td style="color:#94a3b8;padding:4px 3px">{fc["month"]}</td>'
+            f'<td style="color:{tc(fc["trend"])};font-weight:700;padding:4px 3px">{ta(fc["trend"])} {fc["price"]}</td>'
+            f'<td style="color:{cc};padding:4px 3px">{chg:+.1f}%</td>'
+            f'<td style="color:#6b7280;font-size:.68rem;padding:4px 3px">{fc["price_low"]}~{fc["price_high"]}</td>'
             f'</tr>'
         )
 
     return f"""
-<div class="card" style="border:1px solid #334155">
-  <div class="stitle">✈️ {e(name)} ({e(symbol)}) &nbsp;·&nbsp; {e(updated)} 更新</div>
+<div class="card stock-premium-card" style="padding:0;overflow:hidden">
 
-  <!-- 目前價格 -->
-  <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
-    <div style="font-size:1.8rem;font-weight:800">NT${last_close:.2f}</div>
-    <div style="font-size:1rem;font-weight:700;color:{chg_color}">{chg_arrow} {chg_pct:+.2f}%</div>
+  <!-- 標題列 -->
+  <div style="background:linear-gradient(90deg,#162032,#0e1829);
+              padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
+    <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ {e(name)} ({e(symbol)})</div>
+    <div style="font-size:.6rem;color:#64748b">{e(updated)} 更新</div>
   </div>
 
-  <!-- 明日預測 + 續抱建議 -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
-    <div style="background:#0f172a;border-radius:10px;padding:12px;text-align:center">
-      <div style="font-size:.65rem;color:#6b7280;margin-bottom:4px">明日預測</div>
-      <div style="font-size:1.1rem;font-weight:800;color:{sig_color}">{e(signal_text)}</div>
-      <div style="font-size:.72rem;color:{score_color};margin-top:4px">評分 {score:+d}</div>
+  <div style="padding:14px 14px 0">
+
+  <!-- 左右雙欄 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+
+    <!-- 左：價格 + 信號 + 指標 -->
+    <div>
+      <div style="background:#080f1e;border-radius:10px;padding:12px;margin-bottom:8px;text-align:center">
+        <div style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
+        <div style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
+        <div style="font-size:.6rem;color:#475569;margin-top:4px">MA5 {ma5:.1f} · MA20 {ma20:.1f} · MA60 {ma60:.1f}</div>
+      </div>
+      <div style="background:{sig_color}1a;border:1.5px solid {sig_color};
+                  border-radius:10px;padding:10px;margin-bottom:8px;text-align:center">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:3px">明日預測</div>
+        <div style="font-size:1rem;font-weight:900;color:{sig_color}">{e(signal_text)}</div>
+        <div style="font-size:.65rem;margin-top:4px">
+          <span style="color:{score_color};font-weight:700">綜合 {total_score:+d}</span>
+          <span style="color:#475569"> · 技術 {tech_score:+d} · 法人 {inst.get("score",0):+d} · 散戶 {retail.get("score",0):+d}</span>
+        </div>
+      </div>
+      <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:8px">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:3px">續抱建議</div>
+        <div style="font-size:.75rem;font-weight:700;color:{hold_color};line-height:1.4">{e(hold_advice)}</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px">
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">RSI</div>
+          <div style="font-size:.88rem;font-weight:800;color:{rsi_color}">{rsi:.0f}</div>
+        </div>
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">K/D</div>
+          <div style="font-size:.72rem;font-weight:700;color:#f59e0b">{k_val:.0f}/{d_val:.0f}</div>
+        </div>
+        <div style="background:#080f1e;border-radius:8px;padding:7px;text-align:center">
+          <div style="font-size:.58rem;color:#6b7280">MACD</div>
+          <div style="font-size:.72rem;font-weight:700;color:{"#10b981" if macd > macds else "#ef4444"}">{"金叉" if macd > macds else "死叉"}</div>
+        </div>
+      </div>
     </div>
-    <div style="background:#0f172a;border-radius:10px;padding:12px;text-align:center">
-      <div style="font-size:.65rem;color:#6b7280;margin-bottom:4px">續抱建議</div>
-      <div style="font-size:.82rem;font-weight:700;color:{hold_color};line-height:1.35">{e(hold_advice)}</div>
+
+    <!-- 右：三大法人 -->
+    <div>
+      <div style="background:#080f1e;border-radius:10px;padding:10px;height:100%">
+        <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px;letter-spacing:.05em">
+          🏦 三大法人 近5日（千股）
+        </div>
+        <table style="width:100%;border-collapse:collapse;font-size:.66rem">
+          <tr>
+            <th style="color:#475569;padding:2px 2px;text-align:left">日期</th>
+            <th style="color:#3b82f6;padding:2px 2px;text-align:right">外資</th>
+            <th style="color:#8b5cf6;padding:2px 2px;text-align:right">投信</th>
+            <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
+            <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
+          </tr>
+          {inst_rows_html if inst_rows_html else '<tr><td colspan="5" style="color:#4b5563;text-align:center;padding:8px">暫無資料</td></tr>'}
+        </table>
+        <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
+          <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
+            <span style="font-size:.62rem">外資 {num_fmt(t5f)}</span>
+            <span style="font-size:.62rem">投信 {num_fmt(t5t)}</span>
+            <span style="font-size:.62rem">自營 {num_fmt(t5d)}</span>
+          </div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap">
+            <div style="background:{inst_mood_color}22;border:1px solid {inst_mood_color};
+                        border-radius:5px;padding:2px 7px;font-size:.65rem;
+                        font-weight:700;color:{inst_mood_color}">法人 {inst_mood}</div>
+            <div style="background:{retail_mood_color}22;border:1px solid {retail_mood_color};
+                        border-radius:5px;padding:2px 7px;font-size:.65rem;
+                        font-weight:700;color:{retail_mood_color}">散戶 {retail_mood}</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- 技術指標 -->
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px">
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">RSI</div>
-      <div style="font-size:.9rem;font-weight:700;color:{'#10b981' if 45<rsi<72 else '#f59e0b' if rsi>=72 else '#ef4444'}">{rsi:.0f}</div>
+  <!-- 散戶情緒 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">👥 散戶情緒推估</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+      <div style="font-size:.8rem;font-weight:700;color:{retail_mood_color}">{retail_mood}</div>
+      <div style="flex:1">
+        <div style="font-size:.58rem;color:#475569;margin-bottom:2px">成交量 / 20日均量</div>
+        <div style="background:#162032;border-radius:4px;height:7px;overflow:hidden">
+          <div style="background:{vol_color};height:100%;width:{vol_bar_w}%;border-radius:4px"></div>
+        </div>
+      </div>
+      <div style="font-size:.75rem;font-weight:700;color:{vol_color}">{vol_ratio:.1f}x</div>
     </div>
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">支撐</div>
-      <div style="font-size:.9rem;font-weight:700;color:#10b981">{support}</div>
-    </div>
-    <div style="background:#0f172a;border-radius:8px;padding:8px;text-align:center">
-      <div style="font-size:.6rem;color:#6b7280">壓力</div>
-      <div style="font-size:.9rem;font-weight:700;color:#ef4444">{resistance}</div>
-    </div>
+    {retail_sig_html if retail_sig_html else '<div style="font-size:.7rem;color:#475569">量能正常，無特殊訊號</div>'}
   </div>
 
-  <!-- 信號依據 -->
-  <div style="margin-bottom:12px">
-    {reason_html}
+  <!-- 技術面評分依據 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">📊 技術面評分依據</div>
+    {tech_detail_html if tech_detail_html else '<div style="font-size:.7rem;color:#475569">技術資料載入中</div>'}
+  </div>
+
+  <!-- 下週走勢預估 -->
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
+    <div style="font-size:.6rem;color:#6b7280;margin-bottom:8px">📅 下週走勢預估（5個交易日）</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+      <div style="background:#162032;border-radius:8px;padding:8px">
+        <div style="font-size:.58rem;color:#6b7280;margin-bottom:3px">預估區間</div>
+        <div style="font-size:.85rem;font-weight:800">
+          <span style="color:#10b981">{wp_low}</span>
+          <span style="color:#475569"> ~ </span>
+          <span style="color:#ef4444">{wp_high}</span>
+        </div>
+        <div style="font-size:.62rem;color:#475569;margin-top:2px">中心 {wp_center}</div>
+      </div>
+      <div style="background:#162032;border-radius:8px;padding:8px">
+        <div style="font-size:.58rem;color:#6b7280;margin-bottom:3px">支撐 / 壓力</div>
+        <div style="font-size:.75rem;font-weight:700">
+          <span style="color:#10b981">{wp_sup}</span>
+          <span style="color:#475569"> / </span>
+          <span style="color:#ef4444">{wp_res}</span>
+        </div>
+        <div style="font-size:.62rem;color:{trend_color};margin-top:2px;font-weight:600">{wp_trend}</div>
+      </div>
+    </div>
+    <div style="background:rgba(99,102,241,.08);border-left:3px solid #6366f1;
+                padding:7px 10px;border-radius:0 6px 6px 0;font-size:.7rem;color:#a5b4fc">
+      💡 {e(wp_hint)}
+    </div>
   </div>
 
   <!-- 半年走勢預測 -->
-  <div style="border-top:1px solid #334155;padding-top:10px">
-    <div style="font-size:.68rem;color:#6b7280;margin-bottom:8px;letter-spacing:.08em">
-      📅 半年走勢預測 &nbsp;·&nbsp; {e(trend_label)} &nbsp;·&nbsp; 日波動率 {daily_vol:.1f}%
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <div style="font-size:.6rem;color:#6b7280">📈 半年走勢預測</div>
+      <div style="font-size:.6rem;color:#475569">{e(trend_label)} · 日波動率 {daily_vol:.1f}%</div>
     </div>
-    <table style="font-size:.78rem">
-      <tr>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">月份</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">預估價</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">變動</th>
-        <th style="color:#6b7280;font-size:.65rem;padding:3px 4px">區間（±1σ）</th>
+    <table style="width:100%;border-collapse:collapse;font-size:.75rem">
+      <tr style="border-bottom:1px solid #1e3050">
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:left">月份</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">預估價</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">變動</th>
+        <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">±1σ區間</th>
       </tr>
       {fc_rows}
     </table>
-    <div style="font-size:.62rem;color:#4b5563;margin-top:6px">
-      ⚠️ 走勢預測基於線性回歸 + 技術指標，僅供參考，不構成投資建議
+    <div style="font-size:.6rem;color:#374151;margin-top:6px;text-align:center">
+      ⚠️ 線性回歸預測，僅供參考，不構成投資建議
     </div>
+  </div>
+
   </div>
 </div>"""
 
@@ -684,78 +835,155 @@ def generate_html(signal, records, stock=None):
               </p>
             </div>"""
 
-    # ── 金十數據快訊（JS 自動刷新，靜態初始值由 JSON 讀入）─
-    jin10_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "jin10_news.json")
-    jin10_init = "{}"
-    if os.path.exists(jin10_path):
-        with open(jin10_path, encoding="utf-8") as _f:
-            jin10_init = _f.read().replace("</", "<\\/")   # 防止 HTML 注入
-
-    jin10_html = f"""
-<div class="card" id="jin10-card">
+    # ── 金十數據快訊（瀏覽器直連 jin10.com，不依賴 GitHub Actions）─
+    jin10_html = """
+<div class="card j10-card" id="jin10-card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
     <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
-    <div style="font-size:.65rem;color:#6b7280" id="jin10-meta">載入中…</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span id="jin10-status-dot" style="display:inline-block;width:7px;height:7px;
+            border-radius:50%;background:#f59e0b;animation:blink 1s infinite"></span>
+      <span style="font-size:.62rem;color:#64748b" id="jin10-meta">載入中…</span>
+    </div>
   </div>
-  <div id="jin10-mood" style="margin-bottom:10px"></div>
+  <div id="jin10-mood" style="margin-bottom:10px">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 直連金十數據…</div>
+  </div>
   <div id="jin10-list"></div>
-  <div style="font-size:.62rem;color:#4b5563;margin-top:8px;text-align:center">
-    每5分鐘自動更新 · <span id="jin10-countdown">5:00</span> 後刷新
+  <div style="display:flex;justify-content:space-between;align-items:center;
+              margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
+    <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
+    <div style="font-size:.62rem;color:#475569">
+      <span id="jin10-countdown">5:00</span> 後刷新
+    </div>
   </div>
 </div>
 
 <script>
-(function(){{
-  var INIT = {jin10_init};
-  var BASE = window.location.href.replace(/\\/[^\\/]*$/, '');
+(function(){
+  var BULL=['上漲','上涨','漲','涨','突破','走強','走强','利好','降息','增長','增长',
+    '新高','反彈','反弹','走高','強勁','强劲','超預期','超预期','多頭','多头',
+    '做多','上行','回升','好轉','好转','樂觀','乐观','刺激','寬鬆','宽松',
+    '復甦','复苏','擴張','扩张','增速','就業','就业','非農','利多',
+    'surge','rally','gain','rise','bull','strong','beat','record','optimism',
+    'stimulus','cut','ease','growth','rebound'];
+  var BEAR=['下跌','跌','走弱','利空','加息','衰退','下滑','萎縮','萎缩','崩','拋售','抛售',
+    '通脹','通胀','風險','风险','緊縮','紧缩','下行','惡化','恶化','悲觀','悲观',
+    '衝突','冲突','制裁','危機','危机','違約','违约','破產','破产','失業','失业',
+    'fall','drop','plunge','crash','recession','inflation','fear','risk','tension',
+    'tariff','sanction','ban','war','decline','slowdown','miss','layoff'];
+  var SKIP=['【提示】','【广告】','【招聘】'];
 
-  function tagCss(css){{
-    if(css==='pos') return 'background:rgba(16,185,129,.2);color:#10b981';
-    if(css==='neg') return 'background:rgba(239,68,68,.2);color:#ef4444';
-    return 'background:rgba(148,163,184,.12);color:#94a3b8';
-  }}
+  function stripHtml(s){ return s.replace(/<[^>]+>/g,'').trim(); }
 
-  function render(d){{
-    if(!d || !d.items) return;
-    var mc = d.mood_color || '#9ca3af';
-    document.getElementById('jin10-mood').innerHTML =
-      '<div style="display:flex;gap:10px;align-items:center">'
-      +'<div style="background:'+mc+';color:#fff;border-radius:8px;padding:6px 14px;font-size:.9rem;font-weight:800">'+d.mood+'</div>'
-      +'<div style="font-size:.75rem;color:#9ca3af">多:'+d.bull+' 空:'+d.bear+' 淨:'+((d.score>=0?'+':'')+d.score)+'</div>'
+  function sentiment(txt){
+    var lo=txt.toLowerCase(),b=0,br=0;
+    BULL.forEach(function(w){ if(lo.indexOf(w)>=0) b++; });
+    BEAR.forEach(function(w){ if(lo.indexOf(w)>=0) br++; });
+    return b>br?1:br>b?-1:0;
+  }
+
+  function tagStyle(css){
+    if(css==='pos') return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
+    if(css==='neg') return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
+    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
+  }
+
+  function setDot(state){
+    var dot=document.getElementById('jin10-status-dot');
+    if(!dot) return;
+    dot.style.background=state==='ok'?'#10b981':state==='err'?'#ef4444':'#f59e0b';
+    dot.style.animation=state==='fetching'?'blink 1s infinite':'none';
+  }
+
+  function j10Process(raw){
+    var items=[],bull=0,bear=0;
+    raw.forEach(function(it){
+      var td=it.data||{};
+      var c=stripHtml(td.title||td.content||'');
+      if(!c||c.length<5) return;
+      for(var i=0;i<SKIP.length;i++){ if(c.indexOf(SKIP[i])>=0) return; }
+      var sv=sentiment(c);
+      if(sv===1) bull++;else if(sv===-1) bear++;
+      items.push({time:(it.time||'').slice(0,16),content:c.slice(0,120),
+        sentiment:sv,tag:sv===1?'✅偏多':sv===-1?'⚠️偏空':'⚪中性',
+        tag_css:sv===1?'pos':sv===-1?'neg':'neu'});
+    });
+    items=items.slice(0,30);
+    var tot=bull-bear,mood,mc;
+    if(tot>=3){mood='偏多 📈';mc='#10b981';}
+    else if(tot>=1){mood='略偏多';mc='#34d399';}
+    else if(tot<=-3){mood='偏空 📉';mc='#ef4444';}
+    else if(tot<=-1){mood='略偏空';mc='#f87171';}
+    else{mood='中性 ─';mc='#9ca3af';}
+    var now=new Date(),hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');
+    return {items:items,bull:bull,bear:bear,score:tot,mood:mood,mood_color:mc,updated:hh+':'+mm};
+  }
+
+  function render(d){
+    if(!d||!d.items||!d.items.length){
+      document.getElementById('jin10-mood').innerHTML=
+        '<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 金十數據載入失敗，請稍後刷新</div>';
+      document.getElementById('jin10-meta').textContent='載入失敗';
+      setDot('err');return;
+    }
+    var mc=d.mood_color||'#64748b';
+    document.getElementById('jin10-mood').innerHTML=
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
+      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+
+         ';border-radius:8px;padding:5px 12px;font-size:.88rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.73rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
+      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
+      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
       +'</div>';
-    var html = '';
-    d.items.slice(0,15).forEach(function(it){{
-      html += '<div style="padding:7px 0;border-bottom:1px solid #1e293b;font-size:.8rem;line-height:1.4">'
-        +'<span style="'+tagCss(it.tag_css)+';font-size:.65rem;padding:1px 5px;border-radius:4px;margin-right:5px;white-space:nowrap">'+it.tag+'</span>'
-        +'<span style="color:#94a3b8;font-size:.68rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
-        +it.content
+    var html='';
+    d.items.slice(0,15).forEach(function(it){
+      html+='<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
+        +'font-size:.78rem;line-height:1.45">'
+        +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
+        +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
+        +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
+        +'<span style="color:#cbd5e1">'+it.content+'</span>'
         +'</div>';
-    }});
-    document.getElementById('jin10-list').innerHTML = html;
-    document.getElementById('jin10-meta').textContent = d.updated+' 更新';
-  }}
+    });
+    document.getElementById('jin10-list').innerHTML=html;
+    document.getElementById('jin10-meta').textContent=d.updated+' 更新';
+    setDot('ok');
+  }
 
-  function fetchNews(){{
-    fetch('data/jin10_news.json?t='+Date.now())
-      .then(function(r){{ return r.json(); }})
-      .then(function(d){{ render(d); }})
-      .catch(function(){{}});
-  }}
+  function j10Load(){
+    var old=document.getElementById('_j10s');
+    if(old) old.parentNode.removeChild(old);
+    window.newest=null;
+    setDot('fetching');
+    var s=document.createElement('script');
+    s.id='_j10s';
+    s.src='https://www.jin10.com/flash_newest.js?_='+Date.now();
+    s.onload=function(){
+      if(window.newest&&Array.isArray(window.newest))
+        render(j10Process(window.newest));
+      else{
+        document.getElementById('jin10-meta').textContent='資料格式異常';
+        setDot('err');
+      }
+    };
+    s.onerror=function(){
+      document.getElementById('jin10-meta').textContent='連接失敗，重試中';
+      setDot('err');
+    };
+    document.head.appendChild(s);
+  }
 
-  // 初始渲染（靜態資料）
-  render(INIT);
-
-  // 倒計時 + 5分鐘自動刷新
-  var secs = 300;
-  setInterval(function(){{
+  j10Load();
+  var secs=300;
+  setInterval(function(){
     secs--;
-    if(secs <= 0){{ secs = 300; fetchNews(); }}
-    var m = Math.floor(secs/60);
-    var s = secs%60;
-    var el = document.getElementById('jin10-countdown');
-    if(el) el.textContent = m+':'+(s<10?'0':'')+s;
-  }}, 1000);
-}})();
+    if(secs<=0){secs=300;j10Load();}
+    var m=Math.floor(secs/60),s=secs%60;
+    var el=document.getElementById('jin10-countdown');
+    if(el) el.textContent=m+':'+(s<10?'0':'')+s;
+  },1000);
+})();
 </script>"""
 
     # ── 近期損益橫條（只顯示實際交易，若無則顯示模擬）─
@@ -824,24 +1052,41 @@ def generate_html(signal, records, stock=None):
       </table>
     </div>"""
 
-    # ── 國際市場 ─────────────────────────────────────────
+    # ── 國際市場（加 NaN 防護）────────────────────────────
     intl_html = ""
     if signal.get("intl_data"):
-        items = []
-        for name, d in signal["intl_data"].items():
-            sv    = d["signal"]
-            chg   = d["chg_pct"]
-            arrow = "▲" if sv == 1 else ("▼" if sv == -1 else "─")
-            color = "#10b981" if sv == 1 else ("#ef4444" if sv == -1 else "#9ca3af")
-            items.append(f"""<div class="intl-item">
-              <div class="lbl">{e(name)}</div>
-              <div style="font-size:1.05rem;font-weight:700;color:{color}">{arrow} {chg:+.2f}%</div>
-              <div style="font-size:.68rem;color:#6b7280">{e(d['desc'])}</div>
-            </div>""")
-        intl_html = f"""<div class="card">
-          <div class="stitle">🌐 國際市場概況</div>
-          <div class="intl-grid">{"".join(items)}</div>
-        </div>"""
+        def _safe_chg(v):
+            try:
+                f = float(v)
+                return 0.0 if (math.isnan(f) or math.isinf(f)) else f
+            except Exception:
+                return 0.0
+
+        intl_rows = []
+        for iname, d in signal["intl_data"].items():
+            sv    = int(d.get("signal", 0))
+            chg   = _safe_chg(d.get("chg_pct", 0))
+            note  = e(d.get("note", f"{chg:+.2f}%"))
+            desc  = e(d.get("desc", ""))
+            if sv == 1:
+                ic, arrow, bg = "#10b981", "▲", "rgba(16,185,129,.08)"
+            elif sv == -1:
+                ic, arrow, bg = "#ef4444", "▼", "rgba(239,68,68,.08)"
+            else:
+                ic, arrow, bg = "#64748b",  "─", "transparent"
+            intl_rows.append(
+                f'<div class="intl-item" style="background:{bg}">'
+                f'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">{e(iname)}</div>'
+                f'<div style="font-size:1rem;font-weight:800;color:{ic}">{arrow} {chg:+.2f}%</div>'
+                f'<div style="font-size:.65rem;color:#475569;margin-top:2px">{desc}</div>'
+                f'</div>'
+            )
+        intl_html = (
+            '<div class="card">'
+            '<div class="stitle">🌐 國際市場概況</div>'
+            f'<div class="intl-grid">{"".join(intl_rows)}</div>'
+            '</div>'
+        )
 
     # ── 新聞 ─────────────────────────────────────────────
     news_html = ""
@@ -863,169 +1108,486 @@ def generate_html(signal, records, stock=None):
     # ── 長榮航太看板 ─────────────────────────────────────
     stock_html = stock_card_html(stock or {})
 
-    # ── 評分明細 ─────────────────────────────────────────
-    def sbar(label, val, max_abs):
-        pct    = (val + max_abs) / (2 * max_abs) * 100
-        center = 50
-        if val >= 0:
-            left, width = center, pct - center
-        else:
-            left, width = pct, center - pct
-        color = "#10b981" if val >= 0 else "#ef4444"
-        vc    = "#10b981" if val >= 0 else "#ef4444"
-        return f"""<div class="srow">
-          <span class="slbl">{label}</span>
-          <div class="sbar-wrap">
-            <div style="position:absolute;left:50%;width:1px;height:100%;background:#374151"></div>
-            <div style="position:absolute;left:{left:.1f}%;width:{width:.1f}%;
-                        height:100%;background:{color};opacity:.85;border-radius:3px"></div>
-          </div>
-          <span style="font-size:.85rem;font-weight:700;color:{vc};width:26px;text-align:right">{val:+d}</span>
-        </div>"""
-
-    score_html = (sbar("台灣技術", tw_s, 5)
-                 + sbar("國際市場", int_s, 7)
-                 + sbar("新聞情緒", nws_s, 2)
-                 + (sbar("黃金警示", gold_contribution, 2) if gold else ""))
-
-    # ── 組合 ─────────────────────────────────────────────
+    # ── 評分視覺化 ───────────────────────────────────────
     gold_contribution = gold.get("signal", 0)
+
+    def dim_bar(label, val, max_abs, icon=""):
+        """單維度小條（台灣色系：多=紅，空=綠）"""
+        safe_max = max_abs if max_abs > 0 else 1
+        clamped  = max(-safe_max, min(safe_max, val))
+        center   = 50.0
+        fill_pct = abs(clamped) / safe_max * 48   # 最大48%
+        if val >= 0:
+            l, w = center, fill_pct
+            fc = "#ef4444"   # 多頭=紅（台灣色系）
+            vc = "#ef4444"
+        else:
+            l, w = center - fill_pct, fill_pct
+            fc = "#22c55e"   # 空頭=綠（台灣色系）
+            vc = "#22c55e"
+        bar_tag = (f'<div style="position:absolute;left:{l:.1f}%;width:{w:.1f}%;'
+                   f'height:100%;background:{fc};border-radius:3px;'
+                   f'transition:width .4s ease"></div>')
+        return (f'<div class="srow">'
+                f'<span class="slbl">{icon}{label}</span>'
+                f'<div class="sbar-wrap">'
+                f'<div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div>'
+                f'{bar_tag}'
+                f'</div>'
+                f'<span style="font-size:.82rem;font-weight:700;color:{vc};'
+                f'width:28px;text-align:right;flex-shrink:0">{val:+d}</span>'
+                f'</div>')
+
+    dim_bars_html = (
+        dim_bar("台灣技術", tw_s,           5,  "📊 ")
+        + dim_bar("國際市場", int_s,         7,  "🌐 ")
+        + dim_bar("新聞情緒", nws_s,         2,  "📰 ")
+        + (dim_bar("黃金警示", gold_contribution, 2, "🥇 ") if gold else "")
+    )
+
+    # 總分大計儀表盤
+    _max_total = 16
+    _clamped   = max(-_max_total, min(_max_total, total_sc))
+    _thresh_pct_lo = (-thresh + _max_total) / (2 * _max_total) * 100
+    _thresh_pct_hi = (thresh  + _max_total) / (2 * _max_total) * 100
+    _score_pct     = (_clamped + _max_total) / (2 * _max_total) * 100
+    _center_pct    = 50.0
+    if total_sc >= 0:
+        _fl, _fw = _center_pct, _score_pct - _center_pct
+        _fc = "#ef4444"; _fc2 = "#b91c1c"
+    else:
+        _fl, _fw = _score_pct, _center_pct - _score_pct
+        _fc = "#22c55e"; _fc2 = "#15803d"
+    _score_label = ("🔴 偏多" if total_sc >= thresh else
+                    "🟢 偏空" if total_sc <= -thresh else "⚪ 中性")
+    _score_color = ("#ef4444" if total_sc >= thresh else
+                    "#22c55e" if total_sc <= -thresh else "#64748b")
+
+    score_meter_html = f"""
+<div class="card">
+  <div class="stitle">📊 五維評分系統</div>
+
+  <!-- 總分大計儀表 -->
+  <div style="margin-bottom:14px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
+      <div style="font-size:.65rem;color:#64748b">總評分</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.4rem;font-weight:900;color:{_score_color}">{total_sc:+d}</span>
+        <span style="font-size:.78rem;font-weight:700;color:{_score_color}">{_score_label}</span>
+        <span style="font-size:.65rem;color:#475569">門檻 ±{thresh}</span>
+      </div>
+    </div>
+    <!-- 主進度條 -->
+    <div style="position:relative;height:22px;background:#0d1829;border-radius:6px;
+                overflow:visible;border:1px solid #1e3050">
+      <!-- 空頭標籤 -->
+      <div style="position:absolute;left:3px;top:50%;transform:translateY(-50%);
+                  font-size:.55rem;color:#22c55e;z-index:2">空</div>
+      <!-- 多頭標籤 -->
+      <div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);
+                  font-size:.55rem;color:#ef4444;z-index:2">多</div>
+      <!-- 填充 -->
+      <div style="position:absolute;left:{_fl:.1f}%;width:{max(_fw,0):.1f}%;height:100%;
+                  background:linear-gradient(90deg,{_fc2},{_fc});
+                  border-radius:5px;opacity:.9;transition:all .5s ease"></div>
+      <!-- 中線 -->
+      <div style="position:absolute;left:50%;width:2px;height:100%;
+                  background:#334155;transform:translateX(-50%)"></div>
+      <!-- 門檻線 -->
+      <div style="position:absolute;left:{_thresh_pct_lo:.1f}%;width:1px;height:100%;
+                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <div style="position:absolute;left:{_thresh_pct_hi:.1f}%;width:1px;height:100%;
+                  background:#475569;opacity:.6;border-right:1px dashed #475569"></div>
+      <!-- 分數氣泡 -->
+      <div style="position:absolute;left:{_score_pct:.1f}%;top:-18px;transform:translateX(-50%);
+                  background:{_fc};color:#fff;font-size:.6rem;font-weight:700;
+                  padding:1px 5px;border-radius:4px;white-space:nowrap;z-index:3">
+        {total_sc:+d}
+        <div style="position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);
+                    width:0;height:0;border-left:4px solid transparent;
+                    border-right:4px solid transparent;border-top:4px solid {_fc}"></div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:.58rem;color:#334155">
+      <span>-{_max_total}</span><span>-{thresh}</span><span>0</span><span>+{thresh}</span><span>+{_max_total}</span>
+    </div>
+  </div>
+
+  <!-- 各維度條 -->
+  {dim_bars_html}
+</div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>台指期看板</title>
+<title>台指期智能看板</title>
 <style>
+/* ── Reset & Variables ─────────────────────────────── */
 *{{box-sizing:border-box;margin:0;padding:0}}
-:root{{--bg:#0f172a;--card:#1e293b;--card2:#334155;
-      --g:#10b981;--r:#ef4444;--txt:#f1f5f9;--muted:#94a3b8;--border:#334155}}
-body{{background:var(--bg);color:var(--txt);
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-  padding:14px;max-width:520px;margin:0 auto;-webkit-font-smoothing:antialiased}}
-.card{{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px}}
-.stitle{{font-size:.68rem;color:var(--muted);text-transform:uppercase;
-  letter-spacing:.1em;margin-bottom:10px}}
-.lbl{{font-size:.75rem;color:var(--muted);margin-bottom:2px}}
-.big-num{{font-size:1.6rem;font-weight:800}}
+:root{{
+  --bg:     #060d1a;
+  --surf:   #0b1628;
+  --card:   #0d1b2e;
+  --card2:  #132236;
+  --card3:  #1a2d45;
+  --border: #1e3254;
+  --blt:    #253d5e;     /* border light */
+
+  --g:   #10b981;  /* 綠（西方多頭 / 台灣空頭）*/
+  --r:   #ef4444;  /* 紅（西方空頭 / 台灣多頭）*/
+  --y:   #f59e0b;
+  --b:   #3b82f6;
+  --p:   #8b5cf6;
+  --c:   #06b6d4;
+
+  --txt:     #e2e8f0;
+  --txt2:    #94a3b8;
+  --muted:   #5a7494;
+
+  --shadow: 0 4px 24px rgba(0,0,0,.5);
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:20px;
+}}
+
+/* ── Base ─────────────────────────────────────────── */
+html{{scroll-behavior:smooth;font-size:16px}}
+body{{
+  background:var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 40% at 15% 0%,rgba(30,80,150,.22),transparent),
+    radial-gradient(ellipse 50% 30% at 85% 100%,rgba(16,185,129,.06),transparent);
+  color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",
+               "PingFang TC","Microsoft JhengHei",sans-serif;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+}}
+
+/* ── Card ─────────────────────────────────────────── */
+.card{{
+  background:var(--card);
+  border-radius:var(--r-lg);
+  padding:16px;
+  margin-bottom:12px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  transition:border-color .2s,box-shadow .2s;
+  position:relative;
+  overflow:hidden;
+}}
+.card::before{{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.025),transparent 50%);
+}}
+.card:hover{{border-color:var(--blt);box-shadow:0 6px 32px rgba(0,0,0,.6)}}
+
+/* 長榮航太 精緻卡（與台指期主題視覺隔離）*/
+.stock-premium-card{{
+  background:linear-gradient(145deg,#0a1929 0%,#0d1f35 100%);
+  border-color:#1d3553;
+}}
+.stock-premium-card:hover{{border-color:#2a4a6e}}
+
+/* ── Typography ────────────────────────────────────── */
+.stitle{{
+  font-size:.62rem;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.14em;
+  margin-bottom:12px;
+  display:flex;align-items:center;gap:6px;
+}}
+.stitle::before{{
+  content:'';flex-shrink:0;
+  width:3px;height:12px;
+  background:var(--b);border-radius:2px;
+}}
+.lbl{{font-size:.7rem;color:var(--txt2);margin-bottom:2px;line-height:1.3}}
+.big-num{{font-size:1.55rem;font-weight:800;letter-spacing:-.6px;line-height:1.1}}
+
+/* ── Layout Primitives ─────────────────────────────── */
 .row2{{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:start}}
-.box2{{background:var(--card2);border-radius:10px;padding:12px}}
+.box2{{background:var(--card2);border-radius:var(--r-md);padding:12px}}
 .row3{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}}
-.box3{{background:var(--card2);border-radius:10px;padding:12px;text-align:center;
-  border-top:3px solid var(--border)}}
-.bar-row{{display:flex;align-items:center;gap:6px;margin-bottom:5px}}
-.bar-date{{width:34px;color:var(--muted);font-size:.72rem;text-align:right;flex-shrink:0}}
-.bar-wrap{{flex:1;height:22px;background:var(--card2);border-radius:4px;overflow:hidden}}
-.bar-fill{{height:100%;border-radius:4px;display:flex;align-items:center;
-  padding:0 6px;min-width:40px}}
-.bar-fill span{{font-size:.72rem;font-weight:600;white-space:nowrap;color:#fff}}
-.bar-win{{background:linear-gradient(90deg,#059669,#10b981)}}
-.bar-lose{{background:linear-gradient(90deg,#b91c1c,#ef4444)}}
-table{{width:100%;border-collapse:collapse;font-size:.82rem}}
-th{{color:var(--muted);font-weight:600;font-size:.68rem;text-align:left;
-  padding:5px 4px;border-bottom:1px solid var(--border)}}
-td{{padding:8px 4px;border-bottom:1px solid var(--border);vertical-align:middle}}
+.box3{{
+  background:var(--card2);border-radius:var(--r-md);padding:12px;
+  text-align:center;border-top:3px solid var(--border);
+}}
+
+/* ── Tables ────────────────────────────────────────── */
+.tbl-wrap{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
+table{{width:100%;border-collapse:collapse;font-size:.78rem}}
+th{{
+  color:var(--muted);font-weight:600;font-size:.62rem;
+  text-align:left;padding:7px 5px;
+  border-bottom:1px solid var(--border);white-space:nowrap;
+}}
+td{{padding:8px 5px;border-bottom:1px solid rgba(30,50,84,.4);vertical-align:middle}}
 tr:last-child td{{border-bottom:none}}
-.badge-buy{{background:rgba(16,185,129,.2);color:var(--g);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;font-weight:600;white-space:nowrap}}
-.badge-sell{{background:rgba(239,68,68,.2);color:var(--r);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;font-weight:600;white-space:nowrap}}
-.badge-hold{{background:rgba(148,163,184,.15);color:var(--muted);
-  padding:2px 8px;border-radius:20px;font-size:.73rem;white-space:nowrap}}
-.intl-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}}
-.intl-item{{background:var(--card2);border-radius:10px;padding:10px 12px}}
-.news-row{{padding:9px 0;border-bottom:1px solid var(--border);
-  font-size:.82rem;line-height:1.4}}
+tr:hover td{{background:rgba(255,255,255,.014)}}
+
+/* ── Badges ────────────────────────────────────────── */
+.badge-buy{{
+  background:rgba(16,185,129,.12);color:var(--g);
+  border:1px solid rgba(16,185,129,.25);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600;white-space:nowrap;
+}}
+.badge-sell{{
+  background:rgba(239,68,68,.12);color:var(--r);
+  border:1px solid rgba(239,68,68,.25);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;font-weight:600;white-space:nowrap;
+}}
+.badge-hold{{
+  background:rgba(90,116,148,.12);color:var(--muted);
+  border:1px solid var(--border);
+  padding:2px 8px;border-radius:20px;font-size:.68rem;white-space:nowrap;
+}}
+
+/* ── News tags ─────────────────────────────────────── */
+.news-row{{padding:9px 0;border-bottom:1px solid rgba(30,50,84,.4);font-size:.78rem;line-height:1.48}}
 .news-row:last-child{{border-bottom:none}}
-.news-tag{{display:inline-block;font-size:.68rem;padding:1px 6px;border-radius:4px;
-  margin-right:5px;vertical-align:middle;white-space:nowrap}}
-.tag-pos{{background:rgba(16,185,129,.2);color:var(--g)}}
-.tag-neg{{background:rgba(239,68,68,.2);color:var(--r)}}
-.tag-neu{{background:rgba(148,163,184,.12);color:var(--muted)}}
+.news-tag{{
+  display:inline-block;font-size:.62rem;padding:2px 6px;border-radius:5px;
+  margin-right:5px;vertical-align:middle;white-space:nowrap;font-weight:600;
+}}
+.tag-pos{{background:rgba(16,185,129,.12);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
+.tag-neg{{background:rgba(239,68,68,.12);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
+.tag-neu{{background:rgba(90,116,148,.1);color:var(--muted);border:1px solid var(--border)}}
+
+/* ── International grid ────────────────────────────── */
+.intl-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}}
+.intl-item{{
+  background:var(--card2);border-radius:var(--r-md);
+  padding:10px 12px;border:1px solid var(--border);
+  transition:border-color .2s,background .2s;
+}}
+.intl-item:hover{{border-color:var(--blt);background:var(--card3)}}
+
+/* ── Score bars ────────────────────────────────────── */
 .srow{{display:flex;align-items:center;gap:8px;margin-bottom:9px}}
-.slbl{{width:62px;font-size:.76rem;color:var(--muted);flex-shrink:0}}
-.sbar-wrap{{flex:1;height:18px;background:var(--card2);border-radius:4px;position:relative}}
+.slbl{{width:72px;font-size:.72rem;color:var(--txt2);flex-shrink:0}}
+.sbar-wrap{{flex:1;height:14px;background:var(--card2);border-radius:4px;position:relative;overflow:hidden}}
+
+/* ── PnL bars ──────────────────────────────────────── */
+.bar-row{{display:flex;align-items:center;gap:6px;margin-bottom:4px}}
+.bar-date{{width:30px;color:var(--muted);font-size:.68rem;text-align:right;flex-shrink:0}}
+.bar-wrap{{flex:1;height:22px;background:var(--card2);border-radius:5px;overflow:hidden}}
+.bar-fill{{height:100%;border-radius:5px;display:flex;align-items:center;padding:0 8px;min-width:44px}}
+.bar-fill span{{font-size:.68rem;font-weight:600;white-space:nowrap;color:#fff}}
+.bar-win{{background:linear-gradient(90deg,#065f46,#10b981)}}
+.bar-lose{{background:linear-gradient(90deg,#7f1d1d,#ef4444)}}
+
+/* ── Chip tags ─────────────────────────────────────── */
+.chip{{
+  display:inline-flex;align-items:center;gap:3px;
+  border-radius:20px;padding:3px 10px;font-size:.65rem;font-weight:600;
+}}
+.chip-g{{background:rgba(16,185,129,.12);color:var(--g);border:1px solid rgba(16,185,129,.2)}}
+.chip-b{{background:rgba(59,130,246,.12);color:var(--b);border:1px solid rgba(59,130,246,.2)}}
+.chip-y{{background:rgba(245,158,11,.12);color:var(--y);border:1px solid rgba(245,158,11,.2)}}
+.chip-r{{background:rgba(239,68,68,.12);color:var(--r);border:1px solid rgba(239,68,68,.2)}}
+
+/* ── Hero signal card ──────────────────────────────── */
+.signal-hero{{
+  border-radius:var(--r-xl);padding:24px 20px;margin-bottom:12px;
+  text-align:center;position:relative;overflow:hidden;
+}}
+.signal-hero::before{{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 55%);
+}}
+.signal-hero::after{{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+}}
+
+/* ── Tabs ──────────────────────────────────────────── */
+.tab-nav{{
+  display:flex;gap:4px;margin-bottom:12px;
+  background:var(--card2);border-radius:10px;padding:4px;
+  border:1px solid var(--border);
+}}
+.tab-btn{{
+  flex:1;padding:7px 4px;border-radius:7px;border:none;
+  background:transparent;color:var(--muted);
+  font-size:.7rem;font-weight:600;cursor:pointer;
+  transition:background .2s,color .2s;white-space:nowrap;
+}}
+.tab-btn.active{{
+  background:var(--card3);color:var(--txt);
+  box-shadow:0 1px 4px rgba(0,0,0,.3);
+}}
+.tab-btn:hover:not(.active){{color:var(--txt2);background:rgba(255,255,255,.04)}}
+.tab-pane{{display:none}}
+.tab-pane.active{{display:block}}
+
+/* ── Accordion ─────────────────────────────────────── */
+.acc-btn{{
+  width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;background:var(--card2);border:1px solid var(--border);
+  border-radius:var(--r-md);color:var(--txt2);font-size:.75rem;font-weight:600;
+  cursor:pointer;transition:background .2s;margin-bottom:8px;
+}}
+.acc-btn:hover{{background:var(--card3)}}
+.acc-body{{display:none;margin-bottom:8px}}
+.acc-body.open{{display:block}}
+.acc-arrow{{transition:transform .25s;font-size:.7rem}}
+.acc-btn.open .acc-arrow{{transform:rotate(180deg)}}
+
+/* ── Jin10 dot blink ───────────────────────────────── */
+@keyframes blink{{0%,100%{{opacity:1}}50%{{opacity:.3}}}}
+
+/* ── Layout ────────────────────────────────────────── */
+.pw{{max-width:720px;margin:0 auto;padding:16px 14px}}
+
+/* ── Responsive ────────────────────────────────────── */
+@media(max-width:700px){{
+  .row3{{grid-template-columns:repeat(3,1fr)}}
+  .intl-grid{{grid-template-columns:repeat(2,1fr)}}
+}}
+@media(max-width:400px){{
+  .row3{{grid-template-columns:1fr 1fr}}
+  body{{font-size:15px}}
+}}
 </style>
 </head>
 <body>
+<div class="pw">
 
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-  <div style="font-size:1.2rem;font-weight:700">📈 台指期智能看板</div>
-  <div style="font-size:.72rem;color:var(--muted)">{now} 更新</div>
+<!-- ══════════════ TOP BAR ══════════════════════════ -->
+<div style="display:flex;justify-content:space-between;align-items:center;
+            margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--border)">
+  <div>
+    <div style="font-size:1.1rem;font-weight:800;letter-spacing:-.3px">
+      📈 台指期智能看板
+    </div>
+    <div style="font-size:.62rem;color:var(--muted);margin-top:3px">
+      微型台指期貨 MXF &nbsp;·&nbsp; 每點 NT$10
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">{now} 更新</div>
+    <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
+      <span class="chip chip-b">台指 {last_close:,.0f}</span>
+      <span class="chip chip-{'g' if tw_rsi < 70 else 'y' if tw_rsi < 80 else 'r'}">RSI {tw_rsi:.0f}</span>
+      <span class="chip chip-{'r' if total_sc >= thresh else 'g' if total_sc <= -thresh else 'chip-b'}">
+        {'多' if total_sc >= thresh else '空' if total_sc <= -thresh else '中'} {total_sc:+d}
+      </span>
+    </div>
+  </div>
 </div>
 
-<!-- 夜盤預覽 -->
+<!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
 {night_html}
-
-<!-- 黃金警示 -->
 {gold_html}
-
-<!-- 今日狀態 -->
 {today_card}
 
-<!-- 明日信號 -->
-<div style="background:{sig_bg};border-radius:16px;padding:22px 18px;
-            margin-bottom:12px;text-align:center">
-  <div style="font-size:1.85rem;font-weight:800">{sig_label}</div>
-  <div style="font-size:.95rem;opacity:.9;margin-top:6px">{trade_date}</div>
-  <div style="font-size:.85rem;opacity:.85;background:rgba(0,0,0,.2);
-              border-radius:8px;padding:8px 12px;margin-top:10px">{sig_action}</div>
-  <div style="font-size:.73rem;opacity:.7;margin-top:6px">{score_detail}</div>
-</div>
-
-<!-- 長榮航太 -->
-{stock_html}
-
-<!-- 買賣操作建議 -->
-{buy_sell_html}
-
-<!-- 今日結算 -->
-{today_html}
-
-<!-- 實際累計 -->
-{real_stats_html}
-
-<!-- 模擬回測 精準版 -->
-{sim_stats_html}
-
-<!-- 模擬回測 寬鬆版 -->
-{sim_v70_stats_html}
-
-<!-- 模擬回測 高頻版 -->
-{sim_v60_stats_html}
-
-<!-- 模擬回測 超高頻版 -->
-{sim_v50_stats_html}
-
-<!-- 評分明細 -->
-<div class="card">
-  <div class="stitle">今日評分明細</div>
-  {score_html}
-</div>
-
-<!-- 近期損益條 -->
-{bars_html}
-
-<!-- 交易記錄 -->
-{table_html}
-
-<!-- 國際市場 -->
-{intl_html}
-
-<!-- 新聞 -->
-{news_html}
-
-<!-- 金十數據即時快訊 -->
+<!-- ══════════════ 金十數據（置頂）════════════════════ -->
 {jin10_html}
 
-<div style="text-align:center;color:var(--muted);font-size:.68rem;padding:18px 0 6px">
-  ⚠️ 本看板為輔助參考，不構成投資建議<br>
-  微型台指(MXF)每點 NT$10 ｜ 建議停損 20~30 點（NT$200~300）
+<!-- ══════════════ 台指期主力區 ═══════════════════════ -->
+
+<!-- 明日信號英雄卡 -->
+<div class="signal-hero" style="background:{sig_bg};margin-bottom:12px">
+  <div style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
+    {sig_label}
+  </div>
+  <div style="font-size:.85rem;opacity:.85;margin-top:6px">{trade_date}</div>
+  <div style="background:rgba(0,0,0,.28);border-radius:10px;
+              padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
+    {sig_action}
+  </div>
+  <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">{score_detail}</div>
 </div>
 
+<!-- 五維評分儀表 -->
+{score_meter_html}
+
+<!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
+<div class="card" style="padding:12px">
+
+  <!-- Tab 導航 -->
+  <div class="tab-nav" id="main-tabs">
+    <button class="tab-btn active" onclick="switchTab('t-signals',this,'main-tabs')">
+      📋 今日訊號
+    </button>
+    <button class="tab-btn" onclick="switchTab('t-backtest',this,'main-tabs')">
+      📊 回測統計
+    </button>
+    <button class="tab-btn" onclick="switchTab('t-records',this,'main-tabs')">
+      📁 交易記錄
+    </button>
+  </div>
+
+  <!-- Tab 1：今日四版本買賣訊號 + 實際累計 -->
+  <div class="tab-pane active" id="t-signals">
+    {today_html}
+    {real_stats_html}
+    {buy_sell_html}
+  </div>
+
+  <!-- Tab 2：歷史回測統計（預設收納） -->
+  <div class="tab-pane" id="t-backtest">
+    {sim_stats_html}
+    {sim_v70_stats_html}
+    {sim_v60_stats_html}
+    {sim_v50_stats_html}
+  </div>
+
+  <!-- Tab 3：近期損益 + 完整記錄 -->
+  <div class="tab-pane" id="t-records">
+    {bars_html}
+    <div class="tbl-wrap">{table_html}</div>
+  </div>
+
+</div><!-- card tabs -->
+
+<!-- ══════════════ 長榮航太（台指期下方）══════════════ -->
+{stock_html}
+
+<!-- ══════════════ 國際市場 ══════════════════════════ -->
+{intl_html}
+
+<!-- ══════════════ 新聞 ══════════════════════════════ -->
+{news_html}
+
+<!-- ══════════════ FOOTER ════════════════════════════ -->
+<div style="text-align:center;color:var(--muted);font-size:.62rem;
+            padding:20px 0 10px;margin-top:8px;border-top:1px solid var(--border);
+            line-height:1.8">
+  ⚠️ 本看板為輔助參考，不構成投資建議<br>
+  微型台指(MXF) 每點 NT$10 ｜ 建議停損 20～30 點（NT$200～$300）<br>
+  <span style="color:#334155">台灣色系：紅＝多頭漲勢，綠＝空頭跌勢</span>
+</div>
+
+</div><!-- pw -->
+
+<!-- ══════════════ JS ═════════════════════════════════ -->
+<script>
+/* ── Tab 切換 ─────────────────────────────────────── */
+function switchTab(targetId, btn, navId) {{
+  var nav = document.getElementById(navId);
+  if (!nav) return;
+  // 收合所有 pane（找最近的 card 父層）
+  var card = nav.closest ? nav.closest('.card') : nav.parentElement;
+  var panes = card.querySelectorAll('.tab-pane');
+  var btns  = nav.querySelectorAll('.tab-btn');
+  panes.forEach(function(p){{ p.classList.remove('active'); }});
+  btns.forEach(function(b){{ b.classList.remove('active'); }});
+  var target = document.getElementById(targetId);
+  if (target) target.classList.add('active');
+  if (btn)    btn.classList.add('active');
+}}
+
+/* ── Accordion ─────────────────────────────────────── */
+function toggleAcc(btnEl) {{
+  btnEl.classList.toggle('open');
+  var body = btnEl.nextElementSibling;
+  if (body) body.classList.toggle('open');
+}}
+</script>
 </body>
 </html>"""
 
