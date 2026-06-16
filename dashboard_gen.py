@@ -684,6 +684,80 @@ def generate_html(signal, records, stock=None):
               </p>
             </div>"""
 
+    # ── 金十數據快訊（JS 自動刷新，靜態初始值由 JSON 讀入）─
+    jin10_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "jin10_news.json")
+    jin10_init = "{}"
+    if os.path.exists(jin10_path):
+        with open(jin10_path, encoding="utf-8") as _f:
+            jin10_init = _f.read().replace("</", "<\\/")   # 防止 HTML 注入
+
+    jin10_html = f"""
+<div class="card" id="jin10-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
+    <div style="font-size:.65rem;color:#6b7280" id="jin10-meta">載入中…</div>
+  </div>
+  <div id="jin10-mood" style="margin-bottom:10px"></div>
+  <div id="jin10-list"></div>
+  <div style="font-size:.62rem;color:#4b5563;margin-top:8px;text-align:center">
+    每5分鐘自動更新 · <span id="jin10-countdown">5:00</span> 後刷新
+  </div>
+</div>
+
+<script>
+(function(){{
+  var INIT = {jin10_init};
+  var BASE = window.location.href.replace(/\\/[^\\/]*$/, '');
+
+  function tagCss(css){{
+    if(css==='pos') return 'background:rgba(16,185,129,.2);color:#10b981';
+    if(css==='neg') return 'background:rgba(239,68,68,.2);color:#ef4444';
+    return 'background:rgba(148,163,184,.12);color:#94a3b8';
+  }}
+
+  function render(d){{
+    if(!d || !d.items) return;
+    var mc = d.mood_color || '#9ca3af';
+    document.getElementById('jin10-mood').innerHTML =
+      '<div style="display:flex;gap:10px;align-items:center">'
+      +'<div style="background:'+mc+';color:#fff;border-radius:8px;padding:6px 14px;font-size:.9rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.75rem;color:#9ca3af">多:'+d.bull+' 空:'+d.bear+' 淨:'+((d.score>=0?'+':'')+d.score)+'</div>'
+      +'</div>';
+    var html = '';
+    d.items.slice(0,15).forEach(function(it){{
+      html += '<div style="padding:7px 0;border-bottom:1px solid #1e293b;font-size:.8rem;line-height:1.4">'
+        +'<span style="'+tagCss(it.tag_css)+';font-size:.65rem;padding:1px 5px;border-radius:4px;margin-right:5px;white-space:nowrap">'+it.tag+'</span>'
+        +'<span style="color:#94a3b8;font-size:.68rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
+        +it.content
+        +'</div>';
+    }});
+    document.getElementById('jin10-list').innerHTML = html;
+    document.getElementById('jin10-meta').textContent = d.updated+' 更新';
+  }}
+
+  function fetchNews(){{
+    fetch('data/jin10_news.json?t='+Date.now())
+      .then(function(r){{ return r.json(); }})
+      .then(function(d){{ render(d); }})
+      .catch(function(){{}});
+  }}
+
+  // 初始渲染（靜態資料）
+  render(INIT);
+
+  // 倒計時 + 5分鐘自動刷新
+  var secs = 300;
+  setInterval(function(){{
+    secs--;
+    if(secs <= 0){{ secs = 300; fetchNews(); }}
+    var m = Math.floor(secs/60);
+    var s = secs%60;
+    var el = document.getElementById('jin10-countdown');
+    if(el) el.textContent = m+':'+(s<10?'0':'')+s;
+  }}, 1000);
+}})();
+</script>"""
+
     # ── 近期損益橫條（只顯示實際交易，若無則顯示模擬）─
     show_for_bars = real_df if not real_df.empty else sim_df
     bars_label    = "實際交易" if not real_df.empty else "模擬回測（尚無實際交易）"
@@ -943,6 +1017,9 @@ tr:last-child td{{border-bottom:none}}
 
 <!-- 新聞 -->
 {news_html}
+
+<!-- 金十數據即時快訊 -->
+{jin10_html}
 
 <div style="text-align:center;color:var(--muted);font-size:.68rem;padding:18px 0 6px">
   ⚠️ 本看板為輔助參考，不構成投資建議<br>
