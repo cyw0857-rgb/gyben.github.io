@@ -1294,7 +1294,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b">2026-06-17 03:19 更新</span>
+      <span style="font-size:.6rem;color:#64748b">2026-06-17 03:27 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1442,7 +1442,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
         <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:left">預測方向</th>
         <th style="color:#475569;font-size:.6rem;padding:3px 3px;text-align:right">±σ波動區間</th>
       </tr>
-      <tr><td style="color:#94a3b8;padding:4px 3px">2026-07</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">141.79~199.21</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-08</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">129.9~211.1</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-09</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">120.78~220.22</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-10</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">113.09~227.91</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-11</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">106.31~234.69</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-12</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 看漲（油價跌-13%利多）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">100.18~240.82</td></tr>
+      <tr><td style="color:#94a3b8;padding:4px 3px">2026-07</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭  油↓利多-13%  海運↑+4%</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">141.79~199.21</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-08</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭（外部因素待觀察）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">129.9~211.1</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-09</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭（外部因素待觀察）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">120.78~220.22</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-10</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭（外部因素待觀察）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">113.09~227.91</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-11</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭（外部因素待觀察）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">106.31~234.69</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-12</td><td style="color:#10b981;font-weight:700;padding:4px 3px">▲ 📈 MA5>MA10 多頭（外部因素待觀察）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">100.18~240.82</td></tr>
     </table>
     <div style="font-size:.6rem;color:#374155;margin-top:6px">
       ⚠️ 方向預測（非精確價格）· 每月月底重新判斷 · 68%準確率基於19筆回測
@@ -1498,7 +1498,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-06-16 23:17',STK_AT='2026-06-17 03:19',notified=false;
+  var SIG_AT='2026-06-16 23:17',STK_AT='2026-06-17 03:27',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');

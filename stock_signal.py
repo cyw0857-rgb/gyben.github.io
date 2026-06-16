@@ -269,19 +269,29 @@ def forecast_model(df_full, ext=None):
     daily_vol = float(df_full["Close"].pct_change().dropna().values[-60:].std())
     monthly_bull = curr_ma5 > curr_ma10
 
-    # 主要影響因素說明
-    factors = []
-    if curr_ma5 > curr_ma10 and float(m["MA5"].shift(1).iloc[-1] or curr_ma5) <= float(m["MA10"].shift(1).iloc[-1] or curr_ma10):
-        factors.append("月線金叉")
-    elif curr_ma5 < curr_ma10:
-        factors.append("月線死叉")
-    ba_curr = float(last_row.get("波音_ret", 0) or 0)
-    oil_curr = float(last_row.get("原油_ret", 0) or 0)
-    if ba_curr > 0.03: factors.append(f"波音↑{ba_curr*100:.0f}%")
-    elif ba_curr < -0.03: factors.append(f"波音↓{ba_curr*100:.0f}%")
-    if oil_curr < -0.05: factors.append(f"油價跌{oil_curr*100:.0f}%利多")
-    elif oil_curr > 0.05: factors.append(f"油價漲{oil_curr*100:.0f}%壓力")
-    factor_str = " · ".join(factors) if factors else "─"
+    # 本月已知因素（只用於下個月的說明，之後不重複）
+    ba_curr  = float(last_row.get("波音_ret",  0) or 0)
+    oil_curr = float(last_row.get("原油_ret",  0) or 0)
+    ship_curr= float(last_row.get("長榮海運_ret", 0) or 0)
+    ma_cross_str = ""
+    prev_ma5  = float(m["MA5"].shift(1).iloc[-1]  or curr_ma5)
+    prev_ma10 = float(m["MA10"].shift(1).iloc[-1] or curr_ma10)
+    if curr_ma5 > curr_ma10 and prev_ma5 <= prev_ma10: ma_cross_str = "金叉↑"
+    elif curr_ma5 < curr_ma10 and prev_ma5 >= prev_ma10: ma_cross_str = "死叉↓"
+
+    def month_note(i):
+        """i=1 顯示本月已知因素；i>1 只顯示技術趨勢，因為外部數據未知"""
+        trend_base = "MA5>MA10 多頭" if monthly_bull else "MA5<MA10 空頭"
+        if i == 1:
+            # 下個月：可用本月已知的外部數據
+            parts = [ma_cross_str] if ma_cross_str else [trend_base]
+            if abs(ba_curr)  > 0.03: parts.append(f"波音{'↑' if ba_curr>0 else '↓'}{ba_curr*100:+.0f}%")
+            if abs(oil_curr) > 0.05: parts.append(f"油{'↓利多' if oil_curr<0 else '↑壓力'}{oil_curr*100:+.0f}%")
+            if abs(ship_curr)> 0.03: parts.append(f"海運{'↑' if ship_curr>0 else '↓'}{ship_curr*100:+.0f}%")
+            return "  ".join(parts)
+        else:
+            # 未來月份：只知道趨勢方向，外部因素每月重新判斷
+            return f"{trend_base}（外部因素待觀察）"
 
     # 未來6個月預測
     forecast = []
@@ -291,12 +301,8 @@ def forecast_model(df_full, ext=None):
         label     = f"{yr:04d}-{mo:02d}"
         vol_range = curr_close * daily_vol * float(np.sqrt(i * 21)) * 1.5
         trend     = "up" if curr_pred == 1 else ("down" if curr_pred == -1 else "neutral")
-        if curr_pred == 1:
-            note = f"📈 看漲（{factor_str}）"
-        elif curr_pred == -1:
-            note = f"📉 看跌（{factor_str}）"
-        else:
-            note = f"⚪ 待觀察（分數{curr_score:+.1f}，門檻±{THRESHOLD}）"
+        dir_icon  = "📈" if curr_pred == 1 else ("📉" if curr_pred == -1 else "⚪")
+        note      = f"{dir_icon} {month_note(i)}" if curr_pred != 0 else f"⚪ 觀望（分{curr_score:+.1f}）"
         forecast.append({
             "month":      label,
             "price":      round(curr_close, 2),
@@ -340,7 +346,7 @@ def forecast_model(df_full, ext=None):
         "ipo_date":       df_full.index[0].strftime("%Y-%m-%d"),
         "model_score":    round(curr_score, 1),
         "model_threshold": THRESHOLD,
-        "model_factors":  factor_str,
+        "model_factors":  month_note(1),
     }
 
 
