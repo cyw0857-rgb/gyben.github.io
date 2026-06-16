@@ -25,6 +25,9 @@ jobs:
         run: |
           pip install yfinance pandas numpy feedparser requests beautifulsoup4
 
+      - name: Fetch Jin10 news (before dashboard build)
+        run: python jin10_fetch.py || echo "Jin10 fetch failed, continuing"
+
       - name: Run signal engine + stock signal + dashboard
         run: python run.py morning
 
