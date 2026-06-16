@@ -957,12 +957,12 @@ def generate_html(signal, records, stock=None):
     setDot('ok');
     /* 簡體→繁體翻譯 */
     var contents=d.items.slice(0,15).map(function(it){return it.content;});
-    var joined=contents.join('\n');
+    var joined=contents.join('\\n');
     fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=zh-TW&dt=t&q='+encodeURIComponent(joined))
       .then(function(r){return r.json();})
       .then(function(data){
         var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
-        var parts=full.split('\n');
+        var parts=full.split('\\n');
         contents.forEach(function(_,i){
           var el=document.getElementById('jt-'+i);
           if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
@@ -1161,13 +1161,13 @@ def generate_html(signal, records, stock=None):
 
   function translateTitles(items){
     var list=items.slice(0,14);
-    var joined=list.map(function(n){return n.title;}).join('\n');
+    var joined=list.map(function(n){return n.title;}).join('\\n');
     var url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q='+encodeURIComponent(joined);
     fetch(url)
       .then(function(r){return r.json();})
       .then(function(data){
         var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
-        var parts=full.split('\n');
+        var parts=full.split('\\n');
         list.forEach(function(n,i){
           var el=document.getElementById('nt-'+i);
           if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
