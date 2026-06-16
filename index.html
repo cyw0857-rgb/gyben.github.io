@@ -221,12 +221,15 @@ tr:hover td{background:rgba(255,255,255,.014)}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* ── Layout ────────────────────────────────────────── */
-.pw{max-width:720px;margin:0 auto;padding:16px 14px}
+.pw{max-width:900px;margin:0 auto;padding:16px 14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;margin-bottom:0}
+.two-col>.card,.two-col>[id$="-card"],.two-col>.j10-card{margin-bottom:12px}
 
 /* ── Responsive ────────────────────────────────────── */
 @media(max-width:700px){
   .row3{grid-template-columns:repeat(3,1fr)}
   .intl-grid{grid-template-columns:repeat(2,1fr)}
+  .two-col{grid-template-columns:1fr}
 }
 @media(max-width:400px){
   .row3{grid-template-columns:1fr 1fr}
@@ -267,8 +270,8 @@ tr:hover td{background:rgba(255,255,255,.014)}
      style="display:none;background:rgba(59,130,246,.12);border:1px solid #3b82f6;
             border-radius:10px;padding:10px 14px;margin-bottom:12px;cursor:pointer;
             justify-content:space-between;align-items:center">
-  <span style="font-size:.82rem;color:#93c5fd">📡 資料已更新，點此重新載入看板</span>
-  <span style="font-size:.75rem;color:#60a5fa">🔄 重新載入</span>
+  <span style="font-size:.82rem;color:#93c5fd" id="update-banner-txt">📡 資料已更新</span>
+  <span style="font-size:.75rem;color:#60a5fa">點此立即更新 🔄</span>
 </div>
 
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
@@ -285,176 +288,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
 
 
-<!-- ══════════════ 金十數據（置頂）════════════════════ -->
-
-<div class="card j10-card" id="jin10-card">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-    <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <span id="jin10-status-dot" style="display:inline-block;width:7px;height:7px;
-            border-radius:50%;background:#f59e0b;animation:blink 1s infinite"></span>
-      <span style="font-size:.62rem;color:#64748b" id="jin10-meta">載入中…</span>
-    </div>
-  </div>
-  <div id="jin10-mood" style="margin-bottom:10px">
-    <div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 直連金十數據…</div>
-  </div>
-  <div id="jin10-list"></div>
-  <div style="display:flex;justify-content:space-between;align-items:center;
-              margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
-    <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <span style="font-size:.62rem;color:#475569"><span id="jin10-countdown">5:00</span> 後刷新</span>
-      <button onclick="window.j10Load&&window.j10Load()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 立即刷新</button>
-    </div>
-  </div>
-</div>
-
-<script>
-(function(){
-  var BULL=['上漲','上涨','漲','涨','突破','走強','走强','利好','降息','增長','增长',
-    '新高','反彈','反弹','走高','強勁','强劲','超預期','超预期','多頭','多头',
-    '做多','上行','回升','好轉','好转','樂觀','乐观','刺激','寬鬆','宽松',
-    '復甦','复苏','擴張','扩张','增速','就業','就业','非農','利多',
-    'surge','rally','gain','rise','bull','strong','beat','record','optimism',
-    'stimulus','cut','ease','growth','rebound'];
-  var BEAR=['下跌','跌','走弱','利空','加息','衰退','下滑','萎縮','萎缩','崩','拋售','抛售',
-    '通脹','通胀','風險','风险','緊縮','紧缩','下行','惡化','恶化','悲觀','悲观',
-    '衝突','冲突','制裁','危機','危机','違約','违约','破產','破产','失業','失业',
-    'fall','drop','plunge','crash','recession','inflation','fear','risk','tension',
-    'tariff','sanction','ban','war','decline','slowdown','miss','layoff'];
-  var SKIP=['【提示】','【广告】','【招聘】'];
-
-  function stripHtml(s){ return s.replace(/<[^>]+>/g,'').trim(); }
-
-  function sentiment(txt){
-    var lo=txt.toLowerCase(),b=0,br=0;
-    BULL.forEach(function(w){ if(lo.indexOf(w)>=0) b++; });
-    BEAR.forEach(function(w){ if(lo.indexOf(w)>=0) br++; });
-    return b>br?1:br>b?-1:0;
-  }
-
-  function tagStyle(css){
-    if(css==='pos') return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
-    if(css==='neg') return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
-    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
-  }
-
-  function setDot(state){
-    var dot=document.getElementById('jin10-status-dot');
-    if(!dot) return;
-    dot.style.background=state==='ok'?'#10b981':state==='err'?'#ef4444':'#f59e0b';
-    dot.style.animation=state==='fetching'?'blink 1s infinite':'none';
-  }
-
-  function j10Process(raw){
-    var items=[],bull=0,bear=0;
-    raw.forEach(function(it){
-      var td=it.data||{};
-      var c=stripHtml(td.title||td.content||'');
-      if(!c||c.length<5) return;
-      for(var i=0;i<SKIP.length;i++){ if(c.indexOf(SKIP[i])>=0) return; }
-      var sv=sentiment(c);
-      if(sv===1) bull++;else if(sv===-1) bear++;
-      items.push({time:(it.time||'').slice(0,16),content:c.slice(0,120),
-        sentiment:sv,tag:sv===1?'✅偏多':sv===-1?'⚠️偏空':'⚪中性',
-        tag_css:sv===1?'pos':sv===-1?'neg':'neu'});
-    });
-    items=items.slice(0,30);
-    var tot=bull-bear,mood,mc;
-    if(tot>=3){mood='偏多 📈';mc='#10b981';}
-    else if(tot>=1){mood='略偏多';mc='#34d399';}
-    else if(tot<=-3){mood='偏空 📉';mc='#ef4444';}
-    else if(tot<=-1){mood='略偏空';mc='#f87171';}
-    else{mood='中性 ─';mc='#9ca3af';}
-    var now=new Date(),hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');
-    return {items:items,bull:bull,bear:bear,score:tot,mood:mood,mood_color:mc,updated:hh+':'+mm};
-  }
-
-  function render(d){
-    if(!d||!d.items||!d.items.length){
-      document.getElementById('jin10-mood').innerHTML=
-        '<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 金十數據載入失敗，請稍後刷新</div>';
-      document.getElementById('jin10-meta').textContent='載入失敗';
-      setDot('err');return;
-    }
-    var mc=d.mood_color||'#64748b';
-    document.getElementById('jin10-mood').innerHTML=
-      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
-      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+
-         ';border-radius:8px;padding:5px 12px;font-size:.88rem;font-weight:800">'+d.mood+'</div>'
-      +'<div style="font-size:.73rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
-      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
-      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
-      +'</div>';
-    var html='';
-    d.items.slice(0,15).forEach(function(it,i){
-      html+='<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
-        +'font-size:.78rem;line-height:1.45">'
-        +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
-        +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
-        +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
-        +'<span id="jt-'+i+'" style="color:#cbd5e1">'+it.content+'</span>'
-        +'</div>';
-    });
-    document.getElementById('jin10-list').innerHTML=html;
-    document.getElementById('jin10-meta').textContent=d.updated+' 更新';
-    setDot('ok');
-    /* 簡體→繁體翻譯 */
-    var contents=d.items.slice(0,15).map(function(it){return it.content;});
-    var joined=contents.join('\n');
-    fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=zh-TW&dt=t&q='+encodeURIComponent(joined))
-      .then(function(r){return r.json();})
-      .then(function(data){
-        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
-        var parts=full.split('\n');
-        contents.forEach(function(_,i){
-          var el=document.getElementById('jt-'+i);
-          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
-        });
-      })
-      .catch(function(){});
-  }
-
-  function j10Load(){
-    var old=document.getElementById('_j10s');
-    if(old) old.parentNode.removeChild(old);
-    window.newest=null;
-    setDot('fetching');
-    var s=document.createElement('script');
-    s.id='_j10s';
-    s.src='https://www.jin10.com/flash_newest.js?_='+Date.now();
-    s.onload=function(){
-      if(window.newest&&Array.isArray(window.newest))
-        render(j10Process(window.newest));
-      else{
-        document.getElementById('jin10-meta').textContent='資料格式異常';
-        setDot('err');
-      }
-    };
-    s.onerror=function(){
-      document.getElementById('jin10-meta').textContent='連接失敗，重試中';
-      setDot('err');
-    };
-    document.head.appendChild(s);
-  }
-
-  window.j10Load=j10Load;
-  j10Load();
-  var secs=300;
-  setInterval(function(){
-    secs--;
-    if(secs<=0){secs=300;j10Load();}
-    var m=Math.floor(secs/60),s=secs%60;
-    var el=document.getElementById('jin10-countdown');
-    if(el) el.textContent=m+':'+(s<10?'0':'')+s;
-  },1000);
-})();
-</script>
-
 <!-- ══════════════ 台指期主力區 ═══════════════════════ -->
 
-<!-- 明日信號英雄卡 -->
+<!-- 明日信號英雄卡（全寬） -->
 <div class="signal-hero" style="background:linear-gradient(135deg,#374151,#4b5563);margin-bottom:12px">
   <div style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
     ⚪ 明天觀望（不交易）
@@ -471,7 +307,11 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
 </div>
 
-<!-- 五維評分儀表 -->
+<!-- ══ Row 1: 期貨評分（左）｜ 期貨訊號（右）══ -->
+<div class="two-col">
+
+<!-- 左：五維評分儀表 -->
+<div>
 
 <div class="card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
@@ -531,8 +371,10 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <!-- 各維度條 -->
   <div class="srow"><span class="slbl">📊 台灣技術</span><div class="sbar-wrap"><div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div><div style="position:absolute;left:50.0%;width:19.2%;height:100%;background:#ef4444;border-radius:3px;transition:width .4s ease"></div></div><span style="font-size:.82rem;font-weight:700;color:#ef4444;width:28px;text-align:right;flex-shrink:0">+2</span></div><div class="srow"><span class="slbl">🌐 國際市場</span><div class="sbar-wrap"><div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div><div style="position:absolute;left:50.0%;width:48.0%;height:100%;background:#ef4444;border-radius:3px;transition:width .4s ease"></div></div><span style="font-size:.82rem;font-weight:700;color:#ef4444;width:28px;text-align:right;flex-shrink:0">+7</span></div><div class="srow"><span class="slbl">📰 新聞情緒</span><div class="sbar-wrap"><div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div><div style="position:absolute;left:2.0%;width:48.0%;height:100%;background:#22c55e;border-radius:3px;transition:width .4s ease"></div></div><span style="font-size:.82rem;font-weight:700;color:#22c55e;width:28px;text-align:right;flex-shrink:0">-2</span></div><div class="srow"><span class="slbl">🥇 黃金警示</span><div class="sbar-wrap"><div style="position:absolute;left:50%;width:1px;height:100%;background:#1e3050"></div><div style="position:absolute;left:50.0%;width:0.0%;height:100%;background:#ef4444;border-radius:3px;transition:width .4s ease"></div></div><span style="font-size:.82rem;font-weight:700;color:#ef4444;width:28px;text-align:right;flex-shrink:0">+0</span></div>
 </div>
+</div>
 
-<!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
+<!-- 右：TABS 今日訊號 / 回測統計 / 交易記錄 -->
+<div>
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
@@ -848,8 +690,317 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
 
 </div><!-- card tabs -->
+</div>
 
-<!-- ══════════════ 長榮航太（台指期下方）══════════════ -->
+</div><!-- /two-col 期貨 -->
+
+<!-- ══ Row 2: 金十快訊（左）｜ 國際新聞（右）中段參考 ══ -->
+<div class="two-col">
+<div>
+<div class="card j10-card" id="jin10-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span id="jin10-status-dot" style="display:inline-block;width:7px;height:7px;
+            border-radius:50%;background:#f59e0b;animation:blink 1s infinite"></span>
+      <span style="font-size:.62rem;color:#64748b" id="jin10-meta">載入中…</span>
+    </div>
+  </div>
+  <div id="jin10-mood" style="margin-bottom:10px">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 直連金十數據…</div>
+  </div>
+  <div id="jin10-list"></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;
+              margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
+    <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:.62rem;color:#475569"><span id="jin10-countdown">5:00</span> 後刷新</span>
+      <button onclick="window.j10Load&&window.j10Load()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 立即刷新</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var BULL=['上漲','上涨','漲','涨','突破','走強','走强','利好','降息','增長','增长',
+    '新高','反彈','反弹','走高','強勁','强劲','超預期','超预期','多頭','多头',
+    '做多','上行','回升','好轉','好转','樂觀','乐观','刺激','寬鬆','宽松',
+    '復甦','复苏','擴張','扩张','增速','就業','就业','非農','利多',
+    'surge','rally','gain','rise','bull','strong','beat','record','optimism',
+    'stimulus','cut','ease','growth','rebound'];
+  var BEAR=['下跌','跌','走弱','利空','加息','衰退','下滑','萎縮','萎缩','崩','拋售','抛售',
+    '通脹','通胀','風險','风险','緊縮','紧缩','下行','惡化','恶化','悲觀','悲观',
+    '衝突','冲突','制裁','危機','危机','違約','违约','破產','破产','失業','失业',
+    'fall','drop','plunge','crash','recession','inflation','fear','risk','tension',
+    'tariff','sanction','ban','war','decline','slowdown','miss','layoff'];
+  var SKIP=['【提示】','【广告】','【招聘】'];
+
+  function stripHtml(s){ return s.replace(/<[^>]+>/g,'').trim(); }
+
+  function sentiment(txt){
+    var lo=txt.toLowerCase(),b=0,br=0;
+    BULL.forEach(function(w){ if(lo.indexOf(w)>=0) b++; });
+    BEAR.forEach(function(w){ if(lo.indexOf(w)>=0) br++; });
+    return b>br?1:br>b?-1:0;
+  }
+
+  function tagStyle(css){
+    if(css==='pos') return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
+    if(css==='neg') return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
+    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
+  }
+
+  function setDot(state){
+    var dot=document.getElementById('jin10-status-dot');
+    if(!dot) return;
+    dot.style.background=state==='ok'?'#10b981':state==='err'?'#ef4444':'#f59e0b';
+    dot.style.animation=state==='fetching'?'blink 1s infinite':'none';
+  }
+
+  function j10Process(raw){
+    var items=[],bull=0,bear=0;
+    raw.forEach(function(it){
+      var td=it.data||{};
+      var c=stripHtml(td.title||td.content||'');
+      if(!c||c.length<5) return;
+      for(var i=0;i<SKIP.length;i++){ if(c.indexOf(SKIP[i])>=0) return; }
+      var sv=sentiment(c);
+      if(sv===1) bull++;else if(sv===-1) bear++;
+      items.push({time:(it.time||'').slice(0,16),content:c.slice(0,120),
+        sentiment:sv,tag:sv===1?'✅偏多':sv===-1?'⚠️偏空':'⚪中性',
+        tag_css:sv===1?'pos':sv===-1?'neg':'neu'});
+    });
+    items=items.slice(0,30);
+    var tot=bull-bear,mood,mc;
+    if(tot>=3){mood='偏多 📈';mc='#10b981';}
+    else if(tot>=1){mood='略偏多';mc='#34d399';}
+    else if(tot<=-3){mood='偏空 📉';mc='#ef4444';}
+    else if(tot<=-1){mood='略偏空';mc='#f87171';}
+    else{mood='中性 ─';mc='#9ca3af';}
+    var now=new Date(),hh=String(now.getHours()).padStart(2,'0'),mm=String(now.getMinutes()).padStart(2,'0');
+    return {items:items,bull:bull,bear:bear,score:tot,mood:mood,mood_color:mc,updated:hh+':'+mm};
+  }
+
+  function render(d){
+    if(!d||!d.items||!d.items.length){
+      document.getElementById('jin10-mood').innerHTML=
+        '<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 金十數據載入失敗，請稍後刷新</div>';
+      document.getElementById('jin10-meta').textContent='載入失敗';
+      setDot('err');return;
+    }
+    var mc=d.mood_color||'#64748b';
+    document.getElementById('jin10-mood').innerHTML=
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
+      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+
+         ';border-radius:8px;padding:5px 12px;font-size:.88rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.73rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
+      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
+      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
+      +'</div>';
+    var html='';
+    d.items.slice(0,15).forEach(function(it,i){
+      html+='<div style="padding:7px 0;border-bottom:1px solid rgba(30,48,80,.5);'
+        +'font-size:.78rem;line-height:1.45">'
+        +'<span style="'+tagStyle(it.tag_css)+';font-size:.62rem;padding:1px 6px;'
+        +'border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+it.tag+'</span>'
+        +'<span style="color:#475569;font-size:.66rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
+        +'<span id="jt-'+i+'" style="color:#cbd5e1">'+it.content+'</span>'
+        +'</div>';
+    });
+    document.getElementById('jin10-list').innerHTML=html;
+    document.getElementById('jin10-meta').textContent=d.updated+' 更新';
+    setDot('ok');
+    /* 簡體→繁體翻譯 */
+    var contents=d.items.slice(0,15).map(function(it){return it.content;});
+    var joined=contents.join('\n');
+    fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=zh-CN&tl=zh-TW&dt=t&q='+encodeURIComponent(joined))
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('\n');
+        contents.forEach(function(_,i){
+          var el=document.getElementById('jt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});
+  }
+
+  function j10Load(){
+    var old=document.getElementById('_j10s');
+    if(old) old.parentNode.removeChild(old);
+    window.newest=null;
+    setDot('fetching');
+    var s=document.createElement('script');
+    s.id='_j10s';
+    s.src='https://www.jin10.com/flash_newest.js?_='+Date.now();
+    s.onload=function(){
+      if(window.newest&&Array.isArray(window.newest))
+        render(j10Process(window.newest));
+      else{
+        document.getElementById('jin10-meta').textContent='資料格式異常';
+        setDot('err');
+      }
+    };
+    s.onerror=function(){
+      document.getElementById('jin10-meta').textContent='連接失敗，重試中';
+      setDot('err');
+    };
+    document.head.appendChild(s);
+  }
+
+  window.j10Load=j10Load;
+  j10Load();
+  var secs=300;
+  setInterval(function(){
+    secs--;
+    if(secs<=0){secs=300;j10Load();}
+    var m=Math.floor(secs/60),s=secs%60;
+    var el=document.getElementById('jin10-countdown');
+    if(el) el.textContent=m+':'+(s<10?'0':'')+s;
+  },1000);
+})();
+</script></div>
+<div><div class="card" id="news-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b" id="news-meta">載入中…</span>
+      <button onclick="newsLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
+  <div id="news-mood" style="margin-bottom:8px"></div>
+  <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新 · 標題自動翻譯為繁體中文</div>
+</div>
+
+<script>
+(function(){
+  function tagStyle(sv){
+    if(sv===1)  return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
+    if(sv===-1) return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
+    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
+  }
+
+  function renderNews(items){
+    var html='';
+    items.slice(0,14).forEach(function(n,i){
+      var sv=n.sent_val||0;
+      html+='<div class="news-row">'
+        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
+        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
+        +'<span id="nt-'+i+'" style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
+        +'</div>';
+    });
+    document.getElementById('news-list').innerHTML=html;
+  }
+
+  function translateTitles(items){
+    var list=items.slice(0,14);
+    var joined=list.map(function(n){return n.title;}).join('\n');
+    var url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q='+encodeURIComponent(joined);
+    fetch(url)
+      .then(function(r){return r.json();})
+      .then(function(data){
+        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
+        var parts=full.split('\n');
+        list.forEach(function(n,i){
+          var el=document.getElementById('nt-'+i);
+          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
+        });
+      })
+      .catch(function(){});  /* 翻譯失敗保留英文 */
+  }
+
+  function render(d){
+    if(!d||!d.items||!d.items.length){
+      document.getElementById('news-meta').textContent='載入失敗';
+      document.getElementById('news-list').innerHTML='<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 新聞載入失敗，請稍後再試</div>';
+      return;
+    }
+    var mc=d.mood_color||'#64748b';
+    document.getElementById('news-mood').innerHTML=
+      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
+      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+';border-radius:8px;padding:4px 10px;font-size:.82rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.72rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
+      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
+      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
+      +'</div>';
+    renderNews(d.items);
+    document.getElementById('news-meta').textContent=d.updated+' 更新（翻譯中…）';
+    translateTitles(d.items);
+    /* 翻譯完成後更新 meta（用延遲估算） */
+    setTimeout(function(){
+      var el=document.getElementById('news-meta');
+      if(el&&el.textContent.indexOf('翻譯中')>=0) el.textContent=d.updated+' 更新';
+    },3000);
+  }
+
+  window.newsLoad=function(){
+    document.getElementById('news-meta').textContent='更新中…';
+    fetch('data/news.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(render)
+      .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
+  };
+  newsLoad();
+  setInterval(newsLoad,900000);
+})();
+</script></div>
+</div><!-- /two-col 新聞 -->
+
+<!-- ══════════════ 國際市場（全寬）══════════════════ -->
+<div class="card" id="intl-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b" id="intl-meta">載入中…</span>
+      <button onclick="intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
+  <div id="intl-grid" class="intl-grid">
+    <div style="color:#475569;font-size:.78rem;padding:8px 0;grid-column:1/-1">⏳ 載入中…</div>
+  </div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">每10分鐘自動更新</div>
+</div>
+
+<script>
+(function(){
+  function render(d){
+    if(!d||!d.data){
+      document.getElementById('intl-meta').textContent='載入失敗';
+      return;
+    }
+    var html='';
+    Object.keys(d.data).forEach(function(name){
+      var it=d.data[name];
+      var sv=it.signal||0;
+      var chg=it.chg_pct||0;
+      var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
+      var arrow=sv===1?'▲':sv===-1?'▼':'─';
+      var bg=sv===1?'rgba(16,185,129,.08)':sv===-1?'rgba(239,68,68,.08)':'transparent';
+      html+='<div class="intl-item" style="background:'+bg+'">'
+        +'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">'+name+'</div>'
+        +'<div style="font-size:1rem;font-weight:800;color:'+ic+'">'+arrow+' '+(chg>=0?'+':'')+chg.toFixed(2)+'%</div>'
+        +'<div style="font-size:.65rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
+        +'</div>';
+    });
+    document.getElementById('intl-grid').innerHTML=html;
+    document.getElementById('intl-meta').textContent=d.updated+' 更新';
+  }
+  window.intlLoad=function(){
+    document.getElementById('intl-meta').textContent='更新中…';
+    fetch('data/intl.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(render)
+      .catch(function(){document.getElementById('intl-meta').textContent='載入失敗';});
+  };
+  intlLoad();
+  setInterval(intlLoad,600000);   /* 每10分鐘 */
+})();
+</script>
+
+<!-- ══════════════ 長榮航太（最後）══════════════════ -->
 
 <div class="card stock-premium-card" style="padding:0;overflow:hidden">
 
@@ -1014,145 +1165,6 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
 </div>
 
-<!-- ══════════════ 國際市場 ══════════════════════════ -->
-<div class="card" id="intl-card">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-    <div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>
-    <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b" id="intl-meta">載入中…</span>
-      <button onclick="intlLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
-    </div>
-  </div>
-  <div id="intl-grid" class="intl-grid">
-    <div style="color:#475569;font-size:.78rem;padding:8px 0;grid-column:1/-1">⏳ 載入中…</div>
-  </div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每10分鐘自動更新</div>
-</div>
-
-<script>
-(function(){
-  function render(d){
-    if(!d||!d.data){
-      document.getElementById('intl-meta').textContent='載入失敗';
-      return;
-    }
-    var html='';
-    Object.keys(d.data).forEach(function(name){
-      var it=d.data[name];
-      var sv=it.signal||0;
-      var chg=it.chg_pct||0;
-      var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
-      var arrow=sv===1?'▲':sv===-1?'▼':'─';
-      var bg=sv===1?'rgba(16,185,129,.08)':sv===-1?'rgba(239,68,68,.08)':'transparent';
-      html+='<div class="intl-item" style="background:'+bg+'">'
-        +'<div style="font-size:.65rem;color:#64748b;margin-bottom:3px">'+name+'</div>'
-        +'<div style="font-size:1rem;font-weight:800;color:'+ic+'">'+arrow+' '+(chg>=0?'+':'')+chg.toFixed(2)+'%</div>'
-        +'<div style="font-size:.65rem;color:#475569;margin-top:2px">'+it.desc+'</div>'
-        +'</div>';
-    });
-    document.getElementById('intl-grid').innerHTML=html;
-    document.getElementById('intl-meta').textContent=d.updated+' 更新';
-  }
-  window.intlLoad=function(){
-    document.getElementById('intl-meta').textContent='更新中…';
-    fetch('data/intl.json?_='+Date.now())
-      .then(function(r){return r.json();})
-      .then(render)
-      .catch(function(){document.getElementById('intl-meta').textContent='載入失敗';});
-  };
-  intlLoad();
-  setInterval(intlLoad,600000);   /* 每10分鐘 */
-})();
-</script>
-
-<!-- ══════════════ 新聞 ══════════════════════════════ -->
-<div class="card" id="news-card">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-    <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
-    <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b" id="news-meta">載入中…</span>
-      <button onclick="newsLoad()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
-    </div>
-  </div>
-  <div id="news-mood" style="margin-bottom:8px"></div>
-  <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新 · 標題自動翻譯為繁體中文</div>
-</div>
-
-<script>
-(function(){
-  function tagStyle(sv){
-    if(sv===1)  return 'background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.25)';
-    if(sv===-1) return 'background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.25)';
-    return 'background:rgba(100,116,139,.12);color:#64748b;border:1px solid rgba(100,116,139,.2)';
-  }
-
-  function renderNews(items){
-    var html='';
-    items.slice(0,14).forEach(function(n,i){
-      var sv=n.sent_val||0;
-      html+='<div class="news-row">'
-        +'<span style="'+tagStyle(sv)+';font-size:.62rem;padding:1px 6px;border-radius:4px;margin-right:5px;white-space:nowrap;font-weight:600">'+n.sentiment+'</span>'
-        +'<span style="font-size:.7rem;color:#64748b;margin-right:4px">['+n.label+']</span>'
-        +'<span id="nt-'+i+'" style="font-size:.75rem;color:#cbd5e1">'+n.title+'</span>'
-        +'</div>';
-    });
-    document.getElementById('news-list').innerHTML=html;
-  }
-
-  function translateTitles(items){
-    var list=items.slice(0,14);
-    var joined=list.map(function(n){return n.title;}).join('\n');
-    var url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q='+encodeURIComponent(joined);
-    fetch(url)
-      .then(function(r){return r.json();})
-      .then(function(data){
-        var full=(data[0]||[]).map(function(s){return s[0]||'';}).join('');
-        var parts=full.split('\n');
-        list.forEach(function(n,i){
-          var el=document.getElementById('nt-'+i);
-          if(el&&parts[i]&&parts[i].trim()) el.textContent=parts[i].trim();
-        });
-      })
-      .catch(function(){});  /* 翻譯失敗保留英文 */
-  }
-
-  function render(d){
-    if(!d||!d.items||!d.items.length){
-      document.getElementById('news-meta').textContent='載入失敗';
-      document.getElementById('news-list').innerHTML='<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 新聞載入失敗，請稍後再試</div>';
-      return;
-    }
-    var mc=d.mood_color||'#64748b';
-    document.getElementById('news-mood').innerHTML=
-      '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
-      +'<div style="background:'+mc+'22;border:1.5px solid '+mc+';color:'+mc+';border-radius:8px;padding:4px 10px;font-size:.82rem;font-weight:800">'+d.mood+'</div>'
-      +'<div style="font-size:.72rem;color:#94a3b8">多 <b style="color:#10b981">'+d.bull+'</b>'
-      +' ／ 空 <b style="color:#ef4444">'+d.bear+'</b>'
-      +' ／ 淨 <b>'+((d.score>=0?'+':'')+d.score)+'</b></div>'
-      +'</div>';
-    renderNews(d.items);
-    document.getElementById('news-meta').textContent=d.updated+' 更新（翻譯中…）';
-    translateTitles(d.items);
-    /* 翻譯完成後更新 meta（用延遲估算） */
-    setTimeout(function(){
-      var el=document.getElementById('news-meta');
-      if(el&&el.textContent.indexOf('翻譯中')>=0) el.textContent=d.updated+' 更新';
-    },3000);
-  }
-
-  window.newsLoad=function(){
-    document.getElementById('news-meta').textContent='更新中…';
-    fetch('data/news.json?_='+Date.now())
-      .then(function(r){return r.json();})
-      .then(render)
-      .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
-  };
-  newsLoad();
-  setInterval(newsLoad,900000);
-})();
-</script>
-
 <!-- ══════════════ FOOTER ════════════════════════════ -->
 <div style="text-align:center;color:var(--muted);font-size:.62rem;
             padding:20px 0 10px;margin-top:8px;border-top:1px solid var(--border);
@@ -1203,7 +1215,15 @@ function toggleAcc(btnEl) {
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
+    var t=document.getElementById('update-banner-txt');
     if(b) b.style.display='flex';
+    var secs=10;
+    if(t) t.textContent='📡 資料已更新，'+secs+'秒後自動更新...';
+    var iv=setInterval(function(){
+      secs--;
+      if(t) t.textContent='📡 資料已更新，'+secs+'秒後自動更新...';
+      if(secs<=0){ clearInterval(iv); window.location.reload(); }
+    },1000);
   }
   function poll(){
     fetch('data/signal.json?_='+Date.now())

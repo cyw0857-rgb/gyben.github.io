@@ -1553,12 +1553,15 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 @keyframes blink{{0%,100%{{opacity:1}}50%{{opacity:.3}}}}
 
 /* ── Layout ────────────────────────────────────────── */
-.pw{{max-width:720px;margin:0 auto;padding:16px 14px}}
+.pw{{max-width:900px;margin:0 auto;padding:16px 14px}}
+.two-col{{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;margin-bottom:0}}
+.two-col>.card,.two-col>[id$="-card"],.two-col>.j10-card{{margin-bottom:12px}}
 
 /* ── Responsive ────────────────────────────────────── */
 @media(max-width:700px){{
   .row3{{grid-template-columns:repeat(3,1fr)}}
   .intl-grid{{grid-template-columns:repeat(2,1fr)}}
+  .two-col{{grid-template-columns:1fr}}
 }}
 @media(max-width:400px){{
   .row3{{grid-template-columns:1fr 1fr}}
@@ -1599,8 +1602,8 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
      style="display:none;background:rgba(59,130,246,.12);border:1px solid #3b82f6;
             border-radius:10px;padding:10px 14px;margin-bottom:12px;cursor:pointer;
             justify-content:space-between;align-items:center">
-  <span style="font-size:.82rem;color:#93c5fd">📡 資料已更新，點此重新載入看板</span>
-  <span style="font-size:.75rem;color:#60a5fa">🔄 重新載入</span>
+  <span style="font-size:.82rem;color:#93c5fd" id="update-banner-txt">📡 資料已更新</span>
+  <span style="font-size:.75rem;color:#60a5fa">點此立即更新 🔄</span>
 </div>
 
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
@@ -1608,12 +1611,9 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 {gold_html}
 {today_card}
 
-<!-- ══════════════ 金十數據（置頂）════════════════════ -->
-{jin10_html}
-
 <!-- ══════════════ 台指期主力區 ═══════════════════════ -->
 
-<!-- 明日信號英雄卡 -->
+<!-- 明日信號英雄卡（全寬） -->
 <div class="signal-hero" style="background:{sig_bg};margin-bottom:12px">
   <div style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
     {sig_label}
@@ -1630,10 +1630,16 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
   </div>
 </div>
 
-<!-- 五維評分儀表 -->
-{score_meter_html}
+<!-- ══ Row 1: 期貨評分（左）｜ 期貨訊號（右）══ -->
+<div class="two-col">
 
-<!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
+<!-- 左：五維評分儀表 -->
+<div>
+{score_meter_html}
+</div>
+
+<!-- 右：TABS 今日訊號 / 回測統計 / 交易記錄 -->
+<div>
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
@@ -1676,15 +1682,21 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
   </div>
 
 </div><!-- card tabs -->
+</div>
 
-<!-- ══════════════ 長榮航太（台指期下方）══════════════ -->
-{stock_html}
+</div><!-- /two-col 期貨 -->
 
-<!-- ══════════════ 國際市場 ══════════════════════════ -->
+<!-- ══ Row 2: 金十快訊（左）｜ 國際新聞（右）中段參考 ══ -->
+<div class="two-col">
+<div>{jin10_html}</div>
+<div>{news_html}</div>
+</div><!-- /two-col 新聞 -->
+
+<!-- ══════════════ 國際市場（全寬）══════════════════ -->
 {intl_html}
 
-<!-- ══════════════ 新聞 ══════════════════════════════ -->
-{news_html}
+<!-- ══════════════ 長榮航太（最後）══════════════════ -->
+{stock_html}
 
 <!-- ══════════════ FOOTER ════════════════════════════ -->
 <div style="text-align:center;color:var(--muted);font-size:.62rem;
@@ -1736,7 +1748,15 @@ function toggleAcc(btnEl) {{
   function showBanner(){{
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
+    var t=document.getElementById('update-banner-txt');
     if(b) b.style.display='flex';
+    var secs=10;
+    if(t) t.textContent='📡 資料已更新，'+secs+'秒後自動更新...';
+    var iv=setInterval(function(){{
+      secs--;
+      if(t) t.textContent='📡 資料已更新，'+secs+'秒後自動更新...';
+      if(secs<=0){{ clearInterval(iv); window.location.reload(); }}
+    }},1000);
   }}
   function poll(){{
     fetch('data/signal.json?_='+Date.now())
