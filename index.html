@@ -61,7 +61,7 @@ tr:last-child td{border-bottom:none}
 
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
   <div style="font-size:1.2rem;font-weight:700">📈 台指期智能看板</div>
-  <div style="font-size:.72rem;color:var(--muted)">2026-06-16 12:21 更新</div>
+  <div style="font-size:.72rem;color:var(--muted)">2026-06-16 20:41 更新</div>
 </div>
 
 <!-- 夜盤預覽 -->
@@ -582,6 +582,293 @@ tr:last-child td{border-bottom:none}
               Taiwan Semiconductor Manufacturing Company Limited (TSM)’s CEO Expresses Concern
             </div>
         </div>
+
+<!-- 金十數據即時快訊 -->
+
+<div class="card" id="jin10-card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">⚡ 金十數據即時快訊</div>
+    <div style="font-size:.65rem;color:#6b7280" id="jin10-meta">載入中…</div>
+  </div>
+  <div id="jin10-mood" style="margin-bottom:10px"></div>
+  <div id="jin10-list"></div>
+  <div style="font-size:.62rem;color:#4b5563;margin-top:8px;text-align:center">
+    每5分鐘自動更新 · <span id="jin10-countdown">5:00</span> 後刷新
+  </div>
+</div>
+
+<script>
+(function(){
+  var INIT = {
+  "updated": "2026-06-16 20:34",
+  "bull": 6,
+  "bear": 8,
+  "score": -2,
+  "mood": "略偏空",
+  "mood_color": "#f87171",
+  "items": [
+    {
+      "time": "2026-06-16 20:25",
+      "content": "【中国—太平洋岛国多边合作平台吹风会召开】金十数据6月16日讯，今天（16日）上午，中国—太平洋岛国多边合作平台吹风会在江苏南京召开。中方相关单位以及瓦努阿图、萨摩亚、斐济、所罗门群岛等多个太平洋岛国的驻华使节及代表与会。会上，多位太平洋岛",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:25",
+      "content": "Nasdaq-100 futures erased earlier gains and turned lower.",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    },
+    {
+      "time": "2026-06-16 20:25",
+      "content": "纳斯达克100指数期货抹去早前涨幅，转为下跌。",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:24",
+      "content": "【创远信科：与时空道宇签订战略意向合作协议】金十数据6月16日讯，创远信科公告，公司近期与浙江时空道宇科技有限公司签署《战略意向合作协议》。双方依托时空道宇卫星星座建设运营、产业落地优势以及创远信科在通信测试研发、全域验证技术优势，深耕卫星",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:22",
+      "content": "S&P 500 futures erased earlier gains and turned lower.",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    },
+    {
+      "time": "2026-06-16 20:22",
+      "content": "标普500指数期货抹去早前涨幅，转为下跌。",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:21",
+      "content": "美伊协议利好逐渐兑现，黄金走势何去何从？4350能否突破？金十研究员Steven正在直播，立即观看>>",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "ECB's Escrivá: Complex energy supply issues likely to persist",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "【欧洲央行艾斯克里瓦：能源供应复杂局面或将持续】金十数据6月16日讯，欧洲央行管理委员会成员艾斯克里瓦警告称，尽管已就重新开放霍尔木兹海峡达成协议，但能源供应方面的复杂问题很可能仍将持续存在。随着投资者认为持续三个多月的冲突正接近结束，美伊",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "Brent crude down 4.00% intraday at $79.63/bbl.",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "U.S. May housing starts (total, annualized), building permits (total) and import price index MoM due in 10 minutes.",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "Kpler analyst Amena Bakr said confirmed transits through the monitored Strait of Hormuz region, covering commercial and ",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "布伦特原油日内跌4.00%，现报79.63美元/桶。",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:20",
+      "content": "美国5月新屋开工总数年化、营建许可总数、进口物价指数月率将于十分钟后公布。",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:19",
+      "content": "据Kpler分析师Amena Bakr：截至6月15日，经由受监测的霍尔木兹海峡区域的确认通行量（涵盖商业及非商业船只）保持在5艘，与前一日持平。",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:18",
+      "content": "【尤洛卡：拟定增募资不超10亿元用于火箭发动机核心零部件精密制造及产业化项目】金十数据6月16日讯，尤洛卡公告，公司拟向特定对象发行A股股票，募集资金总额不超过10亿元，扣除发行费用后全部用于“火箭发动机核心零部件精密制造及产业化项目”。该",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:16",
+      "content": "ADP weekly employment report: Over the four weeks ending May 30, 2026, private-sector payrolls rose by an average of 25,",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:15",
+      "content": "ADP周度就业报告：截至2026年5月30日的四周里，私人部门雇主平均每周增加25500个就业岗位。",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    },
+    {
+      "time": "2026-06-16 20:15",
+      "content": "Commerzbank: Brent to stay near $85/bbl through year-end",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:15",
+      "content": "【德商银行：预计布伦特原油到年底将维持在每桶85美元高位】金十数据6月16日讯，德国商业银行预计油价到年底将维持高位，预测布伦特原油价格在每桶85美元左右。大宗商品研究主管Thu Lan Nguyen表示：“我们认为，美伊之间关于新核协议的",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:15",
+      "content": "US ADP private payrolls, week to May 30: +25.5k jobs; prior +29.0k.",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:15",
+      "content": "美国至5月30日当周ADP就业人数周度变动 2.55万人，前值2.9万人。",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    },
+    {
+      "time": "2026-06-16 20:13",
+      "content": "German foreign minister WADEPHUL said negotiations to end the war in Ukraine could begin this summer.",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:13",
+      "content": "德国外长瓦德富尔：有可能在今年夏天开始结束乌克兰战争的谈判。",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:12",
+      "content": "WTI crude slipped below $78/bbl, down 4.17% intraday.",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:12",
+      "content": "WTI原油失守78美元/桶，日内跌幅4.17%。",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:10",
+      "content": "金十图示：2026年06月16日（周二）中国工商银行账户贵金属行情",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:10",
+      "content": "【北京文化股价大跌，公司回应：目前没有暑期档定档上映的影片项目】金十数据6月16日讯，6月16日，北京文化股价大跌，盘中跌幅超过8%。截至收盘，公司股价报4.13元/股，跌6.56%，市值仅剩30亿元。对于股价大跌，北京文化方面回应称，目前",
+      "sentiment": -1,
+      "tag": "⚠️偏空",
+      "tag_css": "neg"
+    },
+    {
+      "time": "2026-06-16 20:09",
+      "content": "Spot silver up over 1.00% intraday at $70.67/oz.",
+      "sentiment": 0,
+      "tag": "⚪中性",
+      "tag_css": "neu"
+    },
+    {
+      "time": "2026-06-16 20:09",
+      "content": "现货白银日内涨超1.00%，现报70.67美元/盎司。",
+      "sentiment": 1,
+      "tag": "✅偏多",
+      "tag_css": "pos"
+    }
+  ]
+};
+  var BASE = window.location.href.replace(/\/[^\/]*$/, '');
+
+  function tagCss(css){
+    if(css==='pos') return 'background:rgba(16,185,129,.2);color:#10b981';
+    if(css==='neg') return 'background:rgba(239,68,68,.2);color:#ef4444';
+    return 'background:rgba(148,163,184,.12);color:#94a3b8';
+  }
+
+  function render(d){
+    if(!d || !d.items) return;
+    var mc = d.mood_color || '#9ca3af';
+    document.getElementById('jin10-mood').innerHTML =
+      '<div style="display:flex;gap:10px;align-items:center">'
+      +'<div style="background:'+mc+';color:#fff;border-radius:8px;padding:6px 14px;font-size:.9rem;font-weight:800">'+d.mood+'</div>'
+      +'<div style="font-size:.75rem;color:#9ca3af">多:'+d.bull+' 空:'+d.bear+' 淨:'+((d.score>=0?'+':'')+d.score)+'</div>'
+      +'</div>';
+    var html = '';
+    d.items.slice(0,15).forEach(function(it){
+      html += '<div style="padding:7px 0;border-bottom:1px solid #1e293b;font-size:.8rem;line-height:1.4">'
+        +'<span style="'+tagCss(it.tag_css)+';font-size:.65rem;padding:1px 5px;border-radius:4px;margin-right:5px;white-space:nowrap">'+it.tag+'</span>'
+        +'<span style="color:#94a3b8;font-size:.68rem;margin-right:5px">'+it.time.slice(11,16)+'</span>'
+        +it.content
+        +'</div>';
+    });
+    document.getElementById('jin10-list').innerHTML = html;
+    document.getElementById('jin10-meta').textContent = d.updated+' 更新';
+  }
+
+  function fetchNews(){
+    fetch('data/jin10_news.json?t='+Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(d){ render(d); })
+      .catch(function(){});
+  }
+
+  // 初始渲染（靜態資料）
+  render(INIT);
+
+  // 倒計時 + 5分鐘自動刷新
+  var secs = 300;
+  setInterval(function(){
+    secs--;
+    if(secs <= 0){ secs = 300; fetchNews(); }
+    var m = Math.floor(secs/60);
+    var s = secs%60;
+    var el = document.getElementById('jin10-countdown');
+    if(el) el.textContent = m+':'+(s<10?'0':'')+s;
+  }, 1000);
+})();
+</script>
 
 <div style="text-align:center;color:var(--muted);font-size:.68rem;padding:18px 0 6px">
   ⚠️ 本看板為輔助參考，不構成投資建議<br>
