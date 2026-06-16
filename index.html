@@ -303,8 +303,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="display:flex;justify-content:space-between;align-items:center;
               margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
     <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
-    <div style="font-size:.62rem;color:#475569">
-      <span id="jin10-countdown">5:00</span> 後刷新
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:.62rem;color:#475569"><span id="jin10-countdown">5:00</span> 後刷新</span>
+      <button onclick="window.j10Load&&window.j10Load()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 立即刷新</button>
     </div>
   </div>
 </div>
@@ -424,6 +425,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
     document.head.appendChild(s);
   }
 
+  window.j10Load=j10Load;
   j10Load();
   var secs=300;
   setInterval(function(){
@@ -449,12 +451,22 @@ tr:hover td{background:rgba(255,255,255,.014)}
     訊號不足，總分 +3，未達門檻 ±7
   </div>
   <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +2 ＋ 國際市場 +7 ＋ 新聞 -2 ＝ 總分 +3（門檻 ±7）</div>
+  <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
+    <span style="font-size:.58rem;opacity:.45">2026-06-16 23:17 更新</span>
+    <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
+  </div>
 </div>
 
 <!-- 五維評分儀表 -->
 
 <div class="card">
-  <div class="stitle">📊 五維評分系統</div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">📊 五維評分系統</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b">2026-06-16 23:17</span>
+      <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
 
   <!-- 總分大計儀表 -->
   <div style="margin-bottom:14px">
@@ -508,6 +520,11 @@ tr:hover td{background:rgba(255,255,255,.014)}
 
 <!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
 <div class="card" style="padding:12px">
+
+  <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
+    <span style="font-size:.6rem;color:#64748b">2026-06-16 23:17</span>
+    <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
+  </div>
 
   <!-- Tab 導航 -->
   <div class="tab-nav" id="main-tabs">
@@ -826,7 +843,10 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="background:linear-gradient(90deg,#162032,#0e1829);
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
-    <div style="font-size:.6rem;color:#64748b">2026-06-16 23:17 更新</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b">2026-06-16 23:17 更新</span>
+      <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
   </div>
 
   <div style="padding:14px 14px 0">
@@ -981,11 +1001,17 @@ tr:hover td{background:rgba(255,255,255,.014)}
 </div>
 
 <!-- ══════════════ 國際市場 ══════════════════════════ -->
-<div class="card"><div class="stitle">🌐 國際市場概況</div><div class="intl-grid"><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">S&amp;P500</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +1.51%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">美股漲→台股漲</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">NASDAQ</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.80%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">科技股連動</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">費城半導體</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.87%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">對台股影響最大</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">VIX恐慌</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ -9.90%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">&lt;20樂觀 &gt;25恐慌</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">日經225</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.81%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">亞股風向球</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">韓KOSPI</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.00%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">半導體競爭對手</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美元指數</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.17%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">強美元→外資匯出</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">黃金</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.38%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">避險情緒指標</div></div><div class="intl-item" style="background:rgba(239,68,68,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">原油</div><div style="font-size:1rem;font-weight:800;color:#ef4444">▼ -5.34%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">油漲→通膨預期</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美債10Y</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.89%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">殖利率高→股市壓力</div></div></div></div>
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div><div style="display:flex;align-items:center;gap:6px"><span style="font-size:.6rem;color:#64748b">2026-06-16 23:17</span><button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button></div></div><div class="intl-grid"><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">S&amp;P500</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +1.51%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">美股漲→台股漲</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">NASDAQ</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.80%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">科技股連動</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">費城半導體</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.87%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">對台股影響最大</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">VIX恐慌</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ -9.90%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">&lt;20樂觀 &gt;25恐慌</div></div><div class="intl-item" style="background:rgba(16,185,129,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">日經225</div><div style="font-size:1rem;font-weight:800;color:#10b981">▲ +2.81%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">亞股風向球</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">韓KOSPI</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.00%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">半導體競爭對手</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美元指數</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.17%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">強美元→外資匯出</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">黃金</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ +0.38%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">避險情緒指標</div></div><div class="intl-item" style="background:rgba(239,68,68,.08)"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">原油</div><div style="font-size:1rem;font-weight:800;color:#ef4444">▼ -5.34%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">油漲→通膨預期</div></div><div class="intl-item" style="background:transparent"><div style="font-size:.65rem;color:#64748b;margin-bottom:3px">美債10Y</div><div style="font-size:1rem;font-weight:800;color:#64748b">─ -0.89%</div><div style="font-size:.65rem;color:#475569;margin-top:2px">殖利率高→股市壓力</div></div></div></div>
 
 <!-- ══════════════ 新聞 ══════════════════════════════ -->
 <div class="card">
-          <div class="stitle">📰 川普動態 & 市場新聞</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span style="font-size:.6rem;color:#64748b">2026-06-16 23:17</span>
+              <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+            </div>
+          </div>
           <div class="news-row">
               <span class="news-tag tag-neu">⚪ 川普動態</span>
               Trump threatens not to renew trade deal with Canada, Mexico - CBC

@@ -158,7 +158,10 @@ def stock_card_html(stock):
   <div style="background:linear-gradient(90deg,#162032,#0e1829);
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ {e(name)} ({e(symbol)})</div>
-    <div style="font-size:.6rem;color:#64748b">{e(updated)} 更新</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b">{e(updated)} 更新</span>
+      <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
   </div>
 
   <div style="padding:14px 14px 0">
@@ -855,8 +858,9 @@ def generate_html(signal, records, stock=None):
   <div style="display:flex;justify-content:space-between;align-items:center;
               margin-top:10px;padding-top:8px;border-top:1px solid #1e3050">
     <div style="font-size:.62rem;color:#475569">每5分鐘自動更新</div>
-    <div style="font-size:.62rem;color:#475569">
-      <span id="jin10-countdown">5:00</span> 後刷新
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:.62rem;color:#475569"><span id="jin10-countdown">5:00</span> 後刷新</span>
+      <button onclick="window.j10Load&&window.j10Load()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 立即刷新</button>
     </div>
   </div>
 </div>
@@ -976,6 +980,7 @@ def generate_html(signal, records, stock=None):
     document.head.appendChild(s);
   }
 
+  window.j10Load=j10Load;
   j10Load();
   var secs=300;
   setInterval(function(){
@@ -1085,7 +1090,13 @@ def generate_html(signal, records, stock=None):
             )
         intl_html = (
             '<div class="card">'
-            '<div class="stitle">🌐 國際市場概況</div>'
+            '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">'
+            '<div class="stitle" style="margin-bottom:0">🌐 國際市場概況</div>'
+            f'<div style="display:flex;align-items:center;gap:6px">'
+            f'<span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>'
+            '<button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>'
+            '</div>'
+            '</div>'
             f'<div class="intl-grid">{"".join(intl_rows)}</div>'
             '</div>'
         )
@@ -1103,7 +1114,13 @@ def generate_html(signal, records, stock=None):
               {e(n.get('title',''))}
             </div>""")
         news_html = f"""<div class="card">
-          <div class="stitle">📰 川普動態 & 市場新聞</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div class="stitle" style="margin-bottom:0">📰 川普動態 & 市場新聞</div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>
+              <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+            </div>
+          </div>
           {"".join(rows)}
         </div>"""
 
@@ -1167,7 +1184,13 @@ def generate_html(signal, records, stock=None):
 
     score_meter_html = f"""
 <div class="card">
-  <div class="stitle">📊 五維評分系統</div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div class="stitle" style="margin-bottom:0">📊 五維評分系統</div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>
+      <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
+    </div>
+  </div>
 
   <!-- 總分大計儀表 -->
   <div style="margin-bottom:14px">
@@ -1513,6 +1536,10 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
     {sig_action}
   </div>
   <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">{score_detail}</div>
+  <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
+    <span style="font-size:.58rem;opacity:.45">{sig_generated_at} 更新</span>
+    <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
+  </div>
 </div>
 
 <!-- 五維評分儀表 -->
@@ -1520,6 +1547,11 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 
 <!-- ══ TABS: 今日訊號 / 回測統計 / 交易記錄 ══════ -->
 <div class="card" style="padding:12px">
+
+  <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
+    <span style="font-size:.6rem;color:#64748b">{sig_generated_at}</span>
+    <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
+  </div>
 
   <!-- Tab 導航 -->
   <div class="tab-nav" id="main-tabs">
