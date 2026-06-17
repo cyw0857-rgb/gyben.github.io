@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 12:56",
+  "generated_at": "2026-06-17 13:03",
   "mode": "morning",
   "signal_date": "2026-06-17",
   "trade_date": "2026-06-18",
@@ -145,8 +145,8 @@
     "streak": 0
   },
   "gold": {
-    "price_usd": 4353.60009765625,
-    "chg_pct": 0.5241450004470284,
+    "price_usd": 4352.89990234375,
+    "chg_pct": 0.5079775680821964,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.5%，影響中性"
@@ -186,10 +186,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.34000015258789,
-      "chg_pct": -0.42656730941565396,
+      "price": 16.040000915527344,
+      "chg_pct": -2.2547162420791564,
       "signal": 1,
-      "note": "VIX=16.3(低恐慌)",
+      "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -234,42 +234,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.61799621582031,
-      "chg_pct": 0.07835573596102126,
+      "price": 99.5989990234375,
+      "chg_pct": 0.05927075283053677,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4353.60009765625,
-      "chg_pct": 0.5241450004470284,
+      "price": 4352.89990234375,
+      "chg_pct": 0.5079775680821964,
       "signal": 0,
-      "note": "+0.52%()",
+      "note": "+0.51%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 75.83000183105469,
-      "chg_pct": -0.2892849597302415,
+      "price": 75.87000274658203,
+      "chg_pct": -0.23668678231778287,
       "signal": 0,
-      "note": "-0.29%",
+      "note": "-0.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.438000202178955,
-      "chg_pct": -1.09203892359989,
+      "price": 4.434000015258789,
+      "chg_pct": -1.1811895126430925,
       "signal": 0,
-      "note": "4.44%(-1.09%)",
+      "note": "4.43%(-1.18%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 64955.21875,
-      "chg_pct": -0.9838652013926122,
+      "price": 64974.01171875,
+      "chg_pct": -0.9552176629372664,
       "signal": -1,
-      "note": "-0.98%",
+      "note": "-0.96%",
       "desc": "風險偏好指標"
     }
   },
@@ -312,27 +312,27 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "With Iran war cooling, Trump is refocusing on tariffs - CNN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "US reciprocal trade deals built to push America's trade partners away from China",
+      "title": "China Shock 2.0: Surging Chinese exports threaten Europe's economy, raising conc",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "EU Lawmakers Give Approval to U.S. Trade Deal - WSJ",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -354,7 +354,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Here's How Taiwan Semiconductor Is Scaling Up to Meet Surging AI Demand - qz.com",
+      "title": "Taiwan Semiconductor (TSM) Shifts Focus to CoPoS and Glass Subst - GuruFocus",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
