@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18 12:00",
+  "generated_at": "2026-06-18 12:33",
   "mode": "morning",
   "signal_date": "2026-06-18",
   "trade_date": "2026-06-19",
   "direction": 0,
-  "total_score": 4,
+  "total_score": 3,
   "tw_score": 7,
   "intl_score": -3,
   "news_score": -2,
@@ -145,11 +145,11 @@
     "streak": 0
   },
   "gold": {
-    "price_usd": 4259.89990234375,
-    "chg_pct": -2.271215265731805,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.3%，市場風險偏好回升 → 明日偏多 ✅✅"
+    "price_usd": 4282.5,
+    "chg_pct": -1.75273358084388,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.8%，風險情緒改善 → 明日偏多 ✅"
   },
   "intl_data": {
     "S&P500": {
@@ -186,10 +186,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.520000457763672,
-      "chg_pct": -4.989154282261317,
+      "price": 17.34000015258789,
+      "chg_pct": -5.965294737590106,
       "signal": 1,
-      "note": "VIX=17.5(低恐慌)",
+      "note": "VIX=17.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -234,42 +234,34 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.77200317382812,
-      "chg_pct": 0.6813936066448988,
+      "price": 100.63700103759766,
+      "chg_pct": 0.5465128581485962,
       "signal": -1,
-      "note": "+0.68%(偏空)",
+      "note": "+0.55%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4259.89990234375,
-      "chg_pct": -2.271215265731805,
+      "price": 4282.5,
+      "chg_pct": -1.75273358084388,
       "signal": 1,
-      "note": "-2.27%()",
+      "note": "-1.75%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 74.62000274658203,
-      "chg_pct": -2.8258863694147025,
+      "price": 74.51000213623047,
+      "chg_pct": -2.969134981265311,
       "signal": -1,
-      "note": "-2.83%",
+      "note": "-2.97%",
       "desc": "油漲→通膨預期"
-    },
-    "美債10Y": {
-      "category": "債券",
-      "price": 4.486999988555908,
-      "chg_pct": 0.5377586558555082,
-      "signal": 0,
-      "note": "4.49%(+0.54%)",
-      "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63919.5390625,
-      "chg_pct": -2.5626297952025525,
+      "price": 64123.94140625,
+      "chg_pct": -2.2510438993902735,
       "signal": -1,
-      "note": "-2.56%",
+      "note": "-2.25%",
       "desc": "風險偏好指標"
     }
   },
@@ -283,6 +275,12 @@
     {
       "label": "川普動態",
       "title": "Trump threatens not to renew trade deal with Canada, Mexico - CBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says US Won’t Renew USMCA, Signaling Yearly Reviews - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -305,12 +303,6 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "關稅/貿易",
       "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
       "sentiment": "⚠️偏空",
@@ -318,33 +310,21 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "When trade policy turns contentious: Tariffs, currency devaluation, and other tr",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: Not Expensive When You Run The Numbers On AI Demand (NYSE:",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "What Makes Taiwan Semiconductor Manufacturing (TSM) a Strong Bet? - Yahoo Financ",
+      "title": "US reciprocal trade deals built to push America's trade partners away from China",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -354,7 +334,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan shares end at new high amid interest in tech stocks - Focus Taiwan",
+      "title": "Taiwan Semiconductor: Not Expensive When You Run The Numbers On AI Demand (NYSE:",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "SpaceX Joins Nvidia, Alphabet, Apple, Microsoft, Amazon, and Taiwan Semiconducto",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Stock And The New Global Trade Stress Test - simplywall.st",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
