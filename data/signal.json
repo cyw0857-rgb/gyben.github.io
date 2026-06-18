@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-18 17:49",
+  "generated_at": "2026-06-18 21:35",
   "mode": "morning",
   "signal_date": "2026-06-17",
   "trade_date": "2026-06-19",
   "direction": 0,
   "total_score": 14,
   "tw_score": 7,
-  "intl_score": 7,
+  "intl_score": 6,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": 223,
   "foreign_cash_b": 0,
@@ -145,51 +145,51 @@
     "streak": 0
   },
   "gold": {
-    "price_usd": 4242.7001953125,
-    "chg_pct": -2.6658035200296806,
+    "price_usd": 4227.89990234375,
+    "chg_pct": -3.005345452635015,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -2.7%，市場風險偏好回升 → 明日偏多 ✅✅"
+    "warning": "黃金大跌 -3.0%，市場風險偏好回升 → 明日偏多 ✅✅"
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7501.93017578125,
-      "chg_pct": 1.102816364308175,
+      "price": 7500.580078125,
+      "chg_pct": 1.0846212235623454,
       "signal": 1,
-      "note": "+1.10%",
+      "note": "+1.08%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51672.3515625,
-      "chg_pct": 0.34917823747715937,
-      "signal": 1,
-      "note": "+0.35%",
+      "price": 51564.69921875,
+      "chg_pct": 0.14011432023730983,
+      "signal": 0,
+      "note": "+0.14%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26462.2578125,
-      "chg_pct": 1.6931957976715613,
+      "price": 26517.931640625,
+      "chg_pct": 1.9071476661945541,
       "signal": 1,
-      "note": "+1.69%",
+      "note": "+1.91%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 14374.28125,
-      "chg_pct": 6.657314362067517,
+      "price": 14341.783203125,
+      "chg_pct": 6.416178520809361,
       "signal": 1,
-      "note": "+6.66%",
+      "note": "+6.42%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.68000030517578,
-      "chg_pct": -9.544469511436386,
+      "price": 16.399999618530273,
+      "chg_pct": -11.062911369007717,
       "signal": 1,
-      "note": "VIX=16.7(低恐慌)",
+      "note": "VIX=16.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -234,42 +234,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.7760009765625,
-      "chg_pct": 0.6853878147382619,
+      "price": 100.81999969482422,
+      "chg_pct": 0.7293469713688456,
       "signal": -1,
-      "note": "+0.69%(偏空)",
+      "note": "+0.73%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4242.7001953125,
-      "chg_pct": -2.6658035200296806,
+      "price": 4227.89990234375,
+      "chg_pct": -3.005345452635015,
       "signal": 1,
-      "note": "-2.67%()",
+      "note": "-3.01%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 74.56999969482422,
-      "chg_pct": -2.8910029876744394,
+      "price": 75.5199966430664,
+      "chg_pct": -1.6538667239475655,
       "signal": -1,
-      "note": "-2.89%",
+      "note": "-1.65%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.438000202178955,
-      "chg_pct": -1.09203892359989,
+      "price": 4.450999736785889,
+      "chg_pct": -0.8023234201434847,
       "signal": 0,
-      "note": "4.44%(-1.09%)",
+      "note": "4.45%(-0.80%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 62543.21875,
-      "chg_pct": -4.660658563500118,
+      "price": 62893.0,
+      "chg_pct": -4.127460645511037,
       "signal": -1,
-      "note": "-4.66%",
+      "note": "-4.13%",
       "desc": "風險偏好指標"
     }
   },
@@ -282,15 +282,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump threatens not to renew trade deal with Canada, Mexico - CBC",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -312,31 +312,37 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "With Iran war cooling, Trump is refocusing on tariffs - CNN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "China Shock 2.0: Surging Chinese exports threaten Europe's economy, raising conc",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trade Wars Are Giving Birth to ‘Open Plurilateralism’ - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "US reciprocal trade deals built to push America's trade partners away from China",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
       "title": "Why Taiwan’s Semiconductor Success Is About Much More Than TSMC - Global Taiwan ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) In Spotlight Amid Taiwa",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -353,18 +359,6 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: Not Expensive When You Run The Numbers On AI Demand (NYSE:",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve policymakers show support for rate hikes as Warsh reins in guida",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "聯準會",
       "title": "Fed Holds Rates and Leans Toward Fighting Inflation With Future Increases - The ",
       "sentiment": "⚠️偏空",
@@ -375,6 +369,12 @@
       "title": "WATCH: New Fed chair Kevin Warsh holds first news conference after leaving inter",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed holds rates steady, pares down statement to remove cutting bias - CNBC",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
