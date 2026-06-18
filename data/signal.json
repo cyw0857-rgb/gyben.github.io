@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18 17:46",
+  "generated_at": "2026-06-18 17:49",
   "mode": "morning",
   "signal_date": "2026-06-17",
   "trade_date": "2026-06-19",
@@ -145,8 +145,8 @@
     "streak": 0
   },
   "gold": {
-    "price_usd": 4243.0,
-    "chg_pct": -2.6589255303025294,
+    "price_usd": 4242.7001953125,
+    "chg_pct": -2.6658035200296806,
     "signal": 2,
     "level": "good",
     "warning": "黃金大跌 -2.7%，市場風險偏好回升 → 明日偏多 ✅✅"
@@ -154,42 +154,42 @@
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7502.169921875,
-      "chg_pct": 1.106047400151286,
+      "price": 7501.93017578125,
+      "chg_pct": 1.102816364308175,
       "signal": 1,
-      "note": "+1.11%",
+      "note": "+1.10%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51666.83984375,
-      "chg_pct": 0.3384743227042929,
+      "price": 51672.3515625,
+      "chg_pct": 0.34917823747715937,
       "signal": 1,
-      "note": "+0.34%",
+      "note": "+0.35%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26458.869140625,
-      "chg_pct": 1.680173293132449,
+      "price": 26462.2578125,
+      "chg_pct": 1.6931957976715613,
       "signal": 1,
-      "note": "+1.68%",
+      "note": "+1.69%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 14369.40234375,
-      "chg_pct": 6.621112827632582,
+      "price": 14374.28125,
+      "chg_pct": 6.657314362067517,
       "signal": 1,
-      "note": "+6.62%",
+      "note": "+6.66%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.649999618530273,
-      "chg_pct": -9.707163035170826,
+      "price": 16.68000030517578,
+      "chg_pct": -9.544469511436386,
       "signal": 1,
-      "note": "VIX=16.6(低恐慌)",
+      "note": "VIX=16.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -234,26 +234,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.76000213623047,
-      "chg_pct": 0.6694033598302798,
+      "price": 100.7760009765625,
+      "chg_pct": 0.6853878147382619,
       "signal": -1,
-      "note": "+0.67%(偏空)",
+      "note": "+0.69%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4243.0,
-      "chg_pct": -2.6589255303025294,
+      "price": 4242.7001953125,
+      "chg_pct": -2.6658035200296806,
       "signal": 1,
-      "note": "-2.66%()",
+      "note": "-2.67%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 74.25,
-      "chg_pct": -3.3077235124941144,
+      "price": 74.56999969482422,
+      "chg_pct": -2.8910029876744394,
       "signal": -1,
-      "note": "-3.31%",
+      "note": "-2.89%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -266,10 +266,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62529.671875,
-      "chg_pct": -4.681309085920226,
+      "price": 62543.21875,
+      "chg_pct": -4.660658563500118,
       "signal": -1,
-      "note": "-4.68%",
+      "note": "-4.66%",
       "desc": "風險偏好指標"
     }
   },
@@ -312,25 +312,25 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "With Iran war cooling, Trump is refocusing on tariffs - CNN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "China Shock 2.0: Surging Chinese exports threaten Europe's economy, raising conc",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trade Wars Are Giving Birth to ‘Open Plurilateralism’ - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "US reciprocal trade deals built to push America's trade partners away from China",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -372,15 +372,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Holds Rates Steady, but More Officials See Higher Rates as Next Move - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: New Fed chair Kevin Warsh holds first news conference after leaving inter",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve holds interest rates steady as Trump’s new chairman faces fresh ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Holds Rates Steady, but More Officials See Higher Rates as Next Move - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
