@@ -1,14 +1,20 @@
 {
-  "updated": "2026-06-20 15:58",
+  "updated": "2026-06-20 20:52",
   "bull": 5,
-  "bear": 8,
-  "score": -3,
-  "mood": "略偏空",
-  "mood_color": "#f87171",
+  "bear": 9,
+  "score": -4,
+  "mood": "偏空 📉",
+  "mood_color": "#ef4444",
   "items": [
     {
       "label": "川普動態",
-      "title": "Trump Says India Trade Deal ‘Very Close,’ Hails Modi as ‘Tough’ - Bloomberg",
+      "title": "Trump says he will visit India in the future during Modi G7 talk - BBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says India Trade Deal ‘Very Close,’ Hails Modi as ‘Tough’ - Bloomberg.com",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -26,21 +32,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump threatens not to renew trade deal with Canada, Mexico - CBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump Says He May Not Renew Canada-Mexico Trade Deal - The New York Times",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trade Court Rules Trump’s 10% Global Tariff Is Illegal - The New York Times",
+      "title": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump sets July 4 deadline for EU to comply with trade deal or face 'much higher' tariffs - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -50,27 +50,21 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "US reciprocal trade deals built to push America's trade partners away from China - Peterson Institut",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after forced labor probe -",
+      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, UK - Fortune",
+      "title": "When trade policy turns contentious: Tariffs, currency devaluation, and other trade barriers - Brita",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing: A Strong Contender in the Chip Industry - The Motley Fool",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "label": "關稅/貿易",
+      "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -80,15 +74,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Co Ltd Stock (TSM) Opened Up by 6.86% on Jun 20: What Signal Does",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Amkor Soared on a Taiwan Semi Deal. How to Play AMKR Stock Here. - Yahoo Finance",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company (TSM) Does Not Rule Out Price Rises as Costs Increase - Y",
+      "title": "Taiwan Semiconductor Manufacturing: A Strong Contender in the Chip Industry - The Motley Fool",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Co Ltd Stock (TSM) Opened Up by 6.86% on Jun 20: What Signal Does",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
