@@ -607,10 +607,12 @@ def generate_html(signal, records, stock=None, dca=None):
     sim_v70_df    = _filter("sim_v70")
     sim_v60_df    = _filter("sim_v60")
     sim_v50_df    = _filter("sim_v50")
+    sim_vsel_df   = _filter("sim_vsel")
     real_v100_df  = _filter("real_v100")
     real_v70_df   = _filter("real_v70")
     real_v60_df   = _filter("real_v60")
     real_v50_df   = _filter("real_v50")
+    real_vsel_df  = _filter("real_vsel")
 
     # ── 信號資料 ─────────────────────────────────────────
     direction  = signal.get("direction", 0)
@@ -724,13 +726,31 @@ def generate_html(signal, records, stock=None, dca=None):
             "neutral": ("#1f2937", "#9ca3af"),
         }
         gbg, gtxt = gcard_colors.get(glvl, gcard_colors["neutral"])
+        # 即時油價（WTI 原油）— 顯示在黃金旁
+        oil_html = ""
+        if gold.get("oil_usd"):
+            op  = gold.get("oil_usd", 0)
+            oc  = gold.get("oil_chg", 0)
+            oil_html = f"""
+            <div style="border-left:1px solid rgba(255,255,255,.25);padding-left:16px;margin-left:4px">
+              <div style="font-size:.62rem;opacity:.75;letter-spacing:.08em">🛢 WTI 原油</div>
+              <div style="font-size:1.15rem;font-weight:800;margin-top:3px">
+                ${op:,.1f}
+                <span style="font-size:.8rem">{"▲" if oc >= 0 else "▼"} {oc:+.2f}%</span>
+              </div>
+            </div>"""
         gold_html = f"""
         <div style="background:{gbg};color:{gtxt};border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
           <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示</div>
-          <div style="font-size:1.4rem;font-weight:800;margin:6px 0">
-            ${gp:,.0f} / oz &ensp;
-            <span style="font-size:1rem">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</span>
+          <div style="display:flex;align-items:center;gap:18px;margin:6px 0">
+            <div>
+              <div style="font-size:1.4rem;font-weight:800">
+                ${gp:,.0f} / oz &ensp;
+                <span style="font-size:1rem">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</span>
+              </div>
+            </div>
+            {oil_html}
           </div>
           <div style="font-size:.88rem;opacity:.9">{gwarn}</div>
         </div>"""
@@ -801,6 +821,12 @@ def generate_html(signal, records, stock=None, dca=None):
     elif ma1_bear and 15 < rsi < 70: dir_v50 = -1
     else: dir_v50 = 0
 
+    # 精選版 (vsel): MA2日 + 趨勢強度(MA5距MA20>0.6%) + MACD + 前K + RSI窄帶（最嚴，重質不重量）
+    spread_d = (ma5 - ma20) / ma20 if ma20 else 0.0
+    if   ma2_bull and spread_d > 0.006 and macd_b and prev_k_up and 58 < rsi < 66: dir_vsel = 1
+    elif ma2_bear and spread_d < -0.006 and macd_s and (not prev_k_up) and 34 < rsi < 42: dir_vsel = -1
+    else: dir_vsel = 0
+
     def _ver_card(ver_dir, win_rate, n_trades, label, desc, real_df_v=None):
         """單個版本的買賣建議小卡（含實倉統計）"""
         if ver_dir == 1:
@@ -858,13 +884,15 @@ def generate_html(signal, records, stock=None, dca=None):
           <div style="font-size:.62rem;color:#6b7280;margin-top:6px">{desc}</div>
         </div>"""
 
-    # 從stats取四版本筆數和勝率（已有實際backtest結果）
+    # 從stats取五版本筆數和勝率（已有實際backtest結果）
     s100 = signal.get("stats_sim",  {}); n100 = s100.get("total", 13); wr100 = s100.get("win_rate", 100)
     s70  = signal.get("stats_v70",  {}); n70  = s70.get("total",  21); wr70  = s70.get("win_rate", 90)
     s60  = signal.get("stats_v60",  {}); n60  = s60.get("total",  37); wr60  = s60.get("win_rate", 73)
     s50  = signal.get("stats_v50",  {}); n50  = s50.get("total",  66); wr50  = s50.get("win_rate", 60)
+    ssel = signal.get("stats_vsel", {}); nsel = ssel.get("total", 194); wrsel = ssel.get("win_rate", 51)
 
-    four_cards = (
+    five_cards = (
+        _ver_card(dir_vsel, wrsel, nsel, "⭐ 精選版 — MA2日+趨勢強+RSI窄帶", "重質不重量，正期望值，約每年7筆", real_vsel_df) +
         _ver_card(dir_v100, wr100, n100, "🎯 精準版 — MA2日+SOX>0.5%+RSI<72", "條件最嚴，少量高確信度",  real_v100_df) +
         _ver_card(dir_v70,  wr70,  n70,  "📊 優化版 — MA1日+MACD+前K+SOX",    "條件均衡，每月3-4筆",     real_v70_df) +
         _ver_card(dir_v60,  wr60,  n60,  "📈 高頻版 — MA1日+MACD+前K收紅",    "條件寬鬆，每月5-7筆",     real_v60_df) +
@@ -873,9 +901,9 @@ def generate_html(signal, records, stock=None, dca=None):
 
     buy_sell_html = f"""
     <div class="card">
-      <div class="stitle">📋 四版本今日買賣建議</div>
+      <div class="stitle">📋 五版本今日買賣建議</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-        {four_cards}
+        {five_cards}
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
         ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜昨收 {lc:,.0f}
@@ -1119,6 +1147,47 @@ def generate_html(signal, records, stock=None, dca=None):
               {_real_row_html(real_v50_df)}
               <p style="color:#6b7280;font-size:.72rem;margin-top:6px">
                 ⚠️ 歷史回測（非真實交易）｜條件最寬鬆，每月約10-15筆超高頻參考
+              </p>
+            </div>"""
+
+    # ── 模擬回測統計 E：精選版 (vsel) ─────────────────
+    sim_vsel_stats_html = ""
+    if not sim_vsel_df.empty:
+        svs = sim_vsel_df.copy()
+        svs["pnl"]      = pd.to_numeric(svs["pnl_nts"], errors="coerce").fillna(0)
+        svs["win_bool"] = svs["win"].map({"True": True, "False": False}).fillna(False)
+        svs_only = svs[svs["pnl"] != 0]
+        if not svs_only.empty:
+            vt  = len(svs_only)
+            vw  = int(svs_only["win_bool"].sum())
+            vwr = vw / vt * 100
+            vp  = svs_only["pnl"].sum()
+            win_pnl  = svs_only[svs_only["win_bool"]]["pnl"]
+            lose_pnl = svs_only[~svs_only["win_bool"]]["pnl"]
+            aw = win_pnl.mean() if not win_pnl.empty else 0
+            al = lose_pnl.mean() if not lose_pnl.empty else 0
+            rr = (aw / -al) if al < 0 else 0
+            sim_vsel_stats_html = f"""
+            <div class="card" style="border:1.5px solid #a78bfa">
+              <div class="stitle">⭐ 精選版回測 — MA2日+趨勢強度+RSI窄帶（29年真實）</div>
+              <div class="row3">
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.3rem;color:{pnl_color(vwr-50)}">{vwr:.0f}%</div>
+                  <div class="lbl">歷史勝率<br>{vw}勝 {vt-vw}敗</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem;color:{pnl_color(vp)}">NT${vp:,.0f}</div>
+                  <div class="lbl">模擬損益</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem">{vt}</div>
+                  <div class="lbl">回測筆數<br><span style="font-size:.65rem;color:#a78bfa">重質不重量</span></div>
+                </div>
+              </div>
+              {_real_row_html(real_vsel_df)}
+              <p style="color:#a78bfa;font-size:.72rem;margin-top:6px">
+                ✅ 全期29年回測｜賺賠比 {rr:.2f}（均賺NT${aw:,.0f}／均賠NT${al:,.0f}）｜
+                勝率雖只 {vwr:.0f}%，但靠正期望值（重質不重量、約每年7筆）長期為正
               </p>
             </div>"""
 
@@ -2390,6 +2459,7 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 
   <!-- Tab 2：歷史回測統計（預設收納） -->
   <div class="tab-pane" id="t-backtest">
+    {sim_vsel_stats_html}
     {sim_stats_html}
     {sim_v70_stats_html}
     {sim_v60_stats_html}

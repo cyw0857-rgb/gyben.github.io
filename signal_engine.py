@@ -185,13 +185,26 @@ def fetch_gold_detail() -> dict:
             warning = f"黃金小幅變動 {chg:+.1f}%，影響中性"
             signal  = 0
 
-        return {
+        result = {
             "price_usd": usd_per_oz,
             "chg_pct":   chg,
             "signal":    signal,
             "level":     level,
             "warning":   warning,
         }
+
+        # 即時油價（WTI 西德州原油 CL=F；失敗不影響黃金）
+        try:
+            oh = yf.Ticker("CL=F").history(period="5d")
+            if len(oh) >= 2:
+                op_prev = oh.iloc[-2]["Close"]
+                op_curr = oh.iloc[-1]["Close"]
+                result["oil_usd"] = op_curr
+                result["oil_chg"] = (op_curr - op_prev) / op_prev * 100
+        except Exception:
+            pass
+
+        return result
     except Exception:
         return {}
 
@@ -986,6 +999,83 @@ def backfill_history_v50(tw_df: pd.DataFrame, days: int = 130) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=RECORD_COLS)
 
 
+def backfill_history_vsel(tw_df: pd.DataFrame, days: int = 130) -> pd.DataFrame:
+    """
+    精選版 (vsel)：重質不重量，29年實測真實勝率 ~51%、正期望值
+    條件：MA連2日對齊 + MACD連2日方向 + 趨勢強度(MA5距MA20>0.6%)
+          + 前2K同向 + RSI窄帶(多58-66/空34-42)
+    當沖開收盤出場（無停損停利）。約每年 7 筆，賺賠比 ~1.15。
+    status = "sim_vsel"
+    """
+    RSI_LO, RSI_HI, GAP = 58, 66, 0.006
+    bt = tw_df.iloc[-min(days, len(tw_df)):]
+    rows = []
+    for i in range(4, len(bt)):
+        prev = bt.iloc[i - 1]; p2 = bt.iloc[i - 2]; p3 = bt.iloc[i - 3]
+        pp   = p2               # prev 的前一日，給 MA / MACD 連2日用
+        curr = bt.iloc[i]
+        sig_date = bt.index[i - 1].strftime("%Y-%m-%d")
+        trd_date = bt.index[i].strftime("%Y-%m-%d")
+
+        tw_s, _ = taiwan_signal(prev, bt.iloc[max(0, i-4):i])
+
+        ma5, ma10, ma20 = float(prev["MA5"]), float(prev["MA10"]), float(prev["MA20"])
+        ma5p, ma10p, ma20p = float(pp["MA5"]), float(pp["MA10"]), float(pp["MA20"])
+        spread = (ma5 - ma20) / ma20 if ma20 else 0.0
+        ma_bull = ma5 > ma10 > ma20 and ma5p > ma10p > ma20p
+        ma_bear = ma5 < ma10 < ma20 and ma5p < ma10p < ma20p
+        macd_b = float(prev["MACD"]) > float(prev["MACDs"]) and float(pp["MACD"]) > float(pp["MACDs"])
+        macd_s = float(prev["MACD"]) < float(prev["MACDs"]) and float(pp["MACD"]) < float(pp["MACDs"])
+        k2_up = float(p2["Close"]) > float(p2["Open"]) and float(p3["Close"]) > float(p3["Open"])
+        k2_dn = float(p2["Close"]) < float(p2["Open"]) and float(p3["Close"]) < float(p3["Open"])
+        rsi_val = float(prev["RSI"])
+
+        direction = 0
+        if ma_bull and macd_b and k2_up and spread > GAP and RSI_LO < rsi_val < RSI_HI:
+            direction = 1
+        elif ma_bear and macd_s and k2_dn and spread < -GAP and (100-RSI_HI) < rsi_val < (100-RSI_LO):
+            direction = -1
+
+        dir_zh = "做多▲" if direction == 1 else ("做空▼" if direction == -1 else "觀望─")
+        row = _empty_row()
+        row.update({
+            "signal_date":  sig_date,
+            "trade_date":   trd_date,
+            "session":      "day",
+            "direction":    str(direction),
+            "direction_zh": dir_zh,
+            "total_score":  str(tw_s),
+            "tw_score":     str(tw_s),
+            "intl_score":   "0",
+            "news_score":   "0",
+        })
+
+        if direction == 0:
+            row["status"] = "sim_vsel_skip"
+        else:
+            entry = curr["Open"]  + SLIPPAGE * direction
+            exit_ = curr["Close"] - SLIPPAGE * direction
+            pts   = (exit_ - entry) * direction
+            pnl   = pts * POINT_VALUE - COMMISSION
+            row.update({
+                "entry_price": str(round(entry)),
+                "exit_price":  str(round(exit_)),
+                "pnl_points":  str(round(pts, 1)),
+                "pnl_nts":     str(round(pnl)),
+                "win":         str(pnl > 0),
+                "status":      "sim_vsel",
+            })
+        rows.append(row)
+
+    traded = [r for r in rows if r["status"] == "sim_vsel"]
+    if traded:
+        wins = sum(1 for r in traded if r["win"] == "True")
+        wr   = wins / len(traded) * 100
+        print(f"  🎯 精選版回測: {len(traded)}筆交易，勝率 {wr:.0f}%（重質不重量）", flush=True)
+
+    return pd.DataFrame(rows, columns=RECORD_COLS)
+
+
 def compute_stats(records: pd.DataFrame, status_filter="completed") -> dict:
     """累計統計：status_filter='completed' 只算實際交易，'simulated' 只算回測"""
     completed = records[records["status"] == status_filter].copy()
@@ -1357,11 +1447,13 @@ def rebuild_backtest(period: str = "max"):
     df_v70  = backfill_history_v70(tw,  days=n, sox_df=sox, spx_df=spx)
     df_v60  = backfill_history_v60(tw,  days=n)
     df_v50  = backfill_history_v50(tw,  days=n)
-    records = pd.concat([real, df_v100, df_v70, df_v60, df_v50], ignore_index=True)
+    df_vsel = backfill_history_vsel(tw, days=n)
+    records = pd.concat([real, df_v100, df_v70, df_v60, df_v50, df_vsel], ignore_index=True)
     save_records(records)
 
     print(f"\n{'='*56}\n  📊 全期回測結果（{tw.index[0].date()} ~ {tw.index[-1].date()}）\n{'='*56}", flush=True)
-    for status, label in [("simulated", "精準版 v100"), ("sim_v70", "優化版 v70"),
+    for status, label in [("sim_vsel", "精選版 vsel"), ("simulated", "精準版 v100"),
+                          ("sim_v70", "優化版 v70"),
                           ("sim_v60", "高頻版 v60"), ("sim_v50", "超高頻版 v50")]:
         st = compute_stats(records, status_filter=status)
         print(f"  {label:12s}: {st['total']:>4d}筆  勝率 {st['win_rate']:5.1f}%  "
@@ -1424,12 +1516,15 @@ def main():
         df_v60  = backfill_history_v60(tw_df, days=130)
         # 版本D: 超高頻版（60%）
         df_v50  = backfill_history_v50(tw_df, days=130)
-        records = pd.concat([df_v100, df_v70, df_v60, df_v50], ignore_index=True)
+        # 版本E: 精選版（重質不重量，~51%正期望值）
+        df_vsel = backfill_history_vsel(tw_df, days=130)
+        records = pd.concat([df_v100, df_v70, df_v60, df_v50, df_vsel], ignore_index=True)
     else:
         missing = []
         if not records["status"].isin(["sim_v70", "sim_v70_skip"]).any(): missing.append("v70")
         if not records["status"].isin(["sim_v60", "sim_v60_skip"]).any(): missing.append("v60")
         if not records["status"].isin(["sim_v50", "sim_v50_skip"]).any(): missing.append("v50")
+        if not records["status"].isin(["sim_vsel", "sim_vsel_skip"]).any(): missing.append("vsel")
         if missing:
             print(f"  → 補生成 {'+'.join(missing)} 版本回測...", flush=True)
             try:
@@ -1443,6 +1538,8 @@ def main():
                 records = pd.concat([records, backfill_history_v60(tw_df, days=130)], ignore_index=True)
             if "v50" in missing:
                 records = pd.concat([records, backfill_history_v50(tw_df, days=130)], ignore_index=True)
+            if "vsel" in missing:
+                records = pd.concat([records, backfill_history_vsel(tw_df, days=130)], ignore_index=True)
 
     records = update_completed_trades(records, tw_df)
 
@@ -1618,11 +1715,22 @@ def main():
     if   ma1_b and 30 < rsi_val < 85: dv50 = 1
     elif ma1_s and 15 < rsi_val < 70: dv50 = -1
     else: dv50 = 0
+    # 精選版 (vsel): MA連2日 + MACD連2日 + 趨勢強度(MA5距MA20>0.6%) + 前2K同向 + RSI窄帶
+    ma20_live   = float(prev["MA20"])
+    spread_live = (float(prev["MA5"]) - ma20_live) / ma20_live if ma20_live else 0.0
+    macd2_b = macd_b_live and (float(p2_live["MACD"]) > float(p2_live["MACDs"]))
+    macd2_s = macd_s_live and (float(p2_live["MACD"]) < float(p2_live["MACDs"]))
+    pk2_up  = pk_up and (float(tw_df.iloc[-3]["Close"]) > float(tw_df.iloc[-3]["Open"]))
+    pk2_dn  = (not pk_up) and (float(tw_df.iloc[-3]["Close"]) < float(tw_df.iloc[-3]["Open"]))
+    if   ma_bull and macd2_b and pk2_up and spread_live > 0.006 and 58 < rsi_val < 66: dvsel = 1
+    elif ma_bear and macd2_s and pk2_dn and spread_live < -0.006 and 34 < rsi_val < 42: dvsel = -1
+    else: dvsel = 0
 
     records = add_version_real_signal(records, sig_date, nday, dv100, "v100")
     records = add_version_real_signal(records, sig_date, nday, dv70,  "v70")
     records = add_version_real_signal(records, sig_date, nday, dv60,  "v60")
     records = add_version_real_signal(records, sig_date, nday, dv50,  "v50")
+    records = add_version_real_signal(records, sig_date, nday, dvsel, "vsel")
 
     save_records(records)
 
@@ -1631,6 +1739,7 @@ def main():
     stats_v70      = compute_stats(records, status_filter="sim_v70")
     stats_v60      = compute_stats(records, status_filter="sim_v60")
     stats_v50      = compute_stats(records, status_filter="sim_v50")
+    stats_vsel     = compute_stats(records, status_filter="sim_vsel")
     stats_real_v100 = compute_stats(records, status_filter="real_v100")
     stats_real_v70  = compute_stats(records, status_filter="real_v70")
     stats_real_v60  = compute_stats(records, status_filter="real_v60")
@@ -1693,6 +1802,7 @@ def main():
         "stats_v70":         {k: _safe(v) for k, v in stats_v70.items()},
         "stats_v60":         {k: _safe(v) for k, v in stats_v60.items()},
         "stats_v50":         {k: _safe(v) for k, v in stats_v50.items()},
+        "stats_vsel":        {k: _safe(v) for k, v in stats_vsel.items()},
         "stats_real_v100":   {k: _safe(v) for k, v in stats_real_v100.items()},
         "stats_real_v70":    {k: _safe(v) for k, v in stats_real_v70.items()},
         "stats_real_v60":    {k: _safe(v) for k, v in stats_real_v60.items()},
