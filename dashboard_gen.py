@@ -8,6 +8,7 @@ from datetime import datetime
 RECORDS_PATH  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "records.csv")
 SIGNAL_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "signal.json")
 STOCK_PATH    = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2645.json")
+DCA_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
 OUTPUT_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 
 def load_data():
@@ -32,7 +33,12 @@ def load_data():
         with open(STOCK_PATH, encoding="utf-8") as f:
             stock = json.load(f)
 
-    return signal, records, stock
+    dca = {}
+    if os.path.exists(DCA_PATH):
+        with open(DCA_PATH, encoding="utf-8") as f:
+            dca = json.load(f)
+
+    return signal, records, stock, dca
 
 def e(s):
     return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
@@ -320,7 +326,178 @@ def stock_card_html(stock):
 </div>"""
 
 
-def generate_html(signal, records, stock=None):
+def _sparkline(hist, up_color="#10b981", w=120, h=34):
+    """近30日收盤迷你走勢 SVG"""
+    if not hist or len(hist) < 2:
+        return ""
+    lo, hi = min(hist), max(hist)
+    span = (hi - lo) or 1
+    n = len(hist)
+    pts = []
+    for i, v in enumerate(hist):
+        x = i / (n - 1) * w
+        y = h - (v - lo) / span * (h - 4) - 2
+        pts.append(f"{x:.1f},{y:.1f}")
+    col = up_color if hist[-1] >= hist[0] else "#ef4444"
+    poly = " ".join(pts)
+    return (f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+            f'style="display:block">'
+            f'<polyline points="{poly}" fill="none" stroke="{col}" '
+            f'stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>'
+            f'</svg>')
+
+
+def dca_card_html(dca):
+    """定期定額追蹤卡片 — 009816 + 00992A 每月25號各 NT$22,500"""
+    if not dca:
+        return ""
+
+    updated      = dca.get("updated", "")
+    monthly      = dca.get("monthly_total", 45000)
+    buy_day      = dca.get("buy_day", 25)
+    next_buy     = dca.get("next_buy", "─")
+    days_to_next = dca.get("days_to_next", 0)
+    total_cost   = dca.get("total_cost", 0)
+    total_value  = dca.get("total_value", 0)
+    total_pnl    = dca.get("total_pnl", 0)
+    total_ret    = dca.get("total_ret", 0)
+    holdings     = dca.get("holdings", [])
+    purchases    = dca.get("purchases", [])
+    has_pos      = total_cost > 0
+
+    # ── 總覽橫幅 ─────────────────────────────────────────
+    if has_pos:
+        pcol = "#10b981" if total_pnl >= 0 else "#ef4444"
+        arrow = "▲" if total_pnl >= 0 else "▼"
+        summary_html = (
+            f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;'
+            f'background:#0b1628;border:1px solid #1e3050;border-radius:12px;'
+            f'padding:12px 10px;margin:10px 0 14px">'
+            f'<div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總投入</div>'
+            f'<div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">${total_cost:,.0f}</div></div>'
+            f'<div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總市值</div>'
+            f'<div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">${total_value:,.0f}</div></div>'
+            f'<div style="text-align:center"><div style="font-size:.62rem;color:#64748b">損益</div>'
+            f'<div style="font-size:1.02rem;font-weight:800;color:{pcol}">{arrow}${abs(total_pnl):,.0f}</div></div>'
+            f'<div style="text-align:center"><div style="font-size:.62rem;color:#64748b">報酬率</div>'
+            f'<div style="font-size:1.02rem;font-weight:800;color:{pcol}">{total_ret:+.2f}%</div></div>'
+            f'</div>'
+        )
+    else:
+        summary_html = (
+            f'<div style="background:linear-gradient(135deg,#0e1c34,#0b1628);'
+            f'border:1px solid #1e3050;border-radius:12px;padding:14px;'
+            f'margin:10px 0 14px;text-align:center">'
+            f'<div style="font-size:.78rem;color:#cbd5e1">尚未扣款 · 首次扣款日 '
+            f'<span style="color:#fbbf24;font-weight:800">{e(next_buy)}</span>'
+            f'（{days_to_next} 天後）</div>'
+            f'<div style="font-size:.66rem;color:#64748b;margin-top:4px">'
+            f'屆時將各買進 NT${monthly//2:,}，下方為目前參考股價</div>'
+            f'</div>'
+        )
+
+    # ── 雙欄持倉 ─────────────────────────────────────────
+    cols = ""
+    for h in holdings:
+        sym   = h.get("symbol", "")
+        nm    = h.get("name", "")
+        last  = h.get("last", 0)
+        chg   = h.get("chg_pct", 0)
+        ccol  = "#10b981" if chg >= 0 else "#ef4444"
+        carr  = "▲" if chg >= 0 else "▼"
+        spark = _sparkline(h.get("hist", []))
+
+        if has_pos and h.get("shares", 0) > 0:
+            pcol2 = "#10b981" if h.get("pnl", 0) >= 0 else "#ef4444"
+            pos_html = (
+                f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;'
+                f'margin-top:8px;font-size:.72rem">'
+                f'<div style="color:#64748b">持有股數</div>'
+                f'<div style="text-align:right;color:#e2e8f0;font-weight:700">{h["shares"]:,.2f}</div>'
+                f'<div style="color:#64748b">平均成本</div>'
+                f'<div style="text-align:right;color:#e2e8f0">${h["avg_cost"]:.2f}</div>'
+                f'<div style="color:#64748b">投入金額</div>'
+                f'<div style="text-align:right;color:#e2e8f0">${h["cost"]:,.0f}</div>'
+                f'<div style="color:#64748b">目前市值</div>'
+                f'<div style="text-align:right;color:#e2e8f0">${h["value"]:,.0f}</div>'
+                f'<div style="color:#64748b">損益</div>'
+                f'<div style="text-align:right;color:{pcol2};font-weight:800">'
+                f'${h["pnl"]:+,.0f}（{h["ret_pct"]:+.2f}%）</div>'
+                f'</div>'
+                f'<div style="font-size:.6rem;color:#475569;margin-top:5px">'
+                f'已扣款 {h.get("n_buys",0)} 次</div>'
+            )
+        else:
+            pos_html = (
+                f'<div style="font-size:.68rem;color:#64748b;margin-top:8px;'
+                f'padding:6px 0;border-top:1px dashed #1e3050">'
+                f'尚未持有 · 計畫每月投入 ${monthly//2:,}</div>'
+            )
+
+        cols += (
+            f'<div style="background:#0b1628;border:1px solid #1e3050;'
+            f'border-radius:12px;padding:12px">'
+            f'<div style="display:flex;justify-content:space-between;align-items:baseline">'
+            f'<div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">{e(nm)}</div>'
+            f'<div style="font-size:.62rem;color:#64748b">{e(sym)}</div></div>'
+            f'<div style="text-align:right">'
+            f'<div style="font-size:1.1rem;font-weight:800;color:#e2e8f0">{last:.2f}</div>'
+            f'<div style="font-size:.7rem;font-weight:700;color:{ccol}">{carr}{abs(chg):.2f}%</div>'
+            f'</div></div>'
+            f'<div style="margin-top:8px">{spark}</div>'
+            f'<div style="font-size:.56rem;color:#475569;text-align:right">近30日</div>'
+            f'{pos_html}'
+            f'</div>'
+        )
+
+    # ── 扣款記錄 ─────────────────────────────────────────
+    rec_html = ""
+    if purchases:
+        rows = ""
+        name_map = {h["symbol"]: h["name"] for h in holdings}
+        for p in reversed(purchases):
+            rows += (
+                f'<tr>'
+                f'<td style="color:#94a3b8;padding:4px 3px">{e(p["date"])}</td>'
+                f'<td style="padding:4px 3px;color:#cbd5e1">{e(name_map.get(p["symbol"], p["symbol"]))}</td>'
+                f'<td style="text-align:right;padding:4px 3px;color:#cbd5e1">${p["amount"]:,.0f}</td>'
+                f'<td style="text-align:right;padding:4px 3px;color:#cbd5e1">{p["price"]:.2f}</td>'
+                f'<td style="text-align:right;padding:4px 3px;color:#e2e8f0;font-weight:700">{p["shares"]:,.2f}</td>'
+                f'</tr>'
+            )
+        rec_html = (
+            f'<div style="margin-top:14px">'
+            f'<div style="font-size:.74rem;font-weight:700;color:#94a3b8;margin-bottom:5px">扣款記錄</div>'
+            f'<table style="width:100%;border-collapse:collapse;font-size:.7rem">'
+            f'<tr style="color:#64748b;border-bottom:1px solid #1e3050">'
+            f'<td style="padding:4px 3px">日期</td><td style="padding:4px 3px">標的</td>'
+            f'<td style="text-align:right;padding:4px 3px">投入</td>'
+            f'<td style="text-align:right;padding:4px 3px">成交價</td>'
+            f'<td style="text-align:right;padding:4px 3px">股數</td></tr>'
+            f'{rows}</table></div>'
+        )
+
+    return f"""
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
+    <h2 style="margin:0">💰 定期定額追蹤</h2>
+    <span style="font-size:.62rem;color:#64748b">更新 {e(updated)}</span>
+  </div>
+  <div style="font-size:.7rem;color:#94a3b8;margin-top:2px">
+    每月 {buy_day} 號投入 NT${monthly:,}（009816 + 00992A 各 NT${monthly//2:,}）
+  </div>
+  {summary_html}
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+    {cols}
+  </div>
+  {rec_html}
+  <div style="font-size:.58rem;color:#374155;margin-top:10px">
+    ⚠️ 定期定額為長期投資，短期帳面損益僅供參考 · 股價每日更新
+  </div>
+</div>"""
+
+
+def generate_html(signal, records, stock=None, dca=None):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     sig_generated_at = signal.get("generated_at", now)
     stock_updated    = (stock or {}).get("updated", "─")
@@ -1441,6 +1618,9 @@ def generate_html(signal, records, stock=None):
     # ── 長榮航太看板 ─────────────────────────────────────
     stock_html = stock_card_html(stock or {})
 
+    # ── 定期定額追蹤 ─────────────────────────────────────
+    dca_html = dca_card_html(dca or {})
+
     # ── 評分視覺化 ───────────────────────────────────────
     gold_contribution = gold.get("signal", 0)
 
@@ -2140,6 +2320,9 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 <!-- ══════════════ 國際市場（全寬）══════════════════ -->
 {intl_html}
 
+<!-- ══════════════ 定期定額（009816 + 00992A）══════════ -->
+{dca_html}
+
 <!-- ══════════════ 長榮航太（最後）══════════════════ -->
 {stock_html}
 
@@ -2244,9 +2427,9 @@ function toggleAcc(btnEl) {{
 
 def main():
     print("📂 載入資料...", flush=True)
-    signal, records, stock = load_data()
+    signal, records, stock, dca = load_data()
     print("🎨 產生看板...", flush=True)
-    html = generate_html(signal, records, stock)
+    html = generate_html(signal, records, stock, dca)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"✅ 看板已儲存: {OUTPUT_PATH}")

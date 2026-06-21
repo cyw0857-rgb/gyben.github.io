@@ -45,6 +45,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  國際市場抓取失敗（繼續產生看板）")
 
+# 2d. 更新定期定額追蹤（同步寫入 data/dca.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "dca_fetch.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  定期定額抓取失敗（繼續產生看板）")
+
 # 3. 執行看板產生
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "dashboard_gen.py")],
