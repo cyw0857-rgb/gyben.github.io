@@ -288,7 +288,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div style="font-size:.88rem;opacity:.9">黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅</div>
         </div>
 <div class="card">
-              <div class="stitle">📅 今日 2026-06-20</div>
+              <div class="stitle">📅 今日 2026-06-21</div>
               <div style="color:#9ca3af;font-size:.9rem;padding:4px 0">
                 尚未產生今日記錄，請執行早盤信號程式</div>
             </div>
@@ -1034,7 +1034,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div id="news-mood" style="margin-bottom:8px"></div>
   <div id="news-list"><div style="color:#475569;font-size:.78rem;padding:8px 0">⏳ 載入新聞中…</div></div>
-  <div style="font-size:.58rem;color:#334155;margin-top:8px">每15分鐘自動更新 · 標題自動翻譯為繁體中文</div>
+  <div style="font-size:.58rem;color:#334155;margin-top:8px">瀏覽器即時抓取 · 每5分鐘自動更新 · 標題自動翻譯為繁體中文</div>
 </div>
 
 <script>
@@ -1099,15 +1099,105 @@ tr:hover td{background:rgba(255,255,255,.014)}
     },3000);
   }
 
+  /* ── 即時抓 Google News RSS（瀏覽器端，不靠 GitHub Action）── */
+  var FEEDS=[
+    {label:'川普動態',  q:'Trump+tariff+OR+Trump+trade+OR+Trump+says', max:6},
+    {label:'關稅/貿易', q:'tariff+trade+war+economy',                 max:4},
+    {label:'台股/半導體',q:'Taiwan+stock+OR+TSMC+OR+semiconductor',    max:4},
+    {label:'聯準會',    q:'Federal+Reserve+interest+rate+OR+stock+market',max:4}
+  ];
+  var BULL=['deal','agreement','cut','boost','surge','rally','record','strong','optimism','positive','growth','rise','gain','increase','stimulus','ceasefire','peace','reduce','chip act'];
+  var BEAR=['tariff','sanction','ban','war','threat','crash','recession','inflation','fall','drop','fear','risk','tension','conflict','escalat','collapse','default','crisis','sell-off','warning','impose','penalty','retaliation','shutdown','downgrade','miss','layoff','bankrupt'];
+  function sentiment(t){
+    var s=t.toLowerCase(),b=0,r=0;
+    BULL.forEach(function(w){if(s.indexOf(w)>=0)b++;});
+    BEAR.forEach(function(w){if(s.indexOf(w)>=0)r++;});
+    return b>r?1:(r>b?-1:0);
+  }
+  function rssUrl(q){ return 'https://news.google.com/rss/search?q='+q+'&hl=en-US&gl=US&ceid=US:en'; }
+  /* 多 proxy 容錯：jina.ai(markdown) 主 → allorigins(xml) → corsproxy(xml) */
+  var PROXIES=[
+    {make:function(raw){return 'https://r.jina.ai/'+raw;}, kind:'md'},
+    {make:function(raw){return 'https://api.allorigins.win/raw?url='+encodeURIComponent(raw);}, kind:'xml'},
+    {make:function(raw){return 'https://corsproxy.io/?url='+encodeURIComponent(raw);}, kind:'xml'}
+  ];
+  function extractTitles(text,kind){
+    var titles=[];
+    if(kind==='xml'){
+      var doc=new DOMParser().parseFromString(text,'text/xml');
+      var nodes=doc.querySelectorAll('item title');
+      for(var i=0;i<nodes.length;i++){var t=(nodes[i].textContent||'').trim();if(t)titles.push(t);}
+    }else{ /* jina markdown：每條新聞是  ### [標題](連結) */
+      var re=/^#{2,3} \[(.+?)\]\(/gm, m;
+      while((m=re.exec(text))!==null){ if(m[1].trim()) titles.push(m[1].trim()); }
+    }
+    return titles;
+  }
+  function toItems(titles,cfg){
+    var out=[],n=0;
+    for(var j=0;j<titles.length && n<cfg.max;j++){
+      var title=titles[j]; if(!title)continue;
+      var sv=sentiment(title);
+      out.push({label:cfg.label,title:title.slice(0,100),
+        sentiment:sv===1?'✅偏多':(sv===-1?'⚠️偏空':'⚪中性'),sent_val:sv});
+      n++;
+    }
+    return out;
+  }
+  function fetchFeed(cfg){
+    var raw=rssUrl(cfg.q);
+    function tryP(idx){
+      if(idx>=PROXIES.length) return Promise.resolve([]);
+      var p=PROXIES[idx];
+      return fetch(p.make(raw)).then(function(r){
+        if(!r.ok) throw new Error('http '+r.status);
+        return r.text();
+      }).then(function(text){
+        var items=toItems(extractTitles(text,p.kind),cfg);
+        return items.length ? items : tryP(idx+1);
+      }).catch(function(){ return tryP(idx+1); });
+    }
+    return tryP(0);
+  }
+  function buildMood(items){
+    var bull=0,bear=0;
+    items.forEach(function(i){if(i.sent_val===1)bull++;else if(i.sent_val===-1)bear++;});
+    var score=bull-bear,mood,mc;
+    if(score>=4){mood='偏多 📈';mc='#10b981';}
+    else if(score>=2){mood='略偏多';mc='#34d399';}
+    else if(score<=-4){mood='偏空 📉';mc='#ef4444';}
+    else if(score<=-2){mood='略偏空';mc='#f87171';}
+    else{mood='中性 ─';mc='#9ca3af';}
+    function pad(n){return n<10?'0'+n:''+n;}
+    var d=new Date();
+    var ts=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+' '+pad(d.getHours())+':'+pad(d.getMinutes());
+    return {updated:ts,bull:bull,bear:bear,score:score,mood:mood,mood_color:mc,items:items};
+  }
+  function fetchLiveNews(){
+    return Promise.all(FEEDS.map(fetchFeed)).then(function(lists){
+      var items=[];
+      lists.forEach(function(l){items=items.concat(l);});
+      if(!items.length) return null;          /* 全部 proxy 失敗 → 交給 fallback */
+      return buildMood(items);
+    });
+  }
   window.newsLoad=function(){
     document.getElementById('news-meta').textContent='更新中…';
-    fetch('data/news.json?_='+Date.now())
-      .then(function(r){return r.json();})
-      .then(render)
-      .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
+    fetchLiveNews()
+      .then(function(d){
+        if(d){ render(d); return; }
+        /* fallback：讀靜態 news.json */
+        return fetch('data/news.json?_='+Date.now())
+          .then(function(r){return r.json();}).then(render);
+      })
+      .catch(function(){
+        fetch('data/news.json?_='+Date.now())
+          .then(function(r){return r.json();}).then(render)
+          .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
+      });
   };
   newsLoad();
-  setInterval(newsLoad,900000);
+  setInterval(newsLoad,300000);   /* 每5分鐘即時刷新 */
 })();
 </script></div>
 </div><!-- /two-col 新聞 -->
@@ -1298,7 +1388,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b">2026-06-20 08:35 更新</span>
+      <span style="font-size:.6rem;color:#64748b">2026-06-21 17:39 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1502,7 +1592,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-06-20 08:35',STK_AT='2026-06-20 08:35',notified=false;
+  var SIG_AT='2026-06-20 08:35',STK_AT='2026-06-21 17:39',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');

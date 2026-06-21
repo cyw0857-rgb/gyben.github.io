@@ -42,10 +42,13 @@ def run():
         print("❌ feedparser 未安裝"); return
 
     print("📰 抓取市場新聞...", flush=True)
+    UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+          "AppleWebKit/537.36 (KHTML, like Gecko) "
+          "Chrome/124.0 Safari/537.36")
     items = []
     for cfg in NEWS_FEEDS:
         try:
-            feed  = feedparser.parse(cfg["url"])
+            feed  = feedparser.parse(cfg["url"], agent=UA)
             count = 0
             for entry in feed.entries:
                 if count >= cfg["max"]:
@@ -64,17 +67,21 @@ def run():
         except Exception as ex:
             print(f"  ⚠️ {cfg['label']} 失敗: {ex}")
 
+    # 抓不到（GitHub Actions IP 常被 Google 擋）→ 沿用舊資料，只更新時間戳，
+    # 避免檔案卡死、workflow 永遠 no-change
     if not items:
-        print("❌ 無新聞資料"); return
-
-    # 防重複：比對第一條標題
-    old_first = ""
-    if os.path.exists(OUT):
-        try:
-            old       = json.load(open(OUT, encoding="utf-8"))
-            old_first = (old.get("items") or [{}])[0].get("title", "")
-        except Exception:
-            pass
+        print("⚠️ 本次抓不到新聞，沿用舊資料更新時間戳", flush=True)
+        if os.path.exists(OUT):
+            try:
+                old = json.load(open(OUT, encoding="utf-8"))
+                old["updated"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+                with open(OUT, "w", encoding="utf-8") as f:
+                    json.dump(old, f, ensure_ascii=False, indent=2)
+                print("✅ 已沿用舊新聞並更新時間戳", flush=True)
+                return True
+            except Exception:
+                pass
+        print("❌ 無新聞資料且無舊檔"); return
 
     bull  = sum(1 for i in items if i["sent_val"] ==  1)
     bear  = sum(1 for i in items if i["sent_val"] == -1)
