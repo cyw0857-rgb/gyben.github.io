@@ -12,8 +12,10 @@ STOCK_CHIPS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dat
 DCA_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
 OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 
-# 長榮航太(2645) 自有持股（手動設定）
-STOCK_HOLDING = {"shares": 3435, "avg_cost": 167.3}
+# 長榮航太(2645) 自有持股（手動設定）— 國泰證券
+# fee_rate 手續費率 0.1425%；fee_disc 折數（國泰網路下單 2.8折=0.28）；tax_rate 證交稅 0.3%
+STOCK_HOLDING = {"shares": 3435, "avg_cost": 167.3,
+                 "fee_rate": 0.001425, "fee_disc": 0.28, "tax_rate": 0.003}
 
 def load_data():
     signal = {}
@@ -182,9 +184,16 @@ def stock_card_html(stock):
     if holding.get("shares"):
         h_sh   = holding["shares"]
         h_cost = holding["avg_cost"]
+        h_fee  = holding.get("fee_rate", 0.001425)
+        h_disc = holding.get("fee_disc", 1.0)
+        h_tax  = holding.get("tax_rate", 0.003)
         h_invest = h_sh * h_cost
         h_value  = h_sh * last_close
-        h_pnl    = h_value - h_invest
+        # 淨損益 = 賣出市值 − 賣手續費 − 證交稅 − 買進成本 − 買手續費（手續費含折數）
+        buy_fee  = h_invest * h_fee * h_disc
+        sell_fee = h_value  * h_fee * h_disc
+        sell_tax = h_value  * h_tax
+        h_pnl    = h_value - sell_fee - sell_tax - h_invest - buy_fee
         h_ret    = (h_pnl / h_invest * 100) if h_invest else 0
         h_col    = "#10b981" if h_pnl >= 0 else "#ef4444"
         h_arr    = "▲" if h_pnl >= 0 else "▼"
@@ -200,11 +209,14 @@ def stock_card_html(stock):
             f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_invest:,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">目前市值</div>'
             f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
-            f'<div><div style="font-size:.56rem;color:#64748b">損益</div>'
+            f'<div><div style="font-size:.56rem;color:#64748b">淨損益</div>'
             f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">報酬率</div>'
             f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
-            f'</div></div>'
+            f'</div>'
+            f'<div style="font-size:.54rem;color:#475569;margin-top:6px;text-align:right">'
+            f'淨損益＝現價市值已扣手續費(2.8折)+證交稅，貼近國泰實際參考損益</div>'
+            f'</div>'
         )
 
     # ── 融資融券 ─────────────────────────────────────────
