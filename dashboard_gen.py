@@ -865,23 +865,20 @@ def generate_html(signal, records, stock=None, dca=None):
                              f'</div>')
 
         return f"""
-        <div style="background:{bg};border:1.5px solid {border};border-radius:12px;padding:14px 16px;flex:1;min-width:0">
-          <div style="font-size:.68rem;color:#9ca3af;margin-bottom:6px">{label}</div>
-          <div style="font-size:1.5rem;font-weight:900;color:{border}">{ico} {act}</div>
-          <div style="font-size:.75rem;color:#d1d5db;margin:5px 0">{act_detail}</div>
-          <div style="display:flex;justify-content:space-between;margin-top:8px;
-                      border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
-            <div>
-              <div style="font-size:.62rem;color:#6b7280">參考進場價</div>
-              <div style="font-size:.82rem;font-weight:700;color:#e2e8f0">{price_hint}</div>
-            </div>
-            <div style="text-align:right">
-              <div style="font-size:.62rem;color:#6b7280">模擬勝率 ({n_trades}筆)</div>
-              <div style="font-size:.9rem;font-weight:800;color:{wr_color}">{win_rate:.0f}%</div>
+        <div style="background:{bg};border:1.5px solid {border};border-radius:12px;padding:12px 12px;min-width:0">
+          <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">{label}</div>
+          <div style="font-size:1.35rem;font-weight:900;color:{border}">{ico} {act}</div>
+          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">{act_detail}</div>
+          <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
+            <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
+            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">{price_hint}</div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
+              <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">{n_trades}筆</span></span>
+              <span style="font-size:1.05rem;font-weight:800;color:{wr_color}">{win_rate:.0f}%</span>
             </div>
           </div>
           {real_line}
-          <div style="font-size:.62rem;color:#6b7280;margin-top:6px">{desc}</div>
+          <div style="font-size:.6rem;color:#6b7280;margin-top:6px;line-height:1.3">{desc}</div>
         </div>"""
 
     # 從stats取五版本筆數和勝率（已有實際backtest結果）
@@ -902,7 +899,7 @@ def generate_html(signal, records, stock=None, dca=None):
     buy_sell_html = f"""
     <div class="card">
       <div class="stitle">📋 五版本今日買賣建議</div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px">
         {five_cards}
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
@@ -2562,8 +2559,24 @@ function toggleAcc(btnEl) {{
       .then(function(d){{if(d.updated&&d.updated!==STK_AT) showBanner();}})
       .catch(function(){{}});
   }}
-  setTimeout(poll,120000);      /* 載入後2分鐘先查一次（可能開到舊頁） */
-  setInterval(poll,300000);     /* 之後每5分鐘 */
+  setTimeout(poll,60000);       /* 載入後1分鐘先查一次（可能開到舊頁） */
+  setInterval(poll,180000);     /* 之後每3分鐘查一次新資料 */
+}})();
+
+/* ── 自動重載保留捲動位置（手機才不會跳回頂端）──────────── */
+(function(){{
+  try{{
+    var y=sessionStorage.getItem('scrollY');
+    if(y!==null){{
+      window.addEventListener('load',function(){{
+        window.scrollTo(0,parseInt(y,10)||0);
+        sessionStorage.removeItem('scrollY');
+      }});
+    }}
+    window.addEventListener('beforeunload',function(){{
+      sessionStorage.setItem('scrollY', String(window.scrollY||window.pageYOffset||0));
+    }});
+  }}catch(e){{}}
 }})();
 
 /* ── 明日→今日 標籤自動切換 ───────────────────────── */

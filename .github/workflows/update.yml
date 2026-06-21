@@ -3,17 +3,22 @@ name: Update Dashboard
 on:
   schedule:
     # ── 台灣日盤 08:00-14:00 TST = UTC 00:00-06:00 ──────────────
-    - cron: '*/30 0-5 * * 1-5'   # 每30分 週一~五
+    - cron: '*/5 0-5 * * 1-5'    # 每5分 週一~五（盤中即時）
     - cron: '45 5 * * 1-5'        # 13:45 TST
     - cron: '0 6 * * 1-5'         # 14:00 TST
 
     # ── 美股盤中 TST 22:30-04:00 = UTC 14:30-20:00 ───────────────
-    - cron: '*/30 14-20 * * 0-4'  # 每30分 週日~週四 UTC (=TST 週一~週五凌晨)
+    - cron: '*/5 14-20 * * 0-4'   # 每5分 週日~週四 UTC (=TST 週一~週五凌晨)
 
     # ── 每日 06:00 TST (UTC 22:00) 盤後摘要 ──────────────────────
     - cron: '0 22 * * *'           # 每天 06:00 TST
 
   workflow_dispatch:               # 手動觸發
+
+# 同時間只跑一個，避免 */5 排程互相堆疊
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: false
 
 jobs:
   update:
