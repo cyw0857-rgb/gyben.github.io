@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-20 08:35",
+  "generated_at": "2026-06-21 18:43",
   "mode": "morning",
   "signal_date": "2026-06-18",
   "trade_date": "2026-06-22",
   "direction": 0,
-  "total_score": 14,
+  "total_score": 12,
   "tw_score": 7,
-  "intl_score": 6,
+  "intl_score": 5,
   "news_score": -2,
-  "psy_score": 3,
+  "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": 223,
   "foreign_cash_b": 0,
@@ -20,8 +20,8 @@
   "tw_ma5": 45543.56171875,
   "tw_ma10": 44737.097265625,
   "tw_rsi": 58.053284925510496,
-  "tw_macd": 1232.305716760311,
-  "tw_macds": 1271.9153495680064,
+  "tw_macd": 1232.3057167603329,
+  "tw_macds": 1271.915349568026,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 44880.4140625,
   "tw_ma10_p2": 44658.3234375,
@@ -41,56 +41,56 @@
     "streak": 0
   },
   "stats_sim": {
-    "total": 13,
-    "wins": 13,
-    "losses": 0,
-    "win_rate": 100.0,
-    "total_pnl": 57304.0,
-    "avg_pnl": 4408.0,
-    "avg_win": 4408.0,
-    "avg_lose": 0,
+    "total": 789,
+    "wins": 376,
+    "losses": 413,
+    "win_rate": 47.655259822560204,
+    "total_pnl": 39353.0,
+    "avg_pnl": 49.87705956907478,
+    "avg_win": 852.311170212766,
+    "avg_lose": -680.6682808716707,
     "max_win": 10098.0,
-    "max_lose": 0,
+    "max_lose": -7633.0,
     "streak": 13
   },
   "stats_v70": {
-    "total": 21,
-    "wins": 19,
-    "losses": 2,
-    "win_rate": 90.47619047619048,
-    "total_pnl": 88809.0,
-    "avg_pnl": 4229.0,
-    "avg_win": 4883.9473684210525,
-    "avg_lose": -1993.0,
+    "total": 806,
+    "wins": 379,
+    "losses": 427,
+    "win_rate": 47.022332506203476,
+    "total_pnl": 84075.0,
+    "avg_pnl": 104.31141439205955,
+    "avg_win": 998.6992084432718,
+    "avg_lose": -689.5362997658079,
     "max_win": 14698.0,
-    "max_lose": -3483.0,
+    "max_lose": -7633.0,
     "streak": 7
   },
   "stats_v60": {
-    "total": 37,
-    "wins": 27,
-    "losses": 10,
-    "win_rate": 72.97297297297297,
-    "total_pnl": 58386.0,
-    "avg_pnl": 1578.0,
-    "avg_win": 4295.481481481482,
-    "avg_lose": -5759.2,
+    "total": 1990,
+    "wins": 918,
+    "losses": 1072,
+    "win_rate": 46.130653266331656,
+    "total_pnl": -26199.0,
+    "avg_pnl": -13.16532663316583,
+    "avg_win": 840.7919389978214,
+    "avg_lose": -744.445895522388,
     "max_win": 14698.0,
     "max_lose": -13889.0,
     "streak": -2
   },
   "stats_v50": {
-    "total": 69,
-    "wins": 45,
-    "losses": 24,
-    "win_rate": 65.21739130434783,
-    "total_pnl": 34359.0,
-    "avg_pnl": 497.95652173913044,
-    "avg_win": 3913.0222222222224,
-    "avg_lose": -5905.291666666667,
+    "total": 4602,
+    "wins": 2072,
+    "losses": 2530,
+    "win_rate": 45.023902651021295,
+    "total_pnl": -373530.0,
+    "avg_pnl": -81.16688396349413,
+    "avg_win": 751.4773166023166,
+    "avg_lose": -763.0794466403162,
     "max_win": 14698.0,
     "max_lose": -14069.0,
-    "streak": -1
+    "streak": 1
   },
   "stats_real_v100": {
     "total": 0,
@@ -234,10 +234,10 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.8489990234375,
-      "chg_pct": -0.0009910269694750832,
-      "signal": 0,
-      "note": "-0.00%(中性)",
+      "price": 100.8499984741211,
+      "chg_pct": 0.7593187771381286,
+      "signal": -1,
+      "note": "+0.76%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
@@ -256,22 +256,24 @@
       "note": "-0.08%",
       "desc": "油漲→通膨預期"
     },
+    "美債10Y": {
+      "category": "債券",
+      "price": 4.451000213623047,
+      "chg_pct": -0.26886864369792307,
+      "signal": 0,
+      "note": "4.45%(-0.27%)",
+      "desc": "殖利率高→股市壓力"
+    },
     "比特幣": {
       "category": "加密",
-      "price": 63405.98828125,
-      "chg_pct": -0.21222203683728488,
+      "price": 64298.58984375,
+      "chg_pct": 0.09170977559198015,
       "signal": 0,
-      "note": "-0.21%",
+      "note": "+0.09%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump Says India Trade Deal ‘Very Close,’ Hails Modi as ‘Tough’ - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
     {
       "label": "川普動態",
       "title": "Trump administration proposes 25% tariff on Brazilian goods over unfair trade pr",
@@ -283,6 +285,12 @@
       "title": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he will visit India in the future during Modi G7 talk - BBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -304,15 +312,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "US reciprocal trade deals built to push America's trade partners away from China",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -322,25 +330,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
+      "title": "Fiscal and Economic Effects of Tariffs - Econofact",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing: A Strong Contender in the Chip Industry - Th",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Why Taiwan’s Semiconductor Success Is About Much More Than TSMC - Global Taiwan ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Crazy Rich Returns Lure Cabbies and Even Kids to Red-Hot Asian Markets - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -351,10 +347,16 @@
       "sent_val": 1
     },
     {
-      "label": "聯準會",
-      "title": "Fed holds rates steady as new Chair Kevin Warsh commits to price stability - U.S",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing: A Strong Contender in the Chip Industry - Th",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Crazy Rich Returns Lure Cabbies and Even Kids to Red-Hot Asian Markets - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -373,6 +375,12 @@
       "title": "Federal Reserve holds interest rates steady as Trump’s new chairman faces fresh ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed’s Interest Rate Decision: June 17, 2026 - Advisor Perspectives",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }

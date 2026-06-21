@@ -89,8 +89,9 @@ BEAR_WORDS = {"tariff","sanction","ban","war","threat","crash","recession",
 #  資料取得
 # ═══════════════════════════════════════════════════════════
 
-def fetch_taiwan(months: int = 3) -> pd.DataFrame:
-    df = yf.Ticker(SYMBOL).history(period=f"{months}mo")
+def fetch_taiwan(months: int = 3, period: str = None) -> pd.DataFrame:
+    p = period if period else f"{months}mo"
+    df = yf.Ticker(SYMBOL).history(period=p)
     df.index = pd.to_datetime(df.index).tz_localize(None)
     return df[["Open", "High", "Low", "Close", "Volume"]].copy()
 
@@ -1331,7 +1332,50 @@ def send_notification(direction, total, intl, news, stats):
 #  主程式
 # ═══════════════════════════════════════════════════════════
 
+def rebuild_backtest(period: str = "max"):
+    """重建四版本回測 — 用全期歷史資料（預設最長 ≈29年）重算勝率。
+       保留真實 completed 交易，只重生 simulated/sim_* 部分。"""
+    print(f"🔁 重建回測：抓取全期歷史資料（period={period}）...", flush=True)
+    tw = add_taiwan_indicators(fetch_taiwan(period=period))
+    n  = len(tw)
+    print(f"   台股加權 {n} 交易日：{tw.index[0].date()} ~ {tw.index[-1].date()}", flush=True)
+    try:
+        sox = yf.Ticker("^SOX").history(period=period)
+        spx = yf.Ticker("^GSPC").history(period=period)
+        print(f"   SOX {len(sox)}筆 / SPX {len(spx)}筆", flush=True)
+    except Exception as ex:
+        print(f"   ⚠️ 美股歷史抓取失敗（國際共振條件將略過）：{ex}", flush=True)
+        sox = spx = None
+
+    old  = load_records()
+    real = (old[old["status"] == "completed"].copy()
+            if not old.empty and "status" in old.columns
+            else pd.DataFrame(columns=RECORD_COLS))
+    print(f"   保留真實交易 {len(real)} 筆，重生四版本回測...", flush=True)
+
+    df_v100 = backfill_history(tw,      days=n, sox_df=sox, spx_df=spx)
+    df_v70  = backfill_history_v70(tw,  days=n, sox_df=sox, spx_df=spx)
+    df_v60  = backfill_history_v60(tw,  days=n)
+    df_v50  = backfill_history_v50(tw,  days=n)
+    records = pd.concat([real, df_v100, df_v70, df_v60, df_v50], ignore_index=True)
+    save_records(records)
+
+    print(f"\n{'='*56}\n  📊 全期回測結果（{tw.index[0].date()} ~ {tw.index[-1].date()}）\n{'='*56}", flush=True)
+    for status, label in [("simulated", "精準版 v100"), ("sim_v70", "優化版 v70"),
+                          ("sim_v60", "高頻版 v60"), ("sim_v50", "超高頻版 v50")]:
+        st = compute_stats(records, status_filter=status)
+        print(f"  {label:12s}: {st['total']:>4d}筆  勝率 {st['win_rate']:5.1f}%  "
+              f"損益 NT${st['total_pnl']:>12,.0f}  均賺{st['avg_win']:>7,.0f}/均賠{st['avg_lose']:>7,.0f}",
+              flush=True)
+    print(f"{'='*56}\n✅ 重建完成，已寫入 {RECORDS_PATH}", flush=True)
+    return records
+
+
 def main():
+    # --rebuild: 重建全期回測（29年）後結束
+    if "--rebuild" in sys.argv:
+        rebuild_backtest("max")
+        return
     # --close: 收盤結算（13:45）
     # --night: 夜盤信號（14:30）
     # 預設: 早盤預報（8:30）
