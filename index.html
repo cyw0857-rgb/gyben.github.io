@@ -254,7 +254,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div style="text-align:right">
     <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
-      資料：2026-06-21 10:54 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+      資料：2026-06-21 19:02 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
     </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
       <span class="chip chip-b">台指 46,465</span>
@@ -281,9 +281,21 @@ tr:hover td{background:rgba(255,255,255,.014)}
         <div style="background:linear-gradient(135deg,#14532d,#22c55e);color:#fff;border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
           <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示</div>
-          <div style="font-size:1.4rem;font-weight:800;margin:6px 0">
-            $4,173 / oz &ensp;
-            <span style="font-size:1rem">▼ -1.21%</span>
+          <div style="display:flex;align-items:center;gap:18px;margin:6px 0">
+            <div>
+              <div style="font-size:1.4rem;font-weight:800">
+                $4,173 / oz &ensp;
+                <span style="font-size:1rem">▼ -1.21%</span>
+              </div>
+            </div>
+            
+            <div style="border-left:1px solid rgba(255,255,255,.25);padding-left:16px;margin-left:4px">
+              <div style="font-size:.62rem;opacity:.75;letter-spacing:.08em">🛢 WTI 原油</div>
+              <div style="font-size:1.15rem;font-weight:800;margin-top:3px">
+                $76.5
+                <span style="font-size:.8rem">▼ -0.08%</span>
+              </div>
+            </div>
           </div>
           <div style="font-size:.88rem;opacity:.9">黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅</div>
         </div>
@@ -307,7 +319,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +7 ＋ 國際市場 +5 ＋ 新聞 -2＋ 黃金 +1 ＝ 總分 +12（門檻 ±7）</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-21 10:54 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-21 19:02 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
@@ -417,7 +429,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   /* ── 凍結的台灣技術濾網輸入（隔夜不變，與後端 signal_engine 的 veto 完全同步）── */
   var V_RSI=58.053284925510496, V_MA5=45543.56171875, V_MA10=44737.097265625, V_MA20=44623.33671875;
   var V_MA5P=44880.4140625, V_MA10P=44658.3234375, V_MA20P=44368.4873046875;
-  var V_MACD=1232.305716760311, V_MACDS=1271.9153495680064, V_FUT=223;
+  var V_MACD=1232.3057167603329, V_MACDS=1271.915349568026, V_FUT=223;
   var TRADE_DATE_H='2026-06-22';
   function sgn(v){return (v>=0?'+':'')+v;}
   function pad2(n){return n<10?'0'+n:''+n;}
@@ -597,7 +609,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
-    <span style="font-size:.6rem;color:#64748b">2026-06-21 10:54</span>
+    <span style="font-size:.6rem;color:#64748b">2026-06-21 19:02</span>
     <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 
@@ -627,9 +639,27 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
     
     <div class="card">
-      <div class="stitle">📋 四版本今日買賣建議</div>
+      <div class="stitle">📋 五版本今日買賣建議</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         
+        <div style="background:rgba(107,114,128,.10);border:1.5px solid #374151;border-radius:12px;padding:14px 16px;flex:1;min-width:0">
+          <div style="font-size:.68rem;color:#9ca3af;margin-bottom:6px">⭐ 精選版 — MA2日+趨勢強+RSI窄帶</div>
+          <div style="font-size:1.5rem;font-weight:900;color:#374151">⚪ 觀望</div>
+          <div style="font-size:.75rem;color:#d1d5db;margin:5px 0">今日條件不足，不交易</div>
+          <div style="display:flex;justify-content:space-between;margin-top:8px;
+                      border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
+            <div>
+              <div style="font-size:.62rem;color:#6b7280">參考進場價</div>
+              <div style="font-size:.82rem;font-weight:700;color:#e2e8f0">—</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:.62rem;color:#6b7280">模擬勝率 (194筆)</div>
+              <div style="font-size:.9rem;font-weight:800;color:#9ca3af">51%</div>
+            </div>
+          </div>
+          
+          <div style="font-size:.62rem;color:#6b7280;margin-top:6px">重質不重量，正期望值，約每年7筆</div>
+        </div>
         <div style="background:rgba(107,114,128,.10);border:1.5px solid #374151;border-radius:12px;padding:14px 16px;flex:1;min-width:0">
           <div style="font-size:.68rem;color:#9ca3af;margin-bottom:6px">🎯 精準版 — MA2日+SOX>0.5%+RSI<72</div>
           <div style="font-size:1.5rem;font-weight:900;color:#374151">⚪ 觀望</div>
@@ -711,6 +741,29 @@ tr:hover td{background:rgba(255,255,255,.014)}
 
   <!-- Tab 2：歷史回測統計（預設收納） -->
   <div class="tab-pane" id="t-backtest">
+    
+            <div class="card" style="border:1.5px solid #a78bfa">
+              <div class="stitle">⭐ 精選版回測 — MA2日+趨勢強度+RSI窄帶（29年真實）</div>
+              <div class="row3">
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.3rem;color:#10b981">51%</div>
+                  <div class="lbl">歷史勝率<br>99勝 95敗</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem;color:#10b981">NT$14,517</div>
+                  <div class="lbl">模擬損益</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem">194</div>
+                  <div class="lbl">回測筆數<br><span style="font-size:.65rem;color:#a78bfa">重質不重量</span></div>
+                </div>
+              </div>
+              <p style="color:#4b5563;font-size:.72rem;margin-top:6px">📌 實倉：尚無記錄（今日起累計）</p>
+              <p style="color:#a78bfa;font-size:.72rem;margin-top:6px">
+                ✅ 全期29年回測｜賺賠比 1.15（均賺NT$885／均賠NT$-769）｜
+                勝率雖只 51%，但靠正期望值（重質不重量、約每年7筆）長期為正
+              </p>
+            </div>
     
             <div class="card" style="opacity:.85;border:1px dashed #22c55e">
               <div class="stitle">🎯 精準版回測 — MA2日+RSI&lt;72+SOX共振</div>
@@ -1687,7 +1740,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-06-21 10:54',STK_AT='2026-06-21 10:54',notified=false;
+  var SIG_AT='2026-06-21 19:02',STK_AT='2026-06-21 10:54',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
