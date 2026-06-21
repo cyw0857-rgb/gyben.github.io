@@ -726,31 +726,28 @@ def generate_html(signal, records, stock=None, dca=None):
             "neutral": ("#1f2937", "#9ca3af"),
         }
         gbg, gtxt = gcard_colors.get(glvl, gcard_colors["neutral"])
-        # 即時油價（WTI 原油）— 顯示在黃金旁
-        oil_html = ""
+        # 即時油價（WTI 原油）— 與黃金左右對稱兩欄
+        oil_col = ""
         if gold.get("oil_usd"):
             op  = gold.get("oil_usd", 0)
             oc  = gold.get("oil_chg", 0)
-            oil_html = f"""
-            <div style="border-left:1px solid rgba(255,255,255,.25);padding-left:16px;margin-left:4px">
-              <div style="font-size:.62rem;opacity:.75;letter-spacing:.08em">🛢 WTI 原油</div>
-              <div style="font-size:1.15rem;font-weight:800;margin-top:3px">
-                ${op:,.1f}
-                <span style="font-size:.8rem">{"▲" if oc >= 0 else "▼"} {oc:+.2f}%</span>
-              </div>
+            oil_col = f"""
+            <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
+              <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🛢 WTI 原油</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px">${op:,.1f}</div>
+              <div style="font-size:.78rem;opacity:.9">{"▲" if oc >= 0 else "▼"} {oc:+.2f}%</div>
             </div>"""
         gold_html = f"""
         <div style="background:{gbg};color:{gtxt};border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
           <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示</div>
-          <div style="display:flex;align-items:center;gap:18px;margin:6px 0">
-            <div>
-              <div style="font-size:1.4rem;font-weight:800">
-                ${gp:,.0f} / oz &ensp;
-                <span style="font-size:1rem">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</span>
-              </div>
+          <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
+            <div style="flex:1">
+              <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px">${gp:,.0f}<span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div style="font-size:.78rem;opacity:.9">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</div>
             </div>
-            {oil_html}
+            {oil_col}
           </div>
           <div style="font-size:.88rem;opacity:.9">{gwarn}</div>
         </div>"""
