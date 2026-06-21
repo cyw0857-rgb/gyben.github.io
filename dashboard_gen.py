@@ -489,6 +489,8 @@ def dca_card_html(dca):
             f'（{days_to_next} 天後）</div>'
             f'<div style="font-size:.66rem;color:#64748b;margin-top:4px">'
             f'屆時將各買進 NT${monthly//2:,}，下方為目前參考股價</div>'
+            f'<div style="font-size:.64rem;color:#10b981;margin-top:6px">'
+            f'✅ {e(next_buy)} 自動扣款後，這裡會顯示損益／報酬率，每個交易日收盤更新</div>'
             f'</div>'
         )
 
@@ -577,7 +579,8 @@ def dca_card_html(dca):
 <div class="card">
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
     <h2 style="margin:0">💰 定期定額追蹤</h2>
-    <span style="font-size:.62rem;color:#64748b">更新 {e(updated)}</span>
+    <span style="font-size:.62rem;color:#94a3b8;background:#0b1628;border:1px solid #1e3050;
+                 border-radius:999px;padding:2px 9px">📅 資料時間 {e(updated)}</span>
   </div>
   <div style="font-size:.7rem;color:#94a3b8;margin-top:2px">
     每月 {buy_day} 號投入 NT${monthly:,}（009816 + 00992A 各 NT${monthly//2:,}）
