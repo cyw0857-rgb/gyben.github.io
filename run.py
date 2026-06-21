@@ -29,6 +29,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  長榮航太信號失敗（繼續產生看板）")
 
+# 2a2. 更新長榮航太籌碼面（三大法人 + 融資融券，寫入 data/stock_chips.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "stock_chips.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  長榮航太籌碼抓取失敗（繼續產生看板）")
+
 # 2b. 更新新聞（同步寫入 data/news.json）
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "news_fetch.py")],

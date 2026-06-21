@@ -7,9 +7,13 @@ from datetime import datetime
 
 RECORDS_PATH  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "records.csv")
 SIGNAL_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "signal.json")
-STOCK_PATH    = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2645.json")
-DCA_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
-OUTPUT_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
+STOCK_PATH       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2645.json")
+STOCK_CHIPS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips.json")
+DCA_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
+OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
+
+# 長榮航太(2645) 自有持股（手動設定）
+STOCK_HOLDING = {"shares": 3435, "avg_cost": 167.3}
 
 def load_data():
     signal = {}
@@ -32,6 +36,18 @@ def load_data():
     if os.path.exists(STOCK_PATH):
         with open(STOCK_PATH, encoding="utf-8") as f:
             stock = json.load(f)
+    # 合併籌碼面（三大法人 + 融資融券）
+    if os.path.exists(STOCK_CHIPS_PATH):
+        with open(STOCK_CHIPS_PATH, encoding="utf-8") as f:
+            chips = json.load(f)
+        if chips.get("inst"):
+            stock["inst"] = chips["inst"]
+        if chips.get("margin"):
+            stock["margin"] = chips["margin"]
+        stock["chips_updated"] = chips.get("updated", "")
+    # 自有持股
+    if stock and STOCK_HOLDING.get("shares"):
+        stock["holding"] = dict(STOCK_HOLDING)
 
     dca = {}
     if os.path.exists(DCA_PATH):
@@ -81,6 +97,8 @@ def stock_card_html(stock):
     model_samples= stock.get("model_samples", 0)
     total_ret    = stock.get("total_return", 0)
     ipo_date     = stock.get("ipo_date", "─")
+    margin       = stock.get("margin", {})
+    holding      = stock.get("holding", {})
 
     chg_color   = "#10b981" if chg_pct >= 0 else "#ef4444"
     chg_arrow   = "▲" if chg_pct >= 0 else "▼"
@@ -94,7 +112,7 @@ def stock_card_html(stock):
         return '<span style="color:#6b7280">─</span>'
 
     inst_rows_html = ""
-    for row in inst.get("rows", []):
+    for row in inst.get("rows", [])[:8]:
         inst_rows_html += (
             f'<tr>'
             f'<td style="color:#94a3b8;padding:4px 3px">{row["date"]}</td>'
@@ -159,6 +177,68 @@ def stock_card_html(stock):
             f'</tr>'
         )
 
+    # ── 我的持股 ─────────────────────────────────────────
+    holding_html = ""
+    if holding.get("shares"):
+        h_sh   = holding["shares"]
+        h_cost = holding["avg_cost"]
+        h_invest = h_sh * h_cost
+        h_value  = h_sh * last_close
+        h_pnl    = h_value - h_invest
+        h_ret    = (h_pnl / h_invest * 100) if h_invest else 0
+        h_col    = "#10b981" if h_pnl >= 0 else "#ef4444"
+        h_arr    = "▲" if h_pnl >= 0 else "▼"
+        holding_html = (
+            f'<div style="background:linear-gradient(135deg,#10243a,#0b1628);'
+            f'border:1px solid {h_col}66;border-radius:10px;padding:11px 12px;margin-bottom:12px">'
+            f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+            f'<span style="font-size:.7rem;font-weight:800;color:#e2e8f0">💼 我的持股</span>'
+            f'<span style="font-size:.62rem;color:#94a3b8">{h_sh:,} 股 · 成本 {h_cost:.1f}</span>'
+            f'</div>'
+            f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;text-align:center">'
+            f'<div><div style="font-size:.56rem;color:#64748b">投入成本</div>'
+            f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_invest:,.0f}</div></div>'
+            f'<div><div style="font-size:.56rem;color:#64748b">目前市值</div>'
+            f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
+            f'<div><div style="font-size:.56rem;color:#64748b">損益</div>'
+            f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
+            f'<div><div style="font-size:.56rem;color:#64748b">報酬率</div>'
+            f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
+            f'</div></div>'
+        )
+
+    # ── 融資融券 ─────────────────────────────────────────
+    margin_html = ""
+    if margin.get("rows"):
+        m_fin   = margin.get("fin_bal", 0)
+        m_sho   = margin.get("sho_bal", 0)
+        m_finc  = margin.get("fin_5chg", 0)
+        m_shoc  = margin.get("sho_5chg", 0)
+        m_note  = margin.get("note", "")
+        m_ncol  = margin.get("note_color", "#9ca3af")
+        def _chg(v, invert=False):
+            up = "#f59e0b" if not invert else "#10b981"
+            dn = "#10b981" if not invert else "#f59e0b"
+            if v > 0: return f'<span style="color:{up}">+{v:,}</span>'
+            if v < 0: return f'<span style="color:{dn}">{v:,}</span>'
+            return '<span style="color:#6b7280">─</span>'
+        margin_html = (
+            f'<div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">'
+            f'<div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">💳 融資融券（散戶槓桿）</div>'
+            f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px">'
+            f'<div style="background:#162032;border-radius:8px;padding:8px">'
+            f'<div style="font-size:.56rem;color:#6b7280">融資餘額（張）</div>'
+            f'<div style="font-size:.95rem;font-weight:800;color:#e2e8f0">{m_fin:,}</div>'
+            f'<div style="font-size:.6rem">5日 {_chg(m_finc)}</div></div>'
+            f'<div style="background:#162032;border-radius:8px;padding:8px">'
+            f'<div style="font-size:.56rem;color:#6b7280">融券餘額（張）</div>'
+            f'<div style="font-size:.95rem;font-weight:800;color:#e2e8f0">{m_sho:,}</div>'
+            f'<div style="font-size:.6rem">5日 {_chg(m_shoc, invert=True)}</div></div>'
+            f'</div>'
+            f'<div style="font-size:.66rem;color:{m_ncol};font-weight:600">{e(m_note)}</div>'
+            f'</div>'
+        )
+
     return f"""
 <div class="card stock-premium-card" style="padding:0;overflow:hidden">
 
@@ -173,6 +253,8 @@ def stock_card_html(stock):
   </div>
 
   <div style="padding:14px 14px 0">
+
+  {holding_html}
 
   <!-- 左右雙欄 -->
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
@@ -217,7 +299,7 @@ def stock_card_html(stock):
     <div>
       <div style="background:#080f1e;border-radius:10px;padding:10px;height:100%">
         <div style="font-size:.6rem;color:#6b7280;margin-bottom:6px;letter-spacing:.05em">
-          🏦 三大法人 近5日（千股）
+          🏦 三大法人買賣超（千股）
         </div>
         <table style="width:100%;border-collapse:collapse;font-size:.66rem">
           <tr>
@@ -248,6 +330,8 @@ def stock_card_html(stock):
       </div>
     </div>
   </div>
+
+  {margin_html}
 
   <!-- 散戶情緒 -->
   <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
