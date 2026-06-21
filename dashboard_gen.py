@@ -1317,6 +1317,7 @@ def generate_html(signal, records, stock=None):
       document.getElementById('news-list').innerHTML='<div style="color:#475569;font-size:.78rem;padding:8px 0">⚠️ 新聞載入失敗，請稍後再試</div>';
       return;
     }
+    window.__liveNews=d;   /* 供「明日交易建議」hero 即時重算新聞情緒分數 */
     var mc=d.mood_color||'#64748b';
     document.getElementById('news-mood').innerHTML=
       '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
@@ -1497,6 +1498,7 @@ def generate_html(signal, records, stock=None):
 
     _inst_s = int(signal.get("inst_score", 0))
     _static_s = tw_s + _inst_s   # 台灣技術 + 法人籌碼（日線，不即時）
+    _fut_net = int(signal.get("foreign_fut_net", 0))   # 外資期貨淨口數（凍結，供前端 veto 用）
 
     score_meter_html = f"""
 <div class="card" id="live-score-card" style="margin-bottom:12px">
@@ -1595,6 +1597,60 @@ def generate_html(signal, records, stock=None):
   var INST_S  = {_inst_s};
   var THRESH  = {thresh};
   var MAX_TOT = 16;
+  /* ── 凍結的台灣技術濾網輸入（隔夜不變，與後端 signal_engine 的 veto 完全同步）── */
+  var V_RSI={rsi}, V_MA5={ma5}, V_MA10={ma10}, V_MA20={ma20};
+  var V_MA5P={ma5_p2}, V_MA10P={ma10_p2}, V_MA20P={ma20_p2};
+  var V_MACD={macd}, V_MACDS={macds}, V_FUT={_fut_net};
+  var TRADE_DATE_H='{trade_date}';
+  function sgn(v){{return (v>=0?'+':'')+v;}}
+  function pad2(n){{return n<10?'0'+n:''+n;}}
+  function todayStr_(){{var d=new Date();return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());}}
+
+  /* 即時重算「明日交易建議」方向（與後端 veto 邏輯一致；台灣技術面凍結，國際/新聞即時） */
+  function calcDirection(total, int_s){{
+    var tw_dir = TW_S>0?1:(TW_S<0?-1:0);
+    var int_dir= int_s>0?1:(int_s<0?-1:0);
+    var fut_dir= V_FUT>500?1:(V_FUT<-500?-1:0);
+    var ma_bull=(V_MA5>V_MA10&&V_MA10>V_MA20)&&(V_MA5P>V_MA10P&&V_MA10P>V_MA20P);
+    var ma_bear=(V_MA5<V_MA10&&V_MA10<V_MA20)&&(V_MA5P<V_MA10P&&V_MA10P<V_MA20P);
+    var macd_bull=(V_MACD>0&&V_MACD>V_MACDS);
+    var macd_bear=(V_MACD<0&&V_MACD<V_MACDS);
+    var rsi_bull=(45<V_RSI&&V_RSI<72);
+    var rsi_bear=(28<V_RSI&&V_RSI<55);
+    var veto='', dir=0;
+    if(tw_dir!==0&&int_dir!==0&&tw_dir!==int_dir){{ veto='台灣技術('+sgn(TW_S)+') vs 國際('+sgn(int_s)+') 方向相反 → 觀望'; }}
+    else if(total>0&&!rsi_bull){{ veto='RSI='+V_RSI.toFixed(0)+' 過熱(需45~72)或過冷 → 觀望'; }}
+    else if(total<0&&!rsi_bear){{ veto='RSI='+V_RSI.toFixed(0)+' 不在空頭區間(28~55) → 觀望'; }}
+    else if(total>0&&!(ma_bull&&macd_bull)){{ veto='看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足'; }}
+    else if(total<0&&!(ma_bear&&macd_bear)){{ veto='看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足'; }}
+    else if(fut_dir!==0&&tw_dir!==0&&fut_dir!==tw_dir){{ dir=(total>=THRESH+3?1:(total<=-(THRESH+3)?-1:0)); }}
+    else {{ dir=(total>=THRESH?1:(total<=-THRESH?-1:0)); }}
+    return {{dir:dir, veto:veto}};
+  }}
+
+  function updateHero(total, int_s, psy_s, gld_s, nws_s){{
+    var R=calcDirection(total, int_s);
+    var hero=document.getElementById('signal-hero');
+    var lbl =document.getElementById('hero-sig-label');
+    var act =document.getElementById('hero-sig-action');
+    var det =document.getElementById('hero-score-detail');
+    var ts  =document.getElementById('hero-live-ts');
+    if(!hero||!lbl) return;
+    var bg,label,action;
+    if(R.dir===1){{ bg='linear-gradient(135deg,#059669,#10b981)'; label='🟢 明天做多（買進）'; action='8:45 買進 1口 ｜ 13:30 賣出平倉'; }}
+    else if(R.dir===-1){{ bg='linear-gradient(135deg,#dc2626,#ef4444)'; label='🔴 明天做空（賣出）'; action='8:45 賣出 1口 ｜ 13:30 買回平倉'; }}
+    else {{ bg='linear-gradient(135deg,#374151,#4b5563)'; label='⚪ 明天觀望（不交易）'; action=R.veto?R.veto:('訊號不足，總分 '+sgn(total)+'，未達門檻 ±'+THRESH); }}
+    /* 跨午夜後「明天」自動變「今天」 */
+    if(TRADE_DATE_H && TRADE_DATE_H<=todayStr_()) label=label.replace('明天','今天');
+    hero.style.background=bg;
+    lbl.textContent=label;
+    if(act) act.textContent=action;
+    if(det) det.textContent='台灣技術 '+sgn(TW_S)+' ＋ 法人 '+sgn(INST_S)+' ＋ 國際 '+sgn(int_s)
+      +' ＋ 心理 '+sgn(psy_s)+' ＋ 黃金 '+sgn(gld_s)+' ＋ 新聞 '+sgn(nws_s)
+      +' ＝ 總分 '+sgn(total)+'（門檻 ±'+THRESH+'）';
+    var d=new Date();
+    if(ts) ts.textContent='即時更新 '+pad2(d.getHours())+':'+pad2(d.getMinutes());
+  }}
 
   var INTL_W = {{
     '費城半導體':3,'NASDAQ':2,'S&P500':2,'道瓊':1,
@@ -1648,12 +1704,14 @@ def generate_html(signal, records, stock=None):
 
   function render(intlData, newsData){{
     var intl  = intlData.data || {{}};
-    var items = newsData.items || [];
+    /* 優先用瀏覽器即時抓到的新聞（window.__liveNews），否則用 news.json */
+    var items = (window.__liveNews && window.__liveNews.items) || newsData.items || [];
     var int_s = calcIntl(intl);
     var psy_s = calcPsy(intl);
     var gld_s = (intl['黃金']||{{}}).signal || 0;
     var nws_s = calcNews(items);
     var total = TW_S + INST_S + int_s + psy_s + gld_s + nws_s;
+    updateHero(total, int_s, psy_s, gld_s, nws_s);
     var clamp = Math.max(-MAX_TOT, Math.min(MAX_TOT, total));
     var sPct  = (clamp + MAX_TOT) / (2*MAX_TOT) * 100;
     var lc, ll, grad, lp, lw;
@@ -2001,18 +2059,18 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 <!-- ══════════════ 台指期主力區 ═══════════════════════ -->
 
 <!-- 明日信號英雄卡（全寬） -->
-<div class="signal-hero" style="background:{sig_bg};margin-bottom:12px">
+<div class="signal-hero" id="signal-hero" style="background:{sig_bg};margin-bottom:12px">
   <div id="hero-sig-label" style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
     {sig_label}
   </div>
   <div style="font-size:.85rem;opacity:.85;margin-top:6px">{trade_date}</div>
-  <div style="background:rgba(0,0,0,.28);border-radius:10px;
+  <div id="hero-sig-action" style="background:rgba(0,0,0,.28);border-radius:10px;
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
     {sig_action}
   </div>
-  <div style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">{score_detail}</div>
+  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">{score_detail}</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45">{sig_generated_at} 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">{sig_generated_at} 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
