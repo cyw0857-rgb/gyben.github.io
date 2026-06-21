@@ -1076,6 +1076,61 @@ def backfill_history_vsel(tw_df: pd.DataFrame, days: int = 130) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=RECORD_COLS)
 
 
+def backfill_history_daily(tw_df: pd.DataFrame, days: int = 130) -> pd.DataFrame:
+    """
+    每日版 (vday)：每個交易日都進場，跳空順勢（高開做多／低開做空），收盤平倉。
+    29年實測這是唯一『每天交易仍正報酬』的純方向公式：~47.5%、賺賠比1.22。
+    當日損益率由 pnl_points / entry_price 在看板端推算。
+    status = "sim_vday"
+    """
+    bt = tw_df.iloc[-min(days, len(tw_df)):]
+    rows = []
+    for i in range(1, len(bt)):
+        prev = bt.iloc[i - 1]
+        curr = bt.iloc[i]
+        sig_date = bt.index[i - 1].strftime("%Y-%m-%d")
+        trd_date = bt.index[i].strftime("%Y-%m-%d")
+        tw_s, _ = taiwan_signal(prev, bt.iloc[max(0, i-4):i])
+
+        prev_close = float(prev["Close"])
+        open_p     = float(curr["Open"])
+        direction  = 1 if open_p >= prev_close else -1   # 跳空順勢，每天都進場
+
+        dir_zh = "做多▲" if direction == 1 else "做空▼"
+        entry = open_p          + SLIPPAGE * direction
+        exit_ = float(curr["Close"]) - SLIPPAGE * direction
+        pts   = (exit_ - entry) * direction
+        pnl   = pts * POINT_VALUE - COMMISSION
+        # 當日損益率 = 損益點數 / 進場價（看板端可由此兩欄推算，不另存欄位）
+
+        row = _empty_row()
+        row.update({
+            "signal_date":  sig_date,
+            "trade_date":   trd_date,
+            "session":      "day",
+            "direction":    str(direction),
+            "direction_zh": dir_zh,
+            "total_score":  str(tw_s),
+            "tw_score":     str(tw_s),
+            "intl_score":   "0",
+            "news_score":   "0",
+            "entry_price":  str(round(entry)),
+            "exit_price":   str(round(exit_)),
+            "pnl_points":   str(round(pts, 1)),
+            "pnl_nts":      str(round(pnl)),
+            "win":          str(pnl > 0),
+            "status":       "sim_vday",
+        })
+        rows.append(row)
+
+    if rows:
+        wins = sum(1 for r in rows if r["win"] == "True")
+        wr   = wins / len(rows) * 100
+        print(f"  📆 每日版回測: {len(rows)}筆交易，勝率 {wr:.0f}%（跳空順勢，每天進場）", flush=True)
+
+    return pd.DataFrame(rows, columns=RECORD_COLS)
+
+
 def compute_stats(records: pd.DataFrame, status_filter="completed") -> dict:
     """累計統計：status_filter='completed' 只算實際交易，'simulated' 只算回測"""
     completed = records[records["status"] == status_filter].copy()
@@ -1448,13 +1503,15 @@ def rebuild_backtest(period: str = "max"):
     df_v60  = backfill_history_v60(tw,  days=n)
     df_v50  = backfill_history_v50(tw,  days=n)
     df_vsel = backfill_history_vsel(tw, days=n)
-    records = pd.concat([real, df_v100, df_v70, df_v60, df_v50, df_vsel], ignore_index=True)
+    df_vday = backfill_history_daily(tw, days=n)
+    records = pd.concat([real, df_v100, df_v70, df_v60, df_v50, df_vsel, df_vday], ignore_index=True)
     save_records(records)
 
     print(f"\n{'='*56}\n  📊 全期回測結果（{tw.index[0].date()} ~ {tw.index[-1].date()}）\n{'='*56}", flush=True)
     for status, label in [("sim_vsel", "精選版 vsel"), ("simulated", "精準版 v100"),
                           ("sim_v70", "優化版 v70"),
-                          ("sim_v60", "高頻版 v60"), ("sim_v50", "超高頻版 v50")]:
+                          ("sim_v60", "高頻版 v60"), ("sim_v50", "超高頻版 v50"),
+                          ("sim_vday", "每日版 vday")]:
         st = compute_stats(records, status_filter=status)
         print(f"  {label:12s}: {st['total']:>4d}筆  勝率 {st['win_rate']:5.1f}%  "
               f"損益 NT${st['total_pnl']:>12,.0f}  均賺{st['avg_win']:>7,.0f}/均賠{st['avg_lose']:>7,.0f}",
@@ -1518,13 +1575,16 @@ def main():
         df_v50  = backfill_history_v50(tw_df, days=130)
         # 版本E: 精選版（重質不重量，~51%正期望值）
         df_vsel = backfill_history_vsel(tw_df, days=130)
-        records = pd.concat([df_v100, df_v70, df_v60, df_v50, df_vsel], ignore_index=True)
+        # 版本F: 每日版（每天進場，跳空順勢）
+        df_vday = backfill_history_daily(tw_df, days=130)
+        records = pd.concat([df_v100, df_v70, df_v60, df_v50, df_vsel, df_vday], ignore_index=True)
     else:
         missing = []
         if not records["status"].isin(["sim_v70", "sim_v70_skip"]).any(): missing.append("v70")
         if not records["status"].isin(["sim_v60", "sim_v60_skip"]).any(): missing.append("v60")
         if not records["status"].isin(["sim_v50", "sim_v50_skip"]).any(): missing.append("v50")
         if not records["status"].isin(["sim_vsel", "sim_vsel_skip"]).any(): missing.append("vsel")
+        if not records["status"].isin(["sim_vday"]).any(): missing.append("vday")
         if missing:
             print(f"  → 補生成 {'+'.join(missing)} 版本回測...", flush=True)
             try:
@@ -1540,6 +1600,8 @@ def main():
                 records = pd.concat([records, backfill_history_v50(tw_df, days=130)], ignore_index=True)
             if "vsel" in missing:
                 records = pd.concat([records, backfill_history_vsel(tw_df, days=130)], ignore_index=True)
+            if "vday" in missing:
+                records = pd.concat([records, backfill_history_daily(tw_df, days=130)], ignore_index=True)
 
     records = update_completed_trades(records, tw_df)
 
@@ -1740,6 +1802,24 @@ def main():
     stats_v60      = compute_stats(records, status_filter="sim_v60")
     stats_v50      = compute_stats(records, status_filter="sim_v50")
     stats_vsel     = compute_stats(records, status_filter="sim_vsel")
+    stats_vday     = compute_stats(records, status_filter="sim_vday")
+    # 每日版近期明細（含當日損益率 = 損益點數/進場價）
+    vday_recent = []
+    _vd = records[records["status"] == "sim_vday"].copy()
+    if not _vd.empty:
+        for _, r in _vd.tail(15).iloc[::-1].iterrows():
+            try:
+                ep = float(r["entry_price"]); pts = float(r["pnl_points"])
+                ret = (pts / ep * 100) if ep else 0.0
+            except Exception:
+                ret = 0.0
+            vday_recent.append({
+                "date":   r["trade_date"],
+                "dir":    int(float(r["direction"])) if str(r["direction"]).strip() not in ("", "nan") else 0,
+                "pnl":    int(float(r["pnl_nts"])) if str(r["pnl_nts"]).strip() not in ("", "nan") else 0,
+                "ret":    round(ret, 2),
+                "win":    str(r["win"]) == "True",
+            })
     stats_real_v100 = compute_stats(records, status_filter="real_v100")
     stats_real_v70  = compute_stats(records, status_filter="real_v70")
     stats_real_v60  = compute_stats(records, status_filter="real_v60")
@@ -1803,6 +1883,8 @@ def main():
         "stats_v60":         {k: _safe(v) for k, v in stats_v60.items()},
         "stats_v50":         {k: _safe(v) for k, v in stats_v50.items()},
         "stats_vsel":        {k: _safe(v) for k, v in stats_vsel.items()},
+        "stats_vday":        {k: _safe(v) for k, v in stats_vday.items()},
+        "vday_recent":       vday_recent,
         "stats_real_v100":   {k: _safe(v) for k, v in stats_real_v100.items()},
         "stats_real_v70":    {k: _safe(v) for k, v in stats_real_v70.items()},
         "stats_real_v60":    {k: _safe(v) for k, v in stats_real_v60.items()},

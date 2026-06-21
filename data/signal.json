@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21 19:02",
+  "generated_at": "2026-06-22 00:01",
   "mode": "morning",
   "signal_date": "2026-06-18",
-  "trade_date": "2026-06-22",
+  "trade_date": "2026-06-23",
   "direction": 0,
   "total_score": 12,
   "tw_score": 7,
@@ -105,6 +105,126 @@
     "max_lose": -4959.0,
     "streak": 2
   },
+  "stats_vday": {
+    "total": 7077,
+    "wins": 3359,
+    "losses": 3718,
+    "win_rate": 47.46361452592907,
+    "total_pnl": 252997.0,
+    "avg_pnl": 35.749187508831426,
+    "avg_win": 814.9595117594522,
+    "avg_lose": -668.2227003765465,
+    "max_win": 14698.0,
+    "max_lose": -7896.0,
+    "streak": 1
+  },
+  "vday_recent": [
+    {
+      "date": "2026-06-18",
+      "dir": 1,
+      "pnl": 4859,
+      "ret": 1.07,
+      "win": true
+    },
+    {
+      "date": "2026-06-17",
+      "dir": -1,
+      "pnl": -1991,
+      "ret": -0.42,
+      "win": false
+    },
+    {
+      "date": "2026-06-16",
+      "dir": 1,
+      "pnl": 3021,
+      "ret": 0.67,
+      "win": true
+    },
+    {
+      "date": "2026-06-15",
+      "dir": 1,
+      "pnl": 9421,
+      "ret": 2.13,
+      "win": true
+    },
+    {
+      "date": "2026-06-12",
+      "dir": 1,
+      "pnl": 5744,
+      "ret": 1.33,
+      "win": true
+    },
+    {
+      "date": "2026-06-11",
+      "dir": -1,
+      "pnl": 158,
+      "ret": 0.05,
+      "win": true
+    },
+    {
+      "date": "2026-06-10",
+      "dir": -1,
+      "pnl": 13489,
+      "ret": 3.04,
+      "win": true
+    },
+    {
+      "date": "2026-06-09",
+      "dir": 1,
+      "pnl": 10098,
+      "ret": 2.32,
+      "win": true
+    },
+    {
+      "date": "2026-06-08",
+      "dir": -1,
+      "pnl": 9977,
+      "ret": 2.25,
+      "win": true
+    },
+    {
+      "date": "2026-06-05",
+      "dir": -1,
+      "pnl": 5419,
+      "ret": 1.2,
+      "win": true
+    },
+    {
+      "date": "2026-06-04",
+      "dir": -1,
+      "pnl": 6796,
+      "ret": 1.48,
+      "win": true
+    },
+    {
+      "date": "2026-06-03",
+      "dir": 1,
+      "pnl": 7917,
+      "ret": 1.74,
+      "win": true
+    },
+    {
+      "date": "2026-06-02",
+      "dir": 1,
+      "pnl": 1614,
+      "ret": 0.37,
+      "win": true
+    },
+    {
+      "date": "2026-06-01",
+      "dir": 1,
+      "pnl": 4581,
+      "ret": 1.03,
+      "win": true
+    },
+    {
+      "date": "2026-05-29",
+      "dir": 1,
+      "pnl": 9105,
+      "ret": 2.09,
+      "win": true
+    }
+  ],
   "stats_real_v100": {
     "total": 0,
     "wins": 0,
@@ -281,10 +401,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64370.0,
-      "chg_pct": 0.20287185009118378,
+      "price": 64107.9609375,
+      "chg_pct": -0.20503659482734243,
       "signal": 0,
-      "note": "+0.20%",
+      "note": "-0.21%",
       "desc": "風險偏好指標"
     }
   },
@@ -345,19 +465,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Fiscal and Economic Effects of Tariffs - Econofact",
+      "title": "US cites forced labour concerns as grounds for new tariffs - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Crazy Rich Returns Lure Cabbies and Even Kids to Red-Hot Asian Markets - WSJ",
+      "title": "Why Taiwan’s Semiconductor Success Is About Much More Than TSMC - Global Taiwan ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why Taiwan’s Semiconductor Success Is About Much More Than TSMC - Global Taiwan ",
+      "title": "Taiwan Semiconductor Manufacturing Co Ltd Stock (TSM) Opened Up by 6.86% on Jun ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -369,9 +489,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing: A Strong Contender in the Chip Industry - Th",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Legislative Speaker Han, lawmakers depart for U.S. trip - Focus Taiwan",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -381,21 +501,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Holds Rates Steady, but More Officials See Higher Rates as Next Move - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "Federal Reserve holds interest rates steady as Trump’s new chairman faces fresh ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed’s Interest Rate Decision: June 17, 2026 - Advisor Perspectives",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Instant View: Fed holds steady in Warsh's debut, but hawkish shift fuels bond-ma",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Reserve policymakers show support for rate hikes as Warsh reins in guida",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }

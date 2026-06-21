@@ -1188,6 +1188,72 @@ def generate_html(signal, records, stock=None, dca=None):
               </p>
             </div>"""
 
+    # ── 每日版 (vday)：每天都進場 + 每日損益率表格 ─────────────
+    sim_vday_stats_html = ""
+    svd = signal.get("stats_vday", {})
+    vday_recent = signal.get("vday_recent", [])
+    if svd.get("total", 0) > 0:
+        dt   = svd.get("total", 0)
+        dw   = svd.get("wins", 0)
+        dwr  = svd.get("win_rate", 0)
+        dp   = svd.get("total_pnl", 0)
+        daw  = svd.get("avg_win", 0)
+        dal  = svd.get("avg_lose", 0)
+        drr  = (daw / -dal) if dal < 0 else 0
+        # 每日損益率表格
+        drow = ""
+        for r in vday_recent:
+            ret   = r.get("ret", 0)
+            pnl_d = r.get("pnl", 0)
+            dcol  = "#10b981" if pnl_d >= 0 else "#ef4444"
+            ddir  = "做多▲" if r.get("dir", 0) == 1 else "做空▼"
+            dirc  = "#10b981" if r.get("dir", 0) == 1 else "#ef4444"
+            drow += (
+                f'<tr style="border-bottom:1px solid rgba(255,255,255,.05)">'
+                f'<td style="padding:4px 3px;color:#94a3b8">{e(r.get("date",""))}</td>'
+                f'<td style="padding:4px 3px;color:{dirc};font-weight:700">{ddir}</td>'
+                f'<td style="text-align:right;padding:4px 3px;color:{dcol};font-weight:800">{ret:+.2f}%</td>'
+                f'<td style="text-align:right;padding:4px 3px;color:{dcol}">NT${pnl_d:,.0f}</td>'
+                f'</tr>'
+            )
+        table_html = (
+            f'<div style="margin-top:10px">'
+            f'<div style="font-size:.72rem;font-weight:700;color:#94a3b8;margin-bottom:5px">'
+            f'📆 近 {len(vday_recent)} 個交易日 · 每日損益率</div>'
+            f'<table style="width:100%;border-collapse:collapse;font-size:.7rem">'
+            f'<tr style="color:#64748b;border-bottom:1px solid #1e3050">'
+            f'<td style="padding:4px 3px">交易日</td><td style="padding:4px 3px">方向</td>'
+            f'<td style="text-align:right;padding:4px 3px">損益率</td>'
+            f'<td style="text-align:right;padding:4px 3px">每口損益</td></tr>'
+            f'{drow}</table></div>'
+        ) if vday_recent else ""
+        sim_vday_stats_html = f"""
+            <div class="card" style="border:1.5px solid #38bdf8">
+              <div class="stitle">📆 每日版回測 — 每天都進場（跳空順勢）</div>
+              <div class="row3">
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.3rem;color:{pnl_color(dwr-50)}">{dwr:.0f}%</div>
+                  <div class="lbl">歷史勝率<br>{dw}勝 {dt-dw}敗</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem;color:{pnl_color(dp)}">NT${dp:,.0f}</div>
+                  <div class="lbl">模擬損益</div>
+                </div>
+                <div class="box3">
+                  <div class="big-num" style="font-size:1.1rem">{dt}</div>
+                  <div class="lbl">回測筆數<br><span style="font-size:.65rem;color:#38bdf8">每個交易日</span></div>
+                </div>
+              </div>
+              {table_html}
+              <p style="color:#38bdf8;font-size:.72rem;margin-top:8px">
+                🎯 每天都進場：高開做多／低開做空，13:25 收盤平倉｜賺賠比 {drr:.2f}｜
+                29年實測唯一「每天交易仍正報酬」的純方向公式（勝率 {dwr:.0f}% 但靠賺賠比取勝）
+              </p>
+              <p style="color:#64748b;font-size:.62rem;margin-top:4px">
+                ⚠️ 方向需「開盤後」依跳空決定，盤前無法預測，故不列入上方五版本建議
+              </p>
+            </div>"""
+
     # ── 金十數據快訊（瀏覽器直連 jin10.com，不依賴 GitHub Actions）─
     jin10_html = """
 <div class="card j10-card" id="jin10-card">
@@ -2457,6 +2523,7 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
   <!-- Tab 2：歷史回測統計（預設收納） -->
   <div class="tab-pane" id="t-backtest">
     {sim_vsel_stats_html}
+    {sim_vday_stats_html}
     {sim_stats_html}
     {sim_v70_stats_html}
     {sim_v60_stats_html}
