@@ -1558,9 +1558,9 @@ def main():
     macd_s_live = float(prev["MACD"]) < float(prev["MACDs"])
     pk_up = float(tw_df.iloc[-2]["Close"]) > float(tw_df.iloc[-2]["Open"])
 
-    # 精準版 (v100): MA2日+RSI<72+SOX>0.5+SPX>0
-    if   ma_bull and 45 < rsi_val < 72 and sox_v > 0.5 and spx_v > 0: dv100 = 1
-    elif ma_bear and 28 < rsi_val < 55 and sox_v < -0.5 and spx_v < 0: dv100 = -1
+    # 精準版 (v100): MA2日+RSI<72+SOX>0.5+SPX>0+MACD金叉+前K（最嚴 → 必為其他版本超集，確保單調性）
+    if   ma_bull and 45 < rsi_val < 72 and sox_v > 0.5 and spx_v > 0 and macd_b_live and pk_up: dv100 = 1
+    elif ma_bear and 28 < rsi_val < 55 and sox_v < -0.5 and spx_v < 0 and macd_s_live and not pk_up: dv100 = -1
     else: dv100 = 0
     # 優化版 (v70): MA1日+MACD+前K+RSI<80+SOX>0
     if   ma1_b and macd_b_live and pk_up and 40 < rsi_val < 80 and sox_v > 0 and spx_v > 0: dv70 = 1

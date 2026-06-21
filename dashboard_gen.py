@@ -349,6 +349,7 @@ def generate_html(signal, records, stock=None):
     nws_s      = signal.get("news_score", 0)
     last_close = signal.get("tw_last_close", 0)
     tw_rsi     = signal.get("tw_rsi", 0)
+    veto_msg   = signal.get("veto_msg", "")
 
     # ── 今日狀態卡 ───────────────────────────────────────
     today_str  = datetime.now().strftime("%Y-%m-%d")
@@ -473,7 +474,11 @@ def generate_html(signal, records, stock=None):
     else:
         sig_bg     = "linear-gradient(135deg,#374151,#4b5563)"
         sig_label  = "⚪ 明天觀望（不交易）"
-        sig_action = f"訊號不足，總分 {total_sc:+d}，未達門檻 ±{thresh}"
+        if veto_msg:
+            # 總分已達門檻、但被安全濾網擋下 → 顯示真正原因，而非誤導的「未達門檻」
+            sig_action = e(veto_msg)
+        else:
+            sig_action = f"訊號不足，總分 {total_sc:+d}，未達門檻 ±{thresh}"
 
     gold_contribution = signal.get("gold", {}).get("signal", 0)
     score_detail = (f"台灣技術 {tw_s:+d} ＋ 國際市場 {int_s:+d} ＋ 新聞 {nws_s:+d}"
@@ -503,9 +508,9 @@ def generate_html(signal, records, stock=None):
     macd_b   = macd > macds
     macd_s   = macd < macds
 
-    # 精準版 (100%): MA2日+RSI<72+SOX>0.5+SPX>0
-    if   ma2_bull and 45 < rsi < 72 and sox_chg > 0.5 and spx_chg > 0: dir_v100 = 1
-    elif ma2_bear and 28 < rsi < 55 and sox_chg < -0.5 and spx_chg < 0: dir_v100 = -1
+    # 精準版 (100%): MA2日+RSI<72+SOX>0.5+SPX>0+MACD金叉+前K（最嚴 → 必為其他版本的超集，確保單調性）
+    if   ma2_bull and 45 < rsi < 72 and sox_chg > 0.5 and spx_chg > 0 and macd_b and prev_k_up: dir_v100 = 1
+    elif ma2_bear and 28 < rsi < 55 and sox_chg < -0.5 and spx_chg < 0 and macd_s and (not prev_k_up): dir_v100 = -1
     else: dir_v100 = 0
 
     # 優化版 (90%): MA1日+MACD+前K收紅+RSI<80+SOX>0+SPX>0
