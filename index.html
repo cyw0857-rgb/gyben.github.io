@@ -632,16 +632,18 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
     
     <div class="card">
-      <div class="stitle">📋 五版本今日買賣建議</div>
+      <div class="stitle">📋 五版本今日買賣建議
+        <span id="sig-live-tag" style="font-size:.6rem;font-weight:600;color:#10b981;margin-left:6px">● 即時重算中…</span>
+      </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px">
         
-        <div style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
+        <div id="vcard-vsel" style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
           <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">⭐ 精選版 — MA2日+趨勢強+RSI窄帶</div>
-          <div style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
-          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
+          <div id="vact-vsel" style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
+          <div id="vdetail-vsel" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
+            <div id="vprice-vsel" style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">194筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">51%</span>
@@ -650,13 +652,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
           
           <div style="font-size:.6rem;color:#6b7280;margin-top:6px;line-height:1.3">重質不重量，正期望值，約每年7筆</div>
         </div>
-        <div style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
+        <div id="vcard-v100" style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
           <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">🎯 精準版 — MA2日+SOX>0.5%+RSI<72</div>
-          <div style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
-          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
+          <div id="vact-v100" style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
+          <div id="vdetail-v100" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
+            <div id="vprice-v100" style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">789筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">48%</span>
@@ -665,13 +667,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
           
           <div style="font-size:.6rem;color:#6b7280;margin-top:6px;line-height:1.3">條件最嚴，少量高確信度</div>
         </div>
-        <div style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
+        <div id="vcard-v70" style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
           <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">📊 優化版 — MA1日+MACD+前K+SOX</div>
-          <div style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
-          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
+          <div id="vact-v70" style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
+          <div id="vdetail-v70" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
+            <div id="vprice-v70" style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">806筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">47%</span>
@@ -680,13 +682,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
           
           <div style="font-size:.6rem;color:#6b7280;margin-top:6px;line-height:1.3">條件均衡，每月3-4筆</div>
         </div>
-        <div style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
+        <div id="vcard-v60" style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
           <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">📈 高頻版 — MA1日+MACD+前K收紅</div>
-          <div style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
-          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
+          <div id="vact-v60" style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
+          <div id="vdetail-v60" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
+            <div id="vprice-v60" style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">1990筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">46%</span>
@@ -695,13 +697,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
           
           <div style="font-size:.6rem;color:#6b7280;margin-top:6px;line-height:1.3">條件寬鬆，每月5-7筆</div>
         </div>
-        <div style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
+        <div id="vcard-v50" style="background:rgba(16,185,129,.12);border:1.5px solid #10b981;border-radius:12px;padding:12px 12px;min-width:0">
           <div style="font-size:.66rem;color:#9ca3af;margin-bottom:6px;line-height:1.3">🔁 超高頻版 — MA1日對齊+RSI</div>
-          <div style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
-          <div style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
+          <div id="vact-v50" style="font-size:1.35rem;font-weight:900;color:#10b981">🟢 買進</div>
+          <div id="vdetail-v50" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
+            <div id="vprice-v50" style="font-size:.8rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">4602筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">45%</span>
@@ -712,7 +714,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
-        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜昨收 47,742
+        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 47,742</span>
       </div>
     </div>
   </div>
@@ -1375,7 +1377,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
 
   function renderGrid(items, sourceLabel){
     var html='';
+    window.__chgMap = window.__chgMap || {};
     items.forEach(function(it){
+      window.__chgMap[it.name] = it.chg;
       var sv=it.sig, chg=it.chg;
       var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
       var arrow=sv===1?'▲':sv===-1?'▼':'─';
@@ -1394,6 +1398,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
     document.getElementById('intl-meta').textContent=ts+' · '+sourceLabel;
     var dot=document.getElementById('intl-live-dot');
     if(dot){dot.style.background=sourceLabel.indexOf('LIVE')>=0?'#10b981':'#f59e0b';dot.style.animation=sourceLabel.indexOf('LIVE')>=0?'blink 1s infinite':'';}
+    if(window.recalcSignals) window.recalcSignals();  /* SOX/SPX 更新 → 重算五版本 */
   }
 
   /* ── Yahoo Finance 即時 API（多端點 + 多Proxy 輪試）── */
@@ -1504,6 +1509,120 @@ tr:hover td{background:rgba(255,255,255,.014)}
 
   loadOnce();
   setInterval(loadOnce, 30000);  /* 每30秒 */
+})();
+</script>
+<script>
+/* ════════ 五版本訊號：瀏覽器即時重算（不依賴 GitHub）════════
+   公式與 Python signal_engine 完全一致（已用 verify_js_signal 驗證吻合）
+   台股日線從 Yahoo chart API 抓，SOX/SPX 用國際模組的即時漲跌幅      */
+(function(){
+  var TWURL = 'https://query2.finance.yahoo.com/v8/finance/chart/%5ETWII?range=6mo&interval=1d';
+  var CHAIN = [
+    function(u){return u;},
+    function(u){return 'https://corsproxy.io/?'+u;},
+    function(u){return 'https://api.allorigins.win/raw?url='+encodeURIComponent(u);}
+  ];
+  function fetchChain(url,i){
+    i=i||0;
+    if(i>=CHAIN.length) return Promise.reject(new Error('all proxy failed'));
+    return fetch(CHAIN[i](url)).then(function(r){return r.json();})
+      .then(function(d){ if(d&&d.chart&&d.chart.result) return d; throw new Error('bad'); })
+      .catch(function(){ return fetchChain(url,i+1); });
+  }
+  /* ── 指標公式（與 pandas 對齊）── */
+  function emaSeries(a,span){ var k=2/(span+1),out=[],prev; for(var i=0;i<a.length;i++){ prev=i===0?a[0]:a[i]*k+prev*(1-k); out.push(prev);} return out; }
+  function smaAt(a,p,idx){ if(idx<p-1)return null; var s=0; for(var j=idx-p+1;j<=idx;j++)s+=a[j]; return s/p; }
+  function rsiAt(c,p,idx){ if(idx<p)return null; var g=0,l=0; for(var j=idx-p+1;j<=idx;j++){ var d=c[j]-c[j-1]; if(d>0)g+=d; else l+=-d; } g/=p; l/=p; return l===0?100:100-100/(1+g/l); }
+
+  function fmt(x){ return Math.round(x).toLocaleString('en-US'); }
+
+  function paint(tag,dir,lc){
+    var card=document.getElementById('vcard-'+tag);
+    var act =document.getElementById('vact-'+tag);
+    var det =document.getElementById('vdetail-'+tag);
+    var pr  =document.getElementById('vprice-'+tag);
+    if(!act) return;
+    var bg,bd,ico,txt,detail,price;
+    if(dir===1){ bg='rgba(16,185,129,.12)'; bd='#10b981'; ico='🟢'; txt='買進'; detail='8:45 買進 · 13:25 賣出'; price=fmt(lc)+' ～ '+fmt(lc+80); }
+    else if(dir===-1){ bg='rgba(239,68,68,.12)'; bd='#ef4444'; ico='🔴'; txt='賣出'; detail='8:45 放空 · 13:25 買回'; price=fmt(lc-80)+' ～ '+fmt(lc); }
+    else { bg='rgba(107,114,128,.10)'; bd='#374151'; ico='⚪'; txt='觀望'; detail='今日條件不足，不交易'; price='—'; }
+    act.textContent=ico+' '+txt; act.style.color=bd;
+    if(det) det.textContent=detail;
+    if(pr)  pr.textContent=price;
+    if(card){ card.style.background=bg; card.style.borderColor=bd; }
+  }
+
+  window.__tw = null;  /* 快取已抓的台股日線指標 */
+
+  window.recalcSignals = function(){
+    var tw=window.__tw; if(!tw) return;
+    var cm=window.__chgMap||{};
+    var sox=cm['費城半導體'], spx=cm['S&P500'];
+    var haveIntl=(typeof sox==='number' && typeof spx==='number');
+    var ma5=tw.ma5,ma10=tw.ma10,ma20=tw.ma20,rsi=tw.rsi,macd=tw.macd,macds=tw.macds;
+    var ma5_p2=tw.ma5_p2,ma10_p2=tw.ma10_p2,ma20_p2=tw.ma20_p2;
+    var prevKup=tw.prevKup, lc=tw.lc;
+    var ma1_bull=ma5>ma10&&ma10>ma20, ma1_bear=ma5<ma10&&ma10<ma20;
+    var ma2_bull=ma1_bull&&(ma5_p2>ma10_p2&&ma10_p2>ma20_p2);
+    var ma2_bear=ma1_bear&&(ma5_p2<ma10_p2&&ma10_p2<ma20_p2);
+    var macd_b=macd>macds, macd_s=macd<macds;
+    var spread=ma20?(ma5-ma20)/ma20:0;
+
+    /* 精選版 vsel */
+    var dvsel=0;
+    if(ma2_bull&&spread>0.006&&macd_b&&prevKup&&rsi>58&&rsi<66) dvsel=1;
+    else if(ma2_bear&&spread<-0.006&&macd_s&&!prevKup&&rsi>34&&rsi<42) dvsel=-1;
+    paint('vsel',dvsel,lc);
+    /* 高頻版 v60 */
+    var dv60=0;
+    if(ma1_bull&&macd_b&&prevKup&&rsi>30&&rsi<80) dv60=1;
+    else if(ma1_bear&&macd_s&&!prevKup&&rsi>20&&rsi<70) dv60=-1;
+    paint('v60',dv60,lc);
+    /* 超高頻版 v50 */
+    var dv50=0;
+    if(ma1_bull&&rsi>30&&rsi<85) dv50=1;
+    else if(ma1_bear&&rsi>15&&rsi<70) dv50=-1;
+    paint('v50',dv50,lc);
+    /* v100 / v70 需要 SOX/SPX，國際資料未到前不覆蓋伺服器值 */
+    if(haveIntl){
+      var dv100=0;
+      if(ma2_bull&&rsi>45&&rsi<72&&sox>0.5&&spx>0&&macd_b&&prevKup) dv100=1;
+      else if(ma2_bear&&rsi>28&&rsi<55&&sox<-0.5&&spx<0&&macd_s&&!prevKup) dv100=-1;
+      paint('v100',dv100,lc);
+      var dv70=0;
+      if(ma1_bull&&macd_b&&prevKup&&rsi>40&&rsi<80&&sox>0&&spx>0) dv70=1;
+      else if(ma1_bear&&macd_s&&!prevKup&&rsi>20&&rsi<60&&sox<0&&spx<0) dv70=-1;
+      paint('v70',dv70,lc);
+    }
+    /* 狀態列 + 昨收 */
+    var tag=document.getElementById('sig-live-tag');
+    if(tag){ var d=new Date(); tag.textContent='● 即時重算 '+(d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes(); tag.style.color='#10b981'; }
+    var lcEl=document.getElementById('sig-lc'); if(lcEl) lcEl.textContent='最新收盤 '+fmt(lc);
+  };
+
+  function loadTW(){
+    fetchChain(TWURL).then(function(d){
+      var res=d.chart.result[0], q=res.indicators.quote[0], ts=res.timestamp;
+      var O=[],C=[];
+      for(var i=0;i<ts.length;i++){ if(q.close[i]!=null&&q.open[i]!=null){ O.push(q.open[i]); C.push(q.close[i]); } }
+      var n=C.length; if(n<30) return;
+      var e12=emaSeries(C,12), e26=emaSeries(C,26), macdArr=[];
+      for(var j=0;j<n;j++) macdArr.push(e12[j]-e26[j]);
+      var macdsArr=emaSeries(macdArr,9);
+      window.__tw={
+        ma5:smaAt(C,5,n-1), ma10:smaAt(C,10,n-1), ma20:smaAt(C,20,n-1),
+        ma5_p2:smaAt(C,5,n-2), ma10_p2:smaAt(C,10,n-2), ma20_p2:smaAt(C,20,n-2),
+        rsi:rsiAt(C,14,n-1), macd:macdArr[n-1], macds:macdsArr[n-1],
+        prevKup:(C[n-2]>O[n-2]), lc:C[n-1]
+      };
+      window.recalcSignals();
+    }).catch(function(){
+      var tag=document.getElementById('sig-live-tag');
+      if(tag){ tag.textContent='● 即時重算失敗（顯示收盤資料）'; tag.style.color='#f59e0b'; }
+    });
+  }
+  loadTW();
+  setInterval(loadTW, 5*60*1000);  /* 每5分鐘重抓台股日線 */
 })();
 </script>
 
