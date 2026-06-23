@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 16:09",
+  "generated_at": "2026-06-23 16:12",
   "mode": "morning",
   "signal_date": "2026-06-22",
   "trade_date": "2026-06-24",
@@ -278,45 +278,45 @@
     "streak": 1
   },
   "gold": {
-    "price_usd": 4155.7001953125,
-    "chg_pct": -0.6265024903290093,
+    "price_usd": 4155.7998046875,
+    "chg_pct": -0.6241205735608873,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 72.98999786376953,
-    "oil_chg": -2.4458725454676533
+    "oil_usd": 73.0999984741211,
+    "oil_chg": -2.298852215609015
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7396.85986328125,
-      "chg_pct": -1.016088708291553,
+      "price": 7404.02978515625,
+      "chg_pct": -0.9201416545469586,
       "signal": -1,
-      "note": "-1.02%",
+      "note": "-0.92%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51792.12109375,
-      "chg_pct": 0.15356022689658475,
+      "price": 51824.6484375,
+      "chg_pct": 0.21646032081993863,
       "signal": 0,
-      "note": "+0.15%",
+      "note": "+0.22%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25772.91796875,
-      "chg_pct": -1.5045196796757316,
+      "price": 25802.423828125,
+      "chg_pct": -1.3917581446827454,
       "signal": -1,
-      "note": "-1.50%",
+      "note": "-1.39%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13619.978515625,
-      "chg_pct": -6.933793266267417,
+      "price": 13681.5732421875,
+      "chg_pct": -6.512912458753875,
       "signal": -1,
-      "note": "-6.93%",
+      "note": "-6.51%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
@@ -369,42 +369,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.375,
-      "chg_pct": 0.35141889599138065,
+      "price": 101.37899780273438,
+      "chg_pct": 0.355376333001105,
       "signal": -1,
-      "note": "+0.35%(偏空)",
+      "note": "+0.36%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4155.7001953125,
-      "chg_pct": -0.6265024903290093,
+      "price": 4155.7998046875,
+      "chg_pct": -0.6241205735608873,
       "signal": 1,
-      "note": "-0.63%()",
+      "note": "-0.62%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 72.98999786376953,
-      "chg_pct": -2.4458725454676533,
+      "price": 73.0999984741211,
+      "chg_pct": -2.298852215609015,
       "signal": -1,
-      "note": "-2.45%",
+      "note": "-2.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.479000091552734,
-      "chg_pct": 0.6290693458964367,
+      "price": 4.4770002365112305,
+      "chg_pct": 0.584138882056354,
       "signal": 0,
-      "note": "4.48%(+0.63%)",
+      "note": "4.48%(+0.58%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 62645.01171875,
-      "chg_pct": -2.0438635138270893,
+      "price": 62630.05078125,
+      "chg_pct": -2.06725748559759,
       "signal": -1,
-      "note": "-2.04%",
+      "note": "-2.07%",
       "desc": "風險偏好指標"
     }
   },
@@ -429,7 +429,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg.com",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -495,12 +495,6 @@
     },
     {
       "label": "聯準會",
-      "title": "How do changing interest rates affect the stock market in 2026 - U.S. Bank",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
       "title": "Will New US Fed Chair Kevin Warsh Raise Interest Rates This Year? - Morningstar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -514,6 +508,12 @@
     {
       "label": "聯準會",
       "title": "Gold falls as hawkish Fed bets lift dollar to one-year peak - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Reserve holds interest rates steady as Trump’s new chairman faces fresh ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
