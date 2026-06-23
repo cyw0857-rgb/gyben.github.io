@@ -1025,13 +1025,13 @@ def generate_html(signal, records, stock=None, dca=None):
     def _real_row_html(real_dfv):
         """若實倉有資料，生成一行實倉摘要HTML"""
         if real_dfv is None or real_dfv.empty:
-            return '<p style="color:#4b5563;font-size:.72rem;margin-top:6px">📌 實倉：尚無記錄（今日起累計）</p>'
+            return '<p style="color:#4b5563;font-size:.72rem;margin-top:6px">📡 上線後實測：尚無記錄（今日起累計）</p>'
         rv = real_dfv.copy()
         rv["pnl"]      = pd.to_numeric(rv["pnl_nts"], errors="coerce").fillna(0)
         rv["win_bool"] = rv["win"].map({"True": True, "False": False}).fillna(False)
         rv_t = rv[rv["pnl"] != 0]
         if rv_t.empty:
-            return '<p style="color:#4b5563;font-size:.72rem;margin-top:6px">📌 實倉：尚無完成交易</p>'
+            return '<p style="color:#4b5563;font-size:.72rem;margin-top:6px">📡 上線後實測：尚無完成交易</p>'
         rt  = len(rv_t)
         rw  = int(rv_t["win_bool"].sum())
         rwr = rw / rt * 100
@@ -1040,7 +1040,7 @@ def generate_html(signal, records, stock=None, dca=None):
         rp_c  = "#10b981" if rp >= 0 else "#ef4444"
         return (f'<div style="display:flex;gap:12px;margin-top:8px;padding-top:8px;'
                 f'border-top:1px dashed #374151;font-size:.75rem">'
-                f'<span style="color:#9ca3af">📌 實倉 {rt}筆</span>'
+                f'<span style="color:#9ca3af">📡 上線後實測 {rt}筆</span>'
                 f'<span style="font-weight:700;color:{rwr_c}">{rwr:.0f}% 勝率</span>'
                 f'<span style="font-weight:700;color:{rp_c}">NT${rp:,.0f}</span>'
                 f'</div>')
