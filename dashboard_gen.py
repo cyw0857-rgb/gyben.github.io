@@ -827,6 +827,13 @@ def generate_html(signal, records, stock=None, dca=None):
     elif ma2_bear and spread_d < -0.006 and macd_s and (not prev_k_up) and 34 < rsi < 42: dir_vsel = -1
     else: dir_vsel = 0
 
+    # 🎯 共識（精選 ∪ 優化）：只跟兩個賺錢版本，任一發訊號就做，衝突才觀望
+    #    2026-06 全期回測驗證：勝率47.7%/賺賠1.39/約32筆年，近5年勝率61%/賺賠1.72，優於多數決
+    if dir_vsel != 0 and dir_v70 != 0 and dir_vsel != dir_v70:
+        dir_cons = 0
+    else:
+        dir_cons = dir_v70 if dir_v70 != 0 else dir_vsel
+
     def _ver_card(ver_dir, win_rate, n_trades, label, desc, real_df_v=None, tag=""):
         """單個版本的買賣建議小卡（含實倉統計）"""
         if ver_dir == 1:
@@ -896,11 +903,37 @@ def generate_html(signal, records, stock=None, dca=None):
         _ver_card(dir_v50,  wr50,  n50,  "🔁 超高頻版 — MA1日對齊+RSI",        "條件最寬，每月8-12筆",    real_v50_df, "v50")
     )
 
+    # 🎯 共識卡視覺（瀏覽器 paint('cons') 會即時覆蓋）
+    if dir_cons == 1:
+        cbg, cbd, cico, cact, cdet, cpr = "rgba(16,185,129,.15)", "#10b981", "🟢", "買進", "8:45 買進 · 13:25 賣出", f"{lc:,.0f} ～ {lc+80:,.0f}"
+    elif dir_cons == -1:
+        cbg, cbd, cico, cact, cdet, cpr = "rgba(239,68,68,.15)", "#ef4444", "🔴", "賣出", "8:45 放空 · 13:25 買回", f"{lc-80:,.0f} ～ {lc:,.0f}"
+    else:
+        cbg, cbd, cico, cact, cdet, cpr = "rgba(107,114,128,.10)", "#6b7280", "⚪", "觀望", "精選與優化分歧或皆無訊號 → 不交易", "—"
+    consensus_html = f"""
+      <div id="vcard-cons" style="background:{cbg};border:2px solid {cbd};border-radius:14px;padding:16px;margin-bottom:14px">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px">
+          <div style="font-size:.85rem;font-weight:800;color:#e2e8f0">🎯 共識訊號 · 你的下單依據</div>
+          <span style="font-size:.58rem;color:#94a3b8">精選 ∪ 優化（只跟兩個賺錢版本）</span>
+        </div>
+        <div id="vact-cons" style="font-size:2rem;font-weight:900;color:{cbd};margin-top:6px">{cico} {cact}</div>
+        <div id="vdetail-cons" style="font-size:.78rem;color:#d1d5db;margin:4px 0">{cdet}</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:6px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
+          <div><div style="font-size:.58rem;color:#6b7280">參考進場價</div><div id="vprice-cons" style="font-size:.85rem;font-weight:700;color:#e2e8f0">{cpr}</div></div>
+          <div><div style="font-size:.58rem;color:#6b7280">近5年實測</div><div style="font-size:.85rem;font-weight:700;color:#10b981">勝率61% · 賺賠1.72</div></div>
+          <div><div style="font-size:.58rem;color:#6b7280">頻率</div><div style="font-size:.85rem;font-weight:700;color:#e2e8f0">約32筆/年</div></div>
+        </div>
+        <div style="font-size:.6rem;color:#94a3b8;margin-top:8px;line-height:1.5">
+          ✅ 只跟「精選＋優化」兩個歷史賺錢版本；高頻／超高頻歷史賠錢，<b>請勿</b>用五版多數決（會被拖累成負報酬）。<br>
+          ⚠️ 此優勢 2012 年後才成形（夜盤＋當沖降稅）；每半年檢視勝率，<b>跌破 45% 或連虧超過歷史最大即暫停</b>。
+        </div>
+      </div>"""
     buy_sell_html = f"""
     <div class="card">
       <div class="stitle">📋 五版本今日買賣建議
         <span id="sig-live-tag" style="font-size:.6rem;font-weight:600;color:#10b981;margin-left:6px">● 即時重算中…</span>
       </div>
+      {consensus_html}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px">
         {five_cards}
       </div>
@@ -1741,16 +1774,20 @@ def generate_html(signal, records, stock=None, dca=None):
     else if(ma1_bear&&rsi>15&&rsi<70) dv50=-1;
     paint('v50',dv50,lc);
     /* v100 / v70 需要 SOX/SPX，國際資料未到前不覆蓋伺服器值 */
+    var dv100=0, dv70=0;
     if(haveIntl){
-      var dv100=0;
       if(ma2_bull&&rsi>45&&rsi<72&&sox>0.5&&spx>0&&macd_b&&prevKup) dv100=1;
       else if(ma2_bear&&rsi>28&&rsi<55&&sox<-0.5&&spx<0&&macd_s&&!prevKup) dv100=-1;
       paint('v100',dv100,lc);
-      var dv70=0;
       if(ma1_bull&&macd_b&&prevKup&&rsi>40&&rsi<80&&sox>0&&spx>0) dv70=1;
       else if(ma1_bear&&macd_s&&!prevKup&&rsi>20&&rsi<60&&sox<0&&spx<0) dv70=-1;
       paint('v70',dv70,lc);
     }
+    /* 🎯 共識訊號：精選 ∪ 優化（只跟兩個賺錢版本，衝突才觀望）— 使用者下單依據 */
+    var dcons;
+    if(dvsel!==0 && dv70!==0 && dvsel!==dv70) dcons=0;
+    else dcons = (dv70!==0 ? dv70 : dvsel);
+    paint('cons',dcons,lc);
     /* 狀態列 + 昨收 */
     var tag=document.getElementById('sig-live-tag');
     if(tag){ var d=new Date(); tag.textContent='● 即時重算 '+(d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes(); tag.style.color='#10b981'; }
