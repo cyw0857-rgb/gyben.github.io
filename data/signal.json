@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-23 16:12",
+  "generated_at": "2026-06-24 05:06",
   "mode": "morning",
   "signal_date": "2026-06-22",
-  "trade_date": "2026-06-24",
+  "trade_date": "2026-06-25",
   "direction": 0,
-  "total_score": -3,
+  "total_score": -1,
   "tw_score": 10,
-  "intl_score": -9,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": -1,
   "foreign_fut_net": -6136,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+10) vs 國際(-9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+10) vs 國際(-8) 方向相反 → 觀望",
   "threshold": 7,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±7",
   "tw_last_close": 47741.51171875,
@@ -278,45 +278,45 @@
     "streak": 1
   },
   "gold": {
-    "price_usd": 4155.7998046875,
-    "chg_pct": -0.6241205735608873,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 73.0999984741211,
-    "oil_chg": -2.298852215609015
+    "price_usd": 4127.0,
+    "chg_pct": -1.312798097175432,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 73.08000183105469,
+    "oil_chg": -2.325578549674731
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7404.02978515625,
-      "chg_pct": -0.9201416545469586,
+      "price": 7365.4599609375,
+      "chg_pct": -1.4362785193208119,
       "signal": -1,
-      "note": "-0.92%",
+      "note": "-1.44%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51824.6484375,
-      "chg_pct": 0.21646032081993863,
+      "price": 51666.83984375,
+      "chg_pct": -0.08870371117352525,
       "signal": 0,
-      "note": "+0.22%",
+      "note": "-0.09%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25802.423828125,
-      "chg_pct": -1.3917581446827454,
+      "price": 25587.0390625,
+      "chg_pct": -2.214886746948023,
       "signal": -1,
-      "note": "-1.39%",
+      "note": "-2.21%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13681.5732421875,
-      "chg_pct": -6.512912458753875,
+      "price": 13482.5078125,
+      "chg_pct": -7.8731395994635776,
       "signal": -1,
-      "note": "-6.51%",
+      "note": "-7.87%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
@@ -337,10 +337,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 9114.5498046875,
+      "chg_pct": 0.6863345199261507,
+      "signal": 1,
+      "note": "+0.69%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -369,42 +369,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.37899780273438,
-      "chg_pct": 0.355376333001105,
+      "price": 101.3740005493164,
+      "chg_pct": 0.35042953673894955,
       "signal": -1,
-      "note": "+0.36%(偏空)",
+      "note": "+0.35%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4155.7998046875,
-      "chg_pct": -0.6241205735608873,
+      "price": 4127.0,
+      "chg_pct": -1.312798097175432,
       "signal": 1,
-      "note": "-0.62%()",
+      "note": "-1.31%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 73.0999984741211,
-      "chg_pct": -2.298852215609015,
+      "price": 73.08000183105469,
+      "chg_pct": -2.325578549674731,
       "signal": -1,
-      "note": "-2.30%",
+      "note": "-2.33%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.4770002365112305,
-      "chg_pct": 0.584138882056354,
+      "price": 4.493000030517578,
+      "chg_pct": 0.943604018844655,
       "signal": 0,
-      "note": "4.48%(+0.58%)",
+      "note": "4.49%(+0.94%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 62630.05078125,
-      "chg_pct": -2.06725748559759,
+      "price": 62500.73046875,
+      "chg_pct": -2.2694718013767505,
       "signal": -1,
-      "note": "-2.07%",
+      "note": "-2.27%",
       "desc": "風險偏好指標"
     }
   },
@@ -417,33 +417,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says He May Not Renew Canada-Mexico Trade Deal - The New York Times",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters",
+      "title": "Trump wants to ‘manage’ China trade. Businesses see a tariff opening. - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
+      "title": "Trade Court Rules Trump’s 10% Global Tariff Is Illegal - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "The Man Trying to Make Trump’s Tariffs Go on Forever - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump sets July 4 deadline for EU to comply with trade deal or face 'much higher",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump threatens 'much higher' tariffs on EU by 4 of July - BBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Court rules against the tariff Trump enacted after Supreme Court defeat - The Wa",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -459,13 +459,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
+      "title": "US cites forced labour concerns as grounds for new tariffs - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "US cites forced labour concerns as grounds for new tariffs - Al Jazeera",
+      "title": "Trump's White House proposes 10% tariff plan on countries including China, EU, U",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -477,21 +477,27 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Why TSMC’s CoWoS Role Keeps Taiwan Semiconductor (TSM) Central to the HBM-Driven",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Speaker Han Kuo-yu visits TSMC’s Arizona campus - Taipei Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "‘FOMO really got me’: Taiwanese go deep into debt to amp 100% stock rally - The ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
-      "label": "台股/半導體",
-      "title": "What's Going On With Taiwan Semiconductor Stock Tuesday? - Benzinga",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Speaker Han, legislative delegation visit TSMC's Arizona campus - Focus Taiwan",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "聯準會",
+      "title": "Treasury yields fall despite rate hike concerns hitting tech stocks - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -507,15 +513,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Gold falls as hawkish Fed bets lift dollar to one-year peak - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve holds interest rates steady as Trump’s new chairman faces fresh ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Manufacturers balance costs, inventory amid uncertain rate environment - Manufac",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
