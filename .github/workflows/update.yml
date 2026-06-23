@@ -23,6 +23,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Taipei              # 資料時間戳用台灣時間，不要 UTC（避免看起來慢一截像沒更新）
     permissions:
       contents: write
 

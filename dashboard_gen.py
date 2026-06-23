@@ -866,7 +866,7 @@ def generate_html(signal, records, stock=None, dca=None):
                 rp_c  = "#10b981" if rp >= 0 else "#ef4444"
                 real_line = (f'<div style="display:flex;justify-content:space-between;'
                              f'margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)">'
-                             f'<span style="font-size:.62rem;color:#6b7280">實倉 {rt}筆</span>'
+                             f'<span style="font-size:.62rem;color:#6b7280">📡 上線後{rt}筆</span>'
                              f'<span style="font-size:.72rem;font-weight:700;color:{rwr_c}">{rwr:.0f}%勝</span>'
                              f'<span style="font-size:.72rem;font-weight:700;color:{rp_c}">NT${rp:,.0f}</span>'
                              f'</div>')
