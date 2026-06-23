@@ -130,6 +130,13 @@ def stock_card_html(stock):
     t5d  = inst.get("total_dealer", 0)
     inst_mood       = inst.get("mood", "─")
     inst_mood_color = "#10b981" if inst_mood == "偏多" else ("#ef4444" if inst_mood == "偏空" else "#9ca3af")
+    streak_label    = inst.get("streak_label", "")
+    streak_color    = inst.get("streak_color", "#9ca3af")
+    trust_streak    = inst.get("trust_streak", 0)
+    # 投信連買的白話提示（文案由 Gemini 撰寫）
+    if   trust_streak >= 2: streak_hint = "內資大哥看好，籌碼有人顧"
+    elif trust_streak <= -2: streak_hint = "投信連賣，籌碼鬆動要當心"
+    else: streak_hint = ""
 
     # ── 散戶情緒 ─────────────────────────────────────────
     retail_mood       = retail.get("mood", "─")
@@ -337,7 +344,9 @@ def stock_card_html(stock):
             <div style="background:{retail_mood_color}22;border:1px solid {retail_mood_color};
                         border-radius:5px;padding:2px 7px;font-size:.65rem;
                         font-weight:700;color:{retail_mood_color}">散戶 {retail_mood}</div>
+            {f'<div style="background:{streak_color}22;border:1px solid {streak_color};border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:{streak_color}">{streak_label}</div>' if streak_label else ''}
           </div>
+          {f'<div style="margin-top:6px;font-size:.6rem;color:{streak_color}">💡 {streak_hint}</div>' if streak_hint else ''}
         </div>
       </div>
     </div>

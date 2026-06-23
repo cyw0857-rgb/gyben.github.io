@@ -139,10 +139,34 @@ def run():
         td = sum(r["dealer"]  for r in last5)
         net5 = tf + tt + td
         mood = "偏多" if net5 > 0 else ("偏空" if net5 < 0 else "中性")
+        # 投信連買/連賣天數（中小型股動能指標；投信連買且未爆量跟單勝率高）
+        sign0 = 1 if inst_rows[0]["trust"] > 0 else (-1 if inst_rows[0]["trust"] < 0 else 0)
+        streak = 0
+        if sign0 != 0:
+            for r in inst_rows:
+                s = 1 if r["trust"] > 0 else (-1 if r["trust"] < 0 else 0)
+                if s == sign0:
+                    streak += 1
+                else:
+                    break
+        trust_streak = sign0 * streak  # 正=連買、負=連賣
+        if   trust_streak > 0: streak_label, streak_color = f"📈 投信連買 {streak} 日", "#10b981"
+        elif trust_streak < 0: streak_label, streak_color = f"📉 投信連賣 {streak} 日", "#ef4444"
+        else:                  streak_label, streak_color = "投信今日無動作", "#9ca3af"
+        # 外資同步看一下連買/連賣
+        fsign = 1 if inst_rows[0]["foreign"] > 0 else (-1 if inst_rows[0]["foreign"] < 0 else 0)
+        fstreak = 0
+        if fsign != 0:
+            for r in inst_rows:
+                s = 1 if r["foreign"] > 0 else (-1 if r["foreign"] < 0 else 0)
+                if s == fsign: fstreak += 1
+                else: break
         inst = {
             "rows": inst_rows,
             "total_foreign": tf, "total_trust": tt, "total_dealer": td,
             "net5": net5, "mood": mood,
+            "trust_streak": trust_streak, "streak_label": streak_label,
+            "streak_color": streak_color, "foreign_streak": fsign * fstreak,
         }
 
     # 融資融券彙整
