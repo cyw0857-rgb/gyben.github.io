@@ -737,18 +737,19 @@ def generate_html(signal, records, stock=None, dca=None):
             oil_col = f"""
             <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🛢 WTI 原油</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px">${op:,.1f}</div>
-              <div style="font-size:.78rem;opacity:.9">{"▲" if oc >= 0 else "▼"} {oc:+.2f}%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">{op:,.1f}</span></div>
+              <div id="oil-chg" style="font-size:.78rem;opacity:.9">{"▲" if oc >= 0 else "▼"} {oc:+.2f}%</div>
             </div>"""
         gold_html = f"""
         <div style="background:{gbg};color:{gtxt};border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
-          <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示</div>
+          <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示
+            <span id="gold-live" style="font-size:.6rem;opacity:.85;margin-left:6px">伺服器資料</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
             <div style="flex:1">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px">${gp:,.0f}<span style="font-size:.72rem;opacity:.8"> / oz</span></div>
-              <div style="font-size:.78rem;opacity:.9">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">{gp:,.0f}</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div id="gold-chg" style="font-size:.78rem;opacity:.9">{"▲" if gc >= 0 else "▼"} {gc:+.2f}%</div>
             </div>
             {oil_col}
           </div>
@@ -912,6 +913,7 @@ def generate_html(signal, records, stock=None, dca=None):
         cbg, cbd, cico, cact, cdet, cpr = "rgba(107,114,128,.10)", "#6b7280", "⚪", "觀望", "精選與優化分歧或皆無訊號 → 不交易", "—"
     consensus_html = f"""
       <div id="vcard-cons" style="background:{cbg};border:2px solid {cbd};border-radius:14px;padding:16px;margin-bottom:14px">
+        <div style="background:#fde68a;color:#7c2d12;font-size:.66rem;font-weight:800;border-radius:6px;padding:3px 8px;display:inline-block;margin-bottom:8px">👉 要下單就只看這一張，下面五張是參考</div>
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px">
           <div style="font-size:.85rem;font-weight:800;color:#e2e8f0">🎯 共識訊號 · 你的下單依據</div>
           <span style="font-size:.58rem;color:#94a3b8">精選 ∪ 優化（只跟兩個賺錢版本）</span>
@@ -986,9 +988,11 @@ def generate_html(signal, records, stock=None, dca=None):
             </div>"""
     else:
         today_html = """<div class="card">
-          <div class="stitle">⚡ 實際交易記錄</div>
+          <div class="stitle">⚡ 你本人實際下單記錄</div>
           <p style="color:#9ca3af;font-size:.9rem;padding:4px 0">
-            今天剛開始！第一筆交易收盤後會自動出現在這裡</p>
+            <b style="color:#e2e8f0">目前 0 筆</b>——此看板只給「建議」，<b>不會自動幫你下單</b>。<br>
+            你親自下單後（用「收盤結算」捷徑登記）才會出現在這。<br>
+            <span style="color:#64748b;font-size:.8rem">📡 各版本卡上的「上線後實測」是系統<b>模擬</b>追蹤（假設照訊號下單），不是你真的下單。</span></p>
         </div>"""
 
     # ── 實際交易累計統計 ─────────────────────────────────
@@ -1570,6 +1574,16 @@ def generate_html(signal, records, stock=None, dca=None):
     window.__chgMap = window.__chgMap || {};
     items.forEach(function(it){
       window.__chgMap[it.name] = it.chg;
+      /* 黃金/原油即時價灌進上方「黃金貴金屬即時警示卡」，讓它跟著夜盤跳動 */
+      if(it.name==='黃金'||it.name==='原油'){
+        var pfx=it.name==='黃金'?'gold':'oil';
+        var pe=document.getElementById(pfx+'-price');
+        var ce=document.getElementById(pfx+'-chg');
+        if(pe&&it.price>0) pe.textContent=(it.name==='黃金')?Math.round(it.price).toLocaleString('en-US'):it.price.toFixed(1);
+        if(ce) ce.textContent=(it.chg>=0?'▲ +':'▼ ')+it.chg.toFixed(2)+'%';
+        var gl=document.getElementById('gold-live');
+        if(gl&&sourceLabel.indexOf('LIVE')>=0){gl.textContent='● 即時跳動';}
+      }
       var sv=it.sig, chg=it.chg;
       var ic=sv===1?'#10b981':sv===-1?'#ef4444':'#64748b';
       var arrow=sv===1?'▲':sv===-1?'▼':'─';
