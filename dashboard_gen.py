@@ -843,6 +843,15 @@ def generate_html(signal, records, stock=None, dca=None):
         dir_cons = 0
     else:
         dir_cons = dir_v70 if dir_v70 != 0 else dir_vsel
+    # 🛡️ 國際否決：精選版只看台股技術面，無國際濾網。當費半(SOX)夜盤強烈背離
+    #    （做多遇SOX<-2% 或 做空遇SOX>+2%）時降級觀望，避免明日跳空被海外拖累。
+    cons_veto = ""
+    if dir_cons == 1 and sox_chg <= -2.0:
+        cons_veto = f"費半夜盤重挫 {sox_chg:.1f}%，明日恐跳空 → 暫觀望"
+        dir_cons = 0
+    elif dir_cons == -1 and sox_chg >= 2.0:
+        cons_veto = f"費半夜盤大漲 {sox_chg:.1f}%，明日恐跳空 → 暫觀望"
+        dir_cons = 0
 
     def _ver_card(ver_dir, win_rate, n_trades, label, desc, real_df_v=None, tag=""):
         """單個版本的買賣建議小卡（含實倉統計）"""
@@ -919,7 +928,8 @@ def generate_html(signal, records, stock=None, dca=None):
     elif dir_cons == -1:
         cbg, cbd, cico, cact, cdet, cpr = "rgba(239,68,68,.15)", "#ef4444", "🔴", "賣出", "8:45 放空 · 13:25 買回", f"{lc-80:,.0f} ～ {lc:,.0f}"
     else:
-        cbg, cbd, cico, cact, cdet, cpr = "rgba(107,114,128,.10)", "#6b7280", "⚪", "觀望", "精選與優化分歧或皆無訊號 → 不交易", "—"
+        _cdet = cons_veto if cons_veto else "精選與優化分歧或皆無訊號 → 不交易"
+        cbg, cbd, cico, cact, cdet, cpr = "rgba(107,114,128,.10)", "#6b7280", "⚪", "觀望", _cdet, "—"
     consensus_html = f"""
       <div id="vcard-cons" style="background:{cbg};border:2px solid {cbd};border-radius:14px;padding:16px;margin-bottom:14px">
         <div style="background:#fde68a;color:#7c2d12;font-size:.66rem;font-weight:800;border-radius:6px;padding:3px 8px;display:inline-block;margin-bottom:8px">👉 要下單就只看這一張，下面五張是參考</div>
@@ -1810,7 +1820,14 @@ def generate_html(signal, records, stock=None, dca=None):
     var dcons;
     if(dvsel!==0 && dv70!==0 && dvsel!==dv70) dcons=0;
     else dcons = (dv70!==0 ? dv70 : dvsel);
+    /* 🛡️ 國際否決：精選版無國際濾網，SOX強烈背離時降級觀望 */
+    var consVeto='';
+    if(haveIntl){
+      if(dcons===1 && sox<=-2){consVeto='費半夜盤重挫 '+sox.toFixed(1)+'%，明日恐跳空 → 暫觀望';dcons=0;}
+      else if(dcons===-1 && sox>=2){consVeto='費半夜盤大漲 '+sox.toFixed(1)+'%，明日恐跳空 → 暫觀望';dcons=0;}
+    }
     paint('cons',dcons,lc);
+    if(consVeto){var cd=document.getElementById('vdetail-cons');if(cd)cd.textContent=consVeto;}
     /* 狀態列 + 昨收 */
     var tag=document.getElementById('sig-live-tag');
     if(tag){ var d=new Date(); tag.textContent='● 即時重算 '+(d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes(); tag.style.color='#10b981'; }

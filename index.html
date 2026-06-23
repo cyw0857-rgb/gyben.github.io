@@ -639,16 +639,16 @@ tr:hover td{background:rgba(255,255,255,.014)}
         <span id="sig-live-tag" style="font-size:.6rem;font-weight:600;color:#10b981;margin-left:6px">● 即時重算中…</span>
       </div>
       
-      <div id="vcard-cons" style="background:rgba(16,185,129,.15);border:2px solid #10b981;border-radius:14px;padding:16px;margin-bottom:14px">
+      <div id="vcard-cons" style="background:rgba(107,114,128,.10);border:2px solid #6b7280;border-radius:14px;padding:16px;margin-bottom:14px">
         <div style="background:#fde68a;color:#7c2d12;font-size:.66rem;font-weight:800;border-radius:6px;padding:3px 8px;display:inline-block;margin-bottom:8px">👉 要下單就只看這一張，下面五張是參考</div>
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px">
           <div style="font-size:.85rem;font-weight:800;color:#e2e8f0">🎯 共識訊號 · 你的下單依據</div>
           <span style="font-size:.58rem;color:#94a3b8">精選 ∪ 優化（只跟兩個賺錢版本）</span>
         </div>
-        <div id="vact-cons" style="font-size:2rem;font-weight:900;color:#10b981;margin-top:6px">🟢 買進</div>
-        <div id="vdetail-cons" style="font-size:.78rem;color:#d1d5db;margin:4px 0">8:45 買進 · 13:25 賣出</div>
+        <div id="vact-cons" style="font-size:2rem;font-weight:900;color:#6b7280;margin-top:6px">⚪ 觀望</div>
+        <div id="vdetail-cons" style="font-size:.78rem;color:#d1d5db;margin:4px 0">費半夜盤重挫 -6.5%，明日恐跳空 → 暫觀望</div>
         <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:6px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
-          <div><div style="font-size:.58rem;color:#6b7280">參考進場價</div><div id="vprice-cons" style="font-size:.85rem;font-weight:700;color:#e2e8f0">47,742 ～ 47,822</div></div>
+          <div><div style="font-size:.58rem;color:#6b7280">參考進場價</div><div id="vprice-cons" style="font-size:.85rem;font-weight:700;color:#e2e8f0">—</div></div>
           <div><div style="font-size:.58rem;color:#6b7280">近5年實測</div><div style="font-size:.85rem;font-weight:700;color:#10b981">勝率61% · 賺賠1.72</div></div>
           <div><div style="font-size:.58rem;color:#6b7280">頻率</div><div style="font-size:.85rem;font-weight:700;color:#e2e8f0">約32筆/年</div></div>
         </div>
@@ -1629,7 +1629,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
     var dcons;
     if(dvsel!==0 && dv70!==0 && dvsel!==dv70) dcons=0;
     else dcons = (dv70!==0 ? dv70 : dvsel);
+    /* 🛡️ 國際否決：精選版無國際濾網，SOX強烈背離時降級觀望 */
+    var consVeto='';
+    if(haveIntl){
+      if(dcons===1 && sox<=-2){consVeto='費半夜盤重挫 '+sox.toFixed(1)+'%，明日恐跳空 → 暫觀望';dcons=0;}
+      else if(dcons===-1 && sox>=2){consVeto='費半夜盤大漲 '+sox.toFixed(1)+'%，明日恐跳空 → 暫觀望';dcons=0;}
+    }
     paint('cons',dcons,lc);
+    if(consVeto){var cd=document.getElementById('vdetail-cons');if(cd)cd.textContent=consVeto;}
     /* 狀態列 + 昨收 */
     var tag=document.getElementById('sig-live-tag');
     if(tag){ var d=new Date(); tag.textContent='● 即時重算 '+(d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes(); tag.style.color='#10b981'; }
