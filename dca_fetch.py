@@ -84,6 +84,11 @@ def run():
             print(f"  ⚠️ {sym} 抓取失敗: {ex}")
             df = None
 
+        # 移除「今日尚未收盤」造成的 NaN 收盤列，否則 last/value/pnl 全變 NaN，
+        # 且 NaN 寫進 JSON 會讓瀏覽器 JSON.parse 整張卡失敗。
+        if df is not None and len(df):
+            df = df[df["Close"].notna()]
+
         if df is None or len(df) < 2:
             print(f"  ⚠️ {sym} 無足夠資料，沿用舊值")
             # 沿用舊持倉資料
