@@ -215,15 +215,17 @@ def stock_card_html(stock):
             f'<div><div style="font-size:.56rem;color:#64748b">投入成本</div>'
             f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_invest:,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">目前市值</div>'
-            f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
+            f'<div id="ev-hval" style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">淨損益</div>'
-            f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
+            f'<div id="ev-hpnl" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">報酬率</div>'
-            f'<div style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
+            f'<div id="ev-hret" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
             f'</div>'
             f'<div style="font-size:.54rem;color:#475569;margin-top:6px;text-align:right">'
             f'淨損益＝現價市值已扣手續費(2.8折)+證交稅，貼近國泰實際參考損益</div>'
             f'</div>'
+            f'<script>window.__EV={{sym:"{symbol}",shares:{h_sh},invest:{h_invest:.2f},'
+            f'fee:{h_fee},disc:{h_disc},tax:{h_tax}}};</script>'
         )
 
     # ── 融資融券 ─────────────────────────────────────────
@@ -266,7 +268,7 @@ def stock_card_html(stock):
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ {e(name)} ({e(symbol)})</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span style="font-size:.6rem;color:#64748b">{e(updated)} 更新</span>
+      <span id="ev-updated" style="font-size:.6rem;color:#64748b">{e(updated)} 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -275,14 +277,27 @@ def stock_card_html(stock):
 
   {holding_html}
 
+  <!-- 三大法人估算成本均價（JS 由 data/stock_cost_est.json 即時渲染 + 即時股價算價差）-->
+  <div id="inst-cost-box" style="display:none;background:#080f1e;border:1px solid #1e3050;border-radius:10px;padding:11px 12px;margin-bottom:12px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <span style="font-size:.7rem;font-weight:800;color:#e2e8f0">🏦 三大法人估算成本均價</span>
+      <span id="inst-cost-meta" style="font-size:.54rem;color:#64748b">載入中…</span>
+    </div>
+    <div id="inst-cost-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center"></div>
+    <div style="font-size:.5rem;color:#475569;margin-top:7px;line-height:1.4">
+      ⚠️ 公開資料(證交所每日買賣超×當日均價)統計推估，自上市2023/03起算、期初持股假設0、未做除權息還原，
+      不含當沖/借券/自營避險 → 僅供觀察趨勢，<b>非真實成本、勿作接刀依據</b>
+    </div>
+  </div>
+
   <!-- 左右雙欄 -->
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
 
     <!-- 左：價格 + 信號 + 指標 -->
     <div>
       <div style="background:#080f1e;border-radius:10px;padding:12px;margin-bottom:8px;text-align:center">
-        <div style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
-        <div style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
+        <div id="ev-price" style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
+        <div id="ev-chg" style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
         <div style="font-size:.6rem;color:#475569;margin-top:4px">MA5 {ma5:.1f} · MA20 {ma20:.1f} · MA60 {ma60:.1f}</div>
       </div>
       <div style="background:{sig_color}1a;border:1.5px solid {sig_color};
@@ -548,8 +563,8 @@ def dca_card_html(dca):
             f'<div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">{e(nm)}</div>'
             f'<div style="font-size:.62rem;color:#64748b">{e(sym)}</div></div>'
             f'<div style="text-align:right">'
-            f'<div style="font-size:1.1rem;font-weight:800;color:#e2e8f0">{last:.2f}</div>'
-            f'<div style="font-size:.7rem;font-weight:700;color:{ccol}">{carr}{abs(chg):.2f}%</div>'
+            f'<div id="dca-last-{sym}" style="font-size:1.1rem;font-weight:800;color:#e2e8f0">{last:.2f}</div>'
+            f'<div id="dca-chg-{sym}" style="font-size:.7rem;font-weight:700;color:{ccol}">{carr}{abs(chg):.2f}%</div>'
             f'</div></div>'
             f'<div style="margin-top:8px">{spark}</div>'
             f'<div style="font-size:.56rem;color:#475569;text-align:right">近30日</div>'
@@ -2871,6 +2886,94 @@ function toggleAcc(btnEl) {{
   }}
   setTimeout(poll,60000);       /* 載入後1分鐘先查一次（可能開到舊頁） */
   setInterval(poll,180000);     /* 之後每3分鐘查一次新資料 */
+}})();
+
+/* ════════ 持股即時化：航太/定期定額股價+市值損益 即時，法人估算成本即時價差 ════════ */
+(function(){{
+  var PX=[function(u){{return u;}},
+          function(u){{return 'https://corsproxy.io/?'+u;}},
+          function(u){{return 'https://api.allorigins.win/raw?url='+encodeURIComponent(u);}}];
+  function q1(sym){{
+    var u='https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(sym)+'?range=1d&interval=1d';
+    function tryi(i){{
+      if(i>=PX.length) return Promise.reject(0);
+      return fetch(PX[i](u)).then(function(r){{return r.json();}}).then(function(d){{
+        var m=((((d.chart||{{}}).result||[])[0]||{{}}).meta)||null;
+        if(!m||typeof m.regularMarketPrice!=='number') throw 0;
+        return {{price:m.regularMarketPrice, prev:(m.previousClose||m.chartPreviousClose||m.regularMarketPrice)}};
+      }}).catch(function(){{return tryi(i+1);}});
+    }}
+    return tryi(0);
+  }}
+  function fmtN(n,dp){{return (n<0?'-':'')+Math.abs(n).toLocaleString('en-US',{{minimumFractionDigits:dp,maximumFractionDigits:dp}});}}
+  function setTxt(id,t){{var e=document.getElementById(id); if(e) e.textContent=t;}}
+  function hhmm(){{var d=new Date();return (d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes();}}
+
+  /* 長榮航太：股價 + 我的持股市值/淨損益/報酬率（公式與 Python 一致：扣手續費2.8折+證交稅）*/
+  function updEV(){{
+    var ev=window.__EV; if(!ev||!ev.sym) return;
+    q1(ev.sym).then(function(r){{
+      var p=r.price, chg=(r.prev>0)?(p-r.prev)/r.prev*100:0;
+      setTxt('ev-price','NT$'+fmtN(p,1));
+      var ce=document.getElementById('ev-chg');
+      if(ce){{ce.textContent=(chg>=0?'▲ +':'▼ ')+fmtN(chg,2)+'%'; ce.style.color=chg>=0?'#10b981':'#ef4444';}}
+      if(ev.shares>0 && ev.invest>0){{
+        var val=p*ev.shares;
+        var pnl=val - val*ev.fee*ev.disc - val*ev.tax - ev.invest - ev.invest*ev.fee*ev.disc;
+        var ret=pnl/ev.invest*100, col=pnl>=0?'#10b981':'#ef4444';
+        setTxt('ev-hval','$'+fmtN(val,0));
+        var pe=document.getElementById('ev-hpnl'); if(pe){{pe.textContent=(pnl>=0?'▲$':'▼$')+fmtN(Math.abs(pnl),0); pe.style.color=col;}}
+        var re=document.getElementById('ev-hret'); if(re){{re.textContent=(ret>=0?'+':'')+fmtN(ret,2)+'%'; re.style.color=col;}}
+      }}
+      setTxt('ev-updated','報價 '+hhmm()+' 即時');
+      window.__EVPRICE=p; renderInstCost();
+    }}).catch(function(){{}});  /* 抓不到保留 build 值，不顯示 NaN */
+  }}
+
+  /* 定期定額：兩檔即時股價/漲跌（00992A 抓不到就保留 build 值）*/
+  function updDCA(){{
+    var els=document.querySelectorAll('[id^="dca-last-"]');
+    Array.prototype.forEach.call(els,function(el){{
+      var sym=el.id.substring(9);
+      q1(sym).then(function(r){{
+        var p=r.price, chg=(r.prev>0)?(p-r.prev)/r.prev*100:0;
+        el.textContent=fmtN(p,2);
+        var ce=document.getElementById('dca-chg-'+sym);
+        if(ce){{ce.textContent=(chg>=0?'▲':'▼')+fmtN(Math.abs(chg),2)+'%'; ce.style.color=chg>=0?'#10b981':'#ef4444';}}
+      }}).catch(function(){{}});
+    }});
+  }}
+
+  /* 三大法人估算成本均價：每日資料 + 用即時股價算距成本% */
+  window.__INSTCOST=null;
+  window.renderInstCost=function(){{
+    var d=window.__INSTCOST; if(!d) return;
+    var box=document.getElementById('inst-cost-box'), grid=document.getElementById('inst-cost-grid');
+    if(!box||!grid) return;
+    var lp=window.__EVPRICE, html='';
+    ['foreign','trust','dealer'].forEach(function(k){{
+      var iv=(d.investors||{{}})[k]; if(!iv||iv.est_avg_cost==null) return;
+      var avg=iv.est_avg_cost;
+      var diff=(typeof lp==='number'&&lp>0)?(lp-avg)/avg*100:iv.vs_price_pct;
+      var okd=(typeof diff==='number'&&isFinite(diff));
+      var col=okd?(diff>=0?'#10b981':'#ef4444'):'#64748b';
+      var dtxt=okd?(((diff>=0)?'+':'')+fmtN(diff,1)+'%'):'—';
+      html+='<div><div style="font-size:.56rem;color:#64748b">'+iv.label+'</div>'
+        +'<div style="font-size:.84rem;font-weight:800;color:#e2e8f0">'+fmtN(avg,2)+'</div>'
+        +'<div style="font-size:.56rem;color:#64748b">'+iv.est_lots+'張</div>'
+        +'<div style="font-size:.7rem;font-weight:700;color:'+col+'">'+dtxt+'</div></div>';
+    }});
+    if(html){{grid.innerHTML=html; box.style.display='block'; setTxt('inst-cost-meta','資料 '+(d.end_date||'')+' · 距現價即時');}}
+  }};
+  function loadInstCost(){{
+    fetch('data/stock_cost_est.json?_='+Date.now()).then(function(r){{return r.json();}})
+      .then(function(d){{window.__INSTCOST=d; window.renderInstCost();}}).catch(function(){{}});
+  }}
+
+  function tickHold(){{ updEV(); updDCA(); }}
+  loadInstCost(); tickHold();
+  setInterval(tickHold, 30000);          /* 股價每30秒即時 */
+  setInterval(loadInstCost, 5*60*1000);  /* 法人成本json每5分鐘檢查(實際每日才變) */
 }})();
 
 /* ── 自動重載保留捲動位置（手機才不會跳回頂端）──────────── */

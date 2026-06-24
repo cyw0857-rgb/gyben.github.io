@@ -61,6 +61,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  定期定額抓取失敗（繼續產生看板）")
 
+# 2e. 更新三大法人估算成本均價（增量回補，寫入 data/stock_cost_est.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "stock_cost_est.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  法人估算成本抓取失敗（繼續產生看板）")
+
 # 3. 執行看板產生
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "dashboard_gen.py")],
