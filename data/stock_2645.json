@@ -1,27 +1,67 @@
 {
   "symbol": "2645.TW",
   "name": "長榮航太",
-  "updated": "2026-06-24 18:37",
+  "updated": "2026-06-24 20:52",
   "direction": 1,
   "signal_text": "🟢 明日看漲",
   "signal_color": "#10b981",
   "hold_advice": "✅ 續抱 — 均線多頭，趨勢完整",
   "hold_color": "#10b981",
   "score": 8,
+  "total_score": 8,
+  "tech_score": 8,
   "reasons": [
     "均線多頭排列 MA5>MA10>MA20",
     "RSI=56 多頭健康區",
     "MACD金叉零軸上",
     "站上MA20支撐"
   ],
+  "tech_details": [
+    {
+      "icon": "📈",
+      "text": "均線多頭排列 MA5>MA10>MA20",
+      "score": 3
+    },
+    {
+      "icon": "📈",
+      "text": "RSI=56 多頭健康區",
+      "score": 2
+    },
+    {
+      "icon": "📈",
+      "text": "MACD金叉零軸上",
+      "score": 2
+    },
+    {
+      "icon": "📈",
+      "text": "站上MA20支撐",
+      "score": 1
+    }
+  ],
   "rsi": 55.8,
+  "macd": 3.1,
+  "macds": 2.89,
+  "k": 56.0,
+  "d": 58.5,
   "ma5": 171.5,
   "ma10": 169.8,
   "ma20": 168.53,
+  "ma60": 160.09,
   "last_close": 172.5,
   "chg_pct": -0.58,
   "ma_bull": true,
   "ma_bear": false,
+  "retail": {
+    "mood": "冷清（量縮）",
+    "vol_ratio": 0.6,
+    "score": 0,
+    "signals": [
+      {
+        "icon": "💤",
+        "text": "量縮 0.6倍，觀望氣氛濃"
+      }
+    ]
+  },
   "forecast": [
     {
       "month": "2026-07",
@@ -87,6 +127,15 @@
   "trend_label": "月線均線多頭排列 📈",
   "support": 150.65,
   "resistance": 168.0,
+  "weekly": {
+    "proj_center": 172.5,
+    "proj_high": 181.02,
+    "proj_low": 163.98,
+    "support": 150.65,
+    "resistance": 168.0,
+    "trend_bias": "偏多",
+    "op_hint": "逢回偏多操作"
+  },
   "daily_vol_pct": 2.21,
   "slope_per_day": 0.09,
   "model_accuracy": 68.4,
@@ -95,5 +144,5 @@
   "ipo_date": "2022-02-18",
   "model_score": 3.0,
   "model_threshold": 3.5,
-  "model_factors": "MA5>MA10 多頭  波音↓-6%  油↓利多-18%  海運↓-6%"
+  "model_factors": "MA5>MA10 多頭  波音↓-6%  油↓利多-19%  海運↓-6%"
 }

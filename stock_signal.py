@@ -68,49 +68,55 @@ def fetch_full_data():
 
 def daily_signal(df):
     prev  = df.iloc[-1]
-    score = 0
-    reasons = []
+    # 技術明細：評分當下就決定正負(不靠事後關鍵字猜，避免顏色標反) — ChatGPT 抓漏建議
+    tech_details = []
+    def rec(pts, txt):
+        tech_details.append({"icon": "📈" if pts > 0 else "📉" if pts < 0 else "•",
+                             "text": txt, "score": pts})
 
     # 均線排列 (±3)
     ma_bull = float(prev["MA5"]) > float(prev["MA10"]) > float(prev["MA20"])
     ma_bear = float(prev["MA5"]) < float(prev["MA10"]) < float(prev["MA20"])
     if ma_bull:
-        score += 3; reasons.append("均線多頭排列 MA5>MA10>MA20")
+        rec(3, "均線多頭排列 MA5>MA10>MA20")
     elif ma_bear:
-        score -= 3; reasons.append("均線空頭排列 MA5<MA10<MA20")
+        rec(-3, "均線空頭排列 MA5<MA10<MA20")
     elif float(prev["MA5"]) > float(prev["MA10"]):
-        score += 1; reasons.append("MA5>MA10 短線偏多")
+        rec(1, "MA5>MA10 短線偏多")
     else:
-        score -= 1; reasons.append("MA5<MA10 短線偏空")
+        rec(-1, "MA5<MA10 短線偏空")
 
     # RSI (±2)
     rsi = float(prev["RSI"])
     if 50 < rsi < 72:
-        score += 2; reasons.append(f"RSI={rsi:.0f} 多頭健康區")
+        rec(2, f"RSI={rsi:.0f} 多頭健康區")
     elif rsi >= 72:
-        reasons.append(f"RSI={rsi:.0f} 偏高注意壓回")
+        rec(0, f"RSI={rsi:.0f} 偏高注意壓回")
     elif 40 < rsi <= 50:
-        score -= 1; reasons.append(f"RSI={rsi:.0f} 中性偏空")
+        rec(-1, f"RSI={rsi:.0f} 中性偏空")
     else:
-        score -= 2; reasons.append(f"RSI={rsi:.0f} 弱勢區")
+        rec(-2, f"RSI={rsi:.0f} 弱勢區")
 
     # MACD (±2)
     macd  = float(prev["MACD"])
     macds = float(prev["MACDs"])
     if macd > macds and macd > 0:
-        score += 2; reasons.append("MACD金叉零軸上")
+        rec(2, "MACD金叉零軸上")
     elif macd > macds:
-        score += 1; reasons.append("MACD金叉（零軸下）")
+        rec(1, "MACD金叉（零軸下）")
     elif macd < macds and macd < 0:
-        score -= 2; reasons.append("MACD死叉零軸下")
+        rec(-2, "MACD死叉零軸下")
     else:
-        score -= 1; reasons.append("MACD死叉（零軸上）")
+        rec(-1, "MACD死叉（零軸上）")
 
     # 收盤 vs MA20 (±1)
     if float(prev["Close"]) > float(prev["MA20"]):
-        score += 1; reasons.append("站上MA20支撐")
+        rec(1, "站上MA20支撐")
     else:
-        score -= 1; reasons.append("跌破MA20壓力")
+        rec(-1, "跌破MA20壓力")
+
+    score   = sum(d["score"] for d in tech_details)
+    reasons = [d["text"] for d in tech_details]
 
     # 方向
     if score >= 4:
@@ -143,6 +149,33 @@ def daily_signal(df):
         hold_advice = "⚪ 觀望 — 等待方向確認"
         hold_color  = "#9ca3af"
 
+    # ── KD 隨機指標（9日）──────────────────────────────
+    try:
+        low9  = df["Low"].rolling(9).min()
+        high9 = df["High"].rolling(9).max()
+        rsv   = (df["Close"] - low9) / (high9 - low9) * 100
+        k_ser = rsv.ewm(com=2, adjust=False).mean()      # 平滑近似 K
+        d_ser = k_ser.ewm(com=2, adjust=False).mean()    # 平滑近似 D
+        k_val = round(float(k_ser.iloc[-1]), 1)
+        d_val = round(float(d_ser.iloc[-1]), 1)
+    except Exception:
+        k_val = d_val = 0.0
+
+    # ── 散戶量能推估（量 / 20日均量）──────────────────
+    try:
+        vol_ma20 = float(df["Volume"].rolling(20).mean().iloc[-1])
+        vol_now  = float(df["Volume"].iloc[-1])
+        vol_ratio = round(vol_now / vol_ma20, 2) if vol_ma20 > 0 else 1.0
+    except Exception:
+        vol_ratio = 1.0
+    if   vol_ratio >= 1.8: retail_mood = "過熱（爆量）"
+    elif vol_ratio >= 1.3: retail_mood = "偏熱（增溫）"
+    elif vol_ratio <= 0.7: retail_mood = "冷清（量縮）"
+    else:                  retail_mood = "量能正常"
+    retail_signals = []
+    if vol_ratio >= 1.8: retail_signals.append({"icon": "🔥", "text": f"爆量 {vol_ratio:.1f}倍，注意追高風險"})
+    elif vol_ratio <= 0.7: retail_signals.append({"icon": "💤", "text": f"量縮 {vol_ratio:.1f}倍，觀望氣氛濃"})
+
     return {
         "direction":    direction,
         "signal_text":  signal_text,
@@ -150,15 +183,25 @@ def daily_signal(df):
         "hold_advice":  hold_advice,
         "hold_color":   hold_color,
         "score":        score,
+        "total_score":  score,
+        "tech_score":   score,
         "reasons":      reasons,
+        "tech_details": tech_details,
         "rsi":          round(rsi, 1),
+        "macd":         round(macd, 2),
+        "macds":        round(macds, 2),
+        "k":            k_val,
+        "d":            d_val,
         "ma5":          round(float(prev["MA5"]),  2),
         "ma10":         round(float(prev["MA10"]), 2),
         "ma20":         round(float(prev["MA20"]), 2),
+        "ma60":         round(float(prev["MA60"]), 2) if not pd.isna(prev["MA60"]) else 0,
         "last_close":   round(float(prev["Close"]), 2),
         "chg_pct":      round(float(prev["ChgPct"]), 2),
         "ma_bull":      ma_bull,
         "ma_bear":      ma_bear,
+        "retail":       {"mood": retail_mood, "vol_ratio": vol_ratio,
+                          "score": 0, "signals": retail_signals},
     }
 
 
@@ -349,11 +392,26 @@ def forecast_model(df_full, ext=None):
     total_ret   = (curr_close - first_close) / first_close * 100
     slope_all   = float(np.polyfit(np.arange(len(df_full)), df_full["Close"].values, 1)[0])
 
+    # 下週（5交易日）預估區間：中心=當前收盤(不做線性外推,避免對波動股給假安全感)，
+    # 區間用 波動率×√5 (布朗運動標準差) — 經 Gemini/ChatGPT 交叉驗證後修正
+    _vr5 = curr_close * daily_vol * float(np.sqrt(5))
+    _ctr = curr_close
+    weekly = {
+        "proj_center": round(_ctr, 2),
+        "proj_high":   round(_ctr + _vr5, 2),
+        "proj_low":    round(max(_ctr - _vr5, 0.1), 2),
+        "support":     support,
+        "resistance":  resistance,
+        "trend_bias":  ("偏多" if slope_all > 0.05 else "偏空" if slope_all < -0.05 else "中性"),
+        "op_hint":     ("逢回偏多操作" if slope_all > 0.05 else "逢高偏空操作" if slope_all < -0.05 else "區間操作"),
+    }
+
     return {
         "forecast":       forecast,
         "trend_label":    trend_label,
         "support":        support,
         "resistance":     resistance,
+        "weekly":         weekly,
         "daily_vol_pct":  round(daily_vol * 100, 2),
         "slope_per_day":  round(slope_all, 3),
         "model_accuracy": round(bt_acc, 1),
@@ -372,6 +430,8 @@ def _fallback_forecast(df):
     n = len(closes)
     if n < 2:
         return {"forecast": [], "trend_label": "─", "support": 0, "resistance": 0,
+                "weekly": {"proj_center": 0, "proj_high": 0, "proj_low": 0, "support": 0,
+                           "resistance": 0, "trend_bias": "中性", "op_hint": "資料不足"},
                 "daily_vol_pct": 1.5, "slope_per_day": 0,
                 "model_accuracy": 0, "model_samples": 0, "total_return": 0, "ipo_date": "─"}
     slope = float(np.polyfit(np.arange(n), closes, 1)[0])
@@ -391,10 +451,17 @@ def _fallback_forecast(df):
                           "price_high": round(max(proj_price + vol_range, 0.1), 2),
                           "price_low": round(max(proj_price - vol_range, 0.1), 2),
                           "chg_pct": round(chg_pct, 1), "trend": trend})
+    _sup = round(float(np.percentile(closes[-63:] if n >= 63 else closes, 15)), 2)
+    _res = round(float(np.percentile(closes[-63:] if n >= 63 else closes, 85)), 2)
+    _vr5 = last_close * daily_vol * float(np.sqrt(5))
+    _ctr = last_close
     return {"forecast": forecast,
             "trend_label": "上漲趨勢 📈" if slope > 0.05 else ("下跌趨勢 📉" if slope < -0.05 else "橫盤整理 ➡️"),
-            "support": round(float(np.percentile(closes[-63:] if n >= 63 else closes, 15)), 2),
-            "resistance": round(float(np.percentile(closes[-63:] if n >= 63 else closes, 85)), 2),
+            "support": _sup, "resistance": _res,
+            "weekly": {"proj_center": round(_ctr, 2), "proj_high": round(_ctr + _vr5, 2),
+                       "proj_low": round(max(_ctr - _vr5, 0.1), 2), "support": _sup, "resistance": _res,
+                       "trend_bias": ("偏多" if slope > 0.05 else "偏空" if slope < -0.05 else "中性"),
+                       "op_hint": ("逢回偏多操作" if slope > 0.05 else "逢高偏空操作" if slope < -0.05 else "區間操作")},
             "daily_vol_pct": round(daily_vol * 100, 2), "slope_per_day": round(slope, 3),
             "model_accuracy": 0, "model_samples": 0, "total_return": 0, "ipo_date": "─"}
 
