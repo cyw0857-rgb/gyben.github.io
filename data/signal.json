@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-24 18:37",
+  "generated_at": "2026-06-24 21:40",
   "mode": "morning",
   "signal_date": "2026-06-24",
   "trade_date": "2026-06-25",
   "direction": 0,
-  "total_score": -4,
+  "total_score": 5,
   "tw_score": 5,
-  "intl_score": -7,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": -1,
   "foreign_fut_net": -4877,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-7) 方向相反 → 觀望",
+  "veto_msg": "⚠️ 外資期貨(-4,877口) vs 技術面不一致，提高門檻",
   "threshold": 7,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±7",
   "tw_last_close": 46043.6015625,
@@ -292,51 +292,51 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4076.300048828125,
-    "chg_pct": -1.2978487320045378,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 72.0199966430664,
-    "oil_chg": -1.6254643577213777
+    "price_usd": 3995.0,
+    "chg_pct": -3.266420628432017,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -3.3%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 70.08999633789062,
+    "oil_chg": -4.2617166856976
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7365.4599609375,
-      "chg_pct": -1.4362785193208119,
-      "signal": -1,
-      "note": "-1.44%",
+      "price": 7388.22021484375,
+      "chg_pct": 0.3090133410127587,
+      "signal": 1,
+      "note": "+0.31%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51666.83984375,
-      "chg_pct": -0.08870371117352525,
+      "price": 51675.2890625,
+      "chg_pct": 0.01635327179976942,
       "signal": 0,
-      "note": "-0.09%",
+      "note": "+0.02%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25587.0390625,
-      "chg_pct": -2.214886746948023,
-      "signal": -1,
-      "note": "-2.21%",
+      "price": 25680.388671875,
+      "chg_pct": 0.3648316209897528,
+      "signal": 1,
+      "note": "+0.36%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13482.509765625,
-      "chg_pct": -7.873126253632318,
+      "price": 13404.724609375,
+      "chg_pct": -0.5769338024016938,
       "signal": -1,
-      "note": "-7.87%",
+      "note": "-0.58%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.200000762939453,
-      "chg_pct": -1.4879374632341176,
+      "price": 19.209999084472656,
+      "chg_pct": -1.4366377113068782,
       "signal": 1,
       "note": "VIX=19.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -383,42 +383,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.69000244140625,
-      "chg_pct": 0.27610567911013023,
+      "price": 101.68199920654297,
+      "chg_pct": 0.26821372114319486,
       "signal": 0,
-      "note": "+0.28%(中性)",
+      "note": "+0.27%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4076.300048828125,
-      "chg_pct": -1.2978487320045378,
+      "price": 3995.0,
+      "chg_pct": -3.266420628432017,
       "signal": 1,
-      "note": "-1.30%()",
+      "note": "-3.27%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 72.0199966430664,
-      "chg_pct": -1.6254643577213777,
+      "price": 70.08999633789062,
+      "chg_pct": -4.2617166856976,
       "signal": -1,
-      "note": "-1.63%",
+      "note": "-4.26%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.451000213623047,
-      "chg_pct": -0.26886864369792307,
+      "price": 4.429999828338623,
+      "chg_pct": -0.47181272245614725,
       "signal": 0,
-      "note": "4.45%(-0.27%)",
+      "note": "4.43%(-0.47%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 62459.1015625,
-      "chg_pct": -0.33337254043239883,
+      "price": 61756.80078125,
+      "chg_pct": -1.4540410831805721,
       "signal": -1,
-      "note": "-0.33%",
+      "note": "-1.45%",
       "desc": "風險偏好指標"
     }
   },
@@ -443,7 +443,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -485,13 +485,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Unveils AI Chip Advances In CoWoS ",
+      "title": "Welcome to the Luxury City Built by Taiwan’s A.I. Boom - The New York Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Welcome to the Luxury City Built by Taiwan’s A.I. Boom - The New York Times",
+      "title": "Led by TSMC, Taiwan shares tumble after heavy U.S. tech losses - Focus Taiwan",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Unveils AI Chip Advances In CoWoS ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -502,32 +508,26 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "‘FOMO Really Got Me’: Taiwanese Go Deep Into Debt to Amp 100% Stock Rally - Bloo",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "label": "聯準會",
+      "title": "The Fed is fed up with inflation and will bring down the hammer with a series of",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Will New US Fed Chair Kevin Warsh Raise Interest Rates This Year? - Morningstar",
+      "title": "Markets tumble worldwide as Fed resets expectations: $400 billion wiped off Spac",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Treasury yields fall despite rate hike concerns hitting tech stocks - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Why Markets Now Expect Higher Interest Rates Again - StoneX",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "WATCH: New Fed chair Kevin Warsh holds first news conference after leaving inter",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed holds rates steady, pares down statement to remove cutting bias - CNBC",
+      "title": "Dollar hits 13-month high as rate-hike bets and stock selloff boost demand - Reu",
       "sentiment": "✅偏多",
       "sent_val": 1
     }
