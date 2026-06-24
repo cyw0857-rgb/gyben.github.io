@@ -963,6 +963,52 @@ def generate_html(signal, records, stock=None, dca=None):
       </div>
     </div>"""
 
+    # ── 🎯 共識倉模擬實戰（從上線起，每天照共識訊號自動建倉/收盤結算）──
+    scons   = signal.get("stats_real_cons", {})
+    crecent = signal.get("cons_recent", [])
+    cons_n  = scons.get("total", 0)
+    cons_pnl = scons.get("total_pnl", 0)
+    cons_wr  = scons.get("win_rate", 0)
+    cpnl_col = "#10b981" if cons_pnl >= 0 else "#ef4444"
+    if crecent:
+        rows = ""
+        for r in reversed(crecent):
+            dcol = "#10b981" if r["dir"] == 1 else "#ef4444"
+            dlbl = "做多▲" if r["dir"] == 1 else "做空▼"
+            pcol = "#10b981" if r["pnl"] >= 0 else "#ef4444"
+            rows += (f'<tr style="border-bottom:1px solid rgba(255,255,255,.05)">'
+                     f'<td style="padding:4px 3px;color:#94a3b8">{e(r["date"])}</td>'
+                     f'<td style="padding:4px 3px;color:{dcol};font-weight:700">{dlbl}</td>'
+                     f'<td style="text-align:right;padding:4px 3px;color:#cbd5e1">{r["entry"]:,}</td>'
+                     f'<td style="text-align:right;padding:4px 3px;color:#cbd5e1">{r["exit"]:,}</td>'
+                     f'<td style="text-align:right;padding:4px 3px;color:{pcol};font-weight:800">NT${r["pnl"]:+,}</td></tr>')
+        cons_table = (f'<table style="width:100%;border-collapse:collapse;font-size:.7rem;margin-top:8px">'
+                      f'<tr style="color:#64748b;border-bottom:1px solid #1e3050">'
+                      f'<td style="padding:4px 3px">交易日</td><td style="padding:4px 3px">方向</td>'
+                      f'<td style="text-align:right;padding:4px 3px">進場(開盤)</td>'
+                      f'<td style="text-align:right;padding:4px 3px">出場(收盤)</td>'
+                      f'<td style="text-align:right;padding:4px 3px">損益</td></tr>{rows}</table>')
+    else:
+        cons_table = ('<p style="color:#9ca3af;font-size:.78rem;padding:8px 0">'
+                      '🆕 從現在起累計：共識喊買進/賣出的那天，系統自動以開盤價建倉、收盤價平倉，'
+                      '把每筆「幾號、方向、進出場價、實際賺賠」記在這。今天共識觀望，故無新倉。</p>')
+    cons_track_html = f"""
+    <div class="card" style="border:1.5px solid #38bdf8">
+      <div class="stitle">🎯 共識倉模擬實戰 · 跟著共識卡下單的成績單</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:6px 0">
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">累計筆數</div><div style="font-size:1rem;font-weight:800;color:#e2e8f0">{cons_n}</div></div>
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">勝率</div><div style="font-size:1rem;font-weight:800;color:#e2e8f0">{cons_wr:.0f}%</div></div>
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">累計損益(每口微台)</div><div style="font-size:1rem;font-weight:800;color:{cpnl_col}">NT${cons_pnl:+,.0f}</div></div>
+      </div>
+      {cons_table}
+      <div style="font-size:.6rem;color:#64748b;margin-top:8px;line-height:1.5">
+        📡 這是「模擬倉」：系統自動跑給你看，<b>不會真的幫你下單</b>。你照共識卡親自下單後，賺賠應與這裡接近（微台每點 NT$10、已扣手續費）。
+      </div>
+    </div>"""
+
     # ── 最近一筆實際交易結算 ─────────────────────────────
     today_html = ""
     if not real_df.empty:
@@ -2714,6 +2760,7 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
     {today_html}
     {real_stats_html}
     {buy_sell_html}
+    {cons_track_html}
   </div>
 
   <!-- Tab 2：歷史回測統計（預設收納） -->

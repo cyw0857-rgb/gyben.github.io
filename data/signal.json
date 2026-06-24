@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-24 05:06",
+  "generated_at": "2026-06-24 08:24",
   "mode": "morning",
   "signal_date": "2026-06-22",
   "trade_date": "2026-06-25",
   "direction": 0,
-  "total_score": -1,
+  "total_score": -5,
   "tw_score": 10,
-  "intl_score": -8,
+  "intl_score": -12,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": -1,
   "foreign_fut_net": -6136,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+10) vs 國際(-8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+10) vs 國際(-12) 方向相反 → 觀望",
   "threshold": 7,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±7",
   "tw_last_close": 47741.51171875,
@@ -20,8 +20,8 @@
   "tw_ma5": 46258.05625,
   "tw_ma10": 45004.154296875,
   "tw_rsi": 60.51782856056706,
-  "tw_macd": 1363.2103927129865,
-  "tw_macds": 1290.1831626703859,
+  "tw_macd": 1363.2103927129938,
+  "tw_macds": 1290.1831626703831,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45543.56171875,
   "tw_ma10_p2": 44737.097265625,
@@ -277,14 +277,28 @@
     "max_lose": 0,
     "streak": 1
   },
+  "stats_real_cons": {
+    "total": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "total_pnl": 0,
+    "avg_pnl": 0,
+    "avg_win": 0,
+    "avg_lose": 0,
+    "max_win": 0,
+    "max_lose": 0,
+    "streak": 0
+  },
+  "cons_recent": [],
   "gold": {
-    "price_usd": 4127.0,
-    "chg_pct": -1.312798097175432,
+    "price_usd": 4124.10009765625,
+    "chg_pct": -1.3821422328905109,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 73.08000183105469,
-    "oil_chg": -2.325578549674731
+    "warning": "黃金下跌 -1.4%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 72.81999969482422,
+    "oil_chg": -2.673082074522319
   },
   "intl_data": {
     "S&P500": {
@@ -329,18 +343,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 72353.9609375,
-      "chg_pct": 1.5493297812896656,
-      "signal": 1,
-      "note": "+1.55%",
+      "price": 69983.84375,
+      "chg_pct": -3.2757255536394596,
+      "signal": -1,
+      "note": "-3.28%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 9114.5498046875,
-      "chg_pct": 0.6863345199261507,
-      "signal": 1,
-      "note": "+0.69%",
+      "price": 8308.58984375,
+      "chg_pct": -8.842564670862895,
+      "signal": -1,
+      "note": "-8.84%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -369,26 +383,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.3740005493164,
-      "chg_pct": 0.35042953673894955,
+      "price": 101.39800262451172,
+      "chg_pct": 0.3741892635187068,
       "signal": -1,
-      "note": "+0.35%(偏空)",
+      "note": "+0.37%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4127.0,
-      "chg_pct": -1.312798097175432,
+      "price": 4124.10009765625,
+      "chg_pct": -1.3821422328905109,
       "signal": 1,
-      "note": "-1.31%()",
+      "note": "-1.38%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 73.08000183105469,
-      "chg_pct": -2.325578549674731,
+      "price": 72.81999969482422,
+      "chg_pct": -2.673082074522319,
       "signal": -1,
-      "note": "-2.33%",
+      "note": "-2.67%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -401,10 +415,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62500.73046875,
-      "chg_pct": -2.2694718013767505,
+      "price": 62759.28125,
+      "chg_pct": -1.8651836558107846,
       "signal": -1,
-      "note": "-2.27%",
+      "note": "-1.87%",
       "desc": "風險偏好指標"
     }
   },
@@ -429,25 +443,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg.com",
+      "title": "Trump threatens 'much higher' tariffs on EU by 4 of July - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump sets July 4 deadline for EU to comply with trade deal or face 'much higher",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Court rules against the tariff Trump enacted after Supreme Court defeat - The Wa",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
+      "title": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -456,6 +464,12 @@
       "title": "US reciprocal trade deals built to push America's trade partners away from China",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -483,15 +497,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Speaker Han Kuo-yu visits TSMC’s Arizona campus - Taipei Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing Co Ltd (TSM) Shares Fall 6.7% -- GF Value Say",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "‘FOMO really got me’: Taiwanese go deep into debt to amp 100% stock rally - The ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Speaker Han Kuo-yu visits TSMC’s Arizona campus - Taipei Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",

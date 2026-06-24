@@ -540,7 +540,7 @@ def update_completed_trades(records: pd.DataFrame, tw_df: pd.DataFrame) -> pd.Da
         return None
 
     PENDING_TO_FINAL = {"pending": "completed"}
-    for ver in ["v100", "v70", "v60", "v50"]:
+    for ver in ["v100", "v70", "v60", "v50", "vsel", "cons"]:
         PENDING_TO_FINAL[f"real_{ver}_pending"] = f"real_{ver}"
 
     for idx, row in records.iterrows():
@@ -1788,11 +1788,20 @@ def main():
     elif ma_bear and macd2_s and pk2_dn and spread_live < -0.006 and 34 < rsi_val < 42: dvsel = -1
     else: dvsel = 0
 
+    # 🎯 共識倉 (cons): 精選∪優化（只跟兩個賺錢版本），SOX強烈背離否決 → 使用者下單依據
+    if dvsel != 0 and dv70 != 0 and dvsel != dv70:
+        dcons = 0
+    else:
+        dcons = dv70 if dv70 != 0 else dvsel
+    if   dcons == 1 and sox_v <= -2.0: dcons = 0
+    elif dcons == -1 and sox_v >= 2.0: dcons = 0
+
     records = add_version_real_signal(records, sig_date, nday, dv100, "v100")
     records = add_version_real_signal(records, sig_date, nday, dv70,  "v70")
     records = add_version_real_signal(records, sig_date, nday, dv60,  "v60")
     records = add_version_real_signal(records, sig_date, nday, dv50,  "v50")
     records = add_version_real_signal(records, sig_date, nday, dvsel, "vsel")
+    records = add_version_real_signal(records, sig_date, nday, dcons, "cons")
 
     save_records(records)
 
@@ -1824,6 +1833,22 @@ def main():
     stats_real_v70  = compute_stats(records, status_filter="real_v70")
     stats_real_v60  = compute_stats(records, status_filter="real_v60")
     stats_real_v50  = compute_stats(records, status_filter="real_v50")
+    stats_real_cons = compute_stats(records, status_filter="real_cons")
+    # 共識倉近期每筆明細（幾月幾號、方向、進場/出場、損益）給看板顯示
+    cons_done = records[records["status"] == "real_cons"].copy()
+    cons_recent = []
+    for _, r in cons_done.tail(15).iterrows():
+        try:
+            ep = float(r["entry_price"]); xp = float(r["exit_price"])
+        except Exception:
+            continue
+        cons_recent.append({
+            "date":  str(r.get("trade_date", "")),
+            "dir":   int(r.get("direction", 0)),
+            "entry": int(ep), "exit": int(xp),
+            "pnl":   int(float(r["pnl_nts"])) if str(r["pnl_nts"]).strip() not in ("", "nan") else 0,
+            "win":   str(r["win"]) == "True",
+        })
 
     print(f"📊 {label} [5/5] 產生報告...", flush=True)
     report = build_report(tw_df, records, intl, news,
@@ -1889,6 +1914,8 @@ def main():
         "stats_real_v70":    {k: _safe(v) for k, v in stats_real_v70.items()},
         "stats_real_v60":    {k: _safe(v) for k, v in stats_real_v60.items()},
         "stats_real_v50":    {k: _safe(v) for k, v in stats_real_v50.items()},
+        "stats_real_cons":   {k: _safe(v) for k, v in stats_real_cons.items()},
+        "cons_recent":       cons_recent,
         "gold":             {k: _safe(v) for k, v in gold.items()},
         "intl_data": {
             name: {

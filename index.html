@@ -254,13 +254,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div style="text-align:right">
     <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
-      資料：2026-06-24 05:06 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+      資料：2026-06-24 08:24 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
     </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
       <span class="chip chip-b">台指 47,742</span>
       <span class="chip chip-g">RSI 61</span>
       <span class="chip chip-chip-b">
-        中 -1
+        中 -5
       </span>
     </div>
   </div>
@@ -285,17 +285,17 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
             <div style="flex:1">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,127</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
-              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▼ -1.31%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,124</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▼ -1.38%</div>
             </div>
             
             <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🛢 WTI 原油</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">73.1</span></div>
-              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▼ -2.33%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">72.8</span></div>
+              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▼ -2.67%</div>
             </div>
           </div>
-          <div style="font-size:.88rem;opacity:.9">黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅</div>
+          <div style="font-size:.88rem;opacity:.9">黃金下跌 -1.4%，風險情緒改善 → 明日偏多 ✅</div>
         </div>
 
 
@@ -309,11 +309,11 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-06-25</div>
   <div id="hero-sig-action" style="background:rgba(0,0,0,.28);border-radius:10px;
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
-    台灣技術(+10) vs 國際(-8) 方向相反 → 觀望
+    台灣技術(+10) vs 國際(-12) 方向相反 → 觀望
   </div>
-  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +10 ＋ 國際市場 -8 ＋ 新聞 -2＋ 黃金 +1 ＝ 總分 -1（門檻 ±7）</div>
+  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +10 ＋ 國際市場 -12 ＋ 新聞 -2＋ 黃金 +1 ＝ 總分 -5（門檻 ±7）</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-24 05:06 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-24 08:24 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
@@ -423,7 +423,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   /* ── 凍結的台灣技術濾網輸入（隔夜不變，與後端 signal_engine 的 veto 完全同步）── */
   var V_RSI=60.51782856056706, V_MA5=46258.05625, V_MA10=45004.154296875, V_MA20=44897.0138671875;
   var V_MA5P=45543.56171875, V_MA10P=44737.097265625, V_MA20P=44623.33671875;
-  var V_MACD=1363.2103927129865, V_MACDS=1290.1831626703859, V_FUT=-6136;
+  var V_MACD=1363.2103927129938, V_MACDS=1290.1831626703831, V_FUT=-6136;
   var TRADE_DATE_H='2026-06-25';
   function sgn(v){return (v>=0?'+':'')+v;}
   function pad2(n){return n<10?'0'+n:''+n;}
@@ -603,7 +603,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
-    <span style="font-size:.6rem;color:#64748b">2026-06-24 05:06</span>
+    <span style="font-size:.6rem;color:#64748b">2026-06-24 08:24</span>
     <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 
@@ -737,6 +737,22 @@ tr:hover td{background:rgba(255,255,255,.014)}
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
         ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 47,742</span>
+      </div>
+    </div>
+    
+    <div class="card" style="border:1.5px solid #38bdf8">
+      <div class="stitle">🎯 共識倉模擬實戰 · 跟著共識卡下單的成績單</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:6px 0">
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">累計筆數</div><div style="font-size:1rem;font-weight:800;color:#e2e8f0">0</div></div>
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">勝率</div><div style="font-size:1rem;font-weight:800;color:#e2e8f0">0%</div></div>
+        <div style="background:#0b1628;border:1px solid #1e3050;border-radius:8px;padding:6px 12px">
+          <div style="font-size:.58rem;color:#64748b">累計損益(每口微台)</div><div style="font-size:1rem;font-weight:800;color:#10b981">NT$+0</div></div>
+      </div>
+      <p style="color:#9ca3af;font-size:.78rem;padding:8px 0">🆕 從現在起累計：共識喊買進/賣出的那天，系統自動以開盤價建倉、收盤價平倉，把每筆「幾號、方向、進出場價、實際賺賠」記在這。今天共識觀望，故無新倉。</p>
+      <div style="font-size:.6rem;color:#64748b;margin-top:8px;line-height:1.5">
+        📡 這是「模擬倉」：系統自動跑給你看，<b>不會真的幫你下單</b>。你照共識卡親自下單後，賺賠應與這裡接近（微台每點 NT$10、已扣手續費）。
       </div>
     </div>
   </div>
@@ -1909,7 +1925,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-06-24 05:06',STK_AT='2026-06-24 08:22',notified=false;
+  var SIG_AT='2026-06-24 08:24',STK_AT='2026-06-24 08:22',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
