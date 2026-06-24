@@ -293,22 +293,38 @@ def forecast_model(df_full, ext=None):
             # 未來月份：只知道趨勢方向，外部因素每月重新判斷
             return f"{trend_base}（外部因素待觀察）"
 
-    # 未來6個月預測
+    # 月度漂移估計：用近半年動能定幅度、模型方向定正負，夾在每月 ±8% 避免外推爆走
+    closes_all = df_full["Close"].dropna().values
+    if len(closes_all) >= 126:
+        mom_6m = closes_all[-1] / closes_all[-126] - 1.0      # 近半年總報酬
+        drift_raw = mom_6m / 6.0                              # 平均每月
+    elif curr_close:
+        drift_raw = slope_all * 21 / curr_close
+    else:
+        drift_raw = 0.0
+    if   curr_pred == 1:  monthly_drift =  abs(drift_raw)
+    elif curr_pred == -1: monthly_drift = -abs(drift_raw)
+    else:                 monthly_drift =  drift_raw * 0.3    # 觀望：順動能但減半
+    monthly_drift = max(-0.08, min(0.08, monthly_drift))
+
+    # 未來6個月預測（價格依漂移逐月變動，不再是平線）
     forecast = []
     for i in range(1, 7):
         yr  = last_date.year + (last_date.month + i - 1) // 12
         mo  = (last_date.month + i - 1) % 12 + 1
         label     = f"{yr:04d}-{mo:02d}"
-        vol_range = curr_close * daily_vol * float(np.sqrt(i * 21)) * 1.5
+        proj      = curr_close * (1 + monthly_drift) ** i
+        chg_pct   = (proj / curr_close - 1) * 100 if curr_close else 0.0
+        vol_range = proj * daily_vol * float(np.sqrt(i * 21)) * 1.5
         trend     = "up" if curr_pred == 1 else ("down" if curr_pred == -1 else "neutral")
         dir_icon  = "📈" if curr_pred == 1 else ("📉" if curr_pred == -1 else "⚪")
         note      = f"{dir_icon} {month_note(i)}" if curr_pred != 0 else f"⚪ 觀望（分{curr_score:+.1f}）"
         forecast.append({
             "month":      label,
-            "price":      round(curr_close, 2),
-            "price_high": round(max(curr_close + vol_range, 1.0), 2),
-            "price_low":  round(max(curr_close - vol_range, 1.0), 2),
-            "chg_pct":    0.0,
+            "price":      round(proj, 2),
+            "price_high": round(max(proj + vol_range, 1.0), 2),
+            "price_low":  round(max(proj - vol_range, 1.0), 2),
+            "chg_pct":    round(chg_pct, 1),
             "trend":      trend,
             "model_note": note,
             "score":      round(curr_score, 1),
