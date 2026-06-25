@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-25 16:34",
+  "generated_at": "2026-06-25 18:35",
   "mode": "morning",
   "signal_date": "2026-06-25",
   "trade_date": "2026-06-26",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 4,
   "tw_score": 4,
   "intl_score": -1,
   "news_score": -2,
-  "psy_score": 0,
-  "inst_score": 1,
+  "psy_score": 1,
+  "inst_score": 2,
   "foreign_fut_net": 2509,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(+4) vs 國際(-1) 方向相反 → 觀望",
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4014.39990234375,
-    "chg_pct": 0.6039609357873393,
+    "price_usd": 4001.199951171875,
+    "chg_pct": 0.27315996818211935,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.6%，影響中性",
-    "oil_usd": 69.6500015258789,
-    "oil_chg": -0.9809423485000006
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 69.5,
+    "oil_chg": -1.1941944578096846
   },
   "intl_data": {
     "S&P500": {
@@ -335,10 +335,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.079999923706055,
-      "chg_pct": -2.9522236276789777,
+      "price": 17.90999984741211,
+      "chg_pct": -3.86473078791521,
       "signal": 1,
-      "note": "VIX=18.1(低恐慌)",
+      "note": "VIX=17.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -383,26 +383,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.49099731445312,
-      "chg_pct": -0.1171177002102232,
+      "price": 101.58200073242188,
+      "chg_pct": -0.027556222577991996,
       "signal": 0,
-      "note": "-0.12%(中性)",
+      "note": "-0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4014.39990234375,
-      "chg_pct": 0.6039609357873393,
+      "price": 4001.199951171875,
+      "chg_pct": 0.27315996818211935,
       "signal": 0,
-      "note": "+0.60%()",
+      "note": "+0.27%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 69.6500015258789,
-      "chg_pct": -0.9809423485000006,
+      "price": 69.5,
+      "chg_pct": -1.1941944578096846,
       "signal": -1,
-      "note": "-0.98%",
+      "note": "-1.19%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,10 +415,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 61645.98046875,
-      "chg_pct": 1.0670485106585734,
+      "price": 61448.73046875,
+      "chg_pct": 0.7436620519285799,
       "signal": 1,
-      "note": "+1.07%",
+      "note": "+0.74%",
       "desc": "風險偏好指標"
     }
   },
@@ -509,19 +509,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Dollar rides high on Fed rate-hike bets - CNBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "The Fed may raise interest rates within months. Here's what it means for you. - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Markets tumble worldwide as Fed resets expectations: $400 billion wiped off Spac",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -530,6 +518,18 @@
       "title": "Will New US Fed Chair Kevin Warsh Raise Interest Rates This Year? - Morningstar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "US bond market expects rate hikes the Fed may never deliver - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Why Markets Now Expect Higher Interest Rates Again - StoneX",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
