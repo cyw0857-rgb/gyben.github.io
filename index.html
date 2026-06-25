@@ -254,13 +254,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div style="text-align:right">
     <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
-      資料：2026-06-25 21:38 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+      資料：2026-06-26 05:02 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
     </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
-      <span class="chip chip-b">台指 46,255</span>
-      <span class="chip chip-g">RSI 53</span>
+      <span class="chip chip-b">台指 46,044</span>
+      <span class="chip chip-g">RSI 48</span>
       <span class="chip chip-r">
-        多 +11
+        多 +7
       </span>
     </div>
   </div>
@@ -285,14 +285,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
             <div style="flex:1">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,036</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
-              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▲ +1.15%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,040</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▲ +1.25%</div>
             </div>
             
             <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🛢 WTI 原油</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">70.1</span></div>
-              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▼ -0.38%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">71.4</span></div>
+              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▲ +1.54%</div>
             </div>
           </div>
           <div style="font-size:.88rem;opacity:.9">黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️</div>
@@ -302,18 +302,18 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <!-- ══════════════ 台指期主力區 ═══════════════════════ -->
 
 <!-- 明日信號英雄卡（全寬） -->
-<div class="signal-hero" id="signal-hero" style="background:linear-gradient(135deg,#374151,#4b5563);margin-bottom:12px">
+<div class="signal-hero" id="signal-hero" style="background:linear-gradient(135deg,#059669,#10b981);margin-bottom:12px">
   <div id="hero-sig-label" style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
-    ⚪ 明天觀望（不交易）
+    🟢 明天做多（買進）
   </div>
-  <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-06-26</div>
+  <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-06-29</div>
   <div id="hero-sig-action" style="background:rgba(0,0,0,.28);border-radius:10px;
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
-    看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足
+    8:45 買進 1口 &ensp;｜&ensp; 13:30 賣出平倉
   </div>
-  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +4 ＋ 國際市場 +8 ＋ 新聞 -2＋ 黃金 -1 ＝ 總分 +11（門檻 ±7）</div>
+  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +5 ＋ 國際市場 +3 ＋ 新聞 -2＋ 黃金 -1 ＝ 總分 +7（門檻 ±7）</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-25 21:38 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-06-26 05:02 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
@@ -416,15 +416,15 @@ tr:hover td{background:rgba(255,255,255,.014)}
 
 <script>
 (function(){
-  var TW_S    = 4;
-  var INST_S  = 1;
+  var TW_S    = 5;
+  var INST_S  = 2;
   var THRESH  = 7;
   var MAX_TOT = 16;
   /* ── 凍結的台灣技術濾網輸入（隔夜不變，與後端 signal_engine 的 veto 完全同步）── */
-  var V_RSI=52.52691219485362, V_MA5=46721.24453125, V_MA10=45800.829296875, V_MA20=45295.6609375;
-  var V_MA5P=46645.6703125, V_MA10P=45497.85703125, V_MA20P=45195.737890625;
-  var V_MACD=1272.195095136376, V_MACDS=1306.401035905867, V_FUT=2509;
-  var TRADE_DATE_H='2026-06-26';
+  var V_RSI=48.268935807935726, V_MA5=46645.6703125, V_MA10=45497.85703125, V_MA20=45195.737890625;
+  var V_MA5P=46598.78828125, V_MA10P=45363.941015625, V_MA20P=45069.8263671875;
+  var V_MACD=1326.9541254656942, V_MACDS=1314.9525210982397, V_FUT=2509;
+  var TRADE_DATE_H='2026-06-29';
   function sgn(v){return (v>=0?'+':'')+v;}
   function pad2(n){return n<10?'0'+n:''+n;}
   function todayStr_(){var d=new Date();return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());}
@@ -603,7 +603,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
-    <span style="font-size:.6rem;color:#64748b">2026-06-25 21:38</span>
+    <span style="font-size:.6rem;color:#64748b">2026-06-26 05:02</span>
     <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 
@@ -725,7 +725,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-v50" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-v50" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,255 ～ 46,335</div>
+            <div id="vprice-v50" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,044 ～ 46,124</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">4602筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">45%</span>
@@ -736,7 +736,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
-        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 46,255</span>
+        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 46,044</span>
       </div>
     </div>
     
@@ -1691,14 +1691,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
     <h2 style="margin:0">💰 定期定額追蹤</h2>
     <span style="font-size:.62rem;color:#94a3b8;background:#0b1628;border:1px solid #1e3050;
-                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-06-25 21:39</span>
+                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-06-26 05:03</span>
   </div>
   <div style="font-size:.7rem;color:#94a3b8;margin-top:2px">
     每月 25 號投入 NT$45,000（009816 + 00992A 各 NT$22,500）
   </div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px 10px;margin:10px 0 14px"><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總投入</div><div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">$45,000</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總市值</div><div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">$45,000</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">損益</div><div style="font-size:1.02rem;font-weight:800;color:#10b981">▲$0</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">報酬率</div><div style="font-size:1.02rem;font-weight:800;color:#10b981">+0.00%</div></div></div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px 10px;margin:10px 0 14px"><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總投入</div><div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">$45,000</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">總市值</div><div style="font-size:1.02rem;font-weight:800;color:#e2e8f0">$44,861</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">損益</div><div style="font-size:1.02rem;font-weight:800;color:#ef4444">▼$139</div></div><div style="text-align:center"><div style="font-size:.62rem;color:#64748b">報酬率</div><div style="font-size:1.02rem;font-weight:800;color:#ef4444">-0.31%</div></div></div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-    <div style="background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">凱基台灣TOP50</div><div style="font-size:.62rem;color:#64748b">009816.TW</div></div><div style="text-align:right"><div id="dca-last-009816.TW" style="font-size:1.1rem;font-weight:800;color:#e2e8f0">15.59</div><div id="dca-chg-009816.TW" style="font-size:.7rem;font-weight:700;color:#10b981">▲0.19%</div></div></div><div style="margin-top:8px"><svg width="120" height="34" viewBox="0 0 120 34" style="display:block"><polyline points="0.0,26.1 4.1,27.8 8.3,28.7 12.4,31.3 16.6,32.0 20.7,26.2 24.8,23.0 29.0,16.9 33.1,16.9 37.2,12.8 41.4,16.5 45.5,12.3 49.7,10.2 53.8,9.8 57.9,6.6 62.1,9.3 66.2,12.4 70.3,17.8 74.5,12.7 78.6,18.0 82.8,19.4 86.9,15.5 91.0,10.4 95.2,9.0 99.3,8.6 103.4,7.2 107.6,2.0 111.7,4.1 115.9,8.5 120.0,8.1" fill="none" stroke="#10b981" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></div><div style="font-size:.56rem;color:#475569;text-align:right">近30日</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:8px;font-size:.72rem"><div style="color:#64748b">持有股數</div><div style="text-align:right;color:#e2e8f0;font-weight:700">1,443.23</div><div style="color:#64748b">平均成本</div><div style="text-align:right;color:#e2e8f0">$15.59</div><div style="color:#64748b">投入金額</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">目前市值</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">損益</div><div style="text-align:right;color:#10b981;font-weight:800">$+0（+0.00%）</div></div><div style="font-size:.6rem;color:#475569;margin-top:5px">已扣款 1 次</div></div><div style="background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">群益台灣科技創新主動式</div><div style="font-size:.62rem;color:#64748b">00992A.TW</div></div><div style="text-align:right"><div id="dca-last-00992A.TW" style="font-size:1.1rem;font-weight:800;color:#e2e8f0">18.82</div><div id="dca-chg-00992A.TW" style="font-size:.7rem;font-weight:700;color:#10b981">▲0.43%</div></div></div><div style="margin-top:8px"><svg width="120" height="34" viewBox="0 0 120 34" style="display:block"><polyline points="0.0,14.9 4.1,23.9 8.3,25.3 12.4,31.2 16.6,32.0 20.7,21.2 24.8,14.5 29.0,8.2 33.1,7.5 37.2,9.3 41.4,17.4 45.5,13.7 49.7,11.3 53.8,16.0 57.9,11.9 62.1,15.4 66.2,18.3 70.3,22.8 74.5,14.4 78.6,23.4 82.8,25.8 86.9,19.7 91.0,14.9 95.2,12.0 99.3,10.4 103.4,6.8 107.6,2.0 111.7,7.1 115.9,9.4 120.0,8.6" fill="none" stroke="#10b981" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></div><div style="font-size:.56rem;color:#475569;text-align:right">近30日</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:8px;font-size:.72rem"><div style="color:#64748b">持有股數</div><div style="text-align:right;color:#e2e8f0;font-weight:700">1,195.54</div><div style="color:#64748b">平均成本</div><div style="text-align:right;color:#e2e8f0">$18.82</div><div style="color:#64748b">投入金額</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">目前市值</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">損益</div><div style="text-align:right;color:#10b981;font-weight:800">$+0（+0.00%）</div></div><div style="font-size:.6rem;color:#475569;margin-top:5px">已扣款 1 次</div></div>
+    <div style="background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">凱基台灣TOP50</div><div style="font-size:.62rem;color:#64748b">009816.TW</div></div><div style="text-align:right"><div id="dca-last-009816.TW" style="font-size:1.1rem;font-weight:800;color:#e2e8f0">15.56</div><div id="dca-chg-009816.TW" style="font-size:.7rem;font-weight:700;color:#ef4444">▼2.57%</div></div></div><div style="margin-top:8px"><svg width="120" height="34" viewBox="0 0 120 34" style="display:block"><polyline points="0.0,26.1 4.1,26.1 8.3,27.8 12.4,28.7 16.6,31.3 20.7,32.0 24.8,26.2 29.0,23.0 33.1,16.9 37.2,16.9 41.4,12.8 45.5,16.5 49.7,12.3 53.8,10.2 57.9,9.8 62.1,6.6 66.2,9.3 70.3,12.4 74.5,17.8 78.6,12.7 82.8,18.0 86.9,19.4 91.0,15.5 95.2,10.4 99.3,9.0 103.4,8.6 107.6,7.2 111.7,2.0 115.9,4.1 120.0,8.5" fill="none" stroke="#10b981" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></div><div style="font-size:.56rem;color:#475569;text-align:right">近30日</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:8px;font-size:.72rem"><div style="color:#64748b">持有股數</div><div style="text-align:right;color:#e2e8f0;font-weight:700">1,443.23</div><div style="color:#64748b">平均成本</div><div style="text-align:right;color:#e2e8f0">$15.59</div><div style="color:#64748b">投入金額</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">目前市值</div><div style="text-align:right;color:#e2e8f0">$22,457</div><div style="color:#64748b">損益</div><div style="text-align:right;color:#ef4444;font-weight:800">$-43（-0.19%）</div></div><div style="font-size:.6rem;color:#475569;margin-top:5px">已扣款 1 次</div></div><div style="background:#0b1628;border:1px solid #1e3050;border-radius:12px;padding:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div style="font-weight:800;color:#e2e8f0;font-size:.92rem">群益台灣科技創新主動式</div><div style="font-size:.62rem;color:#64748b">00992A.TW</div></div><div style="text-align:right"><div id="dca-last-00992A.TW" style="font-size:1.1rem;font-weight:800;color:#e2e8f0">18.74</div><div id="dca-chg-00992A.TW" style="font-size:.7rem;font-weight:700;color:#ef4444">▼1.11%</div></div></div><div style="margin-top:8px"><svg width="120" height="34" viewBox="0 0 120 34" style="display:block"><polyline points="0.0,14.8 4.1,14.9 8.3,23.9 12.4,25.3 16.6,31.2 20.7,32.0 24.8,21.2 29.0,14.5 33.1,8.2 37.2,7.5 41.4,9.3 45.5,17.4 49.7,13.7 53.8,11.3 57.9,16.0 62.1,11.9 66.2,15.4 70.3,18.3 74.5,22.8 78.6,14.4 82.8,23.4 86.9,25.8 91.0,19.7 95.2,14.9 99.3,12.0 103.4,10.4 107.6,6.8 111.7,2.0 115.9,7.1 120.0,9.4" fill="none" stroke="#10b981" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></div><div style="font-size:.56rem;color:#475569;text-align:right">近30日</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:8px;font-size:.72rem"><div style="color:#64748b">持有股數</div><div style="text-align:right;color:#e2e8f0;font-weight:700">1,195.54</div><div style="color:#64748b">平均成本</div><div style="text-align:right;color:#e2e8f0">$18.82</div><div style="color:#64748b">投入金額</div><div style="text-align:right;color:#e2e8f0">$22,500</div><div style="color:#64748b">目前市值</div><div style="text-align:right;color:#e2e8f0">$22,404</div><div style="color:#64748b">損益</div><div style="text-align:right;color:#ef4444;font-weight:800">$-96（-0.43%）</div></div><div style="font-size:.6rem;color:#475569;margin-top:5px">已扣款 1 次</div></div>
   </div>
   <div style="margin-top:14px"><div style="font-size:.74rem;font-weight:700;color:#94a3b8;margin-bottom:5px">扣款記錄</div><table style="width:100%;border-collapse:collapse;font-size:.7rem"><tr style="color:#64748b;border-bottom:1px solid #1e3050"><td style="padding:4px 3px">日期</td><td style="padding:4px 3px">標的</td><td style="text-align:right;padding:4px 3px">投入</td><td style="text-align:right;padding:4px 3px">成交價</td><td style="text-align:right;padding:4px 3px">股數</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-06-25</td><td style="padding:4px 3px;color:#cbd5e1">群益台灣科技創新主動式</td><td style="text-align:right;padding:4px 3px;color:#cbd5e1">$22,500</td><td style="text-align:right;padding:4px 3px;color:#cbd5e1">18.82</td><td style="text-align:right;padding:4px 3px;color:#e2e8f0;font-weight:700">1,195.54</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-06-25</td><td style="padding:4px 3px;color:#cbd5e1">凱基台灣TOP50</td><td style="text-align:right;padding:4px 3px;color:#cbd5e1">$22,500</td><td style="text-align:right;padding:4px 3px;color:#cbd5e1">15.59</td><td style="text-align:right;padding:4px 3px;color:#e2e8f0;font-weight:700">1,443.23</td></tr></table></div>
   <div style="font-size:.58rem;color:#374155;margin-top:10px">
@@ -1715,7 +1715,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-06-25 21:38 更新</span>
+      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-06-26 05:02 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1790,14 +1790,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
             <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
           </tr>
-          <tr><td style="color:#94a3b8;padding:4px 3px">06/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-31k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-28k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+166k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+166k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/23</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+335k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-127k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+3k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+211k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/22</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+366k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-120k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+9k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+256k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/08</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+83k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-9k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+75k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">05/29</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+37k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+7k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+43k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">05/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-381k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-3k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-3k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-387k</span></td></tr>
+          <tr><td style="color:#94a3b8;padding:4px 3px">06/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-31k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-28k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+166k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+166k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/22</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+366k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-120k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+9k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+256k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/18</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+466k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-128k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-12k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+327k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/17</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+211k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-6k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-58k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+147k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/16</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+466k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-128k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-12k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+327k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/15</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+575k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-3k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+10k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+583k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/12</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-98k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+97k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-2k</span></td></tr>
         </table>
         <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
           <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
           <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
-            <span style="font-size:.62rem">外資 <span style="color:#10b981">+920k</span></span>
-            <span style="font-size:.62rem">投信 <span style="color:#ef4444">-245k</span></span>
-            <span style="font-size:.62rem">自營 <span style="color:#10b981">+6k</span></span>
+            <span style="font-size:.62rem">外資 <span style="color:#10b981">+1180k</span></span>
+            <span style="font-size:.62rem">投信 <span style="color:#ef4444">-252k</span></span>
+            <span style="font-size:.62rem">自營 <span style="color:#ef4444">-59k</span></span>
           </div>
           <div style="display:flex;gap:5px;flex-wrap:wrap">
             <div style="background:#10b98122;border:1px solid #10b981;
@@ -1814,7 +1814,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
     </div>
   </div>
 
-  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px"><div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">💳 融資融券（散戶槓桿）</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px"><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融資餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">2,542</div><div style="font-size:.6rem">5日 <span style="color:#10b981">-184</span></div></div><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融券餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">0</div><div style="font-size:.6rem">5日 <span style="color:#f59e0b">-1</span></div></div></div><div style="font-size:.66rem;color:#10b981;font-weight:600">融資5日減少（散戶退場，籌碼沉澱）</div></div>
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px"><div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">💳 融資融券（散戶槓桿）</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px"><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融資餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">2,542</div><div style="font-size:.6rem">5日 <span style="color:#10b981">-140</span></div></div><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融券餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">0</div><div style="font-size:.6rem">5日 <span style="color:#f59e0b">-1</span></div></div></div><div style="font-size:.66rem;color:#10b981;font-weight:600">融資5日減少（散戶退場，籌碼沉澱）</div></div>
 
   <!-- 散戶情緒 -->
   <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">
@@ -1938,7 +1938,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-06-25 21:38',STK_AT='2026-06-25 21:38',notified=false;
+  var SIG_AT='2026-06-26 05:02',STK_AT='2026-06-26 05:02',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
@@ -2072,7 +2072,7 @@ function toggleAcc(btnEl) {
 
 /* ── 明日→今日 標籤自動切換 ───────────────────────── */
 (function(){
-  var TRADE_DATE='2026-06-26';  /* e.g. "2026-06-17" */
+  var TRADE_DATE='2026-06-29';  /* e.g. "2026-06-17" */
   function todayStr(){
     var d=new Date();
     return d.getFullYear()+'-'
