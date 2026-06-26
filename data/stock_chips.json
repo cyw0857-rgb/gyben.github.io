@@ -1,13 +1,20 @@
 {
-  "updated": "2026-06-26 20:35",
+  "updated": "2026-06-26 21:36",
   "inst": {
     "rows": [
       {
+        "date": "06/26",
+        "foreign": 246707,
+        "trust": 1000,
+        "dealer": -1114,
+        "total": 246593
+      },
+      {
         "date": "06/25",
-        "foreign": 466993,
-        "trust": -128000,
-        "dealer": -11739,
-        "total": 327254
+        "foreign": -30799,
+        "trust": 2000,
+        "dealer": 875,
+        "total": -27924
       },
       {
         "date": "06/24",
@@ -60,10 +67,10 @@
       },
       {
         "date": "06/12",
-        "foreign": 466993,
-        "trust": -128000,
-        "dealer": -11739,
-        "total": 327254
+        "foreign": -97480,
+        "trust": -2000,
+        "dealer": 97943,
+        "total": -1537
       },
       {
         "date": "06/11",
@@ -78,27 +85,27 @@
         "trust": -2000,
         "dealer": -31036,
         "total": -385534
-      },
-      {
-        "date": "06/09",
-        "foreign": 1120533,
-        "trust": 0,
-        "dealer": 84760,
-        "total": 1205293
       }
     ],
-    "total_foreign": 1802133,
-    "total_trust": -503000,
-    "total_dealer": -9937,
-    "net5": 1289196,
+    "total_foreign": 1084055,
+    "total_trust": -244000,
+    "total_dealer": 13302,
+    "net5": 853357,
     "mood": "偏多",
-    "trust_streak": -1,
-    "streak_label": "📉 投信連賣 1 日",
-    "streak_color": "#ef4444",
-    "foreign_streak": 6
+    "trust_streak": 2,
+    "streak_label": "📈 投信連買 2 日",
+    "streak_color": "#10b981",
+    "foreign_streak": 1
   },
   "margin": {
     "rows": [
+      {
+        "date": "06/26",
+        "fin_bal": 2397,
+        "fin_chg": -145,
+        "sho_bal": 1,
+        "sho_chg": 1
+      },
       {
         "date": "06/25",
         "fin_bal": 2542,
@@ -147,19 +154,12 @@
         "fin_chg": 8,
         "sho_bal": 0,
         "sho_chg": -1
-      },
-      {
-        "date": "06/15",
-        "fin_bal": 2683,
-        "fin_chg": -62,
-        "sho_bal": 1,
-        "sho_chg": 1
       }
     ],
-    "fin_bal": 2542,
-    "sho_bal": 0,
-    "fin_5chg": -140,
-    "sho_5chg": -1,
+    "fin_bal": 2397,
+    "sho_bal": 1,
+    "fin_5chg": -279,
+    "sho_5chg": 1,
     "note": "融資5日減少（散戶退場，籌碼沉澱）",
     "note_color": "#10b981"
   }
