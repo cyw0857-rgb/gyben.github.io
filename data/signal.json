@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-26 19:19",
+  "generated_at": "2026-06-26 20:34",
   "mode": "morning",
   "signal_date": "2026-06-26",
   "trade_date": "2026-06-29",
   "direction": 0,
-  "total_score": -4,
+  "total_score": -3,
   "tw_score": -1,
   "intl_score": -3,
   "news_score": -2,
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4069.0,
-    "chg_pct": 0.955216474382831,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 69.70999908447266,
-    "oil_chg": -3.0728575371779177
+    "price_usd": 4059.699951171875,
+    "chg_pct": 0.7244746600142662,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 69.77999877929688,
+    "oil_chg": -2.975527591952134
   },
   "intl_data": {
     "S&P500": {
@@ -335,10 +335,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 20.06999969482422,
-      "chg_pct": 6.246693188473111,
-      "signal": 0,
-      "note": "VIX=20.1(中性)",
+      "price": 19.850000381469727,
+      "chg_pct": 5.082059411539006,
+      "signal": 1,
+      "note": "VIX=19.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -367,10 +367,10 @@
     },
     "上證指數": {
       "category": "A股",
-      "price": 4120.28076171875,
-      "chg_pct": 0.23031389324909474,
-      "signal": 0,
-      "note": "+0.23%",
+      "price": 4027.264892578125,
+      "chg_pct": -2.2575128861321576,
+      "signal": -1,
+      "note": "-2.26%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -383,34 +383,34 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.21399688720703,
-      "chg_pct": -0.21295811625638705,
+      "price": 101.23799896240234,
+      "chg_pct": -0.18929443182072045,
       "signal": 0,
-      "note": "-0.21%(中性)",
+      "note": "-0.19%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4069.0,
-      "chg_pct": 0.955216474382831,
+      "price": 4059.699951171875,
+      "chg_pct": 0.7244746600142662,
       "signal": 0,
-      "note": "+0.96%()",
+      "note": "+0.72%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 69.70999908447266,
-      "chg_pct": -3.0728575371779177,
+      "price": 69.77999877929688,
+      "chg_pct": -2.975527591952134,
       "signal": -1,
-      "note": "-3.07%",
+      "note": "-2.98%",
       "desc": "油漲→通膨預期"
     },
     "比特幣": {
       "category": "加密",
-      "price": 59350.01953125,
-      "chg_pct": -0.6223138335255552,
-      "signal": -1,
-      "note": "-0.62%",
+      "price": 59751.12890625,
+      "chg_pct": 0.049317311704181944,
+      "signal": 0,
+      "note": "+0.05%",
       "desc": "風險偏好指標"
     }
   },
@@ -435,19 +435,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump's tariffs have done 'significant damage' to the U.S. economy, says Moody's",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "U.S. President Trump's renewed trade war with China - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump threatens 'much higher' tariffs on EU by 4 of July - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump, Xi to Set Up Trade and Investment Boards, China Says - Bloomberg",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "US trade court rules Trump tariffs illegal, but issues narrow block - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -483,6 +483,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Here's Why Taiwan Semiconductor (TSM) May Be the Smartest AI Infrastructure Buy ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "What's Going On With Taiwan Semiconductor Stock Friday? - Benzinga",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -494,14 +500,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "How a Niche Technology Became a Choke Point for A.I. - The New York Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
-      "title": "Fed to hold rates this year, economists say, defying market bets for hikes: Reut",
+      "title": "US bond market expects rate hikes the Fed may never deliver - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -519,7 +519,7 @@
     },
     {
       "label": "聯準會",
-      "title": "How are stocks impacted when the Fed doesn’t change interest rates? - Yahoo Fina",
+      "title": "Mapping the Market: US high-rate fever may have broken - KITCO",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
