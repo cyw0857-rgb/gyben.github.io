@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-02 20:32",
+  "generated_at": "2026-07-03 03:02",
   "mode": "morning",
-  "signal_date": "2026-07-02",
-  "trade_date": "2026-07-03",
+  "signal_date": "2026-07-01",
+  "trade_date": "2026-07-06",
   "direction": 0,
-  "total_score": -5,
-  "tw_score": 2,
-  "intl_score": -7,
+  "total_score": -3,
+  "tw_score": 3,
+  "intl_score": -6,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": 1,
   "foreign_fut_net": -267,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+2) vs 國際(-7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+3) vs 國際(-6) 方向相反 → 觀望",
   "threshold": 7,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±7",
-  "tw_last_close": 46744.16015625,
-  "tw_chg_pct": -0.5845045481542077,
-  "tw_ma5": 45892.14375,
-  "tw_ma10": 46306.694140625,
-  "tw_rsi": 66.47859762620436,
-  "tw_macd": 975.510648559015,
-  "tw_macds": 1084.1822322550772,
+  "tw_last_close": 47018.98828125,
+  "tw_chg_pct": 1.9361745317864276,
+  "tw_ma5": 45794.3640625,
+  "tw_ma10": 46220.0171875,
+  "tw_rsi": 67.712450439691,
+  "tw_macd": 974.2777552704865,
+  "tw_macds": 1111.3501281790927,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 45794.3640625,
-  "tw_ma10_p2": 46220.0171875,
-  "tw_ma20_p2": 45468.2587890625,
-  "tw_ma20": 45482.5087890625,
+  "tw_ma5_p2": 45599.28671875,
+  "tw_ma10_p2": 46099.0375,
+  "tw_ma20_p2": 45395.1748046875,
+  "tw_ma20": 45468.2587890625,
   "stats_real": {
     "total": 1,
     "wins": 1,
@@ -292,162 +292,170 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4077.89990234375,
-    "chg_pct": 0.2359671951529298,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 67.16999816894531,
-    "oil_chg": -2.0559982858893586
+    "price_usd": 4136.5,
+    "chg_pct": 1.6763746614884025,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 68.58999633789062,
+    "oil_chg": 0.014573500392372029
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7483.22998046875,
-      "chg_pct": -0.21508346187620572,
-      "signal": 0,
-      "note": "-0.22%",
+      "price": 7452.52978515625,
+      "chg_pct": -0.41025326486861413,
+      "signal": -1,
+      "note": "-0.41%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52305.23828125,
-      "chg_pct": -0.026684157457434327,
-      "signal": 0,
-      "note": "-0.03%",
+      "price": 52672.3515625,
+      "chg_pct": 0.7018671423997701,
+      "signal": 1,
+      "note": "+0.70%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26040.029296875,
-      "chg_pct": -0.6625973024473929,
+      "price": 25727.15234375,
+      "chg_pct": -1.2015230457615023,
       "signal": -1,
-      "note": "-0.66%",
+      "note": "-1.20%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13353.2802734375,
-      "chg_pct": -6.272774612621237,
+      "price": 12504.0791015625,
+      "chg_pct": -6.359494854341078,
       "signal": -1,
-      "note": "-6.27%",
+      "note": "-6.36%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.489999771118164,
-      "chg_pct": -0.6027750485229948,
+      "price": 16.6200008392334,
+      "chg_pct": 0.18083596365023527,
       "signal": 1,
-      "note": "VIX=16.5(低恐慌)",
+      "note": "VIX=16.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 68733.1484375,
-      "chg_pct": -2.4715338282268915,
-      "signal": -1,
-      "note": "-2.47%",
+      "price": 70474.9609375,
+      "chg_pct": 0.5889622598273836,
+      "signal": 1,
+      "note": "+0.59%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7648.08984375,
-      "chg_pct": -7.892182852207277,
+      "price": 8303.41015625,
+      "chg_pct": -2.0417709111470663,
       "signal": -1,
-      "note": "-7.89%",
+      "note": "-2.04%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23055.029296875,
-      "chg_pct": 0.7604983046640219,
-      "signal": 1,
-      "note": "+0.76%",
+      "price": 22881.01953125,
+      "chg_pct": -0.6325712531150177,
+      "signal": -1,
+      "note": "-0.63%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 4028.90380859375,
-      "chg_pct": -2.031419731956415,
-      "signal": -1,
-      "note": "-2.03%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46744.16015625,
-      "chg_pct": -0.5845045481542073,
-      "signal": -1,
-      "note": "-0.58%",
+      "price": 47018.98828125,
+      "chg_pct": 1.9361745317864238,
+      "signal": 1,
+      "note": "+1.94%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.19300079345703,
-      "chg_pct": -0.19429785716274411,
-      "signal": 0,
-      "note": "-0.19%(中性)",
+      "price": 100.85399627685547,
+      "chg_pct": -0.5286548141035818,
+      "signal": 1,
+      "note": "-0.53%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4077.89990234375,
-      "chg_pct": 0.2359671951529298,
-      "signal": 0,
-      "note": "+0.24%()",
+      "price": 4136.5,
+      "chg_pct": 1.6763746614884025,
+      "signal": -1,
+      "note": "+1.68%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 67.16999816894531,
-      "chg_pct": -2.0559982858893586,
-      "signal": -1,
-      "note": "-2.06%",
+      "price": 68.58999633789062,
+      "chg_pct": 0.014573500392372029,
+      "signal": 0,
+      "note": "+0.01%",
       "desc": "油漲→通膨預期"
+    },
+    "美債10Y": {
+      "category": "債券",
+      "price": 4.484999656677246,
+      "chg_pct": 2.584616505479646,
+      "signal": 0,
+      "note": "4.48%(+2.58%)",
+      "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 61335.078125,
-      "chg_pct": 2.21872822808884,
+      "price": 61660.69921875,
+      "chg_pct": 2.761396063605912,
       "signal": 1,
-      "note": "+2.22%",
+      "note": "+2.76%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "US won't renew trade deal with Mexico and Canada that Trump struck in 1st term -",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump wants to ditch his signature trade deal. It’s not that easy - CNN",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Former White House ethics lawyer on Trump's $1B crypto earnings - NPR",
+      "title": "Why has Trump refused to renew the USMCA, and what will that mean? - Al Jazeera",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he’s profiting ‘because the stock market’s going up’ - The Washington",
+      "title": "Trump says 'everybody's profiting' from recent market rallies — but it’s mostly ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "CNBC Daily Open: Trump’s 'best' trade deal gets another look - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Former ethics lawyer says Trump's crypto poses 'clear conflict of interest' - NP",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump refuses to renew USMCA trade pact, toppling one of the last pillars of sta",
+      "title": "Trump: Gas prices not falling fast enough - The Hill",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "How crypto, real estate and watches added up for Trump last year - PBS",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s attention drifts to 250th even after House floor meltdown - Roll Call",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -483,21 +491,33 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What's Going on With Taiwan Semiconductor Stock Wednesday? - Benzinga",
+      "title": "US unlikely to match TSMC’s Taiwan production capacity: minister - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "U.S. unlikely to match TSMC's Taiwan production capacity: minister - Focus Taiwa",
+      "title": "What's Going on With Taiwan Semiconductor Stock Thursday? - Taiwan Semiconductor",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Should You Buy Taiwan Semiconductor Manufacturing Company Limited (TSM)? - Yahoo",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock May Still Look Cheap On Record AI",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed seen less likely to raise rates as job growth slows - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Cooler June jobs report to keep Fed focused on inflation, with possibility of hi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -507,19 +527,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Warsh tells Wall Street to stop looking to the Fed for clues on interest rates —",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "U.S. dollar softens ahead of U.S. jobs data as Fed rate hike expectations build ",
+      "title": "Federal Reserve Interest Rate Decision July 2026: Market Impact Analysis - Intel",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
