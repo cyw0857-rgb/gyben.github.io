@@ -226,11 +226,19 @@ tr:hover td{background:rgba(255,255,255,.014)}
 .two-col>.card,.two-col>[id$="-card"],.two-col>.j10-card{margin-bottom:12px}
 .two-col>div>div.card{height:100%;box-sizing:border-box}
 
+/* 個股卡 RWD：讓內部 grid/flex 子項可縮小，避免 overflow:hidden 把內容切掉（Safari/iPhone）*/
+.stock-premium-card{max-width:100%;box-sizing:border-box}
+.stock-premium-card,.stock-premium-card *{min-width:0}
+.stock-premium-card table{max-width:100%}
+
 /* ── Responsive ────────────────────────────────────── */
 @media(max-width:700px){
   .row3{grid-template-columns:repeat(3,1fr)}
   .intl-grid{grid-template-columns:repeat(2,1fr)}
   .two-col{grid-template-columns:1fr}
+  /* 個股卡：雙欄→單欄、持股四欄→兩欄，防止手機被切 */
+  .stock-premium-card div[style*="1fr 1fr"]{grid-template-columns:1fr !important}
+  .stock-premium-card div[style*="repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr) !important}
 }
 @media(max-width:400px){
   .row3{grid-template-columns:1fr 1fr}
@@ -1909,31 +1917,31 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
             <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
           </tr>
-          <tr><td colspan="5" style="color:#4b5563;text-align:center;padding:8px">暫無資料</td></tr>
+          <tr><td style="color:#94a3b8;padding:4px 3px">07/03</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-7403k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-6391k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+1810k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-11983k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">07/02</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+6208k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-6969k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+690k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-70k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">07/01</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1967k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-3896k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-22k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-5884k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/30</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-18346k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+749k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1165k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-18761k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/29</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2701k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+3370k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2833k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-2164k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/28</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-499k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-150k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+106k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-543k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/27</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-5298k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+13354k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+305k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+8363k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">06/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-499k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-150k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+106k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-543k</span></td></tr>
         </table>
         <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
           <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
           <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
-            <span style="font-size:.62rem">外資 <span style="color:#6b7280">─</span></span>
-            <span style="font-size:.62rem">投信 <span style="color:#6b7280">─</span></span>
-            <span style="font-size:.62rem">自營 <span style="color:#6b7280">─</span></span>
+            <span style="font-size:.62rem">外資 <span style="color:#ef4444">-24207k</span></span>
+            <span style="font-size:.62rem">投信 <span style="color:#ef4444">-13137k</span></span>
+            <span style="font-size:.62rem">自營 <span style="color:#ef4444">-1518k</span></span>
           </div>
           <div style="display:flex;gap:5px;flex-wrap:wrap">
-            <div style="background:#9ca3af22;border:1px solid #9ca3af;
+            <div style="background:#ef444422;border:1px solid #ef4444;
                         border-radius:5px;padding:2px 7px;font-size:.65rem;
-                        font-weight:700;color:#9ca3af">法人 ─</div>
+                        font-weight:700;color:#ef4444">法人 偏空</div>
             <div style="background:#9ca3af22;border:1px solid #9ca3af;
                         border-radius:5px;padding:2px 7px;font-size:.65rem;
                         font-weight:700;color:#9ca3af">散戶 冷清（量縮）</div>
-            
+            <div style="background:#ef444422;border:1px solid #ef4444;border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:#ef4444">📉 投信連賣 3 日</div>
           </div>
-          
+          <div style="margin-top:6px;font-size:.6rem;color:#ef4444">💡 投信連賣，籌碼鬆動要當心</div>
         </div>
       </div>
     </div>
   </div>
 
-  
+  <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px"><div style="font-size:.6rem;color:#6b7280;margin-bottom:6px">💳 融資融券（散戶槓桿）</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:7px"><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融資餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">85,061</div><div style="font-size:.6rem">5日 <span style="color:#10b981">-1,408</span></div></div><div style="background:#162032;border-radius:8px;padding:8px"><div style="font-size:.56rem;color:#6b7280">融券餘額（張）</div><div style="font-size:.95rem;font-weight:800;color:#e2e8f0">0</div><div style="font-size:.6rem">5日 <span style="color:#f59e0b">-2,076</span></div></div></div><div style="font-size:.66rem;color:#10b981;font-weight:600">融資5日減少（散戶退場，籌碼沉澱）</div></div>
 
   <!-- 散戶情緒 -->
   <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:10px">

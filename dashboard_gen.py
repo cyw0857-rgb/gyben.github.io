@@ -10,6 +10,7 @@ SIGNAL_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data",
 STOCK_PATH       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2645.json")
 STOCK2_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2408.json")
 STOCK_CHIPS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips.json")
+STOCK2_CHIPS_PATH= os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips_2408.json")
 DCA_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
 OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 
@@ -61,6 +62,15 @@ def load_data():
     if os.path.exists(STOCK2_PATH):
         with open(STOCK2_PATH, encoding="utf-8") as f:
             stock2 = json.load(f)
+    # 合併南亞科籌碼面（三大法人 + 融資融券），與航太同規格
+    if stock2 and os.path.exists(STOCK2_CHIPS_PATH):
+        with open(STOCK2_CHIPS_PATH, encoding="utf-8") as f:
+            chips2 = json.load(f)
+        if chips2.get("inst"):
+            stock2["inst"] = chips2["inst"]
+        if chips2.get("margin"):
+            stock2["margin"] = chips2["margin"]
+        stock2["chips_updated"] = chips2.get("updated", "")
     if stock2 and STOCK2_HOLDING.get("shares"):
         stock2["holding"] = dict(STOCK2_HOLDING)
 
@@ -2697,11 +2707,19 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 .two-col>.card,.two-col>[id$="-card"],.two-col>.j10-card{{margin-bottom:12px}}
 .two-col>div>div.card{{height:100%;box-sizing:border-box}}
 
+/* 個股卡 RWD：讓內部 grid/flex 子項可縮小，避免 overflow:hidden 把內容切掉（Safari/iPhone）*/
+.stock-premium-card{{max-width:100%;box-sizing:border-box}}
+.stock-premium-card,.stock-premium-card *{{min-width:0}}
+.stock-premium-card table{{max-width:100%}}
+
 /* ── Responsive ────────────────────────────────────── */
 @media(max-width:700px){{
   .row3{{grid-template-columns:repeat(3,1fr)}}
   .intl-grid{{grid-template-columns:repeat(2,1fr)}}
   .two-col{{grid-template-columns:1fr}}
+  /* 個股卡：雙欄→單欄、持股四欄→兩欄，防止手機被切 */
+  .stock-premium-card div[style*="1fr 1fr"]{{grid-template-columns:1fr !important}}
+  .stock-premium-card div[style*="repeat(4,1fr)"]{{grid-template-columns:repeat(2,1fr) !important}}
 }}
 @media(max-width:400px){{
   .row3{{grid-template-columns:1fr 1fr}}
