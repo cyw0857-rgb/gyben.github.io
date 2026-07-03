@@ -29,8 +29,8 @@ COMMISSION      = 50    # 手續費（來回，微型台指約 NT$50）
 SLIPPAGE        = 1     # 滑價估計 1 點
 STOP_LOSS       = 20    # 停損點數（-NT$200）
 STOP_PROFIT     = 40    # 停利點數（+NT$400）1:2 風報比
-THRESHOLD_BASE  = 7     # 基礎進場門檻（保守，追求70%勝率）
-THRESHOLD_TIGHT = 10    # 近期連敗時收緊的門檻
+THRESHOLD_BASE  = 6     # 基礎進場門檻（2026-07-03 由7稍微下修至6當過渡值，讓信號更常出手；仍高於夜盤5、偏保守）
+THRESHOLD_TIGHT = 9     # 近期連敗時收緊的門檻（同步由10下修至9，維持與基礎門檻約3分間距）
 
 RECORDS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "records.csv")
 DESKTOP      = os.path.dirname(os.path.abspath(__file__))  # CI: no desktop

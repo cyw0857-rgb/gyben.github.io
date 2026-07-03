@@ -1053,6 +1053,16 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
             res_bg    = "rgba(16,185,129,.15)" if won else "rgba(239,68,68,.15)"
             res_color = "#10b981" if won else "#ef4444"
             res_icon  = "✅ 賺了" if won else "❌ 虧了"
+            # 訊號對照：把這筆交易綁回「哪天的信號、幾分」，讓交易記錄與每日信號對得上
+            sd_raw = str(last.get("signal_date", "")).strip()
+            try:
+                sd_fmt = datetime.strptime(sd_raw, "%Y-%m-%d").strftime("%m/%d")
+            except Exception:
+                sd_fmt = sd_raw or "─"
+            try:
+                ts_txt = f"{int(float(last.get('total_score'))):+d}"
+            except Exception:
+                ts_txt = "─"
             today_html = f"""
             <div class="card">
               <div class="stitle">最近一筆實際交易 · {tdate} {dir_zh}</div>
@@ -1071,6 +1081,10 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
                           padding:14px;text-align:center;font-size:1.5rem;font-weight:800;margin-top:12px">
                 {res_icon} NT${abs(pnl_v):,.0f}
                 <span style="font-size:.9rem;opacity:.8">&ensp;（{pts_v:+.0f} 點）</span>
+              </div>
+              <div style="margin-top:10px;background:#0b1220;border:1px solid #1e3050;border-radius:10px;padding:10px 12px;font-size:.72rem;color:#94a3b8;line-height:1.7">
+                🔗 <b style="color:#cbd5e1">訊號對照</b>：這筆由 <b style="color:#e2e8f0">{sd_fmt} 收盤信號</b>觸發（總分 <b style="color:{res_color}">{ts_txt}</b> 達門檻 → {dir_zh}），隔一交易日 <b style="color:#e2e8f0">{tdate}</b> 進場。<br>
+                <span style="color:#64748b">※ 與最上方每日「明日信號」是<b>不同日期</b>；今天若顯示「觀望」，只代表<b>今天</b>分數未過門檻，與這筆已完成的交易不衝突。</span>
               </div>
             </div>"""
         else:
