@@ -653,6 +653,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
                 🔗 <b style="color:#cbd5e1">訊號對照</b>：這筆由 <b style="color:#e2e8f0">06/24 收盤信號</b>觸發（總分 <b style="color:#10b981">+7</b> 達門檻 → 做多▲），隔一交易日 <b style="color:#e2e8f0">06/29</b> 進場。<br>
                 <span style="color:#64748b">※ 與最上方每日「明日信號」是<b>不同日期</b>；今天若顯示「觀望」，只代表<b>今天</b>分數未過門檻，與這筆已完成的交易不衝突。</span>
               </div>
+              <div style="margin-top:8px;background:#0b1220;border:1px solid #1e3050;border-radius:10px;padding:10px 12px"><div style="font-size:.62rem;color:#6b7280;margin-bottom:7px">📊 這天各版本怎麼看（06/24，越上面越嚴格）</div><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:5px"><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">共識版</span><span style="font-size:.66rem;font-weight:700;color:#6b7280">觀望─</span></div><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">精選版</span><span style="font-size:.66rem;font-weight:700;color:#6b7280">觀望─</span></div><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">精準版</span><span style="font-size:.66rem;font-weight:700;color:#6b7280">觀望─</span></div><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">優化版</span><span style="font-size:.66rem;font-weight:700;color:#6b7280">觀望─</span></div><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">高頻版</span><span style="font-size:.66rem;font-weight:700;color:#6b7280">觀望─</span></div><div style="display:flex;justify-content:space-between;align-items:center;background:#101a2e;border-radius:6px;padding:5px 8px"><span style="font-size:.66rem;color:#cbd5e1">超高頻版</span><span style="font-size:.66rem;font-weight:700;color:#ef4444">做多▲</span></div></div><div style="font-size:.56rem;color:#475569;margin-top:7px;line-height:1.5">💡 那天只有較寬鬆的版本過關做多，你這筆就是跟到它；嚴格的版本條件更多，那天沒達標所以觀望。</div></div>
             </div>
     
         <div class="card">
@@ -1253,12 +1254,20 @@ tr:hover td{background:rgba(255,255,255,.014)}
     }
     return out;
   }
+  function fetchT(u,ms){   /* 帶逾時的 fetch：proxy 卡住不回應時強制中止，避免新聞永遠停在「更新中…」*/
+    return new Promise(function(res,rej){
+      var done=false;
+      var to=setTimeout(function(){ if(!done){ done=true; rej(new Error('timeout')); } }, ms||5000);
+      fetch(u).then(function(r){ if(!done){ done=true; clearTimeout(to); res(r); } },
+                    function(e){ if(!done){ done=true; clearTimeout(to); rej(e); } });
+    });
+  }
   function fetchFeed(cfg){
     var raw=rssUrl(cfg.q);
     function tryP(idx){
       if(idx>=PROXIES.length) return Promise.resolve([]);
       var p=PROXIES[idx];
-      return fetch(p.make(raw)).then(function(r){
+      return fetchT(p.make(raw),5000).then(function(r){
         if(!r.ok) throw new Error('http '+r.status);
         return r.text();
       }).then(function(text){
@@ -1292,18 +1301,15 @@ tr:hover td{background:rgba(255,255,255,.014)}
   }
   window.newsLoad=function(){
     document.getElementById('news-meta').textContent='更新中…';
+    /* ① 先立刻顯示可靠的靜態 news.json，確保新聞區永遠不空白/不卡住（除非 live 已成功接手）*/
+    fetch('data/news.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(function(d){ if(d && !window.__newsLive){ render(d); } })
+      .catch(function(){});
+    /* ② 再嘗試 live 新聞（每個 proxy 都有 5 秒逾時），成功就升級覆蓋 */
     fetchLiveNews()
-      .then(function(d){
-        if(d){ render(d); return; }
-        /* fallback：讀靜態 news.json */
-        return fetch('data/news.json?_='+Date.now())
-          .then(function(r){return r.json();}).then(render);
-      })
-      .catch(function(){
-        fetch('data/news.json?_='+Date.now())
-          .then(function(r){return r.json();}).then(render)
-          .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
-      });
+      .then(function(d){ if(d){ window.__newsLive=true; render(d); } })
+      .catch(function(){ /* live 失敗沒關係，① 的靜態新聞已經顯示 */ });
   };
   newsLoad();
   setInterval(newsLoad,300000);   /* 每5分鐘即時刷新 */

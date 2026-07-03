@@ -1073,6 +1073,39 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
                 ts_txt = f"{int(float(last.get('total_score'))):+d}"
             except Exception:
                 ts_txt = "─"
+            # 當天各版本怎麼看（誰跟單、誰觀望）— 解決「看不懂哪個訊號進去買」的困惑
+            ver_map = [("real_cons", "共識版"), ("real_vsel", "精選版"), ("real_v100", "精準版"),
+                       ("real_v70", "優化版"), ("real_v60", "高頻版"), ("real_v50", "超高頻版")]
+            version_chips = ""
+            try:
+                sd_rows = records[records["signal_date"].astype(str) == sd_raw]
+                by_status = {}
+                for _, rr in sd_rows.iterrows():
+                    stt = str(rr.get("status", "")).replace("_skip", "")
+                    by_status[stt] = str(rr.get("direction_zh", "觀望─"))
+                for code, nm in ver_map:
+                    stance = by_status.get(code, "—")
+                    if "做多" in stance:   col = "#ef4444"
+                    elif "做空" in stance: col = "#22c55e"
+                    elif stance == "—":    col = "#475569"
+                    else:                  col = "#6b7280"
+                    version_chips += (
+                        f'<div style="display:flex;justify-content:space-between;align-items:center;'
+                        f'background:#101a2e;border-radius:6px;padding:5px 8px">'
+                        f'<span style="font-size:.66rem;color:#cbd5e1">{nm}</span>'
+                        f'<span style="font-size:.66rem;font-weight:700;color:{col}">{e(stance)}</span></div>')
+            except Exception:
+                version_chips = ""
+            version_block = (
+                f'<div style="margin-top:8px;background:#0b1220;border:1px solid #1e3050;'
+                f'border-radius:10px;padding:10px 12px">'
+                f'<div style="font-size:.62rem;color:#6b7280;margin-bottom:7px">'
+                f'📊 這天各版本怎麼看（{sd_fmt}，越上面越嚴格）</div>'
+                f'<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:5px">{version_chips}</div>'
+                f'<div style="font-size:.56rem;color:#475569;margin-top:7px;line-height:1.5">'
+                f'💡 那天只有較寬鬆的版本過關做多，你這筆就是跟到它；嚴格的版本條件更多，那天沒達標所以觀望。</div>'
+                f'</div>'
+            ) if version_chips else ""
             today_html = f"""
             <div class="card">
               <div class="stitle">最近一筆實際交易 · {tdate} {dir_zh}</div>
@@ -1096,6 +1129,7 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
                 🔗 <b style="color:#cbd5e1">訊號對照</b>：這筆由 <b style="color:#e2e8f0">{sd_fmt} 收盤信號</b>觸發（總分 <b style="color:{res_color}">{ts_txt}</b> 達門檻 → {dir_zh}），隔一交易日 <b style="color:#e2e8f0">{tdate}</b> 進場。<br>
                 <span style="color:#64748b">※ 與最上方每日「明日信號」是<b>不同日期</b>；今天若顯示「觀望」，只代表<b>今天</b>分數未過門檻，與這筆已完成的交易不衝突。</span>
               </div>
+              {version_block}
             </div>"""
         else:
             today_html = """<div class="card">
@@ -2080,12 +2114,20 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
     }
     return out;
   }
+  function fetchT(u,ms){   /* 帶逾時的 fetch：proxy 卡住不回應時強制中止，避免新聞永遠停在「更新中…」*/
+    return new Promise(function(res,rej){
+      var done=false;
+      var to=setTimeout(function(){ if(!done){ done=true; rej(new Error('timeout')); } }, ms||5000);
+      fetch(u).then(function(r){ if(!done){ done=true; clearTimeout(to); res(r); } },
+                    function(e){ if(!done){ done=true; clearTimeout(to); rej(e); } });
+    });
+  }
   function fetchFeed(cfg){
     var raw=rssUrl(cfg.q);
     function tryP(idx){
       if(idx>=PROXIES.length) return Promise.resolve([]);
       var p=PROXIES[idx];
-      return fetch(p.make(raw)).then(function(r){
+      return fetchT(p.make(raw),5000).then(function(r){
         if(!r.ok) throw new Error('http '+r.status);
         return r.text();
       }).then(function(text){
@@ -2119,18 +2161,15 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
   }
   window.newsLoad=function(){
     document.getElementById('news-meta').textContent='更新中…';
+    /* ① 先立刻顯示可靠的靜態 news.json，確保新聞區永遠不空白/不卡住（除非 live 已成功接手）*/
+    fetch('data/news.json?_='+Date.now())
+      .then(function(r){return r.json();})
+      .then(function(d){ if(d && !window.__newsLive){ render(d); } })
+      .catch(function(){});
+    /* ② 再嘗試 live 新聞（每個 proxy 都有 5 秒逾時），成功就升級覆蓋 */
     fetchLiveNews()
-      .then(function(d){
-        if(d){ render(d); return; }
-        /* fallback：讀靜態 news.json */
-        return fetch('data/news.json?_='+Date.now())
-          .then(function(r){return r.json();}).then(render);
-      })
-      .catch(function(){
-        fetch('data/news.json?_='+Date.now())
-          .then(function(r){return r.json();}).then(render)
-          .catch(function(){document.getElementById('news-meta').textContent='載入失敗';});
-      });
+      .then(function(d){ if(d){ window.__newsLive=true; render(d); } })
+      .catch(function(){ /* live 失敗沒關係，① 的靜態新聞已經顯示 */ });
   };
   newsLoad();
   setInterval(newsLoad,300000);   /* 每5分鐘即時刷新 */
