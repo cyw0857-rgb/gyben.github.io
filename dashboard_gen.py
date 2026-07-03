@@ -8,6 +8,7 @@ from datetime import datetime
 RECORDS_PATH  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "records.csv")
 SIGNAL_PATH   = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "signal.json")
 STOCK_PATH       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2645.json")
+STOCK2_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_2408.json")
 STOCK_CHIPS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips.json")
 DCA_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
 OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
@@ -16,6 +17,10 @@ OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ind
 # fee_rate 手續費率 0.1425%；fee_disc 折數（國泰網路下單 2.8折=0.28）；tax_rate 證交稅 0.3%
 STOCK_HOLDING = {"shares": 3435, "avg_cost": 167.3,
                  "fee_rate": 0.001425, "fee_disc": 0.28, "tax_rate": 0.003}
+
+# 南亞科(2408) 自有持股（手動設定）— 同國泰證券費率
+STOCK2_HOLDING = {"shares": 2000, "avg_cost": 380.79,
+                  "fee_rate": 0.001425, "fee_disc": 0.28, "tax_rate": 0.003}
 
 def load_data():
     signal = {}
@@ -51,12 +56,20 @@ def load_data():
     if stock and STOCK_HOLDING.get("shares"):
         stock["holding"] = dict(STOCK_HOLDING)
 
+    # 南亞科(2408) — 同規格個股卡（無 chips 資料，僅技術面+持股+預測）
+    stock2 = {}
+    if os.path.exists(STOCK2_PATH):
+        with open(STOCK2_PATH, encoding="utf-8") as f:
+            stock2 = json.load(f)
+    if stock2 and STOCK2_HOLDING.get("shares"):
+        stock2["holding"] = dict(STOCK2_HOLDING)
+
     dca = {}
     if os.path.exists(DCA_PATH):
         with open(DCA_PATH, encoding="utf-8") as f:
             dca = json.load(f)
 
-    return signal, records, stock, dca
+    return signal, records, stock, dca, stock2
 
 def e(s):
     return str(s).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
@@ -64,8 +77,8 @@ def e(s):
 def pnl_color(v):
     return "#10b981" if v >= 0 else "#ef4444"
 
-def stock_card_html(stock):
-    """長榮航太 (2645.TW) 看板卡片 — 左右雙欄美化版"""
+def stock_card_html(stock, prefix="", icon="✈️", evkey="__EV"):
+    """個股看板卡片 — 左右雙欄美化版（prefix 用於避免多張卡 id 撞車）"""
     if not stock:
         return ""
 
@@ -215,16 +228,16 @@ def stock_card_html(stock):
             f'<div><div style="font-size:.56rem;color:#64748b">投入成本</div>'
             f'<div style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_invest:,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">目前市值</div>'
-            f'<div id="ev-hval" style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
+            f'<div id="{prefix}ev-hval" style="font-size:.8rem;font-weight:800;color:#cbd5e1">${h_value:,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">淨損益</div>'
-            f'<div id="ev-hpnl" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
+            f'<div id="{prefix}ev-hpnl" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_arr}${abs(h_pnl):,.0f}</div></div>'
             f'<div><div style="font-size:.56rem;color:#64748b">報酬率</div>'
-            f'<div id="ev-hret" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
+            f'<div id="{prefix}ev-hret" style="font-size:.8rem;font-weight:800;color:{h_col}">{h_ret:+.2f}%</div></div>'
             f'</div>'
             f'<div style="font-size:.54rem;color:#475569;margin-top:6px;text-align:right">'
             f'淨損益＝現價市值已扣手續費(2.8折)+證交稅，貼近國泰實際參考損益</div>'
             f'</div>'
-            f'<script>window.__EV={{sym:"{symbol}",shares:{h_sh},invest:{h_invest:.2f},'
+            f'<script>window.{evkey}={{sym:"{symbol}",shares:{h_sh},invest:{h_invest:.2f},'
             f'fee:{h_fee},disc:{h_disc},tax:{h_tax}}};</script>'
         )
 
@@ -266,9 +279,9 @@ def stock_card_html(stock):
   <!-- 標題列 -->
   <div style="background:linear-gradient(90deg,#162032,#0e1829);
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
-    <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ {e(name)} ({e(symbol)})</div>
+    <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">{icon} {e(name)} ({e(symbol)})</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="ev-updated" style="font-size:.6rem;color:#64748b">{e(updated)} 更新</span>
+      <span id="{prefix}ev-updated" style="font-size:.6rem;color:#64748b">{e(updated)} 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -278,12 +291,12 @@ def stock_card_html(stock):
   {holding_html}
 
   <!-- 三大法人估算成本均價（JS 由 data/stock_cost_est.json 即時渲染 + 即時股價算價差）-->
-  <div id="inst-cost-box" style="display:none;background:#080f1e;border:1px solid #1e3050;border-radius:10px;padding:11px 12px;margin-bottom:12px">
+  <div id="{prefix}inst-cost-box" style="display:none;background:#080f1e;border:1px solid #1e3050;border-radius:10px;padding:11px 12px;margin-bottom:12px">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
       <span style="font-size:.7rem;font-weight:800;color:#e2e8f0">🏦 三大法人估算成本均價</span>
-      <span id="inst-cost-meta" style="font-size:.54rem;color:#64748b">載入中…</span>
+      <span id="{prefix}inst-cost-meta" style="font-size:.54rem;color:#64748b">載入中…</span>
     </div>
-    <div id="inst-cost-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center"></div>
+    <div id="{prefix}inst-cost-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center"></div>
     <div style="font-size:.5rem;color:#475569;margin-top:7px;line-height:1.4">
       ⚠️ 公開資料(證交所每日買賣超×當日均價)統計推估，自上市2023/03起算、期初持股假設0、未做除權息還原，
       不含當沖/借券/自營避險 → 僅供觀察趨勢，<b>非真實成本、勿作接刀依據</b>
@@ -296,8 +309,8 @@ def stock_card_html(stock):
     <!-- 左：價格 + 信號 + 指標 -->
     <div>
       <div style="background:#080f1e;border-radius:10px;padding:12px;margin-bottom:8px;text-align:center">
-        <div id="ev-price" style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
-        <div id="ev-chg" style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
+        <div id="{prefix}ev-price" style="font-size:1.7rem;font-weight:900;letter-spacing:-.5px">NT${last_close:.1f}</div>
+        <div id="{prefix}ev-chg" style="font-size:.9rem;font-weight:700;color:{chg_color};margin-top:2px">{chg_arrow} {chg_pct:+.2f}%</div>
         <div style="font-size:.6rem;color:#475569;margin-top:4px">MA5 {ma5:.1f} · MA20 {ma20:.1f} · MA60 {ma60:.1f}</div>
       </div>
       <div style="background:{sig_color}1a;border:1.5px solid {sig_color};
@@ -620,7 +633,7 @@ def dca_card_html(dca):
 </div>"""
 
 
-def generate_html(signal, records, stock=None, dca=None):
+def generate_html(signal, records, stock=None, dca=None, stock2=None):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     sig_generated_at = signal.get("generated_at", now)
     stock_updated    = (stock or {}).get("updated", "─")
@@ -2103,6 +2116,9 @@ def generate_html(signal, records, stock=None, dca=None):
     # ── 長榮航太看板 ─────────────────────────────────────
     stock_html = stock_card_html(stock or {})
 
+    # ── 南亞科看板（同規格，id 前綴 n2_ 避免撞車）─────────
+    stock2_html = stock_card_html(stock2 or {}, prefix="n2_", icon="💾", evkey="__EV2")
+
     # ── 定期定額追蹤 ─────────────────────────────────────
     dca_html = dca_card_html(dca or {})
 
@@ -2811,8 +2827,11 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 <!-- ══════════════ 定期定額（009816 + 00992A）══════════ -->
 {dca_html}
 
-<!-- ══════════════ 長榮航太（最後）══════════════════ -->
+<!-- ══════════════ 長榮航太 ══════════════════ -->
 {stock_html}
+
+<!-- ══════════════ 南亞科（最後）══════════════════ -->
+{stock2_html}
 
 <!-- ══════════════ FOOTER ════════════════════════════ -->
 <div style="text-align:center;color:var(--muted);font-size:.62rem;
@@ -2930,6 +2949,26 @@ function toggleAcc(btnEl) {{
     }}).catch(function(){{}});  /* 抓不到保留 build 值，不顯示 NaN */
   }}
 
+  /* 南亞科：與航太同機制的即時股價/持股損益（只更新 n2_ 前綴元素）*/
+  function updEV2(){{
+    var ev=window.__EV2; if(!ev||!ev.sym) return;
+    q1(ev.sym).then(function(r){{
+      var p=r.price, chg=(r.prev>0)?(p-r.prev)/r.prev*100:0;
+      setTxt('n2_ev-price','NT$'+fmtN(p,1));
+      var ce=document.getElementById('n2_ev-chg');
+      if(ce){{ce.textContent=(chg>=0?'▲ +':'▼ ')+fmtN(chg,2)+'%'; ce.style.color=chg>=0?'#10b981':'#ef4444';}}
+      if(ev.shares>0 && ev.invest>0){{
+        var val=p*ev.shares;
+        var pnl=val - val*ev.fee*ev.disc - val*ev.tax - ev.invest - ev.invest*ev.fee*ev.disc;
+        var ret=pnl/ev.invest*100, col=pnl>=0?'#10b981':'#ef4444';
+        setTxt('n2_ev-hval','$'+fmtN(val,0));
+        var pe=document.getElementById('n2_ev-hpnl'); if(pe){{pe.textContent=(pnl>=0?'▲$':'▼$')+fmtN(Math.abs(pnl),0); pe.style.color=col;}}
+        var re=document.getElementById('n2_ev-hret'); if(re){{re.textContent=(ret>=0?'+':'')+fmtN(ret,2)+'%'; re.style.color=col;}}
+      }}
+      setTxt('n2_ev-updated','報價 '+hhmm()+' 即時');
+    }}).catch(function(){{}});
+  }}
+
   /* 定期定額：兩檔即時股價/漲跌（00992A 抓不到就保留 build 值）*/
   function updDCA(){{
     var els=document.querySelectorAll('[id^="dca-last-"]');
@@ -2970,7 +3009,7 @@ function toggleAcc(btnEl) {{
       .then(function(d){{window.__INSTCOST=d; window.renderInstCost();}}).catch(function(){{}});
   }}
 
-  function tickHold(){{ updEV(); updDCA(); }}
+  function tickHold(){{ updEV(); updEV2(); updDCA(); }}
   loadInstCost(); tickHold();
   setInterval(tickHold, 30000);          /* 股價每30秒即時 */
   setInterval(loadInstCost, 5*60*1000);  /* 法人成本json每5分鐘檢查(實際每日才變) */
@@ -3019,9 +3058,9 @@ function toggleAcc(btnEl) {{
 
 def main():
     print("📂 載入資料...", flush=True)
-    signal, records, stock, dca = load_data()
+    signal, records, stock, dca, stock2 = load_data()
     print("🎨 產生看板...", flush=True)
-    html = generate_html(signal, records, stock, dca)
+    html = generate_html(signal, records, stock, dca, stock2)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"✅ 看板已儲存: {OUTPUT_PATH}")
