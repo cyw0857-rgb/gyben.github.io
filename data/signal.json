@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-03 20:30",
+  "generated_at": "2026-07-04 16:12",
   "mode": "morning",
   "signal_date": "2026-07-03",
   "trade_date": "2026-07-06",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 2,
-  "intl_score": -2,
+  "intl_score": -1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 3,
   "foreign_fut_net": 3455,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+2) vs 國際(-2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+2) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
   "tw_last_close": 46780.62109375,
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4188.0,
-    "chg_pct": 1.830909162144225,
+    "price_usd": 4187.2998046875,
+    "chg_pct": 1.8138839650900351,
     "signal": -1,
     "level": "warn",
     "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 68.31999969482422,
-    "oil_chg": -0.5386558937709311
+    "oil_usd": 68.77999877929688,
+    "oil_chg": 0.1310181026232943
   },
   "intl_data": {
     "S&P500": {
@@ -335,10 +335,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.949999809265137,
-      "chg_pct": -1.2383889411096942,
+      "price": 16.149999618530273,
+      "chg_pct": -2.652203315314503,
       "signal": 1,
-      "note": "VIX=15.9(低恐慌)",
+      "note": "VIX=16.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -367,8 +367,8 @@
     },
     "上證指數": {
       "category": "A股",
-      "price": 4043.643310546875,
-      "chg_pct": 0.36583789585400084,
+      "price": 4043.64306640625,
+      "chg_pct": 0.36583183612604986,
       "signal": 1,
       "note": "+0.37%",
       "desc": "中國市場情緒"
@@ -383,83 +383,83 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.78099822998047,
-      "chg_pct": -0.07832875262047688,
+      "price": 100.85700225830078,
+      "chg_pct": -0.002972786072414043,
       "signal": 0,
-      "note": "-0.08%(中性)",
+      "note": "-0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4188.0,
-      "chg_pct": 1.830909162144225,
+      "price": 4187.2998046875,
+      "chg_pct": 1.8138839650900351,
       "signal": -1,
-      "note": "+1.83%(避險↑)",
+      "note": "+1.81%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 68.31999969482422,
-      "chg_pct": -0.5386558937709311,
-      "signal": -1,
-      "note": "-0.54%",
+      "price": 68.77999877929688,
+      "chg_pct": 0.1310181026232943,
+      "signal": 0,
+      "note": "+0.13%",
       "desc": "油漲→通膨預期"
     },
     "比特幣": {
       "category": "加密",
-      "price": 61865.1484375,
-      "chg_pct": 0.6177861235507445,
+      "price": 62461.9296875,
+      "chg_pct": 1.588394126467092,
       "signal": 1,
-      "note": "+0.62%",
+      "note": "+1.59%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "‘Ridiculous’ for US to maintain current Nato support, Trump warns ahead of allia",
+      "title": "Trump uses Mount Rushmore speech to allege ‘mortal threat’ from communism - Sout",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says he didn't know about windfall from family's crypto ventures - USA Tod",
+      "title": "A Belgian diamond group is gifting Trump a lavish ring after that industry won t",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump discloses 327 unreported stock trades made a day before his first tariff p",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump’s Huge Windfall Has Few Known Global Precedents - The New York Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says U.S. maintaining current support levels for NATO would be \"ridiculous",
+      "title": "The Trump term? - SCOTUSblog",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says ‘nothing illegal’ about massive crypto profits - The Hill",
+      "title": "Trump says his kids handle his investments: There's 'nothing illegal' - ABC News",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump is threatening a new trade war. The EU should call his bluff - SMH.com.au",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "Trump launches America’s 250th birthday celebrations with partisan attack - The ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Attacks Socialists as He Speaks From Mount Rushmore - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
       "title": "Trump's trade war has a new target: forced labor. The case behind it is far from",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump is threatening a new trade war. The EU should call his bluff - SMH.com.au",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -477,19 +477,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC (NYSE:TSM) Expands 3 Nanometer Capacity Across Taiwan Arizona And Japan - Y",
+      "title": "Baer Investment Advisory LLC Has $2.14 Million Stock Position in Taiwan Semicond",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Pzena Investment Management LLC Cuts Stock Holdings in Taiwan Semiconductor Manu",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Is Taiwan Semiconductor Manufacturing (TSM) Fully Valued Following The Chip Stoc",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan to open representative office in Phoenix: MOFA - Focus Taiwan",
+      "title": "TSMC (NYSE:TSM) Expands 3 Nanometer Capacity Across Taiwan Arizona And Japan - Y",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -501,27 +501,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Gold heads for first weekly rise in five on easing Fed rate hike bets - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
       "title": "Warsh Says Inflation Outlook Has Improved but Won’t Say if Fed Should Hike Rates",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Will the US Dollar Rally Continue? - Morningstar",
+      "title": "Fed seen less likely to raise rates as job growth slows - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed seen less likely to raise rates as job growth slows - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Warsh tells Wall Street to stop looking to the Fed for clues on interest rates —",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
