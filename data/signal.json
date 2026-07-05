@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-04 16:12",
+  "generated_at": "2026-07-05 16:32",
   "mode": "morning",
   "signal_date": "2026-07-03",
   "trade_date": "2026-07-06",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 4,
   "tw_score": 2,
-  "intl_score": -1,
+  "intl_score": 0,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": 3,
   "foreign_fut_net": 3455,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+2) vs 國際(-1) 方向相反 → 觀望",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
   "tw_last_close": 46780.62109375,
@@ -383,10 +383,10 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.85700225830078,
-      "chg_pct": -0.002972786072414043,
-      "signal": 0,
-      "note": "-0.00%(中性)",
+      "price": 100.86000061035156,
+      "chg_pct": -0.522732796614442,
+      "signal": 1,
+      "note": "-0.52%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
@@ -405,49 +405,57 @@
       "note": "+0.13%",
       "desc": "油漲→通膨預期"
     },
+    "美債10Y": {
+      "category": "債券",
+      "price": 4.485000133514404,
+      "chg_pct": 0.22346880659111507,
+      "signal": 0,
+      "note": "4.49%(+0.22%)",
+      "desc": "殖利率高→股市壓力"
+    },
     "比特幣": {
       "category": "加密",
-      "price": 62461.9296875,
-      "chg_pct": 1.588394126467092,
+      "price": 62933.640625,
+      "chg_pct": 0.622665908452866,
       "signal": 1,
-      "note": "+1.59%",
+      "note": "+0.62%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump uses Mount Rushmore speech to allege ‘mortal threat’ from communism - Sout",
+      "title": "Exclusive: Trump says Netanyahu \"knows who the boss is\" ahead of possible WH vis",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "In Mount Rushmore speech, Trump veers from U.S. exceptionalism to warnings about",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "A Belgian diamond group is gifting Trump a lavish ring after that industry won t",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "The Trump term? - SCOTUSblog",
+      "title": "Trump celebrates Fourth of July in National Mall address, repeatedly touches on ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says his kids handle his investments: There's 'nothing illegal' - ABC News",
+      "title": "For America’s 250th, Trump Hosts a Celebration and Derides His Foes - The New Yo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump launches America’s 250th birthday celebrations with partisan attack - The ",
+      "title": "Trump touts America's \"golden age\", attacks communism in delayed July 4th speech",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Attacks Socialists as He Speaks From Mount Rushmore - WSJ",
+      "title": "Donald Trump says after 250 years of America ‘The best is yet to come' - NBC10 P",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -459,15 +467,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump is threatening a new trade war. The EU should call his bluff - SMH.com.au",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "On China, Trump picked the right battle but the wrong strategy - The Guardian",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump is threatening a new trade war. The EU should call his bluff - SMH.com.au",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -477,31 +485,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Baer Investment Advisory LLC Has $2.14 Million Stock Position in Taiwan Semicond",
+      "title": "BIP Wealth LLC Reduces Stock Position in Taiwan Semiconductor Manufacturing Comp",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC’s AI Chip Dominance Strengthens Its Credit Outlook - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Manufacturing (TSM) Fully Valued Following The Chip Stoc",
+      "title": "Taiwan appoints new envoys to Fiji, Peru, first representative to Phoenix - Focu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC (NYSE:TSM) Expands 3 Nanometer Capacity Across Taiwan Arizona And Japan - Y",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Trump says Taiwan is doubling the size of chipmaking plant in Arizona - Fox Busi",
+      "title": "What's Going on With Taiwan Semiconductor Stock Wednesday? - Benzinga",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Warsh Says Inflation Outlook Has Improved but Won’t Say if Fed Should Hike Rates",
+      "title": "3 US Regional Bank Stocks Built For Higher Interest Rates - simplywall.st",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -513,13 +521,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Warsh tells Wall Street to stop looking to the Fed for clues on interest rates —",
+      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
+      "title": "Will New US Fed Chair Kevin Warsh Raise Interest Rates This Year? - Morningstar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
