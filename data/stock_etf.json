@@ -1,0 +1,361 @@
+{
+  "updated": "2026-07-08 00:15",
+  "start_date": "2026-07-07",
+  "etfs": [
+    {
+      "code": "0056",
+      "symbol": "0056.TW",
+      "name": "元大高股息",
+      "months": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "style": "選未來一年高殖利率股，偏電子/AI，攻擊性較強",
+      "drawdown_pct": -1.5,
+      "high_1y": 54.05,
+      "direction": 1,
+      "signal_text": "🟢 明日看漲",
+      "signal_color": "#10b981",
+      "hold_advice": "🟢 續抱偏多 — 逢回可買、不追高",
+      "hold_color": "#10b981",
+      "score": 5,
+      "tech_details": [
+        {
+          "icon": "📈",
+          "text": "均線多頭排列 MA5>MA10>MA20",
+          "score": 3
+        },
+        {
+          "icon": "📈",
+          "text": "RSI=60 多頭健康區",
+          "score": 2
+        },
+        {
+          "icon": "📉",
+          "text": "MACD死叉（零軸上）",
+          "score": -1
+        },
+        {
+          "icon": "📈",
+          "text": "站上MA20支撐",
+          "score": 1
+        }
+      ],
+      "rsi": 60.5,
+      "macd": 1.24,
+      "macds": 1.48,
+      "k": 52.5,
+      "d": 48.9,
+      "ma5": 52.94,
+      "ma10": 52.79,
+      "ma20": 52.01,
+      "ma60": 47.01,
+      "last_close": 53.25,
+      "chg_pct": 0.76,
+      "dividend": {
+        "recent": [
+          {
+            "ex_date": "2025-01-17",
+            "amount": 1.07
+          },
+          {
+            "ex_date": "2025-04-23",
+            "amount": 1.07
+          },
+          {
+            "ex_date": "2025-07-21",
+            "amount": 0.866
+          },
+          {
+            "ex_date": "2025-10-23",
+            "amount": 0.866
+          },
+          {
+            "ex_date": "2026-01-22",
+            "amount": 0.866
+          },
+          {
+            "ex_date": "2026-04-23",
+            "amount": 1.0
+          }
+        ],
+        "latest": {
+          "ex_date": "2026-04-23",
+          "amount": 1.0
+        },
+        "yield_ttm": 6.76,
+        "yield_label": "近12個月",
+        "cum_per_share": 0.0,
+        "cum_amount": 0.0,
+        "cum_count": 0,
+        "cum_list": []
+      },
+      "holding": null
+    },
+    {
+      "code": "00878",
+      "symbol": "00878.TW",
+      "name": "國泰永續高股息",
+      "months": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "style": "ESG＋三年均殖利率，金融+穩健電子，最抗跌",
+      "drawdown_pct": -1.8,
+      "high_1y": 34.12,
+      "direction": 0,
+      "signal_text": "⚪ 暫時整理",
+      "signal_color": "#9ca3af",
+      "hold_advice": "🟡 續抱 — 偏多但不強",
+      "hold_color": "#f59e0b",
+      "score": 1,
+      "tech_details": [
+        {
+          "icon": "📉",
+          "text": "MA5<MA10 短線偏空",
+          "score": -1
+        },
+        {
+          "icon": "📈",
+          "text": "RSI=60 多頭健康區",
+          "score": 2
+        },
+        {
+          "icon": "📉",
+          "text": "MACD死叉（零軸上）",
+          "score": -1
+        },
+        {
+          "icon": "📈",
+          "text": "站上MA20支撐",
+          "score": 1
+        }
+      ],
+      "rsi": 59.9,
+      "macd": 0.93,
+      "macds": 1.16,
+      "k": 43.5,
+      "d": 42.0,
+      "ma5": 33.37,
+      "ma10": 33.39,
+      "ma20": 32.96,
+      "ma60": 28.93,
+      "last_close": 33.49,
+      "chg_pct": 0.48,
+      "dividend": {
+        "recent": [
+          {
+            "ex_date": "2025-02-20",
+            "amount": 0.5
+          },
+          {
+            "ex_date": "2025-05-19",
+            "amount": 0.47
+          },
+          {
+            "ex_date": "2025-08-18",
+            "amount": 0.4
+          },
+          {
+            "ex_date": "2025-11-18",
+            "amount": 0.4
+          },
+          {
+            "ex_date": "2026-02-26",
+            "amount": 0.42
+          },
+          {
+            "ex_date": "2026-05-19",
+            "amount": 0.66
+          }
+        ],
+        "latest": {
+          "ex_date": "2026-05-19",
+          "amount": 0.66
+        },
+        "yield_ttm": 5.61,
+        "yield_label": "近12個月",
+        "cum_per_share": 0.0,
+        "cum_amount": 0.0,
+        "cum_count": 0,
+        "cum_list": []
+      },
+      "holding": null
+    },
+    {
+      "code": "00919",
+      "symbol": "00919.TW",
+      "name": "群益台灣精選高息",
+      "months": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "style": "主打宣告股利精準卡位，殖利率最高",
+      "drawdown_pct": -3.4,
+      "high_1y": 30.81,
+      "direction": 0,
+      "signal_text": "⚪ 暫時整理",
+      "signal_color": "#9ca3af",
+      "hold_advice": "🟠 偏弱 — 逢高調節",
+      "hold_color": "#f59e0b",
+      "score": -1,
+      "tech_details": [
+        {
+          "icon": "📉",
+          "text": "均線空頭排列 MA5<MA10<MA20",
+          "score": -3
+        },
+        {
+          "icon": "📈",
+          "text": "RSI=51 多頭健康區",
+          "score": 2
+        },
+        {
+          "icon": "📉",
+          "text": "MACD死叉（零軸上）",
+          "score": -1
+        },
+        {
+          "icon": "📈",
+          "text": "站上MA20支撐",
+          "score": 1
+        }
+      ],
+      "rsi": 51.0,
+      "macd": 0.57,
+      "macds": 0.83,
+      "k": 25.6,
+      "d": 25.3,
+      "ma5": 29.47,
+      "ma10": 29.74,
+      "ma20": 29.75,
+      "ma60": 26.49,
+      "last_close": 29.76,
+      "chg_pct": 0.78,
+      "dividend": {
+        "recent": [
+          {
+            "ex_date": "2025-03-18",
+            "amount": 0.72
+          },
+          {
+            "ex_date": "2025-06-17",
+            "amount": 0.72
+          },
+          {
+            "ex_date": "2025-09-16",
+            "amount": 0.54
+          },
+          {
+            "ex_date": "2025-12-16",
+            "amount": 0.54
+          },
+          {
+            "ex_date": "2026-03-17",
+            "amount": 0.78
+          },
+          {
+            "ex_date": "2026-06-16",
+            "amount": 1.0
+          }
+        ],
+        "latest": {
+          "ex_date": "2026-06-16",
+          "amount": 1.0
+        },
+        "yield_ttm": 9.61,
+        "yield_label": "近12個月",
+        "cum_per_share": 0.0,
+        "cum_amount": 0.0,
+        "cum_count": 0,
+        "cum_list": []
+      },
+      "holding": null
+    }
+  ],
+  "monthly_calendar": [
+    {
+      "month": 1,
+      "etfs": [
+        "0056"
+      ]
+    },
+    {
+      "month": 2,
+      "etfs": [
+        "00878"
+      ]
+    },
+    {
+      "month": 3,
+      "etfs": [
+        "00919"
+      ]
+    },
+    {
+      "month": 4,
+      "etfs": [
+        "0056"
+      ]
+    },
+    {
+      "month": 5,
+      "etfs": [
+        "00878"
+      ]
+    },
+    {
+      "month": 6,
+      "etfs": [
+        "00919"
+      ]
+    },
+    {
+      "month": 7,
+      "etfs": [
+        "0056"
+      ]
+    },
+    {
+      "month": 8,
+      "etfs": [
+        "00878"
+      ]
+    },
+    {
+      "month": 9,
+      "etfs": [
+        "00919"
+      ]
+    },
+    {
+      "month": 10,
+      "etfs": [
+        "0056"
+      ]
+    },
+    {
+      "month": 11,
+      "etfs": [
+        "00878"
+      ]
+    },
+    {
+      "month": 12,
+      "etfs": [
+        "00919"
+      ]
+    }
+  ],
+  "portfolio": {
+    "cum_per_share_sum": 0.0,
+    "cum_cash_total": 0.0,
+    "cum_count_total": 0
+  }
+}

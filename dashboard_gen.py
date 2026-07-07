@@ -12,6 +12,7 @@ STOCK2_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dat
 STOCK_CHIPS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips.json")
 STOCK2_CHIPS_PATH= os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_chips_2408.json")
 DCA_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "dca.json")
+ETF_PATH         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "stock_etf.json")
 OUTPUT_PATH      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 
 # 長榮航太(2645) 自有持股（手動設定）— 國泰證券
@@ -86,6 +87,115 @@ def e(s):
 
 def pnl_color(v):
     return "#10b981" if v >= 0 else "#ef4444"
+
+
+def etf_card_html(etf):
+    """月月配三劍客 ETF 卡（0056+00878+00919）：技術面同航太/南亞科規格，
+       另加 每次配息金額 + 上線後累計配息 + 逐月除息表。"""
+    if not etf or not etf.get("etfs"):
+        return ""
+    start   = etf.get("start_date", "")
+    updated = etf.get("updated", "")
+    port    = etf.get("portfolio", {})
+
+    # ── 每檔小卡 ──
+    cards = []
+    for s in etf["etfs"]:
+        dv   = s.get("dividend", {})
+        chg  = s.get("chg_pct", 0)
+        cc   = pnl_color(chg)
+        dd   = s.get("drawdown_pct", 0)
+        latest = dv.get("latest") or {}
+        # 上線後累計（依除息日）
+        cum_cnt = dv.get("cum_count", 0)
+        cum_ps  = dv.get("cum_per_share", 0)
+        cum_amt = dv.get("cum_amount", 0)
+        hold    = s.get("holding")
+        if hold:
+            cash_line = (f'<span style="color:#10b981;font-weight:700">累計現金 {cum_amt:,.0f} 元</span>'
+                         f'（{hold["shares"]:,}股）')
+            pnl_c = pnl_color(hold["unreal_pnl"])
+            hold_line = (f'<div style="font-size:.68rem;color:#94a3b8;margin-top:3px">'
+                         f'持股 {hold["shares"]:,}股＠{hold["cost"]}　市值 {hold["market_value"]:,.0f}　'
+                         f'損益 <span style="color:{pnl_c};font-weight:700">'
+                         f'{hold["unreal_pnl"]:+,.0f}（{hold["unreal_pct"]:+.1f}%）</span></div>')
+        else:
+            cash_line = '<span style="color:#64748b">累計現金：設定持股後顯示</span>'
+            hold_line = ''
+        months_str = "、".join(str(m) for m in s.get("months", []))
+        recent = dv.get("recent", [])
+        recent_str = "　".join(f'{r["ex_date"][5:]}<b>{r["amount"]}</b>' for r in recent[-4:])
+
+        cards.append(f"""
+    <div style="background:#0f1e34;border:1px solid #1e3050;border-radius:10px;padding:11px 13px;margin-bottom:9px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div style="font-size:.98rem;font-weight:800;color:#e2e8f0">{e(s.get('code'))}
+          <span style="font-size:.72rem;color:#94a3b8;font-weight:600">{e(s.get('name'))}</span></div>
+        <div style="text-align:right">
+          <span style="font-size:1.05rem;font-weight:800;color:{cc}">{s.get('last_close')}</span>
+          <span style="font-size:.74rem;color:{cc};margin-left:4px">{chg:+.2f}%</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:5px 0 6px">
+        <span style="font-size:.72rem;font-weight:700;color:{e(s.get('signal_color','#9ca3af'))}">{e(s.get('signal_text'))}</span>
+        <span style="font-size:.66rem;color:#f59e0b">距一年高 {dd:.1f}%</span>
+      </div>
+      <div style="font-size:.68rem;color:#94a3b8;line-height:1.7">
+        {e(s.get('hold_advice'))}<br>
+        RSI {s.get('rsi')}　MACD {s.get('macd')}　KD {s.get('k')}/{s.get('d')}　MA5/20/60 {s.get('ma5')}/{s.get('ma20')}/{s.get('ma60')}<br>
+        除息月 <b style="color:#cbd5e1">{months_str}</b>　殖利率 <b style="color:#10b981">{dv.get('yield_ttm')}%</b>
+        <span style="color:#64748b">（{e(dv.get('yield_label',''))}）</span><br>
+        近幾次配息 {recent_str}<br>
+        <span style="color:#cbd5e1">上線後累計：{cum_cnt} 次，每股 <b style="color:#10b981">{cum_ps}</b> 元</span>　{cash_line}
+        {hold_line}
+      </div>
+    </div>""")
+
+    # ── 逐月除息表 ──
+    cal_cells = []
+    for c in etf.get("monthly_calendar", []):
+        etfs_here = "／".join(c["etfs"])
+        cal_cells.append(
+            f'<div style="flex:1 1 30%;min-width:88px;background:#0f1e34;border:1px solid #1e3050;'
+            f'border-radius:7px;padding:5px 7px;text-align:center">'
+            f'<div style="font-size:.62rem;color:#64748b">{c["month"]}月</div>'
+            f'<div style="font-size:.72rem;font-weight:700;color:#93c5fd">{etfs_here}</div></div>')
+    cal_html = "".join(cal_cells)
+
+    port_ps   = port.get("cum_per_share_sum", 0)
+    port_cash = port.get("cum_cash_total", 0)
+    port_cnt  = port.get("cum_count_total", 0)
+
+    return f"""
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+    <div class="stitle" style="margin-bottom:0">💰 月月配三劍客 ETF（0056 ＋ 00878 ＋ 00919）</div>
+    <span style="font-size:.6rem;color:#475569">{e(updated)}</span>
+  </div>
+  <div style="font-size:.64rem;color:#64748b;margin-bottom:9px">
+    三檔季配、除息月份錯開，一年 12 個月月月有息｜自 <b>{e(start)}</b> 起依<b>除息日</b>累計
+  </div>
+
+  {''.join(cards)}
+
+  <div style="margin-top:6px">
+    <div style="font-size:.7rem;font-weight:700;color:#cbd5e1;margin-bottom:5px">🗓️ 逐月除息表（1～12 月全覆蓋）</div>
+    <div style="display:flex;flex-wrap:wrap;gap:5px">{cal_html}</div>
+  </div>
+
+  <div style="margin-top:9px;background:#0f2a1e;border:1px solid #14532d;border-radius:8px;padding:9px 12px">
+    <div style="font-size:.72rem;font-weight:800;color:#10b981">📈 上線後累計配息（三檔合計）</div>
+    <div style="font-size:.7rem;color:#cbd5e1;margin-top:3px">
+      共 <b>{port_cnt}</b> 次除息　每股累計加總 <b style="color:#10b981">{port_ps}</b> 元
+      累計現金 <b style="color:#10b981">{port_cash:,.0f}</b> 元<span style="color:#64748b">（有設定持股才計入）</span>
+    </div>
+  </div>
+
+  <div style="font-size:.58rem;color:#475569;margin-top:8px;line-height:1.6">
+    ⚠️ 資料源 yfinance，配息以「除息日」計（實際入帳約晚 3～4 週）；配息可能含收益平準金／資本利得／本金返還，
+    殖利率為現金分配率、非保證收益。低基期不等於便宜，投資請自行評估風險。
+  </div>
+</div>"""
 
 def stock_card_html(stock, prefix="", icon="✈️", evkey="__EV"):
     """個股看板卡片 — 左右雙欄美化版（prefix 用於避免多張卡 id 撞車）"""
@@ -2182,6 +2292,16 @@ def generate_html(signal, records, stock=None, dca=None, stock2=None):
     # ── 南亞科看板（同規格，id 前綴 n2_ 避免撞車）─────────
     stock2_html = stock_card_html(stock2 or {}, prefix="n2_", icon="💾", evkey="__EV2")
 
+    # 月月配三劍客 ETF 卡（獨立載入，不動 load_data 簽名）
+    etf_data = {}
+    if os.path.exists(ETF_PATH):
+        try:
+            with open(ETF_PATH, encoding="utf-8") as f:
+                etf_data = json.load(f)
+        except Exception:
+            etf_data = {}
+    etf_html = etf_card_html(etf_data or {})
+
     # ── 定期定額追蹤 ─────────────────────────────────────
     dca_html = dca_card_html(dca or {})
 
@@ -2901,8 +3021,11 @@ tr:hover td{{background:rgba(255,255,255,.014)}}
 <!-- ══════════════ 長榮航太 ══════════════════ -->
 {stock_html}
 
-<!-- ══════════════ 南亞科（最後）══════════════════ -->
+<!-- ══════════════ 南亞科 ══════════════════ -->
 {stock2_html}
+
+<!-- ══════════════ 月月配三劍客 ETF（最後）══════════ -->
+{etf_html}
 
 <!-- ══════════════ FOOTER ════════════════════════════ -->
 <div style="text-align:center;color:var(--muted);font-size:.62rem;

@@ -53,6 +53,14 @@ r = subprocess.run(
 if r.returncode != 0:
     print("⚠️  南亞科籌碼抓取失敗（繼續產生看板）")
 
+# 2a5. 執行月月配三劍客 ETF（0056+00878+00919，寫入 data/stock_etf.json）
+r = subprocess.run(
+    [sys.executable, os.path.join(HERE, "stock_etf.py")],
+    cwd=HERE
+)
+if r.returncode != 0:
+    print("⚠️  月月配ETF信號失敗（繼續產生看板）")
+
 # 2b. 更新新聞（同步寫入 data/news.json）
 r = subprocess.run(
     [sys.executable, os.path.join(HERE, "news_fetch.py")],
