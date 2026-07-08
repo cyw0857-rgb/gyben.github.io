@@ -81,8 +81,9 @@ def run():
                 if len(prev_bars) == 0:
                     raise ValueError("no prev day")
                 prev = safe(prev_bars["Close"].iloc[-1])
-                if prev <= 0 or curr <= 0:
-                    raise ValueError("invalid price")
+                # curr/prev 任一為 0（NaN被safe轉換）或curr=prev（今日無成交）→ 跳過，使用舊值
+                if prev <= 0 or curr <= 0 or curr == prev:
+                    raise ValueError(f"invalid price prev={prev} curr={curr}")
                 chg = (curr - prev) / prev * 100
                 results[name] = _build(name, sym, category, desc, prev, curr, chg)
                 arrow = "▲" if results[name]["signal"] == 1 else ("▼" if results[name]["signal"] == -1 else "─")
@@ -117,8 +118,8 @@ def run():
                         raise ValueError("no data")
                     prev = safe(df["Close"].iloc[-2])
                     curr = safe(df["Close"].iloc[-1])
-                    if prev <= 0 or curr <= 0:
-                        raise ValueError("invalid price")
+                    if prev <= 0 or curr <= 0 or curr == prev:
+                        raise ValueError(f"invalid price prev={prev} curr={curr}")
                     chg = (curr - prev) / prev * 100
                     results[name] = _build(name, sym, category, desc, prev, curr, chg)
                     arrow = "▲" if results[name]["signal"] == 1 else ("▼" if results[name]["signal"] == -1 else "─")
