@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 20:00",
+  "updated": "2026-07-09 02:56",
   "inst": {
     "rows": [
       {
@@ -59,13 +59,6 @@
         "total": -187791
       },
       {
-        "date": "06/26",
-        "foreign": 246707,
-        "trust": 1000,
-        "dealer": -1114,
-        "total": 246593
-      },
-      {
         "date": "06/25",
         "foreign": -30799,
         "trust": 2000,
@@ -85,6 +78,13 @@
         "trust": -127000,
         "dealer": 3203,
         "total": 211403
+      },
+      {
+        "date": "06/22",
+        "foreign": 366679,
+        "trust": -120000,
+        "dealer": 9700,
+        "total": 256379
       }
     ],
     "total_foreign": 2171650,
@@ -99,6 +99,13 @@
   },
   "margin": {
     "rows": [
+      {
+        "date": "07/08",
+        "fin_bal": 3676,
+        "fin_chg": 871,
+        "sho_bal": 0,
+        "sho_chg": 0
+      },
       {
         "date": "07/07",
         "fin_bal": 2805,
@@ -135,6 +142,13 @@
         "sho_chg": 59
       },
       {
+        "date": "06/30",
+        "fin_bal": 2811,
+        "fin_chg": 295,
+        "sho_bal": 3,
+        "sho_chg": 3
+      },
+      {
         "date": "06/29",
         "fin_bal": 2516,
         "fin_chg": 119,
@@ -142,11 +156,11 @@
         "sho_chg": -1
       }
     ],
-    "fin_bal": 2805,
+    "fin_bal": 3676,
     "sho_bal": 0,
-    "fin_5chg": -6,
-    "sho_5chg": -3,
-    "note": "融資5日減少（散戶退場，籌碼沉澱）",
-    "note_color": "#10b981"
+    "fin_5chg": 1053,
+    "sho_5chg": -62,
+    "note": "融資5日增加（散戶追價，留意追高）",
+    "note_color": "#f59e0b"
   }
 }
