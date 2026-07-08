@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08 17:16",
+  "generated_at": "2026-07-08 19:59",
   "mode": "morning",
   "signal_date": "2026-07-08",
   "trade_date": "2026-07-09",
   "direction": 0,
-  "total_score": -10,
+  "total_score": -9,
   "tw_score": -1,
   "intl_score": -7,
   "news_score": -2,
-  "psy_score": -1,
-  "inst_score": 0,
+  "psy_score": 1,
+  "inst_score": -1,
   "foreign_fut_net": -1195,
   "foreign_cash_b": 0,
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4064.0,
-    "chg_pct": -1.961252708321996,
+    "price_usd": 4073.39990234375,
+    "chg_pct": -1.7344922136257954,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -2.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 74.98999786376953,
-    "oil_chg": 6.459391346767883
+    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 73.9800033569336,
+    "oil_chg": 5.025554788235569
   },
   "intl_data": {
     "S&P500": {
@@ -335,10 +335,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.360000610351562,
-      "chg_pct": 13.825180195973283,
+      "price": 17.940000534057617,
+      "chg_pct": 11.221335818129036,
       "signal": 1,
-      "note": "VIX=18.4(低恐慌)",
+      "note": "VIX=17.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -383,26 +383,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.14700317382812,
-      "chg_pct": 0.006924841034163907,
+      "price": 101.19000244140625,
+      "chg_pct": 0.04943944241602423,
       "signal": 0,
-      "note": "+0.01%(中性)",
+      "note": "+0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4064.0,
-      "chg_pct": -1.961252708321996,
+      "price": 4073.39990234375,
+      "chg_pct": -1.7344922136257954,
       "signal": 1,
-      "note": "-1.96%()",
+      "note": "-1.73%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 74.98999786376953,
-      "chg_pct": 6.459391346767883,
+      "price": 73.9800033569336,
+      "chg_pct": 5.025554788235569,
       "signal": 1,
-      "note": "+6.46%",
+      "note": "+5.03%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,10 +415,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 61826.80078125,
-      "chg_pct": -2.3233085040711527,
+      "price": 62245.03125,
+      "chg_pct": -1.662569666639986,
       "signal": -1,
-      "note": "-2.32%",
+      "note": "-1.66%",
       "desc": "風險偏好指標"
     }
   },
@@ -461,18 +461,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Encyclopedia Britannica",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Dutch trade minister in China for high-stakes talks on tech war, tariff tensions",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -480,6 +468,18 @@
     {
       "label": "關稅/貿易",
       "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump's trade war has a new target: forced labor. The case behind it is far from",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -497,13 +497,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Fund Update: 332,404 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Sa",
+      "title": "Taiwan shares end up on technical rebound led by TSMC - Focus Taiwan",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Alphabet Vs. Taiwan Semiconductor: What Is The Better Stock To Buy Right Now - 2",
+      "title": "Fund Update: 332,404 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Sa",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed meeting minutes to show 'family fight' over rates. The squabble could drag o",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -522,12 +528,6 @@
     {
       "label": "聯準會",
       "title": "Federal Reserve Interest Rate Decision July 2026: Market Analysis - Intellectia ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Will the Federal Reserve Crush the Small-Cap Stock Revival? - 24/7 Wall St.",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
