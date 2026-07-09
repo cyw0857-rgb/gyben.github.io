@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 19:26",
+  "updated": "2026-07-10 00:13",
   "inst": {
     "rows": [
       {
@@ -24,13 +24,6 @@
         "total": 1339157
       },
       {
-        "date": "07/06",
-        "foreign": -610565,
-        "trust": -2000,
-        "dealer": 85990,
-        "total": -526575
-      },
-      {
         "date": "07/03",
         "foreign": 3470,
         "trust": 0,
@@ -53,10 +46,10 @@
       },
       {
         "date": "06/30",
-        "foreign": 1911597,
-        "trust": 2000,
-        "dealer": 368822,
-        "total": 2282419
+        "foreign": 466993,
+        "trust": -128000,
+        "dealer": -11739,
+        "total": 327254
       },
       {
         "date": "06/29",
@@ -67,10 +60,10 @@
       },
       {
         "date": "06/26",
-        "foreign": 246707,
-        "trust": 1000,
-        "dealer": -1114,
-        "total": 246593
+        "foreign": 466993,
+        "trust": -128000,
+        "dealer": -11739,
+        "total": 327254
       },
       {
         "date": "06/25",
@@ -85,12 +78,19 @@
         "trust": 0,
         "dealer": 638,
         "total": 166906
+      },
+      {
+        "date": "06/22",
+        "foreign": 366679,
+        "trust": -120000,
+        "dealer": 9700,
+        "total": 256379
       }
     ],
-    "total_foreign": 1346923,
-    "total_trust": 1000,
-    "total_dealer": 222959,
-    "net5": 1570882,
+    "total_foreign": 4076885,
+    "total_trust": -5900,
+    "total_dealer": 28501,
+    "net5": 4099486,
     "mood": "偏多",
     "trust_streak": -2,
     "streak_label": "📉 投信連賣 2 日",
@@ -99,6 +99,13 @@
   },
   "margin": {
     "rows": [
+      {
+        "date": "07/09",
+        "fin_bal": 3786,
+        "fin_chg": 110,
+        "sho_bal": 0,
+        "sho_chg": 0
+      },
       {
         "date": "07/08",
         "fin_bal": 3676,
@@ -147,19 +154,12 @@
         "fin_chg": 295,
         "sho_bal": 3,
         "sho_chg": 3
-      },
-      {
-        "date": "06/29",
-        "fin_bal": 2516,
-        "fin_chg": 119,
-        "sho_bal": 0,
-        "sho_chg": -1
       }
     ],
-    "fin_bal": 3676,
+    "fin_bal": 3786,
     "sho_bal": 0,
-    "fin_5chg": 1053,
-    "sho_5chg": -62,
+    "fin_5chg": 1171,
+    "sho_5chg": -2,
     "note": "融資5日增加（散戶追價，留意追高）",
     "note_color": "#f59e0b"
   }
