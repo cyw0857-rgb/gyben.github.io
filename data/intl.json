@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 05:54",
+  "updated": "2026-07-09 18:32",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -35,74 +35,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.88,
-      "chg_pct": 4.65,
+      "price": 16.85,
+      "chg_pct": -0.18,
       "signal": 1,
       "note": "VIX=16.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 67171.68,
-      "chg_pct": -1.11,
+      "price": 67830.79,
+      "chg_pct": -0.23,
       "signal": -1,
-      "note": "-1.11%",
+      "note": "-0.23%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7303.03,
-      "chg_pct": -2.47,
-      "signal": -1,
-      "note": "-2.47%",
+      "price": 7320.03,
+      "chg_pct": 0.88,
+      "signal": 1,
+      "note": "+0.88%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24199.46,
-      "chg_pct": 0.59,
+      "price": 24030.18,
+      "chg_pct": 0.08,
       "signal": 1,
-      "note": "+0.59%",
+      "note": "+0.08%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3971.37,
-      "chg_pct": -0.99,
-      "signal": -1,
-      "note": "-0.99%",
+      "price": 4036.9,
+      "chg_pct": 2.14,
+      "signal": 1,
+      "note": "+2.14%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45608.78,
-      "chg_pct": 0.57,
-      "signal": 1,
-      "note": "+0.57%",
+      "price": 45540.86,
+      "chg_pct": -0.45,
+      "signal": -1,
+      "note": "-0.45%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.06,
-      "chg_pct": -0.05,
+      "price": 100.97,
+      "chg_pct": -0.0,
       "signal": 0,
-      "note": "-0.05%(中性)",
+      "note": "-0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4086.6,
-      "chg_pct": -1.14,
-      "signal": -1,
-      "note": "-1.14%",
+      "price": 4114.0,
+      "chg_pct": 1.03,
+      "signal": 1,
+      "note": "+1.03%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 74.76,
-      "chg_pct": 3.46,
-      "signal": 1,
-      "note": "+3.46%",
+      "price": 73.65,
+      "chg_pct": -0.85,
+      "signal": -1,
+      "note": "-0.85%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -115,10 +115,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62075.19,
-      "chg_pct": -1.03,
-      "signal": -1,
-      "note": "-1.03%",
+      "price": 62816.0,
+      "chg_pct": 1.45,
+      "signal": 1,
+      "note": "+1.45%",
       "desc": "風險偏好指標"
     }
   }
