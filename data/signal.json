@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-10 21:22",
+  "generated_at": "2026-07-11 14:25",
   "mode": "morning",
   "signal_date": "2026-07-09",
   "trade_date": "2026-07-13",
   "direction": 0,
-  "total_score": 8,
+  "total_score": 1,
   "tw_score": -2,
-  "intl_score": 10,
+  "intl_score": 4,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
+  "inst_score": 0,
   "foreign_fut_net": 468,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-2) vs 國際(+10) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-2) vs 國際(+4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
   "tw_last_close": 45354.609375,
@@ -292,53 +292,53 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4111.10009765625,
-    "chg_pct": -0.4720863685415716,
+    "price_usd": 4104.10009765625,
+    "chg_pct": -0.6415532700693153,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.5%，影響中性",
-    "oil_usd": 72.08000183105469,
-    "oil_chg": 0.0
+    "warning": "黃金小幅變動 -0.6%，影響中性",
+    "oil_usd": 71.41000366210938,
+    "oil_chg": -0.9295201885755959
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7543.64013671875,
-      "chg_pct": 0.8142795337428278,
+      "price": 7575.39013671875,
+      "chg_pct": 0.4208843399813908,
       "signal": 1,
-      "note": "+0.81%",
+      "note": "+0.42%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52487.41015625,
-      "chg_pct": 0.26556600802854197,
+      "price": 52637.01171875,
+      "chg_pct": 0.2850237076941889,
       "signal": 0,
-      "note": "+0.27%",
+      "note": "+0.29%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26206.890625,
-      "chg_pct": 1.2996976469398953,
-      "signal": 1,
-      "note": "+1.30%",
+      "price": 26281.609375,
+      "chg_pct": 0.28511108421508896,
+      "signal": 0,
+      "note": "+0.29%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12960.0,
-      "chg_pct": 3.061878332988656,
-      "signal": 1,
-      "note": "+3.06%",
+      "price": 12967.16015625,
+      "chg_pct": 0.055248119212962965,
+      "signal": 0,
+      "note": "+0.06%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.770000457763672,
-      "chg_pct": -0.4419172610473897,
+      "price": 15.029999732971191,
+      "chg_pct": -5.113638963471625,
       "signal": 1,
-      "note": "VIX=15.8(低恐慌)",
+      "note": "VIX=15.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -367,8 +367,8 @@
     },
     "上證指數": {
       "category": "A股",
-      "price": 3996.16162109375,
-      "chg_pct": -1.0014960810128835,
+      "price": 3996.162109375,
+      "chg_pct": -1.001483984626945,
       "signal": -1,
       "note": "-1.00%",
       "desc": "中國市場情緒"
@@ -383,42 +383,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.9219970703125,
-      "chg_pct": -0.017837696312917938,
+      "price": 100.97000122070312,
+      "chg_pct": 0.029719416060336158,
       "signal": 0,
-      "note": "-0.02%(中性)",
+      "note": "+0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4111.10009765625,
-      "chg_pct": -0.4720863685415716,
-      "signal": 0,
-      "note": "-0.47%()",
+      "price": 4104.10009765625,
+      "chg_pct": -0.6415532700693153,
+      "signal": 1,
+      "note": "-0.64%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 72.08000183105469,
-      "chg_pct": 0.0,
-      "signal": 0,
-      "note": "+0.00%",
+      "price": 71.41000366210938,
+      "chg_pct": -0.9295201885755959,
+      "signal": -1,
+      "note": "-0.93%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.545000076293945,
-      "chg_pct": 0.1321886300129226,
+      "price": 4.568999767303467,
+      "chg_pct": 0.6609326447296363,
       "signal": 0,
-      "note": "4.55%(+0.13%)",
+      "note": "4.57%(+0.66%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 64149.55078125,
-      "chg_pct": 1.5134589229968687,
+      "price": 64215.859375,
+      "chg_pct": 1.6183889595428103,
       "signal": 1,
-      "note": "+1.51%",
+      "note": "+1.62%",
       "desc": "風險偏好指標"
     }
   },
@@ -431,57 +431,69 @@
     },
     {
       "label": "川普動態",
-      "title": "Security Precaution Led Trump to Use Old Air Force One in Leaving Turkey - The N",
+      "title": "Trump tells The Post he’s ‘left instructions’ should Iran assassinate him: ‘Bomb",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump leans on ‘communist’ messaging as economic angst drives Democrats - NPR",
+      "title": "Trump threatens Iran after Ayatollah Ali Khamenei's funeral saw open calls for h",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he won't sign bipartisan housing affordability bill - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Can Trump 'Cut Off All Trade' With Spain? Here's What Experts Say - Time Magazin",
+      "title": "Trump says Iran talks will continue, but \"ceasefire is OVER\" - Axios",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump fires election board Democrats - The Hill",
+      "title": "Trump says U.S. and Iran will keep talking but declares ceasefire ‘OVER!’ - The ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Encyclopedia Britannica",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump can halt trade with Spain using law behind scrapped tariffs: Greer - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) is Attracting Investor Att",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Dutch trade minister in China for high-stakes talks on tech war, tariff tensions",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "A new trade war may be brewing. This time, Europe is taking a page from Trump's ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Could Be 9% Above Fair Value On Q2 Opti",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -491,19 +503,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Suspends Stock Trading and Shuts Schools as Typhoon Nears - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan regulator signals no immediate plan to extend equity trading hours - EY",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Stiles Financial Services Inc Grows Position in Taiwan Semiconductor Manufacturi",
+      "title": "South Korea, Taiwan lead $46 billion emerging market equity exodus in June - Reu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -515,15 +515,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Opinion | The Fed is staying quiet. And that’s a good thing. - The Washington Po",
+      "title": "Fed Meeting Tracker 2026: How Interest Rate Shifts Shape Investor Strategy in Ju",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve Interest Rate Decision July 2026: Market Impact Analysis - Intel",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed Officials Flagged Risks That Would Warrant Higher Rates - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
