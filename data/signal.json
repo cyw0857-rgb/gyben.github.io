@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-13 00:40",
+  "generated_at": "2026-07-13 06:34",
   "mode": "morning",
   "signal_date": "2026-07-09",
   "trade_date": "2026-07-14",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 4,
   "tw_score": -2,
-  "intl_score": 4,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 468,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-2) vs 國際(+4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-2) vs 國際(+6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
   "tw_last_close": 45354.609375,
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4113.7001953125,
-    "chg_pct": -0.40913915518810934,
+    "price_usd": 4091.0,
+    "chg_pct": -0.31919537400491627,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.4%，影響中性",
-    "oil_usd": 71.41000366210938,
-    "oil_chg": -0.9295201885755959
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 73.80999755859375,
+    "oil_chg": 3.3608651076961475
   },
   "intl_data": {
     "S&P500": {
@@ -383,26 +383,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.97000122070312,
-      "chg_pct": 0.029719416060336158,
+      "price": 101.13999938964844,
+      "chg_pct": 0.16836502613655083,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4113.7001953125,
-      "chg_pct": -0.40913915518810934,
+      "price": 4091.0,
+      "chg_pct": -0.31919537400491627,
       "signal": 0,
-      "note": "-0.41%()",
+      "note": "-0.32%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 71.41000366210938,
-      "chg_pct": -0.9295201885755959,
-      "signal": -1,
-      "note": "-0.93%",
+      "price": 73.80999755859375,
+      "chg_pct": 3.3608651076961475,
+      "signal": 1,
+      "note": "+3.36%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,47 +415,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64076.21875,
-      "chg_pct": 0.42975343835505814,
-      "signal": 1,
-      "note": "+0.43%",
+      "price": 63778.609375,
+      "chg_pct": -0.036704113842385616,
+      "signal": 0,
+      "note": "-0.04%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Strait of Hormuz open to commercial traffic - Reuters",
+      "title": "What Trump Voters Say About the Economy Now - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he spoke with Graham before late senator’s death: ‘It could have been",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Live - Trump says Strait of Hormuz open as US-Iran attacks continue - ایران اینت",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Times Journalists Subpoenaed as Trump Escalates Pressure on Media - The New York",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "President Trump Announces Negotiations Based on Section 232 Commercial Aircraft ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
       "title": "Trump says he spoke with Sen. Lindsey Graham hours before his death - NBC News",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Graham’s death is ‘big blow to the SAVE America Act’ - The Hill",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he spoke to Sen. Lindsey Graham shortly before he died - CNN",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says Strait of Hormuz Open to Commercial Traffic - U.S. News & World Repor",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump spoke to Lindsey Graham before death. Here’s what president said in tribut",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -479,19 +479,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Aftermath of the 2025 U.S. Tariffs: How Countries Are Adapting to an Uncerta",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on AI Chip Deman",
+      "title": "On China, Trump picked the right battle but the wrong strategy - The Guardian",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Just Waved a Red Flag for Nvidia Stock - Barchart",
+      "title": "Taiwan Semi Stock Is Approaching Fair Value Ahead of July 16. How to Play TSM He",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on AI Chip Deman",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -515,6 +515,12 @@
     },
     {
       "label": "聯準會",
+      "title": "What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
       "title": "Fed officials fret over inflation risk, weigh rate hikes - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -524,12 +530,6 @@
       "title": "Opinion | The Fed is staying quiet. And that’s a good thing. - The Washington Po",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "US stock markets fall amid Iran strikes and potential higher interest rates - Th",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
