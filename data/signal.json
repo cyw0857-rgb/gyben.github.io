@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-11 14:25",
+  "generated_at": "2026-07-13 00:40",
   "mode": "morning",
   "signal_date": "2026-07-09",
-  "trade_date": "2026-07-13",
+  "trade_date": "2026-07-14",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": -2,
   "intl_score": 4,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 0,
+  "inst_score": 1,
   "foreign_fut_net": 468,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-2) vs 國際(+4) 方向相反 → 觀望",
@@ -292,11 +292,11 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4104.10009765625,
-    "chg_pct": -0.6415532700693153,
+    "price_usd": 4113.7001953125,
+    "chg_pct": -0.40913915518810934,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
+    "warning": "黃金小幅變動 -0.4%，影響中性",
     "oil_usd": 71.41000366210938,
     "oil_chg": -0.9295201885755959
   },
@@ -391,10 +391,10 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4104.10009765625,
-      "chg_pct": -0.6415532700693153,
-      "signal": 1,
-      "note": "-0.64%()",
+      "price": 4113.7001953125,
+      "chg_pct": -0.40913915518810934,
+      "signal": 0,
+      "note": "-0.41%()",
       "desc": "避險情緒指標"
     },
     "原油": {
@@ -415,61 +415,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64215.859375,
-      "chg_pct": 1.6183889595428103,
+      "price": 64076.21875,
+      "chg_pct": 0.42975343835505814,
       "signal": 1,
-      "note": "+1.62%",
+      "note": "+0.43%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Exclusive | Iran Hatched Fresh Plot to Kill Trump, Israel Told U.S. - WSJ",
+      "title": "Trump says Strait of Hormuz open to commercial traffic - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump tells The Post he’s ‘left instructions’ should Iran assassinate him: ‘Bomb",
+      "title": "Trump says he spoke with Sen. Lindsey Graham hours before his death - NBC News",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump threatens Iran after Ayatollah Ali Khamenei's funeral saw open calls for h",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he won't sign bipartisan housing affordability bill - PBS",
+      "title": "Trump says Graham’s death is ‘big blow to the SAVE America Act’ - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Iran talks will continue, but \"ceasefire is OVER\" - Axios",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump says he spoke to Sen. Lindsey Graham shortly before he died - CNN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. and Iran will keep talking but declares ceasefire ‘OVER!’ - The ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump Says Strait of Hormuz Open to Commercial Traffic - U.S. News & World Repor",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Encyclopedia Britannica",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Tracking Trump’s Tariffs Across the Global Economy - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "Trump spoke to Lindsey Graham before death. Here’s what president said in tribut",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -479,31 +467,43 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S.-China Trade Relationship: What’s Behind the Competition? - Council on F",
+      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Aftermath of the 2025 U.S. Tariffs: How Countries Are Adapting to an Uncerta",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on AI Chip Deman",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) is Attracting Investor Att",
+      "title": "Taiwan Just Waved a Red Flag for Nvidia Stock - Barchart",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Could Be 9% Above Fair Value On Q2 Opti",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Is a No-Brainer Buy Before July 16 Earnings. Here’s Why - 2",
+      "title": "Diversify Wealth Management LLC Buys 111,142 Shares of Taiwan Semiconductor Manu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "South Korea, Taiwan lead $46 billion emerging market equity exodus in June - Reu",
+      "title": "Prediction: Taiwan Semiconductor's Stock Will Soar on July 17 - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -515,21 +515,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Meeting Tracker 2026: How Interest Rate Shifts Shape Investor Strategy in Ju",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed Officials Flagged Risks That Would Warrant Higher Rates - WSJ",
+      "title": "Fed officials fret over inflation risk, weigh rate hikes - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed Split on Direction of Interest Rates at June Meeting - U.S. News & World Rep",
+      "title": "Opinion | The Fed is staying quiet. And that’s a good thing. - The Washington Po",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "US stock markets fall amid Iran strikes and potential higher interest rates - Th",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
