@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-13 21:40",
+  "generated_at": "2026-07-14 03:03",
   "mode": "morning",
-  "signal_date": "2026-07-13",
-  "trade_date": "2026-07-14",
+  "signal_date": "2026-07-09",
+  "trade_date": "2026-07-15",
   "direction": 0,
-  "total_score": -12,
-  "tw_score": -6,
-  "intl_score": -6,
+  "total_score": -3,
+  "tw_score": -2,
+  "intl_score": -3,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": -429,
   "foreign_cash_b": 0,
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 45380.51953125,
-  "tw_chg_pct": 0.057127944892587657,
-  "tw_ma5": 45701.0078125,
-  "tw_ma10": 46017.46171875,
-  "tw_rsi": 35.801292231015424,
-  "tw_macd": 530.6432792497144,
-  "tw_macds": 804.8812151156695,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 45981.028125,
-  "tw_ma10_p2": 45936.5859375,
-  "tw_ma20_p2": 45868.7076171875,
-  "tw_ma20": 45980.260546875,
+  "tw_last_close": 45354.609375,
+  "tw_chg_pct": -0.8304486270893752,
+  "tw_ma5": 45981.028125,
+  "tw_ma10": 45936.5859375,
+  "tw_rsi": 44.19421567766585,
+  "tw_macd": 618.4746064374121,
+  "tw_macds": 873.4406990821582,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46258.93828125,
+  "tw_ma10_p2": 46026.651171875,
+  "tw_ma20_p2": 45762.2541015625,
+  "tw_ma20": 45868.7076171875,
   "stats_real": {
     "total": 1,
     "wins": 1,
@@ -292,172 +292,172 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4070.699951171875,
-    "chg_pct": -0.8138238758710831,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 73.68000030517578,
-    "oil_chg": 3.1788216309403183
+    "price_usd": 4009.5,
+    "chg_pct": -2.305014385742535,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -2.3%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 77.61000061035156,
+    "oil_chg": 8.682252668097744
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7552.740234375,
-      "chg_pct": -0.2989932126922867,
-      "signal": 0,
-      "note": "-0.30%",
+      "price": 7523.43017578125,
+      "chg_pct": -0.6859047520951344,
+      "signal": -1,
+      "note": "-0.69%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52722.4609375,
-      "chg_pct": 0.1623367587935503,
+      "price": 52488.421875,
+      "chg_pct": -0.2822915642399022,
       "signal": 0,
-      "note": "+0.16%",
+      "note": "-0.28%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26059.173828125,
-      "chg_pct": -0.8463543601960258,
+      "price": 25912.123046875,
+      "chg_pct": -1.4058740576080113,
       "signal": -1,
-      "note": "-0.85%",
+      "note": "-1.41%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12445.29296875,
-      "chg_pct": -4.024529513105974,
+      "price": 12360.4814453125,
+      "chg_pct": -4.678578066648532,
       "signal": -1,
-      "note": "-4.02%",
+      "note": "-4.68%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.389999389648438,
-      "chg_pct": 9.048567404121941,
+      "price": 16.979999542236328,
+      "chg_pct": 12.974050857681904,
       "signal": 1,
-      "note": "VIX=16.4(低恐慌)",
+      "note": "VIX=17.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 67242.7265625,
-      "chg_pct": -1.9180916082466544,
-      "signal": -1,
-      "note": "-1.92%",
+      "price": 68557.7265625,
+      "chg_pct": 1.2014005422309428,
+      "signal": 1,
+      "note": "+1.20%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6806.93017578125,
-      "chg_pct": -8.94883815103465,
-      "signal": -1,
-      "note": "-8.95%",
+      "price": 7475.93994140625,
+      "chg_pct": 2.52375277825544,
+      "signal": 1,
+      "note": "+2.52%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24213.720703125,
-      "chg_pct": 0.15967475599792239,
-      "signal": 0,
-      "note": "+0.16%",
+      "price": 24175.119140625,
+      "chg_pct": 0.6031559272958515,
+      "signal": 1,
+      "note": "+0.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3913.7939453125,
-      "chg_pct": -2.0611817490903137,
-      "signal": -1,
-      "note": "-2.06%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45380.51953125,
-      "chg_pct": 0.05712794489259119,
-      "signal": 0,
-      "note": "+0.06%",
+      "price": 45354.609375,
+      "chg_pct": -0.830448627089371,
+      "signal": -1,
+      "note": "-0.83%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.947998046875,
-      "chg_pct": -0.021791793168378627,
+      "price": 101.24199676513672,
+      "chg_pct": 0.26938253059842804,
       "signal": 0,
-      "note": "-0.02%(中性)",
+      "note": "+0.27%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4070.699951171875,
-      "chg_pct": -0.8138238758710831,
+      "price": 4009.5,
+      "chg_pct": -2.305014385742535,
       "signal": 1,
-      "note": "-0.81%()",
+      "note": "-2.31%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 73.68000030517578,
-      "chg_pct": 3.1788216309403183,
+      "price": 77.61000061035156,
+      "chg_pct": 8.682252668097744,
       "signal": 1,
-      "note": "+3.18%",
+      "note": "+8.68%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.585000038146973,
-      "chg_pct": 0.35019198201773827,
+      "price": 4.613999843597412,
+      "chg_pct": 0.984899947160721,
       "signal": 0,
-      "note": "4.59%(+0.35%)",
+      "note": "4.61%(+0.98%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63995.73828125,
-      "chg_pct": 0.37253162950070656,
+      "price": 64171.98828125,
+      "chg_pct": 0.648966579308648,
       "signal": 1,
-      "note": "+0.37%",
+      "note": "+0.65%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Times Journalists Subpoenaed as Trump Escalates Pressure on Media - The New York",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump: U.S. should be reimbursed for guarding Strait of Hormuz - CNBC",
+      "title": "Trump says U.S. will blockade Iran in the Strait of Hormuz and will charge a tol",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "While Trump declares that U.S. is enjoying ‘best economy ever,’ manufacturing jo",
+      "title": "Trump says the U.S. will reinstate its blockade on Iran and charge a toll on shi",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says the US should control the Strait of Hormuz and get paid for it - Reut",
+      "title": "Judge says Trump administration attempted to ‘manipulate the judicial process’ w",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "What will happen to Trump’s agenda after Lindsey Graham’s death? - Al Jazeera",
+      "title": "Trump’s Iran Deal Has Collapsed, Leaving the U.S. With Few Good Options - Counci",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Donald Trump’s Needless War with Iran Is His Biggest Economic Blunder - The New ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says US will become ‘guardian’ of Strait of Hormuz and collect tolls - Al ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump proposes 20% toll on cargo through Strait of Hormuz; restarts Iran blockad",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -485,15 +485,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What Taiwan Semiconductor’s Earnings Can Tell Investors About Its 2026 Outlook -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan Semiconductor Posts Stronger-Than-Expected June Sales - Investor's Busine",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "What Taiwan Semiconductor’s Earnings Can Tell Investors About Its 2026 Outlook -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -509,7 +509,19 @@
     },
     {
       "label": "聯準會",
+      "title": "A July rate hike from the Fed? The odds are rising - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Looking for stability in a volatile market? Consider interest rate swaps - The B",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -518,18 +530,6 @@
       "title": "A Fed interest-rate hike could trigger a short-term stock selloff, but history p",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Oil prices march upward again as the U.S-Iran conflict intensifies—and it’s yet ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed officials fret over inflation risk, weigh rate hikes - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
