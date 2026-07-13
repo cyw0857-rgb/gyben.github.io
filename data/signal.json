@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-13 19:42",
+  "generated_at": "2026-07-13 21:40",
   "mode": "morning",
   "signal_date": "2026-07-13",
   "trade_date": "2026-07-14",
   "direction": 0,
-  "total_score": -6,
+  "total_score": -12,
   "tw_score": -6,
-  "intl_score": 1,
+  "intl_score": -6,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 1,
   "foreign_fut_net": -429,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+1) 方向相反 → 觀望",
+  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
   "tw_last_close": 45380.51953125,
@@ -292,53 +292,53 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4072.39990234375,
-    "chg_pct": -0.7724030739553159,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.8%，影響中性",
-    "oil_usd": 73.87000274658203,
-    "oil_chg": 3.4448942141392833
+    "price_usd": 4070.699951171875,
+    "chg_pct": -0.8138238758710831,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 73.68000030517578,
+    "oil_chg": 3.1788216309403183
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7575.39013671875,
-      "chg_pct": 0.4208843399813908,
-      "signal": 1,
-      "note": "+0.42%",
+      "price": 7552.740234375,
+      "chg_pct": -0.2989932126922867,
+      "signal": 0,
+      "note": "-0.30%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52637.01171875,
-      "chg_pct": 0.2850237076941889,
+      "price": 52722.4609375,
+      "chg_pct": 0.1623367587935503,
       "signal": 0,
-      "note": "+0.29%",
+      "note": "+0.16%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26281.609375,
-      "chg_pct": 0.28511108421508896,
-      "signal": 0,
-      "note": "+0.29%",
+      "price": 26059.173828125,
+      "chg_pct": -0.8463543601960258,
+      "signal": -1,
+      "note": "-0.85%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12967.16015625,
-      "chg_pct": 0.055248119212962965,
-      "signal": 0,
-      "note": "+0.06%",
+      "price": 12445.29296875,
+      "chg_pct": -4.024529513105974,
+      "signal": -1,
+      "note": "-4.02%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.290000915527344,
-      "chg_pct": 8.38324154984579,
+      "price": 16.389999389648438,
+      "chg_pct": 9.048567404121941,
       "signal": 1,
-      "note": "VIX=16.3(低恐慌)",
+      "note": "VIX=16.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -383,34 +383,34 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.89700317382812,
-      "chg_pct": -0.07229676734918401,
+      "price": 100.947998046875,
+      "chg_pct": -0.021791793168378627,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4072.39990234375,
-      "chg_pct": -0.7724030739553159,
+      "price": 4070.699951171875,
+      "chg_pct": -0.8138238758710831,
       "signal": 1,
-      "note": "-0.77%()",
+      "note": "-0.81%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 73.87000274658203,
-      "chg_pct": 3.4448942141392833,
+      "price": 73.68000030517578,
+      "chg_pct": 3.1788216309403183,
       "signal": 1,
-      "note": "+3.44%",
+      "note": "+3.18%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.568999767303467,
-      "chg_pct": 0.6609326447296363,
+      "price": 4.585000038146973,
+      "chg_pct": 0.35019198201773827,
       "signal": 0,
-      "note": "4.57%(+0.66%)",
+      "note": "4.59%(+0.35%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
@@ -425,21 +425,15 @@
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump suggests a standing order to attack Iran if it assassinates him. But Vance",
+      "title": "Times Journalists Subpoenaed as Trump Escalates Pressure on Media - The New York",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump: U.S. should be reimbursed for guarding Strait of Hormuz - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Donald Trump’s Needless War with Iran Is His Biggest Economic Blunder - newyorke",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "U.S.-Iran strikes escalate over the Strait of Hormuz, threatening to collapse ce",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -449,19 +443,25 @@
     },
     {
       "label": "川普動態",
-      "title": "How Are U.S. Goods Exports to Canada and Mexico Doing under Trump’s Trade Polici",
+      "title": "Trump says the US should control the Strait of Hormuz and get paid for it - Reut",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump tried to kill renewables. They’re growing anyway. - E&E News by POLITICO",
+      "title": "What will happen to Trump’s agenda after Lindsey Graham’s death? - Al Jazeera",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
+      "label": "川普動態",
+      "title": "Donald Trump’s Needless War with Iran Is His Biggest Economic Blunder - The New ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "關稅/貿易",
-      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "title": "Did Trump’s tariffs paint the US into an economic corner? - South China Morning ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -473,15 +473,21 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "On China, Trump picked the right battle but the wrong strategy - The Guardian",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Fiscal and Economic Effects of Tariffs - Econofact",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "What Taiwan Semiconductor’s Earnings Can Tell Investors About Its 2026 Outlook -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -502,12 +508,6 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "What Taiwan Semiconductor’s Earnings Can Tell Investors About Its 2026 Outlook -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
       "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
       "sentiment": "⚪中性",
@@ -515,21 +515,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed officials fret over inflation risk, weigh rate hikes - Reuters",
+      "title": "A Fed interest-rate hike could trigger a short-term stock selloff, but history p",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Oil prices march upward again as the U.S-Iran conflict intensifies—and it’s yet ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "If the Fed Hikes Interest Rates in 2026, History Says This Is the Best Move Inve",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Markets Brief: Why Investors Should Pay Attention to Second-Quarter Earnings - M",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed officials fret over inflation risk, weigh rate hikes - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
