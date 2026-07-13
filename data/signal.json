@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-13 06:34",
+  "generated_at": "2026-07-13 16:37",
   "mode": "morning",
-  "signal_date": "2026-07-09",
+  "signal_date": "2026-07-13",
   "trade_date": "2026-07-14",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": -2,
-  "intl_score": 6,
+  "total_score": -6,
+  "tw_score": -6,
+  "intl_score": 1,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 0,
   "inst_score": 1,
-  "foreign_fut_net": 468,
+  "foreign_fut_net": -429,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-2) vs 國際(+6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-6) vs 國際(+1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 45354.609375,
-  "tw_chg_pct": -0.8304486270893752,
-  "tw_ma5": 45981.028125,
-  "tw_ma10": 45936.5859375,
-  "tw_rsi": 44.19421567766585,
-  "tw_macd": 618.4594489487936,
-  "tw_macds": 873.4184088175966,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46258.93828125,
-  "tw_ma10_p2": 46026.651171875,
-  "tw_ma20_p2": 45762.2541015625,
-  "tw_ma20": 45868.7076171875,
+  "tw_last_close": 45380.51953125,
+  "tw_chg_pct": 0.057127944892587657,
+  "tw_ma5": 45701.0078125,
+  "tw_ma10": 46017.46171875,
+  "tw_rsi": 35.801292231015424,
+  "tw_macd": 530.6432792497144,
+  "tw_macds": 804.8812151156695,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 45981.028125,
+  "tw_ma10_p2": 45936.5859375,
+  "tw_ma20_p2": 45868.7076171875,
+  "tw_ma20": 45980.260546875,
   "stats_real": {
     "total": 1,
     "wins": 1,
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4091.0,
-    "chg_pct": -0.31919537400491627,
+    "price_usd": 4082.800048828125,
+    "chg_pct": -0.5189943793108002,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 73.80999755859375,
-    "oil_chg": 3.3608651076961475
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 73.47000122070312,
+    "oil_chg": 2.884746468213386
   },
   "intl_data": {
     "S&P500": {
@@ -335,74 +335,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.029999732971191,
-      "chg_pct": -5.113638963471625,
+      "price": 16.270000457763672,
+      "chg_pct": 8.250171302879671,
       "signal": 1,
-      "note": "VIX=15.0(低恐慌)",
+      "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 68557.7265625,
-      "chg_pct": 1.2014005422309428,
-      "signal": 1,
-      "note": "+1.20%",
+      "price": 67242.7265625,
+      "chg_pct": -1.9180916082466544,
+      "signal": -1,
+      "note": "-1.92%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7475.93994140625,
-      "chg_pct": 2.52375277825544,
-      "signal": 1,
-      "note": "+2.52%",
+      "price": 6806.93017578125,
+      "chg_pct": -8.94883815103465,
+      "signal": -1,
+      "note": "-8.95%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24175.119140625,
-      "chg_pct": 0.6031559272958515,
-      "signal": 1,
-      "note": "+0.60%",
+      "price": 24213.720703125,
+      "chg_pct": 0.15967475599792239,
+      "signal": 0,
+      "note": "+0.16%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3996.162109375,
-      "chg_pct": -1.001483984626945,
+      "price": 3913.7939453125,
+      "chg_pct": -2.0611817490903137,
       "signal": -1,
-      "note": "-1.00%",
+      "note": "-2.06%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45354.609375,
-      "chg_pct": -0.830448627089371,
-      "signal": -1,
-      "note": "-0.83%",
+      "price": 45380.51953125,
+      "chg_pct": 0.05712794489259119,
+      "signal": 0,
+      "note": "+0.06%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.13999938964844,
-      "chg_pct": 0.16836502613655083,
+      "price": 100.85099792480469,
+      "chg_pct": -0.11786005195574542,
       "signal": 0,
-      "note": "+0.17%(中性)",
+      "note": "-0.12%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4091.0,
-      "chg_pct": -0.31919537400491627,
-      "signal": 0,
-      "note": "-0.32%()",
+      "price": 4082.800048828125,
+      "chg_pct": -0.5189943793108002,
+      "signal": 1,
+      "note": "-0.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 73.80999755859375,
-      "chg_pct": 3.3608651076961475,
+      "price": 73.47000122070312,
+      "chg_pct": 2.884746468213386,
       "signal": 1,
-      "note": "+3.36%",
+      "note": "+2.88%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,55 +415,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 63778.609375,
-      "chg_pct": -0.036704113842385616,
-      "signal": 0,
-      "note": "-0.04%",
+      "price": 63002.78125,
+      "chg_pct": -1.184847247634251,
+      "signal": -1,
+      "note": "-1.18%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "What Trump Voters Say About the Economy Now - WSJ",
+      "title": "From staunch critic to fierce ally: Graham's long, strange and consequential fri",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he spoke with Graham before late senator’s death: ‘It could have been",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Live - Trump says Strait of Hormuz open as US-Iran attacks continue - ایران اینت",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Times Journalists Subpoenaed as Trump Escalates Pressure on Media - The New York",
+      "title": "U.S. insists Strait of Hormuz remains open despite Iran’s declaring it closed as",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "President Trump Announces Negotiations Based on Section 232 Commercial Aircraft ",
+      "title": "Trump says he spoke with Graham before senator’s death: ‘It could have been his ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he spoke with Sen. Lindsey Graham hours before his death - NBC News",
+      "title": "Trump says Strait of Hormuz open to commercial traffic - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Tracking the Economic Impact of the Trump Tariffs - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "Trump Recalls Last Conversation With Lindsey Graham Before His Death - The New Y",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says a nuclear renaissance is coming. The deals aren’t. - The Washington P",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -484,40 +478,40 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semi Stock Is Approaching Fair Value Ahead of July 16. How to Play TSM He",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on AI Chip Deman",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Diversify Wealth Management LLC Buys 111,142 Shares of Taiwan Semiconductor Manu",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor's Stock Will Soar on July 17 - Yahoo Finance",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed officials were split on direction of interest rates at last meeting, minutes",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "What to Expect in Markets this Week: Inflation Data, Warsh Testimony in Congress",
+      "label": "關稅/貿易",
+      "title": "Fiscal and Economic Effects of Tariffs - Econofact",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC Q2 revenue jumps 36% from a year earlier, beating market expectations - Yah",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC to add 2 advanced chip packaging plants in Chiayi, Taiwan minister says - R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC, the world's largest contract chipmaker, reports 68% surge in June revenue ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan chipmaker TSMC posts 36% jump in 1st-half revenue on strong AI chip deman",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -527,7 +521,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Opinion | The Fed is staying quiet. And that’s a good thing. - The Washington Po",
+      "title": "Markets Brief: Why Investors Should Pay Attention to Second-Quarter Earnings - M",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Interest Rate Decision July 2026: Market Impact & Investment Strategy - Inte",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
