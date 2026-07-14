@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-14 06:14",
+  "generated_at": "2026-07-14 15:25",
   "mode": "morning",
-  "signal_date": "2026-07-09",
+  "signal_date": "2026-07-14",
   "trade_date": "2026-07-15",
   "direction": 0,
-  "total_score": -4,
-  "tw_score": -2,
-  "intl_score": -4,
+  "total_score": -14,
+  "tw_score": -8,
+  "intl_score": -3,
   "news_score": -2,
-  "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": -429,
+  "psy_score": 0,
+  "inst_score": 0,
+  "foreign_fut_net": -2219,
   "foreign_cash_b": 0,
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 45354.609375,
-  "tw_chg_pct": -0.8304486270893752,
-  "tw_ma5": 45981.028125,
-  "tw_ma10": 45936.5859375,
-  "tw_rsi": 44.19421567766585,
-  "tw_macd": 618.4746064374121,
-  "tw_macds": 873.4406990821582,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46258.93828125,
-  "tw_ma10_p2": 46026.651171875,
-  "tw_ma20_p2": 45762.2541015625,
-  "tw_ma20": 45868.7076171875,
+  "tw_last_close": 44737.94921875,
+  "tw_chg_pct": -1.4159606790255297,
+  "tw_ma5": 45337.31953125,
+  "tw_ma10": 45991.266796875,
+  "tw_rsi": 35.79394311198212,
+  "tw_macd": 404.52317428214883,
+  "tw_macds": 724.8096069489654,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 45701.0078125,
+  "tw_ma10_p2": 46017.46171875,
+  "tw_ma20_p2": 45980.260546875,
+  "tw_ma20": 46008.7060546875,
   "stats_real": {
     "total": 1,
     "wins": 1,
@@ -265,17 +265,17 @@
     "streak": -3
   },
   "stats_real_v50": {
-    "total": 9,
+    "total": 10,
     "wins": 4,
-    "losses": 5,
-    "win_rate": 44.44444444444444,
-    "total_pnl": -5646.0,
-    "avg_pnl": -627.3333333333334,
+    "losses": 6,
+    "win_rate": 40.0,
+    "total_pnl": -6914.0,
+    "avg_pnl": -691.4,
     "avg_win": 7958.5,
-    "avg_lose": -7496.0,
+    "avg_lose": -6458.0,
     "max_win": 10549.0,
     "max_lose": -16238.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_cons": {
     "total": 0,
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4009.5,
-    "chg_pct": -2.305014385742535,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.3%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 77.98999786376953,
-    "oil_chg": 9.214387150566056
+    "price_usd": 4031.39990234375,
+    "chg_pct": 0.8606430408744058,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 80.05000305175781,
+    "oil_chg": 2.444335394200684
   },
   "intl_data": {
     "S&P500": {
@@ -319,16 +319,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25873.17578125,
-      "chg_pct": -1.5540661453499744,
+      "price": 25873.1796875,
+      "chg_pct": -1.5540512822951886,
       "signal": -1,
       "note": "-1.55%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12347.783203125,
-      "chg_pct": -4.776504228078562,
+      "price": 12347.7802734375,
+      "chg_pct": -4.776526821209708,
       "signal": -1,
       "note": "-4.78%",
       "desc": "對台股影響最大"
@@ -343,66 +343,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 68557.7265625,
-      "chg_pct": 1.2014005422309428,
+      "price": 67743.5,
+      "chg_pct": 0.7447250626200395,
       "signal": 1,
-      "note": "+1.20%",
+      "note": "+0.74%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7475.93994140625,
-      "chg_pct": 2.52375277825544,
+      "price": 6856.830078125,
+      "chg_pct": 0.7330749846868063,
       "signal": 1,
-      "note": "+2.52%",
+      "note": "+0.73%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24175.119140625,
-      "chg_pct": 0.6031559272958515,
+      "price": 24395.470703125,
+      "chg_pct": 0.7506074850220913,
       "signal": 1,
-      "note": "+0.60%",
+      "note": "+0.75%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3967.126220703125,
+      "chg_pct": 1.3626745847082822,
+      "signal": 1,
+      "note": "+1.36%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45354.609375,
-      "chg_pct": -0.830448627089371,
+      "price": 44737.94921875,
+      "chg_pct": -1.4159606790255284,
       "signal": -1,
-      "note": "-0.83%",
+      "note": "-1.42%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.2770004272461,
-      "chg_pct": 0.3040499186208001,
-      "signal": -1,
-      "note": "+0.30%(偏空)",
+      "price": 101.23200225830078,
+      "chg_pct": -0.04738993046463676,
+      "signal": 0,
+      "note": "-0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4009.5,
-      "chg_pct": -2.305014385742535,
-      "signal": 1,
-      "note": "-2.31%()",
+      "price": 4031.39990234375,
+      "chg_pct": 0.8606430408744058,
+      "signal": 0,
+      "note": "+0.86%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 77.98999786376953,
-      "chg_pct": 9.214387150566056,
+      "price": 80.05000305175781,
+      "chg_pct": 2.444335394200684,
       "signal": 1,
-      "note": "+9.21%",
+      "note": "+2.44%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,47 +415,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62109.890625,
-      "chg_pct": -2.5852794468164153,
-      "signal": -1,
-      "note": "-2.59%",
+      "price": 62553.44140625,
+      "chg_pct": 0.5050204870768391,
+      "signal": 1,
+      "note": "+0.51%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says the U.S. will blockade Iran again and charge ships a toll in Hormuz -",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump says U.S. 'taking over the strait' as conflict with Iran reignites - PBS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will blockade Iran in the Strait of Hormuz and will charge a tol",
+      "title": "US refunds $81bn in Trump tariffs after supreme court ruled them illegal - The G",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. military will reimpose blockade on Iranian ports - The Washingto",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "The U.S. strikes Iran after Trump announces a renewed blockade and tolls in Horm",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says US will become ‘guardian’ of Strait of Hormuz and collect tolls - Al ",
+      "title": "Trump Says Fighting With Iran Has Resumed as He Orders Blockade and Tolls - The ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Says He Is Reimposing the U.S. Blockade of Iran - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Oil surges more than 9% after Trump reimposes Iran blockade - NBC News",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump’s Iran Deal Has Collapsed, Leaving the U.S. With Few Good Options - Counci",
+      "title": "Trump wants Gulf countries on the hook for Strait of Hormuz ‘protection’ - The H",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -467,13 +467,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
+      "title": "A new trade war may be brewing. This time, Europe is taking a page from Trump's ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How Trump is relaunching a tariff war citing ‘forced labour’ concerns - Al Jazee",
+      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -485,13 +485,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Posts Stronger-Than-Expected June Sales - Investor's Busine",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC to add 2 advanced chip packaging plants in Chiayi, Taiwan minister says - R",
+      "title": "Should You Buy Taiwan Semiconductor Stock Before the Huge Investor Update? - The",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -500,6 +494,12 @@
       "title": "What Taiwan Semiconductor’s Earnings Can Tell Investors About Its 2026 Outlook -",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Posts Stronger-Than-Expected June Sales - Investor's Busine",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -521,15 +521,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Waller says rate hike may be needed if core inflation stays hot - Reuters",
+      "title": "Fed Rate-Hike Bets Mount Before Inflation Data, Warsh Testimony - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Looking for stability in a volatile market? Consider interest rate swaps - The B",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed's Waller says rate hike may be needed if core inflation stays hot - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
