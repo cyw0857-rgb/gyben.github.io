@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 19:17",
+  "updated": "2026-07-16 02:00",
   "inst": {
     "rows": [
       {
@@ -8,6 +8,20 @@
         "trust": 1000,
         "dealer": -40631,
         "total": 289943
+      },
+      {
+        "date": "07/14",
+        "foreign": 103052,
+        "trust": -112000,
+        "dealer": -58320,
+        "total": -67268
+      },
+      {
+        "date": "07/13",
+        "foreign": -2345909,
+        "trust": 2000,
+        "dealer": 31931,
+        "total": -2311978
       },
       {
         "date": "07/09",
@@ -71,27 +85,13 @@
         "trust": -4000,
         "dealer": 17510,
         "total": -187791
-      },
-      {
-        "date": "06/26",
-        "foreign": 246707,
-        "trust": 1000,
-        "dealer": -1114,
-        "total": 246593
-      },
-      {
-        "date": "06/25",
-        "foreign": -30799,
-        "trust": 2000,
-        "dealer": 875,
-        "total": -27924
       }
     ],
-    "total_foreign": 1673027,
-    "total_trust": 2000,
-    "total_dealer": 14821,
-    "net5": 1689848,
-    "mood": "偏多",
+    "total_foreign": -1555687,
+    "total_trust": -113000,
+    "total_dealer": 166707,
+    "net5": -1501980,
+    "mood": "偏空",
     "trust_streak": 1,
     "streak_label": "📈 投信連買 1 日",
     "streak_color": "#10b981",
@@ -99,6 +99,13 @@
   },
   "margin": {
     "rows": [
+      {
+        "date": "07/15",
+        "fin_bal": 4363,
+        "fin_chg": -2,
+        "sho_bal": 34,
+        "sho_chg": 15
+      },
       {
         "date": "07/14",
         "fin_bal": 4365,
@@ -147,19 +154,12 @@
         "fin_chg": 938,
         "sho_bal": 29,
         "sho_chg": 27
-      },
-      {
-        "date": "07/02",
-        "fin_bal": 2615,
-        "fin_chg": -8,
-        "sho_bal": 2,
-        "sho_chg": -60
       }
     ],
-    "fin_bal": 4365,
-    "sho_bal": 19,
-    "fin_5chg": 961,
-    "sho_5chg": -32,
+    "fin_bal": 4363,
+    "sho_bal": 34,
+    "fin_5chg": 1558,
+    "sho_5chg": 34,
     "note": "融資5日增加（散戶追價，留意追高）",
     "note_color": "#f59e0b"
   }
