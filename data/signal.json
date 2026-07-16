@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16 14:35",
+  "generated_at": "2026-07-16 19:23",
   "mode": "morning",
   "signal_date": "2026-07-16",
   "trade_date": "2026-07-17",
@@ -292,13 +292,13 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 4037.0,
-    "chg_pct": -0.17309594460929772,
+    "price_usd": 4034.800048828125,
+    "chg_pct": -0.22749631977930268,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 79.66000366210938,
-    "oil_chg": 0.07538340344037776
+    "oil_usd": 79.47000122070312,
+    "oil_chg": -0.163313135565238
   },
   "intl_data": {
     "S&P500": {
@@ -335,42 +335,42 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.670000076293945,
-      "chg_pct": -5.030302567915483,
+      "price": 16.09000015258789,
+      "chg_pct": 2.680281265150306,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=16.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66990.328125,
-      "chg_pct": -2.5616597272355275,
+      "price": 66835.5390625,
+      "chg_pct": -2.7868025167175308,
       "signal": -1,
-      "note": "-2.56%",
+      "note": "-2.79%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6791.9599609375,
-      "chg_pct": -6.760330414535752,
+      "price": 6820.60009765625,
+      "chg_pct": -6.367160122028583,
       "signal": -1,
-      "note": "-6.76%",
+      "note": "-6.37%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25023.4609375,
-      "chg_pct": 1.3871396880346272,
+      "price": 25008.599609375,
+      "chg_pct": 1.3269262925206164,
       "signal": 1,
-      "note": "+1.39%",
+      "note": "+1.33%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3887.218017578125,
-      "chg_pct": -1.7281890368544173,
+      "price": 3882.41259765625,
+      "chg_pct": -1.8496736862940837,
       "signal": -1,
-      "note": "-1.73%",
+      "note": "-1.85%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -383,26 +383,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.49299621582031,
-      "chg_pct": -0.00696893948227612,
+      "price": 100.56400299072266,
+      "chg_pct": 0.06368456788324005,
       "signal": 0,
-      "note": "-0.01%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4037.0,
-      "chg_pct": -0.17309594460929772,
+      "price": 4034.800048828125,
+      "chg_pct": -0.22749631977930268,
       "signal": 0,
-      "note": "-0.17%()",
+      "note": "-0.23%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 79.66000366210938,
-      "chg_pct": 0.07538340344037776,
+      "price": 79.47000122070312,
+      "chg_pct": -0.163313135565238,
       "signal": 0,
-      "note": "+0.08%",
+      "note": "-0.16%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -415,14 +415,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64713.73828125,
-      "chg_pct": 0.0021066778185779766,
-      "signal": 0,
-      "note": "+0.00%",
+      "price": 64121.94921875,
+      "chg_pct": -0.9123846578803514,
+      "signal": -1,
+      "note": "-0.91%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump earned billions last year. Some Pennsylvania swing voters say they don't c",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
     {
       "label": "川普動態",
       "title": "Trump Administration to Impose New 25% Tariff on Brazil - The New York Times",
@@ -431,31 +437,25 @@
     },
     {
       "label": "川普動態",
-      "title": "China and Xi favored over U.S. and Trump in many nations: Survey - NPR",
+      "title": "Trump imposes 25% tariffs on Brazilian goods - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says He May Try to ‘Wipe Out’ Iran’s Revolutionary Guards - Time Magazine",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump promoted companies on Truth Social days after buying their stocks - CNN",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
       "title": "Trump says Iran has freed a U.S. citizen as gesture of goodwill - The Hill",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "ICE should continue traffic stops despite recent shootings, Trump says on social",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Brazil condemns US move to impose 25% tariffs next week - The Guardian",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says ICE Is ‘Loved and Respected’ in America. Is That True? - Time Magazin",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -485,27 +485,33 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC second-quarter profit jumps 23%, beating estimates, on high-end chip boom -",
+      "title": "TSMC to invest additional $100 billion in Arizona after second-quarter profit so",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Looks Cheap Even With AI Dem",
+      "title": "TSMC Plans Extra $100B in U.S. Investment After Earnings Beat. The Stock Is Fall",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC posts 77% profit jump for Q2, surging past market expectations - Reuters",
+      "title": "Taiwan Semiconductor Manufacturing Q2 Earnings Call Highlights - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC’s Earnings Streak Continues on Robust AI Demand - WSJ",
+      "title": "TSMC to invest another $100 billion in US as Q2 profit blows past forecasts - Re",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Investors Just Got a Subtle Warning From the Federal Reserve. History Says the S",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -515,19 +521,13 @@
     },
     {
       "label": "聯準會",
+      "title": "Fed Chair Kevin Warsh: ‘Prices are too high.’ Will there be a rate cut at the ne",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
       "title": "US money market funds turn defensive with Fed rate outlook uncertain - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "PPI data lowers market odds of interest rate increases this year - Axios",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Treasury yields slide after June CPI slows much more than expected - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
