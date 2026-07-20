@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-17 19:09",
+  "generated_at": "2026-07-20 10:49",
   "mode": "morning",
-  "signal_date": "2026-07-17",
-  "trade_date": "2026-07-20",
-  "direction": 0,
-  "total_score": -20,
-  "tw_score": -8,
-  "intl_score": -9,
+  "signal_date": "2026-07-20",
+  "trade_date": "2026-07-21",
+  "direction": -1,
+  "total_score": -21,
+  "tw_score": -10,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -807,
   "foreign_cash_b": 0,
-  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
+  "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 42671.26953125,
-  "tw_chg_pct": -6.473889757658291,
-  "tw_ma5": 44809.26171875,
-  "tw_ma10": 45395.144921875,
-  "tw_rsi": 39.69092655077048,
-  "tw_macd": 79.45965799615806,
-  "tw_macds": 489.46064377052517,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 45345.9296875,
-  "tw_ma10_p2": 45802.433984375,
-  "tw_ma20_p2": 46011.2255859375,
-  "tw_ma20": 45850.91953125,
+  "tw_last_close": 42456.76953125,
+  "tw_chg_pct": -0.5026801460474739,
+  "tw_ma5": 44224.51171875,
+  "tw_ma10": 44962.759765625,
+  "tw_rsi": 35.87767846258167,
+  "tw_macd": -144.62073508690082,
+  "tw_macds": 362.62209798834033,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 44809.26171875,
+  "tw_ma10_p2": 45395.144921875,
+  "tw_ma20_p2": 45850.91953125,
+  "tw_ma20": 45650.498046875,
   "stats_real": {
     "total": 1,
     "wins": 1,
@@ -252,30 +252,30 @@
     "streak": 0
   },
   "stats_real_v60": {
-    "total": 3,
-    "wins": 0,
+    "total": 4,
+    "wins": 1,
     "losses": 3,
-    "win_rate": 0.0,
-    "total_pnl": -25886.0,
-    "avg_pnl": -8628.666666666666,
-    "avg_win": 0,
+    "win_rate": 25.0,
+    "total_pnl": -328.0,
+    "avg_pnl": -82.0,
+    "avg_win": 25558.0,
     "avg_lose": -8628.666666666666,
-    "max_win": 0,
-    "max_lose": -16238.0,
-    "streak": -3
-  },
-  "stats_real_v50": {
-    "total": 12,
-    "wins": 5,
-    "losses": 7,
-    "win_rate": 41.66666666666667,
-    "total_pnl": -5509.0,
-    "avg_pnl": -459.0833333333333,
-    "avg_win": 7914.6,
-    "avg_lose": -6440.285714285715,
-    "max_win": 10549.0,
+    "max_win": 25558.0,
     "max_lose": -16238.0,
     "streak": 1
+  },
+  "stats_real_v50": {
+    "total": 13,
+    "wins": 6,
+    "losses": 7,
+    "win_rate": 46.15384615384615,
+    "total_pnl": 20049.0,
+    "avg_pnl": 1542.2307692307693,
+    "avg_win": 10855.166666666666,
+    "avg_lose": -6440.285714285715,
+    "max_win": 25558.0,
+    "max_lose": -16238.0,
+    "streak": 2
   },
   "stats_real_cons": {
     "total": 0,
@@ -292,53 +292,53 @@
   },
   "cons_recent": [],
   "gold": {
-    "price_usd": 3994.800048828125,
-    "chg_pct": 0.23082976080026374,
+    "price_usd": 4017.800048828125,
+    "chg_pct": 0.12709890393774795,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 80.0,
-    "oil_chg": 1.3299595849841142
+    "warning": "黃金小幅變動 +0.1%，影響中性",
+    "oil_usd": 83.55999755859375,
+    "oil_chg": 1.297126588112295
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7533.77001953125,
-      "chg_pct": -0.5101405539945609,
+      "price": 7457.68994140625,
+      "chg_pct": -1.0098540030789749,
       "signal": -1,
-      "note": "-0.51%",
+      "note": "-1.01%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52552.96875,
-      "chg_pct": -0.20067338189097053,
-      "signal": 0,
-      "note": "-0.20%",
+      "price": 52146.421875,
+      "chg_pct": -0.7735944984078563,
+      "signal": -1,
+      "note": "-0.77%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25881.94921875,
-      "chg_pct": -1.4742771032471302,
+      "price": 25520.240234375,
+      "chg_pct": -1.3975337843293596,
       "signal": -1,
-      "note": "-1.47%",
+      "note": "-1.40%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11867.5,
-      "chg_pct": -4.285784158942533,
+      "price": 11673.8896484375,
+      "chg_pct": -1.6314333394775646,
       "signal": -1,
-      "note": "-4.29%",
+      "note": "-1.63%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.079999923706055,
-      "chg_pct": 8.069339022165147,
+      "price": 18.770000457763672,
+      "chg_pct": 12.193669882519634,
       "signal": 1,
-      "note": "VIX=18.1(低恐慌)",
+      "note": "VIX=18.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -351,111 +351,111 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6820.60009765625,
-      "chg_pct": -6.367160122028583,
+      "price": 6523.27001953125,
+      "chg_pct": -4.359294986773539,
       "signal": -1,
-      "note": "-6.37%",
+      "note": "-4.36%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24562.240234375,
-      "chg_pct": -1.7848235485871538,
-      "signal": -1,
-      "note": "-1.78%",
+      "price": 25005.8203125,
+      "chg_pct": 1.8059430813000807,
+      "signal": 1,
+      "note": "+1.81%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3764.15478515625,
-      "chg_pct": -3.045999953214503,
-      "signal": -1,
-      "note": "-3.05%",
+      "price": 3787.676025390625,
+      "chg_pct": 0.6248678896241848,
+      "signal": 1,
+      "note": "+0.62%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 42671.26953125,
-      "chg_pct": -6.473889757658287,
+      "price": 42497.71875,
+      "chg_pct": -0.40671576720467933,
       "signal": -1,
-      "note": "-6.47%",
+      "note": "-0.41%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.8499984741211,
-      "chg_pct": 0.11912549705999818,
+      "price": 100.73100280761719,
+      "chg_pct": -0.01885577407723325,
       "signal": 0,
-      "note": "+0.12%(中性)",
+      "note": "-0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3994.800048828125,
-      "chg_pct": 0.23082976080026374,
+      "price": 4017.800048828125,
+      "chg_pct": 0.12709890393774795,
       "signal": 0,
-      "note": "+0.23%()",
+      "note": "+0.13%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.0,
-      "chg_pct": 1.3299595849841142,
+      "price": 83.55999755859375,
+      "chg_pct": 1.297126588112295,
       "signal": 1,
-      "note": "+1.33%",
+      "note": "+1.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.568999767303467,
-      "chg_pct": 0.5280459979461906,
+      "price": 4.540999889373779,
+      "chg_pct": -0.6128229230839395,
       "signal": 0,
-      "note": "4.57%(+0.53%)",
+      "note": "4.54%(-0.61%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63050.48828125,
-      "chg_pct": -1.1581772897778182,
-      "signal": -1,
-      "note": "-1.16%",
+      "price": 64885.76171875,
+      "chg_pct": 0.13760005015695148,
+      "signal": 0,
+      "note": "+0.14%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump approval stuck in the 30s amid pessimism on Iran and economy, poll finds -",
+      "title": "The ‘hopeless, bad people’ just won Donald Trump's World Cup - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Media to Sell Traders ‘the Fastest’ Access to Truth Social Posts - Time Ma",
+      "title": "Trump Relents From Spain-Bashing to Present Its Team the World Cup Trophy - The ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump's team says 'no children' died from USAID cuts. Consider these 3 cases - N",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump doubles down on US election attacks in his primetime speech - AP News",
+      "title": "Brazil’s beloved payments system has drawn Donald Trump’s ire - The Economist",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "CNBC Daily Open: Trump lashes out at electoral system and China in fiery speech ",
+      "title": "Trump on 2 troops killed in Iran attack: ‘A very sad thing’ - NewsNation",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says documents show voting vulnerabilities, China meddling and fraud - ABC",
+      "title": "Trump says World Cup made US a 'soccer country' as he presents trophy to Spain -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's DOJ turns to a never-used court for its next deportation fight - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -473,7 +473,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "A new trade war may be brewing. This time, Europe is taking a page from Trump's ",
+      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -485,49 +485,49 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Tops Q2 Targets On Leading-Edge Chip Demand - Investor's Bu",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan computer chipmaker TSMC pledges another $100 billion to expand US chipmak",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC Stock Falls After Earnings. Taiwan Semi Ramps Up U.S. Investment Amid Intel",
+      "title": "Taiwan Chipmaker TSMC Pledges Another $100B to Expand U.S. Chipmaking - Broadban",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Earnings: Lifting Fair Value Estimate After a Beat-and-Rais",
+      "title": "Taiwan Semiconductor Manufacturing Just Showed the Artificial Intelligence (AI) ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC is accelerating Arizona factory buildout to capitalize on AI 'megatrend,' C",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Traders Cut Taiwan Stock Leverage at Fastest Pace in 15 Months - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "A Fed Pause and Fixed Income Outlook - Morgan Stanley",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Chair Kevin Warsh: ‘Prices are too high.’ Will there be a rate cut at the ne",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Dallas Fed President Logan calls for 'modestly' higher interest rates - CNBC",
+      "title": "Fed rate-hike voices swell before July decision, rates still seen on hold - Reut",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "SF FedViews: Labor Market in Balance but Inflation Elevated and Uncertain - Fede",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "These Are the 12 Fed Officials Who Are Voting on Interest Rates This Week - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
