@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-07-21 01:07",
+  "generated_at": "2026-07-22 10:31",
   "mode": "morning",
-  "signal_date": "2026-07-17",
-  "trade_date": "2026-07-22",
+  "signal_date": "2026-07-22",
+  "trade_date": "2026-07-23",
   "direction": 0,
-  "total_score": -5,
+  "total_score": 0,
   "tw_score": -8,
-  "intl_score": 1,
+  "intl_score": 10,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 3,
-  "foreign_fut_net": 6561,
+  "inst_score": 1,
+  "foreign_fut_net": -198,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-8) vs 國際(+1) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-8) vs 國際(+10) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 42671.26953125,
-  "tw_chg_pct": -6.473889757658291,
-  "tw_ma5": 44809.26171875,
-  "tw_ma10": 45395.144921875,
-  "tw_rsi": 39.69092655077048,
-  "tw_macd": 79.4407283419423,
-  "tw_macds": 489.4328062571506,
+  "tw_last_close": 45010.359375,
+  "tw_chg_pct": 1.7577160650551926,
+  "tw_ma5": 43997.8359375,
+  "tw_ma10": 44682.82578125,
+  "tw_rsi": 39.486452236573996,
+  "tw_macd": -138.3686723664723,
+  "tw_macds": 175.96877225726286,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 45345.9296875,
-  "tw_ma10_p2": 45802.433984375,
-  "tw_ma20_p2": 46011.2255859375,
-  "tw_ma20": 45850.91953125,
+  "tw_ma5_p2": 44122.08203125,
+  "tw_ma10_p2": 44729.70078125,
+  "tw_ma20_p2": 45474.7125,
+  "tw_ma20": 45370.198046875,
   "stats_real": {
-    "total": 1,
+    "total": 2,
     "wins": 1,
-    "losses": 0,
-    "win_rate": 100.0,
-    "total_pnl": 3981.0,
-    "avg_pnl": 3981.0,
+    "losses": 1,
+    "win_rate": 50.0,
+    "total_pnl": -12748.0,
+    "avg_pnl": -6374.0,
     "avg_win": 3981.0,
-    "avg_lose": 0,
+    "avg_lose": -16729.0,
     "max_win": 3981.0,
-    "max_lose": 0,
-    "streak": 1
+    "max_lose": -16729.0,
+    "streak": -1
   },
   "stats_sim": {
     "total": 789,
@@ -226,308 +226,317 @@
     }
   ],
   "stats_real_v100": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "win_rate": 0.0,
-    "total_pnl": 0,
-    "avg_pnl": 0,
+    "total_pnl": -16729.0,
+    "avg_pnl": -16729.0,
     "avg_win": 0,
-    "avg_lose": 0,
+    "avg_lose": -16729.0,
     "max_win": 0,
-    "max_lose": 0,
-    "streak": 0
+    "max_lose": -16729.0,
+    "streak": -1
   },
   "stats_real_v70": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "win_rate": 0.0,
-    "total_pnl": 0,
-    "avg_pnl": 0,
+    "total_pnl": -16729.0,
+    "avg_pnl": -16729.0,
     "avg_win": 0,
-    "avg_lose": 0,
+    "avg_lose": -16729.0,
     "max_win": 0,
-    "max_lose": 0,
-    "streak": 0
+    "max_lose": -16729.0,
+    "streak": -1
   },
   "stats_real_v60": {
-    "total": 4,
+    "total": 5,
     "wins": 1,
-    "losses": 3,
-    "win_rate": 25.0,
-    "total_pnl": -328.0,
-    "avg_pnl": -82.0,
+    "losses": 4,
+    "win_rate": 20.0,
+    "total_pnl": -17057.0,
+    "avg_pnl": -3411.4,
     "avg_win": 25558.0,
-    "avg_lose": -8628.666666666666,
+    "avg_lose": -10653.75,
     "max_win": 25558.0,
-    "max_lose": -16238.0,
-    "streak": 1
+    "max_lose": -16729.0,
+    "streak": -1
   },
   "stats_real_v50": {
-    "total": 13,
-    "wins": 6,
-    "losses": 7,
-    "win_rate": 46.15384615384615,
-    "total_pnl": 20049.0,
-    "avg_pnl": 1542.2307692307693,
-    "avg_win": 10855.166666666666,
-    "avg_lose": -6440.285714285715,
+    "total": 15,
+    "wins": 7,
+    "losses": 8,
+    "win_rate": 46.666666666666664,
+    "total_pnl": 6684.0,
+    "avg_pnl": 445.6,
+    "avg_win": 9785.0,
+    "avg_lose": -7726.375,
     "max_win": 25558.0,
-    "max_lose": -16238.0,
-    "streak": 2
+    "max_lose": -16729.0,
+    "streak": -1
   },
   "stats_real_cons": {
-    "total": 0,
+    "total": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "win_rate": 0.0,
-    "total_pnl": 0,
-    "avg_pnl": 0,
+    "total_pnl": -16729.0,
+    "avg_pnl": -16729.0,
     "avg_win": 0,
-    "avg_lose": 0,
+    "avg_lose": -16729.0,
     "max_win": 0,
-    "max_lose": 0,
-    "streak": 0
+    "max_lose": -16729.0,
+    "streak": -1
   },
-  "cons_recent": [],
+  "cons_recent": [
+    {
+      "date": "2026-07-21",
+      "dir": -1,
+      "entry": 42566,
+      "exit": 44234,
+      "pnl": -16729,
+      "win": false
+    }
+  ],
   "gold": {
-    "price_usd": 4011.89990234375,
-    "chg_pct": -0.01993791805667784,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.0%，影響中性",
-    "oil_usd": 81.94999694824219,
-    "oil_chg": -0.6546259298238117
+    "price_usd": 4126.10009765625,
+    "chg_pct": 2.8875657037673195,
+    "signal": -2,
+    "level": "danger",
+    "warning": "黃金大漲 +2.9%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 85.22000122070312,
+    "oil_chg": 2.390962133253058
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7469.509765625,
-      "chg_pct": 0.15849176235022194,
-      "signal": 0,
-      "note": "+0.16%",
+      "price": 7509.2001953125,
+      "chg_pct": 0.8856366018608045,
+      "signal": 1,
+      "note": "+0.89%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51946.94140625,
-      "chg_pct": -0.38253913035140535,
-      "signal": -1,
-      "note": "-0.38%",
+      "price": 52224.640625,
+      "chg_pct": 0.7434112552390197,
+      "signal": 1,
+      "note": "+0.74%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25629.4453125,
-      "chg_pct": 0.42791555691511096,
+      "price": 25837.20703125,
+      "chg_pct": 1.2903238650267852,
       "signal": 1,
-      "note": "+0.43%",
+      "note": "+1.29%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11877.9365234375,
-      "chg_pct": 1.7478910726838233,
+      "price": 12356.1640625,
+      "chg_pct": 5.2139159942596285,
       "signal": 1,
-      "note": "+1.75%",
+      "note": "+5.21%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.729999542236328,
-      "chg_pct": -5.540761268853232,
+      "price": 17.049999237060547,
+      "chg_pct": -8.579090692741879,
       "signal": 1,
-      "note": "VIX=17.7(低恐慌)",
+      "note": "VIX=17.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64141.12109375,
-      "chg_pct": -4.031415032398207,
-      "signal": -1,
-      "note": "-4.03%",
+      "price": 67468.5390625,
+      "chg_pct": 1.8666929315900975,
+      "signal": 1,
+      "note": "+1.87%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 7121.330078125,
+      "chg_pct": 5.533234123035916,
+      "signal": 1,
+      "note": "+5.53%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24562.240234375,
-      "chg_pct": -1.7848235485871538,
+      "price": 24927.4296875,
+      "chg_pct": -0.8151242192485824,
       "signal": -1,
-      "note": "-1.78%",
+      "note": "-0.82%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3872.777099609375,
+      "chg_pct": 0.21763347977221012,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.22%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 42671.26953125,
-      "chg_pct": -6.473889757658287,
-      "signal": -1,
-      "note": "-6.47%",
+      "price": 44973.98046875,
+      "chg_pct": 1.6754720113673947,
+      "signal": 1,
+      "note": "+1.68%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.98899841308594,
-      "chg_pct": 0.23721926857165013,
+      "price": 101.15699768066406,
+      "chg_pct": 0.16536272940594143,
       "signal": 0,
-      "note": "+0.24%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4011.89990234375,
-      "chg_pct": -0.01993791805667784,
-      "signal": 0,
-      "note": "-0.02%()",
+      "price": 4126.10009765625,
+      "chg_pct": 2.8875657037673195,
+      "signal": -1,
+      "note": "+2.89%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 81.94999694824219,
-      "chg_pct": -0.6546259298238117,
-      "signal": -1,
-      "note": "-0.65%",
+      "price": 85.22000122070312,
+      "chg_pct": 2.390962133253058,
+      "signal": 1,
+      "note": "+2.39%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.6020002365112305,
-      "chg_pct": 1.3433241273622525,
+      "price": 4.627999782562256,
+      "chg_pct": 0.6524517757206095,
       "signal": 0,
-      "note": "4.60%(+1.34%)",
+      "note": "4.63%(+0.65%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 65456.0390625,
-      "chg_pct": 1.182910583191221,
+      "price": 66312.9609375,
+      "chg_pct": 1.6601765135604545,
       "signal": 1,
-      "note": "+1.18%",
+      "note": "+1.66%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Canada ‘poisoned’ US air with wildfires, floats new tariffs - The Hil",
+      "title": "Trump announces new tariffs on generic drugs to take effect in 2028 – as it happ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump's temporary global tariffs are set to expire this Friday - Yahoo Finance",
+      "title": "White House teases new trade action 'soon' as it works to re-create global tarif",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says new Air Force One will be \"maxed out\" with security capabilities - CB",
+      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he will impose tariffs on generic drugs starting in August 2028 - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Carney says latest Trump tariffs 'not a surprise' after U.S. promises new 10% le",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Canada issues air quality warnings over US wildfire smoke after Trump tariff thr",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Republicans don’t want to go there again on Trump’s 2020 election fraud claims -",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says new Air Force One will be sent to get ‘maxed out’ for upgrades - NBC ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "‘How to Win a Trade War’ Review: The Times of Tariffs - WSJ",
+      "title": "Trump says he will impose 50 percent tariffs on Canadian goods in 30 days - The ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Mexico gains from U.S.-China trade war; inefficiencies limit benefit - Federal R",
+      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "On China, Trump picked the right battle but the wrong strategy - The Guardian",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump’s latest Canada tariffs raises concerns about Ohio economy - Spectrum News",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S. says it plans extra tariffs of 10% or more for most trading partners after ",
+      "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump imposes 50% tariffs on Canadian goods, citing disputes over autos, alcohol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Jumped as Market Favore",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Doubled Since Giverny C",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan indicts ex-TSMC employee over alleged theft of trade secrets for intended",
+      "title": "TSMC to raise chipmaking prices by up to 10% in 2027, Nikkei Asia reports - Reut",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why Intel Vs. Taiwan Semiconductor Isn’t a Real Competition Through The End of 2",
+      "title": "$Taiwan Semiconductor (TSM.US)$ [Share Link: TSMC plans chip price hikes up to 1",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC is accelerating Arizona factory build-out to capitalize on AI 'megatrend,' ",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Trading Up 5.7% - Should You Buy? ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "A Fed Pause and Fixed Income Outlook - Morgan Stanley",
+      "title": "Fed to hold rates this year despite high inflation, but economists cite high cha",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Monetary Tightening: Interest Rate Outlook & Inflation - Funds Society",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed rate-hike voices swell before July decision, rates still seen on hold - Reut",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The new Fed boss is tight-lipped. That might upset the markets - Financial Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Could AI-Driven Inflation Lead to Fed Rate Hikes? - Investopedia",
+      "title": "Money Market Funds Flee Interest Rate Risk - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
