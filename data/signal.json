@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22 13:35",
+  "generated_at": "2026-07-22 15:57",
   "mode": "morning",
   "signal_date": "2026-07-22",
   "trade_date": "2026-07-23",
@@ -10,23 +10,23 @@
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
-  "foreign_fut_net": -198,
+  "foreign_fut_net": 465,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 44805.30859375,
-  "tw_chg_pct": 1.2941450234752683,
-  "tw_ma5": 43956.82578125,
-  "tw_ma10": 44662.320703125,
-  "tw_rsi": 38.15900434857829,
-  "tw_macd": -154.72599964567053,
-  "tw_macds": 172.69730680142322,
+  "tw_last_close": 44825.78125,
+  "tw_chg_pct": 1.3404288294859956,
+  "tw_ma5": 43960.9203125,
+  "tw_ma10": 44664.36796875,
+  "tw_rsi": 38.29415058833538,
+  "tw_macd": -153.09285327814723,
+  "tw_macds": 173.0239360749279,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 44122.08203125,
   "tw_ma10_p2": 44729.70078125,
   "tw_ma20_p2": 45474.7125,
-  "tw_ma20": 45359.9455078125,
+  "tw_ma20": 45360.969140625,
   "stats_real": {
     "total": 2,
     "wins": 1,
@@ -301,13 +301,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4128.7001953125,
-    "chg_pct": 1.4148533878941132,
+    "price_usd": 4115.0,
+    "chg_pct": 1.0783302127359473,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.41999816894531,
-    "oil_chg": 0.6006294721943579
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 87.61000061035156,
+    "oil_chg": 3.1798337437206428
   },
   "intl_data": {
     "S&P500": {
@@ -344,74 +344,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.049999237060547,
-      "chg_pct": -8.579090692741879,
+      "price": 17.639999389648438,
+      "chg_pct": 3.460411606972059,
       "signal": 1,
-      "note": "VIX=17.0(低恐慌)",
+      "note": "VIX=17.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66264.703125,
-      "chg_pct": 0.04909338831667005,
+      "price": 66115.6015625,
+      "chg_pct": -0.17602610135744043,
       "signal": 0,
-      "note": "+0.05%",
+      "note": "-0.18%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6938.81982421875,
-      "chg_pct": 2.8285571674615886,
+      "price": 6797.7001953125,
+      "chg_pct": 0.7372609245776459,
       "signal": 1,
-      "note": "+2.83%",
+      "note": "+0.74%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24880.7109375,
-      "chg_pct": -1.001015563581834,
+      "price": 24857.33984375,
+      "chg_pct": -1.0940078640120885,
       "signal": -1,
-      "note": "-1.00%",
+      "note": "-1.09%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3867.6728515625,
-      "chg_pct": 0.08554850643275363,
+      "price": 3867.03369140625,
+      "chg_pct": 0.069008665221547,
       "signal": 0,
-      "note": "+0.09%",
+      "note": "+0.07%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44811.05859375,
-      "chg_pct": 1.3071444057396864,
+      "price": 44825.78125,
+      "chg_pct": 1.34042882948599,
       "signal": 1,
-      "note": "+1.31%",
+      "note": "+1.34%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.13400268554688,
-      "chg_pct": -0.04546117759455401,
+      "price": 101.13999938964844,
+      "chg_pct": -0.03953440937605684,
       "signal": 0,
-      "note": "-0.05%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4128.7001953125,
-      "chg_pct": 1.4148533878941132,
+      "price": 4115.0,
+      "chg_pct": 1.0783302127359473,
       "signal": -1,
-      "note": "+1.41%(避險↑)",
+      "note": "+1.08%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.41999816894531,
-      "chg_pct": 0.6006294721943579,
+      "price": 87.61000061035156,
+      "chg_pct": 3.1798337437206428,
       "signal": 1,
-      "note": "+0.60%",
+      "note": "+3.18%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -424,10 +424,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 66067.2109375,
-      "chg_pct": 1.2834328419612637,
-      "signal": 1,
-      "note": "+1.28%",
+      "price": 65814.0,
+      "chg_pct": -1.039205625130394,
+      "signal": -1,
+      "note": "-1.04%",
       "desc": "風險偏好指標"
     }
   },
@@ -458,13 +458,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney says latest Trump tariffs 'not a surprise' after U.S. promises new 10% le",
+      "title": "Canada faces tough choice on US trade - fight back or hold firm - BBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump to Impose 50% Tariff on Many Canadian Goods - The New York Times",
+      "title": "Trump’s new 50% tariffs on Canada risk igniting a fresh trade war - CNN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -494,25 +494,25 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (TSM) Stock Is Down Nearly 15% This Month Despite Record AI",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
       "title": "Taiwan Issues First National Security Indictment for TSMC Leak to China - domino",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Doubled Since Giverny C",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Still Looks Undervalued As I",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan indicts ex-TSMC employee over alleged theft of trade secrets for intended",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "$Taiwan Semiconductor (TSM.US)$ [Share Link: TSMC plans chip price hikes up to 1",
+      "title": "Trump's push for American-made AI chips hits TSMC's margins - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
