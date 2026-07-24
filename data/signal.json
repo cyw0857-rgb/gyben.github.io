@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-23 16:01",
+  "generated_at": "2026-07-24 10:32",
   "mode": "morning",
-  "signal_date": "2026-07-23",
-  "trade_date": "2026-07-24",
-  "direction": 0,
-  "total_score": 1,
-  "tw_score": -7,
-  "intl_score": 5,
+  "signal_date": "2026-07-24",
+  "trade_date": "2026-07-27",
+  "direction": -1,
+  "total_score": -17,
+  "tw_score": -8,
+  "intl_score": -10,
   "news_score": -2,
-  "psy_score": 2,
+  "psy_score": -1,
   "inst_score": 2,
   "foreign_fut_net": 1397,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+5) 方向相反 → 觀望",
+  "veto_msg": "⚠️ 外資期貨(+1,397口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 44850.80859375,
-  "tw_chg_pct": 0.055832476427841726,
-  "tw_ma5": 43806.0859375,
-  "tw_ma10": 44576.0078125,
-  "tw_rsi": 39.61772863153944,
-  "tw_macd": -130.4122523454862,
-  "tw_macds": 112.33171081947629,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 43960.9203125,
-  "tw_ma10_p2": 44664.36796875,
-  "tw_ma20_p2": 45360.969140625,
-  "tw_ma20": 45301.3294921875,
+  "tw_last_close": 44221.05078125,
+  "tw_chg_pct": -1.404116965212876,
+  "tw_ma5": 44116.0421875,
+  "tw_ma10": 44462.651953125,
+  "tw_rsi": 36.82195144122902,
+  "tw_macd": -161.39164147344854,
+  "tw_macds": 57.58513285484454,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 43806.0859375,
+  "tw_ma10_p2": 44576.0078125,
+  "tw_ma20_p2": 45301.3294921875,
+  "tw_ma20": 45199.6189453125,
   "stats_real": {
     "total": 2,
     "wins": 1,
@@ -265,17 +265,17 @@
     "streak": -1
   },
   "stats_real_v50": {
-    "total": 16,
-    "wins": 7,
+    "total": 17,
+    "wins": 8,
     "losses": 9,
-    "win_rate": 43.75,
-    "total_pnl": 3494.0,
-    "avg_pnl": 218.375,
-    "avg_win": 9785.0,
+    "win_rate": 47.05882352941176,
+    "total_pnl": 3906.0,
+    "avg_pnl": 229.76470588235293,
+    "avg_win": 8613.375,
     "avg_lose": -7222.333333333333,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_real_cons": {
     "total": 1,
@@ -301,170 +301,170 @@
     }
   ],
   "gold": {
-    "price_usd": 4096.39990234375,
-    "chg_pct": -1.2177771634048449,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 89.61000061035156,
-    "oil_chg": 3.201656939620852
+    "price_usd": 4045.60009765625,
+    "chg_pct": -2.4427839367486843,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -2.4%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 91.87999725341797,
+    "oil_chg": 5.81595683043871
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7498.9599609375,
-      "chg_pct": -0.13636917526039996,
-      "signal": 0,
-      "note": "-0.14%",
+      "price": 7408.2998046875,
+      "chg_pct": -1.2089697334330867,
+      "signal": -1,
+      "note": "-1.21%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52218.578125,
-      "chg_pct": -0.011608504965178974,
-      "signal": 0,
-      "note": "-0.01%",
+      "price": 51711.6484375,
+      "chg_pct": -0.9707841647593694,
+      "signal": -1,
+      "note": "-0.97%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25690.900390625,
-      "chg_pct": -0.5662784084122857,
+      "price": 25137.693359375,
+      "chg_pct": -2.153318968345203,
       "signal": -1,
-      "note": "-0.57%",
+      "note": "-2.15%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12410.669921875,
-      "chg_pct": 0.44115457339251013,
-      "signal": 1,
-      "note": "+0.44%",
+      "price": 12343.8369140625,
+      "chg_pct": -0.5385124915352103,
+      "signal": -1,
+      "note": "-0.54%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.889999389648438,
-      "chg_pct": 7.512019506308463,
+      "price": 18.700000762939453,
+      "chg_pct": 12.379816399347467,
       "signal": 1,
-      "note": "VIX=17.9(低恐慌)",
+      "note": "VIX=18.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66422.6015625,
-      "chg_pct": 0.4643382087506058,
-      "signal": 1,
-      "note": "+0.46%",
+      "price": 64538.44921875,
+      "chg_pct": -2.8366132903980232,
+      "signal": -1,
+      "note": "-2.84%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7096.89013671875,
-      "chg_pct": 4.401340641832996,
-      "signal": 1,
-      "note": "+4.40%",
+      "price": 6826.10009765625,
+      "chg_pct": -3.8156154857386575,
+      "signal": -1,
+      "note": "-3.82%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25128.830078125,
-      "chg_pct": 0.9487532485181296,
-      "signal": 1,
-      "note": "+0.95%",
+      "price": 24939.330078125,
+      "chg_pct": -1.0768414932365247,
+      "signal": -1,
+      "note": "-1.08%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3876.77734375,
-      "chg_pct": 0.25196076283584745,
-      "signal": 0,
-      "note": "+0.25%",
+      "price": 3842.427001953125,
+      "chg_pct": -0.886047785922774,
+      "signal": -1,
+      "note": "-0.89%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44850.80859375,
-      "chg_pct": 0.05583247642783693,
-      "signal": 0,
-      "note": "+0.06%",
+      "price": 44219.44140625,
+      "chg_pct": -1.4077052505759764,
+      "signal": -1,
+      "note": "-1.41%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.06600189208984,
-      "chg_pct": -0.07316343484788207,
+      "price": 101.38600158691406,
+      "chg_pct": 0.24322938377514272,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "+0.24%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4096.39990234375,
-      "chg_pct": -1.2177771634048449,
+      "price": 4045.60009765625,
+      "chg_pct": -2.4427839367486843,
       "signal": 1,
-      "note": "-1.22%()",
+      "note": "-2.44%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.61000061035156,
-      "chg_pct": 3.201656939620852,
+      "price": 91.87999725341797,
+      "chg_pct": 5.81595683043871,
       "signal": 1,
-      "note": "+3.20%",
+      "note": "+5.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.6570000648498535,
-      "chg_pct": 0.6266266994408085,
+      "price": 4.703000068664551,
+      "chg_pct": 0.9877604289056491,
       "signal": 0,
-      "note": "4.66%(+0.63%)",
+      "note": "4.70%(+0.99%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 65401.98828125,
-      "chg_pct": -1.0571863378159918,
+      "price": 65020.16015625,
+      "chg_pct": -1.6348316054245753,
       "signal": -1,
-      "note": "-1.06%",
+      "note": "-1.63%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says he will impose tariffs on generic drugs starting in August 2028 - Pol",
+      "title": "Trump to impose fresh wave of tariffs on more than 80 countries - The Guardian",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "White House teases new trade action 'soon' as it works to re-create global tarif",
+      "title": "Trump imposes new double-digit tariffs on dozens of countries - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump imposing 50% tariffs on certain Canadian goods over alleged trade discrimi",
+      "title": "Trump to slap 'sweeping' new tariffs on 60 trade partners as global duties expir",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Trade Negotiator Doubles Down on Tariffs Before Global Duties Expire - T",
+      "title": "Trump Administration to Impose New Tariffs of Around 10% on Over 80 Nations - Th",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Tariffs Enter New Phase, Ending Months of Calm - WSJ",
+      "title": "Trump to impose double-digit tariffs on dozens of countries - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Trade Ambassador Dodges Key Question on Tariff Reimbursements - The New Re",
+      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -476,25 +476,37 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "China braces as new US global tariffs loom: fresh trade war or managed friction?",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump imposes 50% tariffs on Canadian goods, citing disputes over autos, alcohol",
+      "title": "Trump’s latest Canada tariffs raises concerns about Ohio economy - Spectrum News",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "China braces as new US global tariffs loom: fresh trade war or managed friction?",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Why Is Everyone Talking About Taiwan Semiconductor Stock? - The Motley Fool",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Is Raising Prices Up to",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Better-Buy Chip Stock: Taiwan Semiconductor vs. Nvidia - The Motley Fool",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Down 1.4% - Here's Wha",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -505,40 +517,28 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Just Gave a Warning to Nvidia Investors - Yah",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "B&D White Capital Company LLC Buys Shares of 6,266 Taiwan Semiconductor Manufact",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
-      "title": "Fed to hold rates this year despite high inflation, but economists cite high cha",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "U.S. 10-year Treasury yield rises as traders reassess Fed rate hike bets - CNBC",
+      "title": "Odds of Federal Reserve rate hike surge as oil prices rip higher - CNBC",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "The bull market faces higher likelihood of a Fed rate hike as Iran crisis intens",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The Fed Is Heading Into One of Its Most Unpredictable Meetings in Years - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+      "title": "A Fed Pause and Fixed Income Outlook - Morgan Stanley",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Investors want a bigger reward for lending money - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }

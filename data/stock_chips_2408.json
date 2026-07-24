@@ -1,7 +1,14 @@
 {
-  "updated": "2026-07-23 16:02",
+  "updated": "2026-07-24 10:35",
   "inst": {
     "rows": [
+      {
+        "date": "07/23",
+        "foreign": 577966,
+        "trust": -1251999,
+        "dealer": 1672,
+        "total": -672361
+      },
       {
         "date": "07/22",
         "foreign": 7791513,
@@ -78,27 +85,27 @@
         "trust": -542370,
         "dealer": -1783190,
         "total": -5630858
-      },
-      {
-        "date": "07/06",
-        "foreign": 4618390,
-        "trust": 1201337,
-        "dealer": -41491,
-        "total": 5778236
       }
     ],
-    "total_foreign": -32704482,
-    "total_trust": 3187468,
-    "total_dealer": 771402,
-    "net5": -28745612,
+    "total_foreign": -10194554,
+    "total_trust": 3305106,
+    "total_dealer": 787016,
+    "net5": -6102432,
     "mood": "偏空",
-    "trust_streak": 2,
-    "streak_label": "📈 投信連買 2 日",
-    "streak_color": "#10b981",
-    "foreign_streak": 1
+    "trust_streak": -1,
+    "streak_label": "📉 投信連賣 1 日",
+    "streak_color": "#ef4444",
+    "foreign_streak": 2
   },
   "margin": {
     "rows": [
+      {
+        "date": "07/23",
+        "fin_bal": 90111,
+        "fin_chg": 2299,
+        "sho_bal": 1010,
+        "sho_chg": -386
+      },
       {
         "date": "07/22",
         "fin_bal": 87812,
@@ -147,19 +154,12 @@
         "fin_chg": 5306,
         "sho_bal": 1478,
         "sho_chg": 435
-      },
-      {
-        "date": "07/13",
-        "fin_bal": 87783,
-        "fin_chg": 6503,
-        "sho_bal": 1043,
-        "sho_chg": 1
       }
     ],
-    "fin_bal": 87812,
-    "sho_bal": 1396,
-    "fin_5chg": -6669,
-    "sho_5chg": 137,
+    "fin_bal": 90111,
+    "sho_bal": 1010,
+    "fin_5chg": -4555,
+    "sho_5chg": 155,
     "note": "融資5日減少（散戶退場，籌碼沉澱）",
     "note_color": "#10b981"
   }
