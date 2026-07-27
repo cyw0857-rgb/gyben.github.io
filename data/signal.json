@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-27 14:14",
+  "generated_at": "2026-07-27 16:59",
   "mode": "morning",
   "signal_date": "2026-07-27",
   "trade_date": "2026-07-28",
   "direction": -1,
-  "total_score": -18,
+  "total_score": -15,
   "tw_score": -9,
   "intl_score": -6,
-  "news_score": -2,
-  "psy_score": -1,
-  "inst_score": 0,
+  "news_score": 0,
+  "psy_score": 1,
+  "inst_score": -1,
   "foreign_fut_net": -1246,
   "foreign_cash_b": 0,
   "veto_msg": "",
@@ -301,13 +301,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4095.300048828125,
-    "chg_pct": 0.6809900311447948,
+    "price_usd": 4095.0,
+    "chg_pct": 0.6736134744302376,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 84.20999908447266,
-    "oil_chg": -5.710445206064561
+    "oil_usd": 83.4000015258789,
+    "oil_chg": -6.617395805925829
   },
   "intl_data": {
     "S&P500": {
@@ -344,42 +344,42 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.700000762939453,
-      "chg_pct": 12.379816399347467,
+      "price": 17.610000610351562,
+      "chg_pct": -5.828877583513817,
       "signal": 1,
-      "note": "VIX=18.7(低恐慌)",
+      "note": "VIX=17.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64809.7890625,
-      "chg_pct": -2.4281079964662817,
+      "price": 64931.19140625,
+      "chg_pct": -2.2453353544827137,
       "signal": -1,
-      "note": "-2.43%",
+      "note": "-2.25%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6729.4599609375,
-      "chg_pct": -5.177340619663749,
+      "price": 6755.75,
+      "chg_pct": -4.806896121354871,
       "signal": -1,
-      "note": "-5.18%",
+      "note": "-4.81%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25189.25,
-      "chg_pct": -0.08552103802815865,
+      "price": 25207.1796875,
+      "chg_pct": -0.014401993812333265,
       "signal": 0,
-      "note": "-0.09%",
+      "note": "-0.01%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3828.061279296875,
-      "chg_pct": -1.2566061721064288,
+      "price": 3858.2451171875,
+      "chg_pct": -0.4780254821393339,
       "signal": -1,
-      "note": "-1.26%",
+      "note": "-0.48%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -392,26 +392,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.16500091552734,
-      "chg_pct": -0.2612633233275413,
+      "price": 101.25700378417969,
+      "chg_pct": -0.17055754754569005,
       "signal": 0,
-      "note": "-0.26%(中性)",
+      "note": "-0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4095.300048828125,
-      "chg_pct": 0.6809900311447948,
+      "price": 4095.10009765625,
+      "chg_pct": 0.6760743273618636,
       "signal": 0,
       "note": "+0.68%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.20999908447266,
-      "chg_pct": -5.710445206064561,
+      "price": 83.41999816894531,
+      "chg_pct": -6.595005655200222,
       "signal": -1,
-      "note": "-5.71%",
+      "note": "-6.60%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -424,121 +424,12 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 65543.7421875,
-      "chg_pct": 1.9155574063473952,
-      "signal": 1,
-      "note": "+1.92%",
+      "price": 65121.94140625,
+      "chg_pct": -0.33418789382533765,
+      "signal": -1,
+      "note": "-0.33%",
       "desc": "風險偏好指標"
     }
   },
-  "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump threatens EU with 'substantial TARIFF' for 'ROBBING' U.S. tech giants - CN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says U.S. will investigate EU trade practices, claiming unfair fines again",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump rebuilds trade regime with new tariffs on global trading partners - Axios",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "War and Tariffs Threaten a Resilient U.S. Economy Again - The New York Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Tariffs: Trump pursues his trade war through every method available - Le Monde.f",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Stock Is Down Nearly 15% This Month Despite Record AI",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Does a Chinese Takeover of Taiwan Pose a Real Risk to the West's AI Industry? - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Purchased by Insight",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Trump administration lowers tariffs against Taiwan after TSMC announces $100 bil",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Odds of Federal Reserve rate hike surge as oil prices rip higher - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Will the Federal Reserve raise interest rates? Here is what experts predict for ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Investors May Pay a Price for the Fed’s Zipped Lip - Barron's",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "A Fed Pause and Fixed Income Outlook - Morgan Stanley",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    }
-  ]
+  "news": []
 }
