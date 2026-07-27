@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-27 16:59",
+  "generated_at": "2026-07-27 18:05",
   "mode": "morning",
   "signal_date": "2026-07-27",
   "trade_date": "2026-07-28",
   "direction": -1,
-  "total_score": -15,
+  "total_score": -18,
   "tw_score": -9,
   "intl_score": -6,
-  "news_score": 0,
+  "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -1246,
@@ -301,13 +301,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4095.0,
-    "chg_pct": 0.6736134744302376,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 83.4000015258789,
-    "oil_chg": -6.617395805925829
+    "price_usd": 4101.0,
+    "chg_pct": 0.8211206004000987,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 82.30000305175781,
+    "oil_chg": -7.84905911819881
   },
   "intl_data": {
     "S&P500": {
@@ -344,10 +344,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.610000610351562,
-      "chg_pct": -5.828877583513817,
+      "price": 17.549999237060547,
+      "chg_pct": -6.149740529198446,
       "signal": 1,
-      "note": "VIX=17.6(低恐慌)",
+      "note": "VIX=17.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,26 +392,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.25700378417969,
-      "chg_pct": -0.17055754754569005,
+      "price": 101.27300262451172,
+      "chg_pct": -0.15478426519934774,
       "signal": 0,
-      "note": "-0.17%(中性)",
+      "note": "-0.15%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4095.10009765625,
-      "chg_pct": 0.6760743273618636,
+      "price": 4101.0,
+      "chg_pct": 0.8211206004000987,
       "signal": 0,
-      "note": "+0.68%()",
+      "note": "+0.82%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.41999816894531,
-      "chg_pct": -6.595005655200222,
+      "price": 82.30000305175781,
+      "chg_pct": -7.84905911819881,
       "signal": -1,
-      "note": "-6.60%",
+      "note": "-7.85%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -424,12 +424,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 65121.94140625,
-      "chg_pct": -0.33418789382533765,
-      "signal": -1,
-      "note": "-0.33%",
+      "price": 65180.16015625,
+      "chg_pct": -0.24508706431598465,
+      "signal": 0,
+      "note": "-0.25%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump threatens EU with 'substantial TARIFF' for 'ROBBING' U.S. tech giants - CN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Section 301 Tariffs: Map of Countries Targeted With New Rates - The New ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Why Trump's new tariff blitz is very different this time round - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. will investigate EU trade practices, claiming unfair fines again",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump rebuilds trade regime with new tariffs on global trading partners - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "War and Tariffs Threaten a Resilient U.S. Economy Again - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tariffs: Trump pursues his trade war through every method available - Le Monde.f",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "US small businesses challenge Trump’s new forced labour tariffs - Al Jazeera",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Castleark Management LLC Buys 4,920 Shares of Taiwan Semiconductor Manufacturing",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan brings first China-linked prosecution over ‘national core’ TSMC trade sec",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (TSM) Stock Is Down Nearly 15% This Month Despite Record AI",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Consumer confidence weakens on stock market crash - Focus Taiwan",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed expected to hold rates steady — but an interest rate hike isn't off the tabl",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Odds of Federal Reserve rate hike surge as oil prices rip higher - CNBC",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Markets Brief: Oil Prices Heat the Markets Like a Frog in a Pot - Morningstar",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Investors May Pay a Price for the Fed’s Zipped Lip - Barron's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    }
+  ]
 }
