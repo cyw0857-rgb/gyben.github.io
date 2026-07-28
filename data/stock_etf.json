@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 18:07",
+  "updated": "2026-07-28 10:28",
   "start_date": "2026-07-07",
   "etfs": [
     {
@@ -13,29 +13,29 @@
         10
       ],
       "style": "選未來一年高殖利率股，偏電子/AI，攻擊性較強",
-      "drawdown_pct": -4.9,
+      "drawdown_pct": -8.0,
       "high_1y": 52.59,
-      "direction": 0,
-      "signal_text": "⚪ 暫時整理",
-      "signal_color": "#9ca3af",
-      "hold_advice": "🟠 偏弱 — 逢高調節",
-      "hold_color": "#f59e0b",
-      "score": -2,
+      "direction": -1,
+      "signal_text": "🔴 明日看跌",
+      "signal_color": "#ef4444",
+      "hold_advice": "🔴 賣出 / 停損 — 空頭轉強",
+      "hold_color": "#ef4444",
+      "score": -8,
       "tech_details": [
         {
-          "icon": "📈",
-          "text": "MA5>MA10 短線偏多",
-          "score": 1
+          "icon": "📉",
+          "text": "均線空頭排列 MA5<MA10<MA20",
+          "score": -3
         },
         {
           "icon": "📉",
-          "text": "RSI=46 中性偏空",
-          "score": -1
+          "text": "RSI=39 弱勢區",
+          "score": -2
         },
         {
           "icon": "📉",
-          "text": "MACD死叉（零軸上）",
-          "score": -1
+          "text": "MACD死叉零軸下",
+          "score": -2
         },
         {
           "icon": "📉",
@@ -43,17 +43,17 @@
           "score": -1
         }
       ],
-      "rsi": 45.8,
-      "macd": 0.11,
-      "macds": 0.33,
-      "k": 58.2,
-      "d": 53.2,
-      "ma5": 50.27,
-      "ma10": 50.25,
-      "ma20": 50.76,
-      "ma60": 48.58,
-      "last_close": 50.0,
-      "chg_pct": -0.4,
+      "rsi": 38.6,
+      "macd": -0.02,
+      "macds": 0.3,
+      "k": 44.1,
+      "d": 48.5,
+      "ma5": 49.94,
+      "ma10": 50.08,
+      "ma20": 50.67,
+      "ma60": 48.55,
+      "last_close": 48.36,
+      "chg_pct": -3.67,
       "dividend": {
         "recent": [
           {
@@ -85,7 +85,7 @@
           "ex_date": "2026-07-21",
           "amount": 1.35
         },
-        "yield_ttm": 8.16,
+        "yield_ttm": 8.44,
         "yield_label": "近12個月",
         "cum_per_share": 1.35,
         "cum_amount": 0.0,
@@ -112,24 +112,24 @@
         11
       ],
       "style": "ESG＋三年均殖利率，金融+穩健電子，最抗跌",
-      "drawdown_pct": -4.6,
+      "drawdown_pct": -7.5,
       "high_1y": 34.12,
-      "direction": 0,
-      "signal_text": "⚪ 暫時整理",
-      "signal_color": "#9ca3af",
-      "hold_advice": "🟠 偏弱 — 逢高調節",
-      "hold_color": "#f59e0b",
-      "score": -2,
+      "direction": -1,
+      "signal_text": "🔴 明日看跌",
+      "signal_color": "#ef4444",
+      "hold_advice": "🔴 賣出 / 停損 — 空頭轉強",
+      "hold_color": "#ef4444",
+      "score": -7,
       "tech_details": [
         {
-          "icon": "📈",
-          "text": "MA5>MA10 短線偏多",
-          "score": 1
+          "icon": "📉",
+          "text": "均線空頭排列 MA5<MA10<MA20",
+          "score": -3
         },
         {
           "icon": "📉",
-          "text": "RSI=45 中性偏空",
-          "score": -1
+          "text": "RSI=37 弱勢區",
+          "score": -2
         },
         {
           "icon": "📉",
@@ -142,17 +142,17 @@
           "score": -1
         }
       ],
-      "rsi": 45.4,
-      "macd": 0.1,
-      "macds": 0.25,
-      "k": 60.5,
-      "d": 50.8,
-      "ma5": 32.53,
-      "ma10": 32.47,
-      "ma20": 32.86,
-      "ma60": 31.16,
-      "last_close": 32.55,
-      "chg_pct": -0.18,
+      "rsi": 37.5,
+      "macd": 0.02,
+      "macds": 0.23,
+      "k": 45.1,
+      "d": 45.7,
+      "ma5": 32.34,
+      "ma10": 32.37,
+      "ma20": 32.81,
+      "ma60": 31.14,
+      "last_close": 31.57,
+      "chg_pct": -3.19,
       "dividend": {
         "recent": [
           {
@@ -184,7 +184,7 @@
           "ex_date": "2026-05-19",
           "amount": 0.66
         },
-        "yield_ttm": 5.78,
+        "yield_ttm": 5.96,
         "yield_label": "近12個月",
         "cum_per_share": 0.0,
         "cum_amount": 0.0,
@@ -204,14 +204,14 @@
         12
       ],
       "style": "主打宣告股利精準卡位，殖利率最高",
-      "drawdown_pct": -4.0,
+      "drawdown_pct": -6.2,
       "high_1y": 30.81,
       "direction": 0,
       "signal_text": "⚪ 暫時整理",
       "signal_color": "#9ca3af",
-      "hold_advice": "⚪ 中性 — 續抱、空手等訊號",
-      "hold_color": "#9ca3af",
-      "score": 0,
+      "hold_advice": "🟠 減碼 — 趨勢轉弱",
+      "hold_color": "#f59e0b",
+      "score": -3,
       "tech_details": [
         {
           "icon": "📈",
@@ -220,8 +220,8 @@
         },
         {
           "icon": "📉",
-          "text": "RSI=50 中性偏空",
-          "score": -1
+          "text": "RSI=37 弱勢區",
+          "score": -2
         },
         {
           "icon": "📉",
@@ -229,22 +229,22 @@
           "score": -1
         },
         {
-          "icon": "📈",
-          "text": "站上MA20支撐",
-          "score": 1
+          "icon": "📉",
+          "text": "跌破MA20壓力",
+          "score": -1
         }
       ],
-      "rsi": 49.6,
-      "macd": 0.11,
-      "macds": 0.19,
-      "k": 64.8,
-      "d": 52.3,
-      "ma5": 29.41,
-      "ma10": 29.33,
-      "ma20": 29.49,
-      "ma60": 28.21,
-      "last_close": 29.59,
-      "chg_pct": 0.34,
+      "rsi": 36.7,
+      "macd": 0.06,
+      "macds": 0.16,
+      "k": 54.5,
+      "d": 53.0,
+      "ma5": 29.39,
+      "ma10": 29.27,
+      "ma20": 29.46,
+      "ma60": 28.31,
+      "last_close": 28.9,
+      "chg_pct": -2.33,
       "dividend": {
         "recent": [
           {
@@ -276,7 +276,7 @@
           "ex_date": "2026-06-16",
           "amount": 1.0
         },
-        "yield_ttm": 9.67,
+        "yield_ttm": 9.9,
         "yield_label": "近12個月",
         "cum_per_share": 0.0,
         "cum_amount": 0.0,
