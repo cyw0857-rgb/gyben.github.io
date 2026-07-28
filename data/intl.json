@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 19:05",
+  "updated": "2026-07-28 20:59",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -17,6 +17,14 @@
       "note": "+0.49%",
       "desc": "藍籌股風向球"
     },
+    "NASDAQ": {
+      "category": "美股",
+      "price": 24926.11,
+      "chg_pct": -0.22,
+      "signal": -1,
+      "note": "-0.22%",
+      "desc": "科技股連動"
+    },
     "費城半導體": {
       "category": "半導體",
       "price": 11556.5,
@@ -27,10 +35,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.02,
-      "chg_pct": 1.87,
+      "price": 18.62,
+      "chg_pct": -0.27,
       "signal": 1,
-      "note": "VIX=19.0(低恐慌)",
+      "note": "VIX=18.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -75,51 +83,43 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.58,
-      "chg_pct": 0.1,
+      "price": 101.54,
+      "chg_pct": 0.06,
       "signal": 0,
-      "note": "+0.10%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4027.7,
-      "chg_pct": -0.54,
-      "signal": -1,
-      "note": "-0.54%",
+      "price": 4034.8,
+      "chg_pct": -0.37,
+      "signal": 0,
+      "note": "-0.37%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.98,
-      "chg_pct": -0.71,
+      "price": 80.97,
+      "chg_pct": -0.72,
       "signal": -1,
-      "note": "-0.71%",
+      "note": "-0.72%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.64,
-      "chg_pct": -0.81,
+      "price": 4.63,
+      "chg_pct": -0.26,
       "signal": 0,
-      "note": "4.64%(-0.81%)",
+      "note": "4.63%(-0.26%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63362.26,
-      "chg_pct": 0.13,
+      "price": 63462.75,
+      "chg_pct": 0.29,
       "signal": 0,
-      "note": "+0.13%",
+      "note": "+0.29%",
       "desc": "風險偏好指標"
-    },
-    "NASDAQ": {
-      "category": "美股",
-      "price": 24926.11,
-      "chg_pct": -0.22,
-      "signal": -1,
-      "note": "-0.22%",
-      "desc": "科技股連動"
     }
   }
 }
