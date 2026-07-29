@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-07-29 10:30",
+  "updated": "2026-07-29 16:10",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -52,15 +52,10 @@
   "ma_bull": false,
   "ma_bear": true,
   "retail": {
-    "mood": "冷清（量縮）",
-    "vol_ratio": 0.68,
+    "mood": "量能正常",
+    "vol_ratio": 0.73,
     "score": 0,
-    "signals": [
-      {
-        "icon": "💤",
-        "text": "量縮 0.7倍，觀望氣氛濃"
-      }
-    ]
+    "signals": []
   },
   "forecast": [
     {
@@ -70,7 +65,7 @@
       "price_low": 236.22,
       "chg_pct": -4.8,
       "trend": "down",
-      "model_note": "📉 MA5<MA10 空頭  美光↓-29%  費半↓-23%  台股↓-12%",
+      "model_note": "📉 MA5<MA10 空頭  美光↓-29%  費半↓-23%  台股↓-13%",
       "score": -4.0
     },
     {
@@ -138,11 +133,11 @@
   },
   "daily_vol_pct": 6.5,
   "slope_per_day": -0.052,
-  "model_accuracy": 55.0,
-  "model_samples": 131,
+  "model_accuracy": 55.4,
+  "model_samples": 130,
   "total_return": -58.8,
   "ipo_date": "2000-08-18",
   "model_score": -4.0,
   "model_threshold": 3.5,
-  "model_factors": "MA5<MA10 空頭  美光↓-29%  費半↓-23%  台股↓-12%"
+  "model_factors": "MA5<MA10 空頭  美光↓-29%  費半↓-23%  台股↓-13%"
 }

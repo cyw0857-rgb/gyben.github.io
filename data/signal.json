@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-07-29 10:29",
+  "generated_at": "2026-07-29 16:09",
   "mode": "morning",
   "signal_date": "2026-07-29",
   "trade_date": "2026-07-30",
   "direction": 0,
-  "total_score": -10,
-  "tw_score": -6,
-  "intl_score": -3,
+  "total_score": -12,
+  "tw_score": -7,
+  "intl_score": -2,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
-  "foreign_fut_net": -2544,
+  "foreign_fut_net": -525,
   "foreign_cash_b": 0,
   "veto_msg": "RSI=27 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 40352.73828125,
-  "tw_chg_pct": -7.52037111092192,
-  "tw_ma5": 43579.278125,
-  "tw_ma10": 43901.187890625,
-  "tw_rsi": 26.77504447902868,
-  "tw_macd": -528.5622039739828,
-  "tw_macds": -67.14897690944338,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 43998.6703125,
-  "tw_ma10_p2": 44403.966015625,
-  "tw_ma20_p2": 45170.2759765625,
-  "tw_ma20": 44959.3248046875,
+  "tw_last_close": 40039.1796875,
+  "tw_chg_pct": -3.759743710600294,
+  "tw_ma5": 42756.47578125,
+  "tw_ma10": 43358.698046875,
+  "tw_rsi": 26.91724952242717,
+  "tw_macd": -750.8412896700174,
+  "tw_macds": -234.615601094229,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 43713.79609375,
+  "tw_ma10_p2": 43917.9390625,
+  "tw_ma20_p2": 44954.6029296875,
+  "tw_ma20": 44650.26640625,
   "stats_real": {
-    "total": 3,
-    "wins": 1,
+    "total": 4,
+    "wins": 2,
     "losses": 2,
-    "win_rate": 33.33333333333333,
-    "total_pnl": -13301.0,
-    "avg_pnl": -4433.666666666667,
-    "avg_win": 3981.0,
+    "win_rate": 50.0,
+    "total_pnl": 2815.0,
+    "avg_pnl": 703.75,
+    "avg_win": 10048.5,
     "avg_lose": -8641.0,
-    "max_win": 3981.0,
+    "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_sim": {
     "total": 789,
@@ -252,43 +252,43 @@
     "streak": -2
   },
   "stats_real_v60": {
-    "total": 6,
-    "wins": 1,
+    "total": 7,
+    "wins": 2,
     "losses": 5,
-    "win_rate": 16.666666666666664,
-    "total_pnl": -17610.0,
-    "avg_pnl": -2935.0,
-    "avg_win": 25558.0,
+    "win_rate": 28.57142857142857,
+    "total_pnl": -1494.0,
+    "avg_pnl": -213.42857142857142,
+    "avg_win": 20837.0,
     "avg_lose": -8633.6,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_real_v50": {
-    "total": 19,
-    "wins": 9,
+    "total": 20,
+    "wins": 10,
     "losses": 10,
-    "win_rate": 47.368421052631575,
-    "total_pnl": 14429.0,
-    "avg_pnl": 759.421052631579,
-    "avg_win": 8887.0,
+    "win_rate": 50.0,
+    "total_pnl": 30545.0,
+    "avg_pnl": 1527.25,
+    "avg_win": 9609.9,
     "avg_lose": -6555.4,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": 1
   },
   "stats_real_cons": {
-    "total": 2,
-    "wins": 0,
+    "total": 3,
+    "wins": 1,
     "losses": 2,
-    "win_rate": 0.0,
-    "total_pnl": -17282.0,
-    "avg_pnl": -8641.0,
-    "avg_win": 0,
+    "win_rate": 33.33333333333333,
+    "total_pnl": -1166.0,
+    "avg_pnl": -388.6666666666667,
+    "avg_win": 16116.0,
     "avg_lose": -8641.0,
-    "max_win": 0,
+    "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "cons_recent": [
     {
@@ -306,16 +306,24 @@
       "exit": 43635,
       "pnl": -553,
       "win": false
+    },
+    {
+      "date": "2026-07-28",
+      "dir": -1,
+      "entry": 43221,
+      "exit": 41604,
+      "pnl": 16116,
+      "win": true
     }
   ],
   "gold": {
-    "price_usd": 4025.39990234375,
-    "chg_pct": -1.2050582318382623,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 82.70999908447266,
-    "oil_chg": 0.12104887227002792
+    "price_usd": 4102.5,
+    "chg_pct": 1.6401147182082039,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 82.12000274658203,
+    "oil_chg": 3.6083781646079847
   },
   "intl_data": {
     "S&P500": {
@@ -336,90 +344,90 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24876.912109375,
-      "chg_pct": -0.22127302887336495,
+      "price": 24876.91015625,
+      "chg_pct": -0.22128086265616156,
       "signal": 0,
       "note": "-0.22%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11035.6826171875,
-      "chg_pct": -4.493315991949762,
+      "price": 11035.6796875,
+      "chg_pct": -4.493341346497189,
       "signal": -1,
       "note": "-4.49%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.209999084472656,
-      "chg_pct": -2.4638510441431167,
+      "price": 18.25,
+      "chg_pct": 0.21966456638348666,
       "signal": 1,
       "note": "VIX=18.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 61524.7890625,
-      "chg_pct": -5.246172555863674,
+      "price": 61434.19140625,
+      "chg_pct": -1.4923941869365167,
       "signal": -1,
-      "note": "-5.25%",
+      "note": "-1.49%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5713.97998046875,
-      "chg_pct": -15.420493942659958,
+      "price": 5663.240234375,
+      "chg_pct": -5.983403985715184,
       "signal": -1,
-      "note": "-15.42%",
+      "note": "-5.98%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25671.869140625,
-      "chg_pct": 1.843480543582728,
+      "price": 25779.599609375,
+      "chg_pct": 1.8519726016086697,
       "signal": 1,
-      "note": "+1.84%",
+      "note": "+1.85%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3797.389892578125,
-      "chg_pct": -1.5772773051219702,
-      "signal": -1,
-      "note": "-1.58%",
+      "price": 3828.468994140625,
+      "chg_pct": 0.3973984044650292,
+      "signal": 1,
+      "note": "+0.40%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 40356.3203125,
-      "chg_pct": -7.512161880649609,
+      "price": 40039.1796875,
+      "chg_pct": -3.759743710600293,
       "signal": -1,
-      "note": "-7.51%",
+      "note": "-3.76%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.36000061035156,
-      "chg_pct": -0.14777019281075202,
+      "price": 101.3239974975586,
+      "chg_pct": -0.05523748015044161,
       "signal": 0,
-      "note": "-0.15%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4025.39990234375,
-      "chg_pct": -1.2050582318382623,
-      "signal": 1,
-      "note": "-1.21%()",
+      "price": 4102.5,
+      "chg_pct": 1.6401147182082039,
+      "signal": -1,
+      "note": "+1.64%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.70999908447266,
-      "chg_pct": 0.12104887227002792,
-      "signal": 0,
-      "note": "+0.12%",
+      "price": 82.12000274658203,
+      "chg_pct": 3.6083781646079847,
+      "signal": 1,
+      "note": "+3.61%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -432,10 +440,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 63911.140625,
-      "chg_pct": 0.2922596850941431,
-      "signal": 0,
-      "note": "+0.29%",
+      "price": 64363.26171875,
+      "chg_pct": 0.7701392489995608,
+      "signal": 1,
+      "note": "+0.77%",
       "desc": "風險偏好指標"
     }
   },
@@ -448,7 +456,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump announces new tariffs on generic drugs to take effect in 2028 – as it happ",
+      "title": "Trump imposes 'sweeping' new tariffs on 60 trade partners as global duties expir",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -460,19 +468,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump imposes 'sweeping' new tariffs on 60 trade partners as global duties expir",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "WATCH: Trump says he's 'not looking to renew' U.S. trade deal with Canada and Me",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump slaps additional 50 percent tariffs on Canada - The Hill",
+      "title": "Trump says he will impose tariffs on generic drugs starting in August 2028 - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Not Just Canada: New Tariffs Coming ‘Soon’ On Dozens Of Countries, Trump’s Trade",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -508,15 +516,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC says Japan plant gradually resuming operations after earthquake - Reuters",
+      "title": "Arete Wealth Advisors LLC Has $4.51 Million Stock Holdings in Taiwan Semiconduct",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC's Japan fab evacuates staff after strong earthquake - Focus Taiwan",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "TSMC says Japan plant gradually resuming operations after earthquake - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -526,7 +534,19 @@
     },
     {
       "label": "聯準會",
-      "title": "Bar to Fed rate hike this week remains high even as markets see a chance - Reute",
+      "title": "Prediction Markets for Fed Decision in July - Federal News Network",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "What to Watch for at the Fed Meeting - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Gold ticks up ahead of Fed rate decision - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -535,18 +555,6 @@
       "title": "Fed meeting live: Federal Reserve expected to hold rates steady, but Iran war ad",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve is likely to hold interest rates steady. Here's what that means ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Investors are bracing for a hawkish Fed meeting. Here's what it means for market",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
