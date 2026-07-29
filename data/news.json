@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-29 20:21",
-  "bull": 1,
+  "updated": "2026-07-29 22:42",
+  "bull": 2,
   "bear": 10,
-  "score": -9,
+  "score": -8,
   "mood": "偏空 📉",
   "mood_color": "#ef4444",
   "items": [
@@ -11,6 +11,12 @@
       "title": "Trump says he does not care about USMCA as US, Canada plan trade talks - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump defends tariffs ahead of looming midterms, says they have made the US ‘a fortune’ - foxbusines",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -37,12 +43,6 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Not Just Canada: New Tariffs Coming ‘Soon’ On Dozens Of Countries, Trump’s Trade Rep Warns - Forbes",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "關稅/貿易",
       "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
       "sentiment": "⚠️偏空",
@@ -50,7 +50,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s Renewed Trade War Risks Dealing a Fresh Economic Blow - The New York Times",
+      "title": "Trump’s Renewed Trade War Risks Dealing a Fresh Economic Blow - nytimes.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -74,6 +74,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Can Taiwan Semiconductor Manufacturing (NYSE:TSM) Trade At A Discount After Heavy Spending? - simply",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Opal Capital LLC Increases Stake in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBea",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -81,12 +87,6 @@
     {
       "label": "台股/半導體",
       "title": "Taiwan's UMC raises 2026 capex, expands Singapore and Taiwan fabs for AI demand - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Quanta Computer seeks up to $2.2 billion in GDS sale - The Mighty 790 KFGO",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -110,9 +110,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Why no one knows what to expect from the Fed decision today - CNN",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Surprise Fed Rate Hike Can't Be Ruled Out; What It Means For S&P 500 - Investor's Business Daily",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
