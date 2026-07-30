@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-30 10:11",
+  "generated_at": "2026-07-30 13:19",
   "mode": "morning",
   "signal_date": "2026-07-30",
   "trade_date": "2026-07-31",
-  "direction": -1,
-  "total_score": -18,
-  "tw_score": -9,
-  "intl_score": -5,
+  "direction": 0,
+  "total_score": -21,
+  "tw_score": -7,
+  "intl_score": -10,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -525,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "RSI=27 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 40769.328125,
-  "tw_chg_pct": 1.8235849065807663,
-  "tw_ma5": 41940.1796875,
-  "tw_ma10": 42873.1328125,
-  "tw_rsi": 31.929069297004844,
-  "tw_macd": -903.5315833041386,
-  "tw_macds": -368.39581814533824,
+  "tw_last_close": 39903.3203125,
+  "tw_chg_pct": -0.3393160800505002,
+  "tw_ma5": 41766.978125,
+  "tw_ma10": 42786.53203125,
+  "tw_rsi": 27.460244958503836,
+  "tw_macd": -972.6148276061285,
+  "tw_macds": -382.21246700573624,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 42756.47578125,
   "tw_ma10_p2": 43358.698046875,
   "tw_ma20_p2": 44650.26640625,
-  "tw_ma20": 44337.7833984375,
+  "tw_ma20": 44294.4830078125,
   "stats_real": {
     "total": 4,
     "wins": 2,
@@ -317,13 +317,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4144.60009765625,
-    "chg_pct": 2.6831515872951064,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +2.7%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 83.7300033569336,
-    "oil_chg": 5.639668307124416
+    "price_usd": 4100.10009765625,
+    "chg_pct": 1.620942009959863,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 84.20999908447266,
+    "oil_chg": -0.2959981088206768
   },
   "intl_data": {
     "S&P500": {
@@ -344,16 +344,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24442.94140625,
-      "chg_pct": -1.7444640322060696,
+      "price": 24442.939453125,
+      "chg_pct": -1.7444718833619717,
       "signal": -1,
       "note": "-1.74%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10447.4892578125,
-      "chg_pct": -5.329897626094904,
+      "price": 10447.490234375,
+      "chg_pct": -5.329888776957128,
       "signal": -1,
       "note": "-5.33%",
       "desc": "對台股影響最大"
@@ -368,66 +368,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 62776.16015625,
-      "chg_pct": 2.1844004442507807,
-      "signal": 1,
-      "note": "+2.18%",
+      "price": 61526.359375,
+      "chg_pct": 0.15002715367492134,
+      "signal": 0,
+      "note": "+0.15%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5970.9599609375,
-      "chg_pct": 5.433633641297582,
-      "signal": 1,
-      "note": "+5.43%",
+      "price": 5572.31005859375,
+      "chg_pct": -1.6056210229140162,
+      "signal": -1,
+      "note": "-1.61%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25724.94921875,
-      "chg_pct": -0.32149318262055426,
+      "price": 25661.220703125,
+      "chg_pct": -0.5684271308733276,
       "signal": -1,
-      "note": "-0.32%",
+      "note": "-0.57%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3837.785888671875,
-      "chg_pct": 0.24335823394441147,
-      "signal": 0,
-      "note": "+0.24%",
+      "price": 3769.20458984375,
+      "chg_pct": -1.5479922754390247,
+      "signal": -1,
+      "note": "-1.55%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 40769.328125,
-      "chg_pct": 1.8235849065807612,
-      "signal": 1,
-      "note": "+1.82%",
+      "price": 39903.3203125,
+      "chg_pct": -0.3393160800504974,
+      "signal": -1,
+      "note": "-0.34%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.90399932861328,
-      "chg_pct": -0.46951858127875373,
-      "signal": 1,
-      "note": "-0.47%(偏多)",
+      "price": 100.93099975585938,
+      "chg_pct": 0.12995704378530581,
+      "signal": 0,
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4144.60009765625,
-      "chg_pct": 2.6831515872951064,
+      "price": 4100.10009765625,
+      "chg_pct": 1.620942009959863,
       "signal": -1,
-      "note": "+2.68%(避險↑)",
+      "note": "+1.62%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.7300033569336,
-      "chg_pct": 5.639668307124416,
-      "signal": 1,
-      "note": "+5.64%",
+      "price": 84.20999908447266,
+      "chg_pct": -0.2959981088206768,
+      "signal": 0,
+      "note": "-0.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -440,10 +440,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64202.1015625,
-      "chg_pct": 0.5178193548079334,
-      "signal": 1,
-      "note": "+0.52%",
+      "price": 63893.69921875,
+      "chg_pct": 0.03497019063401909,
+      "signal": 0,
+      "note": "+0.03%",
       "desc": "風險偏好指標"
     }
   },
@@ -462,15 +462,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says US will investigate EU trade practices for ‘unethical’ fines on Googl",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Trump imposes 'sweeping' new tariffs on 60 trade partners as global duties expir",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. will investigate EU trade practices, claiming unfair fines again",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
@@ -481,12 +481,6 @@
     {
       "label": "川普動態",
       "title": "Trump announces new tariffs on generic drugs to take effect in 2028 – as it happ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "As Trump Escalates Trade War, Some Canadian Premiers Want to Hit Back - The New ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -505,6 +499,12 @@
     {
       "label": "關稅/貿易",
       "title": "‘How to Win a Trade War’ Review: The Times of Tariffs - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump’s latest Canada tariffs raises concerns about Ohio economy - Spectrum News",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -528,15 +528,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Which Company Will Win the Race to $3 Trillion -- Amazon, Broadcom, or Taiwan Se",
+      "title": "TSMC breaks into Fortune Global 500 top 100 for the first time - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reute",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -547,6 +541,12 @@
     {
       "label": "聯準會",
       "title": "The Fed holds interest rates for a fifth consecutive meeting, underscoring infla",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "A divided Federal Reserve holds interest rates steady despite high inflation - n",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
