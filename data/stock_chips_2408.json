@@ -1,7 +1,14 @@
 {
-  "updated": "2026-07-30 15:47",
+  "updated": "2026-07-30 23:46",
   "inst": {
     "rows": [
+      {
+        "date": "07/30",
+        "foreign": -667339,
+        "trust": 973955,
+        "dealer": 180830,
+        "total": 487446
+      },
       {
         "date": "07/29",
         "foreign": -4426510,
@@ -15,13 +22,6 @@
         "trust": -1519791,
         "dealer": 488740,
         "total": -6605172
-      },
-      {
-        "date": "07/27",
-        "foreign": 75034,
-        "trust": 204507,
-        "dealer": 276840,
-        "total": 556381
       },
       {
         "date": "07/24",
@@ -45,13 +45,6 @@
         "total": 10493498
       },
       {
-        "date": "07/21",
-        "foreign": -2986159,
-        "trust": 2160211,
-        "dealer": 644471,
-        "total": -181477
-      },
-      {
         "date": "07/20",
         "foreign": -6916594,
         "trust": -165797,
@@ -66,39 +59,53 @@
         "total": -8663749
       },
       {
-        "date": "07/16",
-        "foreign": -21931962,
-        "trust": -1369637,
-        "dealer": -13942,
-        "total": -23315541
-      },
-      {
-        "date": "07/15",
-        "foreign": 4850183,
-        "trust": 5422340,
-        "dealer": 2492828,
-        "total": 12765351
-      },
-      {
         "date": "07/14",
         "foreign": -19906,
         "trust": 2111847,
         "dealer": 1228535,
         "total": 3320476
+      },
+      {
+        "date": "07/13",
+        "foreign": -29028546,
+        "trust": 1400929,
+        "dealer": 95910,
+        "total": -27531707
+      },
+      {
+        "date": "06/29",
+        "foreign": -2700682,
+        "trust": 3370159,
+        "dealer": -2832625,
+        "total": -2163148
+      },
+      {
+        "date": "06/26",
+        "foreign": -519501,
+        "trust": 3698373,
+        "dealer": -2642269,
+        "total": 536603
       }
     ],
-    "total_foreign": -22693774,
-    "total_trust": -6092503,
-    "total_dealer": -1124441,
-    "net5": -29910718,
+    "total_foreign": -23436147,
+    "total_trust": -5323055,
+    "total_dealer": -1220451,
+    "net5": -29979653,
     "mood": "偏空",
-    "trust_streak": -2,
-    "streak_label": "📉 投信連賣 2 日",
-    "streak_color": "#ef4444",
-    "foreign_streak": -2
+    "trust_streak": 1,
+    "streak_label": "📈 投信連買 1 日",
+    "streak_color": "#10b981",
+    "foreign_streak": -4
   },
   "margin": {
     "rows": [
+      {
+        "date": "07/30",
+        "fin_bal": 81812,
+        "fin_chg": -2629,
+        "sho_bal": 3096,
+        "sho_chg": -656
+      },
       {
         "date": "07/29",
         "fin_bal": 84441,
@@ -147,19 +154,12 @@
         "fin_chg": 3024,
         "sho_bal": 904,
         "sho_chg": 264
-      },
-      {
-        "date": "07/20",
-        "fin_bal": 86024,
-        "fin_chg": 1330,
-        "sho_bal": 640,
-        "sho_chg": -362
       }
     ],
-    "fin_bal": 84441,
-    "sho_bal": 3752,
-    "fin_5chg": -3371,
-    "sho_5chg": 2356,
+    "fin_bal": 81812,
+    "sho_bal": 3096,
+    "fin_5chg": -8299,
+    "sho_5chg": 2086,
     "note": "融資5日減少（散戶退場，籌碼沉澱）",
     "note_color": "#10b981"
   }
