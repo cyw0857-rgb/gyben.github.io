@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-31 13:52",
+  "generated_at": "2026-07-31 16:20",
   "mode": "morning",
   "signal_date": "2026-07-31",
   "trade_date": "2026-08-03",
   "direction": 0,
-  "total_score": 1,
+  "total_score": -1,
   "tw_score": -8,
-  "intl_score": 8,
+  "intl_score": 9,
   "news_score": -2,
-  "psy_score": 2,
-  "inst_score": 2,
-  "foreign_fut_net": 1781,
+  "psy_score": 1,
+  "inst_score": -1,
+  "foreign_fut_net": -4292,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-8) vs 國際(+8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 43179.1484375,
-  "tw_chg_pct": 8.128172709865321,
-  "tw_ma5": 41677.8359375,
-  "tw_ma10": 42840.31796875,
-  "tw_rsi": 42.7977702329835,
-  "tw_macd": -872.1267426744307,
-  "tw_macds": -479.8200297694925,
+  "tw_last_close": 43119.75,
+  "tw_chg_pct": 7.979428588197601,
+  "tw_ma5": 41665.95625,
+  "tw_ma10": 42834.378125,
+  "tw_rsi": 42.57457601502234,
+  "tw_macd": -876.8650795690119,
+  "tw_macds": -480.76769714840873,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 41772.97421875,
   "tw_ma10_p2": 42789.530078125,
   "tw_ma20_p2": 44295.98203125,
-  "tw_ma20": 44117.7314453125,
+  "tw_ma20": 44114.7615234375,
   "stats_real": {
     "total": 4,
     "wins": 2,
@@ -317,13 +317,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4135.39990234375,
-    "chg_pct": 0.8609498267537057,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 81.44000244140625,
-    "oil_chg": -2.5720708107147043
+    "price_usd": 4122.2001953125,
+    "chg_pct": 0.5390136125916324,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.5%，影響中性",
+    "oil_usd": 82.13999938964844,
+    "oil_chg": -1.7346536807837092
   },
   "intl_data": {
     "S&P500": {
@@ -360,74 +360,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.09000015258789,
-      "chg_pct": -17.279766317478458,
+      "price": 16.899999618530273,
+      "chg_pct": -1.1117643789420677,
       "signal": 1,
-      "note": "VIX=17.1(低恐慌)",
+      "note": "VIX=16.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64258.71875,
-      "chg_pct": 3.865182495181544,
+      "price": 64362.01953125,
+      "chg_pct": 4.0321536814289525,
       "signal": 1,
-      "note": "+3.87%",
+      "note": "+4.03%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6570.52978515625,
-      "chg_pct": 17.465973661291397,
+      "price": 6595.4501953125,
+      "chg_pct": 17.91149332846585,
       "signal": 1,
-      "note": "+17.47%",
+      "note": "+17.91%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25778.869140625,
-      "chg_pct": -0.3094167887044971,
-      "signal": -1,
-      "note": "-0.31%",
+      "price": 25889.73046875,
+      "chg_pct": 0.11929986275417499,
+      "signal": 0,
+      "note": "+0.12%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3833.348876953125,
-      "chg_pct": 0.7531688062832043,
+      "price": 3832.262451171875,
+      "chg_pct": 0.7246139202951638,
       "signal": 1,
-      "note": "+0.75%",
+      "note": "+0.72%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43179.1484375,
-      "chg_pct": 8.128172709865328,
+      "price": 43119.75,
+      "chg_pct": 7.979428588197606,
       "signal": 1,
-      "note": "+8.13%",
+      "note": "+7.98%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.21800231933594,
-      "chg_pct": 0.2079793807244774,
+      "price": 100.18900299072266,
+      "chg_pct": 0.1789829523734618,
       "signal": 0,
-      "note": "+0.21%(中性)",
+      "note": "+0.18%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4135.39990234375,
-      "chg_pct": 0.8609498267537057,
+      "price": 4122.2001953125,
+      "chg_pct": 0.5390136125916324,
       "signal": 0,
-      "note": "+0.86%()",
+      "note": "+0.54%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 81.44000244140625,
-      "chg_pct": -2.5720708107147043,
+      "price": 82.13999938964844,
+      "chg_pct": -1.7346536807837092,
       "signal": -1,
-      "note": "-2.57%",
+      "note": "-1.73%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -440,10 +440,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64237.171875,
-      "chg_pct": 0.5148072878741843,
-      "signal": 1,
-      "note": "+0.51%",
+      "price": 63821.12890625,
+      "chg_pct": -1.3969492106636465,
+      "signal": -1,
+      "note": "-1.40%",
       "desc": "風險偏好指標"
     }
   },
@@ -516,27 +516,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Fund Update: 55,557 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Car",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Beijing Just Aimed at Taiwan Semiconductor Manufacturing Company (NYSE:TSM). Her",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Is Copying One of Intel's Best Ideas - Here's Why Investors",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Restarts Kumamoto Plant Operations",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "WATCH: Fed chair Warsh holds news conference after leaving interest rate unchang",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Fund Update: 55,557 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Car",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -546,13 +540,19 @@
     },
     {
       "label": "聯準會",
-      "title": "US borrowing costs hit 19-year high as Fed holds interest rates - theguardian.co",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: Fed chair Warsh holds news conference after leaving interest rate unchang",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "The Fed holds interest rates for a fifth consecutive meeting, underscoring infla",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reute",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
