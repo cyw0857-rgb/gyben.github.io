@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-01 16:56",
-  "bull": 2,
+  "updated": "2026-08-01 18:43",
+  "bull": 3,
   "bear": 11,
-  "score": -9,
+  "score": -8,
   "mood": "偏空 📉",
   "mood_color": "#ef4444",
   "items": [
@@ -11,12 +11,6 @@
       "title": "Trump says sanctions bill should include tariffs on Iran, despite 'trivial' trade with U.S. - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he does not care about USMCA as US, Canada plan trade talks - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -41,6 +35,12 @@
       "title": "U.S. allies hit with new tariffs object to Trump's forced labor allegations - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: Trump says he's 'not looking to renew' U.S. trade deal with Canada and Mexico - PBS",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -74,19 +74,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Position Raised by GKV Capital Management",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "ANALYSIS: How AI has rewired Taiwan’s stock market - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "1 AI Stock I’d Buy Before It Hits Another All-Time High - 24/7 Wall St.",
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Position Raised by GKV Capital Management",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Fund Update: 55,557 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Carnegie Investment Cou",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -104,15 +104,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Trump wanted interest rate cuts to be 'Rocket Fuel' for the economy. He is losing that fight so far ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
       "title": "A divided Federal Reserve holds interest rates steady despite high inflation - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - The New York Times",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
