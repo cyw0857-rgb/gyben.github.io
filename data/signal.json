@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-03 10:39",
+  "generated_at": "2026-08-03 16:51",
   "mode": "morning",
   "signal_date": "2026-08-03",
   "trade_date": "2026-08-04",
   "direction": 0,
-  "total_score": -8,
+  "total_score": -7,
   "tw_score": -7,
-  "intl_score": 2,
+  "intl_score": 3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
-  "foreign_fut_net": -4292,
+  "foreign_fut_net": -6096,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 43686.390625,
-  "tw_chg_pct": 1.3141092538801802,
-  "tw_ma5": 41676.39609375,
-  "tw_ma10": 42958.047265625,
-  "tw_rsi": 46.528876834757156,
-  "tw_macd": -748.5486261084952,
-  "tw_macds": -534.3583934434289,
+  "tw_last_close": 43386.41015625,
+  "tw_chg_pct": 0.6184176769345795,
+  "tw_ma5": 41616.4,
+  "tw_ma10": 42928.04921875,
+  "tw_rsi": 45.448522954312374,
+  "tw_macd": -772.4786919916878,
+  "tw_macds": -539.1444066200675,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 41665.95625,
   "tw_ma10_p2": 42834.378125,
   "tw_ma20_p2": 44114.7615234375,
-  "tw_ma20": 43960.05,
+  "tw_ma20": 43945.0509765625,
   "stats_real": {
     "total": 5,
     "wins": 2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4113.39990234375,
-    "chg_pct": 1.5880023495768554,
+    "price_usd": 4114.89990234375,
+    "chg_pct": 1.625047618002505,
     "signal": -1,
     "level": "warn",
     "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 80.1500015258789,
-    "oil_chg": -5.338368655739761
+    "oil_usd": 80.16000366210938,
+    "oil_chg": -5.326555573837348
   },
   "intl_data": {
     "S&P500": {
@@ -368,74 +368,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.989999771118164,
-      "chg_pct": -6.436514755110501,
+      "price": 16.15999984741211,
+      "chg_pct": 1.0631649701522001,
       "signal": 1,
-      "note": "VIX=16.0(低恐慌)",
+      "note": "VIX=16.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 63395.859375,
-      "chg_pct": -1.501133996861139,
+      "price": 63754.8984375,
+      "chg_pct": -0.9432909317819365,
       "signal": -1,
-      "note": "-1.50%",
+      "note": "-0.94%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6365.06982421875,
-      "chg_pct": -3.493019646444837,
+      "price": 6257.4501953125,
+      "chg_pct": -5.124744937657515,
       "signal": -1,
-      "note": "-3.49%",
+      "note": "-5.12%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25868.55078125,
-      "chg_pct": -0.06134539737480936,
-      "signal": 0,
-      "note": "-0.06%",
+      "price": 26009.400390625,
+      "chg_pct": 0.48280261390248175,
+      "signal": 1,
+      "note": "+0.48%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3807.922607421875,
-      "chg_pct": -0.6351172154836499,
+      "price": 3809.662841796875,
+      "chg_pct": -0.5897071054272025,
       "signal": -1,
-      "note": "-0.64%",
+      "note": "-0.59%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43686.390625,
-      "chg_pct": 1.3141092538801824,
+      "price": 43386.41015625,
+      "chg_pct": 0.6184176769345833,
       "signal": 1,
-      "note": "+1.31%",
+      "note": "+0.62%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.71499633789062,
-      "chg_pct": -0.08517706539858692,
+      "price": 99.81099700927734,
+      "chg_pct": 0.011015989161673286,
       "signal": 0,
-      "note": "-0.09%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4113.39990234375,
-      "chg_pct": 1.5880023495768554,
+      "price": 4114.89990234375,
+      "chg_pct": 1.625047618002505,
       "signal": -1,
-      "note": "+1.59%(避險↑)",
+      "note": "+1.63%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.1500015258789,
-      "chg_pct": -5.338368655739761,
+      "price": 80.16000366210938,
+      "chg_pct": -5.326555573837348,
       "signal": -1,
-      "note": "-5.34%",
+      "note": "-5.33%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 63110.25,
-      "chg_pct": 0.552758658676165,
-      "signal": 1,
-      "note": "+0.55%",
+      "price": 62367.58984375,
+      "chg_pct": -0.6305123227701291,
+      "signal": -1,
+      "note": "-0.63%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,12 +470,6 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says US Won’t Renew USMCA, Signaling Yearly Reviews - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -485,6 +479,12 @@
       "title": "U.S. allies hit with new tariffs object to Trump's forced labor allegations - NP",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: Trump says he's 'not looking to renew' U.S. trade deal with Canada and Me",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
@@ -524,21 +524,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Got $1,000? Taiwan Semiconductor Manufacturing's $100 Billion Arizona Investment",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Manufacturing (TSM) Expensive Or Undervalued On Mixed Va",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Growing like ‘gangbusters’: Can Taiwan maintain its economic momentum? - Al Jaze",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Looks Reasonable Despite Its",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan brokerage account holders hit record 14.6 million in July - Focus Taiwan",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -554,7 +554,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - The N",
+      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - nytim",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
