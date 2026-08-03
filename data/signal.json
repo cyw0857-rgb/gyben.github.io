@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-07-31 16:20",
+  "generated_at": "2026-08-03 10:39",
   "mode": "morning",
-  "signal_date": "2026-07-31",
-  "trade_date": "2026-08-03",
+  "signal_date": "2026-08-03",
+  "trade_date": "2026-08-04",
   "direction": 0,
-  "total_score": -1,
-  "tw_score": -8,
-  "intl_score": 9,
+  "total_score": -8,
+  "tw_score": -7,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4292,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
   "threshold": 6,
-  "threshold_reason": "記錄不足5筆，使用預設門檻 ±6",
-  "tw_last_close": 43119.75,
-  "tw_chg_pct": 7.979428588197601,
-  "tw_ma5": 41665.95625,
-  "tw_ma10": 42834.378125,
-  "tw_rsi": 42.57457601502234,
-  "tw_macd": -876.8650795690119,
-  "tw_macds": -480.76769714840873,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 41772.97421875,
-  "tw_ma10_p2": 42789.530078125,
-  "tw_ma20_p2": 44295.98203125,
-  "tw_ma20": 44114.7615234375,
+  "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
+  "tw_last_close": 43686.390625,
+  "tw_chg_pct": 1.3141092538801802,
+  "tw_ma5": 41676.39609375,
+  "tw_ma10": 42958.047265625,
+  "tw_rsi": 46.528876834757156,
+  "tw_macd": -748.5486261084952,
+  "tw_macds": -534.3583934434289,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 41665.95625,
+  "tw_ma10_p2": 42834.378125,
+  "tw_ma20_p2": 44114.7615234375,
+  "tw_ma20": 43960.05,
   "stats_real": {
-    "total": 4,
+    "total": 5,
     "wins": 2,
-    "losses": 2,
-    "win_rate": 50.0,
-    "total_pnl": 2815.0,
-    "avg_pnl": 703.75,
+    "losses": 3,
+    "win_rate": 40.0,
+    "total_pnl": -12348.0,
+    "avg_pnl": -2469.6,
     "avg_win": 10048.5,
-    "avg_lose": -8641.0,
+    "avg_lose": -10815.0,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_sim": {
     "total": 789,
@@ -226,69 +226,69 @@
     }
   ],
   "stats_real_v100": {
-    "total": 2,
+    "total": 3,
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "win_rate": 0.0,
-    "total_pnl": -17282.0,
-    "avg_pnl": -8641.0,
+    "total_pnl": -32445.0,
+    "avg_pnl": -10815.0,
     "avg_win": 0,
-    "avg_lose": -8641.0,
+    "avg_lose": -10815.0,
     "max_win": 0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": -3
   },
   "stats_real_v70": {
-    "total": 2,
+    "total": 3,
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "win_rate": 0.0,
-    "total_pnl": -17282.0,
-    "avg_pnl": -8641.0,
+    "total_pnl": -32445.0,
+    "avg_pnl": -10815.0,
     "avg_win": 0,
-    "avg_lose": -8641.0,
+    "avg_lose": -10815.0,
     "max_win": 0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": -3
   },
   "stats_real_v60": {
-    "total": 7,
+    "total": 8,
     "wins": 2,
-    "losses": 5,
-    "win_rate": 28.57142857142857,
-    "total_pnl": -1494.0,
-    "avg_pnl": -213.42857142857142,
+    "losses": 6,
+    "win_rate": 25.0,
+    "total_pnl": -16657.0,
+    "avg_pnl": -2082.125,
     "avg_win": 20837.0,
-    "avg_lose": -8633.6,
+    "avg_lose": -9721.833333333334,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_real_v50": {
-    "total": 22,
+    "total": 23,
     "wins": 12,
-    "losses": 10,
-    "win_rate": 54.54545454545454,
-    "total_pnl": 46084.0,
-    "avg_pnl": 2094.7272727272725,
+    "losses": 11,
+    "win_rate": 52.17391304347826,
+    "total_pnl": 30921.0,
+    "avg_pnl": 1344.391304347826,
     "avg_win": 9303.166666666666,
-    "avg_lose": -6555.4,
+    "avg_lose": -7337.909090909091,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 3
+    "streak": -1
   },
   "stats_real_cons": {
-    "total": 3,
+    "total": 4,
     "wins": 1,
-    "losses": 2,
-    "win_rate": 33.33333333333333,
-    "total_pnl": -1166.0,
-    "avg_pnl": -388.6666666666667,
+    "losses": 3,
+    "win_rate": 25.0,
+    "total_pnl": -16329.0,
+    "avg_pnl": -4082.25,
     "avg_win": 16116.0,
-    "avg_lose": -8641.0,
+    "avg_lose": -10815.0,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "cons_recent": [
     {
@@ -314,140 +314,154 @@
       "exit": 41604,
       "pnl": 16116,
       "win": true
+    },
+    {
+      "date": "2026-07-31",
+      "dir": -1,
+      "entry": 41609,
+      "exit": 43121,
+      "pnl": -15163,
+      "win": false
     }
   ],
   "gold": {
-    "price_usd": 4122.2001953125,
-    "chg_pct": 0.5390136125916324,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.5%，影響中性",
-    "oil_usd": 82.13999938964844,
-    "oil_chg": -1.7346536807837092
+    "price_usd": 4113.39990234375,
+    "chg_pct": 1.5880023495768554,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 80.1500015258789,
+    "oil_chg": -5.338368655739761
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7437.6298828125,
-      "chg_pct": 1.6604359135647773,
+      "price": 7489.72021484375,
+      "chg_pct": 0.7003619815987983,
       "signal": 1,
-      "note": "+1.66%",
+      "note": "+0.70%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52208.05859375,
-      "chg_pct": 1.1898986228147879,
+      "price": 52485.03125,
+      "chg_pct": 0.5305170575393839,
       "signal": 1,
-      "note": "+1.19%",
+      "note": "+0.53%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25122.1796875,
-      "chg_pct": 2.7788811393883317,
+      "price": 25373.849609375,
+      "chg_pct": 1.0017837823213365,
       "signal": 1,
-      "note": "+2.78%",
+      "note": "+1.00%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11302.990234375,
-      "chg_pct": 8.188569511031265,
-      "signal": 1,
-      "note": "+8.19%",
+      "price": 11311.080078125,
+      "chg_pct": 0.07157259789004258,
+      "signal": 0,
+      "note": "+0.07%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.899999618530273,
-      "chg_pct": -1.1117643789420677,
+      "price": 15.989999771118164,
+      "chg_pct": -6.436514755110501,
       "signal": 1,
-      "note": "VIX=16.9(低恐慌)",
+      "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64362.01953125,
-      "chg_pct": 4.0321536814289525,
-      "signal": 1,
-      "note": "+4.03%",
+      "price": 63395.859375,
+      "chg_pct": -1.501133996861139,
+      "signal": -1,
+      "note": "-1.50%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6595.4501953125,
-      "chg_pct": 17.91149332846585,
-      "signal": 1,
-      "note": "+17.91%",
+      "price": 6365.06982421875,
+      "chg_pct": -3.493019646444837,
+      "signal": -1,
+      "note": "-3.49%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25889.73046875,
-      "chg_pct": 0.11929986275417499,
+      "price": 25868.55078125,
+      "chg_pct": -0.06134539737480936,
       "signal": 0,
-      "note": "+0.12%",
+      "note": "-0.06%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3832.262451171875,
-      "chg_pct": 0.7246139202951638,
-      "signal": 1,
-      "note": "+0.72%",
+      "price": 3807.922607421875,
+      "chg_pct": -0.6351172154836499,
+      "signal": -1,
+      "note": "-0.64%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43119.75,
-      "chg_pct": 7.979428588197606,
+      "price": 43686.390625,
+      "chg_pct": 1.3141092538801824,
       "signal": 1,
-      "note": "+7.98%",
+      "note": "+1.31%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.18900299072266,
-      "chg_pct": 0.1789829523734618,
+      "price": 99.71499633789062,
+      "chg_pct": -0.08517706539858692,
       "signal": 0,
-      "note": "+0.18%(中性)",
+      "note": "-0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4122.2001953125,
-      "chg_pct": 0.5390136125916324,
-      "signal": 0,
-      "note": "+0.54%()",
+      "price": 4113.39990234375,
+      "chg_pct": 1.5880023495768554,
+      "signal": -1,
+      "note": "+1.59%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.13999938964844,
-      "chg_pct": -1.7346536807837092,
+      "price": 80.1500015258789,
+      "chg_pct": -5.338368655739761,
       "signal": -1,
-      "note": "-1.73%",
+      "note": "-5.34%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.663000106811523,
-      "chg_pct": 0.8870594427731989,
+      "price": 4.744999885559082,
+      "chg_pct": 1.7585197698746908,
       "signal": 0,
-      "note": "4.66%(+0.89%)",
+      "note": "4.74%(+1.76%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63821.12890625,
-      "chg_pct": -1.3969492106636465,
-      "signal": -1,
-      "note": "-1.40%",
+      "price": 63110.25,
+      "chg_pct": 0.552758658676165,
+      "signal": 1,
+      "note": "+0.55%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Opinion | Trump appears to order the government to lie on behalf of tariffs - Th",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump says sanctions bill should include tariffs on Iran, despite 'trivial' trad",
@@ -456,31 +470,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he does not care about USMCA as US, Canada plan trade talks - Reuters",
+      "title": "Trump Says US Won’t Renew USMCA, Signaling Yearly Reviews - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump defends tariffs ahead of looming midterms, says they have made the US ‘a f",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says U.S. will investigate EU trade practices, claiming unfair fines again",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "US trade chief defends tariffs as Democrats say Trump ‘in denial’ over price hik",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "U.S. allies hit with new tariffs object to Trump's forced labor allegations - NP",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he will impose tariffs on generic drugs starting in August 2028 - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -492,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "US small businesses challenge Trump’s new forced labour tariffs - Al Jazeera",
+      "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - ",
+      "title": "Trump’s latest Canada tariffs raises concerns about Ohio economy - Spectrum News",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -510,33 +518,27 @@
     },
     {
       "label": "台股/半導體",
-      "title": "ANALYSIS: How AI has rewired Taiwan’s stock market - Taipei Times",
+      "title": "Got $1,000? Taiwan Semiconductor Manufacturing's $100 Billion Arizona Investment",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Beijing Just Aimed at Taiwan Semiconductor Manufacturing Company (NYSE:TSM). Her",
+      "title": "Got $1,000? Taiwan Semiconductor Manufacturing's $100 Billion Arizona Investment",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Restarts Kumamoto Plant Operations",
+      "title": "Is Taiwan Semiconductor Manufacturing (TSM) Expensive Or Undervalued On Mixed Va",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Fund Update: 55,557 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to Car",
+      "title": "Growing like ‘gangbusters’: Can Taiwan maintain its economic momentum? - Al Jaze",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "A divided Federal Reserve holds interest rates steady despite high inflation - N",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -546,13 +548,19 @@
     },
     {
       "label": "聯準會",
-      "title": "The Fed holds interest rates for a fifth consecutive meeting, underscoring infla",
+      "title": "A divided Federal Reserve holds interest rates steady despite high inflation - N",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reute",
+      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - The N",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed holds interest rates for a fifth consecutive meeting, underscoring infla",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
