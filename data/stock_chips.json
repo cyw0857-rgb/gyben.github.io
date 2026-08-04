@@ -1,7 +1,14 @@
 {
-  "updated": "2026-08-03 16:52",
+  "updated": "2026-08-05 00:05",
   "inst": {
     "rows": [
+      {
+        "date": "08/04",
+        "foreign": -107972,
+        "trust": -72000,
+        "dealer": -28391,
+        "total": -208363
+      },
       {
         "date": "08/03",
         "foreign": 287822,
@@ -78,27 +85,34 @@
         "trust": -50000,
         "dealer": 78638,
         "total": -69219
-      },
-      {
-        "date": "07/17",
-        "foreign": 2907431,
-        "trust": -358000,
-        "dealer": 9661,
-        "total": 2559092
       }
     ],
-    "total_foreign": 992143,
-    "total_trust": -624000,
-    "total_dealer": 76351,
-    "net5": 444494,
+    "total_foreign": 1054911,
+    "total_trust": -696000,
+    "total_dealer": 33070,
+    "net5": 391981,
     "mood": "偏多",
-    "trust_streak": -2,
-    "streak_label": "📉 投信連賣 2 日",
+    "trust_streak": -3,
+    "streak_label": "📉 投信連賣 3 日",
     "streak_color": "#ef4444",
-    "foreign_streak": 4
+    "foreign_streak": -1
   },
   "margin": {
     "rows": [
+      {
+        "date": "08/04",
+        "fin_bal": 2949,
+        "fin_chg": 105,
+        "sho_bal": 7,
+        "sho_chg": -4
+      },
+      {
+        "date": "08/03",
+        "fin_bal": 2844,
+        "fin_chg": -54,
+        "sho_bal": 11,
+        "sho_chg": 0
+      },
       {
         "date": "07/31",
         "fin_bal": 2898,
@@ -140,26 +154,12 @@
         "fin_chg": 227,
         "sho_bal": 22,
         "sho_chg": -4
-      },
-      {
-        "date": "07/23",
-        "fin_bal": 3126,
-        "fin_chg": -6,
-        "sho_bal": 26,
-        "sho_chg": 5
-      },
-      {
-        "date": "07/22",
-        "fin_bal": 3132,
-        "fin_chg": -342,
-        "sho_bal": 21,
-        "sho_chg": 6
       }
     ],
-    "fin_bal": 2898,
-    "sho_bal": 11,
-    "fin_5chg": -455,
-    "sho_5chg": -11,
+    "fin_bal": 2949,
+    "sho_bal": 7,
+    "fin_5chg": -68,
+    "sho_5chg": -5,
     "note": "融資5日減少（散戶退場，籌碼沉澱）",
     "note_color": "#10b981"
   }
