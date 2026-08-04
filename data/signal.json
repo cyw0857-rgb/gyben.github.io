@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-05 00:04",
+  "generated_at": "2026-08-05 01:58",
   "mode": "morning",
   "signal_date": "2026-08-03",
   "trade_date": "2026-08-06",
   "direction": 0,
-  "total_score": -1,
+  "total_score": -2,
   "tw_score": -7,
-  "intl_score": 7,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 2155,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 43386.41015625,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4144.2001953125,
-    "chg_pct": 2.739426468954944,
+    "price_usd": 4151.7001953125,
+    "chg_pct": 2.9253599813824387,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +2.7%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 75.66000366210938,
-    "oil_chg": -5.8252338674479525
+    "warning": "黃金大漲 +2.9%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 75.6500015258789,
+    "oil_chg": -5.837683626828576
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7712.6201171875,
-      "chg_pct": 1.4751676493322807,
+      "price": 7744.43994140625,
+      "chg_pct": 1.8938220038977698,
       "signal": 1,
-      "note": "+1.48%",
+      "note": "+1.89%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 54080.55859375,
-      "chg_pct": 1.6964562025252112,
+      "price": 54201.83984375,
+      "chg_pct": 1.9245210311721166,
       "signal": 1,
-      "note": "+1.70%",
+      "note": "+1.92%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26448.509765625,
-      "chg_pct": 2.0630216483868566,
+      "price": 26600.84375,
+      "chg_pct": 2.6508682561098325,
       "signal": 1,
-      "note": "+2.06%",
+      "note": "+2.65%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12137.8173828125,
-      "chg_pct": 6.189380006865631,
+      "price": 12210.8076171875,
+      "chg_pct": 6.827945202764228,
       "signal": 1,
-      "note": "+6.19%",
+      "note": "+6.83%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.209999084472656,
-      "chg_pct": 2.206806023782329,
+      "price": 16.579999923706055,
+      "chg_pct": 4.53972435444335,
       "signal": 1,
-      "note": "VIX=16.2(低恐慌)",
+      "note": "VIX=16.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -384,10 +384,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6257.4501953125,
+      "chg_pct": -5.124744937657515,
+      "signal": -1,
+      "note": "-5.12%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.88999938964844,
-      "chg_pct": -0.07002770654796073,
+      "price": 99.89800262451172,
+      "chg_pct": -0.06202126903637373,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4144.2001953125,
-      "chg_pct": 2.739426468954944,
+      "price": 4151.7001953125,
+      "chg_pct": 2.9253599813824387,
       "signal": -1,
-      "note": "+2.74%(避險↑)",
+      "note": "+2.93%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 75.66000366210938,
-      "chg_pct": -5.8252338674479525,
+      "price": 75.6500015258789,
+      "chg_pct": -5.837683626828576,
       "signal": -1,
-      "note": "-5.83%",
+      "note": "-5.84%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64006.01953125,
-      "chg_pct": 0.8589873562645305,
+      "price": 63930.58984375,
+      "chg_pct": 0.7401272560182544,
       "signal": 1,
-      "note": "+0.86%",
+      "note": "+0.74%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,7 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - b",
+      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -488,13 +488,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump's new 50% tariffs to hit even CUSMA-compliant goods - cbc.ca",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What are tariffs, how do they work and why is Trump using them? - bbc.com",
+      "title": "Trump's new 50% tariffs to hit even CUSMA-compliant goods - CBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -517,8 +511,26 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "Tariffs: Trump pursues his trade war through every method available - Le Monde.f",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "The Case Against the Proposed Chip Security Act in Taiwan - Lawfare",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
       "label": "台股/半導體",
       "title": "Stanley Druckenmiller Holds Taiwan Semiconductor After Its Q2 Beat, Betting Chip",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TWSE eases stock rules - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -529,14 +541,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "TSMC's Kumamoto fab back to normal after earthquake - Focus Taiwan",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Growing like ‘gangbusters’: Can Taiwan maintain its economic momentum? - Al Jaze",
+      "label": "聯準會",
+      "title": "What do Fed rate hikes mean for U.S. households’ financial health? - JPMorganCha",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reute",
+      "title": "Goldman Sachs fears Kevin Warsh's Fed strategy could amplify misinformation and ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - nytim",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     }
   ]
 }
