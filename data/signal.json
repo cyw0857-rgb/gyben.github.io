@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-05 10:23",
+  "generated_at": "2026-08-05 23:52",
   "mode": "morning",
   "signal_date": "2026-08-05",
   "trade_date": "2026-08-06",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": -3,
-  "intl_score": 8,
+  "total_score": -2,
+  "tw_score": 3,
+  "intl_score": -2,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 2,
-  "foreign_fut_net": 2155,
+  "inst_score": 0,
+  "foreign_fut_net": -571,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-3) vs 國際(+8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+3) vs 國際(-2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44804.640625,
-  "tw_chg_pct": 3.268835710634832,
-  "tw_ma5": 42256.65625,
-  "tw_ma10": 42985.226171875,
-  "tw_rsi": 47.31018275342531,
-  "tw_macd": -568.7331325675477,
-  "tw_macds": -545.0621518095635,
+  "tw_last_close": 44611.6015625,
+  "tw_chg_pct": 2.88496854462601,
+  "tw_ma5": 42882.34453125,
+  "tw_ma10": 42819.41015625,
+  "tw_rsi": 46.67170609557929,
+  "tw_macd": -506.9566069028515,
+  "tw_macds": -555.8713348510128,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 41616.4,
-  "tw_ma10_p2": 42928.04921875,
-  "tw_ma20_p2": 43945.0509765625,
-  "tw_ma20": 43857.4634765625,
+  "tw_ma5_p2": 41967.86015625,
+  "tw_ma10_p2": 42840.828125,
+  "tw_ma20_p2": 43785.264453125,
+  "tw_ma20": 43741.8890625,
   "stats_real": {
     "total": 5,
     "wins": 2,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 24,
+    "total": 25,
     "wins": 12,
-    "losses": 12,
-    "win_rate": 50.0,
-    "total_pnl": 24791.0,
-    "avg_pnl": 1032.9583333333333,
+    "losses": 13,
+    "win_rate": 48.0,
+    "total_pnl": 22039.0,
+    "avg_pnl": 881.56,
     "avg_win": 9303.166666666666,
-    "avg_lose": -7237.25,
+    "avg_lose": -6892.2307692307695,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": -3
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,146 +325,158 @@
     }
   ],
   "gold": {
-    "price_usd": 4155.7001953125,
-    "chg_pct": 3.024524521343769,
+    "price_usd": 4316.10009765625,
+    "chg_pct": 5.388977891663176,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +3.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 75.20999908447266,
-    "oil_chg": -6.385359082968388
+    "warning": "黃金大漲 +5.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 75.16000366210938,
+    "oil_chg": -0.8050587409031523
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7736.52001953125,
-      "chg_pct": 1.789619360979541,
-      "signal": 1,
-      "note": "+1.79%",
+      "price": 7736.2900390625,
+      "chg_pct": -0.0029726604231541088,
+      "signal": 0,
+      "note": "-0.00%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 54085.87890625,
-      "chg_pct": 1.7064608500586136,
+      "price": 54529.4609375,
+      "chg_pct": 0.8201438900879929,
       "signal": 1,
-      "note": "+1.71%",
+      "note": "+0.82%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26584.9921875,
-      "chg_pct": 2.589698141765584,
-      "signal": 1,
-      "note": "+2.59%",
+      "price": 26506.701171875,
+      "chg_pct": -0.2944859554575666,
+      "signal": 0,
+      "note": "-0.29%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12179.2626953125,
-      "chg_pct": 6.551970075554407,
-      "signal": 1,
-      "note": "+6.55%",
+      "price": 12097.7578125,
+      "chg_pct": -0.6691864258863485,
+      "signal": -1,
+      "note": "-0.67%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.5,
-      "chg_pct": 4.035311205402872,
+      "price": 16.329999923706055,
+      "chg_pct": -1.0303034926905776,
       "signal": 1,
-      "note": "VIX=16.5(低恐慌)",
+      "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66115.796875,
-      "chg_pct": 3.7030855594796823,
+      "price": 63957.53125,
+      "chg_pct": 0.3178309705859611,
       "signal": 1,
-      "note": "+3.70%",
+      "note": "+0.32%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6638.490234375,
-      "chg_pct": 6.089381891492157,
-      "signal": 1,
-      "note": "+6.09%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25879.349609375,
-      "chg_pct": -0.5000145305036573,
-      "signal": -1,
-      "note": "-0.50%",
+      "price": 25915.8203125,
+      "chg_pct": 0.24330091461652625,
+      "signal": 0,
+      "note": "+0.24%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3842.5751953125,
-      "chg_pct": 0.8639112864464978,
+      "price": 3878.4296875,
+      "chg_pct": 1.468879915590615,
       "signal": 1,
-      "note": "+0.86%",
+      "note": "+1.47%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44804.640625,
-      "chg_pct": 3.2688357106348374,
+      "price": 44611.6015625,
+      "chg_pct": 2.8849685446260196,
       "signal": 1,
-      "note": "+3.27%",
+      "note": "+2.88%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.87899780273438,
-      "chg_pct": -0.08103369595855031,
+      "price": 99.69200134277344,
+      "chg_pct": -0.19821608577917207,
       "signal": 0,
-      "note": "-0.08%(中性)",
+      "note": "-0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4155.7001953125,
-      "chg_pct": 3.024524521343769,
+      "price": 4316.10009765625,
+      "chg_pct": 5.388977891663176,
       "signal": -1,
-      "note": "+3.02%(避險↑)",
+      "note": "+5.39%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 75.20999908447266,
-      "chg_pct": -6.385359082968388,
+      "price": 75.16000366210938,
+      "chg_pct": -0.8050587409031523,
       "signal": -1,
-      "note": "-6.39%",
+      "note": "-0.81%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.626999855041504,
-      "chg_pct": -1.2590699294024557,
+      "price": 4.623000144958496,
+      "chg_pct": -0.08644284003272215,
       "signal": 0,
-      "note": "4.63%(-1.26%)",
+      "note": "4.62%(-0.09%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 64286.7109375,
-      "chg_pct": 1.3012934268702616,
+      "price": 64425.98828125,
+      "chg_pct": 0.577674889214288,
       "signal": 1,
-      "note": "+1.30%",
+      "note": "+0.58%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump orders changes to new helipad after weeks of around-the-clock work - The W",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says deal to reopen the Strait of Hormuz could come as early as Wednesday ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "These 25 U.S. States Are Suing the Trump Administration. Here's Why - Time Magaz",
+      "title": "New York among state suing over Trump’s new tariffs, calling them 'pretext' to r",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US refunds $100bn of Donald Trump’s ‘liberation day’ tariffs - The Guardian",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "What does the Trump administration want from the Supreme Court next? - SCOTUSblo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -476,21 +488,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says Exxon and Chevron Are Ripping Off Americans, But His Own Policies Are",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Exxon and Chevron are 'making too much money' on high oil prices amid",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Paid early access to Trump's posts raises insider trading questions - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Reflecting Pool case highlights disconnect between Trump's claims and court reco",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -518,31 +518,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "The Case Against the Proposed Chip Security Act in Taiwan - Lawfare",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM): An Unmatched Technolog",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Stanley Druckenmiller Holds Taiwan Semiconductor After Its Q2 Beat, Betting Chip",
+      "title": "The Case Against the Proposed Chip Security Act in Taiwan - Lawfare",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Intel vs. TSM: Which Semiconductor Stock Looks Like the Better Investment? - Tra",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Growing like ‘gangbusters’: Can Taiwan maintain its economic momentum? - Al Jaze",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "What do Fed rate hikes mean for U.S. households’ financial health? - JPMorganCha",
+      "title": "Growing like ‘gangbusters’: Can Taiwan maintain its economic momentum? - aljazee",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +548,21 @@
     },
     {
       "label": "聯準會",
+      "title": "Trump Fed chair’s inflation strategy: leave it to the market | Eduardo Porter - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
       "title": "A divided Federal Reserve holds interest rates steady despite high inflation - N",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed Leaves Interest Rates Unchanged, Despite Three Votes for an Increase - The N",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "What do Fed rate hikes mean for U.S. households’ financial health? - JPMorganCha",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
