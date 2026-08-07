@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-07 06:34",
+  "generated_at": "2026-08-07 09:27",
   "mode": "morning",
-  "signal_date": "2026-08-05",
+  "signal_date": "2026-08-07",
   "trade_date": "2026-08-10",
   "direction": 0,
-  "total_score": 6,
-  "tw_score": 3,
-  "intl_score": 5,
+  "total_score": 5,
+  "tw_score": 6,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 0,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44611.6015625,
-  "tw_chg_pct": 2.88496854462601,
-  "tw_ma5": 42882.34453125,
-  "tw_ma10": 42819.41015625,
-  "tw_rsi": 46.67170609557929,
-  "tw_macd": -506.9672571225892,
-  "tw_macds": -555.8869968537158,
+  "tw_last_close": 44676.0,
+  "tw_chg_pct": 0.1443535655400785,
+  "tw_ma5": 43830.884375,
+  "tw_ma10": 42801.929296875,
+  "tw_rsi": 58.12659159495351,
+  "tw_macd": -357.40034637635836,
+  "tw_macds": -516.1856229186171,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 41967.86015625,
-  "tw_ma10_p2": 42840.828125,
-  "tw_ma20_p2": 43785.264453125,
-  "tw_ma20": 43741.8890625,
+  "tw_ma5_p2": 42882.34453125,
+  "tw_ma10_p2": 42819.41015625,
+  "tw_ma20_p2": 43741.8890625,
+  "tw_ma20": 43688.9685546875,
   "stats_real": {
     "total": 5,
     "wins": 2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4299.2001953125,
-    "chg_pct": 1.2577227632363694,
+    "price_usd": 4304.0,
+    "chg_pct": 1.3707710676383071,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.3%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 78.12000274658203,
-    "oil_chg": 3.8553595836431946
+    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 77.83999633789062,
+    "oil_chg": 3.483109644601265
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66300.4375,
-      "chg_pct": 3.6632218351923957,
-      "signal": 1,
-      "note": "+3.66%",
+      "price": 65056.30078125,
+      "chg_pct": -1.8765135882398964,
+      "signal": -1,
+      "note": "-1.88%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6598.259765625,
-      "chg_pct": 3.7633502852232907,
-      "signal": 1,
-      "note": "+3.76%",
+      "price": 6341.33984375,
+      "chg_pct": -3.8937527621067227,
+      "signal": -1,
+      "note": "-3.89%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -408,34 +408,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 44611.6015625,
-      "chg_pct": 2.8849685446260196,
-      "signal": 1,
-      "note": "+2.88%",
+      "price": 44676.0,
+      "chg_pct": 0.14435356554007375,
+      "signal": 0,
+      "note": "+0.14%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.96499633789062,
-      "chg_pct": 0.27584902171710274,
+      "price": 99.95999908447266,
+      "chg_pct": 0.27083622876336005,
       "signal": 0,
-      "note": "+0.28%(中性)",
+      "note": "+0.27%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4299.2001953125,
-      "chg_pct": 1.2577227632363694,
+      "price": 4304.0,
+      "chg_pct": 1.3707710676383071,
       "signal": -1,
-      "note": "+1.26%(避險↑)",
+      "note": "+1.37%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 78.12000274658203,
-      "chg_pct": 3.8553595836431946,
+      "price": 77.83999633789062,
+      "chg_pct": 3.483109644601265,
       "signal": 1,
-      "note": "+3.86%",
+      "note": "+3.48%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,8 +448,8 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64329.1015625,
-      "chg_pct": -0.41549353690158286,
+      "price": 64327.05078125,
+      "chg_pct": -0.4186682437400828,
       "signal": -1,
       "note": "-0.42%",
       "desc": "風險偏好指標"
@@ -470,27 +470,27 @@
     },
     {
       "label": "川普動態",
-      "title": "‘The Invoice Remains Unpaid’: Pritzker Calls on Trump to Offer Tariff Relief to ",
+      "title": "Trump unveils trade actions to compete with China on solar and chips - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Gov. JB Pritzker pens letter to President Donald Trump, seeks tariff refunds for",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "After Trump Calls Canadians ‘Nasty,’ Mark Carney Says the Word Fits Trade Talks ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
       "title": "Carney says US trade talks are ‘nasty’ after Trump criticizes Canada’s leadershi",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Pritzker pens letter to Trump, seeking tariff refunds for Illinois families - Ca",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Signed Order on Tariffs, Trade Actions on Polysilicon - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -524,6 +524,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan’s two-speed AI economy - lowyinstitute.org",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "TSMC’s $64 Billion Investment Signals Mega-Growth: Why Pivoting Away From The Ti",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -535,16 +541,16 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Day Traders Hammered by Stock Market Slump Double Down in Taiwan - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
       "title": "Why a Fed Rate Cut Is Coming and How the Market Will React - Barron's",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - mornin",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "Google's AI shake-up, tariff refunds, the interest rate outlook and more in Morn",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "A divided Federal Reserve holds interest rates steady despite high inflation - N",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
