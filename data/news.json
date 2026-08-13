@@ -1,14 +1,26 @@
 {
-  "updated": "2026-08-14 04:04",
+  "updated": "2026-08-14 05:03",
   "bull": 1,
-  "bear": 11,
-  "score": -10,
+  "bear": 10,
+  "score": -9,
   "mood": "偏空 📉",
   "mood_color": "#ef4444",
   "items": [
     {
       "label": "川普動態",
       "title": "Kennedy Center Board Decides to Inscribe Trump’s Name on Building - The New York Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "CIA had ‘low confidence’ in Iranian threat before Trump switched planes in Turkey - The Washington P",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trade court upholds Trump's closure of 'de minimis' loophole - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -21,18 +33,6 @@
     {
       "label": "川普動態",
       "title": "Trump White House says it’s losing $19B-$26B a year in revenue as countries dodge tariffs - AP News",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trade court upholds Trump's closure of 'de minimis' loophole - CNBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Contradicting public statements, Trump took secret flight from Turkey amid Iranian threat - The Wash",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -92,13 +92,13 @@
     },
     {
       "label": "聯準會",
-      "title": "The US Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - global.morningstar.com",
+      "title": "The US Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - Morningstar",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Stocks rise and interest rates fall after inflation report - NBC News",
+      "title": "Fed expected to leave rates unchanged next month after soft inflation data - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -110,9 +110,9 @@
     },
     {
       "label": "聯準會",
-      "title": "US stocks tick toward records as oil prices drop and inflation gets less bad - Boston Herald",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The Odds of a September Rate Hike Have Plunged, but the Federal Reserve's Job Just Became Infinitely",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
