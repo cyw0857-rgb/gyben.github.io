@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-15 07:48",
+  "updated": "2026-08-15 09:17",
   "bull": 3,
-  "bear": 7,
-  "score": -4,
+  "bear": 8,
+  "score": -5,
   "mood": "偏空 📉",
   "mood_color": "#ef4444",
   "items": [
@@ -17,6 +17,12 @@
       "title": "Drone stocks rally after Trump orders tariffs on foreign-made components - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "US says dozens of countries helped China dodge Trump's tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -37,10 +43,10 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump shrugs off concerns about dismal conditions on USS Abraham Lincoln - Axios",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "關稅/貿易",
+      "title": "The Trade War Escalation and the Economy - Haver Analytics",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -57,12 +63,6 @@
     {
       "label": "關稅/貿易",
       "title": "U.S. to slap 50% tariffs on Canadian goods, deepening North America trade war - Axios",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What Trump’s Latest Tariffs Mean for the American Economy - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -104,15 +104,15 @@
     },
     {
       "label": "聯準會",
-      "title": "EM Assets Buoyed by Easing US Rate Worries, Gains in AI Leaders - Bloomberg",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
       "title": "The Interest-Rate Myth and What Really Drives US Small-Cap Returns - Royce Investment Partners - Com",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "EM Assets Buoyed by Easing US Rate Worries, Gains in AI Leaders - Bloomberg",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
