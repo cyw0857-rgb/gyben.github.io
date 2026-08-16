@@ -1,11 +1,17 @@
 {
-  "updated": "2026-08-17 05:45",
-  "bull": 2,
-  "bear": 7,
-  "score": -5,
-  "mood": "偏空 📉",
-  "mood_color": "#ef4444",
+  "updated": "2026-08-17 06:21",
+  "bull": 3,
+  "bear": 6,
+  "score": -3,
+  "mood": "略偏空",
+  "mood_color": "#f87171",
   "items": [
+    {
+      "label": "川普動態",
+      "title": "Colombian president asks Trump to suspend tariffs to help earthquake recovery - pbs.org",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump says record USS Lincoln deployment 'not nearly long enough' - ABC News - Breaking News, Latest",
@@ -20,7 +26,13 @@
     },
     {
       "label": "川普動態",
-      "title": "As China Pushes to Expand in Asia, Trump Focuses on Iran - The New York Times",
+      "title": "Trump tells Hegseth to cut U.S.-South Korea drills - Axios",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says White House needs ‘military complex’ as courts block his ballroom - washingtonpost.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -29,18 +41,6 @@
       "title": "Blanche says he's not Trump's personal servant - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says White House needs ‘military complex’ as courts block his ballroom - The Washington Post",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Colombian president asks Trump to suspend tariffs to help earthquake recovery - KCBD",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -68,6 +68,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Wall Street’s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Should You Buy Taiwan Semiconductor Stock Below $440? Here's What History Says. - The Motley Fool",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -83,12 +89,6 @@
       "title": "Tran Capital Management L.P. Reduces Stock Position in Taiwan Semiconductor Manufacturing Company Lt",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Trades Rich On Cash Flow While Earnings Look Cheaper ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -110,9 +110,9 @@
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Fed chair Warsh holds news conference after leaving interest rate unchanged - PBS",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The Odds for a September Fed Rate Hike Plunged to 25%. Here's Why the Betting Markets Might Be Wrong",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
