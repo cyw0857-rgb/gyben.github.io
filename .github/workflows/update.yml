@@ -44,9 +44,6 @@ jobs:
         run: |
           pip install yfinance pandas numpy feedparser requests beautifulsoup4 --quiet
 
-      - name: Fetch Jin10 news
-        run: python jin10_fetch.py || echo "Jin10 fetch failed, continuing"
-
       - name: Run signal engine + dashboard
         run: python run.py morning
 
@@ -54,7 +51,26 @@ jobs:
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@github.com"
+
+          # news.json / intl.json / jin10_news.json 各自有獨立的 news.yml / intl.yml /
+          # jin10.yml 每 5~15 分鐘專職 commit+push。這個 job 執行較久（裝套件+抓籌碼+算信號），
+          # 若連這三個檔案也一起提交，push 前遠端幾乎一定已被那三支搶先動過，
+          # rebase 衝突後 push 必失敗（8/7 起台指期信號卡住的原因）。這裡還原、不提交它們，
+          # 交給專職 workflow 管。
+          git checkout -- data/news.json data/intl.json data/jin10_news.json 2>/dev/null || true
+
           git add index.html data/
-          git diff --cached --quiet || git commit -m "Auto update $(TZ='Asia/Taipei' date +'%Y-%m-%d %H:%M') TST"
-          git pull --rebase origin main || true
-          git push
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "Auto update $(TZ='Asia/Taipei' date +'%Y-%m-%d %H:%M') TST"
+
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "attempt $i failed, retrying in $((i*8))s..."
+            sleep $((i*8))
+          done
+          echo "::error::push failed after 5 retries"
+          exit 1

@@ -44,5 +44,10 @@ jobs:
           git config user.email "bot@github.com"
           git add data/jin10_news.json
           git commit -m "Jin10 $(TZ='Asia/Taipei' date +'%H:%M') TST"
-          git pull --rebase origin main || true
-          git push origin main
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*5))
+          done
+          echo "::error::push failed after retries"
+          exit 1
