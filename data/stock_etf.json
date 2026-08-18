@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19 02:28",
+  "updated": "2026-08-19 04:16",
   "start_date": "2026-07-07",
   "etfs": [
     {
@@ -156,10 +156,6 @@
       "dividend": {
         "recent": [
           {
-            "ex_date": "2025-02-20",
-            "amount": 0.5
-          },
-          {
             "ex_date": "2025-05-19",
             "amount": 0.47
           },
@@ -178,18 +174,29 @@
           {
             "ex_date": "2026-05-19",
             "amount": 0.66
+          },
+          {
+            "ex_date": "2026-08-18",
+            "amount": 1.01
           }
         ],
         "latest": {
-          "ex_date": "2026-05-19",
-          "amount": 0.66
+          "ex_date": "2026-08-18",
+          "amount": 1.01
         },
-        "yield_ttm": 4.37,
+        "yield_ttm": 7.35,
         "yield_label": "近12個月",
-        "cum_per_share": 0.0,
+        "cum_per_share": 1.01,
         "cum_amount": 0.0,
-        "cum_count": 0,
-        "cum_list": []
+        "cum_count": 1,
+        "cum_list": [
+          {
+            "ex_date": "2026-08-18",
+            "amount": 1.01,
+            "shares": 0,
+            "cash": 0.0
+          }
+        ]
       },
       "holding": null
     },
@@ -361,8 +368,8 @@
     }
   ],
   "portfolio": {
-    "cum_per_share_sum": 1.35,
+    "cum_per_share_sum": 2.36,
     "cum_cash_total": 0.0,
-    "cum_count_total": 1
+    "cum_count_total": 2
   }
 }
