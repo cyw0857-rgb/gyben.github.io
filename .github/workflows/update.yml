@@ -14,8 +14,6 @@ on:
     - cron: '0 22 * * *'           # 每天 06:00 TST
 
   workflow_dispatch:               # 手動觸發
-  push:                            # 暫時：強制觸發一次立即執行，下個commit會移除
-    branches: [main]
 
 # 同時間只跑一個，避免 */5 排程互相堆疊
 concurrency:
