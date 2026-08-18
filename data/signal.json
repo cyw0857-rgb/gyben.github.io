@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-19 04:15",
+  "generated_at": "2026-08-19 06:11",
   "mode": "morning",
   "signal_date": "2026-08-17",
   "trade_date": "2026-08-20",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": 9,
-  "intl_score": -5,
+  "total_score": 3,
+  "tw_score": 7,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 468,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+7) vs 國際(-4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45857.26953125,
   "tw_chg_pct": 0.10097531306225704,
   "tw_ma5": 45665.71015625,
   "tw_ma10": 44985.218359375,
-  "tw_rsi": 60.22699255529974,
-  "tw_macd": 341.15132697952504,
-  "tw_macds": -10.692170342307733,
+  "tw_rsi": 74.06643745008263,
+  "tw_macd": 380.8779019003341,
+  "tw_macds": 25.261613281084763,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 45480.00859375,
   "tw_ma10_p2": 44738.132421875,
-  "tw_ma20_p2": 43873.7271484375,
-  "tw_ma20": 43885.0111328125,
+  "tw_ma20_p2": 43786.2552734375,
+  "tw_ma20": 43956.6337890625,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4398.60009765625,
-    "chg_pct": -0.43459884739182114,
+    "price_usd": 4391.7998046875,
+    "chg_pct": -0.5885282527382236,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.4%，影響中性",
-    "oil_usd": 84.08999633789062,
-    "oil_chg": -0.48521143444896453
+    "warning": "黃金小幅變動 -0.6%，影響中性",
+    "oil_usd": 84.47000122070312,
+    "oil_chg": -0.03550151396079882
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.67400360107422,
-      "chg_pct": 0.03412706908277434,
+      "price": 99.6510009765625,
+      "chg_pct": 0.011041335790298541,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4398.60009765625,
-      "chg_pct": -0.43459884739182114,
-      "signal": 0,
-      "note": "-0.43%()",
+      "price": 4391.7998046875,
+      "chg_pct": -0.5885282527382236,
+      "signal": 1,
+      "note": "-0.59%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.08999633789062,
-      "chg_pct": -0.48521143444896453,
-      "signal": -1,
-      "note": "-0.49%",
+      "price": 84.47000122070312,
+      "chg_pct": -0.03550151396079882,
+      "signal": 0,
+      "note": "-0.04%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64614.5,
-      "chg_pct": 0.16780713061917868,
+      "price": 64546.98828125,
+      "chg_pct": 0.06314794695596679,
       "signal": 0,
-      "note": "+0.17%",
+      "note": "+0.06%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,9 +470,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump, Carney reportedly in talks ahead of new 50% tariffs on Canadian goods - C",
+      "title": "Trump, Carney reportedly in talks ahead of new 50% tariffs on Canadian goods - c",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says no talks planned with Iran, Tehran says Strait of Hormuz still shut -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -482,15 +488,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney and Trump speak ahead of 50% US tariff deadline - Reuters",
+      "title": "Trump and Carney speak ahead of US tariff deadline - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "S. Korea stresses US alliance amid confusion over Trump drill cut - npr.org",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -530,13 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What's Going On With Taiwan Semiconductor Stock Monday? - benzinga.com",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Trading Down 4% - Here's What Happ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Could Be 13% Overvalued On Maia 300 Foc",
+      "title": "BofA Sends Bullish Message For Taiwan Semiconductor Stock Fans - tradingview.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
