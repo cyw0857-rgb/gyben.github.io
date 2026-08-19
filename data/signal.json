@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-19 06:11",
+  "generated_at": "2026-08-19 09:07",
   "mode": "morning",
   "signal_date": "2026-08-17",
   "trade_date": "2026-08-20",
   "direction": 0,
-  "total_score": 3,
+  "total_score": -1,
   "tw_score": 7,
-  "intl_score": -4,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 468,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+7) vs 國際(-4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+7) vs 國際(-8) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45857.26953125,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4391.7998046875,
-    "chg_pct": -0.5885282527382236,
+    "price_usd": 4393.5,
+    "chg_pct": -0.5500431382544028,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 84.47000122070312,
-    "oil_chg": -0.03550151396079882
+    "oil_usd": 84.73999786376953,
+    "oil_chg": 0.28402114055565825
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69220.25,
-      "chg_pct": 0.7370472132711703,
-      "signal": 1,
-      "note": "+0.74%",
+      "price": 65835.328125,
+      "chg_pct": -4.890074616893178,
+      "signal": -1,
+      "note": "-4.89%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6977.93994140625,
-      "chg_pct": 2.4158503968834117,
-      "signal": 1,
-      "note": "+2.42%",
+      "price": 6506.4501953125,
+      "chg_pct": -6.756861624675027,
+      "signal": -1,
+      "note": "-6.76%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.6510009765625,
-      "chg_pct": 0.011041335790298541,
+      "price": 99.64299774169922,
+      "chg_pct": 0.0030091851356361487,
       "signal": 0,
-      "note": "+0.01%(中性)",
+      "note": "+0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4391.7998046875,
-      "chg_pct": -0.5885282527382236,
+      "price": 4393.5,
+      "chg_pct": -0.5500431382544028,
       "signal": 1,
-      "note": "-0.59%()",
+      "note": "-0.55%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.47000122070312,
-      "chg_pct": -0.03550151396079882,
+      "price": 84.73999786376953,
+      "chg_pct": 0.28402114055565825,
       "signal": 0,
-      "note": "-0.04%",
+      "note": "+0.28%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64546.98828125,
-      "chg_pct": 0.06314794695596679,
+      "price": 64485.75,
+      "chg_pct": -0.031785919981959114,
       "signal": 0,
-      "note": "+0.06%",
+      "note": "-0.03%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,37 +464,43 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump votes by mail again in his home state of Florida - Politico",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump, Carney reportedly in talks ahead of new 50% tariffs on Canadian goods - c",
+      "title": "Trump is weighing whether to grant Canada a tariff reprieve - politico.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says no talks planned with Iran, Tehran says Strait of Hormuz still shut -",
+      "title": "Trump, Carney reportedly in talks ahead of new 50% tariffs on Canadian goods - C",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Carney and Trump Talk Again as Deadline Nears on New U.S. Tariffs - The New York",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump v. Carroll and the Ten Commandments - SCOTUSblog",
+      "title": "Carney and Trump speak again as tariff deadline looms - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump and Carney speak ahead of US tariff deadline - Al Jazeera",
+      "title": "Trump and Carney speak ahead of US tariff deadline - aljazeera.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
       "title": "The Trade War Escalation and the Economy - Haver Analytics",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "War and Tariffs Threaten a Resilient U.S. Economy Again - The New York Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -507,12 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "What Trump’s Latest Tariffs Mean for the American Economy - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "War and Tariffs Threaten a Resilient U.S. Economy Again - The New York Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,13 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Trading Down 4% - Here's What Happ",
+      "title": "BofA Sends Bullish Message For Taiwan Semiconductor Stock Fans - TradingView",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "BofA Sends Bullish Message For Taiwan Semiconductor Stock Fans - tradingview.com",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Trading Down 4% - Here's What Happ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
