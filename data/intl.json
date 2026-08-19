@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19 13:48",
+  "updated": "2026-08-19 14:17",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -43,34 +43,34 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65403.76,
-      "chg_pct": -0.4,
+      "price": 65287.75,
+      "chg_pct": -0.58,
       "signal": -1,
-      "note": "-0.40%",
+      "note": "-0.58%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6507.85,
-      "chg_pct": 0.38,
-      "signal": 1,
-      "note": "+0.38%",
+      "price": 6469.34,
+      "chg_pct": -0.22,
+      "signal": -1,
+      "note": "-0.22%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25476.38,
-      "chg_pct": -0.23,
+      "price": 25471.49,
+      "chg_pct": -0.25,
       "signal": -1,
-      "note": "-0.23%",
+      "note": "-0.25%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3912.35,
-      "chg_pct": 0.0,
-      "signal": 0,
-      "note": "+0.00%",
+      "price": 3893.42,
+      "chg_pct": -0.48,
+      "signal": -1,
+      "note": "-0.48%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -83,19 +83,27 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.54,
-      "chg_pct": -0.05,
+      "price": 99.52,
+      "chg_pct": -0.13,
       "signal": 0,
-      "note": "-0.05%(中性)",
+      "note": "-0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4391.7,
-      "chg_pct": -0.39,
+      "price": 4390.0,
+      "chg_pct": -0.4,
       "signal": 0,
-      "note": "-0.39%",
+      "note": "-0.40%",
       "desc": "避險情緒指標"
+    },
+    "原油": {
+      "category": "商品",
+      "price": 84.84,
+      "chg_pct": -0.14,
+      "signal": 0,
+      "note": "-0.14%",
+      "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64244.38,
-      "chg_pct": -0.04,
+      "price": 64179.54,
+      "chg_pct": -0.14,
       "signal": 0,
-      "note": "-0.04%",
+      "note": "-0.14%",
       "desc": "風險偏好指標"
-    },
-    "原油": {
-      "category": "商品",
-      "price": 84.61,
-      "chg_pct": -0.17,
-      "signal": 0,
-      "note": "-0.17%",
-      "desc": "油漲→通膨預期"
     }
   }
 }
