@@ -1,21 +1,7 @@
 {
-  "updated": "2026-08-19 15:16",
+  "updated": "2026-08-19 22:25",
   "inst": {
     "rows": [
-      {
-        "date": "08/18",
-        "foreign": -1676539,
-        "trust": 0,
-        "dealer": -17672,
-        "total": -1694211
-      },
-      {
-        "date": "08/17",
-        "foreign": -5034512,
-        "trust": 0,
-        "dealer": -25283,
-        "total": -5059795
-      },
       {
         "date": "08/14",
         "foreign": -3022300,
@@ -85,20 +71,41 @@
         "trust": -71000,
         "dealer": 3058,
         "total": 219880
+      },
+      {
+        "date": "07/31",
+        "foreign": 498228,
+        "trust": -558000,
+        "dealer": 20151,
+        "total": -39621
+      },
+      {
+        "date": "07/30",
+        "foreign": 4408,
+        "trust": 2000,
+        "dealer": 17310,
+        "total": 23718
       }
     ],
-    "total_foreign": -11351228,
-    "total_trust": 31000,
-    "total_dealer": -23040,
-    "net5": -11343268,
+    "total_foreign": -5999735,
+    "total_trust": 25441,
+    "total_dealer": 527,
+    "net5": -5973767,
     "mood": "偏空",
-    "trust_streak": 0,
-    "streak_label": "投信今日無動作",
-    "streak_color": "#9ca3af",
-    "foreign_streak": -7
+    "trust_streak": -1,
+    "streak_label": "📉 投信連賣 1 日",
+    "streak_color": "#ef4444",
+    "foreign_streak": -5
   },
   "margin": {
     "rows": [
+      {
+        "date": "08/19",
+        "fin_bal": 5219,
+        "fin_chg": -71,
+        "sho_bal": 4,
+        "sho_chg": -5
+      },
       {
         "date": "08/18",
         "fin_bal": 5290,
@@ -147,19 +154,12 @@
         "fin_chg": 35,
         "sho_bal": 6,
         "sho_chg": -1
-      },
-      {
-        "date": "08/07",
-        "fin_bal": 2943,
-        "fin_chg": -3,
-        "sho_bal": 7,
-        "sho_chg": 0
       }
     ],
-    "fin_bal": 5290,
-    "sho_bal": 9,
-    "fin_5chg": 2222,
-    "sho_5chg": 5,
+    "fin_bal": 5219,
+    "sho_bal": 4,
+    "fin_5chg": 2202,
+    "sho_5chg": 1,
     "note": "融資5日增加（散戶追價，留意追高）",
     "note_color": "#f59e0b"
   }
