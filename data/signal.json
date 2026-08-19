@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-19 13:03",
+  "generated_at": "2026-08-19 15:15",
   "mode": "morning",
-  "signal_date": "2026-08-19",
+  "signal_date": "2026-08-17",
   "trade_date": "2026-08-20",
   "direction": 1,
-  "total_score": 10,
-  "tw_score": 8,
-  "intl_score": 2,
+  "total_score": 8,
+  "tw_score": 9,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 468,
+  "inst_score": 0,
+  "foreign_fut_net": 749,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44587.1484375,
-  "tw_chg_pct": -2.7697268213591753,
-  "tw_ma5": 45558.99609375,
-  "tw_ma10": 45107.8671875,
-  "tw_rsi": 64.75958788703221,
-  "tw_macd": 293.0491709598573,
-  "tw_macds": 50.056097918125275,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 45665.71015625,
-  "tw_ma10_p2": 44985.218359375,
-  "tw_ma20_p2": 43885.0111328125,
-  "tw_ma20": 43833.11953125,
+  "tw_last_close": 45857.26953125,
+  "tw_chg_pct": 0.10097531306225704,
+  "tw_ma5": 45665.71015625,
+  "tw_ma10": 44985.218359375,
+  "tw_rsi": 60.22699255529974,
+  "tw_macd": 341.15132697952504,
+  "tw_macds": -10.692170342307733,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 45480.00859375,
+  "tw_ma10_p2": 44738.132421875,
+  "tw_ma20_p2": 43873.7271484375,
+  "tw_ma20": 43885.0111328125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4397.7001953125,
-    "chg_pct": 0.7260695215872652,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 84.69999694824219,
-    "oil_chg": -0.2825588489117649
+    "price_usd": 4402.10009765625,
+    "chg_pct": 0.8268460296896473,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 84.72000122070312,
+    "oil_chg": -0.2590077871199584
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65232.98828125,
-      "chg_pct": -5.760253276678428,
+      "price": 65326.421875,
+      "chg_pct": -5.625273131778634,
       "signal": -1,
-      "note": "-5.76%",
+      "note": "-5.63%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6482.02001953125,
-      "chg_pct": -7.106967472337663,
+      "price": 6471.169921875,
+      "chg_pct": -7.262458888821014,
       "signal": -1,
-      "note": "-7.11%",
+      "note": "-7.26%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25533.380859375,
-      "chg_pct": 0.3148928020095681,
-      "signal": 1,
-      "note": "+0.31%",
+      "price": 25505.640625,
+      "chg_pct": 0.20590767963361722,
+      "signal": 0,
+      "note": "+0.21%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3912.17138671875,
-      "chg_pct": -1.7697411093799031,
+      "price": 3890.186279296875,
+      "chg_pct": -2.3217626289688478,
       "signal": -1,
-      "note": "-1.77%",
+      "note": "-2.32%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44584.19921875,
-      "chg_pct": -2.7761581217400013,
-      "signal": -1,
-      "note": "-2.78%",
+      "price": 45857.26953125,
+      "chg_pct": 0.1009753130622678,
+      "signal": 0,
+      "note": "+0.10%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.55899810791016,
-      "chg_pct": -0.08129394041997198,
+      "price": 99.48100280761719,
+      "chg_pct": -0.15957103874467515,
       "signal": 0,
-      "note": "-0.08%(中性)",
+      "note": "-0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4397.7001953125,
-      "chg_pct": 0.7260695215872652,
+      "price": 4402.10009765625,
+      "chg_pct": 0.8268460296896473,
       "signal": 0,
-      "note": "+0.73%()",
+      "note": "+0.83%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.69999694824219,
-      "chg_pct": -0.2825588489117649,
+      "price": 84.72000122070312,
+      "chg_pct": -0.2590077871199584,
       "signal": 0,
-      "note": "-0.28%",
+      "note": "-0.26%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64273.51171875,
-      "chg_pct": -0.3608056171394719,
+      "price": 64314.8984375,
+      "chg_pct": -0.565566603548126,
       "signal": -1,
-      "note": "-0.36%",
+      "note": "-0.57%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,19 +464,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he has paused 50% Canadian tariffs, touting last-minute deal - The Wa",
+      "title": "Trump pauses 50-percent tariff on Canada in last-minute deal - Al Jazeera",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says US and Canada strike deal, temporarily pauses tariffs - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "US, Canada reach trade deal to avert steep tariffs, Trump says - Al Jazeera",
+      "title": "Trump’s Tariffs on Hold as President Claims Deal With Canada Is Near - The New Y",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -489,6 +483,12 @@
     {
       "label": "川普動態",
       "title": "Trump’s not bluffing about 100% tariffs on UK, says trade tsar - The Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,7 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What Trump’s Latest Tariffs Mean for the American Economy - wsj.com",
+      "title": "What Trump’s Latest Tariffs Mean for the American Economy - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Trading Down 4% - Here's What Happ",
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (NYSE:TSM) Given Consensus Recom",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
