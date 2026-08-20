@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-21 04:03",
+  "generated_at": "2026-08-21 05:49",
   "mode": "morning",
   "signal_date": "2026-08-19",
   "trade_date": "2026-08-24",
   "direction": 0,
   "total_score": -2,
-  "tw_score": 6,
+  "tw_score": 5,
   "intl_score": -3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -901,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+6) vs 國際(-3) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 44719.3515625,
   "tw_chg_pct": -1.3006958690137793,
   "tw_ma5": 45543.55859375,
   "tw_ma10": 45190.7953125,
-  "tw_rsi": 77.81979468422925,
-  "tw_macd": 307.0047918409182,
-  "tw_macds": 110.65075849030515,
+  "tw_rsi": 78.81182037388638,
+  "tw_macd": 340.6381451908237,
+  "tw_macds": 146.23566177812341,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 45703.30234375,
   "tw_ma10_p2": 45180.0203125,
-  "tw_ma20_p2": 43869.19609375,
-  "tw_ma20": 43971.6001953125,
+  "tw_ma20_p2": 44010.42421875,
+  "tw_ma20": 44005.102734375,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,29 +325,29 @@
     }
   ],
   "gold": {
-    "price_usd": 4585.2998046875,
-    "chg_pct": 2.1361407856244705,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +2.1%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 86.63999938964844,
-    "oil_chg": 0.9437231053403984
+    "price_usd": 4575.10009765625,
+    "chg_pct": 1.9089454532165668,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 86.20999908447266,
+    "oil_chg": 0.44273243074833485
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7641.6298828125,
-      "chg_pct": -0.8607974829251569,
+      "price": 7641.16015625,
+      "chg_pct": -0.866891512277727,
       "signal": -1,
-      "note": "-0.86%",
+      "note": "-0.87%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52762.30078125,
-      "chg_pct": -1.3107183180907434,
+      "price": 52759.2109375,
+      "chg_pct": -1.316497718452018,
       "signal": -1,
-      "note": "-1.31%",
+      "note": "-1.32%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
@@ -368,8 +368,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.049999237060547,
-      "chg_pct": 7.790455789062362,
+      "price": 16.010000228881836,
+      "chg_pct": 7.521825787340111,
       "signal": 1,
       "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.88600158691406,
-      "chg_pct": 0.056662708511433596,
+      "price": 98.86599731445312,
+      "chg_pct": 0.036421615634460995,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "+0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4585.2998046875,
-      "chg_pct": 2.1361407856244705,
+      "price": 4575.10009765625,
+      "chg_pct": 1.9089454532165668,
       "signal": -1,
-      "note": "+2.14%(避險↑)",
+      "note": "+1.91%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.63999938964844,
-      "chg_pct": 0.9437231053403984,
+      "price": 86.20999908447266,
+      "chg_pct": 0.44273243074833485,
       "signal": 1,
-      "note": "+0.94%",
+      "note": "+0.44%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 72651.4375,
-      "chg_pct": 4.8873052237789185,
+      "price": 72718.109375,
+      "chg_pct": 4.98355979964972,
       "signal": 1,
-      "note": "+4.89%",
+      "note": "+4.98%",
       "desc": "風險偏好指標"
     }
   },
@@ -476,6 +476,12 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump says US and Canada have a trade deal, but key terms remain unclear - WRAL",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump imposing 50% tariffs on certain Canadian goods over alleged trade discrimi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -485,12 +491,6 @@
       "title": "After Trump Calls Canadians ‘Nasty,’ Mark Carney Says the Word Fits Trade Talks ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -524,13 +524,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor vs. ASML: Which Semiconductor Titan Is the Better Buy Today",
+      "title": "Arizona-Taiwan partnership advances semiconductor talent and innovation - Univer",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Arizona-Taiwan partnership advances semiconductor talent and innovation - Univer",
+      "title": "Taiwan Semiconductor vs. ASML: Which Semiconductor Titan Is the Better Buy Today",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,7 +554,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve officials hint rate increase may be necessary - The Hill",
+      "title": "What the Treasury’s Buyback Surprise Says About the Bond Market - Council on For",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
