@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-21 05:49",
+  "generated_at": "2026-08-21 09:11",
   "mode": "morning",
-  "signal_date": "2026-08-19",
+  "signal_date": "2026-08-20",
   "trade_date": "2026-08-24",
   "direction": 0,
-  "total_score": -2,
-  "tw_score": 5,
-  "intl_score": -3,
+  "total_score": 4,
+  "tw_score": 8,
+  "intl_score": 0,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -901,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-3) 方向相反 → 觀望",
+  "veto_msg": "⚠️ 外資期貨(-901口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44719.3515625,
-  "tw_chg_pct": -1.3006958690137793,
-  "tw_ma5": 45543.55859375,
-  "tw_ma10": 45190.7953125,
-  "tw_rsi": 78.81182037388638,
-  "tw_macd": 340.6381451908237,
-  "tw_macds": 146.23566177812341,
+  "tw_last_close": 44933.73828125,
+  "tw_chg_pct": 0.47940480185713064,
+  "tw_ma5": 45326.01015625,
+  "tw_ma10": 45244.49921875,
+  "tw_rsi": 67.00514789298182,
+  "tw_macd": 317.4309835434833,
+  "tw_macds": 180.4894744105061,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 45703.30234375,
-  "tw_ma10_p2": 45180.0203125,
-  "tw_ma20_p2": 44010.42421875,
-  "tw_ma20": 44005.102734375,
+  "tw_ma5_p2": 45543.55859375,
+  "tw_ma10_p2": 45190.7953125,
+  "tw_ma20_p2": 44005.102734375,
+  "tw_ma20": 44009.24921875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 28,
+    "total": 29,
     "wins": 14,
-    "losses": 14,
-    "win_rate": 50.0,
-    "total_pnl": 21464.0,
-    "avg_pnl": 766.5714285714286,
+    "losses": 15,
+    "win_rate": 48.275862068965516,
+    "total_pnl": 21311.0,
+    "avg_pnl": 734.8620689655172,
     "avg_win": 8189.5,
-    "avg_lose": -6656.357142857143,
+    "avg_lose": -6222.8,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4575.10009765625,
-    "chg_pct": 1.9089454532165668,
+    "price_usd": 4568.89990234375,
+    "chg_pct": 1.7708380124144427,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 86.20999908447266,
-    "oil_chg": 0.44273243074833485
+    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 86.37000274658203,
+    "oil_chg": 0.6291516998802658
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65326.421875,
-      "chg_pct": -3.163773644688871,
+      "price": 65572.40625,
+      "chg_pct": -0.9731411347834864,
       "signal": -1,
-      "note": "-3.16%",
+      "note": "-0.97%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6471.169921875,
-      "chg_pct": -5.803057014749443,
-      "signal": -1,
-      "note": "-5.80%",
+      "price": 6892.18994140625,
+      "chg_pct": 0.5780284627055104,
+      "signal": 1,
+      "note": "+0.58%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25495.0703125,
-      "chg_pct": 0.09390986079609522,
-      "signal": 0,
-      "note": "+0.09%",
+      "price": 25698.490234375,
+      "chg_pct": 0.7978794307355375,
+      "signal": 1,
+      "note": "+0.80%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3903.720947265625,
+      "chg_pct": 0.23877298968946786,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.24%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44719.3515625,
-      "chg_pct": -1.3006958690137842,
-      "signal": -1,
-      "note": "-1.30%",
+      "price": 44933.73828125,
+      "chg_pct": 0.47940480185713785,
+      "signal": 1,
+      "note": "+0.48%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.86599731445312,
-      "chg_pct": 0.036421615634460995,
+      "price": 98.82599639892578,
+      "chg_pct": -0.004052850404428152,
       "signal": 0,
-      "note": "+0.04%(中性)",
+      "note": "-0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4575.10009765625,
-      "chg_pct": 1.9089454532165668,
+      "price": 4568.89990234375,
+      "chg_pct": 1.7708380124144427,
       "signal": -1,
-      "note": "+1.91%(避險↑)",
+      "note": "+1.77%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.20999908447266,
-      "chg_pct": 0.44273243074833485,
+      "price": 86.37000274658203,
+      "chg_pct": 0.6291516998802658,
       "signal": 1,
-      "note": "+0.44%",
+      "note": "+0.63%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,25 +448,19 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 72718.109375,
-      "chg_pct": 4.98355979964972,
+      "price": 73903.046875,
+      "chg_pct": 6.694260998557197,
       "signal": 1,
-      "note": "+4.98%",
+      "note": "+6.69%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump expected to slash tariffs on Canadian goods, Carney asks premiers to put U",
+      "title": "Trump pauses tariffs on Canadian imports, Carney says key work remains - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -476,21 +470,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says US and Canada have a trade deal, but key terms remain unclear - WRAL",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump imposing 50% tariffs on certain Canadian goods over alleged trade discrimi",
+      "title": "Trump Tariff Talks Leave Key Canadian Official Hopeful - The New York Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "After Trump Calls Canadians ‘Nasty,’ Mark Carney Says the Word Fits Trade Talks ",
+      "title": "Trump asks Supreme Court to hear his defamation case against CNN - SCOTUSblog",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump keeps embracing data centers, an unpopular topic in midterm races - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -511,22 +517,16 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump’s latest Canada tariffs raises concerns about Ohio economy - Spectrum News",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Arizona-Taiwan partnership advances semiconductor talent and innovation - Univer",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing (TSM) On July Revenue Growth And A Valuation ",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Arizona-Taiwan partnership advances semiconductor talent and innovation - Univer",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -542,6 +542,12 @@
     },
     {
       "label": "聯準會",
+      "title": "Fed minutes show September rate hike still on the table - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "Fed Minutes Reveal Broader Support for Rate Increases - WSJ",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -551,12 +557,6 @@
       "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "What the Treasury’s Buyback Surprise Says About the Bond Market - Council on For",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "聯準會",
