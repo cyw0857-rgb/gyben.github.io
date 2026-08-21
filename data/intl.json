@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21 08:26",
+  "updated": "2026-08-21 10:06",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -43,66 +43,58 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65796.55,
-      "chg_pct": -0.14,
+      "price": 65756.78,
+      "chg_pct": -0.2,
       "signal": -1,
-      "note": "-0.14%",
+      "note": "-0.20%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6797.32,
-      "chg_pct": -1.03,
-      "signal": -1,
-      "note": "-1.03%",
+      "price": 6900.79,
+      "chg_pct": 0.48,
+      "signal": 1,
+      "note": "+0.48%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25698.49,
-      "chg_pct": -0.34,
-      "signal": -1,
-      "note": "-0.34%",
+      "price": 25893.88,
+      "chg_pct": 0.42,
+      "signal": 1,
+      "note": "+0.42%",
       "desc": "港股/中概股連動"
-    },
-    "上證指數": {
-      "category": "A股",
-      "price": 3904.37,
-      "chg_pct": -0.02,
-      "signal": 0,
-      "note": "-0.02%",
-      "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44855.9,
-      "chg_pct": 0.57,
+      "price": 45059.69,
+      "chg_pct": 1.02,
       "signal": 1,
-      "note": "+0.57%",
+      "note": "+1.02%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.79,
-      "chg_pct": -0.02,
+      "price": 98.77,
+      "chg_pct": -0.04,
       "signal": 0,
-      "note": "-0.02%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4573.4,
-      "chg_pct": 0.39,
-      "signal": 0,
-      "note": "+0.39%",
+      "price": 4583.9,
+      "chg_pct": 0.62,
+      "signal": 1,
+      "note": "+0.62%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.16,
-      "chg_pct": 1.98,
+      "price": 86.67,
+      "chg_pct": 2.58,
       "signal": 1,
-      "note": "+1.98%",
+      "note": "+2.58%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -115,11 +107,19 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 73796.89,
-      "chg_pct": 6.74,
+      "price": 75133.19,
+      "chg_pct": 8.67,
       "signal": 1,
-      "note": "+6.74%",
+      "note": "+8.67%",
       "desc": "風險偏好指標"
+    },
+    "上證指數": {
+      "category": "A股",
+      "price": 3904.37,
+      "chg_pct": -0.02,
+      "signal": 0,
+      "note": "-0.02%",
+      "desc": "中國市場情緒"
     }
   }
 }
