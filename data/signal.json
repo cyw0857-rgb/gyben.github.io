@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-22 06:12",
+  "generated_at": "2026-08-23 06:10",
   "mode": "morning",
-  "signal_date": "2026-08-20",
+  "signal_date": "2026-08-21",
   "trade_date": "2026-08-24",
-  "direction": 1,
-  "total_score": 9,
-  "tw_score": 8,
-  "intl_score": 3,
+  "direction": 0,
+  "total_score": 5,
+  "tw_score": 5,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": -204,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44933.73828125,
-  "tw_chg_pct": 0.47940480185713064,
-  "tw_ma5": 45326.01015625,
-  "tw_ma10": 45244.49921875,
-  "tw_rsi": 67.00514789298182,
-  "tw_macd": 317.4309835434833,
-  "tw_macds": 180.4894744105061,
+  "tw_last_close": 45224.2890625,
+  "tw_chg_pct": 0.6466205402973157,
+  "tw_ma5": 45208.665625,
+  "tw_ma10": 45344.337109375,
+  "tw_rsi": 67.15228041113238,
+  "tw_macd": 318.7993056432242,
+  "tw_macds": 208.15144065704973,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 45543.55859375,
-  "tw_ma10_p2": 45190.7953125,
-  "tw_ma20_p2": 44005.102734375,
-  "tw_ma20": 44009.24921875,
+  "tw_ma5_p2": 45326.01015625,
+  "tw_ma10_p2": 45244.49921875,
+  "tw_ma20_p2": 44009.24921875,
+  "tw_ma20": 44087.7216796875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -252,30 +252,30 @@
     "streak": -3
   },
   "stats_real_v60": {
-    "total": 9,
-    "wins": 2,
+    "total": 10,
+    "wins": 3,
     "losses": 7,
-    "win_rate": 22.22222222222222,
-    "total_pnl": -22787.0,
-    "avg_pnl": -2531.8888888888887,
-    "avg_win": 20837.0,
+    "win_rate": 30.0,
+    "total_pnl": -19848.0,
+    "avg_pnl": -1984.8,
+    "avg_win": 14871.0,
     "avg_lose": -9208.714285714286,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_real_v50": {
-    "total": 29,
-    "wins": 14,
+    "total": 30,
+    "wins": 15,
     "losses": 15,
-    "win_rate": 48.275862068965516,
-    "total_pnl": 21311.0,
-    "avg_pnl": 734.8620689655172,
-    "avg_win": 8189.5,
+    "win_rate": 50.0,
+    "total_pnl": 24250.0,
+    "avg_pnl": 808.3333333333334,
+    "avg_win": 7839.466666666666,
     "avg_lose": -6222.8,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4661.60009765625,
-    "chg_pct": 3.2172419735718556,
+    "price_usd": 4624.10009765625,
+    "chg_pct": 2.3869162285653247,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +3.2%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 86.63999938964844,
-    "oil_chg": -1.354892880106365
+    "warning": "黃金大漲 +2.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 87.05999755859375,
+    "oil_chg": -0.8766984588501756
   },
   "intl_data": {
     "S&P500": {
@@ -352,16 +352,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26180.455078125,
-      "chg_pct": 0.43458939574001687,
+      "price": 26180.4609375,
+      "chg_pct": 0.4346118737267626,
       "signal": 1,
       "note": "+0.43%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11740.3740234375,
-      "chg_pct": -0.5054695685421601,
+      "price": 11740.3701171875,
+      "chg_pct": -0.5055026723009264,
       "signal": -1,
       "note": "-0.51%",
       "desc": "對台股影響最大"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66216.7890625,
-      "chg_pct": 1.3629511030065122,
-      "signal": 1,
-      "note": "+1.36%",
+      "price": 66016.359375,
+      "chg_pct": -0.30268711355185246,
+      "signal": -1,
+      "note": "-0.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6912.9501953125,
+      "chg_pct": 0.8809837535531353,
+      "signal": 1,
+      "note": "+0.88%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25698.490234375,
-      "chg_pct": 0.7978794307355375,
+      "price": 26009.4609375,
+      "chg_pct": 1.210073822582142,
       "signal": 1,
-      "note": "+0.80%",
+      "note": "+1.21%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3905.202880859375,
+      "chg_pct": 0.03796207807292234,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.04%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44933.73828125,
-      "chg_pct": 0.47940480185713785,
+      "price": 45224.2890625,
+      "chg_pct": 0.6466205402973145,
       "signal": 1,
-      "note": "+0.48%",
+      "note": "+0.65%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.83899688720703,
-      "chg_pct": -0.061683152407143366,
+      "price": 98.80000305175781,
+      "chg_pct": -0.10111069017013857,
       "signal": 0,
-      "note": "-0.06%(中性)",
+      "note": "-0.10%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4661.60009765625,
-      "chg_pct": 3.2172419735718556,
+      "price": 4624.10009765625,
+      "chg_pct": 2.3869162285653247,
       "signal": -1,
-      "note": "+3.22%(避險↑)",
+      "note": "+2.39%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.63999938964844,
-      "chg_pct": -1.354892880106365,
+      "price": 87.05999755859375,
+      "chg_pct": -0.8766984588501756,
       "signal": -1,
-      "note": "-1.35%",
+      "note": "-0.88%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,89 +448,89 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78654.703125,
-      "chg_pct": 7.697840641501517,
-      "signal": 1,
-      "note": "+7.70%",
+      "price": 77094.28125,
+      "chg_pct": -1.5840981423578007,
+      "signal": -1,
+      "note": "-1.58%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says U.S., Canada 'should be able' to reach trade deal as tariff deadline ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says US and Canada have a trade deal, but key terms remain unclear - WRAL",
+      "title": "Trump says US and Canada have a trade deal, but key terms remain unclear - AP Ne",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Natalie Harp, Trump’s Most Devoted Aide, Is Always by His Side. What Exactly Doe",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Exclusive: Navy weighs renaming carrier slated to honor Black war hero, potentia",
+      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Beef producers ‘disappointed’ by Trump tariff suspension - Iowa Capital Dispatch",
+      "title": "Canadian Prime Minister Mark Carney calls new U.S. tariffs ‘a miscalculation’ af",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Ground Beef Prices Targeted With New Trump Tariff Relief - Bloomberg.com",
+      "title": "Carney bucks Trump as trade war escalates - Politico",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "U.S. Economy Could Feel the Sting From Trade War With Canada - The New York Time",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Why Trump's new tariff blitz is very different this time around - CNBC",
+      "title": "Canadian Prime Minister Mark Carney calls new U.S. tariffs ‘a miscalculation’ af",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "‘How to Win a Trade War’ Review: The Times of Tariffs - WSJ",
+      "title": "U.S., Canada fail to reach a tariff deal, deepening trade war - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "War and Tariffs Threaten a Resilient U.S. Economy Again - The New York Times",
+      "title": "Canada sets retaliatory tariffs in response to 50% U.S. levies as trade talks fa",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Sales Just Jumped 45%. Why is the Chip Sector Still S",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "174K Reasons To Be Bullish On Taiwan Semiconductor Stock - Benzinga",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "5 of the Best U.S. Semiconductor Stocks to Buy - U.S. News - Money",
+      "title": "TSMC's $100 Billion Arizona Expansion Shows The Stock Is a No-Brainer Buy - The ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,12 +548,6 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
       "title": "Fed minutes show September rate hike still on the table - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -563,6 +557,12 @@
       "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less - C",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "More Fed Officials Lost Patience About Elevated Inflation at Latest Meeting - Th",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
