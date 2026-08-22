@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22 19:27",
+  "updated": "2026-08-22 19:45",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -16,6 +16,14 @@
       "signal": 1,
       "note": "+0.96%",
       "desc": "藍籌股風向球"
+    },
+    "NASDAQ": {
+      "category": "美股",
+      "price": 26179.92,
+      "chg_pct": 0.45,
+      "signal": 1,
+      "note": "+0.45%",
+      "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76906.91,
-      "chg_pct": -1.91,
+      "price": 77177.23,
+      "chg_pct": -1.56,
       "signal": -1,
-      "note": "-1.91%",
+      "note": "-1.56%",
       "desc": "風險偏好指標"
-    },
-    "NASDAQ": {
-      "category": "美股",
-      "price": 26179.92,
-      "chg_pct": 0.45,
-      "signal": 1,
-      "note": "+0.45%",
-      "desc": "科技股連動"
     }
   }
 }
