@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-24 04:42",
+  "generated_at": "2026-08-24 06:29",
   "mode": "morning",
   "signal_date": "2026-08-21",
   "trade_date": "2026-08-25",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 6,
   "tw_score": 5,
   "intl_score": 2,
   "news_score": -2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4680.60009765625,
-    "chg_pct": 3.6379403510418316,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +3.6%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 87.05999755859375,
-    "oil_chg": -0.8766984588501756
+    "price_usd": 4672.5,
+    "chg_pct": 1.0466880327327204,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 86.41999816894531,
+    "oil_chg": -0.7351245205557242
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.80000305175781,
-      "chg_pct": -0.10111069017013857,
+      "price": 98.84200286865234,
+      "chg_pct": 0.04250993481501113,
       "signal": 0,
-      "note": "-0.10%(中性)",
+      "note": "+0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4680.60009765625,
-      "chg_pct": 3.6379403510418316,
+      "price": 4672.5,
+      "chg_pct": 1.0466880327327204,
       "signal": -1,
-      "note": "+3.64%(避險↑)",
+      "note": "+1.05%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 87.05999755859375,
-      "chg_pct": -0.8766984588501756,
+      "price": 86.41999816894531,
+      "chg_pct": -0.7351245205557242,
       "signal": -1,
-      "note": "-0.88%",
+      "note": "-0.74%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77405.2109375,
-      "chg_pct": 0.41746577900543413,
+      "price": 77721.5,
+      "chg_pct": 0.8277862952238124,
       "signal": 1,
-      "note": "+0.42%",
+      "note": "+0.83%",
       "desc": "風險偏好指標"
     }
   },
@@ -476,19 +476,19 @@
     },
     {
       "label": "川普動態",
-      "title": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war - Th",
+      "title": "Trump accused of risking more pain for Americans with Canada trade war - Financi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "A powerful country on the other side of the world is quietly shaping Trump's lat",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Carney Stands Up to Trump in U.S.-Canada Trade War - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "U.S.-Canada Trade War: What to Know About Tariffs and the Negotiations - The New",
+      "title": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war - Th",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,13 +506,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
+      "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
+      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -521,6 +521,12 @@
       "title": "Taiwan Semiconductor Stock: Does the Booming Revenue Outweigh Geopolitical Risk?",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -531,12 +537,6 @@
     {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 27% Overvalued On Fresh ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Jumpy bond markets make it clear: Trump risks driving US into debt crisis | Heat",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The US Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - Mor",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
