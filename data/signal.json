@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24 13:16",
+  "generated_at": "2026-08-24 14:55",
   "mode": "morning",
   "signal_date": "2026-08-24",
   "trade_date": "2026-08-25",
@@ -10,23 +10,23 @@
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
-  "foreign_fut_net": -204,
+  "foreign_fut_net": 108,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(+4) vs 國際(-2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44986.921875,
-  "tw_chg_pct": -0.5248665980618461,
-  "tw_ma5": 45034.59609375,
-  "tw_ma10": 45350.153125,
-  "tw_rsi": 64.60062158808671,
-  "tw_macd": 297.2851987402173,
-  "tw_macds": 225.95552588500243,
+  "tw_last_close": 44762.3203125,
+  "tw_chg_pct": -1.0215058314384073,
+  "tw_ma5": 44989.67578125,
+  "tw_ma10": 45327.69296875,
+  "tw_rsi": 62.09630387250278,
+  "tw_macd": 279.36826497953734,
+  "tw_macds": 222.37213913286644,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45208.665625,
   "tw_ma10_p2": 45344.337109375,
   "tw_ma20_p2": 44087.7216796875,
-  "tw_ma20": 44155.358203125,
+  "tw_ma20": 44144.128125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4697.2998046875,
-    "chg_pct": 1.5830043789136758,
+    "price_usd": 4700.10009765625,
+    "chg_pct": 1.6435630370225118,
     "signal": -1,
     "level": "warn",
     "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.63999938964844,
-    "oil_chg": -1.6310569822720415
+    "oil_usd": 85.2699966430664,
+    "oil_chg": -2.056054405839633
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65661.6796875,
-      "chg_pct": -0.5372602955659428,
+      "price": 65528.08984375,
+      "chg_pct": -0.7396189912206893,
       "signal": -1,
-      "note": "-0.54%",
+      "note": "-0.74%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6697.0400390625,
-      "chg_pct": -3.123270819980785,
+      "price": 6696.9599609375,
+      "chg_pct": -3.1244291984261308,
       "signal": -1,
       "note": "-3.12%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25475.91015625,
-      "chg_pct": -2.0513719316678936,
+      "price": 25528.240234375,
+      "chg_pct": -1.8501756121795825,
       "signal": -1,
-      "note": "-2.05%",
+      "note": "-1.85%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3873.498779296875,
-      "chg_pct": -0.811842624563547,
+      "price": 3872.601318359375,
+      "chg_pct": -0.8348237849508534,
       "signal": -1,
-      "note": "-0.81%",
+      "note": "-0.83%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44990.12109375,
-      "chg_pct": -0.5177924818815387,
+      "price": 44762.3203125,
+      "chg_pct": -1.0215058314384087,
       "signal": -1,
-      "note": "-0.52%",
+      "note": "-1.02%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.83200073242188,
-      "chg_pct": 0.032386315461245534,
+      "price": 98.875,
+      "chg_pct": 0.07590784000573286,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4697.2998046875,
-      "chg_pct": 1.5830043789136758,
+      "price": 4700.10009765625,
+      "chg_pct": 1.6435630370225118,
       "signal": -1,
-      "note": "+1.58%(避險↑)",
+      "note": "+1.64%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.63999938964844,
-      "chg_pct": -1.6310569822720415,
+      "price": 85.2699966430664,
+      "chg_pct": -2.056054405839633,
       "signal": -1,
-      "note": "-1.63%",
+      "note": "-2.06%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77156.2109375,
-      "chg_pct": 0.09443909028338518,
-      "signal": 0,
-      "note": "+0.09%",
+      "price": 77450.5390625,
+      "chg_pct": 0.47626977147422583,
+      "signal": 1,
+      "note": "+0.48%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,6 +500,12 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "U.S., Canada Spiral Toward Trade War - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -511,14 +517,14 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
+      "title": "Taiwan semiconductor materials hit golden opportunity - digitimes",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -530,21 +536,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan semiconductor materials team up to build local supply chain - digitimes",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 27% Overvalued On Fresh ",
+      "title": "Intel vs. TSM: Which Semiconductor Stock Looks Like the Better Investment? - Tra",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less - C",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Gold hits over 3-month high ahead of U.S. inflation data, Fed chair speech - CNB",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
