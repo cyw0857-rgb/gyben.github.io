@@ -1,37 +1,45 @@
 {
-  "updated": "2026-08-24 21:58",
+  "updated": "2026-08-24 22:42",
   "data": {
     "S&P500": {
       "category": "美股",
-      "price": 7651.18,
-      "chg_pct": -0.3,
+      "price": 7656.59,
+      "chg_pct": -0.23,
       "signal": -1,
-      "note": "-0.30%",
+      "note": "-0.23%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53454.32,
-      "chg_pct": 0.33,
+      "price": 53421.92,
+      "chg_pct": 0.27,
       "signal": 1,
-      "note": "+0.33%",
+      "note": "+0.27%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25953.98,
-      "chg_pct": -0.86,
+      "price": 26028.65,
+      "chg_pct": -0.58,
       "signal": -1,
-      "note": "-0.86%",
+      "note": "-0.58%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11316.3,
-      "chg_pct": -3.62,
+      "price": 11344.63,
+      "chg_pct": -3.38,
       "signal": -1,
-      "note": "-3.62%",
+      "note": "-3.38%",
       "desc": "對台股影響最大"
+    },
+    "VIX恐慌": {
+      "category": "情緒",
+      "price": 15.91,
+      "chg_pct": 5.16,
+      "signal": 1,
+      "note": "VIX=15.9(低恐慌)",
+      "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
@@ -83,43 +91,35 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4732.2,
-      "chg_pct": 0.72,
+      "price": 4730.1,
+      "chg_pct": 0.68,
       "signal": 1,
-      "note": "+0.72%",
+      "note": "+0.68%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.64,
-      "chg_pct": 0.01,
-      "signal": 0,
-      "note": "+0.01%",
+      "price": 85.0,
+      "chg_pct": -0.74,
+      "signal": -1,
+      "note": "-0.74%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.71,
-      "chg_pct": -0.68,
+      "price": 4.7,
+      "chg_pct": -0.8,
       "signal": 0,
-      "note": "4.71%(-0.68%)",
+      "note": "4.70%(-0.80%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 78525.66,
-      "chg_pct": 2.07,
+      "price": 79694.99,
+      "chg_pct": 3.59,
       "signal": 1,
-      "note": "+2.07%",
+      "note": "+3.59%",
       "desc": "風險偏好指標"
-    },
-    "VIX恐慌": {
-      "category": "情緒",
-      "price": 15.9,
-      "chg_pct": 5.09,
-      "signal": 1,
-      "note": "VIX=15.9(低恐慌)",
-      "desc": "<20樂觀 >25恐慌"
     }
   }
 }
