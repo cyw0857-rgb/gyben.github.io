@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24 10:37",
+  "generated_at": "2026-08-24 11:36",
   "mode": "morning",
   "signal_date": "2026-08-24",
   "trade_date": "2026-08-25",
@@ -15,18 +15,18 @@
   "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45094.78125,
-  "tw_chg_pct": -0.2863678239828582,
-  "tw_ma5": 45056.16796875,
-  "tw_ma10": 45360.9390625,
-  "tw_rsi": 65.87647012962675,
-  "tw_macd": 305.8893654068888,
-  "tw_macds": 227.67635921833676,
+  "tw_last_close": 45101.41015625,
+  "tw_chg_pct": -0.27170997885711534,
+  "tw_ma5": 45057.49375,
+  "tw_ma10": 45361.601953125,
+  "tw_rsi": 65.9565280286223,
+  "tw_macd": 306.4181670450562,
+  "tw_macds": 227.7821195459702,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45208.665625,
   "tw_ma10_p2": 45344.337109375,
   "tw_ma20_p2": 44087.7216796875,
-  "tw_ma20": 44160.751171875,
+  "tw_ma20": 44161.0826171875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4710.7001953125,
-    "chg_pct": 1.8727989409256889,
+    "price_usd": 4703.7001953125,
+    "chg_pct": 1.721418134884142,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.44000244140625,
-    "oil_chg": -1.860780108679878
+    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.7300033569336,
+    "oil_chg": -1.5276754410256375
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65926.390625,
-      "chg_pct": -0.1362825076265424,
+      "price": 65968.7109375,
+      "chg_pct": -0.07217671188036488,
       "signal": 0,
-      "note": "-0.14%",
+      "note": "-0.07%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6736.9501953125,
-      "chg_pct": -2.5459463040734946,
+      "price": 6700.0498046875,
+      "chg_pct": -3.0797327423154655,
       "signal": -1,
-      "note": "-2.55%",
+      "note": "-3.08%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25491.869140625,
-      "chg_pct": -1.9900135497569846,
+      "price": 25462.740234375,
+      "chg_pct": -2.1020070521213583,
       "signal": -1,
-      "note": "-1.99%",
+      "note": "-2.10%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3895.828857421875,
-      "chg_pct": -0.2400393455470657,
-      "signal": 0,
-      "note": "-0.24%",
+      "price": 3878.1416015625,
+      "chg_pct": -0.6929545051170279,
+      "signal": -1,
+      "note": "-0.69%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45089.1796875,
-      "chg_pct": -0.29875400542677133,
+      "price": 45100.9609375,
+      "chg_pct": -0.2727032918738876,
       "signal": 0,
-      "note": "-0.30%",
+      "note": "-0.27%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.79900360107422,
-      "chg_pct": -0.0010115897294761958,
+      "price": 98.81600189208984,
+      "chg_pct": 0.016193157730622767,
       "signal": 0,
-      "note": "-0.00%(中性)",
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4710.7001953125,
-      "chg_pct": 1.8727989409256889,
+      "price": 4703.7001953125,
+      "chg_pct": 1.721418134884142,
       "signal": -1,
-      "note": "+1.87%(避險↑)",
+      "note": "+1.72%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.44000244140625,
-      "chg_pct": -1.860780108679878,
+      "price": 85.7300033569336,
+      "chg_pct": -1.5276754410256375,
       "signal": -1,
-      "note": "-1.86%",
+      "note": "-1.53%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77496.5234375,
-      "chg_pct": 0.5359251144027518,
-      "signal": 1,
-      "note": "+0.54%",
+      "price": 77023.9296875,
+      "chg_pct": -0.07716883810020334,
+      "signal": 0,
+      "note": "-0.08%",
       "desc": "風險偏好指標"
     }
   },
@@ -494,12 +494,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S., Canada Spiral Toward Trade War - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -517,8 +511,8 @@
       "sent_val": -1
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Stock: Does the Booming Revenue Outweigh Geopolitical Risk?",
+      "label": "關稅/貿易",
+      "title": "U.S., Canada Spiral Toward Trade War - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,9 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 27% Overvalued On Fresh ",
+      "title": "Taiwan semiconductor materials team up to build local supply chain - digitimes",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Stock: Does the Booming Revenue Outweigh Geopolitical Risk?",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
