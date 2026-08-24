@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 03:52",
+  "generated_at": "2026-08-25 05:34",
   "mode": "morning",
   "signal_date": "2026-08-21",
   "trade_date": "2026-08-26",
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4705.39990234375,
-    "chg_pct": 1.758175709230586,
+    "price_usd": 4710.0,
+    "chg_pct": 1.8576566365267229,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.01000213623047,
-    "oil_chg": -2.354692717494712
+    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 84.9800033569336,
+    "oil_chg": -2.3891503101183336
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7651.97998046875,
-      "chg_pct": -0.2917521096435668,
+      "price": 7652.85986328125,
+      "chg_pct": -0.2802868975275989,
       "signal": 0,
-      "note": "-0.29%",
+      "note": "-0.28%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53427.73828125,
-      "chg_pct": 0.2829110673393008,
+      "price": 53417.16015625,
+      "chg_pct": 0.2630561155341169,
       "signal": 0,
-      "note": "+0.28%",
+      "note": "+0.26%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25992.720703125,
-      "chg_pct": -0.7171005690968844,
+      "price": 25980.19140625,
+      "chg_pct": -0.7649580033296539,
       "signal": -1,
-      "note": "-0.72%",
+      "note": "-0.76%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11398.8623046875,
-      "chg_pct": -2.9088334446973207,
+      "price": 11423.1689453125,
+      "chg_pct": -2.701798739808282,
       "signal": -1,
-      "note": "-2.91%",
+      "note": "-2.70%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.8100004196167,
-      "chg_pct": 4.494384005501434,
+      "price": 15.850000381469727,
+      "chg_pct": 4.758759164460283,
       "signal": 1,
-      "note": "VIX=15.8(低恐慌)",
+      "note": "VIX=15.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.01699829101562,
-      "chg_pct": 0.21963080218138903,
+      "price": 98.98600006103516,
+      "chg_pct": 0.18825607644961967,
       "signal": 0,
-      "note": "+0.22%(中性)",
+      "note": "+0.19%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4705.39990234375,
-      "chg_pct": 1.758175709230586,
+      "price": 4710.0,
+      "chg_pct": 1.8576566365267229,
       "signal": -1,
-      "note": "+1.76%(避險↑)",
+      "note": "+1.86%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.01000213623047,
-      "chg_pct": -2.354692717494712,
+      "price": 84.9800033569336,
+      "chg_pct": -2.3891503101183336,
       "signal": -1,
-      "note": "-2.35%",
+      "note": "-2.39%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,25 +448,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78668.53125,
-      "chg_pct": 1.1745386214800164,
+      "price": 78921.3828125,
+      "chg_pct": 1.4997276108913042,
       "signal": 1,
-      "note": "+1.17%",
+      "note": "+1.50%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Live: Trump threatens new tariffs on Canadian vehicles after trade talks collaps",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "US, Canada negotiators race to ink a deal as Trump’s tariff deadline looms - Al ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -476,25 +476,31 @@
     },
     {
       "label": "川普動態",
+      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump issues new threats to Canada as trade war escalates - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump announces 50 percent tariff on Canadian vehicles, steel after trade talks ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
       "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How Trump's new trade war with Canada affects everything from building new homes",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,25 +512,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "How Trump's new trade war with Canada affects everything from building new homes",
+      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
+      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
+      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,13 +536,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Semiconductor Stocks Slide Ahead of NVIDIA Earnings: Intel Falls 5%, AMD Slides ",
+      "title": "George Soros Quietly Raised His Taiwan Semi Stake by 1,000%. Here’s Why You Shou",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
+      "title": "Beyond the Rent: The economic signals multifamily leaders should watch this fall",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,15 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Fed chair Warsh holds news conference after leaving interest rate unchang",
+      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "The US Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - Mor",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
