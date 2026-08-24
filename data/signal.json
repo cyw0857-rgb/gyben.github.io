@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-24 11:36",
+  "generated_at": "2026-08-24 13:16",
   "mode": "morning",
   "signal_date": "2026-08-24",
   "trade_date": "2026-08-25",
   "direction": 0,
-  "total_score": 3,
-  "tw_score": 5,
-  "intl_score": -1,
+  "total_score": 1,
+  "tw_score": 4,
+  "intl_score": -2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": -204,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+4) vs 國際(-2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45101.41015625,
-  "tw_chg_pct": -0.27170997885711534,
-  "tw_ma5": 45057.49375,
-  "tw_ma10": 45361.601953125,
-  "tw_rsi": 65.9565280286223,
-  "tw_macd": 306.4181670450562,
-  "tw_macds": 227.7821195459702,
+  "tw_last_close": 44986.921875,
+  "tw_chg_pct": -0.5248665980618461,
+  "tw_ma5": 45034.59609375,
+  "tw_ma10": 45350.153125,
+  "tw_rsi": 64.60062158808671,
+  "tw_macd": 297.2851987402173,
+  "tw_macds": 225.95552588500243,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45208.665625,
   "tw_ma10_p2": 45344.337109375,
   "tw_ma20_p2": 44087.7216796875,
-  "tw_ma20": 44161.0826171875,
+  "tw_ma20": 44155.358203125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4703.7001953125,
-    "chg_pct": 1.721418134884142,
+    "price_usd": 4697.2998046875,
+    "chg_pct": 1.5830043789136758,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.7300033569336,
-    "oil_chg": -1.5276754410256375
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.63999938964844,
+    "oil_chg": -1.6310569822720415
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65968.7109375,
-      "chg_pct": -0.07217671188036488,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 65661.6796875,
+      "chg_pct": -0.5372602955659428,
+      "signal": -1,
+      "note": "-0.54%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6700.0498046875,
-      "chg_pct": -3.0797327423154655,
+      "price": 6697.0400390625,
+      "chg_pct": -3.123270819980785,
       "signal": -1,
-      "note": "-3.08%",
+      "note": "-3.12%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25462.740234375,
-      "chg_pct": -2.1020070521213583,
+      "price": 25475.91015625,
+      "chg_pct": -2.0513719316678936,
       "signal": -1,
-      "note": "-2.10%",
+      "note": "-2.05%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3878.1416015625,
-      "chg_pct": -0.6929545051170279,
+      "price": 3873.498779296875,
+      "chg_pct": -0.811842624563547,
       "signal": -1,
-      "note": "-0.69%",
+      "note": "-0.81%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45100.9609375,
-      "chg_pct": -0.2727032918738876,
-      "signal": 0,
-      "note": "-0.27%",
+      "price": 44990.12109375,
+      "chg_pct": -0.5177924818815387,
+      "signal": -1,
+      "note": "-0.52%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.81600189208984,
-      "chg_pct": 0.016193157730622767,
+      "price": 98.83200073242188,
+      "chg_pct": 0.032386315461245534,
       "signal": 0,
-      "note": "+0.02%(中性)",
+      "note": "+0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4703.7001953125,
-      "chg_pct": 1.721418134884142,
+      "price": 4697.2998046875,
+      "chg_pct": 1.5830043789136758,
       "signal": -1,
-      "note": "+1.72%(避險↑)",
+      "note": "+1.58%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.7300033569336,
-      "chg_pct": -1.5276754410256375,
+      "price": 85.63999938964844,
+      "chg_pct": -1.6310569822720415,
       "signal": -1,
-      "note": "-1.53%",
+      "note": "-1.63%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77023.9296875,
-      "chg_pct": -0.07716883810020334,
+      "price": 77156.2109375,
+      "chg_pct": 0.09443909028338518,
       "signal": 0,
-      "note": "-0.08%",
+      "note": "+0.09%",
       "desc": "風險偏好指標"
     }
   },
@@ -482,19 +482,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
+      "title": "Farmers oppose Trump’s plan to import beef. Here’s why - NewsNation",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be f",
+      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
+      "title": "U.S., Canada Spiral Toward Trade War - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -507,12 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S., Canada Spiral Toward Trade War - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,9 +536,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Stock: Does the Booming Revenue Outweigh Geopolitical Risk?",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 27% Overvalued On Fresh ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
