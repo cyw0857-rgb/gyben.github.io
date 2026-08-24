@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-24 09:10",
+  "generated_at": "2026-08-24 10:37",
   "mode": "morning",
-  "signal_date": "2026-08-21",
+  "signal_date": "2026-08-24",
   "trade_date": "2026-08-25",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 3,
   "tw_score": 5,
-  "intl_score": 1,
+  "intl_score": -1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": -204,
   "foreign_cash_b": 0,
-  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
+  "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45224.2890625,
-  "tw_chg_pct": 0.6466205402973157,
-  "tw_ma5": 45208.665625,
-  "tw_ma10": 45344.337109375,
-  "tw_rsi": 67.15228041113238,
-  "tw_macd": 318.7800391024866,
-  "tw_macds": 208.1231076711987,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 45326.01015625,
-  "tw_ma10_p2": 45244.49921875,
-  "tw_ma20_p2": 44009.24921875,
-  "tw_ma20": 44087.7216796875,
+  "tw_last_close": 45094.78125,
+  "tw_chg_pct": -0.2863678239828582,
+  "tw_ma5": 45056.16796875,
+  "tw_ma10": 45360.9390625,
+  "tw_rsi": 65.87647012962675,
+  "tw_macd": 305.8893654068888,
+  "tw_macds": 227.67635921833676,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 45208.665625,
+  "tw_ma10_p2": 45344.337109375,
+  "tw_ma20_p2": 44087.7216796875,
+  "tw_ma20": 44160.751171875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4680.39990234375,
-    "chg_pct": 1.2175299733679177,
+    "price_usd": 4710.7001953125,
+    "chg_pct": 1.8727989409256889,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.52999877929688,
-    "oil_chg": -1.757407330809014
+    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.44000244140625,
+    "oil_chg": -1.860780108679878
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65907.578125,
-      "chg_pct": -0.16477923204167907,
+      "price": 65926.390625,
+      "chg_pct": -0.1362825076265424,
       "signal": 0,
-      "note": "-0.16%",
+      "note": "-0.14%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6839.1201171875,
-      "chg_pct": -1.0679966734761426,
+      "price": 6736.9501953125,
+      "chg_pct": -2.5459463040734946,
       "signal": -1,
-      "note": "-1.07%",
+      "note": "-2.55%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 26009.4609375,
-      "chg_pct": 1.210073822582142,
-      "signal": 1,
-      "note": "+1.21%",
+      "price": 25491.869140625,
+      "chg_pct": -1.9900135497569846,
+      "signal": -1,
+      "note": "-1.99%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3905.202880859375,
-      "chg_pct": 0.03796207807292234,
+      "price": 3895.828857421875,
+      "chg_pct": -0.2400393455470657,
       "signal": 0,
-      "note": "+0.04%",
+      "note": "-0.24%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45224.2890625,
-      "chg_pct": 0.6466205402973145,
-      "signal": 1,
-      "note": "+0.65%",
+      "price": 45089.1796875,
+      "chg_pct": -0.29875400542677133,
+      "signal": 0,
+      "note": "-0.30%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.77100372314453,
-      "chg_pct": -0.02935154627281695,
+      "price": 98.79900360107422,
+      "chg_pct": -0.0010115897294761958,
       "signal": 0,
-      "note": "-0.03%(中性)",
+      "note": "-0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4680.39990234375,
-      "chg_pct": 1.2175299733679177,
+      "price": 4710.7001953125,
+      "chg_pct": 1.8727989409256889,
       "signal": -1,
-      "note": "+1.22%(避險↑)",
+      "note": "+1.87%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.52999877929688,
-      "chg_pct": -1.757407330809014,
+      "price": 85.44000244140625,
+      "chg_pct": -1.860780108679878,
       "signal": -1,
-      "note": "-1.76%",
+      "note": "-1.86%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77469.6015625,
-      "chg_pct": 0.5009994753046035,
+      "price": 77496.5234375,
+      "chg_pct": 0.5359251144027518,
       "signal": 1,
-      "note": "+0.50%",
+      "note": "+0.54%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,12 +470,6 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy - The Wa",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -488,13 +482,13 @@
     },
     {
       "label": "川普動態",
-      "title": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be f",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
+      "label": "川普動態",
+      "title": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be f",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,13 +500,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
+      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
       "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -542,12 +542,6 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes show September rate hike still on the table - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less - C",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -561,6 +555,12 @@
     {
       "label": "聯準會",
       "title": "Why a Fed Rate Cut Is Coming and How the Market Will React - Barron's",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "What the Treasury’s Buyback Surprise Says About the Bond Market - Council on For",
       "sentiment": "✅偏多",
       "sent_val": 1
     }
