@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-24 14:55",
+  "generated_at": "2026-08-24 22:30",
   "mode": "morning",
   "signal_date": "2026-08-24",
   "trade_date": "2026-08-25",
   "direction": 0,
-  "total_score": 1,
+  "total_score": -9,
   "tw_score": 4,
-  "intl_score": -2,
+  "intl_score": -11,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 108,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+4) vs 國際(-2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+4) vs 國際(-11) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 44762.3203125,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4700.10009765625,
-    "chg_pct": 1.6435630370225118,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.2699966430664,
-    "oil_chg": -2.056054405839633
+    "price_usd": 4722.10009765625,
+    "chg_pct": 2.11933128458166,
+    "signal": -2,
+    "level": "danger",
+    "warning": "黃金大漲 +2.1%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 85.25,
+    "oil_chg": -2.0790232131302004
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7674.3701171875,
-      "chg_pct": 0.4346193543703738,
-      "signal": 1,
-      "note": "+0.43%",
+      "price": 7647.18017578125,
+      "chg_pct": -0.3542954143605281,
+      "signal": -1,
+      "note": "-0.35%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53277.01171875,
-      "chg_pct": 0.9814414811157827,
-      "signal": 1,
-      "note": "+0.98%",
+      "price": 53417.76953125,
+      "chg_pct": 0.26419990153175676,
+      "signal": 0,
+      "note": "+0.26%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26180.4609375,
-      "chg_pct": 0.4346118737267626,
-      "signal": 1,
-      "note": "+0.43%",
+      "price": 25961.818359375,
+      "chg_pct": -0.8351364731391105,
+      "signal": -1,
+      "note": "-0.84%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11740.3701171875,
-      "chg_pct": -0.5055026723009264,
+      "price": 11298.345703125,
+      "chg_pct": -3.7649955636014525,
       "signal": -1,
-      "note": "-0.51%",
+      "note": "-3.76%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.130000114440918,
-      "chg_pct": -5.496565283324662,
+      "price": 15.920000076293945,
+      "chg_pct": 5.221414116838025,
       "signal": 1,
-      "note": "VIX=15.1(低恐慌)",
+      "note": "VIX=15.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,18 +392,18 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25528.240234375,
-      "chg_pct": -1.8501756121795825,
+      "price": 25517.330078125,
+      "chg_pct": -1.892122487880762,
       "signal": -1,
-      "note": "-1.85%",
+      "note": "-1.89%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3872.601318359375,
-      "chg_pct": -0.8348237849508534,
+      "price": 3882.0078125,
+      "chg_pct": -0.593952966517087,
       "signal": -1,
-      "note": "-0.83%",
+      "note": "-0.59%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -416,85 +416,85 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.875,
-      "chg_pct": 0.07590784000573286,
+      "price": 98.95899963378906,
+      "chg_pct": 0.16092770963575512,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4700.10009765625,
-      "chg_pct": 1.6435630370225118,
+      "price": 4722.10009765625,
+      "chg_pct": 2.11933128458166,
       "signal": -1,
-      "note": "+1.64%(避險↑)",
+      "note": "+2.12%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.2699966430664,
-      "chg_pct": -2.056054405839633,
+      "price": 85.25,
+      "chg_pct": -2.0790232131302004,
       "signal": -1,
-      "note": "-2.06%",
+      "note": "-2.08%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.73799991607666,
-      "chg_pct": 0.894374276138667,
+      "price": 4.699999809265137,
+      "chg_pct": -0.8020284399453882,
       "signal": 0,
-      "note": "4.74%(+0.89%)",
+      "note": "4.70%(-0.80%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 77450.5390625,
-      "chg_pct": 0.47626977147422583,
+      "price": 79366.203125,
+      "chg_pct": 2.0718050244587536,
       "signal": 1,
-      "note": "+0.48%",
+      "note": "+2.07%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
+      "title": "Trump says U.S., Canada 'should be able' to reach trade deal as tariff deadline ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Scott Bessent: an economic D-Day is coming for Iran - Financial Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Jeffries and Kushner Meet Privately as Midterm Attacks Fly - The New York Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump hits back at Carney, threatens to hike auto, truck, metals tariffs to 50% ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "U.S.-Canada breakdown shows limits of Trump’s aggressive trade strategy - The Wa",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump accused of risking more pain for Americans with Canada trade war - Financi",
+      "title": "Canadian anger reaches fever pitch over Trump’s tariff war - The Hill",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Farmers oppose Trump’s plan to import beef. Here’s why - NewsNation",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
+      "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,43 +506,49 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S., Canada Spiral Toward Trade War - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
+      "title": "Pence: ‘Last thing’ US economy needs is trade war with Canada - The Hill",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor Stock Will Reach a Fresh High Before 2026 Ends ",
+      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan semiconductor materials hit golden opportunity - digitimes",
+      "title": "Unbreakable Shield: Why Taiwan’s Chip Expertise Cannot Be Cloned - Center for Eu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Stock: Does the Booming Revenue Outweigh Geopolitical Risk?",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Beyond Nvidia, AMD, and Broadcom: Why This Chip Stock Will Emerge as the Biggest",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Intel vs. TSM: Which Semiconductor Stock Looks Like the Better Investment? - Tra",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan shares end down in reduced turnover - Focus Taiwan",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Gold hits over 3-month high ahead of U.S. inflation data, Fed chair speech - CNB",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - Reuter",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,13 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Why a Fed Rate Cut Is Coming and How the Market Will React - Barron's",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "What the Treasury’s Buyback Surprise Says About the Bond Market - Council on For",
+      "title": "Who is most resilient if a rate-hike cycle begins? Barclays: Historically, only ",
       "sentiment": "✅偏多",
       "sent_val": 1
     }
