@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-24 06:29",
+  "generated_at": "2026-08-24 09:10",
   "mode": "morning",
   "signal_date": "2026-08-21",
   "trade_date": "2026-08-25",
   "direction": 0,
-  "total_score": 6,
+  "total_score": 5,
   "tw_score": 5,
-  "intl_score": 2,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
@@ -20,8 +20,8 @@
   "tw_ma5": 45208.665625,
   "tw_ma10": 45344.337109375,
   "tw_rsi": 67.15228041113238,
-  "tw_macd": 318.7993056432242,
-  "tw_macds": 208.15144065704973,
+  "tw_macd": 318.7800391024866,
+  "tw_macds": 208.1231076711987,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 45326.01015625,
   "tw_ma10_p2": 45244.49921875,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4672.5,
-    "chg_pct": 1.0466880327327204,
+    "price_usd": 4680.39990234375,
+    "chg_pct": 1.2175299733679177,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 86.41999816894531,
-    "oil_chg": -0.7351245205557242
+    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.52999877929688,
+    "oil_chg": -1.757407330809014
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66016.359375,
-      "chg_pct": -0.30268711355185246,
-      "signal": -1,
-      "note": "-0.30%",
+      "price": 65907.578125,
+      "chg_pct": -0.16477923204167907,
+      "signal": 0,
+      "note": "-0.16%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6912.9501953125,
-      "chg_pct": 0.8809837535531353,
-      "signal": 1,
-      "note": "+0.88%",
+      "price": 6839.1201171875,
+      "chg_pct": -1.0679966734761426,
+      "signal": -1,
+      "note": "-1.07%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.84200286865234,
-      "chg_pct": 0.04250993481501113,
+      "price": 98.77100372314453,
+      "chg_pct": -0.02935154627281695,
       "signal": 0,
-      "note": "+0.04%(中性)",
+      "note": "-0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4672.5,
-      "chg_pct": 1.0466880327327204,
+      "price": 4680.39990234375,
+      "chg_pct": 1.2175299733679177,
       "signal": -1,
-      "note": "+1.05%(避險↑)",
+      "note": "+1.22%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.41999816894531,
-      "chg_pct": -0.7351245205557242,
+      "price": 85.52999877929688,
+      "chg_pct": -1.757407330809014,
       "signal": -1,
-      "note": "-0.74%",
+      "note": "-1.76%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77721.5,
-      "chg_pct": 0.8277862952238124,
+      "price": 77469.6015625,
+      "chg_pct": 0.5009994753046035,
       "signal": 1,
-      "note": "+0.83%",
+      "note": "+0.50%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,9 +464,15 @@
     },
     {
       "label": "川普動態",
-      "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Economic Approach Draws Concern From Some Republicans - The New York Tim",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -482,13 +488,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney Stands Up to Trump in U.S.-Canada Trade War - The New York Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war - Th",
+      "title": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be f",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,13 +506,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
+      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies? - Al J",
+      "title": "Carney warned about economic coercion. Now Trump is testing the Canadian prime m",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "The US Fed’s New Philosophy Could Be a Recipe for Interest Rate Volatility - Mor",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Why a Fed Rate Cut Is Coming and How the Market Will React - Barron's",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
