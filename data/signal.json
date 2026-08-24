@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-25 02:30",
+  "generated_at": "2026-08-25 03:52",
   "mode": "morning",
   "signal_date": "2026-08-21",
   "trade_date": "2026-08-26",
   "direction": 0,
-  "total_score": 0,
+  "total_score": -1,
   "tw_score": 5,
-  "intl_score": -4,
+  "intl_score": -5,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 108,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45224.2890625,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4684.2998046875,
-    "chg_pct": 1.3018685962650882,
+    "price_usd": 4705.39990234375,
+    "chg_pct": 1.758175709230586,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.3%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 84.80999755859375,
-    "oil_chg": -2.5844246072780885
+    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.01000213623047,
+    "oil_chg": -2.354692717494712
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7666.91015625,
-      "chg_pct": -0.09720616576457122,
+      "price": 7651.97998046875,
+      "chg_pct": -0.2917521096435668,
       "signal": 0,
-      "note": "-0.10%",
+      "note": "-0.29%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53444.3203125,
-      "chg_pct": 0.31403524400584654,
-      "signal": 1,
-      "note": "+0.31%",
+      "price": 53427.73828125,
+      "chg_pct": 0.2829110673393008,
+      "signal": 0,
+      "note": "+0.28%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26084.744140625,
-      "chg_pct": -0.36560394067737184,
+      "price": 25992.720703125,
+      "chg_pct": -0.7171005690968844,
       "signal": -1,
-      "note": "-0.37%",
+      "note": "-0.72%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11484.9072265625,
-      "chg_pct": -2.175935580182528,
+      "price": 11398.8623046875,
+      "chg_pct": -2.9088334446973207,
       "signal": -1,
-      "note": "-2.18%",
+      "note": "-2.91%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.699999809265137,
-      "chg_pct": 3.767347590963857,
+      "price": 15.8100004196167,
+      "chg_pct": 4.494384005501434,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=15.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,55 +416,55 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.01899719238281,
-      "chg_pct": 0.22165398164034142,
+      "price": 99.01699829101562,
+      "chg_pct": 0.21963080218138903,
       "signal": 0,
       "note": "+0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4684.2998046875,
-      "chg_pct": 1.3018685962650882,
+      "price": 4705.39990234375,
+      "chg_pct": 1.758175709230586,
       "signal": -1,
-      "note": "+1.30%(避險↑)",
+      "note": "+1.76%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.80999755859375,
-      "chg_pct": -2.5844246072780885,
+      "price": 85.01000213623047,
+      "chg_pct": -2.354692717494712,
       "signal": -1,
-      "note": "-2.58%",
+      "note": "-2.35%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.696000099182129,
-      "chg_pct": -0.8864461299802964,
+      "price": 4.703999996185303,
+      "chg_pct": -0.7176006858081866,
       "signal": 0,
-      "note": "4.70%(-0.89%)",
+      "note": "4.70%(-0.72%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 79017.9765625,
-      "chg_pct": 1.6239555319505088,
+      "price": 78668.53125,
+      "chg_pct": 1.1745386214800164,
       "signal": 1,
-      "note": "+1.62%",
+      "note": "+1.17%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "title": "Live: Trump threatens new tariffs on Canadian vehicles after trade talks collaps",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Mark Carney suspends trade talks with U.S., says Canada will match new Trump tar",
+      "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -482,7 +482,7 @@
     },
     {
       "label": "川普動態",
-      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
+      "title": "Trump announces 50 percent tariff on Canadian vehicles, steel after trade talks ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,7 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "“Most Stupid Trade Fight in History”: U.S. & Canadian Workers Stand to Lose in T",
+      "title": "How Trump's new trade war with Canada affects everything from building new homes",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
