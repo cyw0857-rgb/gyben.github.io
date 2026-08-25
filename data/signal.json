@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-25 05:34",
+  "generated_at": "2026-08-25 09:08",
   "mode": "morning",
   "signal_date": "2026-08-21",
   "trade_date": "2026-08-26",
   "direction": 0,
-  "total_score": -1,
+  "total_score": -5,
   "tw_score": 5,
-  "intl_score": -5,
+  "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
+  "inst_score": 0,
   "foreign_fut_net": 108,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45224.2890625,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4710.0,
-    "chg_pct": 1.8576566365267229,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 84.9800033569336,
-    "oil_chg": -2.3891503101183336
+    "price_usd": 4746.0,
+    "chg_pct": 2.6361864961689654,
+    "signal": -2,
+    "level": "danger",
+    "warning": "黃金大漲 +2.6%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 84.80000305175781,
+    "oil_chg": -2.5959046292356023
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66016.359375,
-      "chg_pct": -0.30268711355185246,
+      "price": 65169.7109375,
+      "chg_pct": -1.2824827747478311,
       "signal": -1,
-      "note": "-0.30%",
+      "note": "-1.28%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6912.9501953125,
-      "chg_pct": 0.8809837535531353,
-      "signal": 1,
-      "note": "+0.88%",
+      "price": 6537.43994140625,
+      "chg_pct": -5.431982631104072,
+      "signal": -1,
+      "note": "-5.43%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.98600006103516,
-      "chg_pct": 0.18825607644961967,
+      "price": 98.96299743652344,
+      "chg_pct": 0.1649740685536599,
       "signal": 0,
-      "note": "+0.19%(中性)",
+      "note": "+0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4710.0,
-      "chg_pct": 1.8576566365267229,
+      "price": 4746.0,
+      "chg_pct": 2.6361864961689654,
       "signal": -1,
-      "note": "+1.86%(避險↑)",
+      "note": "+2.64%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.9800033569336,
-      "chg_pct": -2.3891503101183336,
+      "price": 84.80000305175781,
+      "chg_pct": -2.5959046292356023,
       "signal": -1,
-      "note": "-2.39%",
+      "note": "-2.60%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78921.3828125,
-      "chg_pct": 1.4997276108913042,
+      "price": 79763.328125,
+      "chg_pct": 2.5825421389266845,
       "signal": 1,
-      "note": "+1.50%",
+      "note": "+2.58%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,13 +470,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Scott Bessent: an economic D-Day is coming for Iran - Financial Times",
+      "title": "US set for largest mass visa revocation in history targeting up to 200,000 forei",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
+      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -488,13 +488,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
+      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,25 +506,25 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for ",
+      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
+      "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
+      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
+      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -542,7 +542,13 @@
     },
     {
       "label": "聯準會",
-      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
+      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - Reuter",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,13 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Bond market anxiety raises stakes for Warsh's debut Jackson Hole speech - Reuter",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
+      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }

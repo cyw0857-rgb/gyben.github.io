@@ -1,18 +1,18 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-08-25 05:35",
+  "updated": "2026-08-25 09:10",
   "direction": 1,
   "signal_text": "🟢 明日看漲",
   "signal_color": "#10b981",
   "hold_advice": "🟢 買進 / 加碼 — 多頭強勢，可續抱加碼",
   "hold_color": "#10b981",
-  "score": 6,
-  "total_score": 6,
-  "tech_score": 6,
+  "score": 8,
+  "total_score": 8,
+  "tech_score": 8,
   "reasons": [
     "均線多頭排列 MA5>MA10>MA20",
-    "RSI=75 偏高注意壓回",
+    "RSI=63 多頭健康區",
     "MACD金叉零軸上",
     "站上MA20支撐"
   ],
@@ -23,9 +23,9 @@
       "score": 3
     },
     {
-      "icon": "•",
-      "text": "RSI=75 偏高注意壓回",
-      "score": 0
+      "icon": "📈",
+      "text": "RSI=63 多頭健康區",
+      "score": 2
     },
     {
       "icon": "📈",
@@ -38,96 +38,96 @@
       "score": 1
     }
   ],
-  "rsi": 74.9,
-  "macd": 28.72,
-  "macds": 23.26,
-  "k": 63.2,
-  "d": 68.0,
-  "ma5": 513.0,
-  "ma10": 506.45,
-  "ma20": 456.43,
-  "ma60": 427.88,
-  "last_close": 528.0,
-  "chg_pct": 2.13,
+  "rsi": 62.9,
+  "macd": 27.23,
+  "macds": 24.05,
+  "k": 51.7,
+  "d": 62.6,
+  "ma5": 508.4,
+  "ma10": 506.35,
+  "ma20": 459.68,
+  "ma60": 430.47,
+  "last_close": 501.0,
+  "chg_pct": -5.11,
   "ma_bull": true,
   "ma_bear": false,
   "retail": {
     "mood": "量能正常",
-    "vol_ratio": 0.76,
+    "vol_ratio": 0.83,
     "score": 0,
     "signals": []
   },
   "forecast": [
     {
       "month": "2026-09",
-      "price": 559.68,
-      "price_high": 725.84,
-      "price_low": 393.52,
+      "price": 531.06,
+      "price_high": 688.68,
+      "price_low": 373.44,
       "chg_pct": 6.0,
       "trend": "up",
       "model_note": "📈 金叉↑  美光↑+11%  台股↑+5%",
-      "score": 6.5
+      "score": 7.0
     },
     {
       "month": "2026-10",
-      "price": 593.26,
-      "price_high": 830.57,
-      "price_low": 355.96,
+      "price": 562.92,
+      "price_high": 788.09,
+      "price_low": 337.75,
       "chg_pct": 12.4,
       "trend": "up",
       "model_note": "📈 MA5>MA10 多頭（外部因素待觀察）",
-      "score": 6.5
+      "score": 7.0
     },
     {
       "month": "2026-11",
-      "price": 628.86,
-      "price_high": 880.4,
-      "price_low": 377.31,
+      "price": 596.7,
+      "price_high": 835.38,
+      "price_low": 358.02,
       "chg_pct": 19.1,
       "trend": "up",
       "model_note": "📈 MA5>MA10 多頭（外部因素待觀察）",
-      "score": 6.5
+      "score": 7.0
     },
     {
       "month": "2026-12",
-      "price": 666.59,
-      "price_high": 933.22,
-      "price_low": 399.95,
+      "price": 632.5,
+      "price_high": 885.5,
+      "price_low": 379.5,
       "chg_pct": 26.2,
       "trend": "up",
       "model_note": "📈 MA5>MA10 多頭（外部因素待觀察）",
-      "score": 6.5
+      "score": 7.0
     },
     {
       "month": "2027-01",
-      "price": 706.58,
-      "price_high": 989.22,
-      "price_low": 423.95,
+      "price": 670.45,
+      "price_high": 938.63,
+      "price_low": 402.27,
       "chg_pct": 33.8,
       "trend": "up",
       "model_note": "📈 MA5>MA10 多頭（外部因素待觀察）",
-      "score": 6.5
+      "score": 7.0
     },
     {
       "month": "2027-02",
-      "price": 748.98,
-      "price_high": 1048.57,
-      "price_low": 449.39,
+      "price": 710.68,
+      "price_high": 994.95,
+      "price_low": 426.41,
       "chg_pct": 41.9,
       "trend": "up",
       "model_note": "📈 MA5>MA10 多頭（外部因素待觀察）",
-      "score": 6.5
+      "score": 7.0
     }
   ],
   "trend_label": "月線均線多頭排列 📈",
-  "support": 359.34,
-  "resistance": 482.05,
+  "support": 360.9,
+  "resistance": 487.05,
   "weekly": {
-    "proj_center": 528.0,
-    "proj_high": 604.49,
-    "proj_low": 451.51,
-    "support": 359.34,
-    "resistance": 482.05,
+    "proj_center": 501.0,
+    "proj_high": 573.56,
+    "proj_low": 428.44,
+    "support": 360.9,
+    "resistance": 487.05,
     "trend_bias": "偏空",
     "op_hint": "逢高偏空操作"
   },
@@ -135,9 +135,9 @@
   "slope_per_day": -0.051,
   "model_accuracy": 54.6,
   "model_samples": 130,
-  "total_return": -38.4,
+  "total_return": -41.5,
   "ipo_date": "2000-08-18",
-  "model_score": 6.5,
+  "model_score": 7.0,
   "model_threshold": 3.5,
   "model_factors": "金叉↑  美光↑+11%  台股↑+5%"
 }
