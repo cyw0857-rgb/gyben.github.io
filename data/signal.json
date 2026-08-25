@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-25 11:27",
+  "generated_at": "2026-08-25 13:13",
   "mode": "morning",
   "signal_date": "2026-08-25",
   "trade_date": "2026-08-26",
   "direction": 0,
-  "total_score": -10,
-  "tw_score": -2,
-  "intl_score": -7,
+  "total_score": -3,
+  "tw_score": 3,
+  "intl_score": -5,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 108,
   "foreign_cash_b": 0,
-  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
+  "veto_msg": "台灣技術(+3) vs 國際(-5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44344.19921875,
-  "tw_chg_pct": -0.9340916441126446,
-  "tw_ma5": 44796.7796875,
-  "tw_ma10": 45250.041015625,
-  "tw_rsi": 47.30491913773161,
-  "tw_macd": 211.95202119398164,
-  "tw_macds": 220.28811554508948,
+  "tw_last_close": 44727.7890625,
+  "tw_chg_pct": -0.07714356574665127,
+  "tw_ma5": 44873.49765625,
+  "tw_ma10": 45288.4,
+  "tw_rsi": 51.26915855948115,
+  "tw_macd": 242.55178080937185,
+  "tw_macds": 226.40806746816753,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 44989.67578125,
   "tw_ma10_p2": 45327.69296875,
   "tw_ma20_p2": 44144.128125,
-  "tw_ma20": 44281.1701171875,
+  "tw_ma20": 44300.349609375,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4691.2998046875,
-    "chg_pct": 1.4532494023066354,
+    "price_usd": 4683.0,
+    "chg_pct": 0.9093302251451387,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.13999938964844,
-    "oil_chg": -2.2053735616671726
+    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.04000091552734,
+    "oil_chg": 0.03528852904720702
   },
   "intl_data": {
     "S&P500": {
@@ -344,24 +344,24 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 53417.19921875,
-      "chg_pct": 0.2631294351493502,
+      "price": 53417.16015625,
+      "chg_pct": 0.2630561155341169,
       "signal": 0,
       "note": "+0.26%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25980.19140625,
-      "chg_pct": -0.7649580033296539,
+      "price": 25980.189453125,
+      "chg_pct": -0.7649654635688172,
       "signal": -1,
       "note": "-0.76%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11423.1689453125,
-      "chg_pct": -2.701798739808282,
+      "price": 11423.169921875,
+      "chg_pct": -2.701790421820942,
       "signal": -1,
       "note": "-2.70%",
       "desc": "對台股影響最大"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65598.6796875,
-      "chg_pct": 0.1077245558634772,
-      "signal": 0,
-      "note": "+0.11%",
+      "price": 65727.171875,
+      "chg_pct": 0.3038117419944727,
+      "signal": 1,
+      "note": "+0.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6551.0498046875,
-      "chg_pct": -2.1787521069421802,
+      "price": 6659.68994140625,
+      "chg_pct": -0.5565214627030951,
       "signal": -1,
-      "note": "-2.18%",
+      "note": "-0.56%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25477.41015625,
-      "chg_pct": -0.15644239327852633,
+      "price": 25453.189453125,
+      "chg_pct": -0.25136103504412177,
       "signal": 0,
-      "note": "-0.16%",
+      "note": "-0.25%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3873.257080078125,
-      "chg_pct": -0.22542396705051757,
+      "price": 3876.37939453125,
+      "chg_pct": -0.14499357103977464,
       "signal": 0,
-      "note": "-0.23%",
+      "note": "-0.14%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44346.08984375,
-      "chg_pct": -0.9298679466215395,
-      "signal": -1,
-      "note": "-0.93%",
+      "price": 44727.7890625,
+      "chg_pct": -0.0771435657466511,
+      "signal": 0,
+      "note": "-0.08%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.04100036621094,
-      "chg_pct": 0.24392439980682498,
+      "price": 99.07499694824219,
+      "chg_pct": 0.07575449317392677,
       "signal": 0,
-      "note": "+0.24%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4691.2998046875,
-      "chg_pct": 1.4532494023066354,
-      "signal": -1,
-      "note": "+1.45%(避險↑)",
+      "price": 4683.0,
+      "chg_pct": 0.9093302251451387,
+      "signal": 0,
+      "note": "+0.91%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.13999938964844,
-      "chg_pct": -2.2053735616671726,
-      "signal": -1,
-      "note": "-2.21%",
+      "price": 85.04000091552734,
+      "chg_pct": 0.03528852904720702,
+      "signal": 0,
+      "note": "+0.04%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80609.7890625,
-      "chg_pct": 3.6711641514632145,
+      "price": 80539.7578125,
+      "chg_pct": 3.581097903940187,
       "signal": 1,
-      "note": "+3.67%",
+      "note": "+3.58%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,9 +464,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Negotiators say a tariff deal with Canada is ‘very close’ with concessions alrea",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Canadian Prime Minister Mark Carney calls new U.S. tariffs ‘a miscalculation’ af",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -476,31 +476,25 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Mark Carney's defiance of Trump has Canada cheering - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump issues new threats to Canada as trade war escalates - PBS",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
+      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How Trump's new trade war with Canada affects everything from building new homes",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
+      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,7 +506,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How Trump's new trade war with Canada affects everything from building new homes",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,9 +536,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Semiconductor Stocks Slide Ahead of NVIDIA Earnings: Intel Falls 5%, AMD Slides ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "George Soros Quietly Raised His Taiwan Semi Stake by 1,000%. Here’s Why You Shou",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Beyond the Rent: The economic signals multifamily leaders should watch this fall",
+      "title": "How do changing interest rates affect the stock market in 2026 - U.S. Bank",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
+      "title": "Beyond the Rent: The economic signals multifamily leaders should watch this fall",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
