@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-25 13:13",
+  "generated_at": "2026-08-25 15:00",
   "mode": "morning",
   "signal_date": "2026-08-25",
   "trade_date": "2026-08-26",
   "direction": 0,
   "total_score": -3,
-  "tw_score": 3,
-  "intl_score": -5,
+  "tw_score": 5,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 108,
+  "inst_score": -2,
+  "foreign_fut_net": -1880,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+3) vs 國際(-5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44727.7890625,
-  "tw_chg_pct": -0.07714356574665127,
-  "tw_ma5": 44873.49765625,
-  "tw_ma10": 45288.4,
-  "tw_rsi": 51.26915855948115,
-  "tw_macd": 242.55178080937185,
-  "tw_macds": 226.40806746816753,
+  "tw_last_close": 45169.4609375,
+  "tw_chg_pct": 0.9095610374029395,
+  "tw_ma5": 44961.83203125,
+  "tw_ma10": 45332.5671875,
+  "tw_rsi": 55.63499654352787,
+  "tw_macd": 277.78486485494795,
+  "tw_macds": 233.45468427728275,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 44989.67578125,
   "tw_ma10_p2": 45327.69296875,
   "tw_ma20_p2": 44144.128125,
-  "tw_ma20": 44300.349609375,
+  "tw_ma20": 44322.433203125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4683.0,
-    "chg_pct": 0.9093302251451387,
+    "price_usd": 4704.10009765625,
+    "chg_pct": 1.363995337717708,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.04000091552734,
-    "oil_chg": 0.03528852904720702
+    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 84.5199966430664,
+    "oil_chg": -0.5764092234450453
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65727.171875,
-      "chg_pct": 0.3038117419944727,
+      "price": 65856.4296875,
+      "chg_pct": 0.5010673201872933,
       "signal": 1,
-      "note": "+0.30%",
+      "note": "+0.50%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6659.68994140625,
-      "chg_pct": -0.5565214627030951,
-      "signal": -1,
-      "note": "-0.56%",
+      "price": 6742.740234375,
+      "chg_pct": 0.6835978369966433,
+      "signal": 1,
+      "note": "+0.68%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25453.189453125,
-      "chg_pct": -0.25136103504412177,
+      "price": 25522.30078125,
+      "chg_pct": 0.01947971480472868,
       "signal": 0,
-      "note": "-0.25%",
+      "note": "+0.02%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3876.37939453125,
-      "chg_pct": -0.14499357103977464,
+      "price": 3890.683349609375,
+      "chg_pct": 0.22347436796041434,
       "signal": 0,
-      "note": "-0.14%",
+      "note": "+0.22%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44727.7890625,
-      "chg_pct": -0.0771435657466511,
-      "signal": 0,
-      "note": "-0.08%",
+      "price": 45169.4609375,
+      "chg_pct": 0.9095610374029357,
+      "signal": 1,
+      "note": "+0.91%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.07499694824219,
-      "chg_pct": 0.07575449317392677,
+      "price": 99.09300231933594,
+      "chg_pct": 0.09394173670296717,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4683.0,
-      "chg_pct": 0.9093302251451387,
-      "signal": 0,
-      "note": "+0.91%()",
+      "price": 4704.10009765625,
+      "chg_pct": 1.363995337717708,
+      "signal": -1,
+      "note": "+1.36%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.04000091552734,
-      "chg_pct": 0.03528852904720702,
-      "signal": 0,
-      "note": "+0.04%",
+      "price": 84.5199966430664,
+      "chg_pct": -0.5764092234450453,
+      "signal": -1,
+      "note": "-0.58%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80539.7578125,
-      "chg_pct": 3.581097903940187,
+      "price": 80533.7734375,
+      "chg_pct": 3.5734014798435076,
       "signal": 1,
-      "note": "+3.58%",
+      "note": "+3.57%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "US-Canada trade war escalates as Trump threatens tariff hike on autos after Carn",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -470,13 +470,7 @@
     },
     {
       "label": "川普動態",
-      "title": "US set for largest mass visa revocation in history targeting up to 200,000 forei",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
+      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -488,21 +482,15 @@
     },
     {
       "label": "川普動態",
-      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
+      "title": "Trump issues new threats to Canada as trade war escalates - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "US-Canada trade war escalates as Trump threatens tariff hike on autos after Carn",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "US set for largest mass visa revocation in history targeting up to 200,000 forei",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -512,7 +500,19 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "How Trump's new trade war with Canada affects everything from building new homes",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "How do changing interest rates affect the stock market in 2026 - U.S. Bank",
+      "title": "Beyond the Rent: The economic signals multifamily leaders should watch this fall",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Beyond the Rent: The economic signals multifamily leaders should watch this fall",
+      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
