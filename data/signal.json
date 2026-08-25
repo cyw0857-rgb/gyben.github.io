@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25 10:30",
+  "generated_at": "2026-08-25 11:27",
   "mode": "morning",
   "signal_date": "2026-08-25",
   "trade_date": "2026-08-26",
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 44312.76171875,
-  "tw_chg_pct": -1.0043237048738551,
-  "tw_ma5": 44790.4921875,
-  "tw_ma10": 45246.897265625,
-  "tw_rsi": 47.00703495254869,
-  "tw_macd": 209.44418643614335,
-  "tw_macds": 219.78654859352184,
+  "tw_last_close": 44344.19921875,
+  "tw_chg_pct": -0.9340916441126446,
+  "tw_ma5": 44796.7796875,
+  "tw_ma10": 45250.041015625,
+  "tw_rsi": 47.30491913773161,
+  "tw_macd": 211.95202119398164,
+  "tw_macds": 220.28811554508948,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 44989.67578125,
   "tw_ma10_p2": 45327.69296875,
   "tw_ma20_p2": 44144.128125,
-  "tw_ma20": 44279.5982421875,
+  "tw_ma20": 44281.1701171875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4707.89990234375,
-    "chg_pct": 1.812240282816853,
+    "price_usd": 4691.2998046875,
+    "chg_pct": 1.4532494023066354,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.77999877929688,
-    "oil_chg": -1.4702490411114484
+    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.13999938964844,
+    "oil_chg": -2.2053735616671726
   },
   "intl_data": {
     "S&P500": {
@@ -344,8 +344,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 53417.16015625,
-      "chg_pct": 0.2630561155341169,
+      "price": 53417.19921875,
+      "chg_pct": 0.2631294351493502,
       "signal": 0,
       "note": "+0.26%",
       "desc": "藍籌股風向球"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65343.390625,
-      "chg_pct": -0.2818626625473296,
+      "price": 65598.6796875,
+      "chg_pct": 0.1077245558634772,
       "signal": 0,
-      "note": "-0.28%",
+      "note": "+0.11%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6553.080078125,
-      "chg_pct": -2.1484357626704162,
+      "price": 6551.0498046875,
+      "chg_pct": -2.1787521069421802,
       "signal": -1,
-      "note": "-2.15%",
+      "note": "-2.18%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25456.05078125,
-      "chg_pct": -0.24014776109955296,
+      "price": 25477.41015625,
+      "chg_pct": -0.15644239327852633,
       "signal": 0,
-      "note": "-0.24%",
+      "note": "-0.16%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3877.027587890625,
-      "chg_pct": -0.12829619818743887,
+      "price": 3873.257080078125,
+      "chg_pct": -0.22542396705051757,
       "signal": 0,
-      "note": "-0.13%",
+      "note": "-0.23%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44312.76171875,
-      "chg_pct": -1.0043237048738503,
+      "price": 44346.08984375,
+      "chg_pct": -0.9298679466215395,
       "signal": -1,
-      "note": "-1.00%",
+      "note": "-0.93%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.02200317382812,
-      "chg_pct": 0.2246964728877736,
+      "price": 99.04100036621094,
+      "chg_pct": 0.24392439980682498,
       "signal": 0,
-      "note": "+0.22%(中性)",
+      "note": "+0.24%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4707.89990234375,
-      "chg_pct": 1.812240282816853,
+      "price": 4691.2998046875,
+      "chg_pct": 1.4532494023066354,
       "signal": -1,
-      "note": "+1.81%(避險↑)",
+      "note": "+1.45%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.77999877929688,
-      "chg_pct": -1.4702490411114484,
+      "price": 85.13999938964844,
+      "chg_pct": -2.2053735616671726,
       "signal": -1,
-      "note": "-1.47%",
+      "note": "-2.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80948.5703125,
-      "chg_pct": 4.106866154764036,
+      "price": 80609.7890625,
+      "chg_pct": 3.6711641514632145,
       "signal": 1,
-      "note": "+4.11%",
+      "note": "+3.67%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,7 +470,7 @@
     },
     {
       "label": "川普動態",
-      "title": "US Postal Service issues new rule for mail ballots, but its impact on the midter",
+      "title": "US set for largest mass visa revocation in history targeting up to 200,000 forei",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -482,13 +482,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
+      "title": "Trump issues new threats to Canada as trade war escalates - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump issues new threats to Canada as trade war escalates - PBS",
+      "title": "Trump announces tariffs on Canadian vehicles, steel in escalation of trade war -",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,9 +506,9 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How Canada could hit back to hurt the US economy - and Trump - BBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "US-Canada trade war escalates as Trump threatens tariff hike on autos after Carn",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -548,7 +548,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
+      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "New Fed chair faces critical test at Jackson Hole as inflation fears mount - The",
+      "title": "Will Warsh Hit Reset With Markets at Jackson Hole? - Investopedia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
