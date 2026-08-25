@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26 03:54",
+  "generated_at": "2026-08-26 05:34",
   "mode": "morning",
   "signal_date": "2026-08-24",
   "trade_date": "2026-08-27",
   "direction": 0,
-  "total_score": 4,
+  "total_score": 3,
   "tw_score": 4,
-  "intl_score": 4,
+  "intl_score": 3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
@@ -325,45 +325,45 @@
     }
   ],
   "gold": {
-    "price_usd": 4720.60009765625,
-    "chg_pct": 1.719537500586573,
+    "price_usd": 4715.89990234375,
+    "chg_pct": 1.6182576455979456,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 81.98999786376953,
-    "oil_chg": -3.55252816912216
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 81.11000061035156,
+    "oil_chg": -4.587697244883096
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7677.2001953125,
-      "chg_pct": 0.3180553736262173,
+      "price": 7677.27978515625,
+      "chg_pct": 0.31909537494823126,
       "signal": 1,
       "note": "+0.32%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53587.58984375,
-      "chg_pct": 0.3190541897051019,
-      "signal": 1,
-      "note": "+0.32%",
+      "price": 53577.3984375,
+      "chg_pct": 0.29997529030238335,
+      "signal": 0,
+      "note": "+0.30%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26144.361328125,
-      "chg_pct": 0.631911769913028,
+      "price": 26151.298828125,
+      "chg_pct": 0.6586148084436632,
       "signal": 1,
-      "note": "+0.63%",
+      "note": "+0.66%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11576.861328125,
-      "chg_pct": 1.3454357004327313,
+      "price": 11588.0380859375,
+      "chg_pct": 1.4432785749495227,
       "signal": 1,
-      "note": "+1.35%",
+      "note": "+1.44%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.93000030517578,
-      "chg_pct": -0.07070676244870581,
+      "price": 98.91500091552734,
+      "chg_pct": -0.08585766108349116,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4720.60009765625,
-      "chg_pct": 1.719537500586573,
+      "price": 4715.89990234375,
+      "chg_pct": 1.6182576455979456,
       "signal": -1,
-      "note": "+1.72%(避險↑)",
+      "note": "+1.62%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 81.98999786376953,
-      "chg_pct": -3.55252816912216,
+      "price": 81.11000061035156,
+      "chg_pct": -4.587697244883096,
       "signal": -1,
-      "note": "-3.55%",
+      "note": "-4.59%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78934.0625,
-      "chg_pct": -0.038526022478064206,
-      "signal": 0,
-      "note": "-0.04%",
+      "price": 78455.0390625,
+      "chg_pct": -0.6451575243379787,
+      "signal": -1,
+      "note": "-0.65%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,25 +470,25 @@
     },
     {
       "label": "川普動態",
-      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Canada vows ‘dollar for dollar’ response as US puts 50% tariffs on some goods - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "A defiant Trump imposes replacement tariffs on biggest U.S. trading partners - N",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s not bluffing about 100% tariffs on UK, says trade tsar - The Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "New U.S. Tariffs Aimed at Over 80 Countries Go Into Effect - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks - B",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,13 +500,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada has one important edge in the North American trade war - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "As U.S.-Canada tensions escalate, Republicans could face political consequences ",
+      "title": "Canada has 1 important edge in the North American trade war - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -517,8 +511,20 @@
       "sent_val": 0
     },
     {
+      "label": "關稅/貿易",
+      "title": "As U.S.-Canada tensions escalate, Republicans could face political consequences ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Japan’s Air Water takes 35% stake in Taiwan semiconductor gas supplier - gasworl",
+      "title": "Japan’s Air Water buys 35% stake in Taiwan semiconductor gas supplier - gasworld",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -527,12 +533,6 @@
       "title": "TSMC Stock And 2 Global Blue Chips For AI Infrastructure Growth - simplywall.st",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Could Taiwan Semiconductor Manufacturing Co. (TSM) Be the Biggest Long-Term Winn",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "台股/半導體",
