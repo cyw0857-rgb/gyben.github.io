@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27 01:11",
+  "generated_at": "2026-08-27 02:27",
   "mode": "morning",
   "signal_date": "2026-08-25",
   "trade_date": "2026-08-28",
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4648.5,
-    "chg_pct": 0.22422763900687126,
+    "price_usd": 4654.2001953125,
+    "chg_pct": 0.347126998496341,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 82.76000213623047,
-    "oil_chg": 0.4856745057243617
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 82.27999877929688,
+    "oil_chg": -0.09713675383901385
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7668.39013671875,
-      "chg_pct": -0.11579164347621956,
+      "price": 7674.60986328125,
+      "chg_pct": -0.03477692554805935,
       "signal": 0,
-      "note": "-0.12%",
+      "note": "-0.03%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53428.58984375,
-      "chg_pct": -0.2777450904481499,
+      "price": 53449.9296875,
+      "chg_pct": -0.23791515399669316,
       "signal": 0,
-      "note": "-0.28%",
+      "note": "-0.24%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26073.513671875,
-      "chg_pct": -0.2974502493228632,
+      "price": 26111.892578125,
+      "chg_pct": -0.15069308962732345,
       "signal": 0,
-      "note": "-0.30%",
+      "note": "-0.15%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11575.6064453125,
-      "chg_pct": -0.10729677933530775,
+      "price": 11593.169921875,
+      "chg_pct": 0.04426877017345048,
       "signal": 0,
-      "note": "-0.11%",
+      "note": "+0.04%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.65999984741211,
-      "chg_pct": 1.3592235646568664,
+      "price": 15.420000076293945,
+      "chg_pct": -0.19417303133687425,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=15.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -384,10 +384,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6742.740234375,
+      "chg_pct": 0.6835978369966433,
+      "signal": 1,
+      "note": "+0.68%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,42 +416,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.16999816894531,
-      "chg_pct": 0.2527294830444956,
+      "price": 99.14099884033203,
+      "chg_pct": 0.22341354172820752,
       "signal": 0,
-      "note": "+0.25%(中性)",
+      "note": "+0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4648.5,
-      "chg_pct": 0.22422763900687126,
+      "price": 4654.2001953125,
+      "chg_pct": 0.347126998496341,
       "signal": 0,
-      "note": "+0.22%()",
+      "note": "+0.35%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.76000213623047,
-      "chg_pct": 0.4856745057243617,
-      "signal": 1,
-      "note": "+0.49%",
+      "price": 82.27999877929688,
+      "chg_pct": -0.09713675383901385,
+      "signal": 0,
+      "note": "-0.10%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.668000221252441,
-      "chg_pct": 0.6251408206327513,
+      "price": 4.665999889373779,
+      "chg_pct": 0.5820209261516044,
       "signal": 0,
-      "note": "4.67%(+0.63%)",
+      "note": "4.67%(+0.58%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 78053.9765625,
-      "chg_pct": -0.6504170463202383,
-      "signal": -1,
-      "note": "-0.65%",
+      "price": 78446.171875,
+      "chg_pct": -0.15121838343003707,
+      "signal": 0,
+      "note": "-0.15%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,7 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "title": "Live: Trump wants to 'destroy' Canada's auto industry, Carney says of latest tar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,12 +500,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New Yo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Canada announces retaliatory tariffs on U.S. products as trade war deepens - The",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -515,6 +509,18 @@
       "title": "Canada has 1 important edge in the North American trade war - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taipei Tech joins Taiwan-Germany semiconductor training program - Taipei Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -535,12 +541,6 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "What's Going On With Taiwan Semiconductor Stock Wednesday? - Benzinga",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
       "title": "US rates need to rise soon absent evidence of ongoing drop in inflation, Fed's C",
       "sentiment": "⚠️偏空",
@@ -548,7 +548,7 @@
     },
     {
       "label": "聯準會",
-      "title": "US stocks and bonds drift following the latest update on inflation - WHEC.com",
+      "title": "US stocks and bonds drift following the latest update on inflation, while oil pr",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
