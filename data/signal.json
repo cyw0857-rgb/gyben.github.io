@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 10:39",
+  "generated_at": "2026-08-26 11:38",
   "mode": "morning",
   "signal_date": "2026-08-26",
   "trade_date": "2026-08-27",
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45434.66015625,
-  "tw_chg_pct": 0.5871206192098466,
-  "tw_ma5": 45104.89375,
-  "tw_ma10": 45324.226171875,
-  "tw_rsi": 60.37909042047898,
-  "tw_macd": 294.5341629498798,
-  "tw_macds": 245.6705800118022,
+  "tw_last_close": 45806.609375,
+  "tw_chg_pct": 1.4105734810110127,
+  "tw_ma5": 45179.28359375,
+  "tw_ma10": 45361.42109375,
+  "tw_rsi": 63.122281014162176,
+  "tw_macd": 324.20532569916395,
+  "tw_macds": 251.604812561659,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 44961.83203125,
   "tw_ma10_p2": 45332.5671875,
   "tw_ma20_p2": 44322.433203125,
-  "tw_ma20": 44592.2072265625,
+  "tw_ma20": 44610.8046875,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4714.0,
-    "chg_pct": 1.5773185311411881,
+    "price_usd": 4705.0,
+    "chg_pct": 1.3833864423036253,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 80.37999725341797,
-    "oil_chg": -5.446423675407996
+    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 80.25,
+    "oil_chg": -5.5993436261799605
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66094.96875,
-      "chg_pct": 0.36221074180897533,
+      "price": 66227.546875,
+      "chg_pct": 0.5635246083958915,
       "signal": 1,
-      "note": "+0.36%",
+      "note": "+0.56%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6795.990234375,
-      "chg_pct": 0.7897382688499176,
+      "price": 6869.4599609375,
+      "chg_pct": 1.879350563091149,
       "signal": 1,
-      "note": "+0.79%",
+      "note": "+1.88%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25760.4609375,
-      "chg_pct": 0.977462092748691,
+      "price": 25707.0,
+      "chg_pct": 0.7679025742700998,
       "signal": 1,
-      "note": "+0.98%",
+      "note": "+0.77%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3908.445068359375,
-      "chg_pct": 0.48850156426079777,
+      "price": 3918.49755859375,
+      "chg_pct": 0.7469572065875651,
       "signal": 1,
-      "note": "+0.49%",
+      "note": "+0.75%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45434.66015625,
-      "chg_pct": 0.5871206192098471,
+      "price": 45806.609375,
+      "chg_pct": 1.410573481011005,
       "signal": 1,
-      "note": "+0.59%",
+      "note": "+1.41%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.93800354003906,
-      "chg_pct": -0.0626226868292298,
+      "price": 98.95700073242188,
+      "chg_pct": -0.04343360361426767,
       "signal": 0,
-      "note": "-0.06%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4714.0,
-      "chg_pct": 1.5773185311411881,
+      "price": 4705.0,
+      "chg_pct": 1.3833864423036253,
       "signal": -1,
-      "note": "+1.58%(避險↑)",
+      "note": "+1.38%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.37999725341797,
-      "chg_pct": -5.446423675407996,
+      "price": 80.25,
+      "chg_pct": -5.5993436261799605,
       "signal": -1,
-      "note": "-5.45%",
+      "note": "-5.60%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79193.671875,
-      "chg_pct": 0.2902412417607837,
+      "price": 79021.46875,
+      "chg_pct": 0.07216456290575253,
       "signal": 0,
-      "note": "+0.29%",
+      "note": "+0.07%",
       "desc": "風險偏好指標"
     }
   },
@@ -476,19 +476,25 @@
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Rollins defends Trump's trade war with Canada while acknowledging 'concer",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New Yo",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
+      "title": "WATCH: Rollins defends Trump's trade war with Canada while acknowledging 'concer",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Canada strikes back at US with retaliatory tariffs as trade war escalates - AP N",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New Yo",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -507,12 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Fresh Trade Escalation Deepens Uncertainty for Canadian Economy - Morningstar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
