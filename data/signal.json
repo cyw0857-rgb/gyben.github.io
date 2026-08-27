@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27 04:25",
+  "generated_at": "2026-08-27 07:48",
   "mode": "morning",
   "signal_date": "2026-08-25",
   "trade_date": "2026-08-28",
@@ -325,11 +325,11 @@
     }
   ],
   "gold": {
-    "price_usd": 4646.39990234375,
-    "chg_pct": 0.17894837353109525,
+    "price_usd": 4673.2001953125,
+    "chg_pct": 0.7567774933099648,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
+    "warning": "黃金小幅變動 +0.8%，影響中性",
     "oil_usd": 81.8499984741211,
     "oil_chg": -0.6192352263853289
   },
@@ -368,8 +368,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.220000267028809,
-      "chg_pct": -1.4886701946649916,
+      "price": 15.210000038146973,
+      "chg_pct": -1.5533965959937408,
       "signal": 1,
       "note": "VIX=15.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -416,18 +416,18 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.15799713134766,
-      "chg_pct": 0.24059741893228273,
+      "price": 99.13400268554688,
+      "chg_pct": 0.21634100339960027,
       "signal": 0,
-      "note": "+0.24%(中性)",
+      "note": "+0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4646.39990234375,
-      "chg_pct": 0.17894837353109525,
+      "price": 4673.2001953125,
+      "chg_pct": 0.7567774933099648,
       "signal": 0,
-      "note": "+0.18%()",
+      "note": "+0.76%()",
       "desc": "避險情緒指標"
     },
     "原油": {
@@ -448,25 +448,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78377.296875,
-      "chg_pct": -0.2388846731860183,
-      "signal": 0,
-      "note": "-0.24%",
+      "price": 79096.9296875,
+      "chg_pct": 0.6770868499869286,
+      "signal": 1,
+      "note": "+0.68%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Canada announces retaliatory tariffs up to 50% against US - ABC News - Breaking ",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -506,7 +506,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada has 1 important edge in the North American trade war - Politico",
+      "title": "Canada Fires Back in Trade War Against Trump With Up to 50% Tariffs - The New Yo",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,7 +524,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Education ministry brings European officials to Taiwan - Taipei Times",
+      "title": "Price Prediction: TSM Will Trade at This Price in 2027 - 24/7 Wall St.",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Price Prediction: TSM Will Trade at This Price in 2027 - 24/7 Wall St.",
+      "title": "Education ministry brings European officials to Taiwan - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Markets Are Confused About the Fed, Just as Chair Warsh Wants It - tastylive",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Mortgage rate predictions through 2030: Economic factors at plays - Yahoo Financ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Manifold Traders Put 46% Odds on a 2026 Fed Rate Hike as Inflation Refuses to Co",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "U.S. inflation rises again and stays well above the Fed’s target. A rate hike co",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
