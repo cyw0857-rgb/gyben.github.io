@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-28 13:51",
+  "generated_at": "2026-08-28 17:37",
   "mode": "morning",
   "signal_date": "2026-08-28",
   "trade_date": "2026-08-31",
   "direction": 1,
-  "total_score": 14,
+  "total_score": 15,
   "tw_score": 10,
-  "intl_score": 7,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": -2,
-  "foreign_fut_net": -1148,
+  "inst_score": 1,
+  "foreign_fut_net": 1137,
   "foreign_cash_b": 0,
-  "veto_msg": "⚠️ 外資期貨(-1,148口) vs 技術面不一致，提高門檻",
+  "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 46307.671875,
-  "tw_chg_pct": 0.7231137426616296,
-  "tw_ma5": 45609.45859375,
-  "tw_ma10": 45409.062109375,
-  "tw_rsi": 63.79014659704681,
-  "tw_macd": 429.9665026261064,
-  "tw_macds": 306.77600517598967,
+  "tw_last_close": 46331.44921875,
+  "tw_chg_pct": 0.774831481905669,
+  "tw_ma5": 45614.2140625,
+  "tw_ma10": 45411.43984375,
+  "tw_rsi": 63.961539358781955,
+  "tw_macd": 431.8632707884972,
+  "tw_macds": 307.15535880846784,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45392.78203125,
   "tw_ma10_p2": 45359.39609375,
   "tw_ma20_p2": 44914.201171875,
-  "tw_ma20": 45073.597265625,
+  "tw_ma20": 45074.7861328125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4627.89990234375,
-    "chg_pct": 0.39481324728573175,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 83.02999877929688,
-    "oil_chg": -0.5985873426397395
+    "price_usd": 4655.7001953125,
+    "chg_pct": 0.9978956993076546,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 82.94000244140625,
+    "oil_chg": -0.7063286801302541
   },
   "intl_data": {
     "S&P500": {
@@ -369,73 +369,73 @@
     "VIX恐慌": {
       "category": "情緒",
       "price": 14.510000228881836,
-      "chg_pct": -4.602234105914029,
+      "chg_pct": 0.0,
       "signal": 1,
       "note": "VIX=14.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66396.890625,
-      "chg_pct": 0.400583917599431,
+      "price": 66405.5625,
+      "chg_pct": 0.4136969008350135,
       "signal": 1,
-      "note": "+0.40%",
+      "note": "+0.41%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6803.35986328125,
-      "chg_pct": -1.577031496551345,
+      "price": 6788.8798828125,
+      "chg_pct": -1.7865107377271865,
       "signal": -1,
-      "note": "-1.58%",
+      "note": "-1.79%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25662.390625,
-      "chg_pct": 0.37804651748376333,
-      "signal": 1,
-      "note": "+0.38%",
+      "price": 25584.7890625,
+      "chg_pct": 0.07450919844435978,
+      "signal": 0,
+      "note": "+0.07%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3958.075439453125,
-      "chg_pct": 0.0380226846471224,
+      "price": 3952.178955078125,
+      "chg_pct": -0.11100748081819733,
       "signal": 0,
-      "note": "+0.04%",
+      "note": "-0.11%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46307.671875,
-      "chg_pct": 0.7231137426616377,
+      "price": 46331.44921875,
+      "chg_pct": 0.7748314819056734,
       "signal": 1,
-      "note": "+0.72%",
+      "note": "+0.77%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.20099639892578,
-      "chg_pct": 0.04133999122881258,
+      "price": 99.20800018310547,
+      "chg_pct": 0.048403105308107194,
       "signal": 0,
-      "note": "+0.04%(中性)",
+      "note": "+0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4627.89990234375,
-      "chg_pct": 0.39481324728573175,
+      "price": 4655.7001953125,
+      "chg_pct": 0.9978956993076546,
       "signal": 0,
-      "note": "+0.39%()",
+      "note": "+1.00%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.02999877929688,
-      "chg_pct": -0.5985873426397395,
+      "price": 82.94000244140625,
+      "chg_pct": -0.7063286801302541,
       "signal": -1,
-      "note": "-0.60%",
+      "note": "-0.71%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,23 +448,23 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79818.2109375,
-      "chg_pct": 1.0006514748144186,
-      "signal": 1,
-      "note": "+1.00%",
+      "price": 79400.71875,
+      "chg_pct": -1.0675885686362214,
+      "signal": -1,
+      "note": "-1.07%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "How Canada could hit back to hurt the US economy - and Trump - BBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
+      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -476,19 +476,19 @@
     },
     {
       "label": "川普動態",
+      "title": "Canada strikes back at Trump with retaliatory tariffs as US trade war escalates ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump announces 50 percent tariff on Canadian vehicles, steel after trade talks ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump accuses Canada of wanting ‘benefits of being a State, without being one’ a",
+      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "New developments in U.S.-Canada trade war: The impact on both economies - rbc.co",
+      "title": "Canada has 1 important edge in the North American trade war - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada has 1 important edge in the North American trade war - Politico",
+      "title": "Escalated U.S.-Canada trade talks threaten fallout - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,19 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Why Is Taiwan Semiconductor Manufacturing (TSM) Winning More 3nm AI Chip Work? -",
+      "title": "Sony Group (SONY) and Taiwan Semiconductor (TSM) Are Betting $4.7 Billion on the",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "This Hedge Fund Just Sold Sandisk and Bought Taiwan Semiconductor Manufacturing ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed's Hammack says 'now is the time to act' on raising interest rates - CNBC",
+      "title": "How Investors Are Reacting To Air Water (TSE:4088) Entering Taiwan’s Semiconduct",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +548,21 @@
     },
     {
       "label": "聯準會",
+      "title": "Fed's Hammack says 'now is the time to act' on raising interest rates - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "US rates need to rise soon absent evidence of ongoing drop in inflation, Fed's C",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Today's Interest Rates: Not the New Normal, Just Normal - ETF Database",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed Chair Warsh faces Jackson Hole spotlight with inflation, rate path in focus ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }

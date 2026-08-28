@@ -262,13 +262,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div style="text-align:right">
     <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
-      資料：2026-08-28 13:51 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+      資料：2026-08-28 17:37 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
     </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
-      <span class="chip chip-b">台指 46,308</span>
+      <span class="chip chip-b">台指 46,331</span>
       <span class="chip chip-g">RSI 64</span>
       <span class="chip chip-r">
-        多 +14
+        多 +15
       </span>
     </div>
   </div>
@@ -286,24 +286,24 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
 
 
-        <div style="background:#1f2937;color:#9ca3af;border-radius:14px;
+        <div style="background:linear-gradient(135deg,#78350f,#f59e0b);color:#fff;border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
           <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示
             <span id="gold-live" style="font-size:.6rem;opacity:.85;margin-left:6px">伺服器資料</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
             <div style="flex:1">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,628</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
-              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▲ +0.39%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,656</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▲ +1.00%</div>
             </div>
             
             <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🛢 WTI 原油</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">83.0</span></div>
-              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▼ -0.60%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="oil-price">82.9</span></div>
+              <div id="oil-chg" style="font-size:.78rem;opacity:.9">▼ -0.71%</div>
             </div>
           </div>
-          <div style="font-size:.88rem;opacity:.9">黃金小幅變動 +0.4%，影響中性</div>
+          <div style="font-size:.88rem;opacity:.9">黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️</div>
         </div>
 
 
@@ -319,9 +319,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
     8:45 買進 1口 &ensp;｜&ensp; 13:30 賣出平倉
   </div>
-  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +10 ＋ 國際市場 +7 ＋ 新聞 -2 ＝ 總分 +14（門檻 ±6）</div>
+  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +10 ＋ 國際市場 +6 ＋ 新聞 -2＋ 黃金 -1 ＝ 總分 +15（門檻 ±6）</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-08-28 13:51 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-08-28 17:37 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
@@ -425,13 +425,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <script>
 (function(){
   var TW_S    = 10;
-  var INST_S  = -2;
+  var INST_S  = 1;
   var THRESH  = 6;
   var MAX_TOT = 16;
   /* ── 凍結的台灣技術濾網輸入（隔夜不變，與後端 signal_engine 的 veto 完全同步）── */
-  var V_RSI=63.79014659704681, V_MA5=45609.45859375, V_MA10=45409.062109375, V_MA20=45073.597265625;
+  var V_RSI=63.961539358781955, V_MA5=45614.2140625, V_MA10=45411.43984375, V_MA20=45074.7861328125;
   var V_MA5P=45392.78203125, V_MA10P=45359.39609375, V_MA20P=44914.201171875;
-  var V_MACD=429.9665026261064, V_MACDS=306.77600517598967, V_FUT=-1148;
+  var V_MACD=431.8632707884972, V_MACDS=307.15535880846784, V_FUT=1137;
   var TRADE_DATE_H='2026-08-31';
   function sgn(v){return (v>=0?'+':'')+v;}
   function pad2(n){return n<10?'0'+n:''+n;}
@@ -611,7 +611,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
-    <span style="font-size:.6rem;color:#64748b">2026-08-28 13:51</span>
+    <span style="font-size:.6rem;color:#64748b">2026-08-28 17:37</span>
     <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 
@@ -688,7 +688,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
         <div id="vact-cons" style="font-size:2rem;font-weight:900;color:#10b981;margin-top:6px">🟢 買進</div>
         <div id="vdetail-cons" style="font-size:.78rem;color:#d1d5db;margin:4px 0">8:45 買進 · 13:25 賣出</div>
         <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:6px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
-          <div><div style="font-size:.58rem;color:#6b7280">參考進場價</div><div id="vprice-cons" style="font-size:.85rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div></div>
+          <div><div style="font-size:.58rem;color:#6b7280">參考進場價</div><div id="vprice-cons" style="font-size:.85rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div></div>
           <div><div style="font-size:.58rem;color:#6b7280">近5年實測</div><div style="font-size:.85rem;font-weight:700;color:#10b981">勝率61% · 賺賠1.72</div></div>
           <div><div style="font-size:.58rem;color:#6b7280">頻率</div><div style="font-size:.85rem;font-weight:700;color:#e2e8f0">約32筆/年</div></div>
         </div>
@@ -705,7 +705,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-vsel" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-vsel" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div>
+            <div id="vprice-vsel" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">194筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">51%</span>
@@ -720,7 +720,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-v100" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-v100" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div>
+            <div id="vprice-v100" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">789筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">48%</span>
@@ -735,7 +735,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-v70" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-v70" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div>
+            <div id="vprice-v70" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">806筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">47%</span>
@@ -750,7 +750,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-v60" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-v60" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div>
+            <div id="vprice-v60" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">1990筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">46%</span>
@@ -765,7 +765,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
           <div id="vdetail-v50" style="font-size:.72rem;color:#d1d5db;margin:5px 0">8:45 買進 · 13:25 賣出</div>
           <div style="margin-top:8px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px">
             <div style="font-size:.6rem;color:#6b7280">參考進場價</div>
-            <div id="vprice-v50" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,308 ～ 46,388</div>
+            <div id="vprice-v50" style="font-size:.8rem;font-weight:700;color:#e2e8f0">46,331 ～ 46,411</div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:6px">
               <span style="font-size:.6rem;color:#6b7280">模擬勝率<br><span style="font-size:.56rem">4602筆</span></span>
               <span style="font-size:1.05rem;font-weight:800;color:#9ca3af">45%</span>
@@ -776,7 +776,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
         </div>
       </div>
       <div style="font-size:.65rem;color:#4b5563;margin-top:10px;text-align:center">
-        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 46,308</span>
+        ⚠️ 以上為回測信號，不保證獲利｜交易時間 08:45 進場 · 13:25 出場｜<span id="sig-lc">昨收 46,331</span>
       </div>
     </div>
     
@@ -1673,7 +1673,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
     <h2 style="margin:0">💰 定期定額追蹤</h2>
     <span style="font-size:.62rem;color:#94a3b8;background:#0b1628;border:1px solid #1e3050;
-                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-08-28 13:54</span>
+                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-08-28 17:39</span>
   </div>
   <div style="font-size:.7rem;color:#94a3b8;margin-top:2px">
     每月 25 號投入 NT$45,000（009816 + 00992A 各 NT$22,500）
@@ -1697,7 +1697,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-08-28 13:52 更新</span>
+      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-08-28 17:37 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1772,14 +1772,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
             <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
           </tr>
-          <tr><td style="color:#94a3b8;padding:4px 3px">08/27</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+412k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+62k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+210k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+684k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+422k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+47k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+470k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-318k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-35k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-354k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1104k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-19k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-1125k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/21</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-603k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-602k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/20</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-452k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+47k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+1k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-404k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/19</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-654k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-5k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-5k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-664k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/18</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1677k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-18k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-1695k</span></td></tr>
+          <tr><td style="color:#94a3b8;padding:4px 3px">08/28</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-3375k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+64k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-34k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-3344k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/27</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+412k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+62k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+210k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+684k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+422k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+47k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+470k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-318k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-35k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-354k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1104k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-2k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-19k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-1125k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/21</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-603k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#6b7280">─</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+0k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-602k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/20</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-452k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+47k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+1k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-404k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/19</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-654k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-5k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-5k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-664k</span></td></tr>
         </table>
         <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
           <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
           <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
-            <span style="font-size:.62rem">外資 <span style="color:#ef4444">-1189k</span></span>
-            <span style="font-size:.62rem">投信 <span style="color:#10b981">+58k</span></span>
-            <span style="font-size:.62rem">自營 <span style="color:#10b981">+205k</span></span>
+            <span style="font-size:.62rem">外資 <span style="color:#ef4444">-3961k</span></span>
+            <span style="font-size:.62rem">投信 <span style="color:#10b981">+122k</span></span>
+            <span style="font-size:.62rem">自營 <span style="color:#10b981">+171k</span></span>
           </div>
           <div style="display:flex;gap:5px;flex-wrap:wrap">
             <div style="background:#ef444422;border:1px solid #ef4444;
@@ -1788,9 +1788,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <div style="background:#9ca3af22;border:1px solid #9ca3af;
                         border-radius:5px;padding:2px 7px;font-size:.65rem;
                         font-weight:700;color:#9ca3af">散戶 過熱（爆量）</div>
-            <div style="background:#10b98122;border:1px solid #10b981;border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:#10b981">📈 投信連買 1 日</div>
+            <div style="background:#10b98122;border:1px solid #10b981;border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:#10b981">📈 投信連買 2 日</div>
           </div>
-          
+          <div style="margin-top:6px;font-size:.6rem;color:#10b981">💡 內資大哥看好，籌碼有人顧</div>
         </div>
       </div>
     </div>
@@ -1883,7 +1883,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">💾 南亞科 (2408.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="n2_ev-updated" style="font-size:.6rem;color:#64748b">2026-08-28 13:53 更新</span>
+      <span id="n2_ev-updated" style="font-size:.6rem;color:#64748b">2026-08-28 17:38 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1958,14 +1958,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <th style="color:#f59e0b;padding:2px 2px;text-align:right">自營</th>
             <th style="color:#94a3b8;padding:2px 2px;text-align:right">合計</th>
           </tr>
-          <tr><td style="color:#94a3b8;padding:4px 3px">08/27</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+30133k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+711k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+2225k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+33070k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+3157k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+423k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-251k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+3330k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-433k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1925k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-90k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-2447k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-11489k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+887k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-549k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-11150k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/21</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+6032k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+241k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+1077k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+7352k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/20</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+26277k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+742k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+202k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+27222k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/19</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-13748k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+380k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1060k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-14427k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/18</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+2348k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+742k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-198k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+2893k</span></td></tr>
+          <tr><td style="color:#94a3b8;padding:4px 3px">08/28</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-773k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+95k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1752k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-2429k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/27</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+30133k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+711k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+2225k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+33070k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/26</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+3157k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+423k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-251k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+3330k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/25</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-433k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1925k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-90k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-2447k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/24</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-11489k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+887k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-549k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-11150k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/21</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+6032k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+241k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+1077k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+7352k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/20</td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+26277k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+742k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+202k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#10b981">+27222k</span></td></tr><tr><td style="color:#94a3b8;padding:4px 3px">08/19</td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-13748k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#10b981">+380k</span></td><td style="text-align:right;padding:4px 3px"><span style="color:#ef4444">-1060k</span></td><td style="text-align:right;padding:4px 3px;font-weight:700"><span style="color:#ef4444">-14427k</span></td></tr>
         </table>
         <div style="margin-top:8px;padding-top:7px;border-top:1px solid #1e3050">
           <div style="font-size:.58rem;color:#6b7280;margin-bottom:4px">5日累計</div>
           <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">
-            <span style="font-size:.62rem">外資 <span style="color:#10b981">+27402k</span></span>
-            <span style="font-size:.62rem">投信 <span style="color:#10b981">+340k</span></span>
-            <span style="font-size:.62rem">自營 <span style="color:#10b981">+2414k</span></span>
+            <span style="font-size:.62rem">外資 <span style="color:#10b981">+20596k</span></span>
+            <span style="font-size:.62rem">投信 <span style="color:#10b981">+194k</span></span>
+            <span style="font-size:.62rem">自營 <span style="color:#ef4444">-416k</span></span>
           </div>
           <div style="display:flex;gap:5px;flex-wrap:wrap">
             <div style="background:#10b98122;border:1px solid #10b981;
@@ -1974,7 +1974,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
             <div style="background:#9ca3af22;border:1px solid #9ca3af;
                         border-radius:5px;padding:2px 7px;font-size:.65rem;
                         font-weight:700;color:#9ca3af">散戶 量能正常</div>
-            <div style="background:#10b98122;border:1px solid #10b981;border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:#10b981">📈 投信連買 2 日</div>
+            <div style="background:#10b98122;border:1px solid #10b981;border-radius:5px;padding:2px 7px;font-size:.65rem;font-weight:700;color:#10b981">📈 投信連買 3 日</div>
           </div>
           <div style="margin-top:6px;font-size:.6rem;color:#10b981">💡 內資大哥看好，籌碼有人顧</div>
         </div>
@@ -2065,7 +2065,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
     <div class="stitle" style="margin-bottom:0">💰 月月配三劍客 ETF（0056 ＋ 00878 ＋ 00919）</div>
-    <span style="font-size:.6rem;color:#475569">2026-08-28 13:54</span>
+    <span style="font-size:.6rem;color:#475569">2026-08-28 17:39</span>
   </div>
   <div style="font-size:.64rem;color:#64748b;margin-bottom:9px">
     三檔季配、除息月份錯開，一年 12 個月月月有息｜自 <b>2026-07-07</b> 起依<b>除息日</b>累計
@@ -2207,7 +2207,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-08-28 13:51',STK_AT='2026-08-28 13:52',notified=false;
+  var SIG_AT='2026-08-28 17:37',STK_AT='2026-08-28 17:37',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
