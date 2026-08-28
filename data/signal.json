@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-29 01:42",
+  "generated_at": "2026-08-29 02:32",
   "mode": "morning",
   "signal_date": "2026-08-27",
   "trade_date": "2026-08-31",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 5,
   "tw_score": 10,
-  "intl_score": -9,
+  "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 1137,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+10) vs 國際(-9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+10) vs 國際(-7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45975.21875,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4524.7001953125,
-    "chg_pct": -1.8439377052424055,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.8%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 83.33000183105469,
-    "oil_chg": -0.23943128356869706
+    "price_usd": 4512.7998046875,
+    "chg_pct": -2.102097457954767,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -2.1%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 83.43000030517578,
+    "oil_chg": -0.11971564178434853
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7707.43994140625,
-      "chg_pct": -0.30462194692778427,
-      "signal": -1,
-      "note": "-0.30%",
+      "price": 7709.6201171875,
+      "chg_pct": -0.2764214743472333,
+      "signal": 0,
+      "note": "-0.28%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53527.16015625,
-      "chg_pct": -0.07892792773281934,
+      "price": 53529.19921875,
+      "chg_pct": -0.075121536539496,
       "signal": 0,
       "note": "-0.08%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26404.521484375,
-      "chg_pct": -0.5155281363373821,
+      "price": 26405.189453125,
+      "chg_pct": -0.513011426524841,
       "signal": -1,
-      "note": "-0.52%",
+      "note": "-0.51%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11483.5419921875,
-      "chg_pct": -3.3548411805963867,
+      "price": 11497.5615234375,
+      "chg_pct": -3.236853209188991,
       "signal": -1,
-      "note": "-3.35%",
+      "note": "-3.24%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.65999984741211,
-      "chg_pct": 1.0337671686021237,
+      "price": 14.539999961853027,
+      "chg_pct": 0.20675211921415132,
       "signal": 1,
-      "note": "VIX=14.7(低恐慌)",
+      "note": "VIX=14.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.68399810791016,
-      "chg_pct": 0.5284332658823891,
+      "price": 99.69599914550781,
+      "chg_pct": 0.5405359657154288,
       "signal": -1,
-      "note": "+0.53%(偏空)",
+      "note": "+0.54%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4524.7001953125,
-      "chg_pct": -1.8439377052424055,
+      "price": 4512.7998046875,
+      "chg_pct": -2.102097457954767,
       "signal": 1,
-      "note": "-1.84%()",
+      "note": "-2.10%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.33000183105469,
-      "chg_pct": -0.23943128356869706,
+      "price": 83.43000030517578,
+      "chg_pct": -0.11971564178434853,
       "signal": 0,
-      "note": "-0.24%",
+      "note": "-0.12%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77751.0703125,
-      "chg_pct": -3.1230321528400027,
+      "price": 77513.1796875,
+      "chg_pct": -3.4194412226655113,
       "signal": -1,
-      "note": "-3.12%",
+      "note": "-3.42%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,12 +500,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How Will the New Canadian Tariffs Affect the U.S. Economy? - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Oh Canada! Trade War Will Have Adverse Economic Impact On Sweet Home Alabama - H",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -513,6 +507,12 @@
     {
       "label": "關稅/貿易",
       "title": "Canada Retaliates With Up to 50% Tariffs on Hundreds of U.S. Products - The New ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Canada has 1 important edge in the North American trade war - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,19 +536,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Top Taiwanese university, ASU seek closer collaboration - ASU News",
+      "title": "Taiwan shares end up but off high ahead of Fed chair's speech - Focus Taiwan",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jack",
+      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
+      "title": "WATCH: Fed Chair Warsh signals stubborn inflation may require rate hikes in Jack",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "In closely watched speech, Warsh signals Fed may need to raise rates - Politico",
+      "title": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are comi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
