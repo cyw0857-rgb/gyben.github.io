@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-31 04:05",
+  "generated_at": "2026-08-31 06:40",
   "mode": "morning",
   "signal_date": "2026-08-28",
   "trade_date": "2026-09-01",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 6,
   "tw_score": 10,
-  "intl_score": -6,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 1137,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+10) vs 國際(-6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+10) vs 國際(-4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 46331.44921875,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4529.89990234375,
-    "chg_pct": -1.731138459934924,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 83.4000015258789,
-    "oil_chg": -0.1556294209478534
+    "price_usd": 4508.7998046875,
+    "chg_pct": 0.6855520502392884,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 84.91999816894531,
+    "oil_chg": 1.8225379079816366
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.69999694824219,
-      "chg_pct": 0.5445676343184248,
-      "signal": -1,
-      "note": "+0.54%(偏空)",
+      "price": 99.69100189208984,
+      "chg_pct": -0.009022122796065282,
+      "signal": 0,
+      "note": "-0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4529.89990234375,
-      "chg_pct": -1.731138459934924,
-      "signal": 1,
-      "note": "-1.73%()",
+      "price": 4508.7998046875,
+      "chg_pct": 0.6855520502392884,
+      "signal": 0,
+      "note": "+0.69%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.4000015258789,
-      "chg_pct": -0.1556294209478534,
-      "signal": 0,
-      "note": "-0.16%",
+      "price": 84.91999816894531,
+      "chg_pct": 1.8225379079816366,
+      "signal": 1,
+      "note": "+1.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78848.578125,
-      "chg_pct": 1.308345471622602,
+      "price": 78471.9375,
+      "chg_pct": 0.8244199594128933,
       "signal": 1,
-      "note": "+1.31%",
+      "note": "+0.82%",
       "desc": "風險偏好指標"
     }
   },
@@ -530,15 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Not Nvidia. Not AMD. This Semiconductor Giant Will Be the Ultimate Winner of the",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
       "title": "TSMC Q2 employee bonuses rise more than 50% - Taipei Times",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Not Nvidia. Not AMD. This Semiconductor Giant Will Be the Ultimate Winner of the",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Markets Brace for Possible Rate Hike After Kevin Warsh’s Hawkish Turn - WSJ",
+      "title": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are comi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are comi",
+      "title": "Markets Brace for Possible Rate Hike After Kevin Warsh’s Hawkish Turn - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
