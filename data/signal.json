@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-30 07:40",
+  "generated_at": "2026-08-31 01:49",
   "mode": "morning",
   "signal_date": "2026-08-28",
-  "trade_date": "2026-08-31",
+  "trade_date": "2026-09-01",
   "direction": 0,
-  "total_score": 3,
+  "total_score": 5,
   "tw_score": 10,
   "intl_score": -6,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 1137,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": NaN,
-    "chg_pct": NaN,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +nan%，影響中性",
-    "oil_usd": NaN,
-    "oil_chg": NaN
+    "price_usd": 4529.89990234375,
+    "chg_pct": -1.731138459934924,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 83.4000015258789,
+    "oil_chg": -0.1556294209478534
   },
   "intl_data": {
     "S&P500": {
@@ -424,18 +424,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%()",
+      "price": 4529.89990234375,
+      "chg_pct": -1.731138459934924,
+      "signal": 1,
+      "note": "-1.73%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 83.4000015258789,
+      "chg_pct": -0.1556294209478534,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.16%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,23 +448,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78259.6875,
-      "chg_pct": -2.48930080069386,
-      "signal": -1,
-      "note": "-2.49%",
+      "price": 79013.4765625,
+      "chg_pct": 1.5202147059351994,
+      "signal": 1,
+      "note": "+1.52%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "title": "Untested in court, Trump's new tariffs on Canada raise legal questions - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -476,19 +470,37 @@
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "title": "‘We Don’t Need Canada’: Trump Escalates Trade War With Threat of 50% Auto Tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
       "title": "Trump accuses Canada of wanting ‘benefits of being a State, without being one’ a",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -505,16 +517,10 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "“Eh?”-conomic Warfare: The U.S.-Canada Trade War - The American Action Forum",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on July Revenue ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -524,25 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC vs. ASML: Which Semiconductor Giant Is the Better Stock Buy? - The Motley F",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Top Taiwanese university, ASU seek closer collaboration - ASU News",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC's Q2 employee bonuses rise more than 50% year-on-year - Focus Taiwan",
+      "title": "TSMC Q2 employee bonuses rise more than 50% - Taipei Times",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
-      "label": "聯準會",
-      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
+      "label": "台股/半導體",
+      "title": "Not Nvidia. Not AMD. This Semiconductor Giant Will Be the Ultimate Winner of the",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,15 +548,21 @@
     },
     {
       "label": "聯準會",
-      "title": "September Fed decision is now a coin flip as rate hike odds increase post Warsh ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are comi",
+      "title": "Markets Brace for Possible Rate Hike After Kevin Warsh’s Hawkish Turn - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "September Fed decision is now a coin flip as rate hike odds increase post Warsh ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
