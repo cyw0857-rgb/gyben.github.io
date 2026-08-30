@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-29 11:25",
+  "generated_at": "2026-08-30 07:40",
   "mode": "morning",
-  "signal_date": "2026-08-27",
+  "signal_date": "2026-08-28",
   "trade_date": "2026-08-31",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 3,
   "tw_score": 10,
-  "intl_score": -7,
+  "intl_score": -6,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 0,
   "inst_score": 1,
   "foreign_fut_net": 1137,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+10) vs 國際(-7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+10) vs 國際(-6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45975.21875,
-  "tw_chg_pct": 0.3111269939336747,
-  "tw_ma5": 45392.78203125,
-  "tw_ma10": 45359.39609375,
-  "tw_rsi": 66.28773027332738,
-  "tw_macd": 371.916094418797,
-  "tw_macds": 275.9783808134605,
+  "tw_last_close": 46331.44921875,
+  "tw_chg_pct": 0.774831481905669,
+  "tw_ma5": 45614.2140625,
+  "tw_ma10": 45411.43984375,
+  "tw_rsi": 63.961539358781955,
+  "tw_macd": 431.8632707884972,
+  "tw_macds": 307.15535880846784,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 45184.4859375,
-  "tw_ma10_p2": 45364.022265625,
-  "tw_ma20_p2": 44612.1052734375,
-  "tw_ma20": 44914.201171875,
+  "tw_ma5_p2": 45392.78203125,
+  "tw_ma10_p2": 45359.39609375,
+  "tw_ma20_p2": 44914.201171875,
+  "tw_ma20": 45074.7861328125,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4504.10009765625,
-    "chg_pct": -2.2908235499487004,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.3%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 83.44000244140625,
-    "oil_chg": -0.10774133749051464
+    "price_usd": NaN,
+    "chg_pct": NaN,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +nan%，影響中性",
+    "oil_usd": NaN,
+    "oil_chg": NaN
   },
   "intl_data": {
     "S&P500": {
@@ -344,24 +344,24 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 53560.0,
-      "chg_pct": -0.01762461209628828,
+      "price": 53559.98828125,
+      "chg_pct": -0.01764648790774416,
       "signal": 0,
       "note": "-0.02%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26402.423828125,
-      "chg_pct": -0.523431488204836,
+      "price": 26402.419921875,
+      "chg_pct": -0.5234462058060789,
       "signal": -1,
       "note": "-0.52%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11469.662109375,
-      "chg_pct": -3.4716538747739647,
+      "price": 11469.66015625,
+      "chg_pct": -3.471670312217738,
       "signal": -1,
       "note": "-3.47%",
       "desc": "對台股影響最大"
@@ -376,95 +376,95 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66131.9765625,
-      "chg_pct": -0.196461592660592,
-      "signal": 0,
-      "note": "-0.20%",
+      "price": 66405.5625,
+      "chg_pct": 0.4136969008350135,
+      "signal": 1,
+      "note": "+0.41%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6788.8798828125,
+      "chg_pct": -1.7865107377271865,
+      "signal": -1,
+      "note": "-1.79%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25565.740234375,
-      "chg_pct": -0.34004041777264316,
-      "signal": -1,
-      "note": "-0.34%",
+      "price": 25584.7890625,
+      "chg_pct": 0.07450919844435978,
+      "signal": 0,
+      "note": "+0.07%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3952.178955078125,
+      "chg_pct": -0.11100748081819733,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.11%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45975.21875,
-      "chg_pct": 0.31112699393368415,
+      "price": 46331.44921875,
+      "chg_pct": 0.7748314819056734,
       "signal": 1,
-      "note": "+0.31%",
+      "note": "+0.77%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.677001953125,
-      "chg_pct": 0.5213778458271461,
+      "price": 99.69999694824219,
+      "chg_pct": 0.5445676343184248,
       "signal": -1,
-      "note": "+0.52%(偏空)",
+      "note": "+0.54%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4504.10009765625,
-      "chg_pct": -2.2908235499487004,
-      "signal": 1,
-      "note": "-2.29%()",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.44000244140625,
-      "chg_pct": -0.10774133749051464,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "-0.11%",
+      "note": "+nan%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.720000267028809,
-      "chg_pct": 1.0274044605912251,
+      "price": 4.71999979019165,
+      "chg_pct": 1.0273942543162848,
       "signal": 0,
       "note": "4.72%(+1.03%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 77662.9921875,
-      "chg_pct": -3.2327765158354964,
+      "price": 78259.6875,
+      "chg_pct": -2.48930080069386,
       "signal": -1,
-      "note": "-3.23%",
+      "note": "-2.49%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
+      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -476,31 +476,25 @@
     },
     {
       "label": "川普動態",
-      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Canada retaliates against Trump tariffs by raising steel duties, rates on $20B o",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Canada's economy is growing as it heads to a trade war with the U.S. - marketpla",
+      "label": "川普動態",
+      "title": "Trump accuses Canada of wanting ‘benefits of being a State, without being one’ a",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "With the US and Canada locked in a trade war, fears of a recession lurk - Al Jaz",
+      "title": "Canada's economy is growing as it heads to a trade war with the U.S. - marketpla",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,33 +506,39 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Automakers most at risk in U.S.-Canada trade war aren't who you think - Detroit ",
+      "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "“Eh?”-conomic Warfare: The U.S.-Canada Trade War - The American Action Forum",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "What Is Taiwan Semiconductor Manufacturing (TSM) Getting From Its 3nm Chip Partn",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Stretched As Its 363% Run C",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Billionaire Stanley Druckenmiller Just Bought Taiwan Semiconductor Stock. Is the",
+      "title": "TSMC vs. ASML: Which Semiconductor Giant Is the Better Stock Buy? - The Motley F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (NYSE:TSM) Combines High Growth Momentum with a Breakout Se",
+      "title": "Top Taiwanese university, ASU seek closer collaboration - ASU News",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC's Q2 employee bonuses rise more than 50% year-on-year - Focus Taiwan",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Why Is Taiwan Semiconductor Manufacturing (TSM) Winning More 3nm AI Chip Work? -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
