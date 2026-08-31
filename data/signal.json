@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-31 11:44",
+  "generated_at": "2026-08-31 18:06",
   "mode": "morning",
   "signal_date": "2026-08-31",
   "trade_date": "2026-09-01",
   "direction": 0,
-  "total_score": 1,
-  "tw_score": 8,
-  "intl_score": -7,
+  "total_score": 5,
+  "tw_score": 9,
+  "intl_score": -3,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 1137,
+  "inst_score": 0,
+  "foreign_fut_net": 712,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+8) vs 國際(-7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 45676.328125,
-  "tw_chg_pct": -1.41398791705587,
-  "tw_ma5": 45797.015625,
-  "tw_ma10": 45393.345703125,
-  "tw_rsi": 55.06336503958535,
-  "tw_macd": 421.67555049730436,
-  "tw_macds": 330.0937150591911,
+  "tw_last_close": 46128.46875,
+  "tw_chg_pct": -0.4381051578845385,
+  "tw_ma5": 45887.44375,
+  "tw_ma10": 45438.559765625,
+  "tw_rsi": 60.008597064583505,
+  "tw_macd": 457.7437485030023,
+  "tw_macds": 337.3073546603307,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45614.2140625,
   "tw_ma10_p2": 45411.43984375,
   "tw_ma20_p2": 45074.7861328125,
-  "tw_ma20": 45189.28203125,
+  "tw_ma20": 45211.8890625,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4474.5,
-    "chg_pct": -0.08039341635382873,
+    "price_usd": 4493.89990234375,
+    "chg_pct": 0.35282383919397664,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 85.0,
-    "oil_chg": 1.9184633631266979
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 86.58999633789062,
+    "oil_chg": 3.8249337573715363
   },
   "intl_data": {
     "S&P500": {
@@ -368,74 +368,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.430000305175781,
-      "chg_pct": -0.5513433662586483,
+      "price": 15.199999809265137,
+      "chg_pct": 5.336101786589502,
       "signal": 1,
-      "note": "VIX=14.4(低恐慌)",
+      "note": "VIX=15.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 65361.6015625,
-      "chg_pct": -1.5720986287858039,
-      "signal": -1,
-      "note": "-1.57%",
+      "price": 66311.9296875,
+      "chg_pct": -0.1410014597798189,
+      "signal": 0,
+      "note": "-0.14%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6698.81005859375,
-      "chg_pct": -1.3267258483506388,
-      "signal": -1,
-      "note": "-1.33%",
+      "price": 6820.02001953125,
+      "chg_pct": 0.45869329338979625,
+      "signal": 1,
+      "note": "+0.46%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25414.33984375,
-      "chg_pct": -0.6662131094128501,
-      "signal": -1,
-      "note": "-0.67%",
+      "price": 25566.990234375,
+      "chg_pct": -0.06956800809074483,
+      "signal": 0,
+      "note": "-0.07%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3944.22509765625,
-      "chg_pct": -0.2012524612949307,
-      "signal": 0,
-      "note": "-0.20%",
+      "price": 3986.298095703125,
+      "chg_pct": 0.8632994865063125,
+      "signal": 1,
+      "note": "+0.86%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45676.328125,
-      "chg_pct": -1.4139879170558673,
+      "price": 46128.46875,
+      "chg_pct": -0.43810515788453963,
       "signal": -1,
-      "note": "-1.41%",
+      "note": "-0.44%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.59300231933594,
-      "chg_pct": -0.1073165819270734,
+      "price": 99.53800201416016,
+      "chg_pct": -0.16248238619919778,
       "signal": 0,
-      "note": "-0.11%(中性)",
+      "note": "-0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4474.5,
-      "chg_pct": -0.08039341635382873,
+      "price": 4493.89990234375,
+      "chg_pct": 0.35282383919397664,
       "signal": 0,
-      "note": "-0.08%()",
+      "note": "+0.35%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.0,
-      "chg_pct": 1.9184633631266979,
+      "price": 86.58999633789062,
+      "chg_pct": 3.8249337573715363,
       "signal": 1,
-      "note": "+1.92%",
+      "note": "+3.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77804.5234375,
-      "chg_pct": -0.03310488154465088,
-      "signal": 0,
-      "note": "-0.03%",
+      "price": 78322.7578125,
+      "chg_pct": 0.632746911173018,
+      "signal": 1,
+      "note": "+0.63%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,31 +500,31 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Trump’s reignites trade wars as Americans’ opinions of tariffs continue to drop ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The US-Canada trade war in 5 charts - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Canada's economy is growing as it heads to a trade war with the U.S. - marketpla",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trade war flare-up will cost Canada - Oxford Economics",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Why the head of Taiwan’s stock exchange wants you to look past TSMC—and embrace ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on July Revenue ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "US-Taiwan ties 'never been stronger', top diplomat in Taipei says - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -536,9 +536,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Fed's Hawkish Signal Hammers Taiwan Stocks: Early Session Plunge Exceeds 700 Poi",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "US-Taiwan ties 'never been stronger', top diplomat in Taipei says - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -548,13 +548,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
+      "title": "Markets Brace for Possible Rate Hike After Kevin Warsh’s Hawkish Turn - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Markets Brace for Possible Rate Hike After Kevin Warsh’s Hawkish Turn - WSJ",
+      "title": "Fed's Warsh: Interest rate increases in play if inflation doesn't fall - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
