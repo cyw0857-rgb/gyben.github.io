@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31 06:40",
+  "generated_at": "2026-08-31 08:00",
   "mode": "morning",
   "signal_date": "2026-08-28",
   "trade_date": "2026-09-01",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4508.7998046875,
-    "chg_pct": 0.6855520502392884,
+    "price_usd": 4493.39990234375,
+    "chg_pct": 0.3416583898048107,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 84.91999816894531,
-    "oil_chg": 1.8225379079816366
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 84.5,
+    "oil_chg": 1.318942990402423
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.69100189208984,
-      "chg_pct": -0.009022122796065282,
+      "price": 99.65399932861328,
+      "chg_pct": -0.04613602912423884,
       "signal": 0,
-      "note": "-0.01%(中性)",
+      "note": "-0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4508.7998046875,
-      "chg_pct": 0.6855520502392884,
+      "price": 4493.39990234375,
+      "chg_pct": 0.3416583898048107,
       "signal": 0,
-      "note": "+0.69%()",
+      "note": "+0.34%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.91999816894531,
-      "chg_pct": 1.8225379079816366,
+      "price": 84.5,
+      "chg_pct": 1.318942990402423,
       "signal": 1,
-      "note": "+1.82%",
+      "note": "+1.32%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78471.9375,
-      "chg_pct": 0.8244199594128933,
-      "signal": 1,
-      "note": "+0.82%",
+      "price": 77620.171875,
+      "chg_pct": -0.2699684018021181,
+      "signal": 0,
+      "note": "-0.27%",
       "desc": "風險偏好指標"
     }
   },
@@ -530,15 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC Q2 employee bonuses rise more than 50% - Taipei Times",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Not Nvidia. Not AMD. This Semiconductor Giant Will Be the Ultimate Winner of the",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC Q2 employee bonuses rise more than 50% - Taipei Times",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
