@@ -1,44 +1,44 @@
 {
-  "updated": "2026-09-01 17:50",
+  "updated": "2026-09-01 22:20",
   "data": {
     "S&P500": {
       "category": "美股",
-      "price": 7684.37,
-      "chg_pct": -0.33,
+      "price": 7650.27,
+      "chg_pct": -0.44,
       "signal": -1,
-      "note": "-0.33%",
+      "note": "-0.44%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53179.77,
-      "chg_pct": -0.69,
+      "price": 53115.28,
+      "chg_pct": -0.12,
       "signal": -1,
-      "note": "-0.69%",
+      "note": "-0.12%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26368.0,
-      "chg_pct": -0.11,
+      "price": 26133.02,
+      "chg_pct": -0.89,
       "signal": -1,
-      "note": "-0.11%",
+      "note": "-0.89%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11536.42,
-      "chg_pct": 0.59,
-      "signal": 1,
-      "note": "+0.59%",
+      "price": 11199.09,
+      "chg_pct": -2.92,
+      "signal": -1,
+      "note": "-2.92%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.89,
-      "chg_pct": 6.5,
+      "price": 15.73,
+      "chg_pct": 5.43,
       "signal": 1,
-      "note": "VIX=15.9(低恐慌)",
+      "note": "VIX=15.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -83,42 +83,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.55,
-      "chg_pct": 0.05,
+      "price": 99.52,
+      "chg_pct": 0.01,
       "signal": 0,
-      "note": "+0.05%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4414.8,
-      "chg_pct": -1.61,
+      "price": 4414.0,
+      "chg_pct": -1.63,
       "signal": -1,
-      "note": "-1.61%",
+      "note": "-1.63%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 87.93,
-      "chg_pct": 1.36,
+      "price": 88.02,
+      "chg_pct": 1.46,
       "signal": 1,
-      "note": "+1.36%",
+      "note": "+1.46%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.76,
-      "chg_pct": 0.81,
+      "price": 4.77,
+      "chg_pct": 0.21,
       "signal": 0,
-      "note": "4.76%(+0.81%)",
+      "note": "4.77%(+0.21%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 77941.43,
-      "chg_pct": -0.91,
+      "price": 78182.85,
+      "chg_pct": -0.6,
       "signal": -1,
-      "note": "-0.91%",
+      "note": "-0.60%",
       "desc": "風險偏好指標"
     }
   }
