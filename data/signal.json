@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01 16:54",
+  "generated_at": "2026-09-01 18:27",
   "mode": "morning",
   "signal_date": "2026-09-01",
   "trade_date": "2026-09-02",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4424.0,
-    "chg_pct": -0.16023329421074164,
+    "price_usd": 4431.60009765625,
+    "chg_pct": 0.011283879600563885,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 87.80999755859375,
-    "oil_chg": 2.3903863937722933
+    "warning": "黃金小幅變動 +0.0%，影響中性",
+    "oil_usd": 87.83999633789062,
+    "oil_chg": 2.4253663127900444
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.579999923706055,
-      "chg_pct": 4.423591447970355,
+      "price": 15.850000381469727,
+      "chg_pct": 6.233245981368579,
       "signal": 1,
-      "note": "VIX=15.6(低恐慌)",
+      "note": "VIX=15.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.60099792480469,
-      "chg_pct": 0.17197789309471123,
+      "price": 99.58200073242188,
+      "chg_pct": 0.15287179601686215,
       "signal": 0,
-      "note": "+0.17%(中性)",
+      "note": "+0.15%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4424.0,
-      "chg_pct": -0.16023329421074164,
+      "price": 4431.60009765625,
+      "chg_pct": 0.011283879600563885,
       "signal": 0,
-      "note": "-0.16%()",
+      "note": "+0.01%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 87.80999755859375,
-      "chg_pct": 2.3903863937722933,
+      "price": 87.83999633789062,
+      "chg_pct": 2.4253663127900444,
       "signal": 1,
-      "note": "+2.39%",
+      "note": "+2.43%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77909.65625,
-      "chg_pct": -0.8134789106072323,
+      "price": 77985.921875,
+      "chg_pct": -0.7163854001675912,
       "signal": -1,
-      "note": "-0.81%",
+      "note": "-0.72%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Bank of Canada Expected to Hold Rates Amid Renewed Trade War - Morningstar",
+      "title": "Trump’s reignites trade wars as Americans’ opinions of tariffs continue to drop ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s reignites trade wars as Americans’ opinions of tariffs continue to drop ",
+      "title": "Bank of Canada Expected to Hold Rates Amid Renewed Trade War - Morningstar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -515,6 +515,12 @@
       "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock May Be Fully Priced On Fresh AI C",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -531,12 +537,6 @@
     {
       "label": "台股/半導體",
       "title": "Taiwan's chips link global partners, strengthen supply chain: President - Focus ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Stretched As Its 363% Run C",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
