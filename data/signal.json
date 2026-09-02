@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 17:54",
+  "generated_at": "2026-09-02 19:07",
   "mode": "morning",
   "signal_date": "2026-09-02",
   "trade_date": "2026-09-03",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4356.2998046875,
-    "chg_pct": 0.19088787229760812,
+    "price_usd": 4355.0,
+    "chg_pct": 0.1609935602575897,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 90.2699966430664,
-    "oil_chg": 0.05541500962849534
+    "oil_usd": 90.36000061035156,
+    "oil_chg": 0.15517555725360743
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.790000915527344,
-      "chg_pct": 2.753982611610827,
+      "price": 16.739999771118164,
+      "chg_pct": 2.447978058720657,
       "signal": 1,
-      "note": "VIX=16.8(低恐慌)",
+      "note": "VIX=16.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.80999755859375,
-      "chg_pct": 0.14046291985591491,
+      "price": 99.84100341796875,
+      "chg_pct": 0.1715714379101077,
       "signal": 0,
-      "note": "+0.14%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4356.2998046875,
-      "chg_pct": 0.19088787229760812,
+      "price": 4355.0,
+      "chg_pct": 0.1609935602575897,
       "signal": 0,
-      "note": "+0.19%()",
+      "note": "+0.16%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.2699966430664,
-      "chg_pct": 0.05541500962849534,
+      "price": 90.36000061035156,
+      "chg_pct": 0.15517555725360743,
       "signal": 0,
-      "note": "+0.06%",
+      "note": "+0.16%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76671.1015625,
-      "chg_pct": -0.9463683871394911,
+      "price": 76519.5234375,
+      "chg_pct": -1.1421965864001846,
       "signal": -1,
-      "note": "-0.95%",
+      "note": "-1.14%",
       "desc": "風險偏好指標"
     }
   },
@@ -459,6 +459,12 @@
     {
       "label": "川普動態",
       "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump urges Canadian companies to immediately move to US, says ‘I don’t want Can",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -487,14 +493,14 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "label": "關稅/貿易",
+      "title": "Why Trump's trade war with Canada is poised to drag past the midterms - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Why Trump's trade war with Canada is poised to drag past the midterms - Politico",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,19 +512,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada's economy is growing as it heads to a trade war with the U.S. - marketpla",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The US-Canada trade war in 5 charts - BBC",
+      "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Stretched As Its 363% Run C",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSM) Limited Continues to Deliver St",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -530,19 +530,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Micron's Taiwan unions threaten strike over bonus dispute - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan Semiconductor (NYSE: TSM) exec reports spouse holding 1,135,529 shares - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "UA launches semiconductor hub with Taiwan university - KVOA",
+      "title": "Driven by AI hype, Taiwanese turn to borrowing to buy stocks - Daily Sabah",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Markets see Warsh endorsing a rate hike in September. Not everyone is convinced ",
+      "title": "Will the US Fed Hike Interest Rates in September? - Morningstar",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "US borrowing costs hit fresh highs over inflation fears - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Jackson Hole analyst roundup: Warsh's speech sends hike chances higher, may put ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -551,18 +563,6 @@
       "title": "Why interest rate expectations are pointing north - marketplace.org",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Uncertainty builds around inflation, stock market. What could be next. - Detroit",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Stocks fall, bond rout deepens as US and Iran trade attacks - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
