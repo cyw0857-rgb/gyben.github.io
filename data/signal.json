@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 15:44",
+  "generated_at": "2026-09-02 17:54",
   "mode": "morning",
   "signal_date": "2026-09-02",
   "trade_date": "2026-09-03",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4375.60009765625,
-    "chg_pct": 0.6347768550195492,
+    "price_usd": 4356.2998046875,
+    "chg_pct": 0.19088787229760812,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.6%，影響中性",
-    "oil_usd": 90.16000366210938,
-    "oil_chg": -0.06650139412764952
+    "warning": "黃金小幅變動 +0.2%，影響中性",
+    "oil_usd": 90.2699966430664,
+    "oil_chg": 0.05541500962849534
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.389999389648438,
-      "chg_pct": 0.30599288001002933,
+      "price": 16.790000915527344,
+      "chg_pct": 2.753982611610827,
       "signal": 1,
-      "note": "VIX=16.4(低恐慌)",
+      "note": "VIX=16.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25272.33984375,
-      "chg_pct": -0.22657416379066658,
+      "price": 25311.2109375,
+      "chg_pct": -0.07311381095368569,
       "signal": 0,
-      "note": "-0.23%",
+      "note": "-0.07%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.72799682617188,
-      "chg_pct": 0.05819068756101717,
+      "price": 99.80999755859375,
+      "chg_pct": 0.14046291985591491,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "+0.14%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4375.60009765625,
-      "chg_pct": 0.6347768550195492,
+      "price": 4356.2998046875,
+      "chg_pct": 0.19088787229760812,
       "signal": 0,
-      "note": "+0.63%()",
+      "note": "+0.19%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.16000366210938,
-      "chg_pct": -0.06650139412764952,
+      "price": 90.2699966430664,
+      "chg_pct": 0.05541500962849534,
       "signal": 0,
-      "note": "-0.07%",
+      "note": "+0.06%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,23 +448,23 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77563.4609375,
-      "chg_pct": 0.20649670800301664,
-      "signal": 0,
-      "note": "+0.21%",
+      "price": 76671.1015625,
+      "chg_pct": -0.9463683871394911,
+      "signal": -1,
+      "note": "-0.95%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump urges Canadian companies to immediately move to US, says ‘I don’t want Can",
+      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada’s leaders ‘worst’ of any country as trade war escalates - Wash",
+      "title": "Trump says Canada’s leaders ‘worst’ of any country as trade war escalates - wash",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,7 +500,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "title": "Trump’s reignites trade wars as Americans’ opinions of tariffs continue to drop ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,19 +524,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taipei of the Desert - phoenixmag.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Why the head of Taiwan’s stock exchange wants you to look past TSMC—and embrace ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Arizona business leaders visit Taiwan for 3rd time this year for semiconductor-f",
+      "title": "Micron's Taiwan unions threaten strike over bonus dispute - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "UA launches semiconductor hub with Taiwan university - KVOA",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Rising bond yields threaten to push up U.S. borrowing costs. Here's what to know",
+      "title": "Stocks fall, bond rout deepens as US and Iran trade attacks - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
