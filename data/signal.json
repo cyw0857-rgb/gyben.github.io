@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02 06:28",
+  "generated_at": "2026-09-02 07:39",
   "mode": "morning",
   "signal_date": "2026-08-31",
   "trade_date": "2026-09-03",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4374.2998046875,
-    "chg_pct": -1.281855334272261,
+    "price_usd": 4375.0,
+    "chg_pct": -1.2660534950660023,
     "signal": 1,
     "level": "ok",
     "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 90.83999633789062,
-    "oil_chg": 5.923500554011815
+    "oil_usd": 90.79000091552734,
+    "oil_chg": 5.8652036543873685
   },
   "intl_data": {
     "S&P500": {
@@ -377,9 +377,9 @@
     "日經225": {
       "category": "亞股",
       "price": 66311.9296875,
-      "chg_pct": 0.2721121223859534,
+      "chg_pct": -0.1410014597798189,
       "signal": 0,
-      "note": "+0.27%",
+      "note": "-0.14%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -424,18 +424,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4374.2998046875,
-      "chg_pct": -1.281855334272261,
+      "price": 4375.0,
+      "chg_pct": -1.2660534950660023,
       "signal": 1,
-      "note": "-1.28%()",
+      "note": "-1.27%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.83999633789062,
-      "chg_pct": 5.923500554011815,
+      "price": 90.79000091552734,
+      "chg_pct": 5.8652036543873685,
       "signal": 1,
-      "note": "+5.92%",
+      "note": "+5.87%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,26 +448,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77092.9765625,
-      "chg_pct": -1.8531910714152506,
+      "price": 77471.96875,
+      "chg_pct": -1.3706973933843731,
       "signal": -1,
-      "note": "-1.85%",
+      "note": "-1.37%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump urges Canadian companies to immediately move to US, says ‘I don’t want Can",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "'We're not going to bend': Canada announces $20bn of retaliatory tariffs on US g",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
     {
       "label": "川普動態",
       "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
@@ -476,7 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "What smart people are saying about Trump’s escalating trade war with Canada - Bu",
+      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -488,13 +476,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump breaks silence after US-Canada trade talks collapse - newsweek.com",
+      "title": "What smart people are saying about Trump’s escalating trade war with Canada - Bu",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump pauses new tariffs on Canada for three days, saying deal close - BBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "New U.S. Tariffs Aimed at Over 80 Countries Go Into Effect - The New York Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "title": "Why Trump's trade war with Canada is poised to drag past the midterms - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,7 +506,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trade war flare-up will cost Canada - Oxford Economics",
+      "title": "The US-Canada trade war in 5 charts - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,27 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock May Be Fully Priced On Fresh AI C",
+      "title": "Arizona business leaders visit Taiwan for 3rd time this year for semiconductor-f",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "UA launches semiconductor hub with Taiwan university - KVOA",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock May Be Fully Priced On Fresh AI C",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Markets see Warsh endorsing a rate hike in September. Not everyone is convinced ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Uncertainty builds around inflation, stock market. What could be next. - Detroit",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -560,9 +548,21 @@
     },
     {
       "label": "聯準會",
-      "title": "COMMENTARY: Morning Bid: September storm - Reuters",
+      "title": "Why interest rate expectations are pointing north - marketplace.org",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Oil prices surge after U.S. renews Iran strikes, heightening inflation fears - N",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Rising bond yields threaten to push up U.S. borrowing costs. Here's what to know",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
