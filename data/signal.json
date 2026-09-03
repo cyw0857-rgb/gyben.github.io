@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-03 06:17",
+  "generated_at": "2026-09-03 07:40",
   "mode": "morning",
   "signal_date": "2026-09-01",
   "trade_date": "2026-09-04",
   "direction": 1,
-  "total_score": 11,
+  "total_score": 12,
   "tw_score": 9,
   "intl_score": 8,
   "news_score": -2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4436.0,
-    "chg_pct": 2.02391904323827,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +2.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 90.73999786376953,
-    "oil_chg": 0.5763651474514507
+    "price_usd": 4427.2998046875,
+    "chg_pct": 1.8238225549103033,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 90.70999908447266,
+    "oil_chg": 0.543114450387626
   },
   "intl_data": {
     "S&P500": {
@@ -424,18 +424,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4436.0,
-      "chg_pct": 2.02391904323827,
+      "price": 4427.2998046875,
+      "chg_pct": 1.8238225549103033,
       "signal": -1,
-      "note": "+2.02%(避險↑)",
+      "note": "+1.82%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.73999786376953,
-      "chg_pct": 0.5763651474514507,
+      "price": 90.70999908447266,
+      "chg_pct": 0.543114450387626,
       "signal": 1,
-      "note": "+0.58%",
+      "note": "+0.54%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,49 +448,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77120.4375,
-      "chg_pct": -0.36585818816625193,
+      "price": 77103.359375,
+      "chg_pct": -0.387921915801747,
       "signal": -1,
-      "note": "-0.37%",
+      "note": "-0.39%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump urges Canadian companies to immediately move to US, says ‘I don’t want Can",
+      "title": "Heads or tails? $1 coin with Trump's face and gold finish go on sale - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says renewed US campaign against Iran won't last long - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Opinion | Wondering How Nuts Trump’s Tariffs Are? Consider Aluminum. - The New Y",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump pauses new tariffs on Canada for three days, saying deal close - bbc.com",
+      "title": "White House defends Trump’s beef import plan after report on billionaire’s influ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
+      "title": "Canadian PM tells Trump to 'stop trying to be tough' in trade fight - Fox News",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "President Trump Says the U.S. Does Not Need Canadian Goods Amid Ongoing Trade Wa",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada 'wants the benefits' of being a U.S. state 'without being one'",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -518,25 +518,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (NYSE:TSM) Combines Strong Growth with a Favorable Technica",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan’s six-year hunt for China’s undercover chip labs - Rest of World",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Micron Taiwan Unit Reportedly Plans Record Bonuses To Avert Strike: MU Stock Dip",
+      "title": "The Firm That Filed a Bet Against Taiwan Semiconductor Then Launched a Foundry F",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (NYSE:TSM) Combines Strong Growth with a Favorable Technica",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
       "title": "Taiwan's chip prowess is built on democracy and rule of law, president says - Re",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Will the US Fed Hike Interest Rates in September? - Morningstar",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "BofA says the coming jobs report is just an appetizer for the next Fed meeting -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Rising Treasury yields could rattle US stocks as earnings season ends - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
