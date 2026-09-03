@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-03 15:58",
+  "generated_at": "2026-09-03 18:05",
   "mode": "morning",
   "signal_date": "2026-09-03",
   "trade_date": "2026-09-04",
   "direction": 1,
-  "total_score": 11,
-  "tw_score": 5,
-  "intl_score": 6,
+  "total_score": 16,
+  "tw_score": 7,
+  "intl_score": 9,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 3,
@@ -17,16 +17,16 @@
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 45857.66015625,
   "tw_chg_pct": -0.6651369315447186,
-  "tw_ma5": 46214.95703125,
-  "tw_ma10": 45699.721484375,
-  "tw_rsi": 48.54743673047536,
-  "tw_macd": 491.0681543258979,
-  "tw_macds": 401.86702401571597,
+  "tw_ma5": 46286.203125,
+  "tw_ma10": 45839.492578125,
+  "tw_rsi": 50.39976379724056,
+  "tw_macd": 497.60054668077646,
+  "tw_macds": 426.31147654390014,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 46209.94921875,
-  "tw_ma10_p2": 45585.890625,
-  "tw_ma20_p2": 45382.95546875,
-  "tw_ma20": 45445.2583984375,
+  "tw_ma5_p2": 46309.71484375,
+  "tw_ma10_p2": 45747.100390625,
+  "tw_ma20_p2": 45468.9478515625,
+  "tw_ma20": 45541.9958984375,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4471.39990234375,
-    "chg_pct": 2.4070746938498906,
+    "price_usd": 4473.60009765625,
+    "chg_pct": 2.457465079552172,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +2.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 90.4800033569336,
-    "oil_chg": -0.582352232563992
+    "warning": "黃金大漲 +2.5%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 91.87000274658203,
+    "oil_chg": 0.9449517527361996
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.15999984741211,
-      "chg_pct": -0.26315764707211003,
+      "price": 15.319999694824219,
+      "chg_pct": 0.7894729412163299,
       "signal": 1,
-      "note": "VIX=15.2(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25184.130859375,
-      "chg_pct": -0.5020703214824211,
+      "price": 25213.310546875,
+      "chg_pct": -0.386786672778089,
       "signal": -1,
-      "note": "-0.50%",
+      "note": "-0.39%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.2969970703125,
-      "chg_pct": -0.2641628110993746,
-      "signal": 0,
-      "note": "-0.26%(中性)",
+      "price": 99.21600341796875,
+      "chg_pct": -0.3455144124753018,
+      "signal": 1,
+      "note": "-0.35%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4471.39990234375,
-      "chg_pct": 2.4070746938498906,
+      "price": 4473.60009765625,
+      "chg_pct": 2.457465079552172,
       "signal": -1,
-      "note": "+2.41%(避險↑)",
+      "note": "+2.46%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.4800033569336,
-      "chg_pct": -0.582352232563992,
-      "signal": -1,
-      "note": "-0.58%",
+      "price": 91.87000274658203,
+      "chg_pct": 0.9449517527361996,
+      "signal": 1,
+      "note": "+0.94%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77648.9921875,
-      "chg_pct": 0.45085831355543265,
+      "price": 77608.8203125,
+      "chg_pct": 0.39888984351952067,
       "signal": 1,
-      "note": "+0.45%",
+      "note": "+0.40%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,21 +464,27 @@
     },
     {
       "label": "川普動態",
-      "title": "Iowa farmers grow impatient with Trump on tariffs, Iran war - csmonitor.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Inside House Republicans' beef with Trump's trade agenda - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump meets with travel industry CEOs on push to boost foreign tourism - reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump Puts Tariffs of Up to 100% on Foreign-Made Drones - nytimes.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Iowa farmers grow impatient with Trump on tariffs, Iran war - The Christian Scie",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Iran strikes Kuwait as Trump says renewed Mideast hostilities will not last 'too",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -487,20 +493,8 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump Says Iran Strikes to Be Short, Asserts Hormuz Control - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "關稅/貿易",
       "title": "Why Trump's trade war with Canada is poised to drag past the midterms - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump’s reignites trade wars as Americans’ opinions of tariffs continue to drop ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -517,8 +511,26 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "What Trump’s trade war with Canada could mean for US auto buyers, workers and bu",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM): The Powerhouse of Adva",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan's chip prowess is built on democracy and rule of law, president says - Re",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Why is Taiwan hiding the backers of its $20B US pledge? - thestreet.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -529,22 +541,16 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "TSMC’s Quarterly Chipmaking Tool Needs Almost Doubled This Year - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan says its companies plan to invest another $20 billion in US - reuters.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "聯準會",
+      "title": "Markets see Warsh endorsing a rate hike in September. Not everyone is convinced ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "New York Fed's Williams says yield surge due to strong economic prospects - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Will the US Fed Hike Interest Rates in September? - Morningstar",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -554,15 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Why bond yields are rising and why everyone should care - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Bond Market’s Signal Is About to Get Louder - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "US borrowing costs hit fresh highs over inflation fears - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
