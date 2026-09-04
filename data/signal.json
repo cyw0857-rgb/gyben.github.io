@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-04 07:39",
+  "generated_at": "2026-09-04 10:59",
   "mode": "morning",
-  "signal_date": "2026-09-02",
+  "signal_date": "2026-09-04",
   "trade_date": "2026-09-07",
   "direction": 1,
-  "total_score": 12,
+  "total_score": 17,
   "tw_score": 7,
-  "intl_score": 5,
+  "intl_score": 10,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": 2,
@@ -15,18 +15,18 @@
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 46164.71875,
-  "tw_chg_pct": -1.6699071260597553,
-  "tw_ma5": 46309.71484375,
-  "tw_ma10": 45747.100390625,
-  "tw_rsi": 51.248174660716664,
-  "tw_macd": 532.5731631333183,
-  "tw_macds": 408.489209009681,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46243.2953125,
-  "tw_ma10_p2": 45602.563671875,
-  "tw_ma20_p2": 45391.2919921875,
-  "tw_ma20": 45468.9478515625,
+  "tw_last_close": 46098.9609375,
+  "tw_chg_pct": 0.5261951447758539,
+  "tw_ma5": 46239.70546875,
+  "tw_ma10": 45926.959765625,
+  "tw_rsi": 52.00422658485595,
+  "tw_macd": 483.77677585166384,
+  "tw_macds": 437.8020251987158,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 46286.203125,
+  "tw_ma10_p2": 45839.492578125,
+  "tw_ma20_p2": 45541.9958984375,
+  "tw_ma20": 45635.6484375,
   "stats_real": {
     "total": 6,
     "wins": 3,
@@ -252,30 +252,30 @@
     "streak": -3
   },
   "stats_real_v60": {
-    "total": 12,
+    "total": 13,
     "wins": 4,
-    "losses": 8,
-    "win_rate": 33.33333333333333,
-    "total_pnl": -19638.0,
-    "avg_pnl": -1636.5,
+    "losses": 9,
+    "win_rate": 30.76923076923077,
+    "total_pnl": -24386.0,
+    "avg_pnl": -1875.8461538461538,
     "avg_win": 13064.75,
-    "avg_lose": -8987.125,
+    "avg_lose": -8516.111111111111,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_v50": {
-    "total": 33,
+    "total": 34,
     "wins": 16,
-    "losses": 17,
-    "win_rate": 48.484848484848484,
-    "total_pnl": 19610.0,
-    "avg_pnl": 594.2424242424242,
+    "losses": 18,
+    "win_rate": 47.05882352941176,
+    "total_pnl": 14862.0,
+    "avg_pnl": 437.11764705882354,
     "avg_win": 7827.375,
-    "avg_lose": -6213.411764705882,
+    "avg_lose": -6132.0,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4521.0,
-    "chg_pct": 3.543050230916794,
+    "price_usd": 4521.2001953125,
+    "chg_pct": 3.547635241599869,
     "signal": -2,
     "level": "danger",
     "warning": "黃金大漲 +3.5%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 91.79000091552734,
-    "oil_chg": 0.8570473145680355
+    "oil_usd": 92.01000213623047,
+    "oil_chg": 1.0987803280161739
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64325.640625,
-      "chg_pct": -2.8538749751638948,
-      "signal": -1,
-      "note": "-2.85%",
+      "price": 64769.73828125,
+      "chg_pct": 0.8646925248740686,
+      "signal": 1,
+      "note": "+0.86%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6562.72021484375,
-      "chg_pct": -3.9948447533014595,
-      "signal": -1,
-      "note": "-3.99%",
+      "price": 6642.7001953125,
+      "chg_pct": 0.960869476484765,
+      "signal": 1,
+      "note": "+0.96%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25311.2109375,
-      "chg_pct": -0.07311381095368569,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 25779.080078125,
+      "chg_pct": 2.2439319509358238,
+      "signal": 1,
+      "note": "+2.24%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3967.407470703125,
+      "chg_pct": 0.6422885734825841,
+      "signal": 1,
+      "note": "+0.64%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46164.71875,
-      "chg_pct": -1.6699071260597502,
-      "signal": -1,
-      "note": "-1.67%",
+      "price": 46098.9609375,
+      "chg_pct": 0.5261951447758566,
+      "signal": 1,
+      "note": "+0.53%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.00299835205078,
-      "chg_pct": -0.5594608479325842,
+      "price": 98.99099731445312,
+      "chg_pct": -0.5715149237581619,
       "signal": 1,
-      "note": "-0.56%(偏多)",
+      "note": "-0.57%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4521.0,
-      "chg_pct": 3.543050230916794,
+      "price": 4521.2001953125,
+      "chg_pct": 3.547635241599869,
       "signal": -1,
-      "note": "+3.54%(避險↑)",
+      "note": "+3.55%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.79000091552734,
-      "chg_pct": 0.8570473145680355,
+      "price": 92.01000213623047,
+      "chg_pct": 1.0987803280161739,
       "signal": 1,
-      "note": "+0.86%",
+      "note": "+1.10%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,20 +448,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81328.3828125,
-      "chg_pct": 5.210713347599228,
+      "price": 80803.84375,
+      "chg_pct": 4.5321417710373515,
       "signal": 1,
-      "note": "+5.21%",
+      "note": "+4.53%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump says he threatened Canada tariffs over friend’s Gulfstream jet tiff - the-",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
     {
       "label": "川普動態",
       "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
@@ -476,6 +470,18 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump says he threatened Canada tariffs over friend’s Gulfstream jet tiff - the-",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -487,12 +493,6 @@
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "關稅/貿易",
       "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
       "sentiment": "⚠️偏空",
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Why Trump's trade war with Canada is poised to drag past the midterms - Politico",
+      "title": "Why Trump's trade war with Canada is poised to drag past the midterms - politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The US-Canada trade war in 5 charts - BBC",
+      "title": "Murray Introduces Bill to End Trump’s Trade War with Canada & Lower Costs, Slams",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,19 +524,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "One Huge Fund Just Bought Taiwan Semiconductor Manufacturing and Dumped Micron S",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan should diversify: US academic - Taipei Times",
+      "title": "Should You Buy Broadcom Stock Instead of Taiwan Semiconductor Stock? - The Motle",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Taiwan’s six-year hunt for China’s undercover chip labs - Rest of World",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan should diversify: US academic - taipeitimes.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Will the US Fed Hike Interest Rates in September? - Morningstar",
+      "title": "New doubts emerge about whether Fed will raise interest rates this month - Marke",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "New doubts emerge about whether Fed will raise interest rates this month - Marke",
+      "title": "Bond yields fall, stocks rally as Fed's Waller comments curb rate hike bets - Re",
       "sentiment": "⚪中性",
       "sent_val": 0
     }

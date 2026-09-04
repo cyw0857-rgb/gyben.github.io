@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-09-04 07:39",
+  "updated": "2026-09-04 10:59",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -4,
   "reasons": [
     "MA5<MA10 短線偏空",
-    "RSI=43 中性偏空",
+    "RSI=40 中性偏空",
     "MACD死叉（零軸上）",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=43 中性偏空",
+      "text": "RSI=40 中性偏空",
       "score": -1
     },
     {
@@ -38,31 +38,36 @@
       "score": -1
     }
   ],
-  "rsi": 42.8,
-  "macd": 19.78,
-  "macds": 24.86,
-  "k": 35.1,
-  "d": 49.9,
-  "ma5": 519.3,
-  "ma10": 519.35,
-  "ma20": 509.35,
-  "ma60": 450.15,
-  "last_close": 477.5,
-  "chg_pct": -7.82,
+  "rsi": 40.4,
+  "macd": 15.86,
+  "macds": 23.06,
+  "k": 26.8,
+  "d": 42.2,
+  "ma5": 507.3,
+  "ma10": 514.55,
+  "ma20": 510.5,
+  "ma60": 452.5,
+  "last_close": 480.0,
+  "chg_pct": 0.52,
   "ma_bull": false,
   "ma_bear": false,
   "retail": {
-    "mood": "偏熱（增溫）",
-    "vol_ratio": 1.37,
+    "mood": "冷清（量縮）",
+    "vol_ratio": 0.49,
     "score": 0,
-    "signals": []
+    "signals": [
+      {
+        "icon": "💤",
+        "text": "量縮 0.5倍，觀望氣氛濃"
+      }
+    ]
   },
   "forecast": [
     {
       "month": "2026-10",
-      "price": 484.66,
-      "price_high": 618.65,
-      "price_low": 350.67,
+      "price": 487.2,
+      "price_high": 621.84,
+      "price_low": 352.56,
       "chg_pct": 1.5,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -70,9 +75,9 @@
     },
     {
       "month": "2026-11",
-      "price": 491.93,
-      "price_high": 684.27,
-      "price_low": 299.6,
+      "price": 494.51,
+      "price_high": 687.77,
+      "price_low": 301.24,
       "chg_pct": 3.0,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -80,9 +85,9 @@
     },
     {
       "month": "2026-12",
-      "price": 499.31,
-      "price_high": 699.04,
-      "price_low": 299.59,
+      "price": 501.93,
+      "price_high": 702.7,
+      "price_low": 301.16,
       "chg_pct": 4.6,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -90,9 +95,9 @@
     },
     {
       "month": "2027-01",
-      "price": 506.8,
-      "price_high": 709.52,
-      "price_low": 304.08,
+      "price": 509.45,
+      "price_high": 713.24,
+      "price_low": 305.67,
       "chg_pct": 6.1,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -100,9 +105,9 @@
     },
     {
       "month": "2027-02",
-      "price": 514.4,
-      "price_high": 720.16,
-      "price_low": 308.64,
+      "price": 517.1,
+      "price_high": 723.93,
+      "price_low": 310.26,
       "chg_pct": 7.7,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -110,9 +115,9 @@
     },
     {
       "month": "2027-03",
-      "price": 522.12,
-      "price_high": 730.97,
-      "price_low": 313.27,
+      "price": 524.85,
+      "price_high": 734.79,
+      "price_low": 314.91,
       "chg_pct": 9.3,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-3.2）",
@@ -120,22 +125,22 @@
     }
   ],
   "trend_label": "月線 MA5<MA10 偏空 📉",
-  "support": 393.02,
+  "support": 394.61,
   "resistance": 514.7,
   "weekly": {
-    "proj_center": 477.5,
-    "proj_high": 541.91,
-    "proj_low": 413.09,
-    "support": 393.02,
+    "proj_center": 480.0,
+    "proj_high": 544.73,
+    "proj_low": 415.27,
+    "support": 394.61,
     "resistance": 514.7,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
   "daily_vol_pct": 6.03,
   "slope_per_day": -0.05,
-  "model_accuracy": 54.2,
-  "model_samples": 131,
-  "total_return": -44.3,
+  "model_accuracy": 54.1,
+  "model_samples": 133,
+  "total_return": -44.0,
   "ipo_date": "2000-08-18",
   "model_score": -3.2,
   "model_threshold": 3.5,
