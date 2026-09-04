@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-09-04 10:59",
+  "updated": "2026-09-04 15:55",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -4,
   "reasons": [
     "MA5<MA10 短線偏空",
-    "RSI=40 中性偏空",
+    "RSI=44 中性偏空",
     "MACD死叉（零軸上）",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=40 中性偏空",
+      "text": "RSI=44 中性偏空",
       "score": -1
     },
     {
@@ -38,111 +38,106 @@
       "score": -1
     }
   ],
-  "rsi": 40.4,
-  "macd": 15.86,
-  "macds": 23.06,
-  "k": 26.8,
-  "d": 42.2,
-  "ma5": 507.3,
-  "ma10": 514.55,
-  "ma20": 510.5,
-  "ma60": 452.5,
-  "last_close": 480.0,
-  "chg_pct": 0.52,
+  "rsi": 44.3,
+  "macd": 17.14,
+  "macds": 23.32,
+  "k": 32.2,
+  "d": 44.0,
+  "ma5": 510.5,
+  "ma10": 516.15,
+  "ma20": 511.3,
+  "ma60": 452.77,
+  "last_close": 496.0,
+  "chg_pct": 3.87,
   "ma_bull": false,
   "ma_bear": false,
   "retail": {
-    "mood": "冷清（量縮）",
-    "vol_ratio": 0.49,
+    "mood": "量能正常",
+    "vol_ratio": 0.87,
     "score": 0,
-    "signals": [
-      {
-        "icon": "💤",
-        "text": "量縮 0.5倍，觀望氣氛濃"
-      }
-    ]
+    "signals": []
   },
   "forecast": [
     {
       "month": "2026-10",
-      "price": 487.2,
-      "price_high": 621.84,
-      "price_low": 352.56,
+      "price": 503.44,
+      "price_high": 642.87,
+      "price_low": 364.01,
       "chg_pct": 1.5,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     },
     {
       "month": "2026-11",
-      "price": 494.51,
-      "price_high": 687.77,
-      "price_low": 301.24,
+      "price": 510.99,
+      "price_high": 711.13,
+      "price_low": 310.85,
       "chg_pct": 3.0,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     },
     {
       "month": "2026-12",
-      "price": 501.93,
-      "price_high": 702.7,
-      "price_low": 301.16,
+      "price": 518.66,
+      "price_high": 726.12,
+      "price_low": 311.19,
       "chg_pct": 4.6,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     },
     {
       "month": "2027-01",
-      "price": 509.45,
-      "price_high": 713.24,
-      "price_low": 305.67,
+      "price": 526.44,
+      "price_high": 737.01,
+      "price_low": 315.86,
       "chg_pct": 6.1,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     },
     {
       "month": "2027-02",
-      "price": 517.1,
-      "price_high": 723.93,
-      "price_low": 310.26,
+      "price": 534.33,
+      "price_high": 748.07,
+      "price_low": 320.6,
       "chg_pct": 7.7,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     },
     {
       "month": "2027-03",
-      "price": 524.85,
-      "price_high": 734.79,
-      "price_low": 314.91,
+      "price": 542.35,
+      "price_high": 759.29,
+      "price_low": 325.41,
       "chg_pct": 9.3,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-3.2）",
-      "score": -3.2
+      "model_note": "⚪ 觀望（分-2.8）",
+      "score": -2.8
     }
   ],
   "trend_label": "月線 MA5<MA10 偏空 📉",
   "support": 394.61,
   "resistance": 514.7,
   "weekly": {
-    "proj_center": 480.0,
-    "proj_high": 544.73,
-    "proj_low": 415.27,
+    "proj_center": 496.0,
+    "proj_high": 563.03,
+    "proj_low": 428.97,
     "support": 394.61,
     "resistance": 514.7,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
-  "daily_vol_pct": 6.03,
+  "daily_vol_pct": 6.04,
   "slope_per_day": -0.05,
   "model_accuracy": 54.1,
   "model_samples": 133,
-  "total_return": -44.0,
+  "total_return": -42.1,
   "ipo_date": "2000-08-18",
-  "model_score": -3.2,
+  "model_score": -2.8,
   "model_threshold": 3.5,
   "model_factors": "死叉↓"
 }
