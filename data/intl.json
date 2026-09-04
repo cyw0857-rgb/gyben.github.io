@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-04 07:43",
+  "updated": "2026-09-04 09:22",
   "data": {
+    "S&P500": {
+      "category": "美股",
+      "price": 7747.8,
+      "chg_pct": 1.05,
+      "signal": 1,
+      "note": "+1.05%",
+      "desc": "美股漲→台股漲"
+    },
     "道瓊": {
       "category": "美股",
       "price": 53687.54,
@@ -35,18 +43,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64269.48,
-      "chg_pct": -0.45,
-      "signal": -1,
-      "note": "-0.45%",
+      "price": 64793.45,
+      "chg_pct": 0.36,
+      "signal": 1,
+      "note": "+0.36%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6598.23,
-      "chg_pct": -0.99,
+      "price": 6646.12,
+      "chg_pct": -0.27,
       "signal": -1,
-      "note": "-0.99%",
+      "note": "-0.27%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -67,34 +75,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 45888.45,
-      "chg_pct": -0.84,
-      "signal": -1,
-      "note": "-0.84%",
+      "price": 46562.61,
+      "chg_pct": 0.61,
+      "signal": 1,
+      "note": "+0.61%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.0,
-      "chg_pct": -0.42,
+      "price": 98.97,
+      "chg_pct": -0.45,
       "signal": 1,
-      "note": "-0.42%(偏多)",
+      "note": "-0.45%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4521.3,
-      "chg_pct": 0.99,
+      "price": 4527.3,
+      "chg_pct": 1.12,
       "signal": 1,
-      "note": "+0.99%",
+      "note": "+1.12%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.77,
-      "chg_pct": 0.78,
+      "price": 91.69,
+      "chg_pct": 0.69,
       "signal": 1,
-      "note": "+0.78%",
+      "note": "+0.69%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81227.18,
-      "chg_pct": 4.57,
+      "price": 80921.8,
+      "chg_pct": 4.18,
       "signal": 1,
-      "note": "+4.57%",
+      "note": "+4.18%",
       "desc": "風險偏好指標"
-    },
-    "S&P500": {
-      "category": "美股",
-      "price": 7747.8,
-      "chg_pct": 1.05,
-      "signal": 1,
-      "note": "+1.05%",
-      "desc": "美股漲→台股漲"
     }
   }
 }
