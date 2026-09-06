@@ -262,13 +262,13 @@ tr:hover td{background:rgba(255,255,255,.014)}
   </div>
   <div style="text-align:right">
     <div style="font-size:.6rem;color:var(--muted);margin-bottom:5px">
-      資料：2026-09-06 07:26 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
+      資料：2026-09-07 00:31 &nbsp;·&nbsp; 現在：<span id="live-clock" style="color:#60a5fa">──:──:──</span>
     </div>
     <div style="display:flex;gap:5px;justify-content:flex-end;flex-wrap:wrap">
       <span class="chip chip-b">台指 46,551</span>
       <span class="chip chip-g">RSI 55</span>
       <span class="chip chip-r">
-        多 +12
+        多 +10
       </span>
     </div>
   </div>
@@ -286,15 +286,15 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <!-- ══════════════ FULL-WIDTH ALERTS ════════════════ -->
 
 
-        <div style="background:linear-gradient(135deg,#14532d,#22c55e);color:#fff;border-radius:14px;
+        <div style="background:#1f2937;color:#9ca3af;border-radius:14px;
                     padding:14px 18px;margin-bottom:14px">
           <div style="font-size:.7rem;opacity:.8;letter-spacing:.1em">🥇 黃金貴金屬即時警示
             <span id="gold-live" style="font-size:.6rem;opacity:.85;margin-left:6px">伺服器資料</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;margin:8px 0">
             <div style="flex:1">
               <div style="font-size:.62rem;opacity:.75;letter-spacing:.05em">🥇 黃金</div>
-              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,430</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
-              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▼ -1.38%</div>
+              <div style="font-size:1.25rem;font-weight:800;margin-top:4px"><span id="gold-price">4,477</span><span style="font-size:.72rem;opacity:.8"> / oz</span></div>
+              <div id="gold-chg" style="font-size:.78rem;opacity:.9">▼ -0.34%</div>
             </div>
             
             <div style="flex:1;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">
@@ -303,13 +303,9 @@ tr:hover td{background:rgba(255,255,255,.014)}
               <div id="oil-chg" style="font-size:.78rem;opacity:.9">▲ +0.20%</div>
             </div>
           </div>
-          <div style="font-size:.88rem;opacity:.9">黃金下跌 -1.4%，風險情緒改善 → 明日偏多 ✅</div>
+          <div style="font-size:.88rem;opacity:.9">黃金小幅變動 -0.3%，影響中性</div>
         </div>
-<div class="card">
-              <div class="stitle">📅 今日 2026-09-06</div>
-              <div style="color:#9ca3af;font-size:.9rem;padding:4px 0">
-                尚未產生今日記錄，請執行早盤信號程式</div>
-            </div>
+
 
 <!-- ══════════════ 台指期主力區 ═══════════════════════ -->
 
@@ -318,14 +314,14 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div id="hero-sig-label" style="font-size:1.95rem;font-weight:900;line-height:1.1;letter-spacing:-.5px">
     🟢 明天做多（買進）
   </div>
-  <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-09-07</div>
+  <div style="font-size:.85rem;opacity:.85;margin-top:6px">2026-09-08</div>
   <div id="hero-sig-action" style="background:rgba(0,0,0,.28);border-radius:10px;
               padding:9px 14px;margin-top:11px;font-size:.8rem;line-height:1.5;opacity:.92">
     8:45 買進 1口 &ensp;｜&ensp; 13:30 賣出平倉
   </div>
-  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +9 ＋ 國際市場 +3 ＋ 新聞 -2＋ 黃金 +1 ＝ 總分 +12（門檻 ±6）</div>
+  <div id="hero-score-detail" style="font-size:.67rem;opacity:.55;margin-top:8px;line-height:1.4">台灣技術 +9 ＋ 國際市場 +3 ＋ 新聞 -2 ＝ 總分 +10（門檻 ±6）</div>
   <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
-    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-09-06 07:26 更新</span>
+    <span style="font-size:.58rem;opacity:.45" id="hero-live-ts">2026-09-07 00:31 更新</span>
     <button onclick="window.location.reload()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.75);border-radius:5px;padding:2px 8px;font-size:.58rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 </div>
@@ -436,7 +432,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   var V_RSI=55.35243997835255, V_MA5=46330.1390625, V_MA10=45972.1765625, V_MA20=45658.2568359375;
   var V_MA5P=46286.203125, V_MA10P=45839.492578125, V_MA20P=45541.9958984375;
   var V_MACD=519.8471551251641, V_MACDS=445.0161010534158, V_FUT=-880;
-  var TRADE_DATE_H='2026-09-07';
+  var TRADE_DATE_H='2026-09-08';
   function sgn(v){return (v>=0?'+':'')+v;}
   function pad2(n){return n<10?'0'+n:''+n;}
   function todayStr_(){var d=new Date();return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());}
@@ -615,7 +611,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card" style="padding:12px">
 
   <div style="display:flex;justify-content:flex-end;align-items:center;gap:6px;margin-bottom:8px">
-    <span style="font-size:.6rem;color:#64748b">2026-09-06 07:26</span>
+    <span style="font-size:.6rem;color:#64748b">2026-09-07 00:31</span>
     <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄 刷新</button>
   </div>
 
@@ -1684,7 +1680,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
     <h2 style="margin:0">💰 定期定額追蹤</h2>
     <span style="font-size:.62rem;color:#94a3b8;background:#0b1628;border:1px solid #1e3050;
-                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-09-06 07:28</span>
+                 border-radius:999px;padding:2px 9px">📅 資料時間 2026-09-07 00:33</span>
   </div>
   <div style="font-size:.7rem;color:#94a3b8;margin-top:2px">
     每月 25 號投入 NT$45,000（009816 + 00992A 各 NT$22,500）
@@ -1708,7 +1704,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">✈️ 長榮航太 (2645.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-09-06 07:26 更新</span>
+      <span id="ev-updated" style="font-size:.6rem;color:#64748b">2026-09-07 00:31 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -1894,7 +1890,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
               padding:12px 16px;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:.78rem;font-weight:700;color:#f1f5f9">💾 南亞科 (2408.TW)</div>
     <div style="display:flex;align-items:center;gap:6px">
-      <span id="n2_ev-updated" style="font-size:.6rem;color:#64748b">2026-09-06 07:27 更新</span>
+      <span id="n2_ev-updated" style="font-size:.6rem;color:#64748b">2026-09-07 00:32 更新</span>
       <button onclick="window.location.reload()" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#60a5fa;border-radius:5px;padding:2px 8px;font-size:.6rem;cursor:pointer;line-height:1.6">🔄</button>
     </div>
   </div>
@@ -2050,7 +2046,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
   <div style="background:#080f1e;border-radius:10px;padding:10px;margin-bottom:14px">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
       <div style="font-size:.6rem;color:#6b7280">📅 月線方向預測（MA5/MA10 交叉模型）</div>
-      <div style="font-size:.6rem;color:#f59e0b">準確率 54% / 132筆</div>
+      <div style="font-size:.6rem;color:#f59e0b">準確率 54% / 131筆</div>
     </div>
     <div style="font-size:.6rem;color:#475569;margin-bottom:6px">
       月線 MA5&lt;MA10 偏空 📉 · 上市(2000-08-18)累計 <span style="color:#ef4444;font-weight:700">-42.1%</span>
@@ -2064,7 +2060,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
       <tr><td style="color:#94a3b8;padding:4px 3px">2026-10</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">364.01~642.87</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-11</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">310.85~711.13</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2026-12</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">311.19~726.12</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2027-01</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">315.86~737.01</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2027-02</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">320.6~748.07</td></tr><tr><td style="color:#94a3b8;padding:4px 3px">2027-03</td><td style="color:#9ca3af;font-weight:700;padding:4px 3px">─ ⚪ 觀望（分-1.8）</td><td style="color:#6b7280;font-size:.68rem;padding:4px 3px">325.41~759.29</td></tr>
     </table>
     <div style="font-size:.6rem;color:#374155;margin-top:6px">
-      ⚠️ 方向預測（非精確價格）· 每月月底重新判斷 · 54%準確率基於132筆回測
+      ⚠️ 方向預測（非精確價格）· 每月月底重新判斷 · 54%準確率基於131筆回測
     </div>
   </div>
 
@@ -2076,7 +2072,7 @@ tr:hover td{background:rgba(255,255,255,.014)}
 <div class="card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
     <div class="stitle" style="margin-bottom:0">💰 月月配三劍客 ETF（0056 ＋ 00878 ＋ 00919）</div>
-    <span style="font-size:.6rem;color:#475569">2026-09-06 07:28</span>
+    <span style="font-size:.6rem;color:#475569">2026-09-07 00:33</span>
   </div>
   <div style="font-size:.64rem;color:#64748b;margin-bottom:9px">
     三檔季配、除息月份錯開，一年 12 個月月月有息｜自 <b>2026-07-07</b> 起依<b>除息日</b>累計
@@ -2218,7 +2214,7 @@ function toggleAcc(btnEl) {
   tick(); setInterval(tick,1000);
 
   /* 新資料輪詢（每5分鐘） */
-  var SIG_AT='2026-09-06 07:26',STK_AT='2026-09-06 07:26',notified=false;
+  var SIG_AT='2026-09-07 00:31',STK_AT='2026-09-07 00:31',notified=false;
   function showBanner(){
     if(notified) return; notified=true;
     var b=document.getElementById('update-banner');
@@ -2372,7 +2368,7 @@ function toggleAcc(btnEl) {
 
 /* ── 明日→今日 標籤自動切換 ───────────────────────── */
 (function(){
-  var TRADE_DATE='2026-09-07';  /* e.g. "2026-06-17" */
+  var TRADE_DATE='2026-09-08';  /* e.g. "2026-06-17" */
   function todayStr(){
     var d=new Date();
     return d.getFullYear()+'-'
