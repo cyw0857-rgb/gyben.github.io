@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07 04:43",
+  "generated_at": "2026-09-07 06:22",
   "mode": "morning",
   "signal_date": "2026-09-04",
   "trade_date": "2026-09-08",
   "direction": 1,
-  "total_score": 10,
+  "total_score": 9,
   "tw_score": 9,
   "intl_score": 3,
   "news_score": -2,
@@ -326,12 +326,12 @@
   ],
   "gold": {
     "price_usd": 4476.60009765625,
-    "chg_pct": -0.33617777232791124,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "chg_pct": 1.0564877654115912,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
     "oil_usd": 91.4800033569336,
-    "oil_chg": 0.19715257301113057
+    "oil_chg": 0.0
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.16000366210938,
-      "chg_pct": 0.1616198607165404,
+      "price": 99.16799926757812,
+      "chg_pct": 0.008063337205992107,
       "signal": 0,
-      "note": "+0.16%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
       "price": 4476.60009765625,
-      "chg_pct": -0.33617777232791124,
-      "signal": 0,
-      "note": "-0.34%()",
+      "chg_pct": 1.0564877654115912,
+      "signal": -1,
+      "note": "+1.06%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
       "price": 91.4800033569336,
-      "chg_pct": 0.19715257301113057,
+      "chg_pct": 0.0,
       "signal": 0,
-      "note": "+0.20%",
+      "note": "+0.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79926.3828125,
-      "chg_pct": 0.1284272844852265,
+      "price": 79683.0,
+      "chg_pct": -0.17647251688409687,
       "signal": 0,
-      "note": "+0.13%",
+      "note": "-0.18%",
       "desc": "風險偏好指標"
     }
   },
@@ -482,7 +482,7 @@
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - bbc.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Which states stand to suffer most in escalated U.S.-Canada trade war? - financia",
+      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - cbc.ca",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - CBC",
+      "title": "Which states stand to suffer most in escalated U.S.-Canada trade war? - financia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Compound vision - Taipei Times",
+      "title": "Compound vision - taipeitimes.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Citigroup delays Fed rate-cut forecast to 2027 after strong U.S. jobs report - R",
+      "title": "Strong job gains signal Fed hike as Trump levels new rate-cut demand - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
     }
