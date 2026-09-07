@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07 07:20",
+  "generated_at": "2026-09-07 10:58",
   "mode": "morning",
-  "signal_date": "2026-09-04",
+  "signal_date": "2026-09-07",
   "trade_date": "2026-09-08",
-  "direction": 1,
-  "total_score": 9,
+  "direction": 0,
+  "total_score": 7,
   "tw_score": 9,
-  "intl_score": 3,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
@@ -15,18 +15,18 @@
   "veto_msg": "⚠️ 外資期貨(-880口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46551.12890625,
-  "tw_chg_pct": 1.5122200906831251,
-  "tw_ma5": 46330.1390625,
-  "tw_ma10": 45972.1765625,
-  "tw_rsi": 55.35243997835255,
-  "tw_macd": 519.8471551251641,
-  "tw_macds": 445.0161010534158,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 46286.203125,
-  "tw_ma10_p2": 45839.492578125,
-  "tw_ma20_p2": 45541.9958984375,
-  "tw_ma20": 45658.2568359375,
+  "tw_last_close": 47365.5390625,
+  "tw_chg_pct": 1.749496038839693,
+  "tw_ma5": 46577.553125,
+  "tw_ma10": 46232.4984375,
+  "tw_rsi": 65.24156983341129,
+  "tw_macd": 596.316977885559,
+  "tw_macds": 475.27051254491346,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46330.1390625,
+  "tw_ma10_p2": 45972.1765625,
+  "tw_ma20_p2": 45658.2568359375,
+  "tw_ma20": 45780.095703125,
   "stats_real": {
     "total": 7,
     "wins": 4,
@@ -376,50 +376,50 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65020.94140625,
-      "chg_pct": 1.255886416292762,
+      "price": 66460.109375,
+      "chg_pct": 2.2133914668477304,
       "signal": 1,
-      "note": "+1.26%",
+      "note": "+2.21%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6687.2099609375,
-      "chg_pct": 1.6373631470655354,
+      "price": 6893.41015625,
+      "chg_pct": 3.083501138995076,
       "signal": 1,
-      "note": "+1.64%",
+      "note": "+3.08%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25650.869140625,
-      "chg_pct": 1.7354269798744542,
-      "signal": 1,
-      "note": "+1.74%",
+      "price": 25417.359375,
+      "chg_pct": -0.9103386101454743,
+      "signal": -1,
+      "note": "-0.91%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3930.115966796875,
-      "chg_pct": -0.30369500022047724,
-      "signal": -1,
-      "note": "-0.30%",
+      "price": 3929.08251953125,
+      "chg_pct": -0.026295592149340078,
+      "signal": 0,
+      "note": "-0.03%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46551.12890625,
-      "chg_pct": 1.5122200906831185,
+      "price": 47328.171875,
+      "chg_pct": 1.6692247578246666,
       "signal": 1,
-      "note": "+1.51%",
+      "note": "+1.67%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.14600372314453,
-      "chg_pct": -0.014118534134537704,
+      "price": 99.19200134277344,
+      "chg_pct": 0.03226873687207146,
       "signal": 0,
-      "note": "-0.01%(中性)",
+      "note": "+0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80268.7265625,
-      "chg_pct": 0.5573012066116269,
-      "signal": 1,
-      "note": "+0.56%",
+      "price": 79909.828125,
+      "chg_pct": 0.10768826483698729,
+      "signal": 0,
+      "note": "+0.11%",
       "desc": "風險偏好指標"
     }
   },
@@ -465,12 +465,6 @@
     {
       "label": "川普動態",
       "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says ‘Canada thinks they’re a state’ as he defends bitter trade war with U",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -493,6 +487,12 @@
       "sent_val": -1
     },
     {
+      "label": "川普動態",
+      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "關稅/貿易",
       "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
       "sentiment": "⚠️偏空",
@@ -500,19 +500,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - cbc.ca",
+      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - CBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Facing tough reelection bid, Sen. Susan Collins navigates Trump's tariffs on Can",
+      "title": "Which states stand to suffer most in escalated U.S.-Canada trade war? - Financia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Which states stand to suffer most in escalated U.S.-Canada trade war? - financia",
+      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -525,18 +525,18 @@
     {
       "label": "台股/半導體",
       "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029 -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan flexes chip diplomacy muscles as it faces pressure to share AI wealth wit",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "U.S. and Taiwan must stop telling China’s chips story - Washington Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan’s six-year hunt for China’s undercover chip labs - Rest of World",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
