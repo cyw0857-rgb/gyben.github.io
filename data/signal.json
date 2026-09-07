@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07 20:17",
+  "generated_at": "2026-09-08 02:26",
   "mode": "morning",
-  "signal_date": "2026-09-07",
-  "trade_date": "2026-09-08",
+  "signal_date": "2026-09-04",
+  "trade_date": "2026-09-09",
   "direction": 1,
-  "total_score": 10,
+  "total_score": 12,
   "tw_score": 9,
-  "intl_score": 1,
+  "intl_score": 3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
@@ -15,18 +15,18 @@
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47326.26953125,
-  "tw_chg_pct": 1.6651381893682204,
-  "tw_ma5": 46569.69921875,
-  "tw_ma10": 46228.571484375,
-  "tw_rsi": 65.03809726229608,
-  "tw_macd": 593.1843657060745,
-  "tw_macds": 474.64399010901656,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46330.1390625,
-  "tw_ma10_p2": 45972.1765625,
-  "tw_ma20_p2": 45658.2568359375,
-  "tw_ma20": 45778.1322265625,
+  "tw_last_close": 46551.12890625,
+  "tw_chg_pct": 1.5122200906831251,
+  "tw_ma5": 46330.1390625,
+  "tw_ma10": 45972.1765625,
+  "tw_rsi": 55.35243997835255,
+  "tw_macd": 519.8422557874801,
+  "tw_macds": 445.00889620975204,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 46286.203125,
+  "tw_ma10_p2": 45839.492578125,
+  "tw_ma20_p2": 45541.9958984375,
+  "tw_ma20": 45658.2568359375,
   "stats_real": {
     "total": 7,
     "wins": 4,
@@ -368,58 +368,58 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.260000228881836,
-      "chg_pct": 5.024091598942991,
+      "price": 15.300000190734863,
+      "chg_pct": 5.299383839742281,
       "signal": 1,
       "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66399.84375,
-      "chg_pct": 2.1207049820066985,
+      "price": 65020.94140625,
+      "chg_pct": 1.255886416292762,
       "signal": 1,
-      "note": "+2.12%",
+      "note": "+1.26%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6995.39013671875,
-      "chg_pct": 4.608501566145611,
+      "price": 6687.2099609375,
+      "chg_pct": 1.6373631470655354,
       "signal": 1,
-      "note": "+4.61%",
+      "note": "+1.64%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25413.119140625,
-      "chg_pct": -0.9268691781810208,
-      "signal": -1,
-      "note": "-0.93%",
+      "price": 25650.869140625,
+      "chg_pct": 1.7354269798744542,
+      "signal": 1,
+      "note": "+1.74%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3932.69921875,
-      "chg_pct": 0.06572966230384299,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "+0.07%",
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47326.26953125,
-      "chg_pct": 1.6651381893682256,
+      "price": 46551.12890625,
+      "chg_pct": 1.5122200906831185,
       "signal": 1,
-      "note": "+1.67%",
+      "note": "+1.51%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.9540023803711,
-      "chg_pct": -0.20774634341506953,
+      "price": 98.90599822998047,
+      "chg_pct": -0.25615714274722823,
       "signal": 0,
-      "note": "-0.21%(中性)",
+      "note": "-0.26%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79404.390625,
-      "chg_pct": -1.1769205952936788,
+      "price": 79150.359375,
+      "chg_pct": -1.4930762913758413,
       "signal": -1,
-      "note": "-1.18%",
+      "note": "-1.49%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,13 +464,13 @@
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "title": "Untested in court, Trump's new tariffs on Canada raise legal questions - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Untested in court, Trump's new tariffs on Canada raise legal questions - PBS",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - bbc.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -518,7 +518,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029 -",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSM) Raises Guidance as Demand for A",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -530,7 +530,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029 -",
+      "title": "Taiwan flexes chip diplomacy muscles as it faces pressure to share AI wealth wit",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,19 +548,19 @@
     },
     {
       "label": "聯準會",
-      "title": "No, Friday's jobs report hasn't materially boosted Fed rate hike odds - CoinDesk",
+      "title": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Strong job gains signal Fed hike as Trump levels new rate-cut demand - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Five Market Events to Watch This Week: U.S. Inflation, ECB Rates, Iran and Earni",
+      "title": "Fed rate-hike threat heats up as August inflation data looms - thestreet.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
