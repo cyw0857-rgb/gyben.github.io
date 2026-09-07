@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07 18:44",
+  "generated_at": "2026-09-07 20:17",
   "mode": "morning",
   "signal_date": "2026-09-07",
   "trade_date": "2026-09-08",
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.029999732971191,
-      "chg_pct": 3.4411562917335075,
+      "price": 15.260000228881836,
+      "chg_pct": 5.024091598942991,
       "signal": 1,
-      "note": "VIX=15.0(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,8 +416,8 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.947998046875,
-      "chg_pct": -0.21380154034361512,
+      "price": 98.9540023803711,
+      "chg_pct": -0.20774634341506953,
       "signal": 0,
       "note": "-0.21%(中性)",
       "desc": "強美元→外資匯出"
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79436.9765625,
-      "chg_pct": -1.1363656251756231,
+      "price": 79404.390625,
+      "chg_pct": -1.1769205952936788,
       "signal": -1,
-      "note": "-1.14%",
+      "note": "-1.18%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,7 +500,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - cbc.ca",
+      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - CBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -518,6 +518,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029 -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Taiwan Semiconductor (NYSE:TSM) Displays Strong Technical Breakout Setup - Chart",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -530,13 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion Before 2029 -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan flexes chip diplomacy muscles as it faces pressure to share AI wealth wit",
+      "title": "Why Taiwan’s Silicon Shield Is Failing - The National Interest",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Here's Why This Friday Could Be One of the Most Critical Days for the Stock Mark",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Five Market Events to Watch This Week: U.S. Inflation, ECB Rates, Iran and Earni",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
