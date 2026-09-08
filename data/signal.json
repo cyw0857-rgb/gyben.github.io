@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-08 05:38",
+  "generated_at": "2026-09-08 07:50",
   "mode": "morning",
   "signal_date": "2026-09-04",
   "trade_date": "2026-09-09",
   "direction": 1,
-  "total_score": 14,
+  "total_score": 13,
   "tw_score": 9,
-  "intl_score": 3,
-  "news_score": 0,
+  "intl_score": 4,
+  "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1344,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4476.60009765625,
-    "chg_pct": 1.0564877654115912,
+    "price_usd": 4466.2001953125,
+    "chg_pct": 0.821716380647316,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 91.4800033569336,
-    "oil_chg": 0.0
+    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 92.58000183105469,
+    "oil_chg": 1.202446910533176
   },
   "intl_data": {
     "S&P500": {
@@ -424,18 +424,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4476.60009765625,
-      "chg_pct": 1.0564877654115912,
-      "signal": -1,
-      "note": "+1.06%(避險↑)",
+      "price": 4466.2001953125,
+      "chg_pct": 0.821716380647316,
+      "signal": 0,
+      "note": "+0.82%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.4800033569336,
-      "chg_pct": 0.0,
-      "signal": 0,
-      "note": "+0.00%",
+      "price": 92.58000183105469,
+      "chg_pct": 1.202446910533176,
+      "signal": 1,
+      "note": "+1.20%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,12 +448,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79181.71875,
-      "chg_pct": -1.454047844947197,
+      "price": 79168.7734375,
+      "chg_pct": -1.4701589898730223,
       "signal": -1,
-      "note": "-1.45%",
+      "note": "-1.47%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Untested in court, Trump's new tariffs on Canada raise legal questions - PBS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Amer",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate -",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tariffs are an ‘economic weapon.’ But who actually gets hurt? - CBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Which states stand to suffer most in escalated U.S.-Canada trade war? - Financia",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSM) Raises Guidance as Demand for A",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (NYSE:TSM) Displays Strong Technical Breakout Setup - Chart",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Why Taiwan’s Silicon Shield Is Failing - The National Interest",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan flexes chip diplomacy muscles as it faces pressure to share AI wealth wit",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Trump turns up the heat on Warsh as Fed rate hike looms - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "White House ups pressure on Kevin Warsh's Fed as Wall Street expects hike - Fort",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    }
+  ]
 }
