@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-09 04:13",
+  "generated_at": "2026-09-09 06:38",
   "mode": "morning",
   "signal_date": "2026-09-07",
   "trade_date": "2026-09-10",
-  "direction": 1,
-  "total_score": 9,
+  "direction": 0,
+  "total_score": 7,
   "tw_score": 9,
   "intl_score": 1,
-  "news_score": 0,
+  "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -2771,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4405.5,
-    "chg_pct": -0.5485531120793895,
+    "price_usd": 4398.2001953125,
+    "chg_pct": -0.7133417031975601,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.5%，影響中性",
-    "oil_usd": 93.94000244140625,
-    "oil_chg": 2.6891112748152346
+    "warning": "黃金小幅變動 -0.7%，影響中性",
+    "oil_usd": 94.22000122070312,
+    "oil_chg": 2.995187760409999
   },
   "intl_data": {
     "S&P500": {
@@ -368,8 +368,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.65999984741211,
-      "chg_pct": 2.3529389031985053,
+      "price": 15.720000267028809,
+      "chg_pct": 2.7450985036476174,
       "signal": 1,
       "note": "VIX=15.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.85299682617188,
-      "chg_pct": -0.309607527833132,
+      "price": 98.83599853515625,
+      "chg_pct": -0.32674981341991677,
       "signal": 1,
-      "note": "-0.31%(偏多)",
+      "note": "-0.33%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4405.5,
-      "chg_pct": -0.5485531120793895,
+      "price": 4398.2001953125,
+      "chg_pct": -0.7133417031975601,
       "signal": 1,
-      "note": "-0.55%()",
+      "note": "-0.71%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 93.94000244140625,
-      "chg_pct": 2.6891112748152346,
+      "price": 94.22000122070312,
+      "chg_pct": 2.995187760409999,
       "signal": 1,
-      "note": "+2.69%",
+      "note": "+3.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,12 +448,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78593.1328125,
-      "chg_pct": -0.6607004028605599,
+      "price": 78479.96875,
+      "chg_pct": -0.8037362929698921,
       "signal": -1,
-      "note": "-0.66%",
+      "note": "-0.80%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump Says Canada’s Dollar ‘Imbalance’ With US Is Unacceptable - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Amer",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada moving from U.S. reliance as tariffs take effect - PBS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate -",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "ASML and TSMC Announce Initiative to Pioneer Industry Transition to Large-Format",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Reasonable When Cash Flow And E",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Just Set a New Company Record. A New All-Time High Stock Pr",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Stock Of The Day: AI Chip Giant Taiwan Semi Rises Above Early Buy Point - Invest",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Why the Fed's interest rate call could come down to a few hundredths of a percen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "COMMENTARY: Trump's baffling Fed threat could be gift to Warsh: Mike Dolan - Reu",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Will the Fed hike interest rates next week? These 3 economic reports could help ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Bank of Japan Sees ‘Opportunity’ as Fed Leans Toward Interest Rate Decision - pr",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    }
+  ]
 }
