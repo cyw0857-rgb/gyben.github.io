@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08 16:01",
+  "generated_at": "2026-09-08 18:05",
   "mode": "morning",
   "signal_date": "2026-09-08",
   "trade_date": "2026-09-09",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4436.60009765625,
-    "chg_pct": 0.1535124219734288,
+    "price_usd": 4448.60009765625,
+    "chg_pct": 0.42440502500487753,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 94.37000274658203,
-    "oil_chg": 3.1591596891096905
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 93.73999786376953,
+    "oil_chg": 2.4704792565627343
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.720000267028809,
-      "chg_pct": 2.7450985036476174,
+      "price": 15.550000190734863,
+      "chg_pct": 1.6339869077347537,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=15.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25321.30078125,
-      "chg_pct": -0.36130299026623874,
+      "price": 25317.1796875,
+      "chg_pct": -0.3775193930115912,
       "signal": -1,
-      "note": "-0.36%",
+      "note": "-0.38%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.93699645996094,
-      "chg_pct": -0.2248963230259058,
+      "price": 98.94300079345703,
+      "chg_pct": -0.2188411260973602,
       "signal": 0,
       "note": "-0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4436.60009765625,
-      "chg_pct": 0.1535124219734288,
+      "price": 4448.60009765625,
+      "chg_pct": 0.42440502500487753,
       "signal": 0,
-      "note": "+0.15%()",
+      "note": "+0.42%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.37000274658203,
-      "chg_pct": 3.1591596891096905,
+      "price": 93.73999786376953,
+      "chg_pct": 2.4704792565627343,
       "signal": 1,
-      "note": "+3.16%",
+      "note": "+2.47%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78346.40625,
-      "chg_pct": -0.9725551799087354,
+      "price": 78707.5,
+      "chg_pct": -0.5161437998014976,
       "signal": -1,
-      "note": "-0.97%",
+      "note": "-0.52%",
       "desc": "風險偏好指標"
     }
   },
@@ -494,6 +494,12 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Canada’s Retaliatory Tariffs Set to Take Effect as Trump Threatens to Escalate -",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -506,13 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S. Economy Could Feel the Sting From Trade War With Canada - The New York Time",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Canada's retaliatory tariffs take effect as US trade talks stall - The Economic ",
+      "title": "How will a trade war with Canada affect Ohio? - Ohio Capital Journal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,13 +536,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (NYSE:TSM) Displays Strong Technical Breakout Setup - Chart",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Taiwan flexes chip diplomacy muscles as it faces pressure to share AI wealth wit",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "Trump turns up the heat on Warsh as Fed rate hike looms - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "COMMENTARY: Trump's baffling Fed threat could be gift to Warsh - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,15 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "UBS forecasts two US Fed rate hikes in 2026 after strong jobs report - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "White House ups pressure on Kevin Warsh's Fed as Wall Street expects hike - Fort",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Gold Edges Lower as Weaker Dollar Offsets Fed Rate-Hike Expectations - Yahoo Fin",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
