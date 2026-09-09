@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09 18:07",
+  "generated_at": "2026-09-09 19:10",
   "mode": "morning",
   "signal_date": "2026-09-09",
   "trade_date": "2026-09-10",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4434.0,
-    "chg_pct": 0.9126311146701409,
+    "price_usd": 4445.5,
+    "chg_pct": 1.1743576049314641,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 95.38999938964844,
-    "oil_chg": 2.5368167702016167
+    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 94.88999938964844,
+    "oil_chg": 1.9993557290742345
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.049999237060547,
-      "chg_pct": 2.0992300536017128,
+      "price": 16.510000228881836,
+      "chg_pct": 5.025444964590594,
       "signal": 1,
-      "note": "VIX=16.0(低恐慌)",
+      "note": "VIX=16.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.83799743652344,
-      "chg_pct": -0.0020223608268399086,
+      "price": 98.78900146484375,
+      "chg_pct": -0.05159335788777843,
       "signal": 0,
-      "note": "-0.00%(中性)",
+      "note": "-0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4434.0,
-      "chg_pct": 0.9126311146701409,
-      "signal": 0,
-      "note": "+0.91%()",
+      "price": 4445.5,
+      "chg_pct": 1.1743576049314641,
+      "signal": -1,
+      "note": "+1.17%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.38999938964844,
-      "chg_pct": 2.5368167702016167,
+      "price": 94.88999938964844,
+      "chg_pct": 1.9993557290742345,
       "signal": 1,
-      "note": "+2.54%",
+      "note": "+2.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79001.609375,
-      "chg_pct": 0.7177988987800765,
+      "price": 78824.5390625,
+      "chg_pct": 0.4920549896824128,
       "signal": 1,
-      "note": "+0.72%",
+      "note": "+0.49%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,7 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - cnn",
+      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -488,15 +488,9 @@
     },
     {
       "label": "川普動態",
-      "title": "What smart people are saying about Trump’s escalating trade war with Canada - Bu",
+      "title": "What smart people are saying about Trump’s escalating trade war with Canada - bu",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump's next trade weapon - Axios",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -517,8 +511,14 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor Stock Will Surge by 22% Before 2026 Ends - Yaho",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Surge by 22% Before 2026 Ends - fina",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -530,15 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Reasonable When Cash Flow And E",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor (TSM) executive now holds 157,519 shares directly - Stock T",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Stock Of The Day: AI Chip Giant Taiwan Semi Rises Above Early Buy Point - Invest",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Reasonable When Cash Flow And E",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -548,7 +548,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Market Minute: Inflation data set to support Fed rate hike - realeconomy.rsmus.c",
+      "title": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Bl",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "FOMC September 2026 Odds for a Rate Hike Surpass 50% - Yahoo Finance",
+      "title": "FOMC September 2026 Odds for a Rate Hike Surpass 50% - finance.yahoo.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
