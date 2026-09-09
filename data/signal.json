@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-09-09 07:44",
+  "generated_at": "2026-09-09 11:09",
   "mode": "morning",
-  "signal_date": "2026-09-07",
+  "signal_date": "2026-09-09",
   "trade_date": "2026-09-10",
-  "direction": 1,
-  "total_score": 10,
+  "direction": 0,
+  "total_score": 8,
   "tw_score": 9,
-  "intl_score": 1,
-  "news_score": 0,
+  "intl_score": 2,
+  "news_score": -2,
   "psy_score": 1,
-  "inst_score": -1,
+  "inst_score": -2,
   "foreign_fut_net": -2771,
   "foreign_cash_b": 0,
   "veto_msg": "⚠️ 外資期貨(-2,771口) vs 技術面不一致，提高門檻",
   "threshold": 6,
-  "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 47326.26953125,
-  "tw_chg_pct": 1.6651381893682204,
-  "tw_ma5": 46569.69921875,
-  "tw_ma10": 46228.571484375,
-  "tw_rsi": 65.03809726229608,
-  "tw_macd": 593.1843657060745,
-  "tw_macds": 474.64399010901656,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46330.1390625,
-  "tw_ma10_p2": 45972.1765625,
-  "tw_ma20_p2": 45658.2568359375,
-  "tw_ma20": 45778.1322265625,
+  "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
+  "tw_last_close": 47490.48828125,
+  "tw_chg_pct": 0.8166875084998138,
+  "tw_ma5": 46866.265625,
+  "tw_ma10": 46587.990234375,
+  "tw_rsi": 69.63787448379652,
+  "tw_macd": 675.792227226033,
+  "tw_macds": 539.1381812244324,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 46601.11171875,
+  "tw_ma10_p2": 46422.203515625,
+  "tw_ma20_p2": 45877.3853515625,
+  "tw_ma20": 45976.00625,
   "stats_real": {
-    "total": 8,
+    "total": 9,
     "wins": 5,
-    "losses": 3,
-    "win_rate": 62.5,
-    "total_pnl": 1306.0,
-    "avg_pnl": 163.25,
+    "losses": 4,
+    "win_rate": 55.55555555555556,
+    "total_pnl": -1059.0,
+    "avg_pnl": -117.66666666666667,
     "avg_win": 6750.2,
-    "avg_lose": -10815.0,
+    "avg_lose": -8702.5,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 3
+    "streak": -1
   },
   "stats_sim": {
     "total": 789,
@@ -265,17 +265,17 @@
     "streak": 1
   },
   "stats_real_v50": {
-    "total": 36,
+    "total": 37,
     "wins": 18,
-    "losses": 18,
-    "win_rate": 50.0,
-    "total_pnl": 26343.0,
-    "avg_pnl": 731.75,
+    "losses": 19,
+    "win_rate": 48.64864864864865,
+    "total_pnl": 23978.0,
+    "avg_pnl": 648.0540540540541,
     "avg_win": 7595.5,
-    "avg_lose": -6132.0,
+    "avg_lose": -5933.736842105263,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 2
+    "streak": -1
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4402.60009765625,
-    "chg_pct": -0.6140166199490092,
+    "price_usd": 4425.5,
+    "chg_pct": -0.09706544036030833,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 94.41000366210938,
-    "oil_chg": 3.2028860927601905
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 94.30000305175781,
+    "oil_chg": 3.082640567710999
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66399.84375,
-      "chg_pct": 2.1207049820066985,
+      "price": 65495.23046875,
+      "chg_pct": 0.34610796562416735,
       "signal": 1,
-      "note": "+2.12%",
+      "note": "+0.35%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6995.39013671875,
-      "chg_pct": 4.608501566145611,
+      "price": 7096.6298828125,
+      "chg_pct": 2.0434172722509256,
       "signal": 1,
-      "note": "+4.61%",
+      "note": "+2.04%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25413.119140625,
-      "chg_pct": -0.9268691781810208,
-      "signal": -1,
-      "note": "-0.93%",
+      "price": 25278.740234375,
+      "chg_pct": -0.15183149781876745,
+      "signal": 0,
+      "note": "-0.15%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3953.95361328125,
+      "chg_pct": 0.34011963819949287,
+      "signal": 1,
+      "note": "+0.34%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47326.26953125,
-      "chg_pct": 1.6651381893682256,
+      "price": 47490.48828125,
+      "chg_pct": 0.8166875084998193,
       "signal": 1,
-      "note": "+1.67%",
+      "note": "+0.82%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.83599853515625,
-      "chg_pct": -0.32674981341991677,
+      "price": 98.76699829101562,
+      "chg_pct": -0.3963345669418562,
       "signal": 1,
-      "note": "-0.33%(偏多)",
+      "note": "-0.40%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4403.0,
-      "chg_pct": -0.6049890710442747,
-      "signal": 1,
-      "note": "-0.60%()",
+      "price": 4425.5,
+      "chg_pct": -0.09706544036030833,
+      "signal": 0,
+      "note": "-0.10%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.37999725341797,
-      "chg_pct": 3.1700850350532632,
+      "price": 94.30000305175781,
+      "chg_pct": 3.082640567710999,
       "signal": 1,
-      "note": "+3.17%",
+      "note": "+3.08%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,12 +448,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78439.5,
-      "chg_pct": -0.8548875467335333,
+      "price": 78645.046875,
+      "chg_pct": -0.5950826265556572,
       "signal": -1,
-      "note": "-0.85%",
+      "note": "-0.60%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says Canada’s Dollar ‘Imbalance’ With US Is Unacceptable - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'Stupidity causes inflation' and threatens to stop trade with foreign",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump escalates trade war with Canada, moving to ban imports of some motorcycles",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The mystery at the heart of Trump’s trade war with Canada - vox.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada moving from U.S. reliance as tariffs take effect - PBS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "ASML and TSMC Announce Initiative to Pioneer Industry Transition to Large-Format",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Reasonable When Cash Flow And E",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: Taiwan Semiconductor Stock Will Surge by 22% Before 2026 Ends - Yaho",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Just Set a New Company Record. A New All-Time High Stock Pr",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Why the Fed's interest rate call could come down to a few hundredths of a percen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "COMMENTARY: Trump's baffling Fed threat could be gift to Warsh: Mike Dolan - Reu",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Will the Fed hike interest rates next week? These 3 economic reports could help ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "UBS doubles down on Fed rate-hike forecast for 2026 - thestreet.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    }
+  ]
 }
