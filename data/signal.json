@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-10 01:23",
+  "generated_at": "2026-09-10 03:52",
   "mode": "morning",
   "signal_date": "2026-09-08",
   "trade_date": "2026-09-11",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 2,
   "tw_score": 9,
-  "intl_score": -4,
+  "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1164,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 47105.78125,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4461.39990234375,
-    "chg_pct": 1.536220703707766,
+    "price_usd": 4442.39990234375,
+    "chg_pct": 1.10380302414558,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 95.26000213623047,
-    "oil_chg": 2.3970798518701737
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 96.47000122070312,
+    "oil_chg": 3.69773458727788
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7644.8798828125,
-      "chg_pct": -0.3732333615583573,
+      "price": 7636.75,
+      "chg_pct": -0.4791806033953132,
       "signal": -1,
-      "note": "-0.37%",
+      "note": "-0.48%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52526.51953125,
-      "chg_pct": -0.49170317038837635,
+      "price": 52419.8984375,
+      "chg_pct": -0.693690348291164,
       "signal": -1,
-      "note": "-0.49%",
+      "note": "-0.69%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26262.087890625,
-      "chg_pct": -0.6030043993973283,
+      "price": 26248.71484375,
+      "chg_pct": -0.6536188321468104,
       "signal": -1,
-      "note": "-0.60%",
+      "note": "-0.65%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11936.6279296875,
-      "chg_pct": 0.41014758757757525,
-      "signal": 1,
-      "note": "+0.41%",
+      "price": 11910.0068359375,
+      "chg_pct": 0.1862126565295721,
+      "signal": 0,
+      "note": "+0.19%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.290000915527344,
-      "chg_pct": 3.6259582621894526,
+      "price": 16.350000381469727,
+      "chg_pct": 4.00763424770598,
       "signal": 1,
-      "note": "VIX=16.3(低恐慌)",
+      "note": "VIX=16.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,57 +416,57 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.74099731445312,
-      "chg_pct": -0.10016089346975057,
+      "price": 98.82099914550781,
+      "chg_pct": -0.019220146789432718,
       "signal": 0,
-      "note": "-0.10%(中性)",
+      "note": "-0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4461.39990234375,
-      "chg_pct": 1.536220703707766,
+      "price": 4442.39990234375,
+      "chg_pct": 1.10380302414558,
       "signal": -1,
-      "note": "+1.54%(避險↑)",
+      "note": "+1.10%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.26000213623047,
-      "chg_pct": 2.3970798518701737,
+      "price": 96.47000122070312,
+      "chg_pct": 3.69773458727788,
       "signal": 1,
-      "note": "+2.40%",
+      "note": "+3.70%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.835000038146973,
-      "chg_pct": 0.603408323893658,
+      "price": 4.836999893188477,
+      "chg_pct": 0.6450199540367101,
       "signal": 0,
-      "note": "4.84%(+0.60%)",
+      "note": "4.84%(+0.65%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 78775.0390625,
-      "chg_pct": 0.42894828736417767,
-      "signal": 1,
-      "note": "+0.43%",
+      "price": 78298.5390625,
+      "chg_pct": -0.17853340262852962,
+      "signal": 0,
+      "note": "-0.18%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -476,7 +476,13 @@
     },
     {
       "label": "川普動態",
-      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
+      "title": "Trump says his threat to tariff Canadian aircraft started from a conversation wi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -487,10 +493,10 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump says Canada 'wants the benefits' of being a U.S. state 'without being one'",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "關稅/貿易",
+      "title": "Trump bans some Canadian imports as North America trade war intensifies - axios.",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -506,13 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump bans some Canadian imports as North America trade war intensifies - axios.",
+      "title": "Trump’s Midterm Pitch Clouded by Iran War and Canada Tariffs - The New York Time",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,7 +530,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC’s market share edges higher - taipeitimes.com",
+      "title": "TSMC’s market share edges higher - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,15 +548,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Bl",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
       "title": "Trump pushes Fed for lower rates, but consumers may be better off with a hike, e",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Market Minute: Inflation data set to support Fed rate hike - The Real Economy Bl",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
