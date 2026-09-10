@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10 06:00",
+  "generated_at": "2026-09-10 07:38",
   "mode": "morning",
   "signal_date": "2026-09-08",
   "trade_date": "2026-09-11",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4447.2001953125,
-    "chg_pct": 1.2130520529227145,
+    "price_usd": 4440.2001953125,
+    "chg_pct": 1.053740276241909,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 96.66999816894531,
-    "oil_chg": 3.9127157233269703
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 97.0999984741211,
+    "oil_chg": 4.374932546736705
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.76899719238281,
-      "chg_pct": -0.07183240402508469,
+      "price": 98.78299713134766,
+      "chg_pct": -0.05766815930275174,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4447.2001953125,
-      "chg_pct": 1.2130520529227145,
+      "price": 4440.2001953125,
+      "chg_pct": 1.053740276241909,
       "signal": -1,
-      "note": "+1.21%(避險↑)",
+      "note": "+1.05%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.66999816894531,
-      "chg_pct": 3.9127157233269703,
+      "price": 97.0999984741211,
+      "chg_pct": 4.374932546736705,
       "signal": 1,
-      "note": "+3.91%",
+      "note": "+4.37%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78124.7578125,
-      "chg_pct": -0.40008414226975764,
+      "price": 78203.078125,
+      "chg_pct": -0.300234917089785,
       "signal": -1,
-      "note": "-0.40%",
+      "note": "-0.30%",
       "desc": "風險偏好指標"
     }
   },
@@ -482,13 +482,19 @@
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - bbc.com",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
       "title": "What smart people are saying about Trump’s escalating trade war with Canada - Bu",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump bans some Canadian imports as North America trade war intensifies - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,13 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump’s Midterm Pitch Clouded by Iran War and Canada Tariffs - The New York Time",
+      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,7 +524,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "$Taiwan Semiconductor (TSM.US)$ - moomoo.com",
+      "title": "$Taiwan Semiconductor (TSM.US)$ - Moomoo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC’s market share edges higher - Taipei Times",
+      "title": "The Semiconductor Equipment Boom Shifts From China to Korea and Taiwan - Dr. Rob",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
