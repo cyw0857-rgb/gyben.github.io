@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-11 01:21",
+  "generated_at": "2026-09-11 03:48",
   "mode": "morning",
   "signal_date": "2026-09-09",
   "trade_date": "2026-09-14",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 9,
   "intl_score": -7,
   "news_score": -2,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4407.7998046875,
-    "chg_pct": -0.18569282863451086,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 101.66000366210938,
-    "oil_chg": 5.8407084144792165
+    "price_usd": 4366.39990234375,
+    "chg_pct": -1.1231906172158062,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 102.69000244140625,
+    "oil_chg": 6.913065256302373
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7603.240234375,
-      "chg_pct": -0.4337096404466578,
+      "price": 7591.6298828125,
+      "chg_pct": -0.5857500336492796,
       "signal": -1,
-      "note": "-0.43%",
+      "note": "-0.59%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52097.44921875,
-      "chg_pct": -0.5406784424923052,
+      "price": 52030.640625,
+      "chg_pct": -0.6682228330187169,
       "signal": -1,
-      "note": "-0.54%",
+      "note": "-0.67%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26150.623046875,
-      "chg_pct": -0.3912523034643658,
+      "price": 26083.77734375,
+      "chg_pct": -0.6458702055021274,
       "signal": -1,
-      "note": "-0.39%",
+      "note": "-0.65%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11690.65234375,
-      "chg_pct": -2.0171109520700834,
+      "price": 11659.42578125,
+      "chg_pct": -2.2788302059508556,
       "signal": -1,
-      "note": "-2.02%",
+      "note": "-2.28%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.260000228881836,
-      "chg_pct": 4.86027453770548,
+      "price": 17.940000534057617,
+      "chg_pct": 8.991503839031818,
       "signal": 1,
-      "note": "VIX=17.3(低恐慌)",
+      "note": "VIX=17.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -384,10 +384,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 7051.64013671875,
+      "chg_pct": 1.3965035245386512,
+      "signal": 1,
+      "note": "+1.40%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,87 +416,81 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 98.98999786376953,
-      "chg_pct": 0.22274094176408882,
-      "signal": 0,
-      "note": "+0.22%(中性)",
+      "price": 99.072998046875,
+      "chg_pct": 0.30677474345126876,
+      "signal": -1,
+      "note": "+0.31%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4407.7998046875,
-      "chg_pct": -0.18569282863451086,
-      "signal": 0,
-      "note": "-0.19%()",
+      "price": 4366.39990234375,
+      "chg_pct": -1.1231906172158062,
+      "signal": 1,
+      "note": "-1.12%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.66000366210938,
-      "chg_pct": 5.8407084144792165,
+      "price": 102.69000244140625,
+      "chg_pct": 6.913065256302373,
       "signal": 1,
-      "note": "+5.84%",
+      "note": "+6.91%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.918000221252441,
-      "chg_pct": 1.6745985084273107,
+      "price": 4.943999767303467,
+      "chg_pct": 2.212112393586545,
       "signal": 0,
-      "note": "4.92%(+1.67%)",
+      "note": "4.94%(+2.21%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 77192.15625,
-      "chg_pct": -1.3638815323893787,
+      "price": 77146.2109375,
+      "chg_pct": -1.4225904415187487,
       "signal": -1,
-      "note": "-1.36%",
+      "note": "-1.42%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "title": "Exclusive | Trump’s Top Advisers Confront Possibility That Iran War Lasts Throug",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada ‘dying’ to make trade deal as Carney updates review process fo",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he will cease trading with top partners unless Fed lowers rates - CNN",
+      "title": "Trump, hoping to salvage midterms, makes a dubious pledge to give every US adult",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "title": "Why not to bank on Trump's $5,000 dividends happening - CBS News",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: What Trump told reporters near Ground Zero in 2001 - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - bbc.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "5 things to know about Trump’s $5K dividend pledge - The Hill",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
+      "title": "Trump’s Trade War With Canada Is Making Even Sprinkle Makers Nervous - The New Y",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Carney, at a Cabinet Retreat, Considers Further Trade Strikes Against the U.S. -",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -517,6 +511,18 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates - cnbc.",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor September Revenue Surges 53% and Can’t Keep Up With Demand ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor September Revenue Surges 53% and Can’t Keep Up With Demand ",
       "sentiment": "✅偏多",
@@ -535,26 +541,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor September Revenue Surges 53% and Can’t Keep Up With Demand ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
       "label": "聯準會",
-      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher - CNB",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed to hold rates steady in rest of 2026; rising number of analysts see at least",
+      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher - cnb",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -563,6 +551,18 @@
       "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed, eyeing inflation data, may lean toward a hike, traders bet - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
