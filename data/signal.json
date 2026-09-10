@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-11 03:48",
+  "generated_at": "2026-09-11 05:57",
   "mode": "morning",
   "signal_date": "2026-09-09",
   "trade_date": "2026-09-14",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 1,
   "tw_score": 9,
   "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 0,
+  "inst_score": -1,
   "foreign_fut_net": -2049,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(+9) vs 國際(-7) 方向相反 → 觀望",
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4366.39990234375,
-    "chg_pct": -1.1231906172158062,
+    "price_usd": 4358.5,
+    "chg_pct": -1.3020833333333335,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 102.69000244140625,
-    "oil_chg": 6.913065256302373
+    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 103.93000030517578,
+    "oil_chg": 8.20405726501823
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7591.6298828125,
-      "chg_pct": -0.5857500336492796,
+      "price": 7591.7001953125,
+      "chg_pct": -0.5848292742657664,
       "signal": -1,
-      "note": "-0.59%",
+      "note": "-0.58%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52030.640625,
-      "chg_pct": -0.6682228330187169,
+      "price": 52064.1015625,
+      "chg_pct": -0.6043425050499838,
       "signal": -1,
-      "note": "-0.67%",
+      "note": "-0.60%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26083.77734375,
-      "chg_pct": -0.6458702055021274,
+      "price": 26081.724609375,
+      "chg_pct": -0.6536891511571072,
       "signal": -1,
       "note": "-0.65%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11659.42578125,
-      "chg_pct": -2.2788302059508556,
+      "price": 11614.1669921875,
+      "chg_pct": -2.6581577897982527,
       "signal": -1,
-      "note": "-2.28%",
+      "note": "-2.66%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.940000534057617,
-      "chg_pct": 8.991503839031818,
+      "price": 17.84000015258789,
+      "chg_pct": 8.383968073346018,
       "signal": 1,
-      "note": "VIX=17.9(低恐慌)",
+      "note": "VIX=17.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.072998046875,
-      "chg_pct": 0.30677474345126876,
+      "price": 99.0739974975586,
+      "chg_pct": 0.30778664050256216,
       "signal": -1,
       "note": "+0.31%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4366.39990234375,
-      "chg_pct": -1.1231906172158062,
+      "price": 4358.5,
+      "chg_pct": -1.3020833333333335,
       "signal": 1,
-      "note": "-1.12%()",
+      "note": "-1.30%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.69000244140625,
-      "chg_pct": 6.913065256302373,
+      "price": 103.93000030517578,
+      "chg_pct": 8.20405726501823,
       "signal": 1,
-      "note": "+6.91%",
+      "note": "+8.20%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,47 +448,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77146.2109375,
-      "chg_pct": -1.4225904415187487,
+      "price": 77107.03125,
+      "chg_pct": -1.472654236669878,
       "signal": -1,
-      "note": "-1.42%",
+      "note": "-1.47%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Exclusive | Trump’s Top Advisers Confront Possibility That Iran War Lasts Throug",
+      "title": "Trump Signs Orders to Ban Some Canadian Products From U.S. Market - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump, hoping to salvage midterms, makes a dubious pledge to give every US adult",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Why not to bank on Trump's $5,000 dividends happening - CBS News",
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "WATCH: What Trump told reporters near Ground Zero in 2001 - PBS",
+      "title": "US-Canada trade war heats up as Trump threatens to hike auto tariffs - BBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "5 things to know about Trump’s $5K dividend pledge - The Hill",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Trade War With Canada Is Making Even Sprinkle Makers Nervous - The New Y",
+      "title": "Trump trade rep says Washington 'not going to tolerate' retaliation as tariff de",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,7 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates - cnbc.",
+      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,19 +530,19 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Stocks Fall As Oil Prices, Yields Surge; Snowflake, Hinge, Taiwan Semiconductor ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "World’s largest contract chipmaker TSMC sees August revenue surge over 53% to re",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
-      "label": "台股/半導體",
-      "title": "Prediction: This Will Be Taiwan Semiconductor's Stock Price at the End of 2027 -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
-      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher - cnb",
+      "title": "The likelihood of a Fed interest rate hike next week just got a lot higher - CNB",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
