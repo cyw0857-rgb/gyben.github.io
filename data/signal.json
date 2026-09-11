@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-11 05:57",
+  "generated_at": "2026-09-11 07:32",
   "mode": "morning",
   "signal_date": "2026-09-09",
   "trade_date": "2026-09-14",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 9,
   "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": -1,
+  "inst_score": 0,
   "foreign_fut_net": -2049,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(+9) vs 國際(-7) 方向相反 → 觀望",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4358.5,
-    "chg_pct": -1.3020833333333335,
+    "price_usd": 4359.2998046875,
+    "chg_pct": -1.2839718141417573,
     "signal": 1,
     "level": "ok",
     "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 103.93000030517578,
-    "oil_chg": 8.20405726501823
+    "oil_usd": 103.83000183105469,
+    "oil_chg": 8.099946415519133
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.0739974975586,
-      "chg_pct": 0.30778664050256216,
+      "price": 99.08999633789062,
+      "chg_pct": 0.3239847177282278,
       "signal": -1,
-      "note": "+0.31%(偏空)",
+      "note": "+0.32%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4358.5,
-      "chg_pct": -1.3020833333333335,
+      "price": 4359.2998046875,
+      "chg_pct": -1.2839718141417573,
       "signal": 1,
-      "note": "-1.30%()",
+      "note": "-1.28%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 103.93000030517578,
-      "chg_pct": 8.20405726501823,
+      "price": 103.83000183105469,
+      "chg_pct": 8.099946415519133,
       "signal": 1,
-      "note": "+8.20%",
+      "note": "+8.10%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77107.03125,
-      "chg_pct": -1.472654236669878,
+      "price": 76716.203125,
+      "chg_pct": -1.9720543196669653,
       "signal": -1,
-      "note": "-1.47%",
+      "note": "-1.97%",
       "desc": "風險偏好指標"
     }
   },
@@ -494,6 +494,18 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Despite Big Trade War Headlines, the Economic Impact May Be Small - global.morni",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney, at a Cabinet Retreat, Considers Further Trade Strikes Against the U.S. -",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "US-Canada trade war threatens economic fallout in key midterm states - ABC News ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -501,18 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed, eyeing inflation data, may lean toward a hike, traders bet - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The CPI report arrives tomorrow. It could determine whether the Fed hikes rates ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "A Tiny Shift in the Inflation Rate Could Decide the Fed’s Next Move - WSJ",
+      "title": "Fed, eyeing inflation data, may lean toward a hike, traders bet - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
