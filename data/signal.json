@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-11 11:05",
+  "generated_at": "2026-09-11 15:59",
   "mode": "morning",
   "signal_date": "2026-09-11",
   "trade_date": "2026-09-14",
   "direction": 0,
-  "total_score": -3,
+  "total_score": -4,
   "tw_score": 8,
-  "intl_score": -11,
+  "intl_score": -12,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 0,
-  "foreign_fut_net": -2049,
+  "inst_score": 1,
+  "foreign_fut_net": -368,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+8) vs 國際(-11) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+8) vs 國際(-12) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 46042.1796875,
-  "tw_chg_pct": -1.9137180430839784,
-  "tw_ma5": 46919.615625,
-  "tw_ma10": 46624.87734375,
-  "tw_rsi": 59.708741316347485,
-  "tw_macd": 559.4022161855464,
-  "tw_macds": 556.8147113746361,
+  "tw_last_close": 46184.8515625,
+  "tw_chg_pct": -1.6097760087677493,
+  "tw_ma5": 46948.15,
+  "tw_ma10": 46639.14453125,
+  "tw_rsi": 61.02976541667827,
+  "tw_macd": 570.7834483792831,
+  "tw_macds": 559.0909578133834,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 47021.40546875,
   "tw_ma10_p2": 46653.804296875,
   "tw_ma20_p2": 46006.6001953125,
-  "tw_ma20": 46018.15859375,
+  "tw_ma20": 46025.2921875,
   "stats_real": {
     "total": 10,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4362.7001953125,
-    "chg_pct": -1.20697021484375,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 102.69000244140625,
-    "oil_chg": 6.913065256302373
+    "price_usd": 4383.7998046875,
+    "chg_pct": 0.44219967207011107,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 101.1500015258789,
+    "oil_chg": -1.2978159518812138
   },
   "intl_data": {
     "S&P500": {
@@ -352,90 +352,90 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26081.724609375,
-      "chg_pct": -0.6536891511571072,
+      "price": 26081.720703125,
+      "chg_pct": -0.6537040302163937,
       "signal": -1,
       "note": "-0.65%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11614.1669921875,
-      "chg_pct": -2.6581577897982527,
+      "price": 11614.169921875,
+      "chg_pct": -2.6581332352022544,
       "signal": -1,
       "note": "-2.66%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.84000015258789,
-      "chg_pct": 8.383968073346018,
+      "price": 17.68000030517578,
+      "chg_pct": -0.8968601235628331,
       "signal": 1,
-      "note": "VIX=17.8(低恐慌)",
+      "note": "VIX=17.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 63469.390625,
-      "chg_pct": -2.7601231716613017,
+      "price": 64011.33984375,
+      "chg_pct": -1.9298162353645676,
       "signal": -1,
-      "note": "-2.76%",
+      "note": "-1.93%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6856.5400390625,
-      "chg_pct": -2.5217785357615594,
+      "price": 6909.91015625,
+      "chg_pct": -1.7630249846794288,
       "signal": -1,
-      "note": "-2.52%",
+      "note": "-1.76%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24637.08984375,
-      "chg_pct": -1.2718396761477093,
+      "price": 24805.83984375,
+      "chg_pct": -0.5956081422972728,
       "signal": -1,
-      "note": "-1.27%",
+      "note": "-0.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3865.012939453125,
-      "chg_pct": -1.7637007371681568,
+      "price": 3888.110595703125,
+      "chg_pct": -1.176631998410953,
       "signal": -1,
-      "note": "-1.76%",
+      "note": "-1.18%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46038.21875,
-      "chg_pct": -1.9221562541998618,
+      "price": 46184.8515625,
+      "chg_pct": -1.6097760087677506,
       "signal": -1,
-      "note": "-1.92%",
+      "note": "-1.61%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.11000061035156,
-      "chg_pct": 0.3442381075640386,
-      "signal": -1,
-      "note": "+0.34%(偏空)",
+      "price": 99.09600067138672,
+      "chg_pct": 0.006059474939951912,
+      "signal": 0,
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4362.7001953125,
-      "chg_pct": -1.20697021484375,
-      "signal": 1,
-      "note": "-1.21%()",
+      "price": 4383.7998046875,
+      "chg_pct": 0.44219967207011107,
+      "signal": 0,
+      "note": "+0.44%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.69000244140625,
-      "chg_pct": 6.913065256302373,
-      "signal": 1,
-      "note": "+6.91%",
+      "price": 101.1500015258789,
+      "chg_pct": -1.2978159518812138,
+      "signal": -1,
+      "note": "-1.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76763.3203125,
-      "chg_pct": -1.9118479889478308,
-      "signal": -1,
-      "note": "-1.91%",
+      "price": 77205.5234375,
+      "chg_pct": 0.8324592478919917,
+      "signal": 1,
+      "note": "+0.83%",
       "desc": "風險偏好指標"
     }
   },
@@ -482,13 +482,13 @@
     },
     {
       "label": "川普動態",
-      "title": "What smart people are saying about Trump’s escalating trade war with Canada - Bu",
+      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
+      "title": "Trump imposes 'sweeping' new tariffs on 60 trade partners as global duties expir",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC Stock: Why Taiwan Semi’s Record Sales Isn’t Boosting AMD, Other Chip Makers",
+      "title": "World’s largest contract chipmaker TSMC sees August revenue surge over 53% to re",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Are interest rates on their way up again? - BBC",
+      "title": "Are interest rates on the way up again? - BBC",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed, eyeing inflation data, may lean toward a hike, traders bet - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed to hold rates steady in rest of 2026; rising number of analysts see at least",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
