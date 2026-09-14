@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-14 07:45",
+  "generated_at": "2026-09-14 11:27",
   "mode": "morning",
-  "signal_date": "2026-09-11",
+  "signal_date": "2026-09-14",
   "trade_date": "2026-09-15",
-  "direction": 1,
-  "total_score": 15,
-  "tw_score": 8,
-  "intl_score": 6,
+  "direction": 0,
+  "total_score": 10,
+  "tw_score": 1,
+  "intl_score": 8,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": 1,
   "foreign_fut_net": -368,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 46184.8515625,
-  "tw_chg_pct": -1.6097760087677493,
-  "tw_ma5": 46948.15,
-  "tw_ma10": 46639.14453125,
-  "tw_rsi": 61.02976541667827,
-  "tw_macd": 570.7834483792831,
-  "tw_macds": 559.0909578133834,
+  "tw_last_close": 45990.37109375,
+  "tw_chg_pct": -0.42109146651000406,
+  "tw_ma5": 46680.9703125,
+  "tw_ma10": 46625.334765625,
+  "tw_rsi": 56.582086831566755,
+  "tw_macd": 491.3570127614803,
+  "tw_macds": 545.5397140710558,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 47021.40546875,
-  "tw_ma10_p2": 46653.804296875,
-  "tw_ma20_p2": 46006.6001953125,
-  "tw_ma20": 46025.2921875,
+  "tw_ma5_p2": 46948.15,
+  "tw_ma10_p2": 46639.14453125,
+  "tw_ma20_p2": 46025.2921875,
+  "tw_ma20": 46031.947265625,
   "stats_real": {
     "total": 10,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4381.89990234375,
-    "chg_pct": 0.3595736871640704,
+    "price_usd": 4373.60009765625,
+    "chg_pct": 0.16948151740028883,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 102.41999816894531,
-    "oil_chg": 2.368810639577348
+    "warning": "黃金小幅變動 +0.2%，影響中性",
+    "oil_usd": 103.16000366210938,
+    "oil_chg": 3.1084462923431384
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64011.33984375,
-      "chg_pct": -1.9298162353645676,
+      "price": 63498.609375,
+      "chg_pct": -0.8009994322905309,
       "signal": -1,
-      "note": "-1.93%",
+      "note": "-0.80%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6909.91015625,
-      "chg_pct": -1.7630249846794288,
+      "price": 6763.33984375,
+      "chg_pct": -2.1211609005860583,
       "signal": -1,
-      "note": "-1.76%",
+      "note": "-2.12%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24805.630859375,
-      "chg_pct": -0.5964456049607219,
-      "signal": -1,
-      "note": "-0.60%",
+      "price": 24881.599609375,
+      "chg_pct": 0.3062560691589446,
+      "signal": 1,
+      "note": "+0.31%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3888.111083984375,
-      "chg_pct": -1.176619587859229,
-      "signal": -1,
-      "note": "-1.18%",
+      "price": 3891.6689453125,
+      "chg_pct": 0.09150616459442952,
+      "signal": 0,
+      "note": "+0.09%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46184.8515625,
-      "chg_pct": -1.6097760087677506,
+      "price": 45990.37109375,
+      "chg_pct": -0.42109146651000456,
       "signal": -1,
-      "note": "-1.61%",
+      "note": "-0.42%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.13899993896484,
-      "chg_pct": 0.019165851348271458,
+      "price": 99.29000091552734,
+      "chg_pct": 0.17150742961533522,
       "signal": 0,
-      "note": "+0.02%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4381.89990234375,
-      "chg_pct": 0.3595736871640704,
+      "price": 4373.60009765625,
+      "chg_pct": 0.16948151740028883,
       "signal": 0,
-      "note": "+0.36%()",
+      "note": "+0.17%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.41999816894531,
-      "chg_pct": 2.368810639577348,
+      "price": 103.16000366210938,
+      "chg_pct": 3.1084462923431384,
       "signal": 1,
-      "note": "+2.37%",
+      "note": "+3.11%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,19 +448,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76808.921875,
-      "chg_pct": -0.5973134141236849,
-      "signal": -1,
-      "note": "-0.60%",
+      "price": 77788.078125,
+      "chg_pct": 0.6698670053040153,
+      "signal": 1,
+      "note": "+0.67%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Sees Canada Deal ‘Fairly Soon,’ Downplays Leaving USMCA - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -487,12 +493,6 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "New Tariffs as Old Ones Expire: The Latest on Trump’s Trade War - The New York T",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "關稅/貿易",
       "title": "The fallout from the US-Canada trade clash transcends economic impact - The Hill",
       "sentiment": "⚠️偏空",
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - car",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "US-Canada trade war threatens economic fallout in key midterm states - ABC News ",
+      "title": "How Canadians are bracing for the impact of Trump’s trade war - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },

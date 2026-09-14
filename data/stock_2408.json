@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-09-14 07:46",
+  "updated": "2026-09-14 11:28",
   "direction": 0,
   "signal_text": "⚪ 暫時整理",
   "signal_color": "#9ca3af",
@@ -12,7 +12,7 @@
   "tech_score": -2,
   "reasons": [
     "MA5>MA10 短線偏多",
-    "RSI=48 中性偏空",
+    "RSI=42 中性偏空",
     "MACD死叉（零軸上）",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=48 中性偏空",
+      "text": "RSI=42 中性偏空",
       "score": -1
     },
     {
@@ -38,22 +38,22 @@
       "score": -1
     }
   ],
-  "rsi": 48.0,
-  "macd": 12.5,
-  "macds": 17.82,
-  "k": 42.2,
-  "d": 44.8,
-  "ma5": 515.8,
-  "ma10": 513.15,
-  "ma20": 515.27,
-  "ma60": 461.01,
-  "last_close": 493.0,
-  "chg_pct": -4.27,
+  "rsi": 42.1,
+  "macd": 8.84,
+  "macds": 16.02,
+  "k": 31.5,
+  "d": 40.4,
+  "ma5": 507.8,
+  "ma10": 506.55,
+  "ma20": 512.92,
+  "ma60": 460.57,
+  "last_close": 477.0,
+  "chg_pct": -3.25,
   "ma_bull": false,
   "ma_bear": false,
   "retail": {
     "mood": "冷清（量縮）",
-    "vol_ratio": 0.51,
+    "vol_ratio": 0.47,
     "score": 0,
     "signals": [
       {
@@ -65,84 +65,84 @@
   "forecast": [
     {
       "month": "2026-10",
-      "price": 500.39,
-      "price_high": 634.48,
-      "price_low": 366.31,
+      "price": 484.15,
+      "price_high": 611.25,
+      "price_low": 357.06,
       "chg_pct": 1.5,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     },
     {
       "month": "2026-11",
-      "price": 507.9,
-      "price_high": 700.37,
-      "price_low": 315.43,
+      "price": 491.42,
+      "price_high": 673.85,
+      "price_low": 308.99,
       "chg_pct": 3.0,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     },
     {
       "month": "2026-12",
-      "price": 515.52,
-      "price_high": 721.73,
-      "price_low": 309.31,
+      "price": 498.79,
+      "price_high": 698.3,
+      "price_low": 299.27,
       "chg_pct": 4.6,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     },
     {
       "month": "2027-01",
-      "price": 523.25,
-      "price_high": 732.55,
-      "price_low": 313.95,
+      "price": 506.27,
+      "price_high": 708.78,
+      "price_low": 303.76,
       "chg_pct": 6.1,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     },
     {
       "month": "2027-02",
-      "price": 531.1,
-      "price_high": 743.54,
-      "price_low": 318.66,
+      "price": 513.86,
+      "price_high": 719.41,
+      "price_low": 308.32,
       "chg_pct": 7.7,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     },
     {
       "month": "2027-03",
-      "price": 539.07,
-      "price_high": 754.69,
-      "price_low": 323.44,
+      "price": 521.57,
+      "price_high": 730.2,
+      "price_low": 312.94,
       "chg_pct": 9.3,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分+2.2）",
-      "score": 2.2
+      "model_note": "⚪ 觀望（分+1.2）",
+      "score": 1.2
     }
   ],
   "trend_label": "月線 MA5>MA10 偏多 📈",
   "support": 403.6,
   "resistance": 517.0,
   "weekly": {
-    "proj_center": 493.0,
-    "proj_high": 557.46,
-    "proj_low": 428.54,
+    "proj_center": 477.0,
+    "proj_high": 538.1,
+    "proj_low": 415.9,
     "support": 403.6,
     "resistance": 517.0,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
-  "daily_vol_pct": 5.85,
-  "slope_per_day": -0.05,
-  "model_accuracy": 54.1,
-  "model_samples": 133,
-  "total_return": -42.5,
+  "daily_vol_pct": 5.73,
+  "slope_per_day": -0.049,
+  "model_accuracy": 54.5,
+  "model_samples": 132,
+  "total_return": -44.3,
   "ipo_date": "2000-08-18",
-  "model_score": 2.2,
+  "model_score": 1.2,
   "model_threshold": 3.5,
   "model_factors": "MA5>MA10 多頭"
 }
