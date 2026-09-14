@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-14 17:12",
+  "generated_at": "2026-09-14 18:58",
   "mode": "morning",
   "signal_date": "2026-09-14",
   "trade_date": "2026-09-15",
   "direction": 0,
-  "total_score": 7,
+  "total_score": 8,
   "tw_score": 1,
   "intl_score": 7,
   "news_score": -2,
-  "psy_score": -1,
+  "psy_score": 0,
   "inst_score": 2,
   "foreign_fut_net": 2313,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4351.7001953125,
-    "chg_pct": -0.33209654508208364,
+    "price_usd": 4332.10009765625,
+    "chg_pct": -0.7810016978346401,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 103.19999694824219,
-    "oil_chg": 3.148419590606931
+    "warning": "黃金小幅變動 -0.8%，影響中性",
+    "oil_usd": 102.41000366210938,
+    "oil_chg": 2.3588211278021536
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.0,
-      "chg_pct": 13.63636254169616,
+      "price": 17.700000762939453,
+      "chg_pct": 11.742427982538127,
       "signal": 1,
-      "note": "VIX=18.0(低恐慌)",
+      "note": "VIX=17.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.56199645996094,
-      "chg_pct": 0.4459177775740604,
+      "price": 99.56900024414062,
+      "chg_pct": 0.4529837420470377,
       "signal": -1,
       "note": "+0.45%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4351.7001953125,
-      "chg_pct": -0.33209654508208364,
-      "signal": 0,
-      "note": "-0.33%()",
+      "price": 4332.10009765625,
+      "chg_pct": -0.7810016978346401,
+      "signal": 1,
+      "note": "-0.78%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 103.19999694824219,
-      "chg_pct": 3.148419590606931,
+      "price": 102.41000366210938,
+      "chg_pct": 2.3588211278021536,
       "signal": 1,
-      "note": "+3.15%",
+      "note": "+2.36%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77705.6484375,
-      "chg_pct": 1.1289862092441867,
+      "price": 77890.03125,
+      "chg_pct": 1.368948776669794,
       "signal": 1,
-      "note": "+1.13%",
+      "note": "+1.37%",
       "desc": "風險偏好指標"
     }
   },
@@ -476,7 +476,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says US-Canada trade deal could come 'fairly soon' amid tariff war - Busin",
+      "title": "Trump says US-Canada trade deal could come 'fairly soon' amid tariff war - busin",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -518,9 +518,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Apple and Taiwan Semiconductor Manufacturing Just Announced a Cutting-Edge Chip.",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "The Zacks Analyst Blog Highlights Amkor Technology, Ultra Clean, FormFactor, Tai",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -530,13 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Reflections on SEMICON Taiwan 2026 - New Electronics",
+      "title": "Apple, Taiwan Semi Lead Five Stocks Near Buy Points - Investor's Business Daily",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan shares open lower - Focus Taiwan",
+      "title": "Reflections on SEMICON Taiwan 2026 - New Electronics",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Goldman Sachs, JP Morgan expect September Fed hike as inflation lingers - Reuter",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The market says a Fed rate hike is a done deal. Here's why it might hold steady.",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
