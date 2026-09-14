@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-14 05:29",
+  "generated_at": "2026-09-14 07:45",
   "mode": "morning",
   "signal_date": "2026-09-11",
   "trade_date": "2026-09-15",
   "direction": 1,
-  "total_score": 12,
+  "total_score": 15,
   "tw_score": 8,
-  "intl_score": 4,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": 1,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4408.89990234375,
-    "chg_pct": 1.0172964221273915,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 100.05000305175781,
-    "oil_chg": -2.3711945995085415
+    "price_usd": 4381.89990234375,
+    "chg_pct": 0.3595736871640704,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 102.41999816894531,
+    "oil_chg": 2.368810639577348
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.12000274658203,
-      "chg_pct": 0.030281975779962986,
+      "price": 99.13899993896484,
+      "chg_pct": 0.019165851348271458,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4408.89990234375,
-      "chg_pct": 1.0172964221273915,
-      "signal": -1,
-      "note": "+1.02%(避險↑)",
+      "price": 4381.89990234375,
+      "chg_pct": 0.3595736871640704,
+      "signal": 0,
+      "note": "+0.36%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 100.05000305175781,
-      "chg_pct": -2.3711945995085415,
-      "signal": -1,
-      "note": "-2.37%",
+      "price": 102.41999816894531,
+      "chg_pct": 2.368810639577348,
+      "signal": 1,
+      "note": "+2.37%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77389.8203125,
-      "chg_pct": 0.15445947776782445,
-      "signal": 0,
-      "note": "+0.15%",
+      "price": 76808.921875,
+      "chg_pct": -0.5973134141236849,
+      "signal": -1,
+      "note": "-0.60%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Sees Canada Deal ‘Fairly Soon,’ Downplays Leaving USMCA - bloomberg.com",
+      "title": "Trump Sees Canada Deal ‘Fairly Soon,’ Downplays Leaving USMCA - Bloomberg.com",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -494,7 +494,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "title": "The fallout from the US-Canada trade clash transcends economic impact - The Hill",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - car",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -507,12 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "How Canadians are bracing for the impact of Trump’s trade war - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,15 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "My First Trip to Jakarta Took Me to a Very “Heavy” Trade Show: What I Learned Ab",
+      "title": "Apple, Taiwan Semi Lead Five Stocks Near Buy Points - Investor's Business Daily",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Apple, Taiwan Semi Lead Five Stocks Near Buy Points - Investor's Business Daily",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor September Revenue Surges 53% and Can’t Keep Up With Demand ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
