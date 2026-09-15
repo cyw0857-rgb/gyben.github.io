@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-16 01:48",
+  "generated_at": "2026-09-16 04:28",
   "mode": "morning",
   "signal_date": "2026-09-14",
   "trade_date": "2026-09-17",
   "direction": 0,
-  "total_score": -7,
+  "total_score": -4,
   "tw_score": 1,
-  "intl_score": -5,
+  "intl_score": -2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -593,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+1) vs 國際(-5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+1) vs 國際(-2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 45862.51953125,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4338.7998046875,
-    "chg_pct": -0.30102019693042203,
+    "price_usd": 4335.7001953125,
+    "chg_pct": -0.3722444770047565,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 106.30999755859375,
-    "oil_chg": 4.852547784360305
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 105.9000015258789,
+    "oil_chg": 4.44817256473021
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7582.3701171875,
-      "chg_pct": -0.493569056318392,
+      "price": 7585.72998046875,
+      "chg_pct": -0.4494762464965568,
       "signal": -1,
-      "note": "-0.49%",
+      "note": "-0.45%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51997.05859375,
-      "chg_pct": -0.8091013393838833,
+      "price": 52093.109375,
+      "chg_pct": -0.6258724497715209,
       "signal": -1,
-      "note": "-0.81%",
+      "note": "-0.63%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25973.126953125,
-      "chg_pct": -0.8144804952354072,
+      "price": 25981.5703125,
+      "chg_pct": -0.7822372082609047,
       "signal": -1,
-      "note": "-0.81%",
+      "note": "-0.78%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11142.0185546875,
-      "chg_pct": 0.09646941758914011,
-      "signal": 0,
-      "note": "+0.10%",
+      "price": 11175.546875,
+      "chg_pct": 0.39767754000528666,
+      "signal": 1,
+      "note": "+0.40%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.59000015258789,
-      "chg_pct": 2.8654956736091552,
+      "price": 17.209999084472656,
+      "chg_pct": 0.6432672546728646,
       "signal": 1,
-      "note": "VIX=17.6(低恐慌)",
+      "note": "VIX=17.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,42 +416,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.64099884033203,
-      "chg_pct": 0.18198246282472774,
+      "price": 99.6510009765625,
+      "chg_pct": 0.19203890392923026,
       "signal": 0,
-      "note": "+0.18%(中性)",
+      "note": "+0.19%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4338.7998046875,
-      "chg_pct": -0.30102019693042203,
+      "price": 4335.7001953125,
+      "chg_pct": -0.3722444770047565,
       "signal": 0,
-      "note": "-0.30%()",
+      "note": "-0.37%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 106.30999755859375,
-      "chg_pct": 4.852547784360305,
+      "price": 105.9000015258789,
+      "chg_pct": 4.44817256473021,
       "signal": 1,
-      "note": "+4.85%",
+      "note": "+4.45%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.01200008392334,
-      "chg_pct": 1.0280209354678131,
+      "price": 4.995999813079834,
+      "chg_pct": 0.7054998519315365,
       "signal": 0,
-      "note": "5.01%(+1.03%)",
+      "note": "5.00%(+0.71%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 76943.8828125,
-      "chg_pct": -1.5601934769447772,
+      "price": 75771.21875,
+      "chg_pct": -3.060466392861187,
       "signal": -1,
-      "note": "-1.56%",
+      "note": "-3.06%",
       "desc": "風險偏好指標"
     }
   },
@@ -470,13 +470,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - Bloomberg.com",
+      "title": "Trump says he's lifting 10% tariff on Irish whiskey because 'everybody's been bu",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
+      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -491,6 +491,12 @@
       "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -511,12 +517,6 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump’s Trade War With Canada Is Making Even Sprinkle Makers Nervous - The New Y",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
       "title": "Zacks Investment Ideas feature highlights: Nvidia, Taiwan Semiconductor, Arista ",
       "sentiment": "⚪中性",
@@ -524,19 +524,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "MediaTek launches new mobile chip using TSMC’s most advanced technology - WTVB",
+      "title": "TSMC careful about use of AI in sensitive research - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Apple and Taiwan Semiconductor Manufacturing Just Announced a Cutting-Edge Chip.",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "GateWay Community College, Taiwan university launch semiconductor workforce part",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Construction of TSMC fab in Germany on track: ESMC president - Focus Taiwan",
+      "title": "MediaTek launches new mobile chip using TSMC’s most advanced technology - WTVB",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,6 +548,12 @@
     },
     {
       "label": "聯準會",
+      "title": "A highly anticipated Fed meeting, war worries, and an unblinking stock market: W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
       "title": "What to Expect in Markets This Week: Fed Interest-Rate Decision; U.S. Retail Sal",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "The Chances of a Federal Reserve Rate Hike Are Surging. Here's What It Means for",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve is expected to raise its benchmark rate, defying Trump's demands",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
