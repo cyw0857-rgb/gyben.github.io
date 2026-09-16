@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16 18:18",
+  "generated_at": "2026-09-16 19:21",
   "mode": "morning",
   "signal_date": "2026-09-16",
   "trade_date": "2026-09-17",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4380.5,
-    "chg_pct": 1.100909284128357,
+    "price_usd": 4391.10009765625,
+    "chg_pct": 1.3455570438698095,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 103.80000305175781,
-    "oil_chg": -1.9181694643996439
+    "warning": "黃金上漲 +1.3%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 103.36000061035156,
+    "oil_chg": -2.3339328904540655
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.969999313354492,
-      "chg_pct": -1.337217670830231,
+      "price": 16.889999389648438,
+      "chg_pct": -1.8023334856994324,
       "signal": 1,
-      "note": "VIX=17.0(低恐慌)",
+      "note": "VIX=16.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.68199920654297,
-      "chg_pct": 0.03211006540301233,
+      "price": 99.70999908447266,
+      "chg_pct": 0.060208286678418925,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4380.5,
-      "chg_pct": 1.100909284128357,
+      "price": 4391.10009765625,
+      "chg_pct": 1.3455570438698095,
       "signal": -1,
-      "note": "+1.10%(避險↑)",
+      "note": "+1.35%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 103.80000305175781,
-      "chg_pct": -1.9181694643996439,
+      "price": 103.36000061035156,
+      "chg_pct": -2.3339328904540655,
       "signal": -1,
-      "note": "-1.92%",
+      "note": "-2.33%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75918.0703125,
-      "chg_pct": 0.4041163411187447,
+      "price": 75909.59375,
+      "chg_pct": 0.3929058116108229,
       "signal": 1,
-      "note": "+0.40%",
+      "note": "+0.39%",
       "desc": "風險偏好指標"
     }
   },
@@ -512,15 +512,21 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "title": "What to know about Canada's escalating trade war with the U.S. - npr.org",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Issues Blunt Warning on AI - Yahoo Finance",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan Semiconductor Vs. ASML: There's Actually One True Dominant Picks-and-Shov",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Vs. ASML: There’s Actually One True Dominant Picks-and-Shov",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -530,19 +536,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Lithuania took on China – and lasered in on Taiwan - Lowy Institute",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC returns to prior ex-dividend level within 27 minutes after opening - Focus ",
+      "title": "Lithuania took on China – and lasered in on Taiwan - lowyinstitute.org",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The stock market could do something strange this week after the Fed decision - C",
+      "title": "The stock market could do something strange this week after the Fed decision - c",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "The Chances of a Federal Reserve Rate Hike Are Surging. Here's What It Means for",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "A highly anticipated Fed meeting, war worries, and an unblinking stock market: W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
