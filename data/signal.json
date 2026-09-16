@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-09-16 07:48",
+  "generated_at": "2026-09-16 11:24",
   "mode": "morning",
-  "signal_date": "2026-09-14",
+  "signal_date": "2026-09-16",
   "trade_date": "2026-09-17",
   "direction": 0,
-  "total_score": -4,
-  "tw_score": 1,
-  "intl_score": -2,
+  "total_score": -8,
+  "tw_score": -5,
+  "intl_score": 0,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -593,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+1) vs 國際(-2) 方向相反 → 觀望",
+  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
-  "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 45862.51953125,
-  "tw_chg_pct": -0.6979172181896032,
-  "tw_ma5": 46655.4,
-  "tw_ma10": 46612.549609375,
-  "tw_rsi": 55.44532637338556,
-  "tw_macd": 481.1580277187386,
-  "tw_macds": 543.4999170625074,
+  "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
+  "tw_last_close": 45834.83984375,
+  "tw_chg_pct": 0.7104833849901127,
+  "tw_ma5": 46066.8375,
+  "tw_ma10": 46435.838671875,
+  "tw_rsi": 48.873800610341966,
+  "tw_macd": 317.70068034753785,
+  "tw_macds": 471.7730225842752,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 46948.15,
-  "tw_ma10_p2": 46639.14453125,
-  "tw_ma20_p2": 46025.2921875,
-  "tw_ma20": 46025.5546875,
+  "tw_ma5_p2": 46336.54140625,
+  "tw_ma10_p2": 46468.8265625,
+  "tw_ma20_p2": 46035.6951171875,
+  "tw_ma20": 46091.46953125,
   "stats_real": {
-    "total": 10,
+    "total": 11,
     "wins": 6,
-    "losses": 4,
-    "win_rate": 60.0,
-    "total_pnl": -723.0,
-    "avg_pnl": -72.3,
+    "losses": 5,
+    "win_rate": 54.54545454545454,
+    "total_pnl": -4151.0,
+    "avg_pnl": -377.3636363636364,
     "avg_win": 5681.166666666667,
-    "avg_lose": -8702.5,
+    "avg_lose": -7647.6,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_sim": {
     "total": 789,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 41,
+    "total": 42,
     "wins": 19,
-    "losses": 22,
-    "win_rate": 46.34146341463415,
-    "total_pnl": 16053.0,
-    "avg_pnl": 391.5365853658537,
+    "losses": 23,
+    "win_rate": 45.23809523809524,
+    "total_pnl": 12625.0,
+    "avg_pnl": 300.5952380952381,
     "avg_win": 7213.421052631579,
-    "avg_lose": -5500.090909090909,
+    "avg_lose": -5410.0,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -3
+    "streak": -4
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4325.39990234375,
-    "chg_pct": -0.6089294467854883,
+    "price_usd": 4378.60009765625,
+    "chg_pct": 0.6135296287058533,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 105.41999816894531,
-    "oil_chg": 3.974749781592684
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 104.38999938964844,
+    "oil_chg": 2.958871701409922
   },
   "intl_data": {
     "S&P500": {
@@ -344,8 +344,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 52093.109375,
-      "chg_pct": -0.6258724497715209,
+      "price": 52093.1015625,
+      "chg_pct": -0.6258873530933,
       "signal": -1,
       "note": "-0.63%",
       "desc": "藍籌股風向球"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63492.98828125,
-      "chg_pct": -0.8097808353414918,
-      "signal": -1,
-      "note": "-0.81%",
+      "price": 63396.0,
+      "chg_pct": -0.13877736367311452,
+      "signal": 0,
+      "note": "-0.14%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6684.3701171875,
-      "chg_pct": -3.264008271634321,
-      "signal": -1,
-      "note": "-3.26%",
+      "price": 6681.97998046875,
+      "chg_pct": 0.8256838690340589,
+      "signal": 1,
+      "note": "+0.83%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24917.599609375,
-      "chg_pct": 0.4513844079788147,
-      "signal": 1,
-      "note": "+0.45%",
+      "price": 24636.720703125,
+      "chg_pct": -0.12372495244713086,
+      "signal": 0,
+      "note": "-0.12%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3869.2705078125,
+      "chg_pct": 0.12916911563602096,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.13%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45862.51953125,
-      "chg_pct": -0.6979172181896086,
-      "signal": -1,
-      "note": "-0.70%",
+      "price": 45834.83984375,
+      "chg_pct": 0.7104833849901051,
+      "signal": 1,
+      "note": "+0.71%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 99.61199951171875,
-      "chg_pct": 0.1528256873569824,
+      "price": 99.63899993896484,
+      "chg_pct": 0.1799727087672299,
       "signal": 0,
-      "note": "+0.15%(中性)",
+      "note": "+0.18%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4325.39990234375,
-      "chg_pct": -0.6089294467854883,
-      "signal": 1,
-      "note": "-0.61%()",
+      "price": 4378.60009765625,
+      "chg_pct": 0.6135296287058533,
+      "signal": 0,
+      "note": "+0.61%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 105.41999816894531,
-      "chg_pct": 3.974749781592684,
+      "price": 104.38999938964844,
+      "chg_pct": 2.958871701409922,
       "signal": 1,
-      "note": "+3.97%",
+      "note": "+2.96%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75596.8203125,
-      "chg_pct": -3.283586773818023,
+      "price": 75968.109375,
+      "chg_pct": -2.8085701494855577,
       "signal": -1,
-      "note": "-3.28%",
+      "note": "-2.81%",
       "desc": "風險偏好指標"
     }
   },
@@ -518,7 +518,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semi Revenue Keeps Surging. How to Play TSM Stock in September 2026. - Ba",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Overvalued On Cash Flow - s",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Lithuania took on China – and lasered in on Taiwan - Lowy Institute",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -530,19 +536,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Issues Blunt Warning on AI - TradingView",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC careful about use of AI in sensitive research - Taipei Times",
+      "title": "Taiwan Semi Revenue Keeps Surging. How to Play TSM Stock in September 2026. - Ba",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "The stock market could do something strange this week after the Fed decision - C",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -557,12 +563,6 @@
       "title": "A highly anticipated Fed meeting, war worries, and an unblinking stock market: W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "The Chances of a Federal Reserve Rate Hike Are Surging. Here's What It Means for",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
