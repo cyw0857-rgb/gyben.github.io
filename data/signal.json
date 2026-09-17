@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-17 07:57",
+  "generated_at": "2026-09-17 11:30",
   "mode": "morning",
-  "signal_date": "2026-09-15",
+  "signal_date": "2026-09-17",
   "trade_date": "2026-09-18",
   "direction": 0,
-  "total_score": -10,
-  "tw_score": -6,
-  "intl_score": -4,
+  "total_score": -2,
+  "tw_score": 1,
+  "intl_score": -3,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 2,
   "foreign_fut_net": 2598,
   "foreign_cash_b": 0,
-  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
+  "veto_msg": "台灣技術(+1) vs 國際(-3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 45511.48828125,
-  "tw_chg_pct": -0.7653989654031412,
-  "tw_ma5": 46336.54140625,
-  "tw_ma10": 46468.8265625,
-  "tw_rsi": 47.34673959770879,
-  "tw_macd": 377.4558724672679,
-  "tw_macds": 510.2911081434595,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 46655.4,
-  "tw_ma10_p2": 46612.549609375,
-  "tw_ma20_p2": 46025.5546875,
-  "tw_ma20": 46035.6951171875,
+  "tw_last_close": 46455.9296875,
+  "tw_chg_pct": 1.3239821908207716,
+  "tw_ma5": 45972.7375,
+  "tw_ma10": 46497.071484375,
+  "tw_rsi": 50.95794332121087,
+  "tw_macd": 317.67491691368923,
+  "tw_macds": 441.1328387720959,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46069.64921875,
+  "tw_ma10_p2": 46437.24453125,
+  "tw_ma20_p2": 46092.1724609375,
+  "tw_ma20": 46168.28203125,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 42,
-    "wins": 19,
+    "total": 43,
+    "wins": 20,
     "losses": 23,
-    "win_rate": 45.23809523809524,
-    "total_pnl": 12625.0,
-    "avg_pnl": 300.5952380952381,
-    "avg_win": 7213.421052631579,
+    "win_rate": 46.51162790697674,
+    "total_pnl": 15578.0,
+    "avg_pnl": 362.27906976744185,
+    "avg_win": 7000.4,
     "avg_lose": -5410.0,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -4
+    "streak": 1
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4312.2001953125,
-    "chg_pct": -0.47543413736111284,
+    "price_usd": 4324.60009765625,
+    "chg_pct": -0.18924730891972052,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.5%，影響中性",
-    "oil_usd": 101.69000244140625,
-    "oil_chg": -3.9119335897371204
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 102.38999938964844,
+    "oil_chg": -3.250498329290228
   },
   "intl_data": {
     "S&P500": {
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63484.1015625,
-      "chg_pct": -0.013996378167987914,
+      "price": 63966.87109375,
+      "chg_pct": 0.06863115584374951,
       "signal": 0,
-      "note": "-0.01%",
+      "note": "+0.07%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6627.259765625,
-      "chg_pct": -0.8543864352402082,
-      "signal": -1,
-      "note": "-0.85%",
+      "price": 6733.18017578125,
+      "chg_pct": 0.2264070909974072,
+      "signal": 0,
+      "note": "+0.23%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24667.240234375,
-      "chg_pct": -1.0047491689600982,
+      "price": 24477.609375,
+      "chg_pct": -0.9556204214580128,
       "signal": -1,
-      "note": "-1.00%",
+      "note": "-0.96%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3876.319091796875,
+      "chg_pct": -0.3926913918056953,
+      "signal": -1,
+      "note": "-0.39%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45511.48828125,
-      "chg_pct": -0.7653989654031389,
-      "signal": -1,
-      "note": "-0.77%",
+      "price": 46455.9296875,
+      "chg_pct": 1.323982190820765,
+      "signal": 1,
+      "note": "+1.32%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.2750015258789,
-      "chg_pct": 0.6271951735371412,
+      "price": 100.31999969482422,
+      "chg_pct": 0.6723513885459553,
       "signal": -1,
-      "note": "+0.63%(偏空)",
+      "note": "+0.67%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4312.2001953125,
-      "chg_pct": -0.47543413736111284,
+      "price": 4324.60009765625,
+      "chg_pct": -0.18924730891972052,
       "signal": 0,
-      "note": "-0.48%()",
+      "note": "-0.19%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.69000244140625,
-      "chg_pct": -3.9119335897371204,
+      "price": 102.38999938964844,
+      "chg_pct": -3.250498329290228,
       "signal": -1,
-      "note": "-3.91%",
+      "note": "-3.25%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76159.6171875,
-      "chg_pct": 0.723569936810843,
+      "price": 76418.2578125,
+      "chg_pct": 1.0656305726534787,
       "signal": 1,
-      "note": "+0.72%",
+      "note": "+1.07%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump blasts Supreme Court on social media - SCOTUSblog",
+      "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump threatens to impose ‘serious tariffs’ on Europe if Canada joins EU as asso",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -470,25 +482,13 @@
     },
     {
       "label": "川普動態",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
+      "title": "Trump Says He Backs Warsh After Central Bank Raised Interest Rates - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump administration plans ideological warning signs for Smithsonian - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump suggests EU allowing Canada as associate member could be a ‘hostile act’ -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "On Senate Floor, Murray Calls on Republicans to End Trump’s Trade War—Republican",
+      "title": "Trump Wanted Canada as the 51st State. He Ended Up Pushing It Toward the Europea",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,7 +506,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How Canadians are bracing for the impact of Trump’s trade war - aljazeera.com",
+      "title": "How Canadians are bracing for the impact of Trump’s trade war - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,19 +530,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "ASML Vs. Taiwan Semiconductor Manufacturing: One Is More Misunderstood - 24/7 Wa",
+      "title": "Taiwan Semiconductor Vs. ASML: There's Actually One True Dominant Picks-and-Shov",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan shares close higher, but turnover still low - Taipei Times",
+      "title": "AI boom reshapes Taiwan’s land market and industry — Taipei Times - ua.news",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "U.S. stocks slip after the Fed raises interest rates, hints more hikes may be on",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "US Fed Lifts Interest Rates After Three Years: How Will It Impact Indian Stock M",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "The stock market could do something strange this week after the Fed decision - C",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
