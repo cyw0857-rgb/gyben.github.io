@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-17 16:52",
+  "generated_at": "2026-09-17 18:25",
   "mode": "morning",
   "signal_date": "2026-09-17",
   "trade_date": "2026-09-18",
   "direction": 0,
-  "total_score": -3,
+  "total_score": -2,
   "tw_score": -1,
   "intl_score": -1,
   "news_score": -2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4355.60009765625,
-    "chg_pct": -0.7270633012820513,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 101.36000061035156,
-    "oil_chg": -1.0446155341563068
+    "price_usd": 4349.39990234375,
+    "chg_pct": -0.8683782941595442,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -0.9%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 100.80000305175781,
+    "oil_chg": -1.5913279786797043
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.170000076293945,
-      "chg_pct": -8.695647023092814,
+      "price": 16.0,
+      "chg_pct": -9.65555715907353,
       "signal": 1,
-      "note": "VIX=16.2(低恐慌)",
+      "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.20099639892578,
-      "chg_pct": -0.10866430298166269,
+      "price": 100.16600036621094,
+      "chg_pct": -0.1435521841167426,
       "signal": 0,
-      "note": "-0.11%(中性)",
+      "note": "-0.14%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4355.60009765625,
-      "chg_pct": -0.7270633012820513,
+      "price": 4349.39990234375,
+      "chg_pct": -0.8683782941595442,
       "signal": 1,
-      "note": "-0.73%()",
+      "note": "-0.87%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.36000061035156,
-      "chg_pct": -1.0446155341563068,
+      "price": 100.80000305175781,
+      "chg_pct": -1.5913279786797043,
       "signal": -1,
-      "note": "-1.04%",
+      "note": "-1.59%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,20 +448,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76439.4765625,
-      "chg_pct": 0.3797177067849251,
-      "signal": 1,
-      "note": "+0.38%",
+      "price": 76250.84375,
+      "chg_pct": 0.13200658524807174,
+      "signal": 0,
+      "note": "+0.13%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
     {
       "label": "川普動態",
       "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
@@ -470,25 +464,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney to address EU Parliament after Trump calls Canada associate membership a ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump derides EU pitch to Canada as 'laughable', threatens more tariffs - Reuter",
+      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Cuban official on Trump's threats as tensions with U.S. rise - PBS",
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump threatens to impose ‘serious tariffs’ on Europe if Canada joins EU as asso",
+      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "'We're not going to bend': Canada announces $20bn of retaliatory tariffs on US g",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,13 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Is a No-Brainer Buy On Repeat And Not For The Reason You Th",
+      "title": "Taiwan’s semiconductor industry faces strategic crossroads amid TSMC’s internati",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan’s semiconductor industry faces strategic crossroads amid TSMC’s internati",
+      "title": "Taiwan Semiconductor Is a No-Brainer Buy On Repeat And Not For The Reason You Th",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "聯準會",
-      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
+      "title": "The stock market could do something strange this week after the Fed decision - C",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The stock market could do something strange this week after the Fed decision - C",
+      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
