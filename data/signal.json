@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18 04:34",
+  "generated_at": "2026-09-18 07:02",
   "mode": "morning",
   "signal_date": "2026-09-16",
   "trade_date": "2026-09-21",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4383.39990234375,
-    "chg_pct": -0.09344951923076923,
+    "price_usd": 4381.0,
+    "chg_pct": -0.14814814814814814,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 101.26000213623047,
-    "oil_chg": -1.1422416923357097
+    "oil_usd": 101.22000122070312,
+    "oil_chg": -1.1812936452871563
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.23899841308594,
-      "chg_pct": -0.07077973007260817,
+      "price": 100.23600006103516,
+      "chg_pct": -0.07376881602989754,
       "signal": 0,
       "note": "-0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4383.39990234375,
-      "chg_pct": -0.09344951923076923,
+      "price": 4381.0,
+      "chg_pct": -0.14814814814814814,
       "signal": 0,
-      "note": "-0.09%()",
+      "note": "-0.15%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.26000213623047,
-      "chg_pct": -1.1422416923357097,
+      "price": 101.22000122070312,
+      "chg_pct": -1.1812936452871563,
       "signal": -1,
-      "note": "-1.14%",
+      "note": "-1.18%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,23 +448,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76574.5,
-      "chg_pct": 0.5570294199148251,
-      "signal": 1,
-      "note": "+0.56%",
+      "price": 76354.1875,
+      "chg_pct": 0.2677167826259759,
+      "signal": 0,
+      "note": "+0.27%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump wants to send a check? Pay Americans back the $108 billion his Iran War co",
+      "title": "Carney Says Canada and E.U. 'Are Not Fair Weather Allies' as Trump Threatens Eur",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Carney Says Canada and E.U. 'Are Not Fair Weather Allies' as Trump Threatens Eur",
+      "title": "Trump threatens to tear down the Kennedy Center, as legal battle continues - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Canada's Mark Carney and the EU shrug off Trump's threats, looking to forge an \"",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -476,21 +482,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Canada's Mark Carney and the EU shrug off Trump's threats, looking to forge an \"",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump, Sheinbaum talk as US, Mexico close in on a trade agreement - Politico",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump bashes Democrats on crime while campaigning for Michael Whatley in North C",
+      "title": "Trump says the US doesn’t need Canada. But it’s the source of key minerals for t",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump, Sheinbaum talk as US, Mexico close in on a trade agreement - Politico",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "label": "關稅/貿易",
+      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -511,12 +517,6 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
       "title": "There’s a Good Reason to Choose GLOBALFOUNDRIES Over Taiwan Semiconductor Manufa",
       "sentiment": "⚪中性",
@@ -530,9 +530,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Groups urge more green energy use at TSMC fabs - Taipei Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing Co Ltd (TSM) Shares Surge 3.0% -- What GF Sco",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "World stocks gain as Treasury yields retreat after Fed, BoE decisions - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands fo",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Tech leads Wall St to higher close as oil eases, Treasury yields dip - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
