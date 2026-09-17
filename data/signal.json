@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17 07:04",
+  "generated_at": "2026-09-17 07:57",
   "mode": "morning",
   "signal_date": "2026-09-15",
   "trade_date": "2026-09-18",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4305.7001953125,
-    "chg_pct": -0.6254526079345256,
+    "price_usd": 4312.2001953125,
+    "chg_pct": -0.47543413736111284,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 101.95999908447266,
-    "oil_chg": -3.6568106204515063
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 101.69000244140625,
+    "oil_chg": -3.9119335897371204
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.33999633789062,
-      "chg_pct": 0.6924182653750672,
+      "price": 100.2750015258789,
+      "chg_pct": 0.6271951735371412,
       "signal": -1,
-      "note": "+0.69%(偏空)",
+      "note": "+0.63%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4305.7001953125,
-      "chg_pct": -0.6254526079345256,
-      "signal": 1,
-      "note": "-0.63%()",
+      "price": 4312.2001953125,
+      "chg_pct": -0.47543413736111284,
+      "signal": 0,
+      "note": "-0.48%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.95999908447266,
-      "chg_pct": -3.6568106204515063,
+      "price": 101.69000244140625,
+      "chg_pct": -3.9119335897371204,
       "signal": -1,
-      "note": "-3.66%",
+      "note": "-3.91%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,25 +448,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75655.34375,
-      "chg_pct": 0.056651920084733,
-      "signal": 0,
-      "note": "+0.06%",
+      "price": 76159.6171875,
+      "chg_pct": 0.723569936810843,
+      "signal": 1,
+      "note": "+0.72%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump administration plans ideological warning signs for Smithsonian - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump blasts Supreme Court on social media - SCOTUSblog",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "US lawmakers pass bill giving Trump more power to sanction Russia and its enable",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -476,7 +476,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Meeks Places Hold on Trump Administration’s $2.8 Billion Bomb Sale to Israel - H",
+      "title": "Trump administration plans ideological warning signs for Smithsonian - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump suggests EU allowing Canada as associate member could be a ‘hostile act’ -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -485,12 +491,6 @@
       "title": "On Senate Floor, Murray Calls on Republicans to End Trump’s Trade War—Republican",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Battle with Trump is sending Canada into the arms of the E.U. - The Washington P",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -506,7 +506,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How Canadians are bracing for the impact of Trump’s trade war - Al Jazeera",
+      "title": "How Canadians are bracing for the impact of Trump’s trade war - aljazeera.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,13 +530,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Is a No-Brainer Buy On Repeat And Not For The Reason You Th",
+      "title": "ASML Vs. Taiwan Semiconductor Manufacturing: One Is More Misunderstood - 24/7 Wa",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan shares close higher, but turnover still low - taipeitimes.com",
+      "title": "Taiwan shares close higher, but turnover still low - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
