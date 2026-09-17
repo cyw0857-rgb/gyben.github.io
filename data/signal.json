@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17 18:25",
+  "generated_at": "2026-09-17 19:29",
   "mode": "morning",
   "signal_date": "2026-09-17",
   "trade_date": "2026-09-18",
@@ -8,7 +8,7 @@
   "tw_score": -1,
   "intl_score": -1,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": 0,
   "foreign_fut_net": -2274,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4349.39990234375,
-    "chg_pct": -0.8683782941595442,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -0.9%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 100.80000305175781,
-    "oil_chg": -1.5913279786797043
+    "price_usd": 4367.39990234375,
+    "chg_pct": -0.4581218839031339,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 100.55999755859375,
+    "oil_chg": -1.8256396963883834
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.0,
-      "chg_pct": -9.65555715907353,
+      "price": 15.930000305175781,
+      "chg_pct": -10.050812373319088,
       "signal": 1,
-      "note": "VIX=16.0(低恐慌)",
+      "note": "VIX=15.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.16600036621094,
-      "chg_pct": -0.1435521841167426,
+      "price": 100.2490005493164,
+      "chg_pct": -0.06080850439829168,
       "signal": 0,
-      "note": "-0.14%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4349.39990234375,
-      "chg_pct": -0.8683782941595442,
-      "signal": 1,
-      "note": "-0.87%()",
+      "price": 4367.39990234375,
+      "chg_pct": -0.4581218839031339,
+      "signal": 0,
+      "note": "-0.46%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 100.80000305175781,
-      "chg_pct": -1.5913279786797043,
+      "price": 100.55999755859375,
+      "chg_pct": -1.8256396963883834,
       "signal": -1,
-      "note": "-1.59%",
+      "note": "-1.83%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,14 +448,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76250.84375,
-      "chg_pct": 0.13200658524807174,
+      "price": 76325.4765625,
+      "chg_pct": 0.23001380595801418,
       "signal": 0,
-      "note": "+0.13%",
+      "note": "+0.23%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "'Hostile act': Trump threatens EU with tariffs over Canada associate-membership ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
@@ -464,31 +470,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - Bloomberg.com",
+      "title": "D.C. airspace is complicated. Experts say Trump's arch would add one more risk -",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "title": "Cuban official on Trump's threats as tensions with U.S. rise - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Fed Raises Rate Despite Trump’s Calls to Lower Them - Time Magazine",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump threatens to impose ‘serious tariffs’ on Europe if Canada joins EU as asso",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "'We're not going to bend': Canada announces $20bn of retaliatory tariffs on US g",
+      "label": "關稅/貿易",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -507,12 +513,6 @@
     {
       "label": "關稅/貿易",
       "title": "How Canadians are bracing for the impact of Trump’s trade war - Al Jazeera",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,7 +554,7 @@
     },
     {
       "label": "聯準會",
-      "title": "The stock market could do something strange this week after the Fed decision - C",
+      "title": "The stock market could do something strange this week after the Fed decision - c",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
