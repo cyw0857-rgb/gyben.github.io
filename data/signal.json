@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-18 07:02",
+  "generated_at": "2026-09-18 11:16",
   "mode": "morning",
-  "signal_date": "2026-09-16",
+  "signal_date": "2026-09-18",
   "trade_date": "2026-09-21",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": -5,
-  "intl_score": 9,
+  "total_score": 12,
+  "tw_score": 2,
+  "intl_score": 10,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": 0,
   "foreign_fut_net": -2274,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-5) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 45848.8984375,
-  "tw_chg_pct": 0.7413735937723764,
-  "tw_ma5": 46069.64921875,
-  "tw_ma10": 46437.24453125,
-  "tw_rsi": 48.988867474038486,
-  "tw_macd": 318.8221636096496,
-  "tw_macds": 471.99731923669754,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 46336.54140625,
-  "tw_ma10_p2": 46468.8265625,
-  "tw_ma20_p2": 46035.6951171875,
-  "tw_ma20": 46092.1724609375,
+  "tw_last_close": 46717.05859375,
+  "tw_chg_pct": 0.9269326688342572,
+  "tw_ma5": 46045.59296875,
+  "tw_ma10": 46496.871484375,
+  "tw_rsi": 54.48933344218082,
+  "tw_macd": 323.64378771182237,
+  "tw_macds": 415.4916524916661,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 45939.1515625,
+  "tw_ma10_p2": 46480.278515625,
+  "tw_ma20_p2": 46159.885546875,
+  "tw_ma20": 46234.5240234375,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 43,
-    "wins": 20,
+    "total": 44,
+    "wins": 21,
     "losses": 23,
-    "win_rate": 46.51162790697674,
-    "total_pnl": 15578.0,
-    "avg_pnl": 362.27906976744185,
-    "avg_win": 7000.4,
+    "win_rate": 47.72727272727273,
+    "total_pnl": 19027.0,
+    "avg_pnl": 432.4318181818182,
+    "avg_win": 6831.285714285715,
     "avg_lose": -5410.0,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "stats_real_cons": {
     "total": 4,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4381.0,
-    "chg_pct": -0.14814814814814814,
+    "price_usd": 4388.7001953125,
+    "chg_pct": 0.02735487891737892,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 101.22000122070312,
-    "oil_chg": -1.1812936452871563
+    "warning": "黃金小幅變動 +0.0%，影響中性",
+    "oil_usd": 101.41000366210938,
+    "oil_chg": -0.9957987308673921
   },
   "intl_data": {
     "S&P500": {
@@ -344,8 +344,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51778.0390625,
-      "chg_pct": 0.6143197872576541,
+      "price": 51778.0,
+      "chg_pct": 0.6142438815853295,
       "signal": 1,
       "note": "+0.61%",
       "desc": "藍籌股風向球"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63923.0,
-      "chg_pct": 0.6913517348401083,
+      "price": 64662.109375,
+      "chg_pct": 0.8199097624198484,
       "signal": 1,
-      "note": "+0.69%",
+      "note": "+0.82%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6717.97021484375,
-      "chg_pct": 1.3687474525935581,
+      "price": 6857.330078125,
+      "chg_pct": 2.1133470416980535,
       "signal": 1,
-      "note": "+1.37%",
+      "note": "+2.11%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24713.779296875,
-      "chg_pct": 0.18866748796302535,
-      "signal": 0,
-      "note": "+0.19%",
+      "price": 24774.76953125,
+      "chg_pct": 0.6928892288533282,
+      "signal": 1,
+      "note": "+0.69%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3906.98876953125,
+      "chg_pct": 0.8098032098575361,
+      "signal": 1,
+      "note": "+0.81%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45848.8984375,
-      "chg_pct": 0.7413735937723829,
+      "price": 46717.78125,
+      "chg_pct": 0.9284938861043899,
       "signal": 1,
-      "note": "+0.74%",
+      "note": "+0.93%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.23600006103516,
-      "chg_pct": -0.07376881602989754,
+      "price": 100.26399993896484,
+      "chg_pct": -0.04585546879515954,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4381.0,
-      "chg_pct": -0.14814814814814814,
+      "price": 4388.7001953125,
+      "chg_pct": 0.02735487891737892,
       "signal": 0,
-      "note": "-0.15%()",
+      "note": "+0.03%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.22000122070312,
-      "chg_pct": -1.1812936452871563,
+      "price": 101.41000366210938,
+      "chg_pct": -0.9957987308673921,
       "signal": -1,
-      "note": "-1.18%",
+      "note": "-1.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,14 +448,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76354.1875,
-      "chg_pct": 0.2677167826259759,
-      "signal": 0,
-      "note": "+0.27%",
+      "price": 77320.5625,
+      "chg_pct": 1.5367528103593622,
+      "signal": 1,
+      "note": "+1.54%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump wants to send a check? Pay Americans back the $108 billion his Iran War co",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Carney Says Canada and E.U. 'Are Not Fair Weather Allies' as Trump Threatens Eur",
@@ -464,13 +470,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump threatens to tear down the Kennedy Center, as legal battle continues - NPR",
+      "title": "CNBC Daily Open: Trump's tariff leverage, EU warning and Iran hopes - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Canada's Mark Carney and the EU shrug off Trump's threats, looking to forge an \"",
+      "title": "Trump set to impose sweeping tariffs on 60 trade partners - abcnews.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -482,19 +488,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump, Sheinbaum talk as US, Mexico close in on a trade agreement - Politico",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says the US doesn’t need Canada. But it’s the source of key minerals for t",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "title": "Farmer who voted for Trump talks about impact of high costs of Iran war, tariffs",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -503,6 +497,12 @@
       "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -518,6 +518,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Q2 Earnings: AI Infrastructure Demand Sets the Stage for De",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "There’s a Good Reason to Choose GLOBALFOUNDRIES Over Taiwan Semiconductor Manufa",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -530,13 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Co Ltd (TSM) Shares Surge 3.0% -- What GF Sco",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Prediction: $1,000 Invested in Taiwan Semiconductor (TSMC) Today Will Be Worth T",
+      "title": "Taiwan Semiconductor (TSM) Plans Expansion with $31.4 Billion In - GuruFocus",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,9 +548,9 @@
     },
     {
       "label": "聯準會",
-      "title": "U.S. stocks slip after the Fed raises interest rates, hints more hikes may be on",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "US stocks slip after the Fed hikes interest rates and hints more increases may b",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Tech leads Wall St to higher close as oil eases, Treasury yields dip - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed Raises Interest Rates in Push for ‘Timelier’ Retreat in Inflation - The New ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
