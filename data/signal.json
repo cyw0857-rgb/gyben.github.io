@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18 16:21",
+  "generated_at": "2026-09-18 18:03",
   "mode": "morning",
   "signal_date": "2026-09-18",
   "trade_date": "2026-09-21",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4432.2998046875,
-    "chg_pct": 0.7409506995438476,
+    "price_usd": 4416.10009765625,
+    "chg_pct": 0.3727504515244624,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 95.44000244140625,
-    "oil_chg": -6.3487400531894025
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 96.19000244140625,
+    "oil_chg": -5.612796600094568
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.149999618530273,
-      "chg_pct": -1.8782381459483695,
+      "price": 15.34000015258789,
+      "chg_pct": -0.6476647053958512,
       "signal": 1,
-      "note": "VIX=15.1(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24748.220703125,
-      "chg_pct": 0.5849859764668826,
+      "price": 24750.779296875,
+      "chg_pct": 0.5953849509851084,
       "signal": 1,
-      "note": "+0.58%",
+      "note": "+0.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.2979965209961,
-      "chg_pct": 0.07782408635299111,
+      "price": 100.35099792480469,
+      "chg_pct": 0.1307091423927279,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4432.2998046875,
-      "chg_pct": 0.7409506995438476,
+      "price": 4416.10009765625,
+      "chg_pct": 0.3727504515244624,
       "signal": 0,
-      "note": "+0.74%()",
+      "note": "+0.37%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.44000244140625,
-      "chg_pct": -6.3487400531894025,
+      "price": 96.19000244140625,
+      "chg_pct": -5.612796600094568,
       "signal": -1,
-      "note": "-6.35%",
+      "note": "-5.61%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77915.6875,
-      "chg_pct": 1.9788473716377104,
+      "price": 78128.6875,
+      "chg_pct": 2.257629413959532,
       "signal": 1,
-      "note": "+1.98%",
+      "note": "+2.26%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "CNBC Daily Open: Trump's tariff leverage, EU warning and Iran hopes - cnbc.com",
+      "title": "CNBC Daily Open: Trump's tariff leverage, EU warning and Iran hopes - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -470,27 +470,27 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney Says Canada and E.U. 'Are Not Fair Weather Allies' as Trump Threatens Eur",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Maryland officials grapple with ‘bizarre’ Trump executive order on Chesapeake Ba",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Carney Says Canada and E.U. 'Are Not Fair Weather Allies' as Trump Threatens Eur",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Florida congresswoman running for reelection breaks with Trump on immigration - ",
+      "title": "True or false: Trump's name is now on the Kennedy Center. The quiz has the answe",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Maryland officials grapple with ‘bizarre’ Trump executive order on Chesapeake Ba",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -500,13 +500,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
+      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed approves interest rate hike, signals one more to come this year - cnbc.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
