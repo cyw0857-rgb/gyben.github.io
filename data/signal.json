@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-18 11:16",
+  "generated_at": "2026-09-18 16:21",
   "mode": "morning",
   "signal_date": "2026-09-18",
   "trade_date": "2026-09-21",
   "direction": 0,
-  "total_score": 12,
-  "tw_score": 2,
+  "total_score": 14,
+  "tw_score": 3,
   "intl_score": 10,
   "news_score": -2,
-  "psy_score": 2,
-  "inst_score": 0,
-  "foreign_fut_net": -2274,
+  "psy_score": 1,
+  "inst_score": 2,
+  "foreign_fut_net": 2521,
   "foreign_cash_b": 0,
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46717.05859375,
-  "tw_chg_pct": 0.9269326688342572,
-  "tw_ma5": 46045.59296875,
-  "tw_ma10": 46496.871484375,
-  "tw_rsi": 54.48933344218082,
-  "tw_macd": 323.64378771182237,
-  "tw_macds": 415.4916524916661,
+  "tw_last_close": 47180.75,
+  "tw_chg_pct": 1.9286856204631775,
+  "tw_ma5": 46138.33125,
+  "tw_ma10": 46543.240625,
+  "tw_rsi": 57.49582334851137,
+  "tw_macd": 360.6334155608274,
+  "tw_macds": 422.88957806146715,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 45939.1515625,
   "tw_ma10_p2": 46480.278515625,
   "tw_ma20_p2": 46159.885546875,
-  "tw_ma20": 46234.5240234375,
+  "tw_ma20": 46257.70859375,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4388.7001953125,
-    "chg_pct": 0.02735487891737892,
+    "price_usd": 4432.2998046875,
+    "chg_pct": 0.7409506995438476,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.0%，影響中性",
-    "oil_usd": 101.41000366210938,
-    "oil_chg": -0.9957987308673921
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 95.44000244140625,
+    "oil_chg": -6.3487400531894025
   },
   "intl_data": {
     "S&P500": {
@@ -344,98 +344,98 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51778.0,
-      "chg_pct": 0.6142438815853295,
+      "price": 51778.0390625,
+      "chg_pct": 0.6143197872576541,
       "signal": 1,
       "note": "+0.61%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26418.298828125,
-      "chg_pct": 1.6932091197053807,
+      "price": 26418.30078125,
+      "chg_pct": 1.6932166379619629,
       "signal": 1,
       "note": "+1.69%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11599.4921875,
-      "chg_pct": 3.14225829989657,
+      "price": 11599.490234375,
+      "chg_pct": 3.142240932780839,
       "signal": 1,
       "note": "+3.14%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.4399995803833,
-      "chg_pct": -12.817615027883264,
+      "price": 15.149999618530273,
+      "chg_pct": -1.8782381459483695,
       "signal": 1,
-      "note": "VIX=15.4(低恐慌)",
+      "note": "VIX=15.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64662.109375,
-      "chg_pct": 0.8199097624198484,
+      "price": 65018.94921875,
+      "chg_pct": 1.3762875421466019,
       "signal": 1,
-      "note": "+0.82%",
+      "note": "+1.38%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6857.330078125,
-      "chg_pct": 2.1133470416980535,
+      "price": 6894.22998046875,
+      "chg_pct": 2.6628280337028,
       "signal": 1,
-      "note": "+2.11%",
+      "note": "+2.66%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24774.76953125,
-      "chg_pct": 0.6928892288533282,
+      "price": 24748.220703125,
+      "chg_pct": 0.5849859764668826,
       "signal": 1,
-      "note": "+0.69%",
+      "note": "+0.58%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3906.98876953125,
-      "chg_pct": 0.8098032098575361,
+      "price": 3911.871337890625,
+      "chg_pct": 0.9357853368873829,
       "signal": 1,
-      "note": "+0.81%",
+      "note": "+0.94%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46717.78125,
-      "chg_pct": 0.9284938861043899,
+      "price": 47180.75,
+      "chg_pct": 1.9286856204631868,
       "signal": 1,
-      "note": "+0.93%",
+      "note": "+1.93%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.26399993896484,
-      "chg_pct": -0.04585546879515954,
+      "price": 100.2979965209961,
+      "chg_pct": 0.07782408635299111,
       "signal": 0,
-      "note": "-0.05%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4388.7001953125,
-      "chg_pct": 0.02735487891737892,
+      "price": 4432.2998046875,
+      "chg_pct": 0.7409506995438476,
       "signal": 0,
-      "note": "+0.03%()",
+      "note": "+0.74%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.41000366210938,
-      "chg_pct": -0.9957987308673921,
+      "price": 95.44000244140625,
+      "chg_pct": -6.3487400531894025,
       "signal": -1,
-      "note": "-1.00%",
+      "note": "-6.35%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,14 +448,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77320.5625,
-      "chg_pct": 1.5367528103593622,
+      "price": 77915.6875,
+      "chg_pct": 1.9788473716377104,
       "signal": 1,
-      "note": "+1.54%",
+      "note": "+1.98%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "CNBC Daily Open: Trump's tariff leverage, EU warning and Iran hopes - cnbc.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump wants to send a check? Pay Americans back the $108 billion his Iran War co",
@@ -470,27 +476,21 @@
     },
     {
       "label": "川普動態",
-      "title": "CNBC Daily Open: Trump's tariff leverage, EU warning and Iran hopes - CNBC",
+      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump set to impose sweeping tariffs on 60 trade partners - abcnews.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Maryland officials grapple with ‘bizarre’ Trump executive order on Chesapeake Ba",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
       "title": "Florida congresswoman running for reelection breaks with Trump on immigration - ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Farmer who voted for Trump talks about impact of high costs of Iran war, tariffs",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -518,13 +518,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Q2 Earnings: AI Infrastructure Demand Sets the Stage for De",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Could Be 14% Overvalued As 2nm MediaTek",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "There’s a Good Reason to Choose GLOBALFOUNDRIES Over Taiwan Semiconductor Manufa",
+      "title": "Taiwan Semiconductor Q2 Earnings: AI Infrastructure Demand Sets the Stage for De",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,7 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Plans Expansion with $31.4 Billion In - GuruFocus",
+      "title": "Chip foundries better shielded in AI slowdown than Asia-Pacific tech peers: S&P ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,21 +548,21 @@
     },
     {
       "label": "聯準會",
-      "title": "US stocks slip after the Fed hikes interest rates and hints more increases may b",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "If the Fed hikes rates, here's how the stock market might respond - marketplace.",
+      "title": "U.S. stocks slip after the Fed raises interest rates, hints more hikes may be on",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Raises Interest Rates in Push for ‘Timelier’ Retreat in Inflation - The New ",
+      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed approves interest rate hike, signals one more to come this year - cnbc.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
