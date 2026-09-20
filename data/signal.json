@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-19 07:44",
+  "generated_at": "2026-09-20 07:45",
   "mode": "morning",
-  "signal_date": "2026-09-17",
+  "signal_date": "2026-09-18",
   "trade_date": "2026-09-21",
   "direction": 0,
-  "total_score": 6,
-  "tw_score": -1,
-  "intl_score": 4,
-  "news_score": 0,
+  "total_score": 11,
+  "tw_score": 3,
+  "intl_score": 7,
+  "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 2521,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-1) vs 國際(+4) 方向相反 → 觀望",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46288.0,
-  "tw_chg_pct": 0.9577145306960189,
-  "tw_ma5": 45939.1515625,
-  "tw_ma10": 46480.278515625,
-  "tw_rsi": 49.65676384747885,
-  "tw_macd": 304.278816486345,
-  "tw_macds": 438.45361868662707,
+  "tw_last_close": 47180.75,
+  "tw_chg_pct": 1.9286856204631775,
+  "tw_ma5": 46138.33125,
+  "tw_ma10": 46543.240625,
+  "tw_rsi": 57.49582334851137,
+  "tw_macd": 360.6334155608274,
+  "tw_macds": 422.88957806146715,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 46069.64921875,
-  "tw_ma10_p2": 46437.24453125,
-  "tw_ma20_p2": 46092.1724609375,
-  "tw_ma20": 46159.885546875,
+  "tw_ma5_p2": 45939.1515625,
+  "tw_ma10_p2": 46480.278515625,
+  "tw_ma20_p2": 46159.885546875,
+  "tw_ma20": 46257.70859375,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4415.89990234375,
-    "chg_pct": 0.36820024801938517,
+    "price_usd": 4424.89990234375,
+    "chg_pct": 0.5727596407159312,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 95.47000122070312,
-    "oil_chg": -6.31930351289024
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 100.30000305175781,
+    "oil_chg": -1.57982587822256
   },
   "intl_data": {
     "S&P500": {
@@ -352,16 +352,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26522.544921875,
-      "chg_pct": 0.3945906343037238,
+      "price": 26522.5390625,
+      "chg_pct": 0.3945684550763446,
       "signal": 1,
       "note": "+0.39%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11921.685546875,
-      "chg_pct": 2.7776678628960494,
+      "price": 11921.6904296875,
+      "chg_pct": 2.777709957957137,
       "signal": 1,
       "note": "+2.78%",
       "desc": "對台股影響最大"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64136.25,
-      "chg_pct": 0.33360449290552696,
+      "price": 65018.94921875,
+      "chg_pct": 1.3762875421466019,
       "signal": 1,
-      "note": "+0.33%",
+      "note": "+1.38%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6894.22998046875,
+      "chg_pct": 2.6628280337028,
+      "signal": 1,
+      "note": "+2.66%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24604.2890625,
-      "chg_pct": -0.44303314786356773,
-      "signal": -1,
-      "note": "-0.44%",
+      "price": 24750.779296875,
+      "chg_pct": 0.5953849509851084,
+      "signal": 1,
+      "note": "+0.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3911.87109375,
+      "chg_pct": 0.9357790374660603,
+      "signal": 1,
+      "note": "+0.94%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46288.0,
-      "chg_pct": 0.9577145306960244,
+      "price": 47180.75,
+      "chg_pct": 1.9286856204631868,
       "signal": 1,
-      "note": "+0.96%",
+      "note": "+1.93%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.21499633789062,
-      "chg_pct": -0.004993896179943478,
+      "price": 100.22000122070312,
+      "chg_pct": 0.0,
       "signal": 0,
-      "note": "-0.00%(中性)",
+      "note": "+0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4415.89990234375,
-      "chg_pct": 0.36820024801938517,
+      "price": 4424.89990234375,
+      "chg_pct": 0.5727596407159312,
       "signal": 0,
-      "note": "+0.37%()",
+      "note": "+0.57%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.47000122070312,
-      "chg_pct": -6.31930351289024,
+      "price": 100.30000305175781,
+      "chg_pct": -1.57982587822256,
       "signal": -1,
-      "note": "-6.32%",
+      "note": "-1.58%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,12 +448,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80890.5078125,
-      "chg_pct": 5.87239893154001,
+      "price": 81265.2421875,
+      "chg_pct": 0.44965967954650077,
       "signal": 1,
-      "note": "+5.87%",
+      "note": "+0.45%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Why Trump's new tariff blitz is very different this time around - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - Bloomberg",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he does not care about USMCA as US, Canada plan trade talks - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - cfr.org",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (NYSE:TSM): High Growth Momentum Meets a Breakout Setup - C",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: $1,000 Invested in Taiwan Semiconductor (TSMC) Today Will Be Worth T",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: $1,000 Invested in Taiwan Semiconductor (TSMC) Today Will Be Worth T",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "There's a Good Reason to Choose GLOBALFOUNDRIES Over Taiwan Semiconductor Manufa",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Federal Reserve Just Raised Interest Rates for the First Time Since 2023. He",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "U.S. stocks slip after the Fed raises interest rates, hints more hikes may be on",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "U.S. Treasury Yields Fall as Fed Regains Trust, BOE Leaves Rates Unchanged - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed raises rates to 3.75%-4.00%, first hike since 2023 - U.S. Bank",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    }
+  ]
 }
