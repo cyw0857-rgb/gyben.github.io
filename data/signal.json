@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-20 07:45",
+  "generated_at": "2026-09-21 01:04",
   "mode": "morning",
-  "signal_date": "2026-09-18",
-  "trade_date": "2026-09-21",
+  "signal_date": "2026-09-20",
+  "trade_date": "2026-09-22",
   "direction": 0,
-  "total_score": 11,
-  "tw_score": 3,
+  "total_score": 10,
+  "tw_score": 2,
   "intl_score": 7,
   "news_score": -2,
   "psy_score": 1,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47180.75,
-  "tw_chg_pct": 1.9286856204631775,
-  "tw_ma5": 46138.33125,
-  "tw_ma10": 46543.240625,
-  "tw_rsi": 57.49582334851137,
-  "tw_macd": 360.6334155608274,
-  "tw_macds": 422.88957806146715,
+  "tw_last_close": 47368.0390625,
+  "tw_chg_pct": 0.3969607573003797,
+  "tw_ma5": 46439.43515625,
+  "tw_ma10": 46547.417578125,
+  "tw_rsi": 53.28304144218206,
+  "tw_macd": 415.6165347438364,
+  "tw_macds": 421.434969397941,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 45939.1515625,
-  "tw_ma10_p2": 46480.278515625,
-  "tw_ma20_p2": 46159.885546875,
-  "tw_ma20": 46257.70859375,
+  "tw_ma5_p2": 46138.33125,
+  "tw_ma10_p2": 46543.240625,
+  "tw_ma20_p2": 46257.70859375,
+  "tw_ma20": 46387.99453125,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -330,8 +330,8 @@
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.6%，影響中性",
-    "oil_usd": 100.30000305175781,
-    "oil_chg": -1.57982587822256
+    "oil_usd": 96.08000183105469,
+    "oil_chg": -5.720735572127459
   },
   "intl_data": {
     "S&P500": {
@@ -408,10 +408,10 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 47180.75,
-      "chg_pct": 1.9286856204631868,
+      "price": 47368.0390625,
+      "chg_pct": 0.39696075730038205,
       "signal": 1,
-      "note": "+1.93%",
+      "note": "+0.40%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
@@ -432,10 +432,10 @@
     },
     "原油": {
       "category": "商品",
-      "price": 100.30000305175781,
-      "chg_pct": -1.57982587822256,
+      "price": 96.08000183105469,
+      "chg_pct": -5.720735572127459,
       "signal": -1,
-      "note": "-1.58%",
+      "note": "-5.72%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,31 +448,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81265.2421875,
-      "chg_pct": 0.44965967954650077,
-      "signal": 1,
-      "note": "+0.45%",
+      "price": 81309.8515625,
+      "chg_pct": 0.09376883491308975,
+      "signal": 0,
+      "note": "+0.09%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "After Trump Calls Canadians ‘Nasty,’ Mark Carney Says the Word Fits Trade Talks ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Why Trump's new tariff blitz is very different this time around - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says He Will Eliminate US Tariffs on Irish Whiskey - Bloomberg",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -482,13 +476,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "title": "The bizarre roots of Trump’s trade war on Canada - vox.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says sanctions bill should include tariffs on Iran, despite 'trivial' trad",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -500,43 +500,43 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - cfr.org",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "As Canadian tariffs bite, Republicans search for a winning message - Reuters",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - car",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (NYSE:TSM): High Growth Momentum Meets a Breakout Setup - C",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Prediction: $1,000 Invested in Taiwan Semiconductor (TSMC) Today Will Be Worth T",
+      "title": "Taiwan Semiconductor Manufacturing's Foundry Market Share Is a Massive Moat Nobo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: $1,000 Invested in Taiwan Semiconductor (TSMC) Today Will Be Worth T",
+      "title": "Lennar snags 444 lots near TSMC’s $265B Phoenix project for $60M - KTAR News 92.",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "There's a Good Reason to Choose GLOBALFOUNDRIES Over Taiwan Semiconductor Manufa",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "U.S. Treasury Yields Fall as Fed Regains Trust, BOE Leaves Rates Unchanged - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed raises interest rates to 3.75%-4.00% in first rate hike in three years, with",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed raises rates to 3.75%-4.00%, first hike since 2023 - U.S. Bank",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Federal Reserve interest rate hikes usually pound stocks, but then something sur",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
