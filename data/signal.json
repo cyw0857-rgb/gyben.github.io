@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-21 20:38",
+  "generated_at": "2026-09-22 02:57",
   "mode": "morning",
-  "signal_date": "2026-09-21",
-  "trade_date": "2026-09-22",
+  "signal_date": "2026-09-18",
+  "trade_date": "2026-09-23",
   "direction": 0,
-  "total_score": 14,
-  "tw_score": 6,
-  "intl_score": 7,
-  "news_score": -2,
+  "total_score": 16,
+  "tw_score": 3,
+  "intl_score": 10,
+  "news_score": -1,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 2034,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47718.83984375,
-  "tw_chg_pct": 1.1404859900489006,
-  "tw_ma5": 46509.5953125,
-  "tw_ma10": 46582.49765625,
-  "tw_rsi": 55.71564498762365,
-  "tw_macd": 443.60064264982066,
-  "tw_macds": 427.0317909791379,
+  "tw_last_close": 47180.75,
+  "tw_chg_pct": 1.9286856204631775,
+  "tw_ma5": 46138.33125,
+  "tw_ma10": 46543.240625,
+  "tw_rsi": 57.49582334851137,
+  "tw_macd": 360.6334155608274,
+  "tw_macds": 422.88957806146715,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 46138.33125,
-  "tw_ma10_p2": 46543.240625,
-  "tw_ma20_p2": 46257.70859375,
-  "tw_ma20": 46405.5345703125,
+  "tw_ma5_p2": 45939.1515625,
+  "tw_ma10_p2": 46480.278515625,
+  "tw_ma20_p2": 46159.885546875,
+  "tw_ma20": 46257.70859375,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4390.39990234375,
-    "chg_pct": -0.7796786540126316,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.8%，影響中性",
-    "oil_usd": 93.56999969482422,
-    "oil_chg": -6.709873531569794
+    "price_usd": 4385.2001953125,
+    "chg_pct": -0.8971888157339365,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -0.9%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 92.44000244140625,
+    "oil_chg": -7.836490898505323
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7650.5,
-      "chg_pct": 0.1668059059979803,
-      "signal": 0,
-      "note": "+0.17%",
+      "price": 7774.5498046875,
+      "chg_pct": 1.621460096562316,
+      "signal": 1,
+      "note": "+1.62%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51682.640625,
-      "chg_pct": -0.18424497958458197,
-      "signal": 0,
-      "note": "-0.18%",
+      "price": 52102.53125,
+      "chg_pct": 0.8124403473240683,
+      "signal": 1,
+      "note": "+0.81%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26522.5390625,
-      "chg_pct": 0.3945684550763446,
+      "price": 27132.89453125,
+      "chg_pct": 2.3012708825188484,
       "signal": 1,
-      "note": "+0.39%",
+      "note": "+2.30%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11921.6904296875,
-      "chg_pct": 2.777709957957137,
+      "price": 12422.6396484375,
+      "chg_pct": 4.201998212455943,
       "signal": 1,
-      "note": "+2.78%",
+      "note": "+4.20%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.869999885559082,
-      "chg_pct": 0.4051280502525176,
+      "price": 15.010000228881836,
+      "chg_pct": 1.3504375664988195,
       "signal": 1,
-      "note": "VIX=14.9(低恐慌)",
+      "note": "VIX=15.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -384,117 +384,117 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7007.72021484375,
-      "chg_pct": 1.6461625837332978,
+      "price": 6894.22998046875,
+      "chg_pct": 2.6628280337028,
       "signal": 1,
-      "note": "+1.65%",
+      "note": "+2.66%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25042.7109375,
-      "chg_pct": 1.1794846421739087,
+      "price": 24750.779296875,
+      "chg_pct": 0.5953849509851084,
       "signal": 1,
-      "note": "+1.18%",
+      "note": "+0.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3949.90673828125,
-      "chg_pct": 0.972313341102154,
-      "signal": 1,
-      "note": "+0.97%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47718.83984375,
-      "chg_pct": 1.1404859900489077,
+      "price": 47180.75,
+      "chg_pct": 1.9286856204631868,
       "signal": 1,
-      "note": "+1.14%",
+      "note": "+1.93%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.26000213623047,
-      "chg_pct": 0.039913106206468985,
+      "price": 100.45099639892578,
+      "chg_pct": 0.2304881015855925,
       "signal": 0,
-      "note": "+0.04%(中性)",
+      "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4390.39990234375,
-      "chg_pct": -0.7796786540126316,
+      "price": 4385.2001953125,
+      "chg_pct": -0.8971888157339365,
       "signal": 1,
-      "note": "-0.78%()",
+      "note": "-0.90%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 93.56999969482422,
-      "chg_pct": -6.709873531569794,
+      "price": 92.44000244140625,
+      "chg_pct": -7.836490898505323,
       "signal": -1,
-      "note": "-6.71%",
+      "note": "-7.84%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.956999778747559,
-      "chg_pct": -0.8203354346096756,
+      "price": 4.965000152587891,
+      "chg_pct": -0.6602639338434734,
       "signal": 0,
-      "note": "4.96%(-0.82%)",
+      "note": "4.97%(-0.66%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 85293.6015625,
-      "chg_pct": 5.11567500660007,
+      "price": 86051.53125,
+      "chg_pct": 6.049746135613476,
       "signal": 1,
-      "note": "+5.12%",
+      "note": "+6.05%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "After Trump Calls Canadians ‘Nasty,’ Mark Carney Says the Word Fits Trade Talks ",
+      "title": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military co",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Republicans respond to Trump’s Supreme Court comments - scotusblog.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Why Trump is rolling out the red carpet for Xi after years of slamming China - P",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says sanctions bill should include tariffs on Iran, despite 'trivial' trad",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says DOJ will rein in AI 'if we have to' - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he does not care about USMCA as US, Canada plan trade talks - Reuters",
+      "title": "Trump Says Belarus Potash Deal in Works Amid Canada Fight - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "As Trump and Xi Meet, the U.S. and China Are ‘Shin-Kicking Under the Table’ - Th",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "From Tariff War to Trade Truce: How Trump and Xi Pulled Back From Escalation - M",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,13 +506,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "title": "From Tariff War to Trade Truce: How Trump and Xi Pulled Back From Escalation - m",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,25 +524,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What's Going On With Taiwan Semiconductor Stock Monday? - Benzinga",
+      "title": "A Chip Odyssey and the story behind Taiwan’s central role in the semiconductor i",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing's Foundry Market Share Is a Massive Moat Nobo",
+      "title": "Here's How Much $100 Invested In Taiwan Semiconductor 20 Years Ago Would Be Wort",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
+      "title": "AMD Rises 5% as Report Flags 10% Chip Price Increase; NVIDIA and Taiwan Semicond",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says ",
+      "title": "The Federal Reserve Just Raised Interest Rates for the First Time Since 2023. He",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "Federal Reserve interest rate hikes usually pound stocks, but then something sur",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster grow",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
