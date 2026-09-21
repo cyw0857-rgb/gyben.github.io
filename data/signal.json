@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21 07:40",
+  "generated_at": "2026-09-21 11:24",
   "mode": "morning",
-  "signal_date": "2026-09-20",
+  "signal_date": "2026-09-21",
   "trade_date": "2026-09-22",
   "direction": 0,
-  "total_score": 10,
-  "tw_score": 2,
+  "total_score": 14,
+  "tw_score": 6,
   "intl_score": 7,
   "news_score": -2,
   "psy_score": 1,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47368.0390625,
-  "tw_chg_pct": 0.3969607573003797,
-  "tw_ma5": 46439.43515625,
-  "tw_ma10": 46547.417578125,
-  "tw_rsi": 53.28304144218206,
-  "tw_macd": 415.6165347438364,
-  "tw_macds": 421.434969397941,
+  "tw_last_close": 47641.171875,
+  "tw_chg_pct": 0.9758680711942969,
+  "tw_ma5": 46494.06171875,
+  "tw_ma10": 46574.730859375,
+  "tw_rsi": 55.199152030352344,
+  "tw_macd": 437.40490725096606,
+  "tw_macds": 425.79264389936696,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 46138.33125,
   "tw_ma10_p2": 46543.240625,
   "tw_ma20_p2": 46257.70859375,
-  "tw_ma20": 46387.99453125,
+  "tw_ma20": 46401.651171875,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4412.7001953125,
-    "chg_pct": -0.275705830651404,
+    "price_usd": 4401.0,
+    "chg_pct": -0.5401230055190823,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 96.01000213623047,
-    "oil_chg": -4.277169277166995
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 93.91000366210938,
+    "oil_chg": -6.370886535617558
   },
   "intl_data": {
     "S&P500": {
@@ -384,58 +384,58 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6894.22998046875,
-      "chg_pct": 2.6628280337028,
+      "price": 7012.89013671875,
+      "chg_pct": 1.721151696217887,
       "signal": 1,
-      "note": "+2.66%",
+      "note": "+1.72%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24750.779296875,
-      "chg_pct": 0.5953849509851084,
+      "price": 24897.689453125,
+      "chg_pct": 0.5935576996904848,
       "signal": 1,
-      "note": "+0.60%",
+      "note": "+0.59%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3911.87109375,
-      "chg_pct": 0.9357790374660603,
+      "price": 3931.2138671875,
+      "chg_pct": 0.494463467070885,
       "signal": 1,
-      "note": "+0.94%",
+      "note": "+0.49%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47368.0390625,
-      "chg_pct": 0.39696075730038205,
+      "price": 47641.171875,
+      "chg_pct": 0.9758680711942901,
       "signal": 1,
-      "note": "+0.40%",
+      "note": "+0.98%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.26599884033203,
-      "chg_pct": 0.045896646446462235,
+      "price": 100.302001953125,
+      "chg_pct": 0.08182072582626905,
       "signal": 0,
-      "note": "+0.05%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4412.7001953125,
-      "chg_pct": -0.275705830651404,
-      "signal": 0,
-      "note": "-0.28%()",
+      "price": 4401.0,
+      "chg_pct": -0.5401230055190823,
+      "signal": 1,
+      "note": "-0.54%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.01000213623047,
-      "chg_pct": -4.277169277166995,
+      "price": 93.91000366210938,
+      "chg_pct": -6.370886535617558,
       "signal": -1,
-      "note": "-4.28%",
+      "note": "-6.37%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81151.1875,
-      "chg_pct": -0.10154924388177586,
+      "price": 81424.28125,
+      "chg_pct": 0.23463366824355392,
       "signal": 0,
-      "note": "-0.10%",
+      "note": "+0.23%",
       "desc": "風險偏好指標"
     }
   },
@@ -524,6 +524,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Weekly Recap: U.S. $265B, Arizona ~30% 2nm and MediaTek lifts 2nm/3nm - TradingV",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Lennar snags 444 lots near TSMC’s $265B Phoenix project for $60M - KTAR News 92.",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -531,12 +537,6 @@
     {
       "label": "台股/半導體",
       "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "ASML Vs. Taiwan Semiconductor Manufacturing: One Is More Misunderstood - 24/7 Wa",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
