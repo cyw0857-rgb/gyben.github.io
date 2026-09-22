@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-22 16:42",
+  "generated_at": "2026-09-22 18:20",
   "mode": "morning",
   "signal_date": "2026-09-22",
   "trade_date": "2026-09-23",
   "direction": 0,
-  "total_score": 19,
+  "total_score": 16,
   "tw_score": 10,
   "intl_score": 8,
-  "news_score": -1,
-  "psy_score": 2,
+  "news_score": -2,
+  "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -1482,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4331.89990234375,
-    "chg_pct": -1.18615846981815,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 92.91000366210938,
-    "oil_chg": -2.9964451386147415
+    "price_usd": 4370.0,
+    "chg_pct": -0.31706705566700416,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 89.47000122070312,
+    "oil_chg": -6.588011734196926
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.899999618530273,
-      "chg_pct": 0.20174669268374024,
+      "price": 14.800000190734863,
+      "chg_pct": -0.47074442073263606,
       "signal": 1,
-      "note": "VIX=14.9(低恐慌)",
+      "note": "VIX=14.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.64600372314453,
-      "chg_pct": 0.2150785794208725,
+      "price": 100.35299682617188,
+      "chg_pct": -0.07667378150942591,
       "signal": 0,
-      "note": "+0.22%(中性)",
+      "note": "-0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4331.89990234375,
-      "chg_pct": -1.18615846981815,
-      "signal": 1,
-      "note": "-1.19%()",
+      "price": 4370.0,
+      "chg_pct": -0.31706705566700416,
+      "signal": 0,
+      "note": "-0.32%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.91000366210938,
-      "chg_pct": -2.9964451386147415,
+      "price": 89.47000122070312,
+      "chg_pct": -6.588011734196926,
       "signal": -1,
-      "note": "-3.00%",
+      "note": "-6.59%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,23 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85942.2578125,
-      "chg_pct": -0.7628568358833913,
+      "price": 86009.5390625,
+      "chg_pct": -0.6851674755098545,
       "signal": -1,
-      "note": "-0.76%",
+      "note": "-0.69%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Why Trump is rolling out the red carpet for Xi after years of slamming China - p",
+      "title": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Why Trump is rolling out the red carpet for Xi after years of slamming China - P",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -470,27 +476,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Republicans respond to Trump’s Supreme Court comments - SCOTUSblog",
+      "title": "The House Freedom Caucus has to transform — it could preview the GOP’s post-Trum",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Belarus says it can't supply U.S. potash as Trump says deal underway - upi.com",
+      "title": "Trump to press Zelenskyy for energy truce, says Russia has ‘lost control’ of oil",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says US is working on deal to purchase potash from Belarus - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. W",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump seeks fertilizer deal with Russia ally Belarus amid Canadian tensions - Th",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -536,13 +536,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "A Chip Odyssey and the story behind Taiwan’s central role in the semiconductor i",
+      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "What’s Next for Stocks After the US Fed Rate Hike - global.morningstar.com",
+      "title": "What’s Next for Stocks After the US Fed Rate Hike - Morningstar",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
