@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-22 19:24",
+  "generated_at": "2026-09-23 01:47",
   "mode": "morning",
-  "signal_date": "2026-09-22",
-  "trade_date": "2026-09-23",
+  "signal_date": "2026-09-21",
+  "trade_date": "2026-09-24",
   "direction": 0,
-  "total_score": 16,
-  "tw_score": 10,
-  "intl_score": 8,
+  "total_score": 10,
+  "tw_score": 6,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47800.171875,
-  "tw_chg_pct": 0.17044008512425712,
-  "tw_ma5": 46967.33203125,
-  "tw_ma10": 46651.93671875,
-  "tw_rsi": 63.551332294996435,
-  "tw_macd": 510.03620320217306,
-  "tw_macds": 443.6326734237449,
+  "tw_last_close": 47718.83984375,
+  "tw_chg_pct": 1.1404859900489006,
+  "tw_ma5": 46509.5953125,
+  "tw_ma10": 46582.49765625,
+  "tw_rsi": 55.71564498762365,
+  "tw_macd": 443.60064264982066,
+  "tw_macds": 427.0317909791379,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 46509.5953125,
-  "tw_ma10_p2": 46582.49765625,
-  "tw_ma20_p2": 46405.5345703125,
-  "tw_ma20": 46537.0701171875,
+  "tw_ma5_p2": 46138.33125,
+  "tw_ma10_p2": 46543.240625,
+  "tw_ma20_p2": 46257.70859375,
+  "tw_ma20": 46405.5345703125,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4353.5,
-    "chg_pct": -0.6934442624362248,
+    "price_usd": 4375.39990234375,
+    "chg_pct": -0.19389128833565916,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 90.36000061035156,
-    "oil_chg": -5.658799580311605
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 90.93000030517578,
+    "oil_chg": -5.063686088884598
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7764.7001953125,
-      "chg_pct": 1.49271544751977,
-      "signal": 1,
-      "note": "+1.49%",
+      "price": 7764.18994140625,
+      "chg_pct": -0.006571456635995258,
+      "signal": 0,
+      "note": "-0.01%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52048.828125,
-      "chg_pct": 0.7085309410890807,
-      "signal": 1,
-      "note": "+0.71%",
+      "price": 51825.26953125,
+      "chg_pct": -0.4295170550489699,
+      "signal": -1,
+      "note": "-0.43%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27122.08984375,
-      "chg_pct": 2.260533125569791,
+      "price": 27205.513671875,
+      "chg_pct": 0.30758628337861704,
       "signal": 1,
-      "note": "+2.26%",
+      "note": "+0.31%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12433.169921875,
-      "chg_pct": 4.290326906273369,
+      "price": 12599.4267578125,
+      "chg_pct": 1.3372039229109758,
       "signal": 1,
-      "note": "+4.29%",
+      "note": "+1.34%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.829999923706055,
-      "chg_pct": -0.2689977280488959,
+      "price": 14.270000457763672,
+      "chg_pct": -4.034965920733438,
       "signal": 1,
-      "note": "VIX=14.8(低恐慌)",
+      "note": "VIX=14.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -384,111 +384,111 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7017.91015625,
-      "chg_pct": 0.14541022035476917,
-      "signal": 0,
-      "note": "+0.15%",
+      "price": 7007.72021484375,
+      "chg_pct": 1.6461625837332978,
+      "signal": 1,
+      "note": "+1.65%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25087.75,
-      "chg_pct": 0.1798489892424411,
-      "signal": 0,
-      "note": "+0.18%",
+      "price": 25042.7109375,
+      "chg_pct": 1.1794846421739087,
+      "signal": 1,
+      "note": "+1.18%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3952.1279296875,
-      "chg_pct": 0.05622783714929996,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "+0.06%",
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47800.171875,
-      "chg_pct": 0.1704400851242667,
-      "signal": 0,
-      "note": "+0.17%",
+      "price": 47718.83984375,
+      "chg_pct": 1.1404859900489077,
+      "signal": 1,
+      "note": "+1.14%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.41100311279297,
-      "chg_pct": -0.0189158541522313,
+      "price": 100.65599822998047,
+      "chg_pct": 0.2250302938543757,
       "signal": 0,
-      "note": "-0.02%(中性)",
+      "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4353.5,
-      "chg_pct": -0.6934442624362248,
-      "signal": 1,
-      "note": "-0.69%()",
+      "price": 4375.39990234375,
+      "chg_pct": -0.19389128833565916,
+      "signal": 0,
+      "note": "-0.19%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.36000061035156,
-      "chg_pct": -5.658799580311605,
+      "price": 90.93000030517578,
+      "chg_pct": -5.063686088884598,
       "signal": -1,
-      "note": "-5.66%",
+      "note": "-5.06%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.9629998207092285,
-      "chg_pct": -0.7002865793145795,
+      "price": 4.97599983215332,
+      "chg_pct": 0.26193858379454976,
       "signal": 0,
-      "note": "4.96%(-0.70%)",
+      "note": "4.98%(+0.26%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 86032.5390625,
-      "chg_pct": -0.6586094777230811,
-      "signal": -1,
-      "note": "-0.66%",
+      "price": 86446.1796875,
+      "chg_pct": -0.18098048627657862,
+      "signal": 0,
+      "note": "-0.18%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump heads to U.N. looking for wins after a rough week - npr.org",
+      "title": "Republican support for Trump’s handling of war in Iran shows cracks in new CNN p",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he thinks US will make deal with Iran after election - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump heads to U.N. looking for wins after a rough week - NPR",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Businesses ‘frozen out’ of Trump’s tariff channel with China - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says he faces a decision whether to \"annihilate\" Iran in UN speech - axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump and Xi see tensions flare over AI, trade and Iran but still seek stability",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump to press Zelenskyy for energy truce, says Russia has ‘lost control’ of oil",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Press pool declines to cover Trump in protest of his ban on news outlets - PBS",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "White House Launches ‘Trump TV’ Amid Feud With Press - Time Magazine",
+      "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -512,9 +512,21 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - npr.org",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Here is What to Know Beyond Why Taiwan Semiconductor Manufacturing Company Ltd. ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -524,19 +536,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "New Zealand Shares Rise, Templeton Emerging Markets Investment Trust Reports Tai",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
