@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-22 06:22",
+  "generated_at": "2026-09-22 08:21",
   "mode": "morning",
   "signal_date": "2026-09-18",
   "trade_date": "2026-09-23",
   "direction": 0,
-  "total_score": 16,
+  "total_score": 15,
   "tw_score": 3,
   "intl_score": 10,
   "news_score": -1,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4387.60009765625,
-    "chg_pct": -0.8429525076430159,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 91.83999633789062,
-    "oil_chg": -8.434702349412262
+    "price_usd": 4409.7001953125,
+    "chg_pct": -0.3435039744785894,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 92.26000213623047,
+    "oil_chg": -8.01595281246249
   },
   "intl_data": {
     "S&P500": {
@@ -384,10 +384,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6894.22998046875,
-      "chg_pct": 2.6628280337028,
+      "price": 7162.66015625,
+      "chg_pct": 3.893548322897679,
       "signal": 1,
-      "note": "+2.66%",
+      "note": "+3.89%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.42500305175781,
-      "chg_pct": 0.20455181456567265,
+      "price": 100.39199829101562,
+      "chg_pct": 0.17161950530586242,
       "signal": 0,
-      "note": "+0.20%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4387.60009765625,
-      "chg_pct": -0.8429525076430159,
-      "signal": 1,
-      "note": "-0.84%()",
+      "price": 4409.7001953125,
+      "chg_pct": -0.3435039744785894,
+      "signal": 0,
+      "note": "-0.34%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.83999633789062,
-      "chg_pct": -8.434702349412262,
+      "price": 92.26000213623047,
+      "chg_pct": -8.01595281246249,
       "signal": -1,
-      "note": "-8.43%",
+      "note": "-8.02%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 86560.578125,
-      "chg_pct": 6.677094552087788,
+      "price": 86383.5,
+      "chg_pct": 6.458863802098428,
       "signal": 1,
-      "note": "+6.68%",
+      "note": "+6.46%",
       "desc": "風險偏好指標"
     }
   },
@@ -476,13 +476,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Poll: Most voters say Trump has hurt the economy as competitive midterm election",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. W",
+      "title": "Departing congressman says voter choices and Trump’s ‘lost focus’ contribute to ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -491,6 +485,12 @@
       "title": "Trump Says Belarus Potash Deal in Works Amid Canada Fight - Bloomberg.com",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. W",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
