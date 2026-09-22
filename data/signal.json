@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23 01:47",
+  "generated_at": "2026-09-23 04:29",
   "mode": "morning",
   "signal_date": "2026-09-21",
   "trade_date": "2026-09-24",
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4375.39990234375,
-    "chg_pct": -0.19389128833565916,
+    "price_usd": 4397.7001953125,
+    "chg_pct": 0.31479489213182066,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 90.93000030517578,
-    "oil_chg": -5.063686088884598
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 89.81999969482422,
+    "oil_chg": -6.2225925667488395
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7764.18994140625,
-      "chg_pct": -0.006571456635995258,
+      "price": 7764.64013671875,
+      "chg_pct": -0.000773482455720016,
       "signal": 0,
-      "note": "-0.01%",
+      "note": "-0.00%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51825.26953125,
-      "chg_pct": -0.4295170550489699,
+      "price": 51863.69140625,
+      "chg_pct": -0.35569815002439115,
       "signal": -1,
-      "note": "-0.43%",
+      "note": "-0.36%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27205.513671875,
-      "chg_pct": 0.30758628337861704,
+      "price": 27244.27734375,
+      "chg_pct": 0.45050916320947454,
       "signal": 1,
-      "note": "+0.31%",
+      "note": "+0.45%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12599.4267578125,
-      "chg_pct": 1.3372039229109758,
+      "price": 12689.8203125,
+      "chg_pct": 2.064239387362089,
       "signal": 1,
-      "note": "+1.34%",
+      "note": "+2.06%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 14.270000457763672,
-      "chg_pct": -4.034965920733438,
+      "price": 14.210000038146973,
+      "chg_pct": -4.438465719512645,
       "signal": 1,
-      "note": "VIX=14.3(低恐慌)",
+      "note": "VIX=14.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,42 +416,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.65599822998047,
-      "chg_pct": 0.2250302938543757,
+      "price": 100.53800201416016,
+      "chg_pct": 0.10753928971043625,
       "signal": 0,
-      "note": "+0.23%(中性)",
+      "note": "+0.11%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4375.39990234375,
-      "chg_pct": -0.19389128833565916,
+      "price": 4397.7001953125,
+      "chg_pct": 0.31479489213182066,
       "signal": 0,
-      "note": "-0.19%()",
+      "note": "+0.31%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.93000030517578,
-      "chg_pct": -5.063686088884598,
+      "price": 89.81999969482422,
+      "chg_pct": -6.2225925667488395,
       "signal": -1,
-      "note": "-5.06%",
+      "note": "-6.22%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.97599983215332,
-      "chg_pct": 0.26193858379454976,
+      "price": 4.9679999351501465,
+      "chg_pct": 0.1007478263459505,
       "signal": 0,
-      "note": "4.98%(+0.26%)",
+      "note": "4.97%(+0.10%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 86446.1796875,
-      "chg_pct": -0.18098048627657862,
+      "price": 86372.4609375,
+      "chg_pct": -0.2661031992915221,
       "signal": 0,
-      "note": "-0.18%",
+      "note": "-0.27%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,19 +464,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he thinks US will make deal with Iran after election - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump heads to U.N. looking for wins after a rough week - NPR",
+      "title": "Trump's D.C. arch is now a military complex. Here's how that complicates things ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he faces a decision whether to \"annihilate\" Iran in UN speech - axios",
+      "title": "Trump says US Justice Department could rein in AI companies if needed - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he faces a decision whether to \"annihilate\" Iran in UN speech - Axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump calls on allies to enforce ‘complete economic isolation of Iran’ in UN spe",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -487,10 +493,10 @@
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "關稅/貿易",
+      "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -511,12 +517,6 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
       "title": "Here is What to Know Beyond Why Taiwan Semiconductor Manufacturing Company Ltd. ",
       "sentiment": "⚪中性",
@@ -530,15 +530,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan benchmark Taiex rises to record intraday high as tech stocks advance - CN",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan benchmark Taiex rises to record intraday high as tech stocks advance - CN",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
