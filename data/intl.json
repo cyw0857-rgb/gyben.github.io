@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22 09:06",
+  "updated": "2026-09-22 14:07",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -51,50 +51,58 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7148.27,
-      "chg_pct": 1.82,
-      "signal": 1,
-      "note": "+1.82%",
+      "price": 7025.48,
+      "chg_pct": -1.21,
+      "signal": -1,
+      "note": "-1.21%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25042.71,
-      "chg_pct": 0.61,
+      "price": 25144.79,
+      "chg_pct": 0.05,
       "signal": 1,
-      "note": "+0.61%",
+      "note": "+0.05%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3950.79,
-      "chg_pct": 0.44,
-      "signal": 1,
-      "note": "+0.44%",
+      "price": 3956.79,
+      "chg_pct": -0.05,
+      "signal": 0,
+      "note": "-0.05%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47712.35,
-      "chg_pct": 0.05,
-      "signal": 0,
-      "note": "+0.05%",
+      "price": 47842.31,
+      "chg_pct": -0.47,
+      "signal": -1,
+      "note": "-0.47%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
       "price": 100.38,
-      "chg_pct": 0.07,
+      "chg_pct": -0.02,
       "signal": 0,
-      "note": "+0.07%(中性)",
+      "note": "-0.02%(中性)",
       "desc": "強美元→外資匯出"
+    },
+    "黃金": {
+      "category": "商品",
+      "price": 4362.7,
+      "chg_pct": -0.67,
+      "signal": -1,
+      "note": "-0.67%",
+      "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.74,
-      "chg_pct": -1.31,
-      "signal": -1,
-      "note": "-1.31%",
+      "price": 93.43,
+      "chg_pct": 0.53,
+      "signal": 1,
+      "note": "+0.53%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85753.5,
-      "chg_pct": 5.33,
-      "signal": 1,
-      "note": "+5.33%",
-      "desc": "風險偏好指標"
-    },
-    "黃金": {
-      "category": "商品",
-      "price": 4388.9,
-      "chg_pct": -0.16,
+      "price": 85327.99,
+      "chg_pct": -0.4,
       "signal": 0,
-      "note": "-0.16%",
-      "desc": "避險情緒指標"
+      "note": "-0.40%",
+      "desc": "風險偏好指標"
     }
   }
 }
