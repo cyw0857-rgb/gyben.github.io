@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-23 07:09",
+  "generated_at": "2026-09-23 11:24",
   "mode": "morning",
-  "signal_date": "2026-09-21",
+  "signal_date": "2026-09-23",
   "trade_date": "2026-09-24",
   "direction": 0,
-  "total_score": 10,
-  "tw_score": 6,
-  "intl_score": 6,
+  "total_score": 12,
+  "tw_score": 10,
+  "intl_score": 4,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
@@ -15,18 +15,18 @@
   "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47718.83984375,
-  "tw_chg_pct": 1.1404859900489006,
-  "tw_ma5": 46509.5953125,
-  "tw_ma10": 46582.49765625,
-  "tw_rsi": 55.71564498762365,
-  "tw_macd": 443.60064264982066,
-  "tw_macds": 427.0317909791379,
+  "tw_last_close": 48173.78125,
+  "tw_chg_pct": 0.9533790170499934,
+  "tw_ma5": 47042.05390625,
+  "tw_ma10": 46689.29765625,
+  "tw_rsi": 65.67645398562078,
+  "tw_macd": 539.8398000682719,
+  "tw_macds": 449.5933927969647,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 46138.33125,
-  "tw_ma10_p2": 46543.240625,
-  "tw_ma20_p2": 46257.70859375,
-  "tw_ma20": 46405.5345703125,
+  "tw_ma5_p2": 46509.5953125,
+  "tw_ma10_p2": 46582.49765625,
+  "tw_ma20_p2": 46405.5345703125,
+  "tw_ma20": 46555.7505859375,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4400.39990234375,
-    "chg_pct": 0.37637720676922065,
+    "price_usd": 4376.39990234375,
+    "chg_pct": -0.17108054853146396,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 89.63999938964844,
-    "oil_chg": -6.410523562227917
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 89.80999755859375,
+    "oil_chg": -6.233035390258909
   },
   "intl_data": {
     "S&P500": {
@@ -344,8 +344,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51863.69140625,
-      "chg_pct": -0.35569815002439115,
+      "price": 51863.69921875,
+      "chg_pct": -0.3556831400803032,
       "signal": -1,
       "note": "-0.36%",
       "desc": "藍籌股風向球"
@@ -384,58 +384,58 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7007.72021484375,
-      "chg_pct": 1.6461625837332978,
+      "price": 7033.1298828125,
+      "chg_pct": 0.3625953546907773,
       "signal": 1,
-      "note": "+1.65%",
+      "note": "+0.36%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25042.7109375,
-      "chg_pct": 1.1794846421739087,
-      "signal": 1,
-      "note": "+1.18%",
+      "price": 24886.349609375,
+      "chg_pct": -0.6243786006843933,
+      "signal": -1,
+      "note": "-0.62%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3939.0205078125,
+      "chg_pct": -0.27561344248922,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.28%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47718.83984375,
-      "chg_pct": 1.1404859900489077,
+      "price": 48173.78125,
+      "chg_pct": 0.9533790170499842,
       "signal": 1,
-      "note": "+1.14%",
+      "note": "+0.95%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.54100036621094,
-      "chg_pct": 0.11052480404048723,
+      "price": 100.68099975585938,
+      "chg_pct": 0.24992477339528416,
       "signal": 0,
-      "note": "+0.11%(中性)",
+      "note": "+0.25%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4400.39990234375,
-      "chg_pct": 0.37637720676922065,
+      "price": 4376.39990234375,
+      "chg_pct": -0.17108054853146396,
       "signal": 0,
-      "note": "+0.38%()",
+      "note": "-0.17%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.63999938964844,
-      "chg_pct": -6.410523562227917,
+      "price": 89.80999755859375,
+      "chg_pct": -6.233035390258909,
       "signal": -1,
-      "note": "-6.41%",
+      "note": "-6.23%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,49 +448,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 86430.84375,
-      "chg_pct": -0.1986888251541045,
+      "price": 86768.1875,
+      "chg_pct": 0.1908405037972795,
       "signal": 0,
-      "note": "-0.20%",
+      "note": "+0.19%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Republican support for Trump’s handling of war in Iran shows cracks in new CNN p",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump made over 1,000 July stock trades worth up to $270m, filings reveal - theg",
+      "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "White House launches 'Trump TV' after ban on major news outlets - NPR",
+      "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal - Al Jazeera",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says he thinks US will make deal with Iran after election - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "US states sue Trump administration over new tariffs on 60 trading partners | Tru",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Trump signs agreement with leaders of Denmark and Greenland - PBS",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump says sanctions bill should include tariffs on Iran, despite 'trivial' trad",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -524,19 +524,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - cfr.org",
+      "title": "Micron Is Facing a Potential Strike at Major Taiwan Chip Factory. The Stock Is R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "The U.S.-China AI Race is Changing the Stakes for Taiwan - Council on Foreign Re",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
