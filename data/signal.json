@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24 16:31",
+  "generated_at": "2026-09-24 18:30",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-25",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4304.0,
-    "chg_pct": -0.33345458200697575,
+    "price_usd": 4286.7001953125,
+    "chg_pct": -0.7340614058009179,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 94.4000015258789,
-    "oil_chg": 2.4305531410156433
+    "warning": "黃金小幅變動 -0.7%，影響中性",
+    "oil_usd": 93.3499984741211,
+    "oil_chg": 1.2912269582525773
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.190000534057617,
-      "chg_pct": 6.653492810125081,
+      "price": 16.329999923706055,
+      "chg_pct": 7.575754910480264,
       "signal": 1,
-      "note": "VIX=16.2(低恐慌)",
+      "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.09700012207031,
-      "chg_pct": -0.0029657290761965225,
+      "price": 101.27799987792969,
+      "chg_pct": 0.17606469485175844,
       "signal": 0,
-      "note": "-0.00%(中性)",
+      "note": "+0.18%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4304.0,
-      "chg_pct": -0.33345458200697575,
-      "signal": 0,
-      "note": "-0.33%()",
+      "price": 4286.7001953125,
+      "chg_pct": -0.7340614058009179,
+      "signal": 1,
+      "note": "-0.73%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.4000015258789,
-      "chg_pct": 2.4305531410156433,
+      "price": 93.3499984741211,
+      "chg_pct": 1.2912269582525773,
       "signal": 1,
-      "note": "+2.43%",
+      "note": "+1.29%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83894.53125,
-      "chg_pct": -0.5788802451619175,
+      "price": 83205.640625,
+      "chg_pct": -1.395265727095345,
       "signal": -1,
-      "note": "-0.58%",
+      "note": "-1.40%",
       "desc": "風險偏好指標"
     }
   },
@@ -461,6 +461,18 @@
       "title": "Judge orders Trump administration to restore journalists' access to White House ",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump-Xi summit: Here’s what’s on the agenda, and why it matters - Al Jazeera",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge lifts Trump ban on CNN, MS NOW, Politico from White House - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -476,21 +488,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Judge lifts Trump ban on CNN, MS NOW, Politico from White House - CNBC",
+      "title": "How Trump’s tariff war is clobbering the Hanks of America - Financial Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Judge questions Trump’s process for banning CNN, MS NOW and Politico - The Washi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Why a Growing Number of Republicans Are Breaking With Trump on Iran - Time Magaz",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -512,7 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
+      "title": "What to know about Canada's escalating trade war with the U.S. - npr.org",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,7 +524,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Institutional Investors Invest in Long-Dated Taiwan Semiconductor Call Options -",
+      "title": "TSMC to Raise Wafer Prices 3%-6% in 2027: Report - Taiwan Semiconductor (NYSE:TS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,13 +536,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Down 1.2% - Here's Wha",
+      "title": "When Everyone Wants to Replicate Taiwan: The Semiconductor Supply Chain Enters t",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "What’s Next for US Stocks After the Fed Rate Hike - global.morningstar.com",
+      "title": "What’s Next for US Stocks After the Fed Rate Hike - Morningstar",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
