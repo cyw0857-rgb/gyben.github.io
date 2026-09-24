@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-09-24 08:06",
+  "generated_at": "2026-09-24 11:13",
   "mode": "morning",
-  "signal_date": "2026-09-21",
+  "signal_date": "2026-09-24",
   "trade_date": "2026-09-25",
   "direction": 0,
-  "total_score": 1,
-  "tw_score": 6,
+  "total_score": 4,
+  "tw_score": 9,
   "intl_score": -3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -518,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+6) vs 國際(-3) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47718.83984375,
-  "tw_chg_pct": 1.1404859900489006,
-  "tw_ma5": 46509.5953125,
-  "tw_ma10": 46582.49765625,
-  "tw_rsi": 55.71564498762365,
-  "tw_macd": 443.60064264982066,
-  "tw_macds": 427.0317909791379,
+  "tw_last_close": 48040.2109375,
+  "tw_chg_pct": -0.24311610408146445,
+  "tw_ma5": 47477.01796875,
+  "tw_ma10": 46773.33359375,
+  "tw_rsi": 67.597169249763,
+  "tw_macd": 597.4056553255068,
+  "tw_macds": 478.92980584795635,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 46138.33125,
-  "tw_ma10_p2": 46543.240625,
-  "tw_ma20_p2": 46257.70859375,
-  "tw_ma20": 46405.5345703125,
+  "tw_ma5_p2": 47038.75546875,
+  "tw_ma10_p2": 46687.6484375,
+  "tw_ma20_p2": 46554.9259765625,
+  "tw_ma20": 46665.30546875,
   "stats_real": {
     "total": 11,
     "wins": 6,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4325.5,
-    "chg_pct": -1.1630541879066152,
+    "price_usd": 4326.60009765625,
+    "chg_pct": -1.1379171419145235,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 92.05000305175781,
-    "oil_chg": -2.685266290802623
+    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 91.30999755859375,
+    "oil_chg": -3.4675958412982633
   },
   "intl_data": {
     "S&P500": {
@@ -344,8 +344,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51511.58984375,
-      "chg_pct": -1.0321813201245824,
+      "price": 51511.6015625,
+      "chg_pct": -1.0321588052084507,
       "signal": -1,
       "note": "-1.03%",
       "desc": "藍籌股風向球"
@@ -376,66 +376,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65018.94921875,
-      "chg_pct": 1.3762875421466019,
+      "price": 65883.40625,
+      "chg_pct": 1.329546296329117,
       "signal": 1,
-      "note": "+1.38%",
+      "note": "+1.33%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 7080.919921875,
+      "chg_pct": 1.044558070058197,
+      "signal": 1,
+      "note": "+1.04%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 25042.7109375,
-      "chg_pct": 1.1794846421739087,
-      "signal": 1,
-      "note": "+1.18%",
+      "price": 24769.7109375,
+      "chg_pct": -0.2593536849859014,
+      "signal": 0,
+      "note": "-0.26%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3911.574462890625,
+      "chg_pct": -0.6336956630947211,
+      "signal": -1,
+      "note": "-0.63%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47718.83984375,
-      "chg_pct": 1.1404859900489077,
-      "signal": 1,
-      "note": "+1.14%",
+      "price": 48040.2109375,
+      "chg_pct": -0.24311610408146614,
+      "signal": 0,
+      "note": "-0.24%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.12899780273438,
-      "chg_pct": 0.6960046753306343,
+      "price": 101.06400299072266,
+      "chg_pct": 0.6312881445985626,
       "signal": -1,
-      "note": "+0.70%(偏空)",
+      "note": "+0.63%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4325.5,
-      "chg_pct": -1.1630541879066152,
+      "price": 4326.60009765625,
+      "chg_pct": -1.1379171419145235,
       "signal": 1,
-      "note": "-1.16%()",
+      "note": "-1.14%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.05000305175781,
-      "chg_pct": -2.685266290802623,
+      "price": 91.30999755859375,
+      "chg_pct": -3.4675958412982633,
       "signal": -1,
-      "note": "-2.69%",
+      "note": "-3.47%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84449.203125,
-      "chg_pct": -1.9995735287558027,
+      "price": 84253.390625,
+      "chg_pct": -2.22680727162483,
       "signal": -1,
-      "note": "-2.00%",
+      "note": "-2.23%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,33 +464,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump administration's ban of three prominent news outlets from White House is i",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Judge considers restoring journalists' access to White House after Trump's ban -",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Judge questions Trump’s process for banning CNN, MS NOW and Politico - The Washi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump greets Xi on tarmac in rare gesture - Axios",
+      "title": "Trump welcomes Xi to Washington as US, China agree to extend trade truce - Al Ja",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "White House Defends Trump’s Ban on CNN, MS NOW and Politico in Court Filing - Th",
+      "title": "Why a Growing Number of Republicans Are Breaking With Trump on Iran - Time Magaz",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "DoJ defends Trump media ban: ‘Access to the White House is a privilege’ - The Gu",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "At UN General Assembly, Iran's president responds to Trump's 'annihilation' thre",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump to Venezuela's Rodriguez: Elections need to happen - Axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
