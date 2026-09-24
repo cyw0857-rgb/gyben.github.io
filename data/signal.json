@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24 05:16",
+  "generated_at": "2026-09-24 08:06",
   "mode": "morning",
   "signal_date": "2026-09-21",
   "trade_date": "2026-09-25",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4322.7001953125,
-    "chg_pct": -1.2270292530280769,
+    "price_usd": 4325.5,
+    "chg_pct": -1.1630541879066152,
     "signal": 1,
     "level": "ok",
     "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 92.70999908447266,
-    "oil_chg": -1.9875222816399287
+    "oil_usd": 92.05000305175781,
+    "oil_chg": -2.685266290802623
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.12699890136719,
-      "chg_pct": 0.6940143324439336,
+      "price": 101.12899780273438,
+      "chg_pct": 0.6960046753306343,
       "signal": -1,
-      "note": "+0.69%(偏空)",
+      "note": "+0.70%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4322.7001953125,
-      "chg_pct": -1.2270292530280769,
+      "price": 4325.5,
+      "chg_pct": -1.1630541879066152,
       "signal": 1,
-      "note": "-1.23%()",
+      "note": "-1.16%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.70999908447266,
-      "chg_pct": -1.9875222816399287,
+      "price": 92.05000305175781,
+      "chg_pct": -2.685266290802623,
       "signal": -1,
-      "note": "-1.99%",
+      "note": "-2.69%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,47 +448,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84369.96875,
-      "chg_pct": -2.091522324645432,
+      "price": 84449.203125,
+      "chg_pct": -1.9995735287558027,
       "signal": -1,
-      "note": "-2.09%",
+      "note": "-2.00%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump pauses new tariffs for three days, says U.S., Canada have reached tentativ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal - Al Jazeera",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "title": "‘Dammit, something has to happen’: White House preparing plan for 90-day diesel ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Trump administration's ban of three prominent news outlets from White House is i",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge considers restoring journalists' access to White House after Trump's ban -",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge questions Trump’s process for banning CNN, MS NOW and Politico - The Washi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump greets Xi on tarmac in rare gesture - Axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "White House Defends Trump’s Ban on CNN, MS NOW and Politico in Court Filing - Th",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -518,7 +518,19 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Arm vs. Taiwan Semiconductor Manufacturing: Which Chip Stock Is a Better Buy in ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Institutional Investors Invest in Long-Dated Taiwan Semiconductor Call Options -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Down 1.2% - Here's Wha",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -527,18 +539,6 @@
       "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "As Taiex hits new high, Taiwan stock market ranks global No. 4 in market cap - T",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC's A14 Gains Customer Traction Ahead of 2028 Volume Production - Yahoo Finan",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Dollar Jumps to 8-Week High on Fed Rate-Hike Bets - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Market sees next Fed hike in October, following Barr comments and hot inflation ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
