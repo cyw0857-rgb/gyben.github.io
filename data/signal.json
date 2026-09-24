@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24 18:30",
+  "generated_at": "2026-09-24 19:34",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-25",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4286.7001953125,
-    "chg_pct": -0.7340614058009179,
+    "price_usd": 4299.2998046875,
+    "chg_pct": -0.4422957134165294,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 93.3499984741211,
-    "oil_chg": 1.2912269582525773
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 93.36000061035156,
+    "oil_chg": 1.3020799702241697
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.329999923706055,
-      "chg_pct": 7.575754910480264,
+      "price": 16.079999923706055,
+      "chg_pct": 5.928851122772436,
       "signal": 1,
-      "note": "VIX=16.3(低恐慌)",
+      "note": "VIX=16.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.27799987792969,
-      "chg_pct": 0.17606469485175844,
+      "price": 101.22699737548828,
+      "chg_pct": 0.12561711501874634,
       "signal": 0,
-      "note": "+0.18%(中性)",
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4286.7001953125,
-      "chg_pct": -0.7340614058009179,
-      "signal": 1,
-      "note": "-0.73%()",
+      "price": 4299.2998046875,
+      "chg_pct": -0.4422957134165294,
+      "signal": 0,
+      "note": "-0.44%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 93.3499984741211,
-      "chg_pct": 1.2912269582525773,
+      "price": 93.36000061035156,
+      "chg_pct": 1.3020799702241697,
       "signal": 1,
-      "note": "+1.29%",
+      "note": "+1.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,23 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83205.640625,
-      "chg_pct": -1.395265727095345,
+      "price": 83468.7734375,
+      "chg_pct": -1.0834342111049646,
       "signal": -1,
-      "note": "-1.40%",
+      "note": "-1.08%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Judge orders Trump administration to restore journalists' access to White House ",
+      "title": "Under Trump, NIH funding disruptions have evolved. Here's what the numbers show ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump officials weigh rolling back beef import plan as GOP midterm panic spreads",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -476,19 +482,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump officials weigh rolling back beef import plan as GOP midterm panic spreads",
+      "title": "Judge orders White House to restore access for CNN, MS NOW and Politico - NBC Ne",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
       "title": "At UN General Assembly, Iran's president responds to Trump's 'annihilation' thre",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "How Trump’s tariff war is clobbering the Hanks of America - Financial Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -512,7 +512,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What to know about Canada's escalating trade war with the U.S. - npr.org",
+      "title": "What to know about Canada's escalating trade war with the U.S. - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Inflation pressures raise prospect of Fed rate hike on eve of elections - Reuter",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed's Williams says it is reasonable to see another US rate hike this year - Reu",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
