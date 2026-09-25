@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-25 11:31",
+  "generated_at": "2026-09-25 17:03",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-28",
   "direction": 0,
-  "total_score": 4,
+  "total_score": 2,
   "tw_score": 9,
-  "intl_score": -2,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48024.6015625,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4318.60009765625,
-    "chg_pct": 0.004635867845202267,
+    "price_usd": 4327.7001953125,
+    "chg_pct": 0.6910236229060028,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.0%，影響中性",
-    "oil_usd": 92.95999908447266,
-    "oil_chg": 0.8680505540085943
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 92.69999694824219,
+    "oil_chg": -2.018817936568532
   },
   "intl_data": {
     "S&P500": {
@@ -344,42 +344,42 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51350.0,
-      "chg_pct": -0.3136960909965119,
+      "price": 51349.98046875,
+      "chg_pct": -0.31373400722091743,
       "signal": -1,
       "note": "-0.31%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26939.373046875,
-      "chg_pct": 0.012377411419934897,
+      "price": 26939.369140625,
+      "chg_pct": 0.012362909473338606,
       "signal": 0,
       "note": "+0.01%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12492.5361328125,
-      "chg_pct": -0.3330397893963141,
+      "price": 12492.5400390625,
+      "chg_pct": -0.33300862486261307,
       "signal": -1,
       "note": "-0.33%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.670000076293945,
-      "chg_pct": 3.2279299161218953,
+      "price": 15.380000114440918,
+      "chg_pct": -1.8506698177477878,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=15.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 66318.140625,
-      "chg_pct": 1.227451365497385,
+      "price": 66364.203125,
+      "chg_pct": 1.29776077759157,
       "signal": 1,
-      "note": "+1.23%",
+      "note": "+1.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24325.30078125,
-      "chg_pct": -1.7601380187366809,
+      "price": 24510.08984375,
+      "chg_pct": -1.0138511728350705,
       "signal": -1,
-      "note": "-1.76%",
+      "note": "-1.01%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,81 +416,81 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.28099822998047,
-      "chg_pct": 0.17903042392795496,
+      "price": 101.11299896240234,
+      "chg_pct": -0.1747477061162375,
       "signal": 0,
-      "note": "+0.18%(中性)",
+      "note": "-0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4318.60009765625,
-      "chg_pct": 0.004635867845202267,
+      "price": 4327.7001953125,
+      "chg_pct": 0.6910236229060028,
       "signal": 0,
-      "note": "+0.00%()",
+      "note": "+0.69%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.95999908447266,
-      "chg_pct": 0.8680505540085943,
-      "signal": 1,
-      "note": "+0.87%",
+      "price": 92.69999694824219,
+      "chg_pct": -2.018817936568532,
+      "signal": -1,
+      "note": "-2.02%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.161999702453613,
-      "chg_pct": 0.9385971905395282,
+      "price": 5.1620001792907715,
+      "chg_pct": 0.9386065146923006,
       "signal": 0,
       "note": "5.16%(+0.94%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 84090.0234375,
-      "chg_pct": -0.3472077881497358,
-      "signal": -1,
-      "note": "-0.35%",
+      "price": 84493.7421875,
+      "chg_pct": 0.13591012284593704,
+      "signal": 0,
+      "note": "+0.14%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump's 50% tariffs on Canada take effect as Carney vows to retaliate - ABC News",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
+      "title": "Trump's state dinner for Xi features sea bass and a long list of tech titans - N",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
+      "title": "Trump Expressed Concerns About Yen Weakness, Japan Finance Minister Says - wsj.c",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal - Al Jazeera",
+      "title": "Trump rolls out red carpets for Xi Jinping, though he has portrayed China as a g",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "title": "Experts analyze what's at stake in the Trump-Xi summit - PBS",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Tucker Carlson says Trump should have been ousted over Iran threat - axios.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -524,9 +524,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM): The Key Enabler of AI Chips and a Durable Long-Term ",
+      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Is Taiwan Semiconductor (TSM) Stock a Better Bet than ASML Holding (ASML) as Adv",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -535,10 +541,10 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "label": "聯準會",
+      "title": "Fed rate hike cycles have a history of denting US stock prices - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -554,15 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Williams says it is reasonable to see another US rate hike this year - Reu",
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Market sees next Fed hike in October, following Barr comments and hot inflation ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
