@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25 05:17",
+  "generated_at": "2026-09-25 08:07",
   "mode": "morning",
   "signal_date": "2026-09-23",
   "trade_date": "2026-09-28",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4310.10009765625,
-    "chg_pct": -0.19219629666523935,
+    "price_usd": 4301.7001953125,
+    "chg_pct": -0.3867105272530798,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 94.76000213623047,
-    "oil_chg": 2.8211787877674053
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 93.9800033569336,
+    "oil_chg": 1.9748259792794394
   },
   "intl_data": {
     "S&P500": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.25399780273438,
-      "chg_pct": 0.15232376947335066,
+      "price": 101.28299713134766,
+      "chg_pct": 0.18100757664541933,
       "signal": 0,
-      "note": "+0.15%(中性)",
+      "note": "+0.18%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4310.10009765625,
-      "chg_pct": -0.19219629666523935,
+      "price": 4301.7001953125,
+      "chg_pct": -0.3867105272530798,
       "signal": 0,
-      "note": "-0.19%()",
+      "note": "-0.39%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.76000213623047,
-      "chg_pct": 2.8211787877674053,
+      "price": 93.9800033569336,
+      "chg_pct": 1.9748259792794394,
       "signal": 1,
-      "note": "+2.82%",
+      "note": "+1.97%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84379.5,
-      "chg_pct": -0.004157012876092778,
+      "price": 84516.6484375,
+      "chg_pct": 0.15837385803662152,
       "signal": 0,
-      "note": "-0.00%",
+      "note": "+0.16%",
       "desc": "風險偏好指標"
     }
   },
@@ -461,6 +461,12 @@
       "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's 50% tariffs on Canada take effect as Carney vows to retaliate - ABC News",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -483,12 +489,6 @@
     {
       "label": "川普動態",
       "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,6 +524,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Leads This Group On 17 Onto Best Stock Screens - Investor's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -531,12 +537,6 @@
     {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Sees Early A14 Interest, Is It 18%",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC to Raise Wafer Prices 3%-6% in 2027: Report - Taiwan Semiconductor (NYSE:TS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
