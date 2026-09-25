@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-25 18:33",
+  "generated_at": "2026-09-25 19:40",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-28",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 9,
-  "intl_score": -4,
+  "intl_score": -3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48024.6015625,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4343.7998046875,
-    "chg_pct": 1.0656073682526757,
+    "price_usd": 4342.0,
+    "chg_pct": 1.0237319683573756,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 92.94999694824219,
-    "oil_chg": -1.7545752577954734
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 92.4800033569336,
+    "oil_chg": -2.2513447200896852
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.319999694824219,
-      "chg_pct": -2.2335697496212386,
+      "price": 15.09000015258789,
+      "chg_pct": -3.7013396354955757,
       "signal": 1,
-      "note": "VIX=15.3(低恐慌)",
+      "note": "VIX=15.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.04100036621094,
-      "chg_pct": -0.24582934847050186,
-      "signal": 0,
-      "note": "-0.25%(中性)",
+      "price": 100.9729995727539,
+      "chg_pct": -0.3129641029797271,
+      "signal": 1,
+      "note": "-0.31%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4343.7998046875,
-      "chg_pct": 1.0656073682526757,
+      "price": 4342.0,
+      "chg_pct": 1.0237319683573756,
       "signal": -1,
-      "note": "+1.07%(避險↑)",
+      "note": "+1.02%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.94999694824219,
-      "chg_pct": -1.7545752577954734,
+      "price": 92.4800033569336,
+      "chg_pct": -2.2513447200896852,
       "signal": -1,
-      "note": "-1.75%",
+      "note": "-2.25%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,17 +448,23 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84711.4375,
-      "chg_pct": 0.39390696003525755,
+      "price": 84837.859375,
+      "chg_pct": 0.5437330795183936,
       "signal": 1,
-      "note": "+0.39%",
+      "note": "+0.54%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "As election enters its final stretch, some Republicans are distancing from Trump",
+      "title": "Trump welcomes China's Xi for state dinner at White House after touting \"truly g",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Fill in the blank in the quiz: Trump's says his triumphal arch will include ____",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -470,13 +476,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Diplomacy or ‘diplotainment’? Key takeaways from the Trump-Xi summit in Washingt",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump’s trade war with Canada adds a challenge in Senate races - Los Angeles Tim",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "How Trump's diplomatic week exposed the limits of his power - Reuters",
+      "title": "Taiwan cries foul after Xi presses Trump to change stance on island - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -487,14 +493,8 @@
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Xi calls for U.S. to ‘oppose’ Taiwan independence as Trump hails China as WWII a",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "關稅/貿易",
-      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - aljaz",
+      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - Al Ja",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -518,7 +518,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - The Mo",
+      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - fool.c",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "title": "Fed's Williams says it is reasonable to see another US rate hike this year - Reu",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
