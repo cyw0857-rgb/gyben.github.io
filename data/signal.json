@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-25 17:03",
+  "generated_at": "2026-09-25 18:33",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-28",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 1,
   "tw_score": 9,
   "intl_score": -4,
   "news_score": -2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4327.7001953125,
-    "chg_pct": 0.6910236229060028,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 92.69999694824219,
-    "oil_chg": -2.018817936568532
+    "price_usd": 4343.7998046875,
+    "chg_pct": 1.0656073682526757,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 92.94999694824219,
+    "oil_chg": -1.7545752577954734
   },
   "intl_data": {
     "S&P500": {
@@ -368,10 +368,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.380000114440918,
-      "chg_pct": -1.8506698177477878,
+      "price": 15.319999694824219,
+      "chg_pct": -2.2335697496212386,
       "signal": 1,
-      "note": "VIX=15.4(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.11299896240234,
-      "chg_pct": -0.1747477061162375,
+      "price": 101.04100036621094,
+      "chg_pct": -0.24582934847050186,
       "signal": 0,
-      "note": "-0.17%(中性)",
+      "note": "-0.25%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4327.7001953125,
-      "chg_pct": 0.6910236229060028,
-      "signal": 0,
-      "note": "+0.69%()",
+      "price": 4343.7998046875,
+      "chg_pct": 1.0656073682526757,
+      "signal": -1,
+      "note": "+1.07%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.69999694824219,
-      "chg_pct": -2.018817936568532,
+      "price": 92.94999694824219,
+      "chg_pct": -1.7545752577954734,
       "signal": -1,
-      "note": "-2.02%",
+      "note": "-1.75%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,23 +448,35 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84493.7421875,
-      "chg_pct": 0.13591012284593704,
-      "signal": 0,
-      "note": "+0.14%",
+      "price": 84711.4375,
+      "chg_pct": 0.39390696003525755,
+      "signal": 1,
+      "note": "+0.39%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump's state dinner for Xi features sea bass and a long list of tech titans - N",
+      "title": "As election enters its final stretch, some Republicans are distancing from Trump",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Expressed Concerns About Yen Weakness, Japan Finance Minister Says - wsj.c",
+      "title": "Author of America’s tariff statute: Trump’s tariffs are illegal - CNN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Diplomacy or ‘diplotainment’? Key takeaways from the Trump-Xi summit in Washingt",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "How Trump's diplomatic week exposed the limits of his power - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -476,25 +488,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Experts analyze what's at stake in the Trump-Xi summit - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Tucker Carlson says Trump should have been ousted over Iran threat - axios.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
+      "title": "Xi calls for U.S. to ‘oppose’ Taiwan independence as Trump hails China as WWII a",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - Al Ja",
+      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - aljaz",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,15 +524,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Is Taiwan Semiconductor (TSM) Stock a Better Bet than ASML Holding (ASML) as Adv",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
