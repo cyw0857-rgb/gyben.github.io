@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-27 08:00",
+  "generated_at": "2026-09-28 01:57",
   "mode": "morning",
   "signal_date": "2026-09-24",
-  "trade_date": "2026-09-28",
+  "trade_date": "2026-09-29",
   "direction": 1,
-  "total_score": 16,
+  "total_score": 15,
   "tw_score": 9,
   "intl_score": 9,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": -1,
+  "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
   "veto_msg": "⚠️ 外資期貨(-909口) vs 技術面不一致，提高門檻",
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84420.71875,
-      "chg_pct": 0.4590911330575923,
-      "signal": 1,
-      "note": "+0.46%",
+      "price": 84559.9765625,
+      "chg_pct": 0.1818859006818384,
+      "signal": 0,
+      "note": "+0.18%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,13 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S., Canada 'should be able' to reach trade deal as tariff deadline ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -482,15 +476,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump trade rep says Washington 'not going to tolerate' retaliation as tariff de",
+      "title": "Canadian PM Mark Carney claims country ‘at war’ with Trump on trade after tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -518,15 +518,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Bloom Energy, TSM Lead 5 Stocks Near Buy Points As AI Rebounds - Investor's Busi",
+      "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Priced For Perfection Or Still ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC Stock: An AI Technology Leader Trading At Just 0.7x PEG (NYSE:TSM) - Seekin",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why Is Taiwan Semiconductor Manufacturing (TSM) Raising Wafer Prices By 3% To 6%",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Price Prediction: TSMC Could Reach $600 as Capacity Constraints Drive the AI Boo",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -535,14 +541,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
       "label": "聯準會",
-      "title": "Fed rate hike cycles have a history of denting US stock prices - reuters.com",
+      "title": "Fed rate hike cycles have a history of denting US stock prices - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "Fed Faces Prospect of Another Interest Rate Increase Just Before Midterm Electio",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Market sees next Fed hike in October, following Barr comments and hot inflation ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
