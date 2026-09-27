@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-26 08:14",
+  "generated_at": "2026-09-27 08:00",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-28",
   "direction": 1,
-  "total_score": 15,
+  "total_score": 16,
   "tw_score": 9,
   "intl_score": 9,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": -2,
+  "inst_score": -1,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
   "veto_msg": "⚠️ 外資期貨(-909口) vs 技術面不一致，提高門檻",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4320.5,
-    "chg_pct": 0.5234993020009306,
+    "price_usd": 4321.2001953125,
+    "chg_pct": 0.5397904912168451,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.5%，影響中性",
-    "oil_usd": 92.44000244140625,
-    "oil_chg": -2.2936245163789657
+    "oil_usd": 92.41000366210938,
+    "oil_chg": -2.3253323475842778
   },
   "intl_data": {
     "S&P500": {
@@ -352,16 +352,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27068.716796875,
-      "chg_pct": 0.480143597924651,
+      "price": 27068.720703125,
+      "chg_pct": 0.4801580980786063,
       "signal": 1,
       "note": "+0.48%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12668.9287109375,
-      "chg_pct": 1.4119520235553078,
+      "price": 12668.9296875,
+      "chg_pct": 1.4119598407205676,
       "signal": 1,
       "note": "+1.41%",
       "desc": "對台股影響最大"
@@ -376,10 +376,10 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65513.98828125,
-      "chg_pct": 0.7613765962819372,
+      "price": 66364.203125,
+      "chg_pct": 1.29776077759157,
       "signal": 1,
-      "note": "+0.76%",
+      "note": "+1.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -392,10 +392,10 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24761.130859375,
-      "chg_pct": -0.29390324189353595,
-      "signal": 0,
-      "note": "-0.29%",
+      "price": 24510.08984375,
+      "chg_pct": -1.0138511728350705,
+      "signal": -1,
+      "note": "-1.01%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.03500366210938,
-      "chg_pct": -0.2517496802380606,
-      "signal": 0,
-      "note": "-0.25%(中性)",
+      "price": 100.97000122070312,
+      "chg_pct": -0.31592426886350644,
+      "signal": 1,
+      "note": "-0.32%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4320.5,
-      "chg_pct": 0.5234993020009306,
+      "price": 4321.2001953125,
+      "chg_pct": 0.5397904912168451,
       "signal": 0,
-      "note": "+0.52%()",
+      "note": "+0.54%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.44000244140625,
-      "chg_pct": -2.2936245163789657,
+      "price": 92.41000366210938,
+      "chg_pct": -2.3253323475842778,
       "signal": -1,
-      "note": "-2.29%",
+      "note": "-2.33%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84072.8203125,
-      "chg_pct": -0.36293622899638167,
-      "signal": -1,
-      "note": "-0.36%",
+      "price": 84420.71875,
+      "chg_pct": 0.4590911330575923,
+      "signal": 1,
+      "note": "+0.46%",
       "desc": "風險偏好指標"
     }
   },
@@ -459,6 +459,18 @@
     {
       "label": "川普動態",
       "title": "Trump Says He Wants To Beat China With Tariffs. He's Made the U.S. Weaker Instea",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S., Canada 'should be able' to reach trade deal as tariff deadline ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -481,20 +493,14 @@
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal - aljazeera.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "label": "關稅/貿易",
+      "title": "Trump’s trade war threatens auto manufacturing jobs - The Michigan Independent",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s trade war threatens auto manufacturing jobs - The Michigan Independent",
+      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - Al Ja",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -506,25 +512,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - aljaz",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: Which Technology ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: AI CapEx Keeps Climbing, And TSMC Looks Undervalued (NYSE:",
+      "title": "Bloom Energy, TSM Lead 5 Stocks Near Buy Points As AI Rebounds - Investor's Busi",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -536,13 +530,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan breaks ground on advanced packaging park anchored by TSMC - Reuters",
+      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - The Mo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor: AI Hiccups Lately, But Strong Growth Persists - Seeking Al",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
       "label": "聯準會",
-      "title": "Fed rate hike cycles have a history of denting US stock prices - Reuters",
+      "title": "Fed rate hike cycles have a history of denting US stock prices - reuters.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Faces Prospect of Another Interest Rate Increase Just Before Midterm Electio",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Wall St Week Ahead: Jobs report, inflation data to test US rate path, economic s",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Faces Prospect of Another Interest Rate Increase Just Before Midterm Electio",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
