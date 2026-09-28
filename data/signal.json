@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-28 21:40",
+  "generated_at": "2026-09-29 04:17",
   "mode": "morning",
   "signal_date": "2026-09-24",
-  "trade_date": "2026-09-29",
+  "trade_date": "2026-09-30",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 9,
-  "intl_score": -8,
+  "intl_score": -6,
   "news_score": -2,
-  "psy_score": 2,
+  "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48024.6015625,
@@ -325,85 +325,85 @@
     }
   ],
   "gold": {
-    "price_usd": 4173.0,
-    "chg_pct": -3.429607252940117,
+    "price_usd": 4151.60009765625,
+    "chg_pct": -3.9248377763248916,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.4%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 94.33000183105469,
-    "oil_chg": 2.0776951551323917
+    "warning": "黃金大跌 -3.9%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 92.94999694824219,
+    "oil_chg": 0.5843450543593307
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7701.990234375,
-      "chg_pct": -0.5349054362252581,
+      "price": 7683.68994140625,
+      "chg_pct": -0.7712392038996868,
       "signal": -1,
-      "note": "-0.53%",
+      "note": "-0.77%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51474.05078125,
-      "chg_pct": -0.684120675058356,
+      "price": 51481.51171875,
+      "chg_pct": -0.6697252747128514,
       "signal": -1,
-      "note": "-0.68%",
+      "note": "-0.67%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26913.953125,
-      "chg_pct": -0.5717580074152989,
+      "price": 26820.380859375,
+      "chg_pct": -0.917442115102728,
       "signal": -1,
-      "note": "-0.57%",
+      "note": "-0.92%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12546.873046875,
-      "chg_pct": -0.9634329310820086,
+      "price": 12465.2412109375,
+      "chg_pct": -1.6077796750539428,
       "signal": -1,
-      "note": "-0.96%",
+      "note": "-1.61%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.020000457763672,
-      "chg_pct": 7.733695904876277,
+      "price": 16.06999969482422,
+      "chg_pct": 8.069938254878602,
       "signal": 1,
-      "note": "VIX=16.0(低恐慌)",
+      "note": "VIX=16.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 65877.6171875,
-      "chg_pct": -0.7332054248937385,
-      "signal": -1,
-      "note": "-0.73%",
+      "price": 66364.203125,
+      "chg_pct": 1.29776077759157,
+      "signal": 1,
+      "note": "+1.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6889.740234375,
-      "chg_pct": -2.699927263820495,
-      "signal": -1,
-      "note": "-2.70%",
+      "price": 7080.919921875,
+      "chg_pct": 0.8978422952434758,
+      "signal": 1,
+      "note": "+0.90%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24642.509765625,
-      "chg_pct": 0.5402669786980266,
-      "signal": 1,
-      "note": "+0.54%",
+      "price": 24510.08984375,
+      "chg_pct": -1.0138511728350705,
+      "signal": -1,
+      "note": "-1.01%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3823.62060546875,
-      "chg_pct": -1.6653083674163893,
-      "signal": -1,
-      "note": "-1.67%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -416,42 +416,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.19499969482422,
-      "chg_pct": 0.22283695295723097,
+      "price": 101.20800018310547,
+      "chg_pct": 0.23571254781122444,
       "signal": 0,
-      "note": "+0.22%(中性)",
+      "note": "+0.24%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4173.0,
-      "chg_pct": -3.429607252940117,
+      "price": 4151.60009765625,
+      "chg_pct": -3.9248377763248916,
       "signal": 1,
-      "note": "-3.43%()",
+      "note": "-3.92%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.33000183105469,
-      "chg_pct": 2.0776951551323917,
+      "price": 92.94999694824219,
+      "chg_pct": 0.5843450543593307,
       "signal": 1,
-      "note": "+2.08%",
+      "note": "+0.58%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.234000205993652,
-      "chg_pct": 0.9645098492995903,
+      "price": 5.240000247955322,
+      "chg_pct": 1.080251399145446,
       "signal": 0,
-      "note": "5.23%(+0.96%)",
+      "note": "5.24%(+1.08%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 83701.2109375,
-      "chg_pct": -0.8961545737137551,
+      "price": 83444.8125,
+      "chg_pct": -1.199735260694677,
       "signal": -1,
-      "note": "-0.90%",
+      "note": "-1.20%",
       "desc": "風險偏好指標"
     }
   },
@@ -464,19 +464,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Canadian PM Mark Carney claims country ‘at war’ with Trump on trade after tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Pauses 50 Percent Tariffs on Canada and Claims Deal Is Near - The New York",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
+      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -488,9 +476,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S., Canada 'should be able' to reach trade deal as tariff deadline ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Canadian PM Mark Carney claims country ‘at war’ with Trump on trade after tariff",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -518,27 +518,27 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC 2nm wafer capacity to exceed earlier estimates, EDN reports - Investing.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Is Taiwan Semiconductor Manufacturing (NYSE:TSM) Priced For Perfection Or Still ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "The Zacks Analyst Blog Highlights Analog Devices, Semtech, Taiwan Semiconductor ",
+      "title": "Intel Drops 4% on Oil-Driven Rate Fears, NVIDIA Rises 3% on Record $150B Buyback",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Apple and Nvidia Just Delivered a Major Boost for TSMC Chip Business - TradingVi",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "TSMC 2nm wafer capacity to exceed earlier estimates, EDN reports - Investing.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Nvidia Buybacks Put TSMC And AI Infrastructure Stocks Back In Focus - simplywall",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -554,15 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "The Bond Market Is Getting Closer to Sounding Alarm on Economy - bloomberg.com",
+      "title": "Wall St declines as oil prices, Treasury yields remain elevated - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Higher Rates Have These Top US Stock Fund Managers Taking a More Defensive Stanc",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
