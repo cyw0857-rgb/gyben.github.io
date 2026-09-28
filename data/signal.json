@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28 18:11",
+  "generated_at": "2026-09-28 19:59",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-29",
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4187.60009765625,
-    "chg_pct": -3.091735897845583,
+    "price_usd": 4183.39990234375,
+    "chg_pct": -3.1889356368684645,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.1%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 95.83000183105469,
-    "oil_chg": 3.7008960430845708
+    "warning": "黃金大跌 -3.2%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 95.69999694824219,
+    "oil_chg": 3.5602133489383245
   },
   "intl_data": {
     "S&P500": {
@@ -368,8 +368,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.290000915527344,
-      "chg_pct": 9.54943537926512,
+      "price": 16.270000457763672,
+      "chg_pct": 9.414933308534808,
       "signal": 1,
       "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.12100219726562,
-      "chg_pct": 0.14955033647314486,
+      "price": 101.13200378417969,
+      "chg_pct": 0.1604462330573342,
       "signal": 0,
-      "note": "+0.15%(中性)",
+      "note": "+0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4187.60009765625,
-      "chg_pct": -3.091735897845583,
+      "price": 4183.39990234375,
+      "chg_pct": -3.1889356368684645,
       "signal": 1,
-      "note": "-3.09%()",
+      "note": "-3.19%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.83000183105469,
-      "chg_pct": 3.7008960430845708,
+      "price": 95.69999694824219,
+      "chg_pct": 3.5602133489383245,
       "signal": 1,
-      "note": "+3.70%",
+      "note": "+3.56%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82654.703125,
-      "chg_pct": -2.1352399743400827,
+      "price": 83046.34375,
+      "chg_pct": -1.6715299332555396,
       "signal": -1,
-      "note": "-2.14%",
+      "note": "-1.67%",
       "desc": "風險偏好指標"
     }
   },
@@ -500,7 +500,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s trade war threatens auto manufacturing jobs - The Michigan Independent",
+      "title": "Trump’s trade war threatens auto manufacturing jobs - michiganindependent.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -530,19 +530,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC: Set For All-Time Highs On Surging AI Chip Demand (NYSE:TSM) - Seeking Alph",
+      "title": "TSMC, others hold recruitment campaign in Silicon Valley - focustaiwan.tw",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - fool.c",
+      "title": "TSMC: Set For All-Time Highs On Surging AI Chip Demand (NYSE:TSM) - Seeking Alph",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "Fed Confronts the Prospect of Another Rate Increase Ahead of Midterms - The New ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed's interest rate hike means your high-yield savings and money market acco",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -555,12 +561,6 @@
     {
       "label": "聯準會",
       "title": "Higher Rates Have These Top US Stock Fund Managers Taking a More Defensive Stanc",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "COMMENTARY: Where will Fed tightening hit hardest in Asia? - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
