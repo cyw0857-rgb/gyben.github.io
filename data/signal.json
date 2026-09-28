@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-28 04:42",
+  "generated_at": "2026-09-28 07:24",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-29",
   "direction": 1,
-  "total_score": 15,
+  "total_score": 17,
   "tw_score": 9,
-  "intl_score": 9,
+  "intl_score": 11,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4321.2001953125,
-    "chg_pct": 0.5397904912168451,
+    "price_usd": 4298.7998046875,
+    "chg_pct": -0.5183835418988277,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.5%，影響中性",
-    "oil_usd": 92.41000366210938,
-    "oil_chg": -2.3253323475842778
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 93.48999786376953,
+    "oil_chg": 1.168698364745313
   },
   "intl_data": {
     "S&P500": {
@@ -424,18 +424,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 4321.2001953125,
-      "chg_pct": 0.5397904912168451,
-      "signal": 0,
-      "note": "+0.54%()",
+      "price": 4298.7998046875,
+      "chg_pct": -0.5183835418988277,
+      "signal": 1,
+      "note": "-0.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.41000366210938,
-      "chg_pct": -2.3253323475842778,
-      "signal": -1,
-      "note": "-2.33%",
+      "price": 93.48999786376953,
+      "chg_pct": 1.168698364745313,
+      "signal": 1,
+      "note": "+1.17%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84595.140625,
-      "chg_pct": 0.22354629653797575,
+      "price": 84313.5,
+      "chg_pct": -0.11012561428489713,
       "signal": 0,
-      "note": "+0.22%",
+      "note": "-0.11%",
       "desc": "風險偏好指標"
     }
   },
@@ -524,13 +524,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC Stock: An AI Technology Leader Trading At Just 0.7x PEG (NYSE:TSM) - Seekin",
+      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - The Mo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - The Mo",
+      "title": "TSMC Stock: An AI Technology Leader Trading At Just 0.7x PEG (NYSE:TSM) - Seekin",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,7 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "The Bond Market Is Getting Closer to Sounding Alarm on Economy - Bloomberg",
+      "title": "Why I'd Still Buy This 10%-Yielding Dividend Stock After the Fed's Latest Hike -",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
