@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-28 07:24",
+  "generated_at": "2026-09-28 11:44",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-29",
   "direction": 1,
-  "total_score": 17,
+  "total_score": 18,
   "tw_score": 9,
-  "intl_score": 11,
+  "intl_score": 9,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4298.7998046875,
-    "chg_pct": -0.5183835418988277,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.5%，影響中性",
-    "oil_usd": 93.48999786376953,
-    "oil_chg": 1.168698364745313
+    "price_usd": 4226.2001953125,
+    "chg_pct": -2.1984632904315093,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -2.2%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 93.66000366210938,
+    "oil_chg": 1.3526674066268154
   },
   "intl_data": {
     "S&P500": {
@@ -376,34 +376,34 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66364.203125,
-      "chg_pct": 1.29776077759157,
-      "signal": 1,
-      "note": "+1.30%",
+      "price": 66333.53125,
+      "chg_pct": -0.04621749912709436,
+      "signal": 0,
+      "note": "-0.05%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7080.919921875,
-      "chg_pct": 0.8978422952434758,
-      "signal": 1,
-      "note": "+0.90%",
+      "price": 6916.0,
+      "chg_pct": -2.3290748051748884,
+      "signal": -1,
+      "note": "-2.33%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24510.08984375,
-      "chg_pct": -1.0138511728350705,
-      "signal": -1,
-      "note": "-1.01%",
+      "price": 24699.6796875,
+      "chg_pct": 0.7735175389344598,
+      "signal": 1,
+      "note": "+0.77%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3888.3740234375,
-      "chg_pct": -1.2230598562911181,
+      "price": 3819.760498046875,
+      "chg_pct": -1.7645814157036137,
       "signal": -1,
-      "note": "-1.22%",
+      "note": "-1.76%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 100.97000122070312,
-      "chg_pct": -0.31592426886350644,
-      "signal": 1,
-      "note": "-0.32%(偏多)",
+      "price": 101.11699676513672,
+      "chg_pct": 0.1455833838332701,
+      "signal": 0,
+      "note": "+0.15%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4298.7998046875,
-      "chg_pct": -0.5183835418988277,
+      "price": 4226.2001953125,
+      "chg_pct": -2.1984632904315093,
       "signal": 1,
-      "note": "-0.52%()",
+      "note": "-2.20%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 93.48999786376953,
-      "chg_pct": 1.168698364745313,
+      "price": 93.66000366210938,
+      "chg_pct": 1.3526674066268154,
       "signal": 1,
-      "note": "+1.17%",
+      "note": "+1.35%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84313.5,
-      "chg_pct": -0.11012561428489713,
-      "signal": 0,
-      "note": "-0.11%",
+      "price": 83454.1015625,
+      "chg_pct": -1.1282923606440785,
+      "signal": -1,
+      "note": "-1.13%",
       "desc": "風險偏好指標"
     }
   },
@@ -482,7 +482,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - pol",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -524,31 +524,25 @@
     },
     {
       "label": "台股/半導體",
+      "title": "TSMC: Set For All-Time Highs On Surging AI Chip Demand (NYSE:TSM) - Seeking Alph",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - The Mo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC Stock: An AI Technology Leader Trading At Just 0.7x PEG (NYSE:TSM) - Seekin",
+      "title": "Weekly Recap: 1.4nm fab buildout and Q3 earnings week, beta-linked returns - Tra",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Price Prediction: TSMC Could Reach $600 as Capacity Constraints Drive the AI Boo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "Fed rate hike cycles have a history of denting US stock prices - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve interest rate hikes usually pound stocks, but then something sur",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +554,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Why I'd Still Buy This 10%-Yielding Dividend Stock After the Fed's Latest Hike -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Gold drops more than 1% on US rate-hike bets - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
