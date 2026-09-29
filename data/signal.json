@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30 02:56",
+  "generated_at": "2026-09-30 06:46",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-10-01",
@@ -325,53 +325,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4202.60009765625,
-    "chg_pct": 0.8204633939577244,
+    "price_usd": 4209.39990234375,
+    "chg_pct": 0.9835908492596185,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
     "oil_usd": 89.52999877929688,
     "oil_chg": -3.3153344982853223
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7675.93017578125,
-      "chg_pct": -0.10099009309555541,
+      "price": 7670.83984375,
+      "chg_pct": -0.16723862824035565,
       "signal": 0,
-      "note": "-0.10%",
+      "note": "-0.17%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51334.19921875,
-      "chg_pct": -0.28614641466782637,
+      "price": 51349.921875,
+      "chg_pct": -0.25560602118463793,
       "signal": 0,
-      "note": "-0.29%",
+      "note": "-0.26%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26828.306640625,
-      "chg_pct": 0.029551337438333068,
+      "price": 26797.541015625,
+      "chg_pct": -0.08515853622569415,
       "signal": 0,
-      "note": "+0.03%",
+      "note": "-0.09%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12660.1767578125,
-      "chg_pct": 1.5638408869163203,
+      "price": 12629.1611328125,
+      "chg_pct": 1.3150239815311422,
       "signal": 1,
-      "note": "+1.56%",
+      "note": "+1.32%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.9399995803833,
-      "chg_pct": -0.8089615240178757,
+      "price": 16.040000915527344,
+      "chg_pct": -0.18667566811800826,
       "signal": 1,
-      "note": "VIX=15.9(低恐慌)",
+      "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -416,18 +416,18 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.39099884033203,
-      "chg_pct": 0.18873705321110823,
+      "price": 101.37699890136719,
+      "chg_pct": 0.17490312101049374,
       "signal": 0,
-      "note": "+0.19%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4202.60009765625,
-      "chg_pct": 0.8204633939577244,
+      "price": 4209.39990234375,
+      "chg_pct": 0.9835908492596185,
       "signal": 0,
-      "note": "+0.82%()",
+      "note": "+0.98%()",
       "desc": "避險情緒指標"
     },
     "原油": {
@@ -440,18 +440,18 @@
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.249000072479248,
-      "chg_pct": 0.17176148385906148,
+      "price": 5.255000114440918,
+      "chg_pct": 0.28626610644971423,
       "signal": 0,
-      "note": "5.25%(+0.17%)",
+      "note": "5.26%(+0.29%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 83599.8203125,
-      "chg_pct": 0.1164166464109374,
+      "price": 83554.2421875,
+      "chg_pct": 0.06183377128746164,
       "signal": 0,
-      "note": "+0.12%",
+      "note": "+0.06%",
       "desc": "風險偏好指標"
     }
   },
@@ -518,9 +518,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "I’m Jumping Back Into Taiwan Semiconductor Again and I Won’t Stop This Time - Ya",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -530,21 +536,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC’s expansion in Arizona leads to stronger economic and cultural ties with Ta",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan’s semiconductor chokepoint is less vulnerable now, but only less so | Art",
+      "title": "ALL IN: The high stakes of Arizona’s big bet on semiconductors, partnership with",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Dollar Rises to 2-Month High on Growing Prospect of October U.S. Rate-Rise - WSJ",
+      "title": "Fed’s Williams Hints Next Rate Increase Can Wait - WSJ",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Markets Brace For Two More Fed Rate Hikes In 2026 - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -554,13 +560,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Confronts the Prospect of Another Rate Increase Ahead of Midterms - The New ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "US consumer confidence near 12-1/2-year low amid labor market fears - Reuters",
+      "title": "Fed's Barr says more rate hikes likely to be needed to curb inflation - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
