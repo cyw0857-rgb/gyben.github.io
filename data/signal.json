@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-29 04:17",
+  "generated_at": "2026-09-29 08:23",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-09-30",
   "direction": 0,
-  "total_score": 2,
+  "total_score": -2,
   "tw_score": 9,
-  "intl_score": -6,
+  "intl_score": -10,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -909,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+9) vs 國際(-6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+9) vs 國際(-10) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48024.6015625,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4151.60009765625,
-    "chg_pct": -3.9248377763248916,
+    "price_usd": 4154.7001953125,
+    "chg_pct": -3.8530961879668038,
     "signal": 2,
     "level": "good",
     "warning": "黃金大跌 -3.9%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 92.94999694824219,
-    "oil_chg": 0.5843450543593307
+    "oil_usd": 93.52999877929688,
+    "oil_chg": 1.2119847124805694
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66364.203125,
-      "chg_pct": 1.29776077759157,
-      "signal": 1,
-      "note": "+1.30%",
+      "price": 65599.4296875,
+      "chg_pct": -1.1523884888055,
+      "signal": -1,
+      "note": "-1.15%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7080.919921875,
-      "chg_pct": 0.8978422952434758,
-      "signal": 1,
-      "note": "+0.90%",
+      "price": 6859.1201171875,
+      "chg_pct": -3.1323586078455223,
+      "signal": -1,
+      "note": "-3.13%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.20800018310547,
-      "chg_pct": 0.23571254781122444,
+      "price": 101.23600006103516,
+      "chg_pct": 0.2634434357890156,
       "signal": 0,
-      "note": "+0.24%(中性)",
+      "note": "+0.26%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4151.60009765625,
-      "chg_pct": -3.9248377763248916,
+      "price": 4154.7001953125,
+      "chg_pct": -3.8530961879668038,
       "signal": 1,
-      "note": "-3.92%()",
+      "note": "-3.85%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.94999694824219,
-      "chg_pct": 0.5843450543593307,
+      "price": 93.52999877929688,
+      "chg_pct": 1.2119847124805694,
       "signal": 1,
-      "note": "+0.58%",
+      "note": "+1.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,14 +448,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83444.8125,
-      "chg_pct": -1.199735260694677,
+      "price": 83343.578125,
+      "chg_pct": -1.319598709974021,
       "signal": -1,
-      "note": "-1.20%",
+      "note": "-1.32%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says he expects Canada trade deal within weeks as import ban looms - Yahoo",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
     {
       "label": "川普動態",
       "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
@@ -482,15 +488,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Canadian PM Mark Carney claims country ‘at war’ with Trump on trade after tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Protein powder prices to rise due to trade war with Canada - ABC Columbia",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -509,12 +515,6 @@
       "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -536,9 +536,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Nvidia Buybacks Put TSMC And AI Infrastructure Stocks Back In Focus - simplywall",
+      "title": "Is Taiwan Semiconductor Stock an Undervalued AI Stock to Buy Right Now? - fool.c",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -548,21 +554,15 @@
     },
     {
       "label": "聯準會",
+      "title": "Stocks fall as higher oil prices, Treasury yields weigh - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
       "title": "The Fed's interest rate hike means your high-yield savings and money market acco",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Wall St declines as oil prices, Treasury yields remain elevated - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
