@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-09-30 08:51",
+  "generated_at": "2026-09-30 12:03",
   "mode": "morning",
-  "signal_date": "2026-09-24",
+  "signal_date": "2026-09-30",
   "trade_date": "2026-10-01",
   "direction": 1,
-  "total_score": 15,
+  "total_score": 10,
   "tw_score": 9,
-  "intl_score": 5,
+  "intl_score": 3,
   "news_score": -2,
-  "psy_score": 2,
+  "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -1009,
   "foreign_cash_b": 0,
   "veto_msg": "⚠️ 外資期貨(-1,009口) vs 技術面不一致，提高門檻",
   "threshold": 6,
-  "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 48024.6015625,
-  "tw_chg_pct": -0.2755294215747828,
-  "tw_ma5": 47776.33046875,
-  "tw_ma10": 46857.741015625,
-  "tw_rsi": 63.33805505246342,
-  "tw_macd": 626.0441273558681,
-  "tw_macds": 502.6756228377122,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 47429.01015625,
-  "tw_ma10_p2": 46749.3296875,
-  "tw_ma20_p2": 46653.303515625,
-  "tw_ma20": 46755.77265625,
+  "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
+  "tw_last_close": 48169.30859375,
+  "tw_chg_pct": 1.1281241537695275,
+  "tw_ma5": 47956.66640625,
+  "tw_ma10": 47233.130859375,
+  "tw_rsi": 59.74296267827249,
+  "tw_macd": 650.9661066924673,
+  "tw_macds": 551.096746410429,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 47866.57265625,
+  "tw_ma10_p2": 47002.451953125,
+  "tw_ma20_p2": 46820.7982421875,
+  "tw_ma20": 46922.840234375,
   "stats_real": {
-    "total": 11,
+    "total": 12,
     "wins": 6,
-    "losses": 5,
-    "win_rate": 54.54545454545454,
-    "total_pnl": -4151.0,
-    "avg_pnl": -377.3636363636364,
+    "losses": 6,
+    "win_rate": 50.0,
+    "total_pnl": -6640.0,
+    "avg_pnl": -553.3333333333334,
     "avg_win": 5681.166666666667,
-    "avg_lose": -7647.6,
+    "avg_lose": -6787.833333333333,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_sim": {
     "total": 789,
@@ -226,69 +226,69 @@
     }
   ],
   "stats_real_v100": {
-    "total": 3,
+    "total": 4,
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "win_rate": 0.0,
-    "total_pnl": -32445.0,
-    "avg_pnl": -10815.0,
+    "total_pnl": -34934.0,
+    "avg_pnl": -8733.5,
     "avg_win": 0,
-    "avg_lose": -10815.0,
+    "avg_lose": -8733.5,
     "max_win": 0,
     "max_lose": -16729.0,
-    "streak": -3
+    "streak": -4
   },
   "stats_real_v70": {
-    "total": 3,
+    "total": 4,
     "wins": 0,
-    "losses": 3,
+    "losses": 4,
     "win_rate": 0.0,
-    "total_pnl": -32445.0,
-    "avg_pnl": -10815.0,
+    "total_pnl": -34934.0,
+    "avg_pnl": -8733.5,
     "avg_win": 0,
-    "avg_lose": -10815.0,
+    "avg_lose": -8733.5,
     "max_win": 0,
+    "max_lose": -16729.0,
+    "streak": -4
+  },
+  "stats_real_v60": {
+    "total": 17,
+    "wins": 5,
+    "losses": 12,
+    "win_rate": 29.411764705882355,
+    "total_pnl": -27631.0,
+    "avg_pnl": -1625.3529411764705,
+    "avg_win": 11642.4,
+    "avg_lose": -7153.583333333333,
+    "max_win": 25558.0,
     "max_lose": -16729.0,
     "streak": -3
   },
-  "stats_real_v60": {
-    "total": 16,
-    "wins": 5,
-    "losses": 11,
-    "win_rate": 31.25,
-    "total_pnl": -25142.0,
-    "avg_pnl": -1571.375,
-    "avg_win": 11642.4,
-    "avg_lose": -7577.636363636364,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": -2
-  },
   "stats_real_v50": {
-    "total": 44,
+    "total": 45,
     "wins": 21,
-    "losses": 23,
-    "win_rate": 47.72727272727273,
-    "total_pnl": 19027.0,
-    "avg_pnl": 432.4318181818182,
+    "losses": 24,
+    "win_rate": 46.666666666666664,
+    "total_pnl": 16538.0,
+    "avg_pnl": 367.5111111111111,
     "avg_win": 6831.285714285715,
-    "avg_lose": -5410.0,
+    "avg_lose": -5288.291666666667,
     "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 2
-  },
-  "stats_real_cons": {
-    "total": 4,
-    "wins": 1,
-    "losses": 3,
-    "win_rate": 25.0,
-    "total_pnl": -16329.0,
-    "avg_pnl": -4082.25,
-    "avg_win": 16116.0,
-    "avg_lose": -10815.0,
-    "max_win": 16116.0,
     "max_lose": -16729.0,
     "streak": -1
+  },
+  "stats_real_cons": {
+    "total": 5,
+    "wins": 1,
+    "losses": 4,
+    "win_rate": 20.0,
+    "total_pnl": -18818.0,
+    "avg_pnl": -3763.6,
+    "avg_win": 16116.0,
+    "avg_lose": -8733.5,
+    "max_win": 16116.0,
+    "max_lose": -16729.0,
+    "streak": -2
   },
   "cons_recent": [
     {
@@ -322,16 +322,24 @@
       "exit": 43121,
       "pnl": -15163,
       "win": false
+    },
+    {
+      "date": "2026-09-29",
+      "dir": 1,
+      "entry": 47875,
+      "exit": 47631,
+      "pnl": -2489,
+      "win": false
     }
   ],
   "gold": {
-    "price_usd": 4212.10009765625,
-    "chg_pct": -2.52476378610272,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.5%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 89.25,
-    "oil_chg": -3.6177089949491927
+    "price_usd": 4179.7001953125,
+    "chg_pct": 0.2710942623906173,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 89.37999725341797,
+    "oil_chg": -3.4773231898087107
   },
   "intl_data": {
     "S&P500": {
@@ -352,16 +360,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26797.541015625,
-      "chg_pct": -0.08515853622569415,
+      "price": 26797.5390625,
+      "chg_pct": -0.08516581846754688,
       "signal": 0,
       "note": "-0.09%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12629.1611328125,
-      "chg_pct": 1.3150239815311422,
+      "price": 12629.16015625,
+      "chg_pct": 1.315016147245708,
       "signal": 1,
       "note": "+1.32%",
       "desc": "對台股影響最大"
@@ -376,66 +384,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66377.421875,
-      "chg_pct": 0.7586866508505651,
+      "price": 66536.359375,
+      "chg_pct": 1.611284954160019,
       "signal": 1,
-      "note": "+0.76%",
+      "note": "+1.61%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6937.419921875,
-      "chg_pct": 0.6920389721242551,
-      "signal": 1,
-      "note": "+0.69%",
+      "price": 6852.3798828125,
+      "chg_pct": -0.2682387611370253,
+      "signal": 0,
+      "note": "-0.27%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24642.509765625,
-      "chg_pct": 0.5402669786980266,
-      "signal": 1,
-      "note": "+0.54%",
+      "price": 24498.740234375,
+      "chg_pct": -0.10124984987338392,
+      "signal": 0,
+      "note": "-0.10%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3840.827880859375,
+      "chg_pct": 0.27090682848501424,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.27%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 48024.6015625,
-      "chg_pct": -0.27552942157477783,
-      "signal": 0,
-      "note": "-0.28%",
+      "price": 48167.75,
+      "chg_pct": 1.1248519942377189,
+      "signal": 1,
+      "note": "+1.12%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.4010009765625,
-      "chg_pct": 0.19862058733372706,
+      "price": 101.37000274658203,
+      "chg_pct": 0.16798992437400137,
       "signal": 0,
-      "note": "+0.20%(中性)",
+      "note": "+0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4212.10009765625,
-      "chg_pct": -2.52476378610272,
-      "signal": 1,
-      "note": "-2.52%()",
+      "price": 4179.7001953125,
+      "chg_pct": 0.2710942623906173,
+      "signal": 0,
+      "note": "+0.27%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.25,
-      "chg_pct": -3.6177089949491927,
+      "price": 89.37999725341797,
+      "chg_pct": -3.4773231898087107,
       "signal": -1,
-      "note": "-3.62%",
+      "note": "-3.48%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,20 +456,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83335.8984375,
-      "chg_pct": -0.19964757837844516,
+      "price": 83365.796875,
+      "chg_pct": -0.16384218532093028,
       "signal": 0,
-      "note": "-0.20%",
+      "note": "-0.16%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump says he expects Canada trade deal within weeks as import ban looms - Yahoo",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
     {
       "label": "川普動態",
       "title": "Trump Says Canada Will 'Get Rid' of All the Tariffs, Seek Trade Resolution Withi",
@@ -491,6 +493,12 @@
       "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -536,7 +544,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "ALL IN: The high stakes of Arizona’s big bet on semiconductors, partnership with",
+      "title": "Is Taiwan Semiconductor Manufacturing Co Ltd (TSM) Overvalued Af - GuruFocus",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -548,21 +556,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Markets Brace For Two More Fed Rate Hikes In 2026 - forbes.com",
+      "title": "Markets Brace For Two More Fed Rate Hikes In 2026 - Forbes",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed's Barr says more rate hikes likely to be needed to curb inflation - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Traders expecting a back-to-back rate hike from the Fed in October may have gott",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
