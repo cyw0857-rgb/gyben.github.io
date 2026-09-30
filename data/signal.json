@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-30 06:46",
+  "generated_at": "2026-09-30 08:51",
   "mode": "morning",
   "signal_date": "2026-09-24",
   "trade_date": "2026-10-01",
-  "direction": 0,
-  "total_score": 7,
+  "direction": 1,
+  "total_score": 15,
   "tw_score": 9,
-  "intl_score": 1,
+  "intl_score": 5,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": -1009,
   "foreign_cash_b": 0,
@@ -325,13 +325,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4209.39990234375,
-    "chg_pct": 0.9835908492596185,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 89.52999877929688,
-    "oil_chg": -3.3153344982853223
+    "price_usd": 4212.10009765625,
+    "chg_pct": -2.52476378610272,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -2.5%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 89.25,
+    "oil_chg": -3.6177089949491927
   },
   "intl_data": {
     "S&P500": {
@@ -376,18 +376,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65877.6171875,
-      "chg_pct": -0.7332054248937385,
-      "signal": -1,
-      "note": "-0.73%",
+      "price": 66377.421875,
+      "chg_pct": 0.7586866508505651,
+      "signal": 1,
+      "note": "+0.76%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6889.740234375,
-      "chg_pct": -2.699927263820495,
-      "signal": -1,
-      "note": "-2.70%",
+      "price": 6937.419921875,
+      "chg_pct": 0.6920389721242551,
+      "signal": 1,
+      "note": "+0.69%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,26 +416,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.37699890136719,
-      "chg_pct": 0.17490312101049374,
+      "price": 101.4010009765625,
+      "chg_pct": 0.19862058733372706,
       "signal": 0,
-      "note": "+0.17%(中性)",
+      "note": "+0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4209.39990234375,
-      "chg_pct": 0.9835908492596185,
-      "signal": 0,
-      "note": "+0.98%()",
+      "price": 4212.10009765625,
+      "chg_pct": -2.52476378610272,
+      "signal": 1,
+      "note": "-2.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.52999877929688,
-      "chg_pct": -3.3153344982853223,
+      "price": 89.25,
+      "chg_pct": -3.6177089949491927,
       "signal": -1,
-      "note": "-3.32%",
+      "note": "-3.62%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -448,10 +448,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83554.2421875,
-      "chg_pct": 0.06183377128746164,
+      "price": 83335.8984375,
+      "chg_pct": -0.19964757837844516,
       "signal": 0,
-      "note": "+0.06%",
+      "note": "-0.20%",
       "desc": "風險偏好指標"
     }
   },
@@ -548,7 +548,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Markets Brace For Two More Fed Rate Hikes In 2026 - Forbes",
+      "title": "Markets Brace For Two More Fed Rate Hikes In 2026 - forbes.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -560,9 +560,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Barr says more rate hikes likely to be needed to curb inflation - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Traders expecting a back-to-back rate hike from the Fed in October may have gott",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
