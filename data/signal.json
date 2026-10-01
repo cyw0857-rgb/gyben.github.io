@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-01 12:15",
+  "generated_at": "2026-10-01 19:00",
   "mode": "morning",
   "signal_date": "2026-10-01",
   "trade_date": "2026-10-02",
   "direction": 1,
-  "total_score": 11,
+  "total_score": 10,
   "tw_score": 9,
-  "intl_score": 1,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 2,
-  "foreign_fut_net": 846,
+  "inst_score": 0,
+  "foreign_fut_net": -1389,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "⚠️ 外資期貨(-1,389口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 48056.75,
-  "tw_chg_pct": 0.2432640387306062,
-  "tw_ma5": 47962.14609375,
-  "tw_ma10": 47464.7390625,
-  "tw_rsi": 58.2899164586661,
-  "tw_macd": 644.7580316720414,
-  "tw_macds": 566.9038610126098,
+  "tw_last_close": 48353.48828125,
+  "tw_chg_pct": 0.8622408500576828,
+  "tw_ma5": 48021.49375,
+  "tw_ma10": 47494.412890625,
+  "tw_rsi": 60.514180576040054,
+  "tw_macd": 668.4294615153412,
+  "tw_macds": 571.6381469812698,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 47910.83046875,
   "tw_ma10_p2": 47210.212890625,
   "tw_ma20_p2": 46911.38125,
-  "tw_ma20": 46966.7828125,
+  "tw_ma20": 46981.6197265625,
   "stats_real": {
     "total": 12,
     "wins": 6,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4205.10009765625,
-    "chg_pct": 0.43948459372254167,
+    "price_usd": 4204.60009765625,
+    "chg_pct": 0.427542014204672,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 89.19999694824219,
-    "oil_chg": -1.3492603908524892
+    "oil_usd": 91.37999725341797,
+    "oil_chg": 1.0617110195898758
   },
   "intl_data": {
     "S&P500": {
@@ -376,26 +376,26 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.34000015258789,
-      "chg_pct": 1.8703193262921574,
+      "price": 16.280000686645508,
+      "chg_pct": -0.36719379058806334,
       "signal": 1,
       "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 68539.890625,
-      "chg_pct": 2.6757638502349352,
+      "price": 68956.71875,
+      "chg_pct": 3.3001906728979047,
       "signal": 1,
-      "note": "+2.68%",
+      "note": "+3.30%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6906.6298828125,
-      "chg_pct": 1.003062915077691,
+      "price": 6971.35009765625,
+      "chg_pct": 1.9495360926846357,
       "signal": 1,
-      "note": "+1.00%",
+      "note": "+1.95%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -416,34 +416,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 48056.75,
-      "chg_pct": 0.2432640387306009,
-      "signal": 0,
-      "note": "+0.24%",
+      "price": 48353.48828125,
+      "chg_pct": 0.862240850057685,
+      "signal": 1,
+      "note": "+0.86%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.5479965209961,
-      "chg_pct": 0.09659889177118824,
-      "signal": 0,
-      "note": "+0.10%(中性)",
+      "price": 101.7979965209961,
+      "chg_pct": 0.343025710421114,
+      "signal": -1,
+      "note": "+0.34%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4205.10009765625,
-      "chg_pct": 0.43948459372254167,
+      "price": 4204.60009765625,
+      "chg_pct": 0.427542014204672,
       "signal": 0,
-      "note": "+0.44%()",
+      "note": "+0.43%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.19999694824219,
-      "chg_pct": -1.3492603908524892,
-      "signal": -1,
-      "note": "-1.35%",
+      "price": 91.37999725341797,
+      "chg_pct": 1.0617110195898758,
+      "signal": 1,
+      "note": "+1.06%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +456,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83836.3203125,
-      "chg_pct": 0.25578140434249147,
-      "signal": 0,
-      "note": "+0.26%",
+      "price": 83902.2421875,
+      "chg_pct": 0.41696536842397586,
+      "signal": 1,
+      "note": "+0.42%",
       "desc": "風險偏好指標"
     }
   },
@@ -502,6 +502,18 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Donald Trump’s war on the world faces a lethal blow - SMH.com.au",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "U.S. and China to Cut Tariffs on $60 Billion of Goods - Time Magazine",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
       "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -511,18 +523,6 @@
       "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -538,9 +538,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "$Taiwan Semiconductor (TSM.US)$ - moomoo.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing Reportedly Weighing Texas Investment to Boost",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -556,19 +556,19 @@
     },
     {
       "label": "聯準會",
-      "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
       "title": "Fed’s Williams Hints Next Rate Increase Can Wait - WSJ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed approves interest rate hike, signals one more to come this year - CNBC",
+      "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Actually, AI Is Boosting US Interest Rates, Not Inflation - Morningstar",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
