@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-01 06:34",
+  "generated_at": "2026-10-01 08:54",
   "mode": "morning",
   "signal_date": "2026-09-29",
   "trade_date": "2026-10-02",
   "direction": 0,
-  "total_score": 6,
+  "total_score": 7,
   "tw_score": 7,
-  "intl_score": -2,
+  "intl_score": -1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 846,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+7) vs 國際(-2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+7) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
   "tw_last_close": 47631.9609375,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4186.0,
-    "chg_pct": 0.15072384125936067,
+    "price_usd": 4172.2998046875,
+    "chg_pct": -0.1770555369808456,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 90.16999816894531,
-    "oil_chg": 0.8838676883010684
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 90.44000244140625,
+    "oil_chg": 1.1859534801538
   },
   "intl_data": {
     "S&P500": {
@@ -384,18 +384,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65481.26953125,
-      "chg_pct": -0.6016423683356982,
-      "signal": -1,
-      "note": "-0.60%",
+      "price": 67352.5625,
+      "chg_pct": 2.8577530370833024,
+      "signal": 1,
+      "note": "+2.86%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6870.81005859375,
-      "chg_pct": -0.2747589188747875,
-      "signal": 0,
-      "note": "-0.27%",
+      "price": 6769.9501953125,
+      "chg_pct": -1.4679471913955515,
+      "signal": -1,
+      "note": "-1.47%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -424,26 +424,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.46099853515625,
-      "chg_pct": 0.08976599201807453,
+      "price": 101.47899627685547,
+      "chg_pct": 0.10752049651800222,
       "signal": 0,
-      "note": "+0.09%(中性)",
+      "note": "+0.11%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4186.0,
-      "chg_pct": 0.15072384125936067,
+      "price": 4172.2998046875,
+      "chg_pct": -0.1770555369808456,
       "signal": 0,
-      "note": "+0.15%()",
+      "note": "-0.18%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.16999816894531,
-      "chg_pct": 0.8838676883010684,
+      "price": 90.44000244140625,
+      "chg_pct": 1.1859534801538,
       "signal": 1,
-      "note": "+0.88%",
+      "note": "+1.19%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,14 +456,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83785.46875,
-      "chg_pct": 0.19497049189946142,
+      "price": 83449.2734375,
+      "chg_pct": -0.2070691447821967,
       "signal": 0,
-      "note": "+0.19%",
+      "note": "-0.21%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump trade adviser says Canada will 'pay even more dearly' if 'you interfere' i",
@@ -484,21 +490,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump accuses Canada of wanting ‘benefits of being a State, without being one’ a",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -514,12 +520,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
       "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -527,12 +527,6 @@
     {
       "label": "台股/半導體",
       "title": "TSMC evaluates potential Texas investment, sources say - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "AI’s Semiconductor Boom Has a Clear Center of Gravity: Taiwan Semiconductor - Be",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -549,8 +543,8 @@
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "US inflation rises below expectations in August, gives the Fed breathing space -",
+      "label": "台股/半導體",
+      "title": "AI’s Semiconductor Boom Has a Clear Center of Gravity: Taiwan Semiconductor - Be",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -568,9 +562,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster grow",
+      "title": "US inflation rises below expectations in August, gives the Fed breathing space -",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "J.P. Morgan sees Fed rate hikes going out with a bang this year - Yahoo Finance",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
