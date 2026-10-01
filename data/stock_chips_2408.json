@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-01 19:01",
+  "updated": "2026-10-01 21:02",
   "inst": {
     "rows": [
       {
         "date": "10/01",
         "foreign": 1001379,
-        "trust": 25000,
+        "trust": 5000,
         "dealer": 115702,
-        "total": 1142081
+        "total": 1122081
       },
       {
         "date": "09/30",
@@ -88,9 +88,9 @@
       }
     ],
     "total_foreign": 24279611,
-    "total_trust": -3279001,
+    "total_trust": -3299001,
     "total_dealer": 1182123,
-    "net5": 22182733,
+    "net5": 22162733,
     "mood": "偏多",
     "trust_streak": 2,
     "streak_label": "📈 投信連買 2 日",
@@ -99,6 +99,13 @@
   },
   "margin": {
     "rows": [
+      {
+        "date": "10/01",
+        "fin_bal": 63366,
+        "fin_chg": 2959,
+        "sho_bal": 2248,
+        "sho_chg": -3
+      },
       {
         "date": "09/30",
         "fin_bal": 60407,
@@ -147,19 +154,12 @@
         "fin_chg": -1748,
         "sho_bal": 2313,
         "sho_chg": 294
-      },
-      {
-        "date": "09/17",
-        "fin_bal": 64695,
-        "fin_chg": -156,
-        "sho_bal": 2019,
-        "sho_chg": 24
       }
     ],
-    "fin_bal": 60407,
-    "sho_bal": 2251,
-    "fin_5chg": -2566,
-    "sho_5chg": -2,
+    "fin_bal": 63366,
+    "sho_bal": 2248,
+    "fin_5chg": -1576,
+    "sho_5chg": 93,
     "note": "融資5日減少（散戶退場，籌碼沉澱）",
     "note_color": "#10b981"
   }

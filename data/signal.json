@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01 19:00",
+  "generated_at": "2026-10-01 20:59",
   "mode": "morning",
   "signal_date": "2026-10-01",
   "trade_date": "2026-10-02",
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4204.60009765625,
-    "chg_pct": 0.427542014204672,
+    "price_usd": 4214.7998046875,
+    "chg_pct": 0.671163638764027,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 91.37999725341797,
-    "oil_chg": 1.0617110195898758
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 91.61000061035156,
+    "oil_chg": 1.3160832398854831
   },
   "intl_data": {
     "S&P500": {
@@ -376,8 +376,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.280000686645508,
-      "chg_pct": -0.36719379058806334,
+      "price": 16.270000457763672,
+      "chg_pct": -0.4283947011660974,
       "signal": 1,
       "note": "VIX=16.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -424,42 +424,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.7979965209961,
-      "chg_pct": 0.343025710421114,
+      "price": 101.79399871826172,
+      "chg_pct": 0.339085047183426,
       "signal": -1,
       "note": "+0.34%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4204.60009765625,
-      "chg_pct": 0.427542014204672,
+      "price": 4214.7998046875,
+      "chg_pct": 0.671163638764027,
       "signal": 0,
-      "note": "+0.43%()",
+      "note": "+0.67%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.37999725341797,
-      "chg_pct": 1.0617110195898758,
+      "price": 91.61000061035156,
+      "chg_pct": 1.3160832398854831,
       "signal": 1,
-      "note": "+1.06%",
+      "note": "+1.32%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
       "price": 5.293000221252441,
-      "chg_pct": 0.7231228541194101,
+      "chg_pct": 0.0,
       "signal": 0,
-      "note": "5.29%(+0.72%)",
+      "note": "5.29%(+0.00%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 83902.2421875,
-      "chg_pct": 0.41696536842397586,
-      "signal": 1,
-      "note": "+0.42%",
+      "price": 83746.5078125,
+      "chg_pct": 0.2305773419145007,
+      "signal": 0,
+      "note": "+0.23%",
       "desc": "風險偏好指標"
     }
   },
@@ -532,6 +532,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "As Arizona sees record investments from TSMC, Taiwan faces military pressure fro",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
       "title": "Applied Materials vs. Taiwan Semiconductor Manufacturing: Which Tech Stock Is a ",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -541,12 +547,6 @@
       "title": "Taiwan Semiconductor Manufacturing Reportedly Weighing Texas Investment to Boost",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
