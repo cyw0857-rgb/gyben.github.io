@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-02 07:05",
+  "generated_at": "2026-10-02 09:11",
   "mode": "morning",
   "signal_date": "2026-09-30",
   "trade_date": "2026-10-05",
   "direction": 1,
-  "total_score": 11,
+  "total_score": 13,
   "tw_score": 9,
-  "intl_score": 4,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4206.0,
-    "chg_pct": 0.46097890431964506,
+    "price_usd": 4182.60009765625,
+    "chg_pct": -0.09793148458159336,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.5%，影響中性",
-    "oil_usd": 93.05000305175781,
-    "oil_chg": 2.908653988134865
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 92.9800033569336,
+    "oil_chg": 2.831237823302139
   },
   "intl_data": {
     "S&P500": {
@@ -384,18 +384,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 66753.71875,
-      "chg_pct": 1.943226250588715,
+      "price": 68506.90625,
+      "chg_pct": 2.6263518090518367,
       "signal": 1,
-      "note": "+1.94%",
+      "note": "+2.63%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6838.0400390625,
-      "chg_pct": -0.4769455020847578,
-      "signal": -1,
-      "note": "-0.48%",
+      "price": 6972.9501953125,
+      "chg_pct": 1.9729360383870502,
+      "signal": 1,
+      "note": "+1.97%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -424,26 +424,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.04299926757812,
-      "chg_pct": 0.5845267000239298,
+      "price": 102.09700012207031,
+      "chg_pct": 0.6377557351314791,
       "signal": -1,
-      "note": "+0.58%(偏空)",
+      "note": "+0.64%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4206.0,
-      "chg_pct": 0.46097890431964506,
+      "price": 4182.60009765625,
+      "chg_pct": -0.09793148458159336,
       "signal": 0,
-      "note": "+0.46%()",
+      "note": "-0.10%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 93.05000305175781,
-      "chg_pct": 2.908653988134865,
+      "price": 92.9800033569336,
+      "chg_pct": 2.831237823302139,
       "signal": 1,
-      "note": "+2.91%",
+      "note": "+2.83%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +456,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84694.0078125,
-      "chg_pct": 1.3645765319952243,
+      "price": 84674.5078125,
+      "chg_pct": 1.3412382900885498,
       "signal": 1,
-      "note": "+1.36%",
+      "note": "+1.34%",
       "desc": "風險偏好指標"
     }
   },
@@ -514,15 +514,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Donald Trump’s war on the world faces a lethal blow - SMH.com.au",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -550,7 +550,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed officials wash away market bets on October rate increase - Reuters",
+      "title": "Fed policymakers lean against October rate hike - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -568,7 +568,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Actually, AI Is Boosting US Interest Rates, Not Inflation - Morningstar",
+      "title": "Fed may take time to make next interest rate move, Jefferson says - Yahoo Financ",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
