@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-02 12:08",
+  "generated_at": "2026-10-02 18:28",
   "mode": "morning",
   "signal_date": "2026-10-02",
   "trade_date": "2026-10-05",
   "direction": 1,
-  "total_score": 9,
+  "total_score": 10,
   "tw_score": 10,
   "intl_score": 1,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": 1,
   "inst_score": 0,
-  "foreign_fut_net": -1389,
+  "foreign_fut_net": -802,
   "foreign_cash_b": 0,
-  "veto_msg": "⚠️ 外資期貨(-1,389口) vs 技術面不一致，提高門檻",
+  "veto_msg": "⚠️ 外資期貨(-802口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "近5筆勝率40% → 正常門檻 ±6",
-  "tw_last_close": 48441.80078125,
-  "tw_chg_pct": 0.1826393568263862,
-  "tw_ma5": 48078.39609375,
-  "tw_ma10": 47753.703125,
-  "tw_rsi": 63.87542672959062,
-  "tw_macd": 695.8626333569555,
-  "tw_macds": 596.4830442564069,
+  "tw_last_close": 48475.73828125,
+  "tw_chg_pct": 0.2528256064773027,
+  "tw_ma5": 48085.18359375,
+  "tw_ma10": 47757.096875,
+  "tw_rsi": 64.10062856978847,
+  "tw_macd": 698.5698983142283,
+  "tw_macds": 597.0244972478615,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 48021.49375,
   "tw_ma10_p2": 47494.412890625,
   "tw_ma20_p2": 46981.6197265625,
-  "tw_ma20": 47095.473828125,
+  "tw_ma20": 47097.170703125,
   "stats_real": {
     "total": 12,
     "wins": 6,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4202.2998046875,
-    "chg_pct": 0.3725991508172853,
+    "price_usd": 4202.60009765625,
+    "chg_pct": 0.007145919679862798,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 92.87000274658203,
-    "oil_chg": 2.709582644603693
+    "warning": "黃金小幅變動 +0.0%，影響中性",
+    "oil_usd": 89.5,
+    "oil_chg": -3.6287311800537876
   },
   "intl_data": {
     "S&P500": {
@@ -376,34 +376,34 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.389999389648438,
-      "chg_pct": 0.30599288001002933,
+      "price": 16.030000686645508,
+      "chg_pct": -2.1964534253143224,
       "signal": 1,
-      "note": "VIX=16.4(低恐慌)",
+      "note": "VIX=16.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 68277.03125,
-      "chg_pct": -0.9856726252653951,
+      "price": 68309.4609375,
+      "chg_pct": -0.9386435785127899,
       "signal": -1,
-      "note": "-0.99%",
+      "note": "-0.94%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6970.81982421875,
-      "chg_pct": -0.0076064668976856655,
-      "signal": 0,
-      "note": "-0.01%",
+      "price": 7003.740234375,
+      "chg_pct": 0.46461784683055124,
+      "signal": 1,
+      "note": "+0.46%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23951.05078125,
-      "chg_pct": -2.6904948534335125,
+      "price": 23972.2890625,
+      "chg_pct": -2.6042069215395593,
       "signal": -1,
-      "note": "-2.69%",
+      "note": "-2.60%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,34 +416,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 48441.80078125,
-      "chg_pct": 0.18263935682639235,
+      "price": 48475.73828125,
+      "chg_pct": 0.252825606477299,
       "signal": 0,
-      "note": "+0.18%",
+      "note": "+0.25%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.0999984741211,
-      "chg_pct": 0.640711232559745,
-      "signal": -1,
-      "note": "+0.64%(偏空)",
+      "price": 102.01200103759766,
+      "chg_pct": -0.08618750033159098,
+      "signal": 0,
+      "note": "-0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4202.2998046875,
-      "chg_pct": 0.3725991508172853,
+      "price": 4202.60009765625,
+      "chg_pct": 0.007145919679862798,
       "signal": 0,
-      "note": "+0.37%()",
+      "note": "+0.01%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.87000274658203,
-      "chg_pct": 2.709582644603693,
-      "signal": 1,
-      "note": "+2.71%",
+      "price": 89.5,
+      "chg_pct": -3.6287311800537876,
+      "signal": -1,
+      "note": "-3.63%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +456,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85443.4375,
-      "chg_pct": 2.2615186519397623,
+      "price": 86361.6484375,
+      "chg_pct": 1.777833511352386,
       "signal": 1,
-      "note": "+2.26%",
+      "note": "+1.78%",
       "desc": "風險偏好指標"
     }
   },
@@ -520,7 +520,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "title": "Donald Trump’s war on the world faces a lethal blow - SMH.com.au",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM), Why Is Fresh Attention Building Now? -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -538,13 +544,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Could Be 21% Overvalued As Texas Plans ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "As Arizona sees record investments from TSMC, Taiwan faces military pressure fro",
+      "title": "Taiwan Semiconductor (NYSE:TSM) Shows High Growth and Improving Fundamentals - C",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -556,15 +556,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Another Fed Official Suggests Next Rate Increase Can Wait - WSJ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Another Fed Official Suggests Next Rate Increase Can Wait - WSJ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
