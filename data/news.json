@@ -1,14 +1,20 @@
 {
-  "updated": "2026-10-03 21:14",
-  "bull": 4,
-  "bear": 8,
-  "score": -4,
+  "updated": "2026-10-04 01:23",
+  "bull": 2,
+  "bear": 9,
+  "score": -7,
   "mood": "偏空 📉",
   "mood_color": "#ef4444",
   "items": [
     {
       "label": "川普動態",
       "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action escalates - CBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -37,12 +43,6 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "US and Canada reach ‘very fair’ trade agreement, Trump says - Al Jazeera",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
       "label": "關稅/貿易",
       "title": "Beyond trade diversion: How the US-China trade war reshaped global production - CEPR",
       "sentiment": "⚠️偏空",
@@ -62,13 +62,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - cfr.org",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relations (CFR)",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
       "title": "TSMC evaluates potential Texas investment, sources say - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "ASML vs. Taiwan Semiconductor Manufacturing Company: What Revenue Trends Tell Investors About These ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -85,20 +91,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Can Taiwan Semiconductor Manufacturing (NYSE:TSM) Justify A Rich Price On Cash Flow? - Simply Wall S",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
       "title": "Fed policymakers lean against October rate hike - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Soft Jobs Report Boosts Market Bets Fed Will Skip October Rate Increase - The New York Times",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -113,6 +107,12 @@
       "title": "What makes the Federal Reserve decide to raise or lower interest rates? - Chase Bank",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Traders now see little chance of a Fed rate hike in October after weak jobs report - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
