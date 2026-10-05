@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-05 19:25",
+  "generated_at": "2026-10-05 20:39",
   "mode": "morning",
   "signal_date": "2026-10-05",
   "trade_date": "2026-10-06",
   "direction": 0,
-  "total_score": 15,
+  "total_score": 16,
   "tw_score": 7,
-  "intl_score": 8,
+  "intl_score": 9,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4189.5,
-    "chg_pct": 0.6534895752071409,
+    "price_usd": 4188.60009765625,
+    "chg_pct": 0.6318692598531978,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 90.41000366210938,
-    "oil_chg": -0.7682986977860436
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 90.36000061035156,
+    "oil_chg": -0.823180764982662
   },
   "intl_data": {
     "S&P500": {
@@ -376,10 +376,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.229999542236328,
-      "chg_pct": 6.009138454632792,
+      "price": 16.1200008392334,
+      "chg_pct": 5.2906622953376665,
       "signal": 1,
-      "note": "VIX=16.2(低恐慌)",
+      "note": "VIX=16.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -424,42 +424,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.25299835205078,
-      "chg_pct": 0.3168822190797137,
-      "signal": -1,
-      "note": "+0.32%(偏空)",
+      "price": 102.21700286865234,
+      "chg_pct": 0.2815682945328012,
+      "signal": 0,
+      "note": "+0.28%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4189.5,
-      "chg_pct": 0.6534895752071409,
+      "price": 4188.60009765625,
+      "chg_pct": 0.6318692598531978,
       "signal": 0,
-      "note": "+0.65%()",
+      "note": "+0.63%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.41000366210938,
-      "chg_pct": -0.7682986977860436,
+      "price": 90.36000061035156,
+      "chg_pct": -0.823180764982662,
       "signal": -1,
-      "note": "-0.77%",
+      "note": "-0.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.2769999504089355,
-      "chg_pct": 0.7637953397066408,
+      "price": 5.265999794006348,
+      "chg_pct": -0.2084547376532654,
       "signal": 0,
-      "note": "5.28%(+0.76%)",
+      "note": "5.27%(-0.21%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 86024.8828125,
-      "chg_pct": -0.5266191841549182,
+      "price": 85845.6015625,
+      "chg_pct": -0.733927947286408,
       "signal": -1,
-      "note": "-0.53%",
+      "note": "-0.73%",
       "desc": "風險偏好指標"
     }
   },
@@ -484,7 +484,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - cn",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -538,13 +538,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "$Taiwan Semiconductor (TSM.US)$ - Moomoo",
+      "title": "Taiwan Semiconductor Stock Hits 52-Week High — What's Going On? - Benzinga",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing stock closes up 2.96%, nears $477 resistance ",
+      "title": "$Taiwan Semiconductor (TSM.US)$ - Moomoo",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -556,21 +556,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed may skip October but pull rate hike trigger in December - reuters.com",
+      "title": "Fed may skip October but pull rate hike trigger in December - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Kevin Warsh’s Fed has a rent problem: Higher rates could fuel a ‘doom loop’ in h",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "Tokyo shares are higher as easing worries over inflation reduce odds for another",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "8 Years of History Warns What a September Rate Hike Could Mean for Stocks - Yaho",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
