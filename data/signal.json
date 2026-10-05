@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-05 04:30",
+  "generated_at": "2026-10-05 07:29",
   "mode": "morning",
   "signal_date": "2026-10-02",
   "trade_date": "2026-10-06",
   "direction": 1,
   "total_score": 16,
   "tw_score": 10,
-  "intl_score": 6,
+  "intl_score": 7,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 0,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4162.2998046875,
-    "chg_pct": -0.9518597401209113,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 91.11000061035156,
-    "oil_chg": -1.8951244580373867
+    "price_usd": 4174.2998046875,
+    "chg_pct": 0.28830215417173544,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 91.05999755859375,
+    "oil_chg": -0.05488206719661831
   },
   "intl_data": {
     "S&P500": {
@@ -424,26 +424,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.93000030517578,
-      "chg_pct": -0.16650163710668547,
+      "price": 101.89199829101562,
+      "chg_pct": -0.037282462519748066,
       "signal": 0,
-      "note": "-0.17%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4162.2998046875,
-      "chg_pct": -0.9518597401209113,
-      "signal": 1,
-      "note": "-0.95%()",
+      "price": 4174.2998046875,
+      "chg_pct": 0.28830215417173544,
+      "signal": 0,
+      "note": "+0.29%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.11000061035156,
-      "chg_pct": -1.8951244580373867,
-      "signal": -1,
-      "note": "-1.90%",
+      "price": 91.05999755859375,
+      "chg_pct": -0.05488206719661831,
+      "signal": 0,
+      "note": "-0.05%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +456,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85461.9921875,
-      "chg_pct": 0.8239553803050359,
+      "price": 86708.453125,
+      "chg_pct": 2.2944701521824764,
       "signal": 1,
-      "note": "+0.82%",
+      "note": "+2.29%",
       "desc": "風險偏好指標"
     }
   },
@@ -520,7 +520,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - Council on Foreign Relat",
+      "title": "The U.S.-Canada Trade War Could Mark a Breaking Point - cfr.org",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,7 +562,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Traders now see little chance of a Fed rate hike in October after weak jobs repo",
+      "title": "Stock futures are flat as investors grapple with higher yields, await Fed minute",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
