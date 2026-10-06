@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06 07:21",
+  "updated": "2026-10-06 11:08",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -43,18 +43,26 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69928.05,
-      "chg_pct": 0.25,
+      "price": 70081.53,
+      "chg_pct": 0.47,
       "signal": 1,
-      "note": "+0.25%",
+      "note": "+0.47%",
       "desc": "亞股風向球"
+    },
+    "韓KOSPI": {
+      "category": "亞股",
+      "price": 6944.2,
+      "chg_pct": -0.56,
+      "signal": -1,
+      "note": "-0.56%",
+      "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24040.34,
-      "chg_pct": 0.36,
+      "price": 24227.72,
+      "chg_pct": 1.15,
       "signal": 1,
-      "note": "+0.36%",
+      "note": "+1.15%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -67,34 +75,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 49666.41,
-      "chg_pct": 0.05,
+      "price": 49537.17,
+      "chg_pct": -0.21,
       "signal": 0,
-      "note": "+0.05%",
+      "note": "-0.21%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.1,
-      "chg_pct": -0.39,
+      "price": 102.19,
+      "chg_pct": -0.3,
       "signal": 1,
-      "note": "-0.39%(偏多)",
+      "note": "-0.30%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4166.0,
-      "chg_pct": -0.14,
+      "price": 4159.5,
+      "chg_pct": -0.3,
       "signal": 0,
-      "note": "-0.14%",
+      "note": "-0.30%",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.25,
-      "chg_pct": -0.75,
-      "signal": -1,
-      "note": "-0.75%",
+      "price": 89.74,
+      "chg_pct": -0.2,
+      "signal": 0,
+      "note": "-0.20%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85927.8,
-      "chg_pct": -0.14,
-      "signal": 0,
-      "note": "-0.14%",
+      "price": 85550.72,
+      "chg_pct": -0.58,
+      "signal": -1,
+      "note": "-0.58%",
       "desc": "風險偏好指標"
-    },
-    "韓KOSPI": {
-      "category": "亞股",
-      "price": 6983.47,
-      "chg_pct": 0.15,
-      "signal": 1,
-      "note": "+0.15%",
-      "desc": "半導體競爭對手"
     }
   }
 }
