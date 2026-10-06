@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-06 09:58",
+  "generated_at": "2026-10-06 12:57",
   "mode": "morning",
   "signal_date": "2026-10-06",
   "trade_date": "2026-10-07",
   "direction": 0,
-  "total_score": 10,
-  "tw_score": 6,
-  "intl_score": 4,
+  "total_score": 13,
+  "tw_score": 7,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 1,
   "foreign_fut_net": 3295,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=84 過熱(需45~72)或過冷 → 觀望",
+  "veto_msg": "RSI=85 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49705.37109375,
-  "tw_chg_pct": -0.013413186977939695,
-  "tw_ma5": 48837.353125,
-  "tw_ma10": 48351.962890625,
-  "tw_rsi": 84.25669275984066,
-  "tw_macd": 892.5983209398837,
-  "tw_macds": 690.6905017104378,
+  "tw_last_close": 49771.03125,
+  "tw_chg_pct": 0.11866780886986561,
+  "tw_ma5": 48850.48515625,
+  "tw_ma10": 48358.52890625,
+  "tw_rsi": 84.51998412999603,
+  "tw_macd": 897.8361681621027,
+  "tw_macds": 691.7380711548816,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 48422.67109375,
   "tw_ma10_p2": 48099.50078125,
   "tw_ma20_p2": 47289.8896484375,
-  "tw_ma20": 47447.6017578125,
+  "tw_ma20": 47450.884765625,
   "stats_real": {
     "total": 14,
     "wins": 8,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4158.39990234375,
-    "chg_pct": -0.09369585389687708,
+    "price_usd": 4148.2001953125,
+    "chg_pct": -0.20688052778732513,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 89.5,
-    "oil_chg": -1.7670953787356694
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 89.98999786376953,
+    "oil_chg": 0.6261853479624108
   },
   "intl_data": {
     "S&P500": {
@@ -368,8 +368,8 @@
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13172.736328125,
-      "chg_pct": 0.27454755630224614,
+      "price": 13172.740234375,
+      "chg_pct": 0.27457729176810797,
       "signal": 0,
       "note": "+0.27%",
       "desc": "對台股影響最大"
@@ -384,26 +384,26 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 70146.6171875,
-      "chg_pct": 0.285585106014633,
-      "signal": 0,
-      "note": "+0.29%",
+      "price": 70471.5,
+      "chg_pct": 0.7500560135048951,
+      "signal": 1,
+      "note": "+0.75%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6984.22021484375,
-      "chg_pct": -0.27870850257186797,
-      "signal": 0,
-      "note": "-0.28%",
+      "price": 6922.830078125,
+      "chg_pct": -1.1552421069657255,
+      "signal": -1,
+      "note": "-1.16%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24293.83984375,
-      "chg_pct": 1.0544776057560803,
+      "price": 24228.470703125,
+      "chg_pct": 0.7825632274658139,
       "signal": 1,
-      "note": "+1.05%",
+      "note": "+0.78%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,34 +416,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 49705.37109375,
-      "chg_pct": -0.013413186977940611,
+      "price": 49771.03125,
+      "chg_pct": 0.11866780886986475,
       "signal": 0,
-      "note": "-0.01%",
+      "note": "+0.12%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.09700012207031,
-      "chg_pct": 0.16383774786082422,
+      "price": 102.16999816894531,
+      "chg_pct": 0.0,
       "signal": 0,
-      "note": "+0.16%(中性)",
+      "note": "+0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4158.39990234375,
-      "chg_pct": -0.09369585389687708,
+      "price": 4148.2001953125,
+      "chg_pct": -0.20688052778732513,
       "signal": 0,
-      "note": "-0.09%()",
+      "note": "-0.21%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.5,
-      "chg_pct": -1.7670953787356694,
-      "signal": -1,
-      "note": "-1.77%",
+      "price": 89.98999786376953,
+      "chg_pct": 0.6261853479624108,
+      "signal": 1,
+      "note": "+0.63%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +456,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85622.453125,
-      "chg_pct": -0.9919617716425497,
+      "price": 85575.1328125,
+      "chg_pct": -1.0466797940535413,
       "signal": -1,
-      "note": "-0.99%",
+      "note": "-1.05%",
       "desc": "風險偏好指標"
     }
   },
@@ -508,7 +508,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S-Canada Trade War Intensifies: Key Implications - bisi.org.uk",
+      "title": "The U.S-Canada Trade War Intensifies: Key Implications - Bloomsbury Intelligence",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -538,15 +538,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Intel stock falls as TSMC eyes Elon Musk's Terafab venture - qz.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan Semiconductor Gains 2% to Record as Musk Confirms Early Terafab Talks; Br",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "I’m Loading Up on Taiwan Semiconductor Ahead of Oct. 15 Earnings - 24/7 Wall St.",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Intel stock falls as TSMC eyes Elon Musk's Terafab venture - qz.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -568,9 +568,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Kevin Warsh’s Fed has a rent problem: Higher rates could fuel a ‘doom loop’ in h",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed policymakers lean against October rate hike - Yahoo Finance",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
