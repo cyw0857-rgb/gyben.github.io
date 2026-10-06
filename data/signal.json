@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-06 12:57",
+  "generated_at": "2026-10-06 19:51",
   "mode": "morning",
   "signal_date": "2026-10-06",
   "trade_date": "2026-10-07",
   "direction": 0,
-  "total_score": 13,
+  "total_score": 8,
   "tw_score": 7,
-  "intl_score": 6,
+  "intl_score": 5,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 3295,
+  "inst_score": -2,
+  "foreign_fut_net": -2479,
   "foreign_cash_b": 0,
   "veto_msg": "RSI=85 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49771.03125,
-  "tw_chg_pct": 0.11866780886986561,
-  "tw_ma5": 48850.48515625,
-  "tw_ma10": 48358.52890625,
-  "tw_rsi": 84.51998412999603,
-  "tw_macd": 897.8361681621027,
-  "tw_macds": 691.7380711548816,
+  "tw_last_close": 49822.55078125,
+  "tw_chg_pct": 0.22230373332918774,
+  "tw_ma5": 48860.7890625,
+  "tw_ma10": 48363.680859375,
+  "tw_rsi": 84.65958820182924,
+  "tw_macd": 901.9459883187956,
+  "tw_macds": 692.5600351862201,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 48422.67109375,
   "tw_ma10_p2": 48099.50078125,
   "tw_ma20_p2": 47289.8896484375,
-  "tw_ma20": 47450.884765625,
+  "tw_ma20": 47453.4607421875,
   "stats_real": {
     "total": 14,
     "wins": 8,
@@ -333,13 +333,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4148.2001953125,
-    "chg_pct": -0.20688052778732513,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 89.98999786376953,
-    "oil_chg": 0.6261853479624108
+    "price_usd": 4196.39990234375,
+    "chg_pct": 0.9526582832205233,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 87.29000091552734,
+    "oil_chg": -2.3929323295826763
   },
   "intl_data": {
     "S&P500": {
@@ -376,34 +376,34 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.520000457763672,
-      "chg_pct": 1.3716527262657658,
+      "price": 15.300000190734863,
+      "chg_pct": -1.417527451932235,
       "signal": 1,
-      "note": "VIX=15.5(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 70471.5,
-      "chg_pct": 0.7500560135048951,
+      "price": 70683.9765625,
+      "chg_pct": 1.05382456637282,
       "signal": 1,
-      "note": "+0.75%",
+      "note": "+1.05%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6922.830078125,
-      "chg_pct": -1.1552421069657255,
+      "price": 6941.39013671875,
+      "chg_pct": -0.8902400084776132,
       "signal": -1,
-      "note": "-1.16%",
+      "note": "-0.89%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24228.470703125,
-      "chg_pct": 0.7825632274658139,
+      "price": 24280.560546875,
+      "chg_pct": 0.9992400468808369,
       "signal": 1,
-      "note": "+0.78%",
+      "note": "+1.00%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,34 +416,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 49771.03125,
-      "chg_pct": 0.11866780886986475,
+      "price": 49822.55078125,
+      "chg_pct": 0.22230373332918443,
       "signal": 0,
-      "note": "+0.12%",
+      "note": "+0.22%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.16999816894531,
-      "chg_pct": 0.0,
-      "signal": 0,
-      "note": "+0.00%(中性)",
+      "price": 101.82099914550781,
+      "chg_pct": -0.3415866004621097,
+      "signal": 1,
+      "note": "-0.34%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4148.2001953125,
-      "chg_pct": -0.20688052778732513,
+      "price": 4196.39990234375,
+      "chg_pct": 0.9526582832205233,
       "signal": 0,
-      "note": "-0.21%()",
+      "note": "+0.95%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.98999786376953,
-      "chg_pct": 0.6261853479624108,
-      "signal": 1,
-      "note": "+0.63%",
+      "price": 87.29000091552734,
+      "chg_pct": -2.3929323295826763,
+      "signal": -1,
+      "note": "-2.39%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,14 +456,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85575.1328125,
-      "chg_pct": -1.0466797940535413,
-      "signal": -1,
-      "note": "-1.05%",
+      "price": 86327.546875,
+      "chg_pct": 0.6305800257980286,
+      "signal": 1,
+      "note": "+0.63%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
@@ -478,7 +484,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - cn",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -493,12 +499,6 @@
       "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -526,25 +526,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Nvidia vs. Taiwan Semiconductor Manufacturing: Which Technology Stock Is a Bette",
+      "title": "Is Taiwan Semiconductor the Best AI Stock to Buy Now? - The Motley Fool",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Jim Cramer Makes His Feelings About Taiwan Semiconductor (TSM) Clear - Yahoo Fin",
+      "title": "Is Taiwan Semiconductor the Best AI Stock to Buy Now? - Currently.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Gains 2% to Record as Musk Confirms Early Terafab Talks; Br",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Central Pacific Bank Trust Division Purchases 2,336 Shares of Taiwan Semiconduct",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Intel stock falls as TSMC eyes Elon Musk's Terafab venture - qz.com",
+      "title": "Arizona welcomes new Taiwan representative office, rejecting warning from China ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,21 +556,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed may skip October but pull rate hike trigger in December - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "7 Charts on US Markets: Stocks Tread Water While the Bond Market Shudders - Morn",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed policymakers lean against October rate hike - Yahoo Finance",
+      "title": "The Fed Could Raise Interest Rates Again This Year. Here's What That Might Mean ",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Gold inches lower as firmer dollar, higher yields weigh - cnbc.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Major brokerages expect next Fed rate hike in December - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
