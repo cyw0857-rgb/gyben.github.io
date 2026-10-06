@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-06 19:51",
+  "generated_at": "2026-10-06 21:39",
   "mode": "morning",
   "signal_date": "2026-10-06",
   "trade_date": "2026-10-07",
   "direction": 0,
-  "total_score": 8,
+  "total_score": 11,
   "tw_score": 7,
-  "intl_score": 5,
+  "intl_score": 8,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
@@ -333,53 +333,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4196.39990234375,
-    "chg_pct": 0.9526582832205233,
+    "price_usd": 4190.10009765625,
+    "chg_pct": 0.8011040832709395,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 87.29000091552734,
-    "oil_chg": -2.3929323295826763
+    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 88.01000213623047,
+    "oil_chg": -1.5878320072678451
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7773.9501953125,
-      "chg_pct": 0.6633670396382023,
+      "price": 7813.4599609375,
+      "chg_pct": 0.5082328112781506,
       "signal": 1,
-      "note": "+0.66%",
+      "note": "+0.51%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51267.8984375,
-      "chg_pct": 0.177692262952186,
-      "signal": 0,
-      "note": "+0.18%",
+      "price": 51454.359375,
+      "chg_pct": 0.36369920200125233,
+      "signal": 1,
+      "note": "+0.36%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27477.310546875,
-      "chg_pct": 1.0534833339558618,
+      "price": 27648.59765625,
+      "chg_pct": 0.6233765458333058,
       "signal": 1,
-      "note": "+1.05%",
+      "note": "+0.62%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13172.740234375,
-      "chg_pct": 0.27457729176810797,
-      "signal": 0,
-      "note": "+0.27%",
+      "price": 13294.5400390625,
+      "chg_pct": 0.9246352886368823,
+      "signal": 1,
+      "note": "+0.92%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.300000190734863,
-      "chg_pct": -1.417527451932235,
+      "price": 15.420000076293945,
+      "chg_pct": -0.6443323358260773,
       "signal": 1,
-      "note": "VIX=15.3(低恐慌)",
+      "note": "VIX=15.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -424,42 +424,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.82099914550781,
-      "chg_pct": -0.3415866004621097,
-      "signal": 1,
-      "note": "-0.34%(偏多)",
+      "price": 101.88200378417969,
+      "chg_pct": -0.2818776450298119,
+      "signal": 0,
+      "note": "-0.28%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4196.39990234375,
-      "chg_pct": 0.9526582832205233,
+      "price": 4190.10009765625,
+      "chg_pct": 0.8011040832709395,
       "signal": 0,
-      "note": "+0.95%()",
+      "note": "+0.80%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 87.29000091552734,
-      "chg_pct": -2.3929323295826763,
+      "price": 88.01000213623047,
+      "chg_pct": -1.5878320072678451,
       "signal": -1,
-      "note": "-2.39%",
+      "note": "-1.59%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.310999870300293,
-      "chg_pct": 0.6443039645797729,
+      "price": 5.283999919891357,
+      "chg_pct": -0.5083779150499005,
       "signal": 0,
-      "note": "5.31%(+0.64%)",
+      "note": "5.28%(-0.51%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 86327.546875,
-      "chg_pct": 0.6305800257980286,
+      "price": 86213.7890625,
+      "chg_pct": 0.49797444312212247,
       "signal": 1,
-      "note": "+0.63%",
+      "note": "+0.50%",
       "desc": "風險偏好指標"
     }
   },
@@ -484,13 +484,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - cn",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Canada vows ‘dollar for dollar’ response as US puts 50% tariffs on some goods - ",
+      "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -499,6 +493,12 @@
       "title": "Trump says U.S. and Canada reached deal to delay 50% U.S. tariffs on Canadian im",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -532,19 +532,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor the Best AI Stock to Buy Now? - Currently.com",
+      "title": "Investors Heavily Search Taiwan Semiconductor Manufacturing Company Ltd. (TSM): ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Hobbs, Biggs trade political barbs over Taiwan, TSMC - yourvalley.net",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Central Pacific Bank Trust Division Purchases 2,336 Shares of Taiwan Semiconduct",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Arizona welcomes new Taiwan representative office, rejecting warning from China ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,7 +562,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Gold inches lower as firmer dollar, higher yields weigh - cnbc.com",
+      "title": "Gold ticks up as softer Fed rate expectations offset higher yields - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
