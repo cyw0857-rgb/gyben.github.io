@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-07 09:06",
+  "generated_at": "2026-10-07 12:24",
   "mode": "morning",
-  "signal_date": "2026-10-06",
+  "signal_date": "2026-10-07",
   "trade_date": "2026-10-08",
   "direction": 0,
-  "total_score": 15,
+  "total_score": 10,
   "tw_score": 7,
-  "intl_score": 11,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -2479,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=85 過熱(需45~72)或過冷 → 觀望",
+  "veto_msg": "RSI=90 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49822.55078125,
-  "tw_chg_pct": 0.22230373332918774,
-  "tw_ma5": 48860.7890625,
-  "tw_ma10": 48363.680859375,
-  "tw_rsi": 84.65958820182924,
-  "tw_macd": 901.9671955504018,
-  "tw_macds": 692.5912221927407,
+  "tw_last_close": 49857.2109375,
+  "tw_chg_pct": 0.06956720542505845,
+  "tw_ma5": 49244.20546875,
+  "tw_ma10": 48577.51796875,
+  "tw_rsi": 90.2651734778747,
+  "tw_macd": 964.2467362539392,
+  "tw_macds": 746.9223250049804,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 48422.67109375,
-  "tw_ma10_p2": 48099.50078125,
-  "tw_ma20_p2": 47289.8896484375,
-  "tw_ma20": 47453.4607421875,
+  "tw_ma5_p2": 48860.7890625,
+  "tw_ma10_p2": 48363.680859375,
+  "tw_ma20_p2": 47453.4607421875,
+  "tw_ma20": 47580.0078125,
   "stats_real": {
     "total": 15,
     "wins": 9,
@@ -341,13 +341,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4184.7001953125,
-    "chg_pct": 0.6711988052332363,
+    "price_usd": 4169.7998046875,
+    "chg_pct": -0.41318078300621297,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.7%，影響中性",
-    "oil_usd": 89.97000122070312,
-    "oil_chg": 0.6038252417361236
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 90.16999816894531,
+    "oil_chg": 0.8161848251483399
   },
   "intl_data": {
     "S&P500": {
@@ -368,16 +368,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27599.88671875,
-      "chg_pct": 0.44609959794242166,
+      "price": 27599.7890625,
+      "chg_pct": 0.4457441910701464,
       "signal": 1,
       "note": "+0.45%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13217.8232421875,
-      "chg_pct": 0.3422447190968921,
+      "price": 13217.8203125,
+      "chg_pct": 0.342222478564946,
       "signal": 1,
       "note": "+0.34%",
       "desc": "對台股影響最大"
@@ -392,26 +392,26 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 70483.84375,
-      "chg_pct": -0.28313745523787714,
-      "signal": 0,
-      "note": "-0.28%",
+      "price": 70149.640625,
+      "chg_pct": -0.7559505894911428,
+      "signal": -1,
+      "note": "-0.76%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6975.91015625,
-      "chg_pct": 0.4973070069732154,
-      "signal": 1,
-      "note": "+0.50%",
+      "price": 6883.9599609375,
+      "chg_pct": -0.827358420288961,
+      "signal": -1,
+      "note": "-0.83%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24280.560546875,
-      "chg_pct": 0.9992400468808369,
-      "signal": 1,
-      "note": "+1.00%",
+      "price": 24151.900390625,
+      "chg_pct": -0.5298895633056505,
+      "signal": -1,
+      "note": "-0.53%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -424,34 +424,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 49822.55078125,
-      "chg_pct": 0.22230373332918443,
+      "price": 49815.359375,
+      "chg_pct": -0.014434038677735428,
       "signal": 0,
-      "note": "+0.22%",
+      "note": "-0.01%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.9520034790039,
-      "chg_pct": -0.2133646802860235,
+      "price": 102.04299926757812,
+      "chg_pct": 0.2091696284920232,
       "signal": 0,
-      "note": "-0.21%(中性)",
+      "note": "+0.21%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4184.7001953125,
-      "chg_pct": 0.6711988052332363,
+      "price": 4169.7998046875,
+      "chg_pct": -0.41318078300621297,
       "signal": 0,
-      "note": "+0.67%()",
+      "note": "-0.41%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.97000122070312,
-      "chg_pct": 0.6038252417361236,
+      "price": 90.16999816894531,
+      "chg_pct": 0.8161848251483399,
       "signal": 1,
-      "note": "+0.60%",
+      "note": "+0.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -464,20 +464,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85442.828125,
-      "chg_pct": -0.40072184938570315,
+      "price": 84094.5390625,
+      "chg_pct": -1.9723998978570005,
       "signal": -1,
-      "note": "-0.40%",
+      "note": "-1.97%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
     {
       "label": "川普動態",
       "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
@@ -505,6 +499,12 @@
     {
       "label": "川普動態",
       "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -558,27 +558,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Interest Rate Increases Are About Disciplining Labor - Jacobin",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
       "title": "High Interest Rates Aren’t Slowing the A.I. Boom. That’s a Problem for the Fed. ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Volatile Treasury market sends mortgage rate lock volumes plunging in September ",
+      "title": "Dollar holds losses as markets await Fed minutes, speakers - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Major brokerages expect next Fed rate hike in December - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Interest Rate Increases Are About Disciplining Labor - Jacobin",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
