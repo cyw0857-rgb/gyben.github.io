@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-07 19:13",
+  "generated_at": "2026-10-07 21:16",
   "mode": "morning",
   "signal_date": "2026-10-07",
   "trade_date": "2026-10-08",
   "direction": 0,
-  "total_score": 12,
+  "total_score": 10,
   "tw_score": 6,
   "intl_score": 5,
   "news_score": -2,
-  "psy_score": 2,
-  "inst_score": 0,
+  "psy_score": 1,
+  "inst_score": -1,
   "foreign_fut_net": 408,
   "foreign_cash_b": 0,
   "veto_msg": "RSI=90 過熱(需45~72)或過冷 → 觀望",
@@ -341,13 +341,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4144.2998046875,
-    "chg_pct": -1.0221941670968813,
+    "price_usd": 4115.2001953125,
+    "chg_pct": -1.7171765820453235,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 89.91000366210938,
-    "oil_chg": 0.5254933003954593
+    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 89.98999786376953,
+    "oil_chg": 0.6149322532986212
   },
   "intl_data": {
     "S&P500": {
@@ -384,10 +384,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.699999809265137,
-      "chg_pct": 4.59693251073789,
+      "price": 15.770000457763672,
+      "chg_pct": 5.063292586894597,
       "signal": 1,
-      "note": "VIX=15.7(低恐慌)",
+      "note": "VIX=15.8(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -432,42 +432,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.33399963378906,
-      "chg_pct": 0.4949403846329627,
+      "price": 102.4020004272461,
+      "chg_pct": 0.561719125902015,
       "signal": -1,
-      "note": "+0.49%(偏空)",
+      "note": "+0.56%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4144.2998046875,
-      "chg_pct": -1.0221941670968813,
+      "price": 4115.2001953125,
+      "chg_pct": -1.7171765820453235,
       "signal": 1,
-      "note": "-1.02%()",
+      "note": "-1.72%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.91000366210938,
-      "chg_pct": 0.5254933003954593,
+      "price": 89.98999786376953,
+      "chg_pct": 0.6149322532986212,
       "signal": 1,
-      "note": "+0.53%",
+      "note": "+0.61%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.269000053405762,
-      "chg_pct": -0.7908080949012809,
+      "price": 5.3429999351501465,
+      "chg_pct": 1.4044388118112265,
       "signal": 0,
-      "note": "5.27%(-0.79%)",
+      "note": "5.34%(+1.40%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 83784.3125,
-      "chg_pct": -2.072581251949528,
+      "price": 83379.9921875,
+      "chg_pct": -2.545152349916467,
       "signal": -1,
-      "note": "-2.07%",
+      "note": "-2.55%",
       "desc": "風險偏好指標"
     }
   },
@@ -534,7 +534,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (",
+      "title": "Why is Taiwan Semiconductor Manufacturing stock sliding today? - Investing.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -546,13 +546,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC supplier Gudeng launches operations at Arizona plant - Focus Taiwan - CNA E",
+      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Tang Zhen-Hui (唐朕暉) Reflects on Nearly Four Decades in Taiwan's Stock Market: Fr",
+      "title": "TSMC supplier Gudeng launches operations at Arizona plant - Focus Taiwan - CNA E",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -564,19 +564,19 @@
     },
     {
       "label": "聯準會",
+      "title": "Markets Look to Fed Minutes for Clues on Further Rate Increases - Barron's",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Impact of Fed Interest Rate Hike on Your Wallet, Loans, Credit Cards - Norada Re",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "Will 30-Year US Treasury Yields Climb Higher? - Goldman Sachs",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "High Interest Rates Aren’t Slowing the A.I. Boom. That’s a Problem for the Fed. ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Dollar holds losses as markets await Fed minutes, speakers - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
