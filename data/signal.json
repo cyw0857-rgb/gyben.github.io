@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-10-07 06:59",
+  "generated_at": "2026-10-07 09:06",
   "mode": "morning",
-  "signal_date": "2026-10-05",
+  "signal_date": "2026-10-06",
   "trade_date": "2026-10-08",
   "direction": 0,
   "total_score": 15,
   "tw_score": 7,
-  "intl_score": 12,
+  "intl_score": 11,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -2,
   "foreign_fut_net": -2479,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=80 過熱(需45~72)或過冷 → 觀望",
+  "veto_msg": "RSI=85 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49712.0390625,
-  "tw_chg_pct": 2.550349566781507,
-  "tw_ma5": 48422.67109375,
-  "tw_ma10": 48099.50078125,
-  "tw_rsi": 79.76745412707936,
-  "tw_macd": 812.8624619479597,
-  "tw_macds": 640.2135469030762,
+  "tw_last_close": 49822.55078125,
+  "tw_chg_pct": 0.22230373332918774,
+  "tw_ma5": 48860.7890625,
+  "tw_ma10": 48363.680859375,
+  "tw_rsi": 84.65958820182924,
+  "tw_macd": 901.9671955504018,
+  "tw_macds": 692.5912221927407,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 48085.18359375,
-  "tw_ma10_p2": 47757.096875,
-  "tw_ma20_p2": 47097.170703125,
-  "tw_ma20": 47289.8896484375,
+  "tw_ma5_p2": 48422.67109375,
+  "tw_ma10_p2": 48099.50078125,
+  "tw_ma20_p2": 47289.8896484375,
+  "tw_ma20": 47453.4607421875,
   "stats_real": {
-    "total": 14,
-    "wins": 8,
+    "total": 15,
+    "wins": 9,
     "losses": 6,
-    "win_rate": 57.14285714285714,
-    "total_pnl": 5442.0,
-    "avg_pnl": 388.7142857142857,
-    "avg_win": 5771.125,
+    "win_rate": 60.0,
+    "total_pnl": 6234.0,
+    "avg_pnl": 415.6,
+    "avg_win": 5217.888888888889,
     "avg_lose": -6787.833333333333,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 2
+    "streak": 3
   },
   "stats_sim": {
     "total": 789,
@@ -226,69 +226,69 @@
     }
   ],
   "stats_real_v100": {
-    "total": 4,
-    "wins": 0,
-    "losses": 4,
-    "win_rate": 0.0,
-    "total_pnl": -34934.0,
-    "avg_pnl": -8733.5,
-    "avg_win": 0,
-    "avg_lose": -8733.5,
-    "max_win": 0,
-    "max_lose": -16729.0,
-    "streak": -4
-  },
-  "stats_real_v70": {
-    "total": 4,
-    "wins": 0,
-    "losses": 4,
-    "win_rate": 0.0,
-    "total_pnl": -34934.0,
-    "avg_pnl": -8733.5,
-    "avg_win": 0,
-    "avg_lose": -8733.5,
-    "max_win": 0,
-    "max_lose": -16729.0,
-    "streak": -4
-  },
-  "stats_real_v60": {
-    "total": 19,
-    "wins": 7,
-    "losses": 12,
-    "win_rate": 36.84210526315789,
-    "total_pnl": -22130.0,
-    "avg_pnl": -1164.7368421052631,
-    "avg_win": 9101.857142857143,
-    "avg_lose": -7153.583333333333,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 2
-  },
-  "stats_real_v50": {
-    "total": 49,
-    "wins": 25,
-    "losses": 24,
-    "win_rate": 51.02040816326531,
-    "total_pnl": 34121.0,
-    "avg_pnl": 696.3469387755102,
-    "avg_win": 6441.6,
-    "avg_lose": -5288.291666666667,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 4
-  },
-  "stats_real_cons": {
     "total": 5,
     "wins": 1,
     "losses": 4,
     "win_rate": 20.0,
-    "total_pnl": -18818.0,
-    "avg_pnl": -3763.6,
-    "avg_win": 16116.0,
+    "total_pnl": -34142.0,
+    "avg_pnl": -6828.4,
+    "avg_win": 792.0,
+    "avg_lose": -8733.5,
+    "max_win": 792.0,
+    "max_lose": -16729.0,
+    "streak": 1
+  },
+  "stats_real_v70": {
+    "total": 5,
+    "wins": 1,
+    "losses": 4,
+    "win_rate": 20.0,
+    "total_pnl": -34142.0,
+    "avg_pnl": -6828.4,
+    "avg_win": 792.0,
+    "avg_lose": -8733.5,
+    "max_win": 792.0,
+    "max_lose": -16729.0,
+    "streak": 1
+  },
+  "stats_real_v60": {
+    "total": 20,
+    "wins": 8,
+    "losses": 12,
+    "win_rate": 40.0,
+    "total_pnl": -21338.0,
+    "avg_pnl": -1066.9,
+    "avg_win": 8063.125,
+    "avg_lose": -7153.583333333333,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 3
+  },
+  "stats_real_v50": {
+    "total": 50,
+    "wins": 26,
+    "losses": 24,
+    "win_rate": 52.0,
+    "total_pnl": 34913.0,
+    "avg_pnl": 698.26,
+    "avg_win": 6224.307692307692,
+    "avg_lose": -5288.291666666667,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 5
+  },
+  "stats_real_cons": {
+    "total": 6,
+    "wins": 2,
+    "losses": 4,
+    "win_rate": 33.33333333333333,
+    "total_pnl": -18026.0,
+    "avg_pnl": -3004.3333333333335,
+    "avg_win": 8454.0,
     "avg_lose": -8733.5,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "cons_recent": [
     {
@@ -330,16 +330,24 @@
       "exit": 47631,
       "pnl": -2489,
       "win": false
+    },
+    {
+      "date": "2026-10-06",
+      "dir": 1,
+      "entry": 49737,
+      "exit": 49822,
+      "pnl": 792,
+      "win": true
     }
   ],
   "gold": {
-    "price_usd": 4190.2998046875,
-    "chg_pct": 0.8059084289366797,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +0.8%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 89.79000091552734,
-    "oil_chg": 0.40255016115741576
+    "price_usd": 4184.7001953125,
+    "chg_pct": 0.6711988052332363,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 89.97000122070312,
+    "oil_chg": 0.6038252417361236
   },
   "intl_data": {
     "S&P500": {
@@ -384,26 +392,26 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69946.859375,
-      "chg_pct": 2.397030242996858,
-      "signal": 1,
-      "note": "+2.40%",
+      "price": 70483.84375,
+      "chg_pct": -0.28313745523787714,
+      "signal": 0,
+      "note": "-0.28%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 7003.740234375,
-      "chg_pct": 0.46461784683055124,
+      "price": 6975.91015625,
+      "chg_pct": 0.4973070069732154,
       "signal": 1,
-      "note": "+0.46%",
+      "note": "+0.50%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24040.33984375,
-      "chg_pct": 0.2838726876377119,
-      "signal": 0,
-      "note": "+0.28%",
+      "price": 24280.560546875,
+      "chg_pct": 0.9992400468808369,
+      "signal": 1,
+      "note": "+1.00%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
@@ -416,34 +424,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 49712.0390625,
-      "chg_pct": 2.550349566781514,
-      "signal": 1,
-      "note": "+2.55%",
+      "price": 49822.55078125,
+      "chg_pct": 0.22230373332918443,
+      "signal": 0,
+      "note": "+0.22%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.84500122070312,
-      "chg_pct": -0.3180943075919235,
-      "signal": 1,
-      "note": "-0.32%(偏多)",
+      "price": 101.9520034790039,
+      "chg_pct": -0.2133646802860235,
+      "signal": 0,
+      "note": "-0.21%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4190.2998046875,
-      "chg_pct": 0.8059084289366797,
+      "price": 4184.7001953125,
+      "chg_pct": 0.6711988052332363,
       "signal": 0,
-      "note": "+0.81%()",
+      "note": "+0.67%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.79000091552734,
-      "chg_pct": 0.40255016115741576,
+      "price": 89.97000122070312,
+      "chg_pct": 0.6038252417361236,
       "signal": 1,
-      "note": "+0.40%",
+      "note": "+0.60%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -456,10 +464,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 85527.21875,
-      "chg_pct": -0.3023491068498101,
+      "price": 85442.828125,
+      "chg_pct": -0.40072184938570315,
       "signal": -1,
-      "note": "-0.30%",
+      "note": "-0.40%",
       "desc": "風險偏好指標"
     }
   },
@@ -473,12 +481,6 @@
     {
       "label": "川普動態",
       "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -499,6 +501,12 @@
       "title": "Trump pauses 50 percent tariffs on Canada in last-minute deal - Al Jazeera",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -526,13 +534,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) Hits Fresh High: Is There ",
+      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Is Taiwan Semiconductor the Best AI Stock to Buy Now? - The Motley Fool",
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) Hits Fresh High: Is There ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -544,9 +552,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Target Raised at Barcl",
+      "title": "Moody National Bank Trust Division Cuts Position in Taiwan Semiconductor Manufac",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Interest Rate Increases Are About Disciplining Labor - Jacobin",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -556,19 +570,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Major brokerages expect next Fed rate hike in December - Reuters",
+      "title": "Volatile Treasury market sends mortgage rate lock volumes plunging in September ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Warsh says 'inflation is too high' after Fed raises interest rate 1st tim",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Federal Reserve interest rate hikes usually pound stocks, but then something sur",
+      "title": "Major brokerages expect next Fed rate hike in December - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
