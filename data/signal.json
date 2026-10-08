@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-10-08 09:25",
+  "generated_at": "2026-10-08 12:35",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-09",
   "direction": 0,
-  "total_score": 0,
-  "tw_score": 6,
+  "total_score": -3,
+  "tw_score": 5,
   "intl_score": -6,
   "news_score": -2,
-  "psy_score": 2,
+  "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": 408,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+6) vs 國際(-6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49425.140625,
-  "tw_chg_pct": -0.7976511640177986,
-  "tw_ma5": 49157.79140625,
-  "tw_ma10": 48534.3109375,
-  "tw_rsi": 83.97781511282699,
-  "tw_macd": 929.7795888180481,
-  "tw_macds": 740.0288955178022,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 48860.7890625,
-  "tw_ma10_p2": 48363.680859375,
-  "tw_ma20_p2": 47453.4607421875,
-  "tw_ma20": 47558.404296875,
+  "tw_last_close": 49413.140625,
+  "tw_chg_pct": -0.7895184092208352,
+  "tw_ma5": 49445.96796875,
+  "tw_ma10": 48733.730859375,
+  "tw_rsi": 82.79744822549014,
+  "tw_macd": 963.4970222344346,
+  "tw_macds": 789.5883684394754,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 49234.0375,
+  "tw_ma10_p2": 48572.433984375,
+  "tw_ma20_p2": 47577.4658203125,
+  "tw_ma20": 47692.8337890625,
   "stats_real": {
-    "total": 15,
+    "total": 16,
     "wins": 9,
-    "losses": 6,
-    "win_rate": 60.0,
-    "total_pnl": 6234.0,
-    "avg_pnl": 415.6,
+    "losses": 7,
+    "win_rate": 56.25,
+    "total_pnl": 5655.0,
+    "avg_pnl": 353.4375,
     "avg_win": 5217.888888888889,
-    "avg_lose": -6787.833333333333,
+    "avg_lose": -5900.857142857143,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 3
+    "streak": -1
   },
   "stats_sim": {
     "total": 789,
@@ -239,56 +239,56 @@
     "streak": 1
   },
   "stats_real_v70": {
-    "total": 5,
+    "total": 6,
     "wins": 1,
-    "losses": 4,
-    "win_rate": 20.0,
-    "total_pnl": -34142.0,
-    "avg_pnl": -6828.4,
+    "losses": 5,
+    "win_rate": 16.666666666666664,
+    "total_pnl": -34721.0,
+    "avg_pnl": -5786.833333333333,
     "avg_win": 792.0,
-    "avg_lose": -8733.5,
+    "avg_lose": -7102.6,
     "max_win": 792.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_real_v60": {
-    "total": 20,
+    "total": 21,
     "wins": 8,
-    "losses": 12,
-    "win_rate": 40.0,
-    "total_pnl": -21338.0,
-    "avg_pnl": -1066.9,
+    "losses": 13,
+    "win_rate": 38.095238095238095,
+    "total_pnl": -21917.0,
+    "avg_pnl": -1043.6666666666667,
     "avg_win": 8063.125,
-    "avg_lose": -7153.583333333333,
+    "avg_lose": -6647.846153846154,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 3
+    "streak": -1
   },
   "stats_real_v50": {
-    "total": 50,
+    "total": 51,
     "wins": 26,
-    "losses": 24,
-    "win_rate": 52.0,
-    "total_pnl": 34913.0,
-    "avg_pnl": 698.26,
+    "losses": 25,
+    "win_rate": 50.98039215686274,
+    "total_pnl": 34334.0,
+    "avg_pnl": 673.2156862745098,
     "avg_win": 6224.307692307692,
-    "avg_lose": -5288.291666666667,
+    "avg_lose": -5099.92,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 5
+    "streak": -1
   },
   "stats_real_cons": {
-    "total": 6,
+    "total": 7,
     "wins": 2,
-    "losses": 4,
-    "win_rate": 33.33333333333333,
-    "total_pnl": -18026.0,
-    "avg_pnl": -3004.3333333333335,
+    "losses": 5,
+    "win_rate": 28.57142857142857,
+    "total_pnl": -18605.0,
+    "avg_pnl": -2657.8571428571427,
     "avg_win": 8454.0,
-    "avg_lose": -8733.5,
+    "avg_lose": -7102.6,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "cons_recent": [
     {
@@ -338,16 +338,24 @@
       "exit": 49822,
       "pnl": 792,
       "win": true
+    },
+    {
+      "date": "2026-10-07",
+      "dir": 1,
+      "entry": 49858,
+      "exit": 49805,
+      "pnl": -579,
+      "win": false
     }
   ],
   "gold": {
-    "price_usd": 4143.0,
-    "chg_pct": -1.0532372436220296,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 89.44999694824219,
-    "oil_chg": 0.011174537749465158
+    "price_usd": 4158.2998046875,
+    "chg_pct": 0.4250394509344995,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 89.91000366210938,
+    "oil_chg": 1.846403381685097
   },
   "intl_data": {
     "S&P500": {
@@ -368,16 +376,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27538.69140625,
-      "chg_pct": -0.22137001160278344,
+      "price": 27538.689453125,
+      "chg_pct": -0.22137708819672253,
       "signal": 0,
       "note": "-0.22%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 13066.1494140625,
-      "chg_pct": -1.147472842357116,
+      "price": 13066.150390625,
+      "chg_pct": -1.1474654541306393,
       "signal": -1,
       "note": "-1.15%",
       "desc": "對台股影響最大"
@@ -392,66 +400,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69267.1015625,
-      "chg_pct": -2.004520782368794,
+      "price": 69311.578125,
+      "chg_pct": -1.0339479714087825,
       "signal": -1,
-      "note": "-2.00%",
+      "note": "-1.03%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6744.6298828125,
-      "chg_pct": -2.834594368430934,
+      "price": 6671.14990234375,
+      "chg_pct": -1.9510869046481916,
       "signal": -1,
-      "note": "-2.83%",
+      "note": "-1.95%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24280.560546875,
-      "chg_pct": 0.9992400468808369,
-      "signal": 1,
-      "note": "+1.00%",
+      "price": 23963.310546875,
+      "chg_pct": -0.6928553205486832,
+      "signal": -1,
+      "note": "-0.69%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3842.195068359375,
-      "chg_pct": 0.30659942775840215,
-      "signal": 1,
-      "note": "+0.31%",
+      "price": 3831.843994140625,
+      "chg_pct": -0.26940522369599335,
+      "signal": 0,
+      "note": "-0.27%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 49425.140625,
-      "chg_pct": -0.7976511640177998,
+      "price": 49413.140625,
+      "chg_pct": -0.7895184092208334,
       "signal": -1,
-      "note": "-0.80%",
+      "note": "-0.79%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.23300170898438,
-      "chg_pct": 0.39575750828159784,
-      "signal": -1,
-      "note": "+0.40%(偏空)",
+      "price": 102.25399780273438,
+      "chg_pct": 0.013693211323711173,
+      "signal": 0,
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4143.0,
-      "chg_pct": -1.0532372436220296,
-      "signal": 1,
-      "note": "-1.05%()",
+      "price": 4158.2998046875,
+      "chg_pct": 0.4250394509344995,
+      "signal": 0,
+      "note": "+0.43%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.44999694824219,
-      "chg_pct": 0.011174537749465158,
-      "signal": 0,
-      "note": "+0.01%",
+      "price": 89.91000366210938,
+      "chg_pct": 1.846403381685097,
+      "signal": 1,
+      "note": "+1.85%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -464,10 +472,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83181.609375,
-      "chg_pct": -2.777022925355079,
+      "price": 82729.2890625,
+      "chg_pct": -3.3056966033832484,
       "signal": -1,
-      "note": "-2.78%",
+      "note": "-3.31%",
       "desc": "風險偏好指標"
     }
   },
@@ -546,15 +554,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What Could Taiwan Semiconductor Manufacturing (TSM) Gain From Terafab Partnershi",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Futures: Memory Giant's Earnings Surge, But Miss Views - Investor's Business Dai",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "What Could Taiwan Semiconductor Manufacturing (TSM) Gain From Terafab Partnershi",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -570,13 +578,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed’s minutes show no appetite for a series of interest-rate hikes - MarketWatch",
+      "title": "Fed minutes could detail rate-hike decision, policy path - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes could detail rate-hike decision, policy path - Reuters",
+      "title": "Fed’s minutes show no appetite for a series of interest-rate hikes - MarketWatch",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
