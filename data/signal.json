@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08 19:35",
+  "generated_at": "2026-10-08 21:24",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-09",
@@ -349,13 +349,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4148.0,
-    "chg_pct": 0.17629396824633137,
+    "price_usd": 4149.0,
+    "chg_pct": 0.200444473060277,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 92.6500015258789,
-    "oil_chg": 4.950161765981888
+    "oil_usd": 92.04000091552734,
+    "oil_chg": 4.259177829884895
   },
   "intl_data": {
     "S&P500": {
@@ -392,10 +392,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.949999809265137,
-      "chg_pct": 5.769230039526891,
+      "price": 15.579999923706055,
+      "chg_pct": 3.315649884148807,
       "signal": 1,
-      "note": "VIX=15.9(低恐慌)",
+      "note": "VIX=15.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -440,42 +440,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.43099975585938,
-      "chg_pct": 0.18681719100223934,
+      "price": 102.34100341796875,
+      "chg_pct": 0.09879260202431182,
       "signal": 0,
-      "note": "+0.19%(中性)",
+      "note": "+0.10%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4148.0,
-      "chg_pct": 0.17629396824633137,
+      "price": 4149.0,
+      "chg_pct": 0.200444473060277,
       "signal": 0,
-      "note": "+0.18%()",
+      "note": "+0.20%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.6500015258789,
-      "chg_pct": 4.950161765981888,
+      "price": 92.04000091552734,
+      "chg_pct": 4.259177829884895,
       "signal": 1,
-      "note": "+4.95%",
+      "note": "+4.26%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.2769999504089355,
-      "chg_pct": 0.15182951076272766,
+      "price": 5.304999828338623,
+      "chg_pct": 0.5306022018726317,
       "signal": 0,
-      "note": "5.28%(+0.15%)",
+      "note": "5.30%(+0.53%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 82426.71875,
-      "chg_pct": -1.0197555772559204,
+      "price": 82435.84375,
+      "chg_pct": -1.0087980292174388,
       "signal": -1,
-      "note": "-1.02%",
+      "note": "-1.01%",
       "desc": "風險偏好指標"
     }
   },
@@ -489,6 +489,12 @@
     {
       "label": "川普動態",
       "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -511,12 +517,6 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "關稅/貿易",
       "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
@@ -530,13 +530,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How the Canada-U.S. trade war might change your shopping habits - CBC",
+      "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Could Have Big News on Oct. 15 - The Motley F",
+      "title": "An employee stock plan bought 51 shares for Taiwan Semiconductor (TSM) VP Min Ca",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "An employee stock plan bought 51 shares for Taiwan Semiconductor (TSM) VP Min Ca",
+      "title": "Taiwan Semiconductor Manufacturing Could Have Big News on Oct. 15 - The Motley F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
