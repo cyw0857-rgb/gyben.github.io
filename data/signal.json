@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-09 12:38",
+  "generated_at": "2026-10-09 19:30",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-12",
   "direction": 0,
-  "total_score": -7,
+  "total_score": -6,
   "tw_score": 5,
-  "intl_score": -9,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4048,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-8) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 49313.44140625,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4206.5,
-    "chg_pct": 1.1907625691604522,
+    "price_usd": 4207.7998046875,
+    "chg_pct": 1.222030423081549,
     "signal": -1,
     "level": "warn",
     "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 90.27999877929688,
-    "oil_chg": -1.3225479426443638
+    "oil_usd": 90.56999969482422,
+    "oil_chg": -1.0055724018216816
   },
   "intl_data": {
     "S&P500": {
@@ -400,18 +400,18 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.40999984741211,
-      "chg_pct": 2.1883284176101907,
+      "price": 15.260000228881836,
+      "chg_pct": -0.9733914342345937,
       "signal": 1,
-      "note": "VIX=15.4(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 68804.078125,
-      "chg_pct": -0.34476242419990516,
-      "signal": -1,
-      "note": "-0.34%",
+      "price": 69030.921875,
+      "chg_pct": -0.016203879199627944,
+      "signal": 0,
+      "note": "-0.02%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -424,18 +424,18 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24045.7109375,
-      "chg_pct": 1.0927612042510941,
+      "price": 24211.349609375,
+      "chg_pct": 1.7891378156797273,
       "signal": 1,
-      "note": "+1.09%",
+      "note": "+1.79%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3765.710693359375,
-      "chg_pct": -1.2118185226058964,
-      "signal": -1,
-      "note": "-1.21%",
+      "price": 3813.791259765625,
+      "chg_pct": 0.049508251129675176,
+      "signal": 0,
+      "note": "+0.05%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.03900146484375,
-      "chg_pct": -0.09888185373821662,
+      "price": 102.16300201416016,
+      "chg_pct": 0.02252068205323486,
       "signal": 0,
-      "note": "-0.10%(中性)",
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4206.5,
-      "chg_pct": 1.1907625691604522,
+      "price": 4207.7998046875,
+      "chg_pct": 1.222030423081549,
       "signal": -1,
-      "note": "+1.19%(避險↑)",
+      "note": "+1.22%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.27999877929688,
-      "chg_pct": -1.3225479426443638,
+      "price": 90.56999969482422,
+      "chg_pct": -1.0055724018216816,
       "signal": -1,
-      "note": "-1.32%",
+      "note": "-1.01%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82358.0625,
-      "chg_pct": -1.1021998684906607,
-      "signal": -1,
-      "note": "-1.10%",
+      "price": 82525.7265625,
+      "chg_pct": 1.0399470241294455,
+      "signal": 1,
+      "note": "+1.04%",
       "desc": "風險偏好指標"
     }
   },
@@ -502,12 +502,6 @@
     },
     {
       "label": "川普動態",
-      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -515,6 +509,12 @@
     {
       "label": "川普動態",
       "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -550,15 +550,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Elon Musk Delivered Massive News for Taiwan Semiconductor Stock Investors - The ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "TSMC's third-quarter revenue surges to record, beating market forecast - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Elon Musk Delivered Massive News for Taiwan Semiconductor Stock Investors - The ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -568,15 +568,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Fund Update: 67,546 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to SAP",
+      "title": "2,095 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Sold by Galvin",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Four signs it is about to get uglier in the bond market - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Markets Brace For Additional Fed Rate Hikes Into 2027 - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Minutes Signal Further Rate Increase This Year, but No Urgency for October H",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
