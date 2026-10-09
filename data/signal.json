@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09 03:32",
+  "generated_at": "2026-10-09 07:52",
   "mode": "morning",
   "signal_date": "2026-10-07",
   "trade_date": "2026-10-12",
@@ -349,53 +349,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4153.10009765625,
-    "chg_pct": 0.2994639012451897,
+    "price_usd": 4166.5,
+    "chg_pct": 0.6230783073043249,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.3%，影響中性",
-    "oil_usd": 91.33999633789062,
-    "oil_chg": 3.4662410522273026
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 91.13999938964844,
+    "oil_chg": 3.2396926256214225
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7757.2998046875,
-      "chg_pct": -0.570001611588416,
+      "price": 7765.35986328125,
+      "chg_pct": -0.4666909708803184,
       "signal": -1,
-      "note": "-0.57%",
+      "note": "-0.47%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51197.6015625,
-      "chg_pct": 0.034643441593515886,
+      "price": 51231.640625,
+      "chg_pct": 0.1011521329453329,
       "signal": 0,
-      "note": "+0.03%",
+      "note": "+0.10%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27157.54296875,
-      "chg_pct": -1.384040024939345,
+      "price": 27193.33984375,
+      "chg_pct": -1.2540524485118911,
       "signal": -1,
-      "note": "-1.38%",
+      "note": "-1.25%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12550.6787109375,
-      "chg_pct": -3.945092198367412,
+      "price": 12623.71484375,
+      "chg_pct": -3.386120116851316,
       "signal": -1,
-      "note": "-3.95%",
+      "note": "-3.39%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.600000381469727,
-      "chg_pct": 3.4482789150828905,
+      "price": 15.40999984741211,
+      "chg_pct": 2.1883284176101907,
       "signal": 1,
-      "note": "VIX=15.6(低恐慌)",
+      "note": "VIX=15.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -440,26 +440,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.12200164794922,
-      "chg_pct": -0.11541101162534986,
+      "price": 102.12799835205078,
+      "chg_pct": -0.10954569058968938,
       "signal": 0,
-      "note": "-0.12%(中性)",
+      "note": "-0.11%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4153.10009765625,
-      "chg_pct": 0.2994639012451897,
+      "price": 4166.5,
+      "chg_pct": 0.6230783073043249,
       "signal": 0,
-      "note": "+0.30%()",
+      "note": "+0.62%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.33999633789062,
-      "chg_pct": 3.4662410522273026,
+      "price": 91.13999938964844,
+      "chg_pct": 3.2396926256214225,
       "signal": 1,
-      "note": "+3.47%",
+      "note": "+3.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -472,10 +472,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81700.0078125,
-      "chg_pct": -1.8924098246801695,
+      "price": 81693.8984375,
+      "chg_pct": -1.8997461282470298,
       "signal": -1,
-      "note": "-1.89%",
+      "note": "-1.90%",
       "desc": "風險偏好指標"
     }
   },
@@ -548,19 +548,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC’s September sales surge year-over-year as AI drives chip demand - CNBC",
+      "title": "GlobalFoundries Signs $2 Billion Silicon Supply Deal With Taiwan Semiconductor M",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Could Have Big News on Oct. 15 - Yahoo Financ",
+      "title": "Elon Musk Delivered Massive News for Taiwan Semiconductor Stock Investors - The ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "An employee stock plan bought 51 shares for Taiwan Semiconductor (TSM) VP Min Ca",
+      "title": "TSMC’s September sales surge year-over-year as AI drives chip demand - CNBC",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed officials see another hike coming, but no sign as to when, minutes show - CN",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -572,21 +584,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed officials see another hike coming, but no sign as to when, minutes show - CN",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed grows more hawkish on inflation but sees room to wait on rate hikes - KOKI F",
+      "title": "Fed grows more hawkish on inflation but sees room to wait on rate hikes - WKRC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     }
   ]
 }
