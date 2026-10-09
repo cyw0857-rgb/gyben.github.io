@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09 19:30",
+  "generated_at": "2026-10-09 21:13",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-12",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4207.7998046875,
-    "chg_pct": 1.222030423081549,
+    "price_usd": 4199.7998046875,
+    "chg_pct": 1.0295839472576376,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 90.56999969482422,
-    "oil_chg": -1.0055724018216816
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 90.95999908447266,
+    "oil_chg": -0.579296963244063
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.260000228881836,
-      "chg_pct": -0.9733914342345937,
+      "price": 15.220000267028809,
+      "chg_pct": -1.2329628959419394,
       "signal": 1,
-      "note": "VIX=15.3(低恐慌)",
+      "note": "VIX=15.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,42 +448,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.16300201416016,
-      "chg_pct": 0.02252068205323486,
+      "price": 102.28900146484375,
+      "chg_pct": 0.14588023897170044,
       "signal": 0,
-      "note": "+0.02%(中性)",
+      "note": "+0.15%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4207.7998046875,
-      "chg_pct": 1.222030423081549,
+      "price": 4199.7998046875,
+      "chg_pct": 1.0295839472576376,
       "signal": -1,
-      "note": "+1.22%(避險↑)",
+      "note": "+1.03%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.56999969482422,
-      "chg_pct": -1.0055724018216816,
+      "price": 90.95999908447266,
+      "chg_pct": -0.579296963244063,
       "signal": -1,
-      "note": "-1.01%",
+      "note": "-0.58%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.230999946594238,
-      "chg_pct": -0.8717074899940551,
+      "price": 5.258999824523926,
+      "chg_pct": 0.5352681746425453,
       "signal": 0,
-      "note": "5.23%(-0.87%)",
+      "note": "5.26%(+0.54%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 82525.7265625,
-      "chg_pct": 1.0399470241294455,
+      "price": 82980.7734375,
+      "chg_pct": 1.5970813149578305,
       "signal": 1,
-      "note": "+1.04%",
+      "note": "+1.60%",
       "desc": "風險偏好指標"
     }
   },
@@ -562,15 +562,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "GlobalFoundries Signs $2 Billion Silicon Supply Deal With Taiwan Semiconductor M",
+      "title": "Taiwan Semiconductor's strong Q3 sales a positive sign for Q4, Wedbush says (TSM",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "2,095 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Sold by Galvin",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "GlobalFoundries Signs $2 Billion Silicon Supply Deal With Taiwan Semiconductor M",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Markets Brace For Additional Fed Rate Hikes Into 2027 - Forbes",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
