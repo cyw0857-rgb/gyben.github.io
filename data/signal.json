@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09 09:32",
+  "generated_at": "2026-10-09 12:38",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-12",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4184.5,
-    "chg_pct": 1.0577873939553455,
+    "price_usd": 4206.5,
+    "chg_pct": 1.1907625691604522,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 90.87000274658203,
-    "oil_chg": 2.933851385476633
+    "warning": "黃金上漲 +1.2%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 90.27999877929688,
+    "oil_chg": -1.3225479426443638
   },
   "intl_data": {
     "S&P500": {
@@ -392,8 +392,8 @@
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12623.71484375,
-      "chg_pct": -3.386120116851316,
+      "price": 12623.7099609375,
+      "chg_pct": -3.3861574867908475,
       "signal": -1,
       "note": "-3.39%",
       "desc": "對台股影響最大"
@@ -408,10 +408,10 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 68269.09375,
-      "chg_pct": -1.1196292117921693,
+      "price": 68804.078125,
+      "chg_pct": -0.34476242419990516,
       "signal": -1,
-      "note": "-1.12%",
+      "note": "-0.34%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -424,18 +424,18 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23785.7890625,
-      "chg_pct": -1.4285279521767058,
-      "signal": -1,
-      "note": "-1.43%",
+      "price": 24045.7109375,
+      "chg_pct": 1.0927612042510941,
+      "signal": 1,
+      "note": "+1.09%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3811.904052734375,
-      "chg_pct": -0.7883778695789729,
+      "price": 3765.710693359375,
+      "chg_pct": -1.2118185226058964,
       "signal": -1,
-      "note": "-0.79%",
+      "note": "-1.21%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.03099822998047,
-      "chg_pct": -0.20442061634972417,
+      "price": 102.03900146484375,
+      "chg_pct": -0.09888185373821662,
       "signal": 0,
-      "note": "-0.20%(中性)",
+      "note": "-0.10%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4184.5,
-      "chg_pct": 1.0577873939553455,
+      "price": 4206.5,
+      "chg_pct": 1.1907625691604522,
       "signal": -1,
-      "note": "+1.06%(避險↑)",
+      "note": "+1.19%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.87000274658203,
-      "chg_pct": 2.933851385476633,
-      "signal": 1,
-      "note": "+2.93%",
+      "price": 90.27999877929688,
+      "chg_pct": -1.3225479426443638,
+      "signal": -1,
+      "note": "-1.32%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81685.7734375,
-      "chg_pct": -1.9095028491032118,
+      "price": 82358.0625,
+      "chg_pct": -1.1021998684906607,
       "signal": -1,
-      "note": "-1.91%",
+      "note": "-1.10%",
       "desc": "風險偏好指標"
     }
   },
@@ -532,12 +532,6 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The U.S-Canada Trade War Intensifies: Key Implications - Bloomsbury Intelligence",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "How the Canada-U.S. trade war might change your shopping habits - CBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -547,6 +541,12 @@
       "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed’s Waller sees additional rate hikes to get inflation down faster - Yahoo Fin",
+      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed grows more hawkish on inflation but sees room to wait on rate hikes - WKRC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Minutes Signal Further Rate Increase This Year, but No Urgency for October H",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
