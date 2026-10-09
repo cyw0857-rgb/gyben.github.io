@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-09 07:52",
+  "generated_at": "2026-10-09 09:32",
   "mode": "morning",
-  "signal_date": "2026-10-07",
+  "signal_date": "2026-10-08",
   "trade_date": "2026-10-12",
   "direction": 0,
-  "total_score": -4,
-  "tw_score": 6,
-  "intl_score": -8,
+  "total_score": -7,
+  "tw_score": 5,
+  "intl_score": -9,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4048,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+6) vs 國際(-8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+5) vs 國際(-9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49806.37109375,
-  "tw_chg_pct": -0.03247462694360159,
-  "tw_ma5": 49234.0375,
-  "tw_ma10": 48572.433984375,
-  "tw_rsi": 89.93086576860443,
-  "tw_macd": 960.1911361827151,
-  "tw_macds": 746.1112049907356,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 48860.7890625,
-  "tw_ma10_p2": 48363.680859375,
-  "tw_ma20_p2": 47453.4607421875,
-  "tw_ma20": 47577.4658203125,
+  "tw_last_close": 49313.44140625,
+  "tw_chg_pct": -0.9896920347241545,
+  "tw_ma5": 49426.028125,
+  "tw_ma10": 48723.7609375,
+  "tw_rsi": 81.30563232631278,
+  "tw_macd": 955.5438082031033,
+  "tw_macds": 787.9977256332091,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 49234.0375,
+  "tw_ma10_p2": 48572.433984375,
+  "tw_ma20_p2": 47577.4658203125,
+  "tw_ma20": 47687.848828125,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -239,56 +239,56 @@
     "streak": 1
   },
   "stats_real_v70": {
-    "total": 6,
+    "total": 7,
     "wins": 1,
-    "losses": 5,
-    "win_rate": 16.666666666666664,
-    "total_pnl": -34721.0,
-    "avg_pnl": -5786.833333333333,
+    "losses": 6,
+    "win_rate": 14.285714285714285,
+    "total_pnl": -39487.0,
+    "avg_pnl": -5641.0,
     "avg_win": 792.0,
-    "avg_lose": -7102.6,
+    "avg_lose": -6713.166666666667,
     "max_win": 792.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_v60": {
-    "total": 21,
+    "total": 22,
     "wins": 8,
-    "losses": 13,
-    "win_rate": 38.095238095238095,
-    "total_pnl": -21917.0,
-    "avg_pnl": -1043.6666666666667,
+    "losses": 14,
+    "win_rate": 36.36363636363637,
+    "total_pnl": -26683.0,
+    "avg_pnl": -1212.8636363636363,
     "avg_win": 8063.125,
-    "avg_lose": -6647.846153846154,
+    "avg_lose": -6513.428571428572,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_v50": {
-    "total": 51,
+    "total": 52,
     "wins": 26,
-    "losses": 25,
-    "win_rate": 50.98039215686274,
-    "total_pnl": 34334.0,
-    "avg_pnl": 673.2156862745098,
+    "losses": 26,
+    "win_rate": 50.0,
+    "total_pnl": 29568.0,
+    "avg_pnl": 568.6153846153846,
     "avg_win": 6224.307692307692,
-    "avg_lose": -5099.92,
+    "avg_lose": -5087.076923076923,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "stats_real_cons": {
-    "total": 7,
+    "total": 8,
     "wins": 2,
-    "losses": 5,
-    "win_rate": 28.57142857142857,
-    "total_pnl": -18605.0,
-    "avg_pnl": -2657.8571428571427,
+    "losses": 6,
+    "win_rate": 25.0,
+    "total_pnl": -23371.0,
+    "avg_pnl": -2921.375,
     "avg_win": 8454.0,
-    "avg_lose": -7102.6,
+    "avg_lose": -6713.166666666667,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": -2
   },
   "cons_recent": [
     {
@@ -346,16 +346,24 @@
       "exit": 49805,
       "pnl": -579,
       "win": false
+    },
+    {
+      "date": "2026-10-08",
+      "dir": 1,
+      "entry": 49784,
+      "exit": 49312,
+      "pnl": -4766,
+      "win": false
     }
   ],
   "gold": {
-    "price_usd": 4166.5,
-    "chg_pct": 0.6230783073043249,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.6%，影響中性",
-    "oil_usd": 91.13999938964844,
-    "oil_chg": 3.2396926256214225
+    "price_usd": 4184.5,
+    "chg_pct": 1.0577873939553455,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 90.87000274658203,
+    "oil_chg": 2.933851385476633
   },
   "intl_data": {
     "S&P500": {
@@ -400,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 70035.7109375,
-      "chg_pct": -0.9171323636931947,
+      "price": 68269.09375,
+      "chg_pct": -1.1196292117921693,
       "signal": -1,
-      "note": "-0.92%",
+      "note": "-1.12%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 6625.93017578125,
+      "chg_pct": -2.6157017169108334,
+      "signal": -1,
+      "note": "-2.62%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24130.5,
-      "chg_pct": -0.6180275228213928,
+      "price": 23785.7890625,
+      "chg_pct": -1.4285279521767058,
       "signal": -1,
-      "note": "-0.62%",
+      "note": "-1.43%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3811.904052734375,
+      "chg_pct": -0.7883778695789729,
+      "signal": -1,
+      "note": "-0.79%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 49806.37109375,
-      "chg_pct": -0.03247462694360681,
-      "signal": 0,
-      "note": "-0.03%",
+      "price": 49313.44140625,
+      "chg_pct": -0.9896920347241595,
+      "signal": -1,
+      "note": "-0.99%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.12799835205078,
-      "chg_pct": -0.10954569058968938,
+      "price": 102.03099822998047,
+      "chg_pct": -0.20442061634972417,
       "signal": 0,
-      "note": "-0.11%(中性)",
+      "note": "-0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4166.5,
-      "chg_pct": 0.6230783073043249,
-      "signal": 0,
-      "note": "+0.62%()",
+      "price": 4184.5,
+      "chg_pct": 1.0577873939553455,
+      "signal": -1,
+      "note": "+1.06%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.13999938964844,
-      "chg_pct": 3.2396926256214225,
+      "price": 90.87000274658203,
+      "chg_pct": 2.933851385476633,
       "signal": 1,
-      "note": "+3.24%",
+      "note": "+2.93%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -472,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81693.8984375,
-      "chg_pct": -1.8997461282470298,
+      "price": 81685.7734375,
+      "chg_pct": -1.9095028491032118,
       "signal": -1,
-      "note": "-1.90%",
+      "note": "-1.91%",
       "desc": "風險偏好指標"
     }
   },
@@ -542,6 +550,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Elon Musk Delivered Massive News for Taiwan Semiconductor Stock Investors - The ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "TSMC's third-quarter revenue surges to record, beating market forecast - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
@@ -554,15 +568,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Elon Musk Delivered Massive News for Taiwan Semiconductor Stock Investors - The ",
+      "title": "Fund Update: 67,546 TAIWAN SEMICONDUCTOR MANUFACTURING (TSM) shares added to SAP",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC’s September sales surge year-over-year as AI drives chip demand - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "聯準會",
