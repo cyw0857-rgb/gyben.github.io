@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-10 09:23",
+  "generated_at": "2026-10-11 08:34",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-12",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 5,
   "tw_score": 5,
-  "intl_score": -1,
+  "intl_score": 3,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4048,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
+  "veto_msg": "RSI=81 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 49313.44140625,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4220.2998046875,
-    "chg_pct": 1.5227280415564108,
+    "price_usd": 4216.2998046875,
+    "chg_pct": 1.4265048036444552,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 91.66000366210938,
-    "oil_chg": 0.1858189991358245
+    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 91.8499984741211,
+    "oil_chg": 0.3934863031559042
   },
   "intl_data": {
     "S&P500": {
@@ -408,10 +408,10 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69042.109375,
-      "chg_pct": -1.4187070413073866,
-      "signal": -1,
-      "note": "-1.42%",
+      "price": 69030.921875,
+      "chg_pct": -0.016203879199627944,
+      "signal": 0,
+      "note": "-0.02%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -424,18 +424,18 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23785.7890625,
-      "chg_pct": -1.4285279521767058,
-      "signal": -1,
-      "note": "-1.43%",
+      "price": 24211.349609375,
+      "chg_pct": 1.7891378156797273,
+      "signal": 1,
+      "note": "+1.79%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3813.791015625,
+      "chg_pct": 0.049501846440007685,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.05%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.23100280761719,
-      "chg_pct": 0.08909674810314606,
+      "price": 102.20999908447266,
+      "chg_pct": 0.06853308717692531,
       "signal": 0,
-      "note": "+0.09%(中性)",
+      "note": "+0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4220.2998046875,
-      "chg_pct": 1.5227280415564108,
+      "price": 4216.2998046875,
+      "chg_pct": 1.4265048036444552,
       "signal": -1,
-      "note": "+1.52%(避險↑)",
+      "note": "+1.43%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.66000366210938,
-      "chg_pct": 0.1858189991358245,
-      "signal": 0,
-      "note": "+0.19%",
+      "price": 91.8499984741211,
+      "chg_pct": 0.3934863031559042,
+      "signal": 1,
+      "note": "+0.39%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82555.0,
-      "chg_pct": 1.0757878061184911,
+      "price": 82896.1875,
+      "chg_pct": 0.42384346894627056,
       "signal": 1,
-      "note": "+1.08%",
+      "note": "+0.42%",
       "desc": "風險偏好指標"
     }
   },
@@ -502,6 +502,12 @@
     },
     {
       "label": "川普動態",
+      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -515,12 +521,6 @@
     {
       "label": "川普動態",
       "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "The bizarre roots of Trump’s trade war on Canada - Vox",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -544,19 +544,25 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Carney says Canada can emerge from Trump's trade war with a stronger and indepen",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "VOO Doesn't Hold SpaceX, Taiwan Semiconductor, Samsung Electronics, SK Hynix, or",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Should You Buy Taiwan Semiconductor Manufacturing Stock Before Oct. 15? History ",
+      "title": "VOO Doesn't Hold SpaceX, Taiwan Semiconductor, Samsung Electronics, SK Hynix, or",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Should You Buy Taiwan Semiconductor Manufacturing Stock Before Oct. 15? History ",
+      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -567,32 +573,26 @@
       "sent_val": 1
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Vs. ASML: If I Had to Choose One For the Next 5 Years, It’s",
+      "label": "聯準會",
+      "title": "Federal Reserve officials expect another rate hike will be needed this year, acc",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Interest Rate Forecast for the Next 5 Years: 2026 to 2031 - Norada Real Esta",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Four signs it is about to get uglier in the bond market as yields rise - Reuters",
+      "title": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed officials see another hike coming, but no sign as to when, minutes show - CN",
+      "title": "Expectations of Another Fed Rate Hike This Month Are Shifting Dramatically - The",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Explainer: The Role of the Treasury and the Fed in Managing the National Debt - ",
+      "title": "Fed approves interest rate hike, signals one more to come this year - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
