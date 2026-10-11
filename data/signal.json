@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12 02:30",
+  "generated_at": "2026-10-12 06:17",
   "mode": "morning",
   "signal_date": "2026-10-08",
   "trade_date": "2026-10-13",
   "direction": 0,
   "total_score": 5,
   "tw_score": 5,
-  "intl_score": 3,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
@@ -358,12 +358,12 @@
   ],
   "gold": {
     "price_usd": 4216.2998046875,
-    "chg_pct": 1.4265048036444552,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
+    "chg_pct": 0.0,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.0%，影響中性",
     "oil_usd": 91.8499984741211,
-    "oil_chg": 0.3934863031559042
+    "oil_chg": 0.0
   },
   "intl_data": {
     "S&P500": {
@@ -448,8 +448,8 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.20999908447266,
-      "chg_pct": 0.06853308717692531,
+      "price": 102.28500366210938,
+      "chg_pct": 0.07338281803009344,
       "signal": 0,
       "note": "+0.07%(中性)",
       "desc": "強美元→外資匯出"
@@ -457,17 +457,17 @@
     "黃金": {
       "category": "商品",
       "price": 4216.2998046875,
-      "chg_pct": 1.4265048036444552,
-      "signal": -1,
-      "note": "+1.43%(避險↑)",
+      "chg_pct": 0.0,
+      "signal": 0,
+      "note": "+0.00%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
       "price": 91.8499984741211,
-      "chg_pct": 0.3934863031559042,
-      "signal": 1,
-      "note": "+0.39%",
+      "chg_pct": 0.0,
+      "signal": 0,
+      "note": "+0.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83787.2890625,
-      "chg_pct": 1.055408274846376,
+      "price": 83558.9921875,
+      "chg_pct": 0.7800606156830948,
       "signal": 1,
-      "note": "+1.06%",
+      "note": "+0.78%",
       "desc": "風險偏好指標"
     }
   },
@@ -538,13 +538,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "‘Hostile, but hooked’: What’s behind the US-China trade truce extension? - Al Ja",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,19 +562,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Futures: 6 Stocks Near Buy Points; Big Earnings, Inflation Data Due - Investor's",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Can Taiwan Semiconductor Manufacturing (NYSE:TSM) Justify A Premium On Cash Flow",
+      "title": "Futures Due Amid Trump Claims; Six Stocks Near Buy Points - Investor's Business ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "label": "台股/半導體",
+      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,7 +580,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Will September inflation cement US interest rate policy for the rest of the year",
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "US Bond Traders Await CPI, Warsh For Insight on Fed’s Rate Path - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
