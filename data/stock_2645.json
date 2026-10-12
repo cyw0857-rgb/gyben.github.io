@@ -1,18 +1,18 @@
 {
   "symbol": "2645.TW",
   "name": "長榮航太",
-  "updated": "2026-10-12 08:48",
+  "updated": "2026-10-12 12:24",
   "direction": 0,
   "signal_text": "⚪ 暫時整理",
   "signal_color": "#9ca3af",
-  "hold_advice": "⚪ 觀望 — 等待方向確認",
-  "hold_color": "#9ca3af",
-  "score": 1,
-  "total_score": 1,
-  "tech_score": 1,
+  "hold_advice": "⚠️ 謹慎持有 — 訊號偏空，設好停損",
+  "hold_color": "#f59e0b",
+  "score": -2,
+  "total_score": -2,
+  "tech_score": -2,
   "reasons": [
     "MA5<MA10 短線偏空",
-    "RSI=53 多頭健康區",
+    "RSI=48 中性偏空",
     "MACD金叉（零軸下）",
     "跌破MA20壓力"
   ],
@@ -23,9 +23,9 @@
       "score": -1
     },
     {
-      "icon": "📈",
-      "text": "RSI=53 多頭健康區",
-      "score": 2
+      "icon": "📉",
+      "text": "RSI=48 中性偏空",
+      "score": -1
     },
     {
       "icon": "📈",
@@ -38,96 +38,101 @@
       "score": -1
     }
   ],
-  "rsi": 53.3,
-  "macd": -1.48,
-  "macds": -1.95,
-  "k": 33.9,
-  "d": 33.7,
-  "ma5": 172.6,
+  "rsi": 48.1,
+  "macd": -1.43,
+  "macds": -1.85,
+  "k": 30.0,
+  "d": 32.5,
+  "ma5": 172.3,
   "ma10": 172.6,
-  "ma20": 172.68,
-  "ma60": 182.74,
-  "last_close": 171.5,
-  "chg_pct": -1.15,
+  "ma20": 172.55,
+  "ma60": 181.57,
+  "last_close": 172.0,
+  "chg_pct": 0.29,
   "ma_bull": false,
   "ma_bear": false,
   "retail": {
-    "mood": "量能正常",
-    "vol_ratio": 1.0,
+    "mood": "冷清（量縮）",
+    "vol_ratio": 0.38,
     "score": 0,
-    "signals": []
+    "signals": [
+      {
+        "icon": "💤",
+        "text": "量縮 0.4倍，觀望氣氛濃"
+      }
+    ]
   },
   "forecast": [
     {
       "month": "2026-11",
-      "price": 172.87,
-      "price_high": 207.65,
-      "price_low": 138.1,
-      "chg_pct": 0.8,
+      "price": 173.47,
+      "price_high": 208.36,
+      "price_low": 138.58,
+      "chg_pct": 0.9,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     },
     {
       "month": "2026-12",
-      "price": 174.25,
-      "price_high": 223.83,
-      "price_low": 124.68,
-      "chg_pct": 1.6,
+      "price": 174.95,
+      "price_high": 224.72,
+      "price_low": 125.19,
+      "chg_pct": 1.7,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     },
     {
       "month": "2027-01",
-      "price": 175.65,
-      "price_high": 236.85,
-      "price_low": 114.45,
-      "chg_pct": 2.4,
+      "price": 176.45,
+      "price_high": 237.92,
+      "price_low": 114.98,
+      "chg_pct": 2.6,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     },
     {
       "month": "2027-02",
-      "price": 177.05,
-      "price_high": 248.29,
-      "price_low": 105.82,
-      "chg_pct": 3.2,
+      "price": 177.96,
+      "price_high": 249.54,
+      "price_low": 106.38,
+      "chg_pct": 3.5,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     },
     {
       "month": "2027-03",
-      "price": 178.47,
-      "price_high": 258.75,
-      "price_low": 98.19,
-      "chg_pct": 4.1,
+      "price": 179.48,
+      "price_high": 260.2,
+      "price_low": 98.76,
+      "chg_pct": 4.4,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     },
     {
       "month": "2027-04",
-      "price": 179.89,
-      "price_high": 268.54,
-      "price_low": 91.25,
-      "chg_pct": 4.9,
+      "price": 181.02,
+      "price_high": 270.2,
+      "price_low": 91.84,
+      "chg_pct": 5.2,
       "trend": "neutral",
-      "model_note": "⚪ 觀望（分-0.2）",
-      "score": -0.2
+      "model_note": "⚪ 觀望（分+0.2）",
+      "score": 0.2
     }
   ],
   "trend_label": "月線 MA5<MA10 偏空 📉",
-  "support": 172.5,
-  "resistance": 197.55,
+  "support": 172.15,
+  "resistance": 196.5,
   "weekly": {
-    "proj_center": 171.5,
-    "proj_high": 182.72,
-    "proj_low": 160.28,
-    "support": 172.5,
-    "resistance": 197.55,
+    "proj_center": 172.0,
+    "proj_high": 183.25,
+    "proj_low": 160.75,
+    "support": 172.15,
+    "resistance": 196.5,
     "trend_bias": "偏多",
     "op_hint": "逢回偏多操作"
   },
@@ -135,9 +140,9 @@
   "slope_per_day": 0.1,
   "model_accuracy": 70.0,
   "model_samples": 20,
-  "total_return": 104.6,
+  "total_return": 105.2,
   "ipo_date": "2022-02-18",
-  "model_score": -0.2,
+  "model_score": 0.2,
   "model_threshold": 3.5,
-  "model_factors": "MA5<MA10 空頭"
+  "model_factors": "MA5<MA10 空頭  海運↑+7%"
 }

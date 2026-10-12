@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-12 08:48",
+  "generated_at": "2026-10-12 12:24",
   "mode": "morning",
-  "signal_date": "2026-10-08",
+  "signal_date": "2026-10-12",
   "trade_date": "2026-10-13",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": 5,
-  "intl_score": 1,
+  "total_score": 2,
+  "tw_score": 4,
+  "intl_score": 0,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4048,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=81 過熱(需45~72)或過冷 → 觀望",
+  "veto_msg": "RSI=78 過熱(需45~72)或過冷 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49313.44140625,
-  "tw_chg_pct": -0.9896920347241545,
-  "tw_ma5": 49426.028125,
-  "tw_ma10": 48723.7609375,
-  "tw_rsi": 81.30563232631278,
-  "tw_macd": 955.5438082031033,
-  "tw_macds": 787.9977256332091,
+  "tw_last_close": 49225.359375,
+  "tw_chg_pct": -0.17861667881656773,
+  "tw_ma5": 49575.95234375,
+  "tw_ma10": 48830.56796875,
+  "tw_rsi": 78.33976787412922,
+  "tw_macd": 933.9686687863868,
+  "tw_macds": 817.1687953015721,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 49234.0375,
-  "tw_ma10_p2": 48572.433984375,
-  "tw_ma20_p2": 47577.4658203125,
-  "tw_ma20": 47687.848828125,
+  "tw_ma5_p2": 49426.028125,
+  "tw_ma10_p2": 48723.7609375,
+  "tw_ma20_p2": 47687.848828125,
+  "tw_ma20": 47789.948828125,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4229.0,
-    "chg_pct": 0.3012166093687283,
+    "price_usd": 4222.7001953125,
+    "chg_pct": 0.15180112708978433,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.3%，影響中性",
-    "oil_usd": 90.5,
-    "oil_chg": -1.4697860604771358
+    "warning": "黃金小幅變動 +0.2%，影響中性",
+    "oil_usd": 90.30000305175781,
+    "oil_chg": -1.687529067079947
   },
   "intl_data": {
     "S&P500": {
@@ -416,58 +416,58 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6562.169921875,
-      "chg_pct": -0.9622838184939394,
+      "price": 6425.06005859375,
+      "chg_pct": -3.031576123782738,
       "signal": -1,
-      "note": "-0.96%",
+      "note": "-3.03%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24211.349609375,
-      "chg_pct": 1.7891378156797273,
-      "signal": 1,
-      "note": "+1.79%",
+      "price": 24253.69921875,
+      "chg_pct": 0.17491635145610218,
+      "signal": 0,
+      "note": "+0.17%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3813.791015625,
-      "chg_pct": 0.049501846440007685,
+      "price": 3809.079345703125,
+      "chg_pct": -0.12354294985151032,
       "signal": 0,
-      "note": "+0.05%",
+      "note": "-0.12%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 49313.44140625,
-      "chg_pct": -0.9896920347241595,
-      "signal": -1,
-      "note": "-0.99%",
+      "price": 49225.359375,
+      "chg_pct": -0.17861667881657203,
+      "signal": 0,
+      "note": "-0.18%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.13800048828125,
-      "chg_pct": -0.07044183234157175,
+      "price": 102.16200256347656,
+      "chg_pct": -0.046958733417487325,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4229.0,
-      "chg_pct": 0.3012166093687283,
+      "price": 4222.7001953125,
+      "chg_pct": 0.15180112708978433,
       "signal": 0,
-      "note": "+0.30%()",
+      "note": "+0.15%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.5,
-      "chg_pct": -1.4697860604771358,
+      "price": 90.30000305175781,
+      "chg_pct": -1.687529067079947,
       "signal": -1,
-      "note": "-1.47%",
+      "note": "-1.69%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83803.1171875,
-      "chg_pct": 1.0744984930882762,
+      "price": 83479.1171875,
+      "chg_pct": 0.6837237986519065,
       "signal": 1,
-      "note": "+1.07%",
+      "note": "+0.68%",
       "desc": "風險偏好指標"
     }
   },
@@ -514,13 +514,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "title": "What to know about Trump's 50% tariffs on Canadian goods that just went into eff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -550,27 +550,27 @@
     },
     {
       "label": "台股/半導體",
+      "title": "TSMC expected to report sixth straight quarter of record profit thanks to AI boo",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
       "title": "3 Things to Watch When Taiwan Semiconductor (TSMC) Reports Earnings on Oct. 15 -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC's third-quarter revenue surges to record, beating market forecast - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "FILE PHOTO: The logo of Taiwan Semiconductor Manufacturing Company (TSMC) at the",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Futures Rise Amid Trump Claims, Oil-Related News - Investor's Business Daily",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Down Today - Quiver Quanti",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -592,9 +592,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Will September inflation cement US interest rate policy for the rest of the year",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Gold gains on weaker oil, dollar; U.S. inflation data in focus - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
