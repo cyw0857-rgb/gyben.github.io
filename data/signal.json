@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-13 20:55",
+  "generated_at": "2026-10-13 22:54",
   "mode": "morning",
   "signal_date": "2026-10-13",
   "trade_date": "2026-10-14",
   "direction": 0,
-  "total_score": 0,
+  "total_score": 1,
   "tw_score": 7,
-  "intl_score": -5,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4367,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+7) vs 國際(-5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+7) vs 國際(-4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48341.30859375,
@@ -357,53 +357,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4208.2998046875,
-    "chg_pct": 0.4223668834721124,
+    "price_usd": 4193.0,
+    "chg_pct": 0.05726870347500433,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 92.5,
-    "oil_chg": -1.3228055174180775
+    "warning": "黃金小幅變動 +0.1%，影響中性",
+    "oil_usd": 93.80999755859375,
+    "oil_chg": 0.07467430810692775
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7807.240234375,
-      "chg_pct": -0.055044263563885414,
+      "price": 7795.490234375,
+      "chg_pct": -0.15050132501706776,
       "signal": 0,
-      "note": "-0.06%",
+      "note": "-0.15%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51850.55078125,
-      "chg_pct": 0.3786695475619584,
-      "signal": 1,
-      "note": "+0.38%",
+      "price": 51842.8203125,
+      "chg_pct": -0.014909135261867773,
+      "signal": 0,
+      "note": "-0.01%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27245.900390625,
-      "chg_pct": -0.4394825128739086,
-      "signal": -1,
-      "note": "-0.44%",
+      "price": 27173.78125,
+      "chg_pct": -0.264697218998185,
+      "signal": 0,
+      "note": "-0.26%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12236.7900390625,
-      "chg_pct": -2.669572643119651,
+      "price": 11994.7255859375,
+      "chg_pct": -1.9781695391706284,
       "signal": -1,
-      "note": "-2.67%",
+      "note": "-1.98%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.300000190734863,
-      "chg_pct": 0.5917169780550198,
+      "price": 15.229999542236328,
+      "chg_pct": 0.13148917842995614,
       "signal": 1,
-      "note": "VIX=15.3(低恐慌)",
+      "note": "VIX=15.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,42 +448,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.23899841308594,
-      "chg_pct": -0.33242680043072087,
-      "signal": 1,
-      "note": "-0.33%(偏多)",
+      "price": 102.28700256347656,
+      "chg_pct": -0.28563000813811984,
+      "signal": 0,
+      "note": "-0.29%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4208.2998046875,
-      "chg_pct": 0.4223668834721124,
+      "price": 4193.0,
+      "chg_pct": 0.05726870347500433,
       "signal": 0,
-      "note": "+0.42%()",
+      "note": "+0.06%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 92.5,
-      "chg_pct": -1.3228055174180775,
-      "signal": -1,
-      "note": "-1.32%",
+      "price": 93.80999755859375,
+      "chg_pct": 0.07467430810692775,
+      "signal": 0,
+      "note": "+0.07%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.189000129699707,
-      "chg_pct": -0.9732756421013014,
+      "price": 5.215000152587891,
+      "chg_pct": -0.47709197752386096,
       "signal": 0,
-      "note": "5.19%(-0.97%)",
+      "note": "5.22%(-0.48%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 83208.9375,
-      "chg_pct": 1.7689942141918558,
+      "price": 83478.25,
+      "chg_pct": 2.0983778486639286,
       "signal": 1,
-      "note": "+1.77%",
+      "note": "+2.10%",
       "desc": "風險偏好指標"
     }
   },
@@ -526,6 +526,12 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -543,18 +549,6 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
       "sentiment": "⚠️偏空",
@@ -568,13 +562,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: NorthCrest Asset Man",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Esta",
+      "label": "台股/半導體",
+      "title": "Perpetual Ltd Sells 40,043 Shares of Taiwan Semiconductor Manufacturing Company ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -583,6 +577,12 @@
       "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Esta",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
