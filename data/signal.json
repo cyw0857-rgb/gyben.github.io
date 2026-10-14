@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-14 08:43",
+  "generated_at": "2026-10-14 11:36",
   "mode": "morning",
-  "signal_date": "2026-10-12",
+  "signal_date": "2026-10-14",
   "trade_date": "2026-10-15",
   "direction": 0,
-  "total_score": 1,
-  "tw_score": 4,
-  "intl_score": -1,
+  "total_score": 7,
+  "tw_score": 5,
+  "intl_score": 3,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": -4367,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+4) vs 國際(-1) 方向相反 → 觀望",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 49301.9609375,
-  "tw_chg_pct": -0.023280607523257224,
-  "tw_ma5": 49591.27265625,
-  "tw_ma10": 48838.228125,
-  "tw_rsi": 79.51508854824938,
-  "tw_macd": 940.0821269521548,
-  "tw_macds": 818.395034671402,
+  "tw_last_close": 49002.83984375,
+  "tw_chg_pct": 1.3684595416300516,
+  "tw_ma5": 49153.184375,
+  "tw_ma10": 49006.98671875,
+  "tw_rsi": 62.119746207417336,
+  "tw_macd": 805.9130425797339,
+  "tw_macds": 819.4580584573149,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 49426.028125,
-  "tw_ma10_p2": 48723.7609375,
-  "tw_ma20_p2": 47687.848828125,
-  "tw_ma20": 47793.77890625,
+  "tw_ma5_p2": 49317.1265625,
+  "tw_ma10_p2": 48869.898828125,
+  "tw_ma20_p2": 47863.819921875,
+  "tw_ma20": 48004.7193359375,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 52,
+    "total": 53,
     "wins": 26,
-    "losses": 26,
-    "win_rate": 50.0,
-    "total_pnl": 29568.0,
-    "avg_pnl": 568.6153846153846,
+    "losses": 27,
+    "win_rate": 49.056603773584904,
+    "total_pnl": 21648.0,
+    "avg_pnl": 408.45283018867923,
     "avg_win": 6224.307692307692,
-    "avg_lose": -5087.076923076923,
+    "avg_lose": -5192.0,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": -3
   },
   "stats_real_cons": {
     "total": 8,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4180.60009765625,
-    "chg_pct": -0.23862930766390414,
+    "price_usd": 4189.89990234375,
+    "chg_pct": -0.0167087122651386,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.2%，影響中性",
-    "oil_usd": 94.94000244140625,
-    "oil_chg": 1.2801414604048333
+    "warning": "黃金小幅變動 -0.0%，影響中性",
+    "oil_usd": 94.87999725341797,
+    "oil_chg": 1.216129097106633
   },
   "intl_data": {
     "S&P500": {
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 67973.1796875,
-      "chg_pct": -1.5322730144258268,
-      "signal": -1,
-      "note": "-1.53%",
+      "price": 68193.1328125,
+      "chg_pct": 0.6131964608934816,
+      "signal": 1,
+      "note": "+0.61%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6146.39013671875,
-      "chg_pct": -3.72558188483543,
-      "signal": -1,
-      "note": "-3.73%",
+      "price": 6162.25,
+      "chg_pct": 2.102610458223955,
+      "signal": 1,
+      "note": "+2.10%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24271.19921875,
-      "chg_pct": 0.24719650222152562,
+      "price": 24374.23046875,
+      "chg_pct": 0.11916000260895664,
       "signal": 0,
-      "note": "+0.25%",
+      "note": "+0.12%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3808.0869140625,
+      "chg_pct": 0.1900073758652414,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.19%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 49301.9609375,
-      "chg_pct": -0.023280607523256253,
-      "signal": 0,
-      "note": "-0.02%",
+      "price": 48970.1796875,
+      "chg_pct": 1.3008979525872952,
+      "signal": 1,
+      "note": "+1.30%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.17500305175781,
-      "chg_pct": -0.3948126068118934,
+      "price": 102.09600067138672,
+      "chg_pct": -0.47182798891454497,
       "signal": 1,
-      "note": "-0.39%(偏多)",
+      "note": "-0.47%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4180.60009765625,
-      "chg_pct": -0.23862930766390414,
+      "price": 4189.89990234375,
+      "chg_pct": -0.0167087122651386,
       "signal": 0,
-      "note": "-0.24%()",
+      "note": "-0.02%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.94000244140625,
-      "chg_pct": 1.2801414604048333,
+      "price": 94.87999725341797,
+      "chg_pct": 1.216129097106633,
       "signal": 1,
-      "note": "+1.28%",
+      "note": "+1.22%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83523.2109375,
-      "chg_pct": 2.153367487106339,
+      "price": 83878.796875,
+      "chg_pct": 2.5882681636843268,
       "signal": 1,
-      "note": "+2.15%",
+      "note": "+2.59%",
       "desc": "風險偏好指標"
     }
   },
@@ -508,12 +508,6 @@
     },
     {
       "label": "川普動態",
-      "title": "‘Attacked’ by Trump on Trade, Canada Is ‘at War’ With U.S., Carney Says - The Ne",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
@@ -521,6 +515,18 @@
     {
       "label": "川普動態",
       "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -543,16 +549,16 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "TSMC expected to report sixth straight quarter of record profit thanks to AI boo",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -567,20 +573,8 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "TSMC expected to report sixth straight quarter of record profit thanks to AI boo",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
       "label": "聯準會",
-      "title": "Fed's Williams sees no need for rate hike in 2027, Bloomberg News reports - Reut",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Asia Stocks to Gain on Signal for Fewer Fed Hikes: Markets Wrap - Bloomberg.com",
+      "title": "Chipmakers' Decline Outweigh Fed Official's Remarks Against Hiking Rates More Th",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -592,7 +586,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Esta",
+      "title": "U.S. Stocks Tick Down as Bank Earnings Don’t Excite - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stocks Bounce From Lows on Williams’ Rate Remarks: Markets Wrap - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
