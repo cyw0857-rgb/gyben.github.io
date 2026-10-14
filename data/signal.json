@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-14 03:58",
+  "generated_at": "2026-10-14 07:34",
   "mode": "morning",
   "signal_date": "2026-10-12",
   "trade_date": "2026-10-15",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 4,
   "tw_score": 4,
-  "intl_score": 0,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
@@ -357,51 +357,51 @@
     }
   ],
   "gold": {
-    "price_usd": 4187.60009765625,
-    "chg_pct": -0.07158879229917124,
+    "price_usd": 4178.7001953125,
+    "chg_pct": -0.2839665457557133,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 94.5999984741211,
-    "oil_chg": 0.917431864678922
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 94.66000366210938,
+    "oil_chg": 0.9814442279771223
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7804.72998046875,
-      "chg_pct": -0.03215289693786342,
+      "price": 7807.240234375,
+      "chg_pct": -0.055044263563885414,
       "signal": 0,
-      "note": "-0.03%",
+      "note": "-0.06%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51665.53125,
-      "chg_pct": -0.35683233536046843,
-      "signal": -1,
-      "note": "-0.36%",
+      "price": 51850.55078125,
+      "chg_pct": 0.3786695475619584,
+      "signal": 1,
+      "note": "+0.38%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 27199.68359375,
-      "chg_pct": -0.16962844395813276,
+      "price": 27204.380859375,
+      "chg_pct": -0.15238817823868428,
       "signal": 0,
-      "note": "-0.17%",
+      "note": "-0.15%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 12203.1650390625,
-      "chg_pct": -0.2747861154163933,
+      "price": 12208.794921875,
+      "chg_pct": -0.22877827516966037,
       "signal": 0,
-      "note": "-0.27%",
+      "note": "-0.23%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.3100004196167,
-      "chg_pct": 0.6574647022940413,
+      "price": 15.270000457763672,
+      "chg_pct": 0.39448007538604213,
       "signal": 1,
       "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.21099853515625,
-      "chg_pct": -0.35972245009916426,
+      "price": 102.21499633789062,
+      "chg_pct": -0.3558251965770214,
       "signal": 1,
       "note": "-0.36%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4187.60009765625,
-      "chg_pct": -0.07158879229917124,
+      "price": 4178.7001953125,
+      "chg_pct": -0.2839665457557133,
       "signal": 0,
-      "note": "-0.07%()",
+      "note": "-0.28%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.5999984741211,
-      "chg_pct": 0.917431864678922,
+      "price": 94.66000366210938,
+      "chg_pct": 0.9814442279771223,
       "signal": 1,
-      "note": "+0.92%",
+      "note": "+0.98%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,14 +480,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83192.7890625,
-      "chg_pct": 1.7492438088642341,
+      "price": 83132.0078125,
+      "chg_pct": 1.6749050795711058,
       "signal": 1,
-      "note": "+1.75%",
+      "note": "+1.67%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
     {
       "label": "川普動態",
       "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
@@ -519,8 +525,8 @@
       "sent_val": -1
     },
     {
-      "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "label": "關稅/貿易",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -543,12 +549,6 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Just Dropped a Major Bombshell Investors Must",
       "sentiment": "⚠️偏空",
@@ -556,9 +556,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Sax Wealth Advisors ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Position Lessened by ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -574,15 +574,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed's Williams sees no need for rate hike in 2027, Bloomberg News reports - Reut",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Esta",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -592,9 +592,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Gold eases on firm dollar; spotlight on U.S. inflation data - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Interest Rate Predictions for the Next 5 Years: 2026–2031 - Norada Real Esta",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
