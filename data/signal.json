@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-14 07:34",
+  "generated_at": "2026-10-14 08:43",
   "mode": "morning",
   "signal_date": "2026-10-12",
   "trade_date": "2026-10-15",
   "direction": 0,
-  "total_score": 4,
+  "total_score": 1,
   "tw_score": 4,
-  "intl_score": 2,
+  "intl_score": -1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": -1,
   "foreign_fut_net": -4367,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=80 過熱(需45~72)或過冷 → 觀望",
+  "veto_msg": "台灣技術(+4) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 49301.9609375,
@@ -357,29 +357,29 @@
     }
   ],
   "gold": {
-    "price_usd": 4178.7001953125,
-    "chg_pct": -0.2839665457557133,
+    "price_usd": 4180.60009765625,
+    "chg_pct": -0.23862930766390414,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 94.66000366210938,
-    "oil_chg": 0.9814442279771223
+    "warning": "黃金小幅變動 -0.2%，影響中性",
+    "oil_usd": 94.94000244140625,
+    "oil_chg": 1.2801414604048333
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7807.240234375,
-      "chg_pct": -0.055044263563885414,
+      "price": 7805.4501953125,
+      "chg_pct": -0.022927936233068914,
       "signal": 0,
-      "note": "-0.06%",
+      "note": "-0.02%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51850.55078125,
-      "chg_pct": 0.3786695475619584,
-      "signal": 1,
-      "note": "+0.38%",
+      "price": 51670.1015625,
+      "chg_pct": -0.34801794008185033,
+      "signal": -1,
+      "note": "-0.35%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 69030.921875,
-      "chg_pct": -0.016203879199627944,
-      "signal": 0,
-      "note": "-0.02%",
+      "price": 67973.1796875,
+      "chg_pct": -1.5322730144258268,
+      "signal": -1,
+      "note": "-1.53%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6384.240234375,
-      "chg_pct": -3.6476379164039834,
+      "price": 6146.39013671875,
+      "chg_pct": -3.72558188483543,
       "signal": -1,
-      "note": "-3.65%",
+      "note": "-3.73%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.21499633789062,
-      "chg_pct": -0.3558251965770214,
+      "price": 102.17500305175781,
+      "chg_pct": -0.3948126068118934,
       "signal": 1,
-      "note": "-0.36%(偏多)",
+      "note": "-0.39%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4178.7001953125,
-      "chg_pct": -0.2839665457557133,
+      "price": 4180.60009765625,
+      "chg_pct": -0.23862930766390414,
       "signal": 0,
-      "note": "-0.28%()",
+      "note": "-0.24%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 94.66000366210938,
-      "chg_pct": 0.9814442279771223,
+      "price": 94.94000244140625,
+      "chg_pct": 1.2801414604048333,
       "signal": 1,
-      "note": "+0.98%",
+      "note": "+1.28%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83132.0078125,
-      "chg_pct": 1.6749050795711058,
+      "price": 83523.2109375,
+      "chg_pct": 2.153367487106339,
       "signal": 1,
-      "note": "+1.67%",
+      "note": "+2.15%",
       "desc": "風險偏好指標"
     }
   },
@@ -580,9 +580,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes: Another rate hike likely coming this year to combat persistent infl",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Asia Stocks to Gain on Signal for Fewer Fed Hikes: Markets Wrap - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
