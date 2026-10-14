@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-14 18:36",
+  "generated_at": "2026-10-14 19:39",
   "mode": "morning",
   "signal_date": "2026-10-14",
   "trade_date": "2026-10-15",
   "direction": 0,
-  "total_score": 4,
+  "total_score": 5,
   "tw_score": 5,
   "intl_score": -1,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 0,
+  "inst_score": 2,
+  "foreign_fut_net": 738,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
   "threshold": 6,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4165.2001953125,
-    "chg_pct": -0.2896514480819066,
+    "price_usd": 4161.10009765625,
+    "chg_pct": -0.3878033128738263,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 95.30999755859375,
-    "oil_chg": 1.242827890940017
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 95.95999908447266,
+    "oil_chg": 1.9332905317867937
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 15.220000267028809,
-      "chg_pct": -0.3274406629728807,
+      "price": 15.300000190734863,
+      "chg_pct": 0.19646189961925478,
       "signal": 1,
-      "note": "VIX=15.2(低恐慌)",
+      "note": "VIX=15.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.23500061035156,
-      "chg_pct": 0.05382687904826253,
+      "price": 102.2490005493164,
+      "chg_pct": 0.06752813068559943,
       "signal": 0,
-      "note": "+0.05%(中性)",
+      "note": "+0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4165.2001953125,
-      "chg_pct": -0.2896514480819066,
+      "price": 4161.10009765625,
+      "chg_pct": -0.3878033128738263,
       "signal": 0,
-      "note": "-0.29%()",
+      "note": "-0.39%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.30999755859375,
-      "chg_pct": 1.242827890940017,
+      "price": 95.95999908447266,
+      "chg_pct": 1.9332905317867937,
       "signal": 1,
-      "note": "+1.24%",
+      "note": "+1.93%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 83310.703125,
-      "chg_pct": 0.2594353459363591,
-      "signal": 0,
-      "note": "+0.26%",
+      "price": 83362.1328125,
+      "chg_pct": 0.3213278907757826,
+      "signal": 1,
+      "note": "+0.32%",
       "desc": "風險偏好指標"
     }
   },
@@ -562,7 +562,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Sold by Salem Investm",
+      "title": "ASK Capital Investment Managers LLC Makes New Investment in Taiwan Semiconductor",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
