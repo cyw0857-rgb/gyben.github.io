@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-15 05:38",
+  "generated_at": "2026-10-15 08:10",
   "mode": "morning",
   "signal_date": "2026-10-13",
   "trade_date": "2026-10-16",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 2,
   "tw_score": 7,
-  "intl_score": -8,
+  "intl_score": -7,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 738,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+7) vs 國際(-8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(+7) vs 國際(-7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48341.30859375,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4127.2998046875,
-    "chg_pct": -1.196945451315062,
+    "price_usd": 4134.89990234375,
+    "chg_pct": -1.015007404931088,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.2%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 95.16999816894531,
-    "oil_chg": 1.0941138580569534
+    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 94.80000305175781,
+    "oil_chg": 0.7010873872832726
   },
   "intl_data": {
     "S&P500": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.5479965209961,
-      "chg_pct": 0.3601450525750998,
-      "signal": -1,
-      "note": "+0.36%(偏空)",
+      "price": 102.1969985961914,
+      "chg_pct": 0.016635634140592166,
+      "signal": 0,
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4127.2998046875,
-      "chg_pct": -1.196945451315062,
+      "price": 4134.89990234375,
+      "chg_pct": -1.015007404931088,
       "signal": 1,
-      "note": "-1.20%()",
+      "note": "-1.02%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 95.16999816894531,
-      "chg_pct": 1.0941138580569534,
+      "price": 94.80000305175781,
+      "chg_pct": 0.7010873872832726,
       "signal": 1,
-      "note": "+1.09%",
+      "note": "+0.70%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,20 +480,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81834.6015625,
-      "chg_pct": -1.516964367644913,
+      "price": 81615.6171875,
+      "chg_pct": -1.7804989311948203,
       "signal": -1,
-      "note": "-1.52%",
+      "note": "-1.78%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
     {
       "label": "川普動態",
       "title": "Canada set to announce retaliatory tariffs as Trump tells its leaders to ‘fall i",
@@ -515,6 +509,12 @@
     {
       "label": "川普動態",
       "title": "Trump says U.S. could rename Lake Ontario as Lake America amid Canada trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -550,6 +550,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "TSMC expected to report sixth straight quarter of record profit thanks to AI boo",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
       "title": "History Says This Happens to Taiwan Semiconductor Stock After Oct. 15 - Yahoo Fi",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -567,16 +573,16 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Stocks Sell Off On AI Fears; Dell, AMD, CoreWeave Are Big Losers - Investor's Bu",
+      "label": "聯準會",
+      "title": "Fed rate hike call seen tight as inflation heats up - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed rate hike call seen tight as inflation heats up - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "What to expect at the next Fed meeting now that rate-hike odds are rising - Mark",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -586,13 +592,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Steve Moore warns stubborn inflation could complicate Fed rate decision - WZTV",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed Interest Rate Hike Seems More Likely This Month After Alarming Inflation Dat",
+      "title": "Fed Interest Rate Hike Seems More Likely This Month After Inflation Report - Rea",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
