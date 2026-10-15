@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-16 01:55",
+  "generated_at": "2026-10-16 04:34",
   "mode": "morning",
   "signal_date": "2026-10-14",
   "trade_date": "2026-10-19",
   "direction": 0,
-  "total_score": 2,
+  "total_score": 3,
   "tw_score": 5,
-  "intl_score": -1,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": -9837,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(+5) vs 國際(-1) 方向相反 → 觀望",
+  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 48625.828125,
@@ -357,53 +357,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4175.0,
-    "chg_pct": 1.6334404257992323,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 96.54000091552734,
-    "oil_chg": 1.5248760474070329
+    "price_usd": 4190.7998046875,
+    "chg_pct": 2.018060427822297,
+    "signal": -2,
+    "level": "danger",
+    "warning": "黃金大漲 +2.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 96.13999938964844,
+    "oil_chg": 1.1042203093864424
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7739.0400390625,
-      "chg_pct": 0.26039971561934616,
-      "signal": 0,
-      "note": "+0.26%",
+      "price": 7744.06005859375,
+      "chg_pct": 0.32543480553268267,
+      "signal": 1,
+      "note": "+0.33%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52161.7890625,
-      "chg_pct": 1.046673959839423,
+      "price": 52177.69140625,
+      "chg_pct": 1.0774796314427915,
       "signal": 1,
-      "note": "+1.05%",
+      "note": "+1.08%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26663.935546875,
-      "chg_pct": -0.10839446894063834,
+      "price": 26713.025390625,
+      "chg_pct": 0.0755117402097602,
       "signal": 0,
-      "note": "-0.11%",
+      "note": "+0.08%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11450.5048828125,
-      "chg_pct": -2.0016038706857318,
+      "price": 11581.21484375,
+      "chg_pct": -0.8829312303877914,
       "signal": -1,
-      "note": "-2.00%",
+      "note": "-0.88%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.649999618530273,
-      "chg_pct": -1.3040972718358337,
+      "price": 16.459999084472656,
+      "chg_pct": -2.430360014015111,
       "signal": 1,
-      "note": "VIX=16.6(低恐慌)",
+      "note": "VIX=16.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,40 +448,40 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.03800201416016,
-      "chg_pct": -0.49926964637850396,
+      "price": 102.02799987792969,
+      "chg_pct": -0.5090230700087506,
       "signal": 1,
-      "note": "-0.50%(偏多)",
+      "note": "-0.51%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4175.0,
-      "chg_pct": 1.6334404257992323,
+      "price": 4190.7998046875,
+      "chg_pct": 2.018060427822297,
       "signal": -1,
-      "note": "+1.63%(避險↑)",
+      "note": "+2.02%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.54000091552734,
-      "chg_pct": 1.5248760474070329,
+      "price": 96.13999938964844,
+      "chg_pct": 1.1042203093864424,
       "signal": 1,
-      "note": "+1.52%",
+      "note": "+1.10%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.085000038146973,
-      "chg_pct": -2.023121732482597,
+      "price": 5.0889997482299805,
+      "chg_pct": -1.9460560284573474,
       "signal": 0,
-      "note": "5.09%(-2.02%)",
+      "note": "5.09%(-1.95%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 82340.6875,
-      "chg_pct": 0.9541092867920773,
+      "price": 82339.75,
+      "chg_pct": 0.9529598613946227,
       "signal": 1,
       "note": "+0.95%",
       "desc": "風險偏好指標"
@@ -538,13 +538,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "title": "Posthaste: U.S. businesses feel fresh pain from trade war with Canada, says this",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump’s trade war with Canada grows increasingly costly as Section 338 tariffs h",
+      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -580,19 +580,19 @@
     },
     {
       "label": "聯準會",
-      "title": "Tech sell-off rolls on as hot inflation data stokes rate worries - Yahoo Finance",
+      "title": "The Fed faces a politically fraught rate decision on the eve of an election for ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Dollar pulls back from 18-month high as Treasury yields fall; Fed hike bets ease",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed’s Williams Says - W",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Investors Just Parked Nearly $8 Trillion in Cash. Is a Stock Market Crash Next? ",
+      "title": "Tech market sell-off deepens amid fears over US inflation and AI debt - The Guar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
