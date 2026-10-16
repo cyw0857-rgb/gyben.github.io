@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-16 07:14",
+  "generated_at": "2026-10-16 11:12",
   "mode": "morning",
-  "signal_date": "2026-10-14",
+  "signal_date": "2026-10-16",
   "trade_date": "2026-10-19",
   "direction": 0,
-  "total_score": 4,
-  "tw_score": 5,
-  "intl_score": 1,
+  "total_score": -4,
+  "tw_score": -6,
+  "intl_score": 5,
   "news_score": -2,
   "psy_score": 2,
   "inst_score": -1,
   "foreign_fut_net": -9837,
   "foreign_cash_b": 0,
-  "veto_msg": "看多需: 均線連續2日多頭排列 + MACD金叉向上 → 條件不足",
+  "veto_msg": "台灣技術(-6) vs 國際(+5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 48625.828125,
-  "tw_chg_pct": 0.5885639829096068,
-  "tw_ma5": 49077.78203125,
-  "tw_ma10": 48969.285546875,
-  "tw_rsi": 59.21711908907367,
-  "tw_macd": 775.8380336765986,
-  "tw_macds": 813.4430566766879,
+  "tw_last_close": 47359.87109375,
+  "tw_chg_pct": 0.8303195025201937,
+  "tw_ma5": 48119.76796875,
+  "tw_ma10": 48772.898046875,
+  "tw_rsi": 43.89198569782924,
+  "tw_macd": 458.38571669643716,
+  "tw_macds": 705.7414959651684,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 49317.1265625,
-  "tw_ma10_p2": 48869.898828125,
-  "tw_ma20_p2": 47863.819921875,
-  "tw_ma20": 47985.86875,
+  "tw_ma5_p2": 48510.48203125,
+  "tw_ma10_p2": 48872.259765625,
+  "tw_ma20_p2": 48041.236328125,
+  "tw_ma20": 48133.65546875,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 54,
+    "total": 55,
     "wins": 27,
-    "losses": 27,
-    "win_rate": 50.0,
-    "total_pnl": 24010.0,
-    "avg_pnl": 444.6296296296296,
+    "losses": 28,
+    "win_rate": 49.09090909090909,
+    "total_pnl": 9811.0,
+    "avg_pnl": 178.38181818181818,
     "avg_win": 6081.259259259259,
-    "avg_lose": -5192.0,
+    "avg_lose": -5513.678571428572,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_real_cons": {
     "total": 8,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4185.5,
-    "chg_pct": 1.8890454855527392,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 96.1500015258789,
-    "oil_chg": 1.1147389092556939
+    "price_usd": 4195.39990234375,
+    "chg_pct": 2.1300421646125587,
+    "signal": -2,
+    "level": "danger",
+    "warning": "黃金大漲 +2.1%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 95.91000366210938,
+    "oil_chg": 0.8623486757796842
   },
   "intl_data": {
     "S&P500": {
@@ -376,8 +376,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 52177.69140625,
-      "chg_pct": 1.0774796314427915,
+      "price": 52177.69921875,
+      "chg_pct": 1.0774947656464775,
       "signal": 1,
       "note": "+1.08%",
       "desc": "藍籌股風向球"
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 67744.2890625,
-      "chg_pct": -0.04903450777549665,
-      "signal": 0,
-      "note": "-0.05%",
+      "price": 65550.6796875,
+      "chg_pct": 1.745772444781718,
+      "signal": 1,
+      "note": "+1.75%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6008.81005859375,
-      "chg_pct": -0.4397431571170408,
-      "signal": -1,
-      "note": "-0.44%",
+      "price": 5725.5498046875,
+      "chg_pct": 3.0846740535398416,
+      "signal": 1,
+      "note": "+3.08%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24314.169921875,
-      "chg_pct": -0.1275436424612666,
-      "signal": 0,
-      "note": "-0.13%",
+      "price": 24381.919921875,
+      "chg_pct": 1.326530040755308,
+      "signal": 1,
+      "note": "+1.33%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3735.7451171875,
+      "chg_pct": 0.7624875360714751,
+      "signal": 1,
+      "note": "+0.76%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 48625.828125,
-      "chg_pct": 0.5885639829096088,
+      "price": 47359.87109375,
+      "chg_pct": 0.8303195025201909,
       "signal": 1,
-      "note": "+0.59%",
+      "note": "+0.83%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.00399780273438,
-      "chg_pct": -0.5324283108483813,
+      "price": 102.0009994506836,
+      "chg_pct": -0.5353521060327343,
       "signal": 1,
-      "note": "-0.53%(偏多)",
+      "note": "-0.54%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4185.5,
-      "chg_pct": 1.8890454855527392,
+      "price": 4195.39990234375,
+      "chg_pct": 2.1300421646125587,
       "signal": -1,
-      "note": "+1.89%(避險↑)",
+      "note": "+2.13%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.1500015258789,
-      "chg_pct": 1.1147389092556939,
+      "price": 95.91000366210938,
+      "chg_pct": 0.8623486757796842,
       "signal": 1,
-      "note": "+1.11%",
+      "note": "+0.86%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82107.6796875,
-      "chg_pct": 0.6684291827997301,
+      "price": 82041.421875,
+      "chg_pct": 0.5871935428346305,
       "signal": 1,
-      "note": "+0.67%",
+      "note": "+0.59%",
       "desc": "風險偏好指標"
     }
   },
@@ -520,7 +520,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "The bizarre roots of Trump’s trade war on Canada - Vox",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,21 +556,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC Q3 profit jumps 69% to record, beating expectations - Reuters",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Weighed on Fund Returns Amid Taiwan’s S",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Q3 Earnings & Revenues Top Estimates, Margins Up - Yahoo Fi",
+      "title": "Taiwan chipmaker TSMC explores Texas investment to expand production in the US -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC, world’s largest chipmaker, explores Texas expansion, Terafab role - Austin",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "TSMC Q3 profit jumps 69% to record, beating expectations - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -580,9 +580,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Officials Troubled by Hot Inflation Data as Rate Hike Looms - Investopedia",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Dollar retreats from 18-month high despite strong inflation data - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -592,7 +592,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Tech market sell-off deepens amid fears over US inflation and AI debt - The Guar",
+      "title": "Fed Officials Say They’re Troubled By Hot Inflation Data - Investopedia",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }

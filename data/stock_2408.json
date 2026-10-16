@@ -1,30 +1,30 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-10-16 07:15",
+  "updated": "2026-10-16 11:17",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
   "hold_advice": "🔴 賣出 / 停損 — 空頭轉強，建議出場",
   "hold_color": "#ef4444",
-  "score": -6,
-  "total_score": -6,
-  "tech_score": -6,
+  "score": -8,
+  "total_score": -8,
+  "tech_score": -8,
   "reasons": [
-    "MA5<MA10 短線偏空",
-    "RSI=34 弱勢區",
+    "均線空頭排列 MA5<MA10<MA20",
+    "RSI=33 弱勢區",
     "MACD死叉零軸下",
     "跌破MA20壓力"
   ],
   "tech_details": [
     {
       "icon": "📉",
-      "text": "MA5<MA10 短線偏空",
-      "score": -1
+      "text": "均線空頭排列 MA5<MA10<MA20",
+      "score": -3
     },
     {
       "icon": "📉",
-      "text": "RSI=34 弱勢區",
+      "text": "RSI=33 弱勢區",
       "score": -2
     },
     {
@@ -38,31 +38,36 @@
       "score": -1
     }
   ],
-  "rsi": 34.3,
-  "macd": -3.59,
-  "macds": 4.15,
-  "k": 27.0,
-  "d": 47.7,
-  "ma5": 493.4,
-  "ma10": 508.1,
-  "ma20": 505.4,
-  "ma60": 485.46,
-  "last_close": 439.5,
-  "chg_pct": -8.53,
+  "rsi": 33.4,
+  "macd": -6.8,
+  "macds": 1.96,
+  "k": 25.2,
+  "d": 40.2,
+  "ma5": 478.0,
+  "ma10": 501.7,
+  "ma20": 504.88,
+  "ma60": 486.29,
+  "last_close": 455.0,
+  "chg_pct": 3.53,
   "ma_bull": false,
-  "ma_bear": false,
+  "ma_bear": true,
   "retail": {
-    "mood": "偏熱（增溫）",
-    "vol_ratio": 1.58,
+    "mood": "冷清（量縮）",
+    "vol_ratio": 0.67,
     "score": 0,
-    "signals": []
+    "signals": [
+      {
+        "icon": "💤",
+        "text": "量縮 0.7倍，觀望氣氛濃"
+      }
+    ]
   },
   "forecast": [
     {
       "month": "2026-11",
-      "price": 413.13,
-      "price_high": 510.47,
-      "price_low": 315.79,
+      "price": 427.7,
+      "price_high": 527.67,
+      "price_low": 327.73,
       "chg_pct": -6.0,
       "trend": "down",
       "model_note": "📉 死叉↓  美光↓-13%  費半↓-8%",
@@ -70,9 +75,9 @@
     },
     {
       "month": "2026-12",
-      "price": 388.34,
-      "price_high": 517.74,
-      "price_low": 258.94,
+      "price": 402.04,
+      "price_high": 534.93,
+      "price_low": 269.15,
       "chg_pct": -11.6,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -80,9 +85,9 @@
     },
     {
       "month": "2027-01",
-      "price": 365.04,
-      "price_high": 511.06,
-      "price_low": 219.03,
+      "price": 377.92,
+      "price_high": 529.08,
+      "price_low": 226.75,
       "chg_pct": -16.9,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -90,9 +95,9 @@
     },
     {
       "month": "2027-02",
-      "price": 343.14,
-      "price_high": 480.39,
-      "price_low": 205.88,
+      "price": 355.24,
+      "price_high": 497.34,
+      "price_low": 213.14,
       "chg_pct": -21.9,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -100,9 +105,9 @@
     },
     {
       "month": "2027-03",
-      "price": 322.55,
-      "price_high": 451.57,
-      "price_low": 193.53,
+      "price": 333.93,
+      "price_high": 467.5,
+      "price_low": 200.36,
       "chg_pct": -26.6,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -110,32 +115,32 @@
     },
     {
       "month": "2027-04",
-      "price": 303.2,
-      "price_high": 424.48,
-      "price_low": 181.92,
+      "price": 313.89,
+      "price_high": 439.45,
+      "price_low": 188.33,
       "chg_pct": -31.0,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -6.2
     }
   ],
-  "trend_label": "月線 MA5<MA10 偏空 📉",
+  "trend_label": "月線均線空頭排列 📉",
   "support": 429.0,
   "resistance": 525.0,
   "weekly": {
-    "proj_center": 439.5,
-    "proj_high": 490.03,
-    "proj_low": 388.97,
+    "proj_center": 455.0,
+    "proj_high": 506.89,
+    "proj_low": 403.11,
     "support": 429.0,
     "resistance": 525.0,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
-  "daily_vol_pct": 5.14,
+  "daily_vol_pct": 5.1,
   "slope_per_day": -0.048,
   "model_accuracy": 53.7,
   "model_samples": 134,
-  "total_return": -48.7,
+  "total_return": -46.9,
   "ipo_date": "2000-08-18",
   "model_score": -6.2,
   "model_threshold": 3.5,
