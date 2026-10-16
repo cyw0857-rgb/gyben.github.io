@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-16 04:34",
+  "generated_at": "2026-10-16 07:14",
   "mode": "morning",
   "signal_date": "2026-10-14",
   "trade_date": "2026-10-19",
   "direction": 0,
-  "total_score": 3,
+  "total_score": 4,
   "tw_score": 5,
   "intl_score": 1,
   "news_score": -2,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4190.7998046875,
-    "chg_pct": 2.018060427822297,
-    "signal": -2,
-    "level": "danger",
-    "warning": "黃金大漲 +2.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 96.13999938964844,
-    "oil_chg": 1.1042203093864424
+    "price_usd": 4185.5,
+    "chg_pct": 1.8890454855527392,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 96.1500015258789,
+    "oil_chg": 1.1147389092556939
   },
   "intl_data": {
     "S&P500": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.02799987792969,
-      "chg_pct": -0.5090230700087506,
+      "price": 102.00399780273438,
+      "chg_pct": -0.5324283108483813,
       "signal": 1,
-      "note": "-0.51%(偏多)",
+      "note": "-0.53%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4190.7998046875,
-      "chg_pct": 2.018060427822297,
+      "price": 4185.5,
+      "chg_pct": 1.8890454855527392,
       "signal": -1,
-      "note": "+2.02%(避險↑)",
+      "note": "+1.89%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.13999938964844,
-      "chg_pct": 1.1042203093864424,
+      "price": 96.1500015258789,
+      "chg_pct": 1.1147389092556939,
       "signal": 1,
-      "note": "+1.10%",
+      "note": "+1.11%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82339.75,
-      "chg_pct": 0.9529598613946227,
+      "price": 82107.6796875,
+      "chg_pct": 0.6684291827997301,
       "signal": 1,
-      "note": "+0.95%",
+      "note": "+0.67%",
       "desc": "風險偏好指標"
     }
   },
@@ -562,15 +562,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Weighed on Fund Returns Amid Taiwan’s S",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Taiwan Semiconductor Q3 Earnings & Revenues Top Estimates, Margins Up - Yahoo Fi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC posts record profit for a sixth straight quarter, beating estimates on AI b",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "TSMC, world’s largest chipmaker, explores Texas expansion, Terafab role - Austin",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -580,15 +580,15 @@
     },
     {
       "label": "聯準會",
-      "title": "The Fed faces a politically fraught rate decision on the eve of an election for ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed Officials Troubled by Hot Inflation Data as Rate Hike Looms - Investopedia",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Dollar pulls back from 18-month high as Treasury yields fall; Fed hike bets ease",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The Fed faces a politically fraught rate decision on the eve of an election for ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
