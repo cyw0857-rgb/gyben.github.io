@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-17 08:01",
+  "generated_at": "2026-10-18 07:36",
   "mode": "morning",
-  "signal_date": "2026-10-15",
+  "signal_date": "2026-10-16",
   "trade_date": "2026-10-19",
   "direction": 0,
-  "total_score": -16,
+  "total_score": -11,
   "tw_score": -6,
-  "intl_score": -9,
+  "intl_score": -4,
   "news_score": -2,
   "psy_score": -2,
   "inst_score": 3,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46969.87109375,
-  "tw_chg_pct": -3.405509160673037,
-  "tw_ma5": 48510.48203125,
-  "tw_ma10": 48872.259765625,
-  "tw_rsi": 43.60791191448387,
-  "tw_macd": 584.1299772050043,
-  "tw_macds": 767.5804407823512,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 49077.78203125,
-  "tw_ma10_p2": 48969.285546875,
-  "tw_ma20_p2": 47985.86875,
-  "tw_ma20": 48041.236328125,
+  "tw_last_close": 47111.26171875,
+  "tw_chg_pct": 0.30102408566927696,
+  "tw_ma5": 48070.04609375,
+  "tw_ma10": 48748.037109375,
+  "tw_rsi": 41.67046672609898,
+  "tw_macd": 438.553629801856,
+  "tw_macds": 701.7750785862521,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 48510.48203125,
+  "tw_ma10_p2": 48872.259765625,
+  "tw_ma20_p2": 48041.236328125,
+  "tw_ma20": 48121.225,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -252,30 +252,30 @@
     "streak": -2
   },
   "stats_real_v60": {
-    "total": 22,
-    "wins": 8,
+    "total": 23,
+    "wins": 9,
     "losses": 14,
-    "win_rate": 36.36363636363637,
-    "total_pnl": -26683.0,
-    "avg_pnl": -1212.8636363636363,
-    "avg_win": 8063.125,
+    "win_rate": 39.130434782608695,
+    "total_pnl": -25591.0,
+    "avg_pnl": -1112.6521739130435,
+    "avg_win": 7288.555555555556,
     "avg_lose": -6513.428571428572,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "stats_real_v50": {
-    "total": 55,
-    "wins": 27,
+    "total": 56,
+    "wins": 28,
     "losses": 28,
-    "win_rate": 49.09090909090909,
-    "total_pnl": 9811.0,
-    "avg_pnl": 178.38181818181818,
-    "avg_win": 6081.259259259259,
+    "win_rate": 50.0,
+    "total_pnl": 10903.0,
+    "avg_pnl": 194.69642857142858,
+    "avg_win": 5903.071428571428,
     "avg_lose": -5513.678571428572,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": 1
   },
   "stats_real_cons": {
     "total": 8,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4186.7001953125,
-    "chg_pct": 0.39807432117948116,
+    "price_usd": 4181.10009765625,
+    "chg_pct": 0.26378263692476844,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 99.04000091552734,
-    "oil_chg": 1.0921707476697522
+    "warning": "黃金小幅變動 +0.3%，影響中性",
+    "oil_usd": 101.41000366210938,
+    "oil_chg": 3.5112814111911077
   },
   "intl_data": {
     "S&P500": {
@@ -384,16 +384,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26140.033203125,
-      "chg_pct": -2.145006046981843,
+      "price": 26140.029296875,
+      "chg_pct": -2.1450206699957906,
       "signal": -1,
       "note": "-2.15%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11137.287109375,
-      "chg_pct": -3.833130157037274,
+      "price": 11137.2900390625,
+      "chg_pct": -3.8331048601338424,
       "signal": -1,
       "note": "-3.83%",
       "desc": "對台股影響最大"
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64425.94921875,
-      "chg_pct": -4.8983314898891965,
-      "signal": -1,
-      "note": "-4.90%",
+      "price": 65324.2890625,
+      "chg_pct": 1.3943757983290288,
+      "signal": 1,
+      "note": "+1.39%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 5668.0498046875,
+      "chg_pct": 2.0494252197552134,
+      "signal": 1,
+      "note": "+2.05%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24062.720703125,
-      "chg_pct": -1.0341673993311031,
-      "signal": -1,
-      "note": "-1.03%",
+      "price": 24186.830078125,
+      "chg_pct": 0.5157744900554078,
+      "signal": 1,
+      "note": "+0.52%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3716.283935546875,
+      "chg_pct": 0.2375702810160688,
       "signal": 0,
-      "note": "+nan%",
+      "note": "+0.24%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46969.87109375,
-      "chg_pct": -3.4055091606730348,
-      "signal": -1,
-      "note": "-3.41%",
+      "price": 47111.26171875,
+      "chg_pct": 0.3010240856692792,
+      "signal": 1,
+      "note": "+0.30%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.77899932861328,
-      "chg_pct": -0.21666732488893997,
+      "price": 101.83999633789062,
+      "chg_pct": -0.15686633540134803,
       "signal": 0,
-      "note": "-0.22%(中性)",
+      "note": "-0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4186.7001953125,
-      "chg_pct": 0.39807432117948116,
+      "price": 4181.10009765625,
+      "chg_pct": 0.26378263692476844,
       "signal": 0,
-      "note": "+0.40%()",
+      "note": "+0.26%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.04000091552734,
-      "chg_pct": 1.0921707476697522,
+      "price": 101.41000366210938,
+      "chg_pct": 3.5112814111911077,
       "signal": 1,
-      "note": "+1.09%",
+      "note": "+3.51%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81484.6171875,
-      "chg_pct": -0.7996494614331013,
+      "price": 81203.9765625,
+      "chg_pct": -0.3642026924005639,
       "signal": -1,
-      "note": "-0.80%",
+      "note": "-0.36%",
       "desc": "風險偏好指標"
     }
   },
@@ -520,7 +520,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada wants 'benefits of being a State, without being one' as trade ",
+      "title": "‘We don’t need Canada’: Trump threatens to double auto tariffs after trade talks",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,21 +556,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: $1,000 Invested in Taiwan Semi (TSMC) Today Will Be Worth This Much ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Down 2.2% - Here's Wha",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Dropped, So What Is Behind The Move? - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
       "title": "TSMC 'prudent' going into 2027 after posting sixth straight quarter of record pr",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan chipmaker TSMC explores Texas investment to expand production in the US -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -580,21 +580,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed rate hike call seen tight as inflation heats up - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Warsh Avoids Signal on October Rate Move - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Warsh Boosts Market Expectations of Fed Rate Hold in October - Bloomberg.com",
+      "title": "There's a 35% Chance That the Fed Hikes Rates at Least 4 Times by September 2027",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Stock Market Is Facing 3 Huge Problems Right Now, and History Is Clear About",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Interest rise starts to hit AI boom - World Socialist Web Site",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
