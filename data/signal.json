@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19 05:30",
+  "generated_at": "2026-10-19 07:47",
   "mode": "morning",
   "signal_date": "2026-10-16",
   "trade_date": "2026-10-20",
   "direction": 0,
-  "total_score": -11,
+  "total_score": -13,
   "tw_score": -6,
-  "intl_score": -4,
+  "intl_score": -6,
   "news_score": -2,
   "psy_score": -2,
   "inst_score": 3,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4181.10009765625,
-    "chg_pct": 0.26378263692476844,
+    "price_usd": 4202.7001953125,
+    "chg_pct": 0.5166127849548044,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.3%，影響中性",
-    "oil_usd": 99.0199966430664,
-    "oil_chg": 1.071751974359877
+    "warning": "黃金小幅變動 +0.5%，影響中性",
+    "oil_usd": 97.91999816894531,
+    "oil_chg": -3.4414804921933566
   },
   "intl_data": {
     "S&P500": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.83999633789062,
-      "chg_pct": -0.15686633540134803,
+      "price": 101.86900329589844,
+      "chg_pct": 0.02848287416622791,
       "signal": 0,
-      "note": "-0.16%(中性)",
+      "note": "+0.03%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4181.10009765625,
-      "chg_pct": 0.26378263692476844,
+      "price": 4202.7001953125,
+      "chg_pct": 0.5166127849548044,
       "signal": 0,
-      "note": "+0.26%()",
+      "note": "+0.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.0199966430664,
-      "chg_pct": 1.071751974359877,
-      "signal": 1,
-      "note": "+1.07%",
+      "price": 97.91999816894531,
+      "chg_pct": -3.4414804921933566,
+      "signal": -1,
+      "note": "-3.44%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,17 +480,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80901.15625,
-      "chg_pct": -0.5910291098660209,
-      "signal": -1,
-      "note": "-0.59%",
+      "price": 81968.09375,
+      "chg_pct": 0.7199924353803405,
+      "signal": 1,
+      "note": "+0.72%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says he will close historic DC golf course for 15 months of renovations - ",
+      "title": "Trump says DC golf course ‘restoration’ to start despite judge’s order to pause ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -502,25 +502,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump announces plans to renovate D.C. golf course amid legal battle - NBC News",
+      "title": "Trump says he will close historic DC golf course for 15 months of renovations - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says construction at historic Washiongton, D.C. golf course will start nex",
+      "title": "Trump says Washington golf course renovation to start in November, despite judge",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Rubio says Trump to take up to 60 days to weigh Russia sanctions - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Politics chat: Zelenskyy on Trump, Democrats bring in the money for midterms - N",
+      "title": "Trump Hits Campaign Trail as White House Turmoil Weighs on GOP Midterm Prospects",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -550,25 +550,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Better AI Chip Stock: Taiwan Semiconductor vs. Micron - The Motley Fool",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor’s (TSM) Profit Rose 69% Last Quarter. Is the Stock Still Ch",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC Reports Third Quarter EPS of NT$29.43|Taiwan Semiconductor Manufacturing Co",
+      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment - The Motley Fool",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Better AI Chip Stock: Taiwan Semiconductor vs. Micron - Yahoo Finance",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC Reports Third Quarter EPS of NT$29.43|Taiwan Semiconductor Manufacturing Co",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -580,21 +580,21 @@
     },
     {
       "label": "聯準會",
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "Fed Interest Rate Hike Seems More Likely This Month After Alarming Inflation Dat",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Major brokerages expect next Fed rate hike in December - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed interest-rate decision this month is a closer call than markets think - Mark",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed's Warsh sees US resilience, mum on rate-path view - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
