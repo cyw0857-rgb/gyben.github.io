@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-20 03:32",
+  "generated_at": "2026-10-20 07:01",
   "mode": "morning",
   "signal_date": "2026-10-16",
   "trade_date": "2026-10-21",
   "direction": 0,
-  "total_score": 5,
+  "total_score": 3,
   "tw_score": -6,
   "intl_score": 9,
-  "news_score": 0,
+  "news_score": -2,
   "psy_score": 0,
   "inst_score": 2,
   "foreign_fut_net": 2541,
@@ -357,53 +357,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4161.7001953125,
-    "chg_pct": -0.4639903826895887,
+    "price_usd": 4156.39990234375,
+    "chg_pct": -0.5907582869481144,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.5%，影響中性",
-    "oil_usd": 98.4000015258789,
-    "oil_chg": -2.968151097064914
+    "warning": "黃金小幅變動 -0.6%，影響中性",
+    "oil_usd": 98.26000213623047,
+    "oil_chg": -3.1062039366199787
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7707.83984375,
-      "chg_pct": 0.631898712099098,
+      "price": 7690.72998046875,
+      "chg_pct": 0.40851601816666566,
       "signal": 1,
-      "note": "+0.63%",
+      "note": "+0.41%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52040.33984375,
-      "chg_pct": 0.07293832610072085,
+      "price": 51966.03125,
+      "chg_pct": -0.06995619268548024,
       "signal": 0,
-      "note": "+0.07%",
+      "note": "-0.07%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26503.712890625,
-      "chg_pct": 1.3912899240456391,
+      "price": 26430.88671875,
+      "chg_pct": 1.1126897317967872,
       "signal": 1,
-      "note": "+1.39%",
+      "note": "+1.11%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11403.2998046875,
-      "chg_pct": 2.3884604306075143,
+      "price": 11316.3427734375,
+      "chg_pct": 1.6076867330113283,
       "signal": 1,
-      "note": "+2.39%",
+      "note": "+1.61%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.200000762939453,
-      "chg_pct": -8.954472379559137,
+      "price": 18.440000534057617,
+      "chg_pct": -7.753873210644094,
       "signal": 1,
-      "note": "VIX=18.2(低恐慌)",
+      "note": "VIX=18.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.98300170898438,
-      "chg_pct": 0.14042161845654288,
+      "price": 101.9729995727539,
+      "chg_pct": 0.13060019603888773,
       "signal": 0,
-      "note": "+0.14%(中性)",
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4161.7001953125,
-      "chg_pct": -0.4639903826895887,
-      "signal": 0,
-      "note": "-0.46%()",
+      "price": 4156.39990234375,
+      "chg_pct": -0.5907582869481144,
+      "signal": 1,
+      "note": "-0.59%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.4000015258789,
-      "chg_pct": -2.968151097064914,
+      "price": 98.26000213623047,
+      "chg_pct": -3.1062039366199787,
       "signal": -1,
-      "note": "-2.97%",
+      "note": "-3.11%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,20 +480,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81846.1015625,
-      "chg_pct": -0.20910145716625422,
+      "price": 81956.609375,
+      "chg_pct": -0.07436475383094693,
       "signal": 0,
-      "note": "-0.21%",
+      "note": "-0.07%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Exclusive | Putin Floats a Summit With Trump and Xi to Discuss Ukraine Deal - WS",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
     {
       "label": "川普動態",
       "title": "Trump approval hits record low, handing Democrats a clear midterm edge - The Was",
@@ -502,13 +496,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump's new pitch for Republican candidates? They're really good looking - PBS",
+      "title": "Exclusive | Putin Floats a Summit With Trump and Xi to Discuss Ukraine Deal - WS",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump open to idea of joint meeting with Xi, Putin next month - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chan",
+      "title": "WATCH: Trump and first lady unveil new task force on women's health research - P",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he'd meet with Putin and Xi, criticizes Zelenskyy - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -517,12 +523,6 @@
       "title": "Where the Supreme Court favors Trump on the emergency docket – and where it does",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Wright calls Trump's diesel deal a peace incentive. Rubio says Russia would sell",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -550,15 +550,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Opinion: The Most Important Number in Taiwan Semiconductor's Earnings Report Was",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing Co. (TSM) is Capturing AI Growth Through Foun",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Opinion: The Most Important Number in Taiwan Semiconductor's Earnings Report Was",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could s",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Treasury yields move higher as investors assess U.S. inflation backdrop - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "The Fed Will Have to Raise Interest Rates More, Even If It Pauses in October - B",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed Interest Rate Hike Seems More Likely This Month After Alarming Inflation Dat",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
