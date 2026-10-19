@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19 19:15",
+  "generated_at": "2026-10-19 20:53",
   "mode": "morning",
   "signal_date": "2026-10-19",
   "trade_date": "2026-10-20",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4191.10009765625,
-    "chg_pct": 0.2391715043035105,
+    "price_usd": 4182.39990234375,
+    "chg_pct": 0.031087624241012937,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 98.6500015258789,
-    "oil_chg": -2.7216270945286536
+    "warning": "黃金小幅變動 +0.0%，影響中性",
+    "oil_usd": 97.98999786376953,
+    "oil_chg": -3.372454072415824
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.549999237060547,
-      "chg_pct": -7.203604555004301,
+      "price": 18.6299991607666,
+      "chg_pct": -6.803404832032618,
       "signal": 1,
-      "note": "VIX=18.5(低恐慌)",
+      "note": "VIX=18.6(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,42 +448,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.84400177001953,
-      "chg_pct": 0.003933063897230314,
+      "price": 101.93399810791016,
+      "chg_pct": 0.09230339100528515,
       "signal": 0,
-      "note": "+0.00%(中性)",
+      "note": "+0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4191.10009765625,
-      "chg_pct": 0.2391715043035105,
+      "price": 4182.39990234375,
+      "chg_pct": 0.031087624241012937,
       "signal": 0,
-      "note": "+0.24%()",
+      "note": "+0.03%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.6500015258789,
-      "chg_pct": -2.7216270945286536,
+      "price": 97.98999786376953,
+      "chg_pct": -3.372454072415824,
       "signal": -1,
-      "note": "-2.72%",
+      "note": "-3.37%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
       "price": 5.0980000495910645,
-      "chg_pct": 0.17684857783253582,
+      "chg_pct": 0.0,
       "signal": 0,
-      "note": "5.10%(+0.18%)",
+      "note": "5.10%(+0.00%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 82110.7109375,
-      "chg_pct": 0.11352365007777962,
-      "signal": 0,
-      "note": "+0.11%",
+      "price": 82508.3671875,
+      "chg_pct": 0.59836622340879,
+      "signal": 1,
+      "note": "+0.60%",
       "desc": "風險偏好指標"
     }
   },
@@ -493,6 +493,12 @@
       "title": "Exclusive | Putin Floats a Summit With Trump and Xi to Discuss Ukraine Deal - WS",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chan",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -508,19 +514,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Wright calls Trump's diesel deal a peace incentive. Rubio says Russia would sell",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump plans to begin DC golf course renovation in defiance of judge’s order - Th",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "The midterm election outcomes that could shape Trump's final two years - Reuters",
+      "title": "Affordability, immigration and a referendum on Trump: Listeners weigh in on the ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -550,7 +550,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment - The Motley Fool",
+      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment - The Globe and Ma",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -562,37 +562,37 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul ",
+      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment - The Motley Fool",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Nvidia Leaning Towards Using Taiwan Semiconductor Process in New Memory Chips - ",
+      "title": "Taiwan chipmaker TSMC explores Texas investment to expand production in the US -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "3 Words From Fed Chair Kevin Warsh Suggest the Worst Is Yet to Come for Wall Str",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - B",
+      "title": "The Fed Will Have to Raise Interest Rates More, Even If It Pauses in October - B",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Gold edges higher on softer oil; Fed rate outlook in focus - CNBC",
+      "title": "The Fed Has A Problem It Can’t Fix — And Stocks May Be The Surprising Winner, Ac",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Gold Prices Rise Above $4,200 in Futures Trading as Fed Rate Hike Expectations E",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Gold Rises Amid Falling Oil Prices - WSJ",
+      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could s",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
