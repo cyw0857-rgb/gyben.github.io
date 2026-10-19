@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19 07:47",
+  "generated_at": "2026-10-19 11:19",
   "mode": "morning",
-  "signal_date": "2026-10-16",
+  "signal_date": "2026-10-19",
   "trade_date": "2026-10-20",
   "direction": 0,
-  "total_score": -13,
+  "total_score": -16,
   "tw_score": -6,
-  "intl_score": -6,
+  "intl_score": -9,
   "news_score": -2,
   "psy_score": -2,
   "inst_score": 3,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47111.26171875,
-  "tw_chg_pct": 0.30102408566927696,
-  "tw_ma5": 48070.04609375,
-  "tw_ma10": 48748.037109375,
-  "tw_rsi": 41.67046672609898,
-  "tw_macd": 438.553629801856,
-  "tw_macds": 701.7750785862521,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 48510.48203125,
-  "tw_ma10_p2": 48872.259765625,
-  "tw_ma20_p2": 48041.236328125,
-  "tw_ma20": 48121.225,
+  "tw_last_close": 46478.30859375,
+  "tw_chg_pct": -1.3435282815787764,
+  "tw_ma5": 47505.315625,
+  "tw_ma10": 48548.294140625,
+  "tw_rsi": 38.59547023651411,
+  "tw_macd": 269.0049373492875,
+  "tw_macds": 615.216730000653,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 48070.04609375,
+  "tw_ma10_p2": 48748.037109375,
+  "tw_ma20_p2": 48121.225,
+  "tw_ma20": 48152.6955078125,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4202.7001953125,
-    "chg_pct": 0.5166127849548044,
+    "price_usd": 4198.39990234375,
+    "chg_pct": 0.41376203112662974,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.5%，影響中性",
-    "oil_usd": 97.91999816894531,
-    "oil_chg": -3.4414804921933566
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 97.55999755859375,
+    "oil_chg": -3.796475657710811
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65324.2890625,
-      "chg_pct": 1.3943757983290288,
-      "signal": 1,
-      "note": "+1.39%",
+      "price": 64534.03125,
+      "chg_pct": -1.2097457528300215,
+      "signal": -1,
+      "note": "-1.21%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5668.0498046875,
-      "chg_pct": 2.0494252197552134,
-      "signal": 1,
-      "note": "+2.05%",
+      "price": 5675.3701171875,
+      "chg_pct": 0.1291504618386746,
+      "signal": 0,
+      "note": "+0.13%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -432,42 +432,42 @@
     },
     "上證指數": {
       "category": "A股",
-      "price": 3716.283935546875,
-      "chg_pct": 0.2375702810160688,
-      "signal": 0,
-      "note": "+0.24%",
+      "price": 3728.9033203125,
+      "chg_pct": 0.3395699840079086,
+      "signal": 1,
+      "note": "+0.34%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47111.26171875,
-      "chg_pct": 0.3010240856692792,
-      "signal": 1,
-      "note": "+0.30%",
+      "price": 46478.30859375,
+      "chg_pct": -1.3435282815787726,
+      "signal": -1,
+      "note": "-1.34%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.86900329589844,
-      "chg_pct": 0.02848287416622791,
+      "price": 101.86199951171875,
+      "chg_pct": 0.02160563100878519,
       "signal": 0,
-      "note": "+0.03%(中性)",
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4202.7001953125,
-      "chg_pct": 0.5166127849548044,
+      "price": 4198.39990234375,
+      "chg_pct": 0.41376203112662974,
       "signal": 0,
-      "note": "+0.52%()",
+      "note": "+0.41%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.91999816894531,
-      "chg_pct": -3.4414804921933566,
+      "price": 97.55999755859375,
+      "chg_pct": -3.796475657710811,
       "signal": -1,
-      "note": "-3.44%",
+      "note": "-3.80%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,19 +480,31 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81968.09375,
-      "chg_pct": 0.7199924353803405,
+      "price": 82502.921875,
+      "chg_pct": 1.3771735681821347,
       "signal": 1,
-      "note": "+0.72%",
+      "note": "+1.38%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says DC golf course ‘restoration’ to start despite judge’s order to pause ",
+      "title": "Trump plans to begin DC golf course renovation in defiance of judge’s order - Th",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Latino voters helped put Trump back in the White House. What's their next move? ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Oil tumbles as Trump's Russia sanctions waiver may lead to more fuel supplies - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -502,25 +514,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he will close historic DC golf course for 15 months of renovations - ",
+      "title": "Trump to close and renovate D.C. golf course, despite legal battle. - NPR",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Washington golf course renovation to start in November, despite judge",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Hits Campaign Trail as White House Turmoil Weighs on GOP Midterm Prospects",
+      "title": "Trump says construction at historic Washiongton, D.C. golf course will start nex",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -556,19 +556,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Better AI Chip Stock: Taiwan Semiconductor vs. Micron - Yahoo Finance",
+      "title": "Taiwan Semiconductor’s (TSM) Profit Rose 69% Last Quarter. Is the Stock Still Ch",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
       "title": "TSMC Reports Third Quarter EPS of NT$29.43|Taiwan Semiconductor Manufacturing Co",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Interest Rate Hike Seems More Likely This Month After Alarming Inflation Dat",
+      "title": "Fed's Warsh sees US resilience, mum on rate-path view - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Fed's Warsh sees US resilience, mum on rate-path view - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "US rate rises are being amplified in global markets - Financial Times",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
