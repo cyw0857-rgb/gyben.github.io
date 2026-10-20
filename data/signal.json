@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-21 02:09",
+  "generated_at": "2026-10-21 05:33",
   "mode": "morning",
   "signal_date": "2026-10-19",
   "trade_date": "2026-10-22",
   "direction": 0,
-  "total_score": 1,
+  "total_score": -4,
   "tw_score": -6,
-  "intl_score": 6,
+  "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1450,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-6) vs 國際(+1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46822.078125,
@@ -357,51 +357,51 @@
     }
   ],
   "gold": {
-    "price_usd": 4142.2001953125,
-    "chg_pct": -0.4302757607643765,
+    "price_usd": 4142.5,
+    "chg_pct": -0.42306909072129495,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.4%，影響中性",
-    "oil_usd": 97.77999877929688,
-    "oil_chg": -5.672395017444714
+    "oil_usd": 98.18000030517578,
+    "oil_chg": -5.286516653806263
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7722.06982421875,
-      "chg_pct": 0.4075015483522389,
-      "signal": 1,
-      "note": "+0.41%",
+      "price": 7712.56982421875,
+      "chg_pct": 0.28397621299231807,
+      "signal": 0,
+      "note": "+0.28%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52478.3984375,
-      "chg_pct": 0.9859655917056395,
+      "price": 52495.87890625,
+      "chg_pct": 1.0196038517950126,
       "signal": 1,
-      "note": "+0.99%",
+      "note": "+1.02%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26489.025390625,
-      "chg_pct": 0.21995008208316857,
+      "price": 26424.81640625,
+      "chg_pct": -0.022981513699937988,
       "signal": 0,
-      "note": "+0.22%",
+      "note": "-0.02%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11373.353515625,
-      "chg_pct": 0.503817247115361,
-      "signal": 1,
-      "note": "+0.50%",
+      "price": 11283.8115234375,
+      "chg_pct": -0.28744559426134014,
+      "signal": 0,
+      "note": "-0.29%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.270000457763672,
-      "chg_pct": -6.344902616098208,
+      "price": 17.309999465942383,
+      "chg_pct": -6.127988261324546,
       "signal": 1,
       "note": "VIX=17.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -448,52 +448,46 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.7229995727539,
-      "chg_pct": -0.2520139004900453,
+      "price": 101.70600128173828,
+      "chg_pct": -0.2686821594193281,
       "signal": 0,
-      "note": "-0.25%(中性)",
+      "note": "-0.27%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4142.2001953125,
-      "chg_pct": -0.4302757607643765,
+      "price": 4142.5,
+      "chg_pct": -0.42306909072129495,
       "signal": 0,
-      "note": "-0.43%()",
+      "note": "-0.42%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.77999877929688,
-      "chg_pct": -5.672395017444714,
+      "price": 98.18000030517578,
+      "chg_pct": -5.286516653806263,
       "signal": -1,
-      "note": "-5.67%",
+      "note": "-5.29%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.123000144958496,
-      "chg_pct": -0.2531154799106822,
+      "price": 5.116999626159668,
+      "chg_pct": -0.36994800748270373,
       "signal": 0,
-      "note": "5.12%(-0.25%)",
+      "note": "5.12%(-0.37%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 82657.8984375,
-      "chg_pct": 0.9826812428792165,
+      "price": 82769.109375,
+      "chg_pct": 1.118547008457274,
       "signal": 1,
-      "note": "+0.98%",
+      "note": "+1.12%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Exclusive | Putin Floats a Summit With Trump and Xi to Discuss Ukraine Deal - WS",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
     {
       "label": "川普動態",
       "title": "Trump sued over 50% tariffs on Canada in latest trade challenge - CNBC",
@@ -508,9 +502,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says Mexico and US are close to trade deal - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump drops threats against Canadian jet maker Bombardier, citing US jobs - Reut",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -520,9 +514,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Republicans push back on Donald Trump’s wavering support for Ukraine - The Guard",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: Trump says U.S. has gotten 'nothing' from Ukraine other than 'high diesel",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "New Jersey food importer files lawsuit challenging Trump's 50% tariffs on Canadi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -538,7 +538,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Ottawa trims economic forecast for 2026-2027 amid new U.S. tariffs - BNN Bloombe",
+      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -550,7 +550,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Great News for Taiwan Semiconductor Stock Investors - The Motley Fool",
+      "title": "Zacks Investment Ideas feature highlights: Taiwan Semiconductor Manufacturing - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -562,13 +562,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Holdings Decreased by Metro",
+      "title": "Great News for Taiwan Semiconductor Stock Investors - The Motley Fool",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Zacks Investment Ideas feature highlights: Taiwan Semiconductor Manufacturing - ",
+      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Holdings Decreased by Metro",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -580,21 +580,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
       "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hike",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
+      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Gold steady as investors await fed rate signals - Yahoo Finance",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
