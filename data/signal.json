@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-20 07:01",
+  "generated_at": "2026-10-20 08:47",
   "mode": "morning",
   "signal_date": "2026-10-16",
   "trade_date": "2026-10-21",
   "direction": 0,
-  "total_score": 3,
+  "total_score": -2,
   "tw_score": -6,
-  "intl_score": 9,
+  "intl_score": 5,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": 2,
-  "foreign_fut_net": 2541,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-6) vs 國際(+5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 47111.26171875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4156.39990234375,
-    "chg_pct": -0.5907582869481144,
+    "price_usd": 4154.7998046875,
+    "chg_pct": -0.6290280632958978,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 98.26000213623047,
-    "oil_chg": -3.1062039366199787
+    "oil_usd": 98.38999938964844,
+    "oil_chg": -2.9780141636947066
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 65324.2890625,
-      "chg_pct": 1.3943757983290288,
-      "signal": 1,
-      "note": "+1.39%",
+      "price": 64351.0390625,
+      "chg_pct": -1.489874614737603,
+      "signal": -1,
+      "note": "-1.49%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5668.0498046875,
-      "chg_pct": 2.0494252197552134,
-      "signal": 1,
-      "note": "+2.05%",
+      "price": 5647.7998046875,
+      "chg_pct": -0.35726573861883093,
+      "signal": -1,
+      "note": "-0.36%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.9729995727539,
-      "chg_pct": 0.13060019603888773,
+      "price": 101.91999816894531,
+      "chg_pct": 0.07855639624068014,
       "signal": 0,
-      "note": "+0.13%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4156.39990234375,
-      "chg_pct": -0.5907582869481144,
+      "price": 4154.7998046875,
+      "chg_pct": -0.6290280632958978,
       "signal": 1,
-      "note": "-0.59%()",
+      "note": "-0.63%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.26000213623047,
-      "chg_pct": -3.1062039366199787,
+      "price": 98.38999938964844,
+      "chg_pct": -2.9780141636947066,
       "signal": -1,
-      "note": "-3.11%",
+      "note": "-2.98%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,31 +480,19 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81956.609375,
-      "chg_pct": -0.07436475383094693,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 81523.140625,
+      "chg_pct": -0.6028717349448522,
+      "signal": -1,
+      "note": "-0.60%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump approval hits record low, handing Democrats a clear midterm edge - The Was",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
       "title": "Exclusive | Putin Floats a Summit With Trump and Xi to Discuss Ukraine Deal - WS",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump open to idea of joint meeting with Xi, Putin next month - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -514,7 +502,19 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump open to idea of joint meeting with Xi, Putin next month - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says he'd meet with Putin and Xi, criticizes Zelenskyy - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge chastises Trump administration plan to push ahead overhaul of DC golf cour",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,13 +586,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Treasury yields move higher as investors assess U.S. inflation backdrop - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could s",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed Interest Rate Hike Seems More Likely This Month After Alarming Inflation Dat",
+      "title": "If a Market Correction Is Coming, Warren Buffett Says This 1 Move Is Key to Buil",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
