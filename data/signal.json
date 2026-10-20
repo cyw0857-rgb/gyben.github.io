@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-20 08:47",
+  "generated_at": "2026-10-20 11:28",
   "mode": "morning",
-  "signal_date": "2026-10-16",
+  "signal_date": "2026-10-20",
   "trade_date": "2026-10-21",
   "direction": 0,
   "total_score": -2,
   "tw_score": -6,
-  "intl_score": 5,
-  "news_score": -2,
+  "intl_score": 3,
+  "news_score": -1,
   "psy_score": 0,
-  "inst_score": 1,
-  "foreign_fut_net": 0,
+  "inst_score": 2,
+  "foreign_fut_net": 2541,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-6) vs 國際(+3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47111.26171875,
-  "tw_chg_pct": 0.30102408566927696,
-  "tw_ma5": 48070.04609375,
-  "tw_ma10": 48748.037109375,
-  "tw_rsi": 41.67046672609898,
-  "tw_macd": 438.5499575075519,
-  "tw_macds": 701.7696781634943,
+  "tw_last_close": 46788.76953125,
+  "tw_chg_pct": -0.07113864886790777,
+  "tw_ma5": 47263.56171875,
+  "tw_ma10": 48290.344140625,
+  "tw_rsi": 43.06151378491229,
+  "tw_macd": 179.0460336926335,
+  "tw_macds": 532.3729426744319,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 48510.48203125,
-  "tw_ma10_p2": 48872.259765625,
-  "tw_ma20_p2": 48041.236328125,
-  "tw_ma20": 48121.225,
+  "tw_ma5_p2": 47574.06953125,
+  "tw_ma10_p2": 48582.67109375,
+  "tw_ma20_p2": 48169.883984375,
+  "tw_ma20": 48194.9224609375,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -265,17 +265,17 @@
     "streak": 1
   },
   "stats_real_v50": {
-    "total": 56,
+    "total": 57,
     "wins": 28,
-    "losses": 28,
-    "win_rate": 50.0,
-    "total_pnl": 10903.0,
-    "avg_pnl": 194.69642857142858,
+    "losses": 29,
+    "win_rate": 49.122807017543856,
+    "total_pnl": 10607.0,
+    "avg_pnl": 186.08771929824562,
     "avg_win": 5903.071428571428,
-    "avg_lose": -5513.678571428572,
+    "avg_lose": -5333.758620689655,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": -1
   },
   "stats_real_cons": {
     "total": 8,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4154.7998046875,
-    "chg_pct": -0.6290280632958978,
+    "price_usd": 4161.7998046875,
+    "chg_pct": -0.4616080102834404,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 98.38999938964844,
-    "oil_chg": -2.9780141636947066
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 98.87000274658203,
+    "oil_chg": -2.5046847685662637
   },
   "intl_data": {
     "S&P500": {
@@ -376,8 +376,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51966.03125,
-      "chg_pct": -0.06995619268548024,
+      "price": 51966.0,
+      "chg_pct": -0.07001628605404933,
       "signal": 0,
       "note": "-0.07%",
       "desc": "藍籌股風向球"
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64351.0390625,
-      "chg_pct": -1.489874614737603,
+      "price": 64512.3515625,
+      "chg_pct": -0.6228715586531417,
       "signal": -1,
-      "note": "-1.49%",
+      "note": "-0.62%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5647.7998046875,
-      "chg_pct": -0.35726573861883093,
+      "price": 5622.39013671875,
+      "chg_pct": -2.5246078772973646,
       "signal": -1,
-      "note": "-0.36%",
+      "note": "-2.52%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24186.830078125,
-      "chg_pct": 0.5157744900554078,
-      "signal": 1,
-      "note": "+0.52%",
+      "price": 23958.099609375,
+      "chg_pct": -0.9456818773323583,
+      "signal": -1,
+      "note": "-0.95%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3729.62939453125,
+      "chg_pct": -0.03459005743284451,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.03%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 47111.26171875,
-      "chg_pct": 0.3010240856692792,
-      "signal": 1,
-      "note": "+0.30%",
+      "price": 46788.76953125,
+      "chg_pct": -0.0711386488679052,
+      "signal": 0,
+      "note": "-0.07%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.91999816894531,
-      "chg_pct": 0.07855639624068014,
+      "price": 101.8479995727539,
+      "chg_pct": 0.007858636244180189,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4154.7998046875,
-      "chg_pct": -0.6290280632958978,
-      "signal": 1,
-      "note": "-0.63%()",
+      "price": 4161.7998046875,
+      "chg_pct": -0.4616080102834404,
+      "signal": 0,
+      "note": "-0.46%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.38999938964844,
-      "chg_pct": -2.9780141636947066,
+      "price": 98.87000274658203,
+      "chg_pct": -2.5046847685662637,
       "signal": -1,
-      "note": "-2.98%",
+      "note": "-2.50%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81523.140625,
-      "chg_pct": -0.6028717349448522,
-      "signal": -1,
-      "note": "-0.60%",
+      "price": 81780.6484375,
+      "chg_pct": -0.28890521118132706,
+      "signal": 0,
+      "note": "-0.29%",
       "desc": "風險偏好指標"
     }
   },
@@ -502,7 +502,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump open to idea of joint meeting with Xi, Putin next month - Reuters",
+      "title": "Trump says Mexico and US are close to trade deal - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Administration Announces $8 Billion Harvest Fuel Relief Program - USDA (.g",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -514,15 +520,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Judge chastises Trump administration plan to push ahead overhaul of DC golf cour",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Where the Supreme Court favors Trump on the emergency docket – and where it does",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump approval hits record low, handing Democrats a clear midterm edge - The Was",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -550,15 +550,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Co. (TSM) is Capturing AI Growth Through Foun",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Great News for Taiwan Semiconductor Stock Investors - The Motley Fool",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Opinion: The Most Important Number in Taiwan Semiconductor's Earnings Report Was",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing Co. (TSM) is Capturing AI Growth Through Foun",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -568,7 +568,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Why Taiwan Semiconductor Manufacturing (TSM) Stock Is Up Today - Quiver Quantita",
+      "title": "Great News for Taiwan Semiconductor Stock Investors - The Globe and Mail",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could s",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "If a Market Correction Is Coming, Warren Buffett Says This 1 Move Is Key to Buil",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed Has A Problem It Can’t Fix — And Stocks May Be The Surprising Winner, Ac",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
