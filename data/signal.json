@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-21 08:13",
+  "generated_at": "2026-10-21 11:22",
   "mode": "morning",
-  "signal_date": "2026-10-19",
+  "signal_date": "2026-10-21",
   "trade_date": "2026-10-22",
   "direction": 0,
   "total_score": -4,
-  "tw_score": -6,
-  "intl_score": 1,
+  "tw_score": -7,
+  "intl_score": 2,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1450,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+1) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46822.078125,
-  "tw_chg_pct": -0.6138311376086669,
-  "tw_ma5": 47574.06953125,
-  "tw_ma10": 48582.67109375,
-  "tw_rsi": 40.6571435161524,
-  "tw_macd": 296.4303903482796,
-  "tw_macds": 620.7046699198816,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 48070.04609375,
-  "tw_ma10_p2": 48748.037109375,
-  "tw_ma20_p2": 48121.225,
-  "tw_ma20": 48169.883984375,
+  "tw_last_close": 46928.73828125,
+  "tw_chg_pct": 1.3734464378081457,
+  "tw_ma5": 46824.97578125,
+  "tw_ma10": 47951.37890625,
+  "tw_rsi": 42.67073388906628,
+  "tw_macd": 65.67613932088716,
+  "tw_macds": 432.719776735923,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 47164.39375,
+  "tw_ma10_p2": 48240.76015625,
+  "tw_ma20_p2": 48170.13046875,
+  "tw_ma20": 48157.5298828125,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4131.7001953125,
-    "chg_pct": -0.6826735337390117,
+    "price_usd": 4131.5,
+    "chg_pct": -0.6874858052661509,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 98.4800033569336,
-    "oil_chg": -4.99710604107302
+    "oil_usd": 99.2699966430664,
+    "oil_chg": -4.235005656909541
   },
   "intl_data": {
     "S&P500": {
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64916.69921875,
-      "chg_pct": -0.6239483806092895,
-      "signal": -1,
-      "note": "-0.62%",
+      "price": 64823.55078125,
+      "chg_pct": 1.167575467094808,
+      "signal": 1,
+      "note": "+1.17%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5768.009765625,
-      "chg_pct": 1.7635688531676752,
+      "price": 5754.509765625,
+      "chg_pct": 3.633692964798138,
       "signal": 1,
-      "note": "+1.76%",
+      "note": "+3.63%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24186.830078125,
-      "chg_pct": 0.5157744900554078,
-      "signal": 1,
-      "note": "+0.52%",
+      "price": 23810.119140625,
+      "chg_pct": -0.24141830430604597,
+      "signal": 0,
+      "note": "-0.24%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3720.467529296875,
+      "chg_pct": -0.39895880255758204,
+      "signal": -1,
+      "note": "-0.40%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46822.078125,
-      "chg_pct": -0.6138311376086679,
-      "signal": -1,
-      "note": "-0.61%",
+      "price": 46928.73828125,
+      "chg_pct": 1.3734464378081492,
+      "signal": 1,
+      "note": "+1.37%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.77899932861328,
-      "chg_pct": -0.19710141371224646,
+      "price": 101.7760009765625,
+      "chg_pct": -0.20004155094707957,
       "signal": 0,
       "note": "-0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4131.7001953125,
-      "chg_pct": -0.6826735337390117,
+      "price": 4131.5,
+      "chg_pct": -0.6874858052661509,
       "signal": 1,
-      "note": "-0.68%()",
+      "note": "-0.69%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.4800033569336,
-      "chg_pct": -4.99710604107302,
+      "price": 99.2699966430664,
+      "chg_pct": -4.235005656909541,
       "signal": -1,
-      "note": "-5.00%",
+      "note": "-4.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82941.390625,
-      "chg_pct": 1.3290220251434226,
+      "price": 82651.2265625,
+      "chg_pct": 0.9745302513931847,
       "signal": 1,
-      "note": "+1.33%",
+      "note": "+0.97%",
       "desc": "風險偏好指標"
     }
   },
@@ -496,57 +496,69 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump drops threats against Canadian jet maker Bombardier, citing US jobs - Reut",
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "New Jersey food importer files lawsuit challenging Trump's 50% tariffs on Canadi",
+      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "How the Trump administration's crackdown on international students could affect ",
+      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Tariffs on Canada Spark Latest Lawsuit Over Trade Powers - The New York Ti",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "US food importer sues Trump over 50 percent tariffs on Canadian goods - Al Jazee",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "U.S. Economy Could Feel the Sting From Trade War With Canada - The New York Time",
+      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada has 1 important edge in the North American trade war - Politico",
+      "title": "Ottawa trims economic forecast for 2026-2027 amid new U.S. tariffs - BNN Bloombe",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC says four construction workers killed at Taiwan site, halting work - Reuter",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Draws Fund Managers Leaving Firms To In",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -561,18 +573,6 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Zacks Investment Ideas feature highlights: Taiwan Semiconductor Manufacturing - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor: The Margin Peak That Isn't - Seeking Alpha",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
       "title": "Fed to skip October but raise rates again in December, nearly all economists say",
       "sentiment": "✅偏多",
@@ -580,19 +580,19 @@
     },
     {
       "label": "聯準會",
-      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hike",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "BofA Is Sticking With an October Rate Hike Even as Markets Bet Against It - Yaho",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "‘The era of stocks being the only viable investment option has ended’ – Baird St",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Gold steady as investors await fed rate signals - Yahoo Finance",
+      "title": "Financial conditions have been tightening. Will it be enough to forestall anothe",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
