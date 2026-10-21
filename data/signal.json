@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21 05:33",
+  "generated_at": "2026-10-21 08:13",
   "mode": "morning",
   "signal_date": "2026-10-19",
   "trade_date": "2026-10-22",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4142.5,
-    "chg_pct": -0.42306909072129495,
+    "price_usd": 4131.7001953125,
+    "chg_pct": -0.6826735337390117,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.4%，影響中性",
-    "oil_usd": 98.18000030517578,
-    "oil_chg": -5.286516653806263
+    "warning": "黃金小幅變動 -0.7%，影響中性",
+    "oil_usd": 98.4800033569336,
+    "oil_chg": -4.99710604107302
   },
   "intl_data": {
     "S&P500": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.70600128173828,
-      "chg_pct": -0.2686821594193281,
+      "price": 101.77899932861328,
+      "chg_pct": -0.19710141371224646,
       "signal": 0,
-      "note": "-0.27%(中性)",
+      "note": "-0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4142.5,
-      "chg_pct": -0.42306909072129495,
-      "signal": 0,
-      "note": "-0.42%()",
+      "price": 4131.7001953125,
+      "chg_pct": -0.6826735337390117,
+      "signal": 1,
+      "note": "-0.68%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 98.18000030517578,
-      "chg_pct": -5.286516653806263,
+      "price": 98.4800033569336,
+      "chg_pct": -4.99710604107302,
       "signal": -1,
-      "note": "-5.29%",
+      "note": "-5.00%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82769.109375,
-      "chg_pct": 1.118547008457274,
+      "price": 82941.390625,
+      "chg_pct": 1.3290220251434226,
       "signal": 1,
-      "note": "+1.12%",
+      "note": "+1.33%",
       "desc": "風險偏好指標"
     }
   },
@@ -496,15 +496,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump renews call for New Mexico name change - Source New Mexico",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Trump drops threats against Canadian jet maker Bombardier, citing US jobs - Reut",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "New Jersey food importer files lawsuit challenging Trump's 50% tariffs on Canadi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "How the Trump administration's crackdown on international students could affect ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -514,39 +520,45 @@
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Trump says U.S. has gotten 'nothing' from Ukraine other than 'high diesel",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "New Jersey food importer files lawsuit challenging Trump's 50% tariffs on Canadi",
+      "title": "US food importer sues Trump over 50 percent tariffs on Canadian goods - Al Jazee",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
+      "title": "U.S. Economy Could Feel the Sting From Trade War With Canada - The New York Time",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "title": "Canada has 1 important edge in the North American trade war - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Is Drawing Taiwan Fund Managers Into Pe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Jumps 1.2% - What's Next? - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -557,18 +569,6 @@
     {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor: The Margin Peak That Isn't - Seeking Alpha",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Great News for Taiwan Semiconductor Stock Investors - The Motley Fool",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Holdings Decreased by Metro",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
