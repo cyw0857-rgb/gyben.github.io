@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22 18:38",
+  "generated_at": "2026-10-22 19:37",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-23",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4108.10009765625,
-    "chg_pct": -1.0096362010542168,
+    "price_usd": 4079.39990234375,
+    "chg_pct": -1.701207172439759,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 99.23999786376953,
-    "oil_chg": 2.1513086001690795
+    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 99.26000213623047,
+    "oil_chg": 2.1718997192084437
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.350000381469727,
-      "chg_pct": 10.011990681893131,
+      "price": 18.34000015258789,
+      "chg_pct": 9.95203727242747,
       "signal": 1,
-      "note": "VIX=18.4(低恐慌)",
+      "note": "VIX=18.3(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.62699890136719,
-      "chg_pct": -0.15032411059608825,
+      "price": 101.78700256347656,
+      "chg_pct": 0.006881297173990675,
       "signal": 0,
-      "note": "-0.15%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4108.10009765625,
-      "chg_pct": -1.0096362010542168,
+      "price": 4079.39990234375,
+      "chg_pct": -1.701207172439759,
       "signal": 1,
-      "note": "-1.01%()",
+      "note": "-1.70%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.23999786376953,
-      "chg_pct": 2.1513086001690795,
+      "price": 99.26000213623047,
+      "chg_pct": 2.1718997192084437,
       "signal": 1,
-      "note": "+2.15%",
+      "note": "+2.17%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,59 +480,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 82012.28125,
-      "chg_pct": -2.380241208190946,
+      "price": 81859.71875,
+      "chg_pct": -2.5618373572515525,
       "signal": -1,
-      "note": "-2.38%",
+      "note": "-2.56%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump sued over 50% tariffs on Canada in latest trade challenge - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
+      "title": "Trump Approval Hits New Low Two Weeks Before Midterms, Poll Finds - The New York",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Farm country has beef with Trump as midterms approach - NPR",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "Trump administration asks justices to allow border wall construction to continue",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "label": "川普動態",
+      "title": "Gimmick or giveback? Even some Trump supporters don't expect to get $5,000 check",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says Data Centers Must Provide Their Own Electricity - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Carney says Trump’s tariffs hurt Americans as US Embassy alleges Canadian interf",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -544,7 +532,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,37 +562,37 @@
     },
     {
       "label": "台股/半導體",
-      "title": "FILE PHOTO: FILE PHOTO: The logo of Taiwan Semiconductor Manufacturing Company (",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "U.S.-South Korea-Taiwan Semiconductor Dominance Challenged by China - 조선일보",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
+      "label": "台股/半導體",
+      "title": "FILE PHOTO: FILE PHOTO: The logo of Taiwan Semiconductor Manufacturing Company (",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
       "label": "聯準會",
-      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
+      "title": "Fed to skip October but raise rates again in December, nearly all economists say",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed’s Dilemma: Can Markets Damp Inflation or Is Another Rate Hike Necessary?",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "COMMENTARY: Markets' squeal is music to Fed ears — but still too faint - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hike",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "The AI Boom Is Setting Up the Fed for a Rate Seesaw - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Latest Inflation Data Spells Bad News for Fed Chair Kevin Warsh and the Stoc",
+      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
