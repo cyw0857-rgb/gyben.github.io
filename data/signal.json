@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22 16:46",
+  "generated_at": "2026-10-22 18:38",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-23",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4102.7998046875,
-    "chg_pct": -1.1373541039156627,
+    "price_usd": 4108.10009765625,
+    "chg_pct": -1.0096362010542168,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 100.05000305175781,
-    "oil_chg": 2.985076150623015
+    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 99.23999786376953,
+    "oil_chg": 2.1513086001690795
   },
   "intl_data": {
     "S&P500": {
@@ -400,8 +400,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.43000030517578,
-      "chg_pct": 10.491606522674807,
+      "price": 18.350000381469727,
+      "chg_pct": 10.011990681893131,
       "signal": 1,
       "note": "VIX=18.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.54100036621094,
-      "chg_pct": -0.23481864408761646,
+      "price": 101.62699890136719,
+      "chg_pct": -0.15032411059608825,
       "signal": 0,
-      "note": "-0.23%(中性)",
+      "note": "-0.15%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4102.7998046875,
-      "chg_pct": -1.1373541039156627,
+      "price": 4108.10009765625,
+      "chg_pct": -1.0096362010542168,
       "signal": 1,
-      "note": "-1.14%()",
+      "note": "-1.01%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 100.05000305175781,
-      "chg_pct": 2.985076150623015,
+      "price": 99.23999786376953,
+      "chg_pct": 2.1513086001690795,
       "signal": 1,
-      "note": "+2.99%",
+      "note": "+2.15%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81880.21875,
-      "chg_pct": -2.5374360721668006,
+      "price": 82012.28125,
+      "chg_pct": -2.380241208190946,
       "signal": -1,
-      "note": "-2.54%",
+      "note": "-2.38%",
       "desc": "風險偏好指標"
     }
   },
@@ -562,19 +562,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "U.S.-South Korea-Taiwan Semiconductor Dominance Challenged by China - 조선일보",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "FILE PHOTO: FILE PHOTO: The logo of Taiwan Semiconductor Manufacturing Company (",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
+      "label": "台股/半導體",
+      "title": "U.S.-South Korea-Taiwan Semiconductor Dominance Challenged by China - 조선일보",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
       "label": "聯準會",
-      "title": "Trumpflation Is Evolving, and There's a New Twist That Threatens to Sink Stocks ",
+      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "The Latest Inflation Data Spells Bad News for Fed Chair Kevin Warsh and the Stoc",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The AI Boom Is Setting Up the Fed for a Rate Seesaw - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "With a Fed Decision a Week Away, Lenders Show How Borrowers Are Handling Higher ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "The Latest Inflation Data Spells Bad News for Fed Chair Kevin Warsh and the Stoc",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
