@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22 05:45",
+  "generated_at": "2026-10-22 08:17",
   "mode": "morning",
   "signal_date": "2026-10-20",
   "trade_date": "2026-10-23",
   "direction": 0,
-  "total_score": -1,
+  "total_score": 1,
   "tw_score": -6,
-  "intl_score": 4,
+  "intl_score": 6,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1062,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-6) vs 國際(+6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46292.9296875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4159.5,
-    "chg_pct": 0.40795398892863016,
+    "price_usd": 4142.0,
+    "chg_pct": -0.014486014630992645,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 97.70999908447266,
-    "oil_chg": -4.00825404691819
+    "warning": "黃金小幅變動 -0.0%，影響中性",
+    "oil_usd": 97.9000015258789,
+    "oil_chg": -3.8215928427750367
   },
   "intl_data": {
     "S&P500": {
@@ -408,10 +408,10 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64075.421875,
-      "chg_pct": -1.2959336409190263,
-      "signal": -1,
-      "note": "-1.30%",
+      "price": 64706.55078125,
+      "chg_pct": 0.9849781519678835,
+      "signal": 1,
+      "note": "+0.98%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.69999694824219,
-      "chg_pct": -0.029496124743183846,
+      "price": 101.69300079345703,
+      "chg_pct": -0.036373304094696586,
       "signal": 0,
-      "note": "-0.03%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4159.5,
-      "chg_pct": 0.40795398892863016,
+      "price": 4142.0,
+      "chg_pct": -0.014486014630992645,
       "signal": 0,
-      "note": "+0.41%()",
+      "note": "-0.01%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.70999908447266,
-      "chg_pct": -4.00825404691819,
+      "price": 97.9000015258789,
+      "chg_pct": -3.8215928427750367,
       "signal": -1,
-      "note": "-4.01%",
+      "note": "-3.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,49 +480,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84732.2734375,
-      "chg_pct": 2.1596959736439154,
+      "price": 84160.0,
+      "chg_pct": 1.4697194391193742,
       "signal": 1,
-      "note": "+2.16%",
+      "note": "+1.47%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Approval Hits New Low Two Weeks Before Midterms, Poll Finds - The New York",
+      "title": "Trump sued over 50% tariffs on Canada in latest trade challenge - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Says Data Centers Must Provide Their Own Electricity - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Top 2 Democrats on Intel say they're preparing for Trump to claim foreign meddli",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump to tout crackdown on overseas crypto scams - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump administration asks Supreme Court to lift halt on Big Bend border wall - S",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -532,13 +532,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Posthaste: Trump's tariffs can inflict far worse damage on the economy than just",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Posthaste: Trump's tariffs can inflict far worse damage on the economy than just",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -574,27 +574,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed to skip October but raise rates again in December, nearly all economists say",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
+      "title": "Trumpflation Is Evolving, and There's a New Twist That Threatens to Sink Stocks ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hike",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "The AI Boom Is Setting Up the Fed for a Rate Seesaw - Bloomberg.com",
+      "title": "COMMENTARY: Markets' squeal is music to Fed ears — but still too faint - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "SCHA: Small-Caps Pressured By Higher Rates, Time To Rotate Into Large-Caps (NYSE",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
