@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-22 08:17",
+  "generated_at": "2026-10-22 11:21",
   "mode": "morning",
-  "signal_date": "2026-10-20",
+  "signal_date": "2026-10-22",
   "trade_date": "2026-10-23",
   "direction": 0,
-  "total_score": 1,
-  "tw_score": -6,
-  "intl_score": 6,
+  "total_score": -5,
+  "tw_score": -9,
+  "intl_score": 4,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 2,
-  "foreign_fut_net": 1062,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-6) vs 國際(+6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-9) vs 國際(+4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46292.9296875,
-  "tw_chg_pct": -1.1301259121548224,
-  "tw_ma5": 47164.39375,
-  "tw_ma10": 48240.76015625,
-  "tw_rsi": 39.81265305152041,
-  "tw_macd": 139.50449156647664,
-  "tw_macds": 524.480686089682,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 47574.06953125,
-  "tw_ma10_p2": 48582.67109375,
-  "tw_ma20_p2": 48169.883984375,
-  "tw_ma20": 48170.13046875,
+  "tw_last_close": 46723.9609375,
+  "tw_chg_pct": -0.34936316098556075,
+  "tw_ma5": 46767.6,
+  "tw_ma10": 47639.041015625,
+  "tw_rsi": 37.67219108445142,
+  "tw_macd": -11.773829506382754,
+  "tw_macds": 343.2981495045557,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46816.78203125,
+  "tw_ma10_p2": 47947.28203125,
+  "tw_ma20_p2": 48155.4814453125,
+  "tw_ma20": 48105.7375,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4142.0,
-    "chg_pct": -0.014486014630992645,
+    "price_usd": 4125.89990234375,
+    "chg_pct": -0.4031331752719369,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.0%，影響中性",
-    "oil_usd": 97.9000015258789,
-    "oil_chg": -3.8215928427750367
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 98.37999725341797,
+    "oil_chg": -3.3500379520963373
   },
   "intl_data": {
     "S&P500": {
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64706.55078125,
-      "chg_pct": 0.9849781519678835,
-      "signal": 1,
-      "note": "+0.98%",
+      "price": 63917.4296875,
+      "chg_pct": -1.0891289187106334,
+      "signal": -1,
+      "note": "-1.09%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5552.740234375,
-      "chg_pct": -3.7321284116562903,
+      "price": 5608.33984375,
+      "chg_pct": -2.2198022377818596,
       "signal": -1,
-      "note": "-3.73%",
+      "note": "-2.22%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23867.740234375,
-      "chg_pct": -1.3192710360114142,
+      "price": 23061.759765625,
+      "chg_pct": -2.4949798744929397,
       "signal": -1,
-      "note": "-1.32%",
+      "note": "-2.49%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3672.114013671875,
+      "chg_pct": -1.1019055514975347,
+      "signal": -1,
+      "note": "-1.10%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46292.9296875,
-      "chg_pct": -1.1301259121548228,
+      "price": 46723.9609375,
+      "chg_pct": -0.3493631609855615,
       "signal": -1,
-      "note": "-1.13%",
+      "note": "-0.35%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.69300079345703,
-      "chg_pct": -0.036373304094696586,
+      "price": 101.50599670410156,
+      "chg_pct": -0.22019723330399718,
       "signal": 0,
-      "note": "-0.04%(中性)",
+      "note": "-0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4142.0,
-      "chg_pct": -0.014486014630992645,
+      "price": 4125.89990234375,
+      "chg_pct": -0.4031331752719369,
       "signal": 0,
-      "note": "-0.01%()",
+      "note": "-0.40%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.9000015258789,
-      "chg_pct": -3.8215928427750367,
+      "price": 98.37999725341797,
+      "chg_pct": -3.3500379520963373,
       "signal": -1,
-      "note": "-3.82%",
+      "note": "-3.35%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 84160.0,
-      "chg_pct": 1.4697194391193742,
-      "signal": 1,
-      "note": "+1.47%",
+      "price": 82774.890625,
+      "chg_pct": -0.2002741406542,
+      "signal": 0,
+      "note": "-0.20%",
       "desc": "風險偏好指標"
     }
   },
@@ -526,33 +526,27 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Posthaste: Trump's tariffs can inflict far worse damage on the economy than just",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "台股/半導體",
-      "title": "TSMC says four construction workers killed at Taiwan site, halting work - Reuter",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "關稅/貿易",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -562,39 +556,45 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Owns The Tollbooth and Helps Me Ignore The AI Financing Noi",
+      "title": "TSMC says four construction workers killed at Taiwan site, halting work - Reuter",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Climb 1.6% - Here's Why - M",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Gets A Moody's Upgrade, Is It Now Overv",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Moody’s upgrades TSMC rating to Aa2 on booming AI demand and market dominance - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Trumpflation Is Evolving, and There's a New Twist That Threatens to Sink Stocks ",
+      "title": "Fed to skip October but raise rates again in December, nearly all economists say",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hike",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "COMMENTARY: Markets' squeal is music to Fed ears — but still too faint - Reuters",
+      "title": "Federal Reserve raises interest rates for the 1st time since 2023 - ABC News - B",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "SCHA: Small-Caps Pressured By Higher Rates, Time To Rotate Into Large-Caps (NYSE",
+      "title": "Fed Interest Rate Predictions for October 2026 - Norada Real Estate Investments",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
