@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-23 08:14",
+  "generated_at": "2026-10-23 11:26",
   "mode": "morning",
-  "signal_date": "2026-10-21",
+  "signal_date": "2026-10-22",
   "trade_date": "2026-10-26",
-  "direction": 0,
-  "total_score": -12,
-  "tw_score": -7,
-  "intl_score": -4,
+  "direction": -1,
+  "total_score": -17,
+  "tw_score": -9,
+  "intl_score": -7,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
-  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
+  "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46887.76953125,
-  "tw_chg_pct": 1.2849475022761903,
-  "tw_ma5": 46816.78203125,
-  "tw_ma10": 47947.28203125,
-  "tw_rsi": 42.32829183724146,
-  "tw_macd": 62.40797692772321,
-  "tw_macds": 432.06614425729026,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 47164.39375,
-  "tw_ma10_p2": 48240.76015625,
-  "tw_ma20_p2": 48170.13046875,
-  "tw_ma20": 48155.4814453125,
+  "tw_last_close": 46041.4296875,
+  "tw_chg_pct": -1.8050332788509538,
+  "tw_ma5": 46631.09375,
+  "tw_ma10": 47570.787890625,
+  "tw_rsi": 34.14592073268402,
+  "tw_macd": -66.22076682831539,
+  "tw_macds": 332.40876204016917,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46816.78203125,
+  "tw_ma10_p2": 47947.28203125,
+  "tw_ma20_p2": 48155.4814453125,
+  "tw_ma20": 48071.6109375,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4037.89990234375,
-    "chg_pct": -2.701207172439759,
+    "price_usd": 4028.300048828125,
+    "chg_pct": -2.932528943900602,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -2.7%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 99.37000274658203,
-    "oil_chg": 2.2851273142921764
+    "warning": "黃金大跌 -2.9%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 100.0199966430664,
+    "oil_chg": 2.954189472063969
   },
   "intl_data": {
     "S&P500": {
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64621.23828125,
-      "chg_pct": 0.8518342763545012,
-      "signal": 1,
-      "note": "+0.85%",
+      "price": 61825.26171875,
+      "chg_pct": -1.7208954045932892,
+      "signal": -1,
+      "note": "-1.72%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5735.66015625,
-      "chg_pct": 3.2942279695097048,
-      "signal": 1,
-      "note": "+3.29%",
+      "price": 5417.0400390625,
+      "chg_pct": -2.109411487227615,
+      "signal": -1,
+      "note": "-2.11%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23651.869140625,
-      "chg_pct": -0.9044471392356461,
-      "signal": -1,
-      "note": "-0.90%",
+      "price": 22987.689453125,
+      "chg_pct": 0.23113366459568085,
+      "signal": 0,
+      "note": "+0.23%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3608.137939453125,
+      "chg_pct": -1.3637940546238425,
+      "signal": -1,
+      "note": "-1.36%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46887.76953125,
-      "chg_pct": 1.2849475022761812,
-      "signal": 1,
-      "note": "+1.28%",
+      "price": 46041.4296875,
+      "chg_pct": -1.805033278850953,
+      "signal": -1,
+      "note": "-1.81%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.53600311279297,
-      "chg_pct": -0.23972850209302374,
+      "price": 101.65599822998047,
+      "chg_pct": -0.12183194223188502,
       "signal": 0,
-      "note": "-0.24%(中性)",
+      "note": "-0.12%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4037.89990234375,
-      "chg_pct": -2.701207172439759,
+      "price": 4028.300048828125,
+      "chg_pct": -2.932528943900602,
       "signal": 1,
-      "note": "-2.70%()",
+      "note": "-2.93%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.37000274658203,
-      "chg_pct": 2.2851273142921764,
+      "price": 100.0199966430664,
+      "chg_pct": 2.954189472063969,
       "signal": 1,
-      "note": "+2.29%",
+      "note": "+2.95%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,59 +480,53 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81073.40625,
-      "chg_pct": -3.497790307407836,
+      "price": 81614.953125,
+      "chg_pct": -2.8531834935721587,
       "signal": -1,
-      "note": "-3.50%",
+      "note": "-2.85%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump sued over 50% tariffs on Canada in latest trade challenge - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Democrats say Trump’s trade deals were corrupt. They’re gearing up to investigat",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump: ‘I don’t want Canadian anything’ - The Hill",
+      "title": "Exclusive | Trump Called Musk and Asked Him to Lift Ukraine Starlink Restriction",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "Trump says wind turbine imports threaten national security - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: Trump rallies in Iowa with GOP Senate candidate Ashley Hinson - PBS",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Administration Announces Major Investment in American Fertilizer Manufactu",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he called Google’s CEO to discuss renaming Atlantic Ocean - The Washi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration and Texas urge court to leave their agreement on deportatio",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
       "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -549,8 +543,14 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Typhoon Champi Shuts Taiwan’s $5 Trillion Stock Market - Bloomberg.com",
+      "title": "Taiwan Shuts $5 Trillion Stock Market as Typhoon Champi Nears - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -568,7 +568,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Wants In on SpaceX’s Terafab — but Only If It Runs the Fab ",
+      "title": "Taiwan Semiconductor and ASML Are Incredible, but 1 of These Monopoly Chip Stock",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -592,9 +592,9 @@
     },
     {
       "label": "聯準會",
-      "title": "The Stock Market Usually Excels After Midterm Elections. This Year Looks Differe",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s go",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
