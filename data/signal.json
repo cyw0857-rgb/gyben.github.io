@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23 11:26",
+  "generated_at": "2026-10-23 16:46",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-26",
   "direction": -1,
-  "total_score": -17,
+  "total_score": -16,
   "tw_score": -9,
-  "intl_score": -7,
+  "intl_score": -5,
   "news_score": -2,
-  "psy_score": -1,
+  "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4028.300048828125,
-    "chg_pct": -2.932528943900602,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.9%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 100.0199966430664,
-    "oil_chg": 2.954189472063969
+    "price_usd": 4030.800048828125,
+    "chg_pct": -0.7289886274142439,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.7%，影響中性",
+    "oil_usd": 100.2699966430664,
+    "oil_chg": 0.8042579798388247
   },
   "intl_data": {
     "S&P500": {
@@ -392,50 +392,50 @@
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10731.9775390625,
-      "chg_pct": -6.723549832778701,
+      "price": 10731.98046875,
+      "chg_pct": -6.723524369545192,
       "signal": -1,
       "note": "-6.72%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.030000686645508,
-      "chg_pct": 14.088731046009181,
+      "price": 18.93000030517578,
+      "chg_pct": -0.525488060228515,
       "signal": 1,
-      "note": "VIX=19.0(低恐慌)",
+      "note": "VIX=18.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 61825.26171875,
-      "chg_pct": -1.7208954045932892,
+      "price": 62693.16015625,
+      "chg_pct": -0.3412606251195713,
       "signal": -1,
-      "note": "-1.72%",
+      "note": "-0.34%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5417.0400390625,
-      "chg_pct": -2.109411487227615,
-      "signal": -1,
-      "note": "-2.11%",
+      "price": 5550.2998046875,
+      "chg_pct": 0.29870748328731944,
+      "signal": 0,
+      "note": "+0.30%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22987.689453125,
-      "chg_pct": 0.23113366459568085,
-      "signal": 0,
-      "note": "+0.23%",
+      "price": 23093.369140625,
+      "chg_pct": 0.6919192039620675,
+      "signal": 1,
+      "note": "+0.69%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3608.137939453125,
-      "chg_pct": -1.3637940546238425,
-      "signal": -1,
-      "note": "-1.36%",
+      "price": 3690.475341796875,
+      "chg_pct": 0.8870758153391575,
+      "signal": 1,
+      "note": "+0.89%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.65599822998047,
-      "chg_pct": -0.12183194223188502,
+      "price": 101.81600189208984,
+      "chg_pct": 0.2027372113973738,
       "signal": 0,
-      "note": "-0.12%(中性)",
+      "note": "+0.20%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4028.300048828125,
-      "chg_pct": -2.932528943900602,
+      "price": 4030.800048828125,
+      "chg_pct": -0.7289886274142439,
       "signal": 1,
-      "note": "-2.93%()",
+      "note": "-0.73%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 100.0199966430664,
-      "chg_pct": 2.954189472063969,
+      "price": 100.2699966430664,
+      "chg_pct": 0.8042579798388247,
       "signal": 1,
-      "note": "+2.95%",
+      "note": "+0.80%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,20 +480,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81614.953125,
-      "chg_pct": -2.8531834935721587,
-      "signal": -1,
-      "note": "-2.85%",
+      "price": 81695.21875,
+      "chg_pct": 0.4714293592899716,
+      "signal": 1,
+      "note": "+0.47%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Exclusive | Trump Called Musk and Asked Him to Lift Ukraine Starlink Restriction",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
     {
       "label": "川普動態",
       "title": "Trump says wind turbine imports threaten national security - Reuters",
@@ -502,27 +496,33 @@
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Trump rallies in Iowa with GOP Senate candidate Ashley Hinson - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Administration Announces Major Investment in American Fertilizer Manufactu",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he called Google’s CEO to discuss renaming Atlantic Ocean - The Washi",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump administration and Texas urge court to leave their agreement on deportatio",
+      "title": "Trump calls for Omar to resign, defends Ramaswamy campaign ad at Iowa rally - Io",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Asked Musk to Reverse Limits on Ukraine’s Military Internet Use - The New ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Elon Musk restored Ukraine’s Starlink access but declines to say whet",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge orders Trump to sit for a deposition in his defamation lawsuit against the",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump ordered to sit for deposition in $10 billion BBC lawsuit - Axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -544,7 +544,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,13 +556,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "EXCLUSIVE: TSMC seeks factory-equipment alternatives to thwart China's rare eart",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor and ASML Are Incredible, but 1 of These Monopoly Chip Stock",
+      "title": "TSMC says four construction workers killed at Taiwan site, halting work - Reuter",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -573,10 +567,10 @@
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "Stocks Set for Worst Day Since July as Bonds Rally: Markets Wrap - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor and ASML Are Incredible, but 1 of These Monopoly Chip Stock",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -586,15 +580,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed to skip October but raise rates again in December, nearly all economists say",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "The Stock Market Usually Excels After Midterm Elections. This Year Looks Differe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s go",
+      "title": "The Federal Reserve's Latest October Inflation Forecast Has Arrived, and It's Te",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "How Might Stock, Bond, And Oil Markets React To The Fed's Rate Decision - Seekin",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
