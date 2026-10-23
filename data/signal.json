@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-23 16:46",
+  "generated_at": "2026-10-23 18:31",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-26",
   "direction": -1,
-  "total_score": -16,
+  "total_score": -15,
   "tw_score": -9,
   "intl_score": -5,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": 0,
-  "foreign_fut_net": -1221,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4030.800048828125,
-    "chg_pct": -0.7289886274142439,
+    "price_usd": 4039.39990234375,
+    "chg_pct": -0.5171904370276028,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 100.2699966430664,
-    "oil_chg": 0.8042579798388247
+    "warning": "黃金小幅變動 -0.5%，影響中性",
+    "oil_usd": 101.06999969482422,
+    "oil_chg": 1.6085236297233292
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.93000030517578,
-      "chg_pct": -0.525488060228515,
+      "price": 19.530000686645508,
+      "chg_pct": 2.627430278291477,
       "signal": 1,
-      "note": "VIX=18.9(低恐慌)",
+      "note": "VIX=19.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.81600189208984,
-      "chg_pct": 0.2027372113973738,
+      "price": 101.73699951171875,
+      "chg_pct": 0.12498661608535552,
       "signal": 0,
-      "note": "+0.20%(中性)",
+      "note": "+0.12%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4030.800048828125,
-      "chg_pct": -0.7289886274142439,
+      "price": 4039.39990234375,
+      "chg_pct": -0.5171904370276028,
       "signal": 1,
-      "note": "-0.73%()",
+      "note": "-0.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 100.2699966430664,
-      "chg_pct": 0.8042579798388247,
+      "price": 101.06999969482422,
+      "chg_pct": 1.6085236297233292,
       "signal": 1,
-      "note": "+0.80%",
+      "note": "+1.61%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81695.21875,
-      "chg_pct": 0.4714293592899716,
+      "price": 81591.40625,
+      "chg_pct": 0.34375738019558566,
       "signal": 1,
-      "note": "+0.47%",
+      "note": "+0.34%",
       "desc": "風險偏好指標"
     }
   },
@@ -496,31 +496,31 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump promised $2 gas and cheaper groceries. Here’s what voters got instead. - N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "President Trump says he called Google's CEO to rename the Atlantic Ocean - Masha",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump calls for Omar to resign, defends Ramaswamy campaign ad at Iowa rally - Io",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump Asked Musk to Reverse Limits on Ukraine’s Military Internet Use - The New ",
+      "title": "Ukraine says Starlink still restricted after Trump says limits lifted - BBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Elon Musk restored Ukraine’s Starlink access but declines to say whet",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Judge orders Trump to sit for a deposition in his defamation lawsuit against the",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump ordered to sit for deposition in $10 billion BBC lawsuit - Axios",
+      "title": "Trump says Musk's Starshield system 'back' online in Ukraine after reports it ha",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -574,27 +574,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Bond traders are backing off Fed rate hike bets — here's what it means for mortg",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed to skip October but raise rates again in December, nearly all economists say",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "The Stock Market Usually Excels After Midterm Elections. This Year Looks Differe",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Federal Reserve's Latest October Inflation Forecast Has Arrived, and It's Te",
+      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "How Might Stock, Bond, And Oil Markets React To The Fed's Rate Decision - Seekin",
+      "title": "The Fed Is Raising Rates Again: Here's What It Means for Savers | Banking Advice",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Federal Reserve Just Warned More Rate Hikes Are Likely Coming. History Has G",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
