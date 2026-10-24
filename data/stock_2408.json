@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-10-23 19:28",
+  "updated": "2026-10-24 08:08",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -8,
   "reasons": [
     "均線空頭排列 MA5<MA10<MA20",
-    "RSI=25 弱勢區",
+    "RSI=22 弱勢區",
     "MACD死叉零軸下",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=25 弱勢區",
+      "text": "RSI=22 弱勢區",
       "score": -2
     },
     {
@@ -38,27 +38,27 @@
       "score": -1
     }
   ],
-  "rsi": 24.8,
-  "macd": -19.99,
-  "macds": -9.05,
-  "k": 11.3,
-  "d": 19.6,
-  "ma5": 431.2,
-  "ma10": 462.3,
-  "ma20": 488.85,
-  "ma60": 486.17,
+  "rsi": 22.1,
+  "macd": -22.11,
+  "macds": -11.67,
+  "k": 8.2,
+  "d": 15.8,
+  "ma5": 424.5,
+  "ma10": 450.5,
+  "ma20": 484.7,
+  "ma60": 486.52,
   "last_close": 414.0,
-  "chg_pct": -5.15,
+  "chg_pct": 0.0,
   "ma_bull": false,
   "ma_bear": true,
   "retail": {
     "mood": "冷清（量縮）",
-    "vol_ratio": 0.7,
+    "vol_ratio": 0.0,
     "score": 0,
     "signals": [
       {
         "icon": "💤",
-        "text": "量縮 0.7倍，觀望氣氛濃"
+        "text": "量縮 0.0倍，觀望氣氛濃"
       }
     ]
   },
@@ -66,8 +66,8 @@
     {
       "month": "2026-11",
       "price": 389.16,
-      "price_high": 474.79,
-      "price_low": 303.53,
+      "price_high": 471.58,
+      "price_low": 306.74,
       "chg_pct": -6.0,
       "trend": "down",
       "model_note": "📉 死叉↓  美光↓-20%  費半↓-15%  台股↓-4%",
@@ -76,8 +76,8 @@
     {
       "month": "2026-12",
       "price": 365.81,
-      "price_high": 479.65,
-      "price_low": 251.97,
+      "price_high": 475.38,
+      "price_low": 256.24,
       "chg_pct": -11.6,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -86,8 +86,8 @@
     {
       "month": "2027-01",
       "price": 343.86,
-      "price_high": 474.92,
-      "price_low": 212.81,
+      "price_high": 470.01,
+      "price_low": 217.72,
       "chg_pct": -16.9,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
@@ -129,17 +129,17 @@
   "resistance": 525.0,
   "weekly": {
     "proj_center": 414.0,
-    "proj_high": 458.45,
-    "proj_low": 369.55,
+    "proj_high": 456.79,
+    "proj_low": 371.21,
     "support": 436.0,
     "resistance": 525.0,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
-  "daily_vol_pct": 4.8,
+  "daily_vol_pct": 4.62,
   "slope_per_day": -0.048,
-  "model_accuracy": 53.7,
-  "model_samples": 134,
+  "model_accuracy": 53.8,
+  "model_samples": 132,
   "total_return": -51.7,
   "ipo_date": "2000-08-18",
   "model_score": -6.8,
