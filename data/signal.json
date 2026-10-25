@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-25 07:51",
+  "generated_at": "2026-10-26 01:17",
   "mode": "morning",
   "signal_date": "2026-10-22",
-  "trade_date": "2026-10-26",
+  "trade_date": "2026-10-27",
   "direction": 0,
-  "total_score": -8,
+  "total_score": -9,
   "tw_score": -9,
   "intl_score": 1,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": 1,
-  "foreign_fut_net": 0,
+  "inst_score": 0,
+  "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-9) vs 國際(+1) 方向相反 → 觀望",
   "threshold": 6,
@@ -480,14 +480,38 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80815.0078125,
-      "chg_pct": -0.31968212755755343,
-      "signal": -1,
-      "note": "-0.32%",
+      "price": 80704.703125,
+      "chg_pct": -0.10661210705460775,
+      "signal": 0,
+      "note": "-0.11%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Audi to Build Factory in Georgia, Trump Says - The New York Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "How Ukraine's strikes on Russian energy sites deepened the rift with Trump - Reu",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Inflation under Trump is only about half the rate under Biden. Voters are still ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump casts his midterm ballot early in Florida - PBS",
@@ -496,33 +520,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump set to announce Audi plan to build US factory in Georgia, source says - Re",
+      "title": "They wallow in Trump gunk 24/7. They say it’s necessary - The Guardian",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump administration cancels some Canada tariffs amid close midterm races - NBC ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says US could strike Iran ‘tomorrow’ or reach ‘big, beautiful’ deal - Anad",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -544,9 +544,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Is Set to Cash in on AI. Here's What a $5,000 Investment Co",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -567,16 +573,10 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSMC) Posted Record Profit and the Stock Still Fell. Here'",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
       "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -592,9 +592,9 @@
     },
     {
       "label": "聯準會",
-      "title": "The Fed Is Raising Rates Again: Here's What It Means for Savers | Banking Advice",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Expect The Fed To Start Cutting Rates - As Soon As Next Week - Seeking Alpha",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
