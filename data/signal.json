@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-26 07:40",
+  "generated_at": "2026-10-26 11:17",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-27",
   "direction": -1,
-  "total_score": -12,
+  "total_score": -14,
   "tw_score": -9,
-  "intl_score": -1,
+  "intl_score": -3,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4013.300048828125,
-    "chg_pct": 0.1347375587203934,
+    "price_usd": 4022.0,
+    "chg_pct": 0.3518076299261992,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.1%，影響中性",
-    "oil_usd": 102.19999694824219,
-    "oil_chg": -1.0361186497589172
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 101.01000213623047,
+    "oil_chg": -2.1884328268617934
   },
   "intl_data": {
     "S&P500": {
@@ -408,34 +408,34 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 62693.16015625,
-      "chg_pct": -0.3412606251195713,
+      "price": 62214.66015625,
+      "chg_pct": -0.7632411555063354,
       "signal": -1,
-      "note": "-0.34%",
+      "note": "-0.76%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5550.2998046875,
-      "chg_pct": 0.29870748328731944,
-      "signal": 0,
-      "note": "+0.30%",
+      "price": 5479.18994140625,
+      "chg_pct": -1.2811895894559469,
+      "signal": -1,
+      "note": "-1.28%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23093.369140625,
-      "chg_pct": 0.6919192039620675,
-      "signal": 1,
-      "note": "+0.69%",
+      "price": 23130.880859375,
+      "chg_pct": 0.162435019860358,
+      "signal": 0,
+      "note": "+0.16%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3690.47509765625,
-      "chg_pct": 0.8870691412304147,
-      "signal": 1,
-      "note": "+0.89%",
+      "price": 3677.447265625,
+      "chg_pct": -0.3530123273158983,
+      "signal": -1,
+      "note": "-0.35%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.73699951171875,
-      "chg_pct": -0.07170027367203119,
+      "price": 101.63999938964844,
+      "chg_pct": -0.16697590906774656,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.17%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4013.300048828125,
-      "chg_pct": 0.1347375587203934,
+      "price": 4022.0,
+      "chg_pct": 0.3518076299261992,
       "signal": 0,
-      "note": "+0.13%()",
+      "note": "+0.35%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.19999694824219,
-      "chg_pct": -1.0361186497589172,
+      "price": 101.01000213623047,
+      "chg_pct": -2.1884328268617934,
       "signal": -1,
-      "note": "-1.04%",
+      "note": "-2.19%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,23 +480,35 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80196.4296875,
-      "chg_pct": -0.7357347440492313,
+      "price": 79562.703125,
+      "chg_pct": -1.5201387610967247,
       "signal": -1,
-      "note": "-0.74%",
+      "note": "-1.52%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Blanche says Trump isn't trying to meddle with Alaska election results by suing ",
+      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Fact checks, takeaways: Donald Trump rips Dems, downplays gas prices in Michigan",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump’s tariff pause angers some US ranchers, boosts Brazilian beef imports - Al",
+      "title": "Blanche says Trump isn't trying to meddle with Alaska election results by suing ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -508,21 +520,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says Decision Time Nears on Iran: Deal or ‘Finish It Off’ - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump’s tariff pause angers some US ranchers, boosts Brazilian beef imports - Al",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -532,19 +532,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -592,7 +592,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed - Bloomberg.com",
+      "title": "Week Ahead for FX, Bonds: Decisions From Fed, Other Central Banks in Focus - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
