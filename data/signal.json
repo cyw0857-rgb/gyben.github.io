@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-26 06:01",
+  "generated_at": "2026-10-26 07:40",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-27",
-  "direction": 0,
-  "total_score": -9,
+  "direction": -1,
+  "total_score": -12,
   "tw_score": -9,
-  "intl_score": 1,
+  "intl_score": -1,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+1) 方向相反 → 觀望",
+  "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46041.4296875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4007.89990234375,
-    "chg_pct": -1.2929760925690073,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 103.2699966430664,
-    "oil_chg": 3.820242661837197
+    "price_usd": 4013.300048828125,
+    "chg_pct": 0.1347375587203934,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.1%，影響中性",
+    "oil_usd": 102.19999694824219,
+    "oil_chg": -1.0361186497589172
   },
   "intl_data": {
     "S&P500": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.80999755859375,
-      "chg_pct": 0.1968280159835101,
+      "price": 101.73699951171875,
+      "chg_pct": -0.07170027367203119,
       "signal": 0,
-      "note": "+0.20%(中性)",
+      "note": "-0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4007.89990234375,
-      "chg_pct": -1.2929760925690073,
-      "signal": 1,
-      "note": "-1.29%()",
+      "price": 4013.300048828125,
+      "chg_pct": 0.1347375587203934,
+      "signal": 0,
+      "note": "+0.13%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 103.2699966430664,
-      "chg_pct": 3.820242661837197,
-      "signal": 1,
-      "note": "+3.82%",
+      "price": 102.19999694824219,
+      "chg_pct": -1.0361186497589172,
+      "signal": -1,
+      "note": "-1.04%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,17 +480,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80383.5078125,
-      "chg_pct": -0.5041761485363391,
+      "price": 80196.4296875,
+      "chg_pct": -0.7357347440492313,
       "signal": -1,
-      "note": "-0.50%",
+      "note": "-0.74%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
+      "title": "Blanche says Trump isn't trying to meddle with Alaska election results by suing ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump’s tariff pause angers some US ranchers, boosts Brazilian beef imports - Al",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Audi to Build Factory in Georgia, Trump Says - The New York Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -502,21 +514,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Audi to Build Factory in Georgia, Trump Says - The New York Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Catholic bishops regret White House prayer photo with Trump, say it was used pol",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -544,7 +544,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trade Wars: How Tariffs Hit Prices Differently in Canada - Harvard Business Scho",
+      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -574,27 +574,27 @@
     },
     {
       "label": "聯準會",
-      "title": "US Federal Reserve to Raise Rates Twice More in 2026, Says Bank of America - Mor",
+      "title": "Fed expected to hold rates steady this week despite hot inflation — but signal t",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
+      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Stock Market Ends Week Lower As Oil Soars; Fed Meeting, Earnings Tsunami Looms -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "What To Expect From Wednesday’s Federal Reserve Meeting - Investopedia",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
