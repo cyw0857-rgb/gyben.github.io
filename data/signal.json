@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-26 11:17",
+  "generated_at": "2026-10-26 17:08",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-27",
   "direction": -1,
-  "total_score": -14,
+  "total_score": -13,
   "tw_score": -9,
-  "intl_score": -3,
+  "intl_score": -2,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4022.0,
-    "chg_pct": 0.3518076299261992,
+    "price_usd": 4033.0,
+    "chg_pct": 0.626265582171149,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 101.01000213623047,
-    "oil_chg": -2.1884328268617934
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 100.91000366210938,
+    "oil_chg": -2.285264895586188
   },
   "intl_data": {
     "S&P500": {
@@ -400,42 +400,42 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.450000762939453,
-      "chg_pct": 2.2070418346788845,
+      "price": 19.239999771118164,
+      "chg_pct": -1.0796965736959276,
       "signal": 1,
-      "note": "VIX=19.5(低恐慌)",
+      "note": "VIX=19.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 62214.66015625,
-      "chg_pct": -0.7632411555063354,
+      "price": 62189.6484375,
+      "chg_pct": -0.8031366061227398,
       "signal": -1,
-      "note": "-0.76%",
+      "note": "-0.80%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5479.18994140625,
-      "chg_pct": -1.2811895894559469,
+      "price": 5469.47021484375,
+      "chg_pct": -1.456310337965626,
       "signal": -1,
-      "note": "-1.28%",
+      "note": "-1.46%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23130.880859375,
-      "chg_pct": 0.162435019860358,
-      "signal": 0,
-      "note": "+0.16%",
+      "price": 23211.810546875,
+      "chg_pct": 0.5128805828580563,
+      "signal": 1,
+      "note": "+0.51%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3677.447265625,
-      "chg_pct": -0.3530123273158983,
-      "signal": -1,
-      "note": "-0.35%",
+      "price": 3697.52001953125,
+      "chg_pct": 0.19089471378560705,
+      "signal": 0,
+      "note": "+0.19%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.63999938964844,
-      "chg_pct": -0.16697590906774656,
+      "price": 101.80599975585938,
+      "chg_pct": -0.003926729034714083,
       "signal": 0,
-      "note": "-0.17%(中性)",
+      "note": "-0.00%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4022.0,
-      "chg_pct": 0.3518076299261992,
+      "price": 4033.0,
+      "chg_pct": 0.626265582171149,
       "signal": 0,
-      "note": "+0.35%()",
+      "note": "+0.63%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.01000213623047,
-      "chg_pct": -2.1884328268617934,
+      "price": 100.91000366210938,
+      "chg_pct": -2.285264895586188,
       "signal": -1,
-      "note": "-2.19%",
+      "note": "-2.29%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,14 +480,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79562.703125,
-      "chg_pct": -1.5201387610967247,
-      "signal": -1,
-      "note": "-1.52%",
+      "price": 80112.7265625,
+      "chg_pct": 0.11086516712318656,
+      "signal": 0,
+      "note": "+0.11%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
     {
       "label": "川普動態",
       "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
@@ -496,9 +502,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says Canada trade deal coming 'soon' - AFP.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
@@ -508,19 +514,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Blanche says Trump isn't trying to meddle with Alaska election results by suing ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
       "title": "Audi to Build Factory in Georgia, Trump Says - The New York Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump’s tariff pause angers some US ranchers, boosts Brazilian beef imports - Al",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -532,19 +532,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "A long-term trade war with Canada could hurt Massachusetts’ economy - WGBH",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,39 +562,39 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Shuts $5 Trillion Stock Market as Typhoon Champi Nears - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "How Taiwan’s Stock Market Got Too Big for Its Central Bank｜Industry｜2026-10-26｜w",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "ASML Vs. Taiwan Semiconductor: Who Can More Fully Satisfy AI Demand? - 24/7 Wall",
+      "title": "Taiwan Semiconductor Will Transition Into an Indispensible Utility of Global Com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed expected to hold rates steady this week despite hot inflation — but signal t",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed holds interest rates steady in 1st move since Iran war spiked oil prices - A",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "What To Expect From Wednesday’s Federal Reserve Meeting - Investopedia",
+      "title": "Stock Market Investors Just Got Bad News About President Trump's Economy. Histor",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Week Ahead for FX, Bonds: Decisions From Fed, Other Central Banks in Focus - WSJ",
+      "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stock Futures Are Rising Ahead of Fed Decision - Barron's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Wall St Week Ahead Earnings flood, Fed meeting will test rickety AI market rally",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
