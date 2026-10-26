@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-26 19:32",
+  "generated_at": "2026-10-26 20:45",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-27",
   "direction": -1,
-  "total_score": -13,
+  "total_score": -12,
   "tw_score": -9,
   "intl_score": -2,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": 0,
-  "foreign_fut_net": -1221,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4024.800048828125,
-    "chg_pct": 0.42167087243102275,
+    "price_usd": 4037.60009765625,
+    "chg_pct": 0.741041344249437,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 101.11000061035156,
-    "oil_chg": -2.0916007581373997
+    "warning": "黃金小幅變動 +0.7%，影響中性",
+    "oil_usd": 100.98999786376953,
+    "oil_chg": -2.2078036732946433
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.65999984741211,
-      "chg_pct": 1.0796867672766064,
+      "price": 19.059999465942383,
+      "chg_pct": -2.005147977886917,
       "signal": 1,
-      "note": "VIX=19.7(低恐慌)",
+      "note": "VIX=19.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,42 +448,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.875,
-      "chg_pct": 0.06384681560260302,
+      "price": 101.85199737548828,
+      "chg_pct": 0.04125313613759738,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "+0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4024.800048828125,
-      "chg_pct": 0.42167087243102275,
+      "price": 4037.60009765625,
+      "chg_pct": 0.741041344249437,
       "signal": 0,
-      "note": "+0.42%()",
+      "note": "+0.74%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.11000061035156,
-      "chg_pct": -2.0916007581373997,
+      "price": 100.98999786376953,
+      "chg_pct": -2.2078036732946433,
       "signal": -1,
-      "note": "-2.09%",
+      "note": "-2.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.98799991607666,
-      "chg_pct": 0.7066393484130555,
+      "price": 4.994999885559082,
+      "chg_pct": 0.14033619888124899,
       "signal": 0,
-      "note": "4.99%(+0.71%)",
+      "note": "4.99%(+0.14%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 80159.296875,
-      "chg_pct": 0.16906059343714527,
+      "price": 80193.4609375,
+      "chg_pct": 0.21175285971309588,
       "signal": 0,
-      "note": "+0.17%",
+      "note": "+0.21%",
       "desc": "風險偏好指標"
     }
   },
@@ -496,33 +496,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "title": "Trump escalates anti-Muslim attacks against El-Sayed in Michigan - NPR",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Says Tariffs Saved the U.S. Auto Industry. The Data Tells a Different Stor",
+      "title": "Can the courts end Trump's illegal tariffs? - Peterson Institute for Internation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Trade General Fights Back as Tariffs Become Toxic - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Blanche says Trump isn't trying to meddle with Alaska election results by suing ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -550,15 +550,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Is Set to Cash in on AI. Here's What a $5,000 Investment Co",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "EXCLUSIVE: TSMC seeks factory-equipment alternatives to thwart China's rare eart",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Is Set to Cash in on AI. Here's What a $5,000 Investment Co",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -574,25 +574,25 @@
     },
     {
       "label": "聯準會",
-      "title": "Week Ahead for FX, Bonds: Decisions From Fed, Other Central Banks in Focus - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "title": "U.S. Treasury yields are little changed as investors look ahead to the Fed's rat",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed expected to hold rates steady this week despite hot inflation — but signal t",
+      "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "What To Expect From Wednesday’s Federal Reserve Meeting - Investopedia",
+      "title": "Big Tech Earnings, the Fed, and Elections. The Next 2 Weeks Could Make or Break ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The stock market’s biggest test in weeks is here - MarketWatch",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
