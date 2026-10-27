@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-27 17:22",
+  "generated_at": "2026-10-27 18:59",
   "mode": "morning",
   "signal_date": "2026-10-27",
   "trade_date": "2026-10-28",
   "direction": 0,
-  "total_score": -1,
+  "total_score": -2,
   "tw_score": -9,
-  "intl_score": 8,
+  "intl_score": 7,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 2,
   "foreign_fut_net": 1221,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+8) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-9) vs 國際(+7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46096.23046875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4013.800048828125,
-    "chg_pct": -0.6091485269041355,
+    "price_usd": 4021.89990234375,
+    "chg_pct": -0.408577664396831,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 101.69000244140625,
-    "oil_chg": -0.06878900683444088
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 101.27999877929688,
+    "oil_chg": -0.47170140217862094
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.239999771118164,
-      "chg_pct": -0.8156586378937394,
+      "price": 18.049999237060547,
+      "chg_pct": -1.8488317774457004,
       "signal": 1,
-      "note": "VIX=18.2(低恐慌)",
+      "note": "VIX=18.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.20600128173828,
-      "chg_pct": 0.2412732438942208,
+      "price": 102.19300079345703,
+      "chg_pct": 0.2285226668071425,
       "signal": 0,
-      "note": "+0.24%(中性)",
+      "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4013.800048828125,
-      "chg_pct": -0.6091485269041355,
-      "signal": 1,
-      "note": "-0.61%()",
+      "price": 4021.89990234375,
+      "chg_pct": -0.408577664396831,
+      "signal": 0,
+      "note": "-0.41%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.69000244140625,
-      "chg_pct": -0.06878900683444088,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 101.27999877929688,
+      "chg_pct": -0.47170140217862094,
+      "signal": -1,
+      "note": "-0.47%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79674.15625,
-      "chg_pct": -0.4155904215782046,
-      "signal": -1,
-      "note": "-0.42%",
+      "price": 79788.7734375,
+      "chg_pct": -0.27233085684667646,
+      "signal": 0,
+      "note": "-0.27%",
       "desc": "風險偏好指標"
     }
   },
@@ -526,15 +526,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -568,7 +568,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Bull of the Day: Taiwan Semiconductor Manufacturing Company (TSM) - Zacks Invest",
+      "title": "FILE PHOTO: FILE PHOTO: The logo of Taiwan Semiconductor Manufacturing Company (",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -580,19 +586,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed to hit pause on rate hikes, but maybe not for long - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Gold retreats on stronger dollar; traders brace for Fed - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
       "title": "5 things to watch from the Federal Reserve's next meeting - LancasterOnline",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Investors: Oct. 28 Will Be an Important Day for the Stock Market. Here's Why. - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
