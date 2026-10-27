@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-27 07:18",
+  "generated_at": "2026-10-27 08:59",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-28",
   "direction": 0,
-  "total_score": -5,
+  "total_score": -2,
   "tw_score": -9,
-  "intl_score": 6,
+  "intl_score": 9,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-9) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46041.4296875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4024.300048828125,
-    "chg_pct": 0.40919551096534323,
+    "price_usd": 4023.89990234375,
+    "chg_pct": 0.3992115669017452,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 101.31999969482422,
-    "oil_chg": -1.8882511974721856
+    "oil_usd": 101.25,
+    "oil_chg": -1.95603438436059
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 62693.16015625,
-      "chg_pct": -0.3412606251195713,
-      "signal": -1,
-      "note": "-0.34%",
+      "price": 63337.80078125,
+      "chg_pct": 1.028247137954705,
+      "signal": 1,
+      "note": "+1.03%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5550.2998046875,
-      "chg_pct": 0.29870748328731944,
-      "signal": 0,
-      "note": "+0.30%",
+      "price": 5677.919921875,
+      "chg_pct": 2.299337363356815,
+      "signal": 1,
+      "note": "+2.30%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.02999877929688,
-      "chg_pct": 0.21608999703247195,
+      "price": 102.04399871826172,
+      "chg_pct": 0.22984104241167108,
       "signal": 0,
-      "note": "+0.22%(中性)",
+      "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4024.300048828125,
-      "chg_pct": 0.40919551096534323,
+      "price": 4023.89990234375,
+      "chg_pct": 0.3992115669017452,
       "signal": 0,
-      "note": "+0.41%()",
+      "note": "+0.40%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.31999969482422,
-      "chg_pct": -1.8882511974721856,
+      "price": 101.25,
+      "chg_pct": -1.95603438436059,
       "signal": -1,
-      "note": "-1.89%",
+      "note": "-1.96%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79770.2890625,
-      "chg_pct": -0.31705329055059944,
-      "signal": -1,
-      "note": "-0.32%",
+      "price": 80083.5390625,
+      "chg_pct": 0.0743917377138677,
+      "signal": 0,
+      "note": "+0.07%",
       "desc": "風險偏好指標"
     }
   },
@@ -526,25 +526,25 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
