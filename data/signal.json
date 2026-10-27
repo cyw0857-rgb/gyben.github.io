@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-27 08:59",
+  "generated_at": "2026-10-27 11:46",
   "mode": "morning",
-  "signal_date": "2026-10-22",
+  "signal_date": "2026-10-27",
   "trade_date": "2026-10-28",
   "direction": 0,
-  "total_score": -2,
+  "total_score": -4,
   "tw_score": -9,
-  "intl_score": 9,
+  "intl_score": 7,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1221,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-9) vs 國際(+7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46041.4296875,
-  "tw_chg_pct": -1.8050332788509538,
-  "tw_ma5": 46631.09375,
-  "tw_ma10": 47570.787890625,
-  "tw_rsi": 34.14592073268402,
-  "tw_macd": -66.22076682831539,
-  "tw_macds": 332.40876204016917,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46816.78203125,
-  "tw_ma10_p2": 47947.28203125,
-  "tw_ma20_p2": 48155.4814453125,
-  "tw_ma20": 48071.6109375,
+  "tw_last_close": 45922.6015625,
+  "tw_chg_pct": -0.25808956369628433,
+  "tw_ma5": 46393.36171875,
+  "tw_ma10": 47231.70390625,
+  "tw_rsi": 32.48459771839886,
+  "tw_macd": -175.72780953800975,
+  "tw_macds": 230.77506575162496,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 46631.09375,
+  "tw_ma10_p2": 47570.787890625,
+  "tw_ma20_p2": 48071.6109375,
+  "tw_ma20": 47977.732421875,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4023.89990234375,
-    "chg_pct": 0.3992115669017452,
+    "price_usd": 4031.300048828125,
+    "chg_pct": 0.5838505714848568,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 101.25,
-    "oil_chg": -1.95603438436059
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 100.91999816894531,
+    "oil_chg": -2.275586860183048
   },
   "intl_data": {
     "S&P500": {
@@ -376,8 +376,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 52361.578125,
-      "chg_pct": 0.28041275428794066,
+      "price": 52361.6015625,
+      "chg_pct": 0.28045764067712314,
       "signal": 0,
       "note": "+0.28%",
       "desc": "藍籌股風向球"
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63337.80078125,
-      "chg_pct": 1.028247137954705,
+      "price": 63300.9296875,
+      "chg_pct": 1.786923190467666,
       "signal": 1,
-      "note": "+1.03%",
+      "note": "+1.79%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5677.919921875,
-      "chg_pct": 2.299337363356815,
+      "price": 5649.580078125,
+      "chg_pct": 3.293003823157218,
       "signal": 1,
-      "note": "+2.30%",
+      "note": "+3.29%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23093.369140625,
-      "chg_pct": 0.6919192039620675,
-      "signal": 1,
-      "note": "+0.69%",
+      "price": 23135.30078125,
+      "chg_pct": -0.32961567332497677,
+      "signal": -1,
+      "note": "-0.33%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3692.520263671875,
+      "chg_pct": -0.13521916941531095,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.14%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46041.4296875,
-      "chg_pct": -1.805033278850953,
-      "signal": -1,
-      "note": "-1.81%",
+      "price": 45922.6015625,
+      "chg_pct": -0.2580895636962837,
+      "signal": 0,
+      "note": "-0.26%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.04399871826172,
-      "chg_pct": 0.22984104241167108,
+      "price": 102.03700256347656,
+      "chg_pct": 0.22296926660092145,
       "signal": 0,
-      "note": "+0.23%(中性)",
+      "note": "+0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4023.89990234375,
-      "chg_pct": 0.3992115669017452,
+      "price": 4031.300048828125,
+      "chg_pct": 0.5838505714848568,
       "signal": 0,
-      "note": "+0.40%()",
+      "note": "+0.58%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.25,
-      "chg_pct": -1.95603438436059,
+      "price": 100.91999816894531,
+      "chg_pct": -2.275586860183048,
       "signal": -1,
-      "note": "-1.96%",
+      "note": "-2.28%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,55 +480,55 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80083.5390625,
-      "chg_pct": 0.0743917377138677,
-      "signal": 0,
-      "note": "+0.07%",
+      "price": 79713.0234375,
+      "chg_pct": -0.3886138466454354,
+      "signal": -1,
+      "note": "-0.39%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
+      "title": "Trump administration asks Washington state to set aside ballots from 400 voters ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
+      "title": "Carney says Trump moving closer to Canada’s trade demands as midterms loom - AP ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration attempting to prosecute former FBI Director James Comey aga",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
+      "title": "America Needs Canada’s Aluminum. Trump’s Tariff Exposed Just How Badly. - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Netanyahu touts Trump endorsement on eve of vote, suggests they may restart war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "Trump tariffs test Republicans ahead of midterms - Axios",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -544,7 +544,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,15 +556,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Intel and TSMC Are Vying for Chip Fabrication Supremacy. 1 Offers Superior Value",
+      "title": "Apple vs. Taiwan Semiconductor: Which Tech Stock Is a Better Buy in 2026? - The ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Anthropic Highlights Disruptions to TSMC Operations as a Risk - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -573,26 +567,32 @@
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "Week Ahead for FX, Bonds: Decisions From Fed, Other Central Banks in Focus - WSJ",
+      "label": "台股/半導體",
+      "title": "Anthropic Highlights Disruptions to TSMC Operations as a Risk - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what ",
+      "title": "U.S. Treasury yields are little changed as investors look ahead to the Fed's rat",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "There Are Three Paths Forward for the AI Boom. Two of Them Lead to Lower Interes",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Google, Microsoft, Amazon, and the Fed step up to a skittish market: What to wat",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "Fed to hit pause on rate hikes, but maybe not for long - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "What To Expect From This Week’s Federal Reserve Meeting - Investopedia",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
