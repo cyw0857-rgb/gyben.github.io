@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-28 03:01",
+  "generated_at": "2026-10-28 06:53",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-29",
   "direction": 0,
-  "total_score": -4,
+  "total_score": -5,
   "tw_score": -9,
   "intl_score": 4,
   "news_score": -2,
@@ -357,53 +357,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4068.89990234375,
-    "chg_pct": 0.7552496220668695,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.8%，影響中性",
-    "oil_usd": 99.93000030517578,
-    "oil_chg": -1.7983508182368015
+    "price_usd": 4077.0,
+    "chg_pct": 0.9558265300533466,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 99.88999938964844,
+    "oil_chg": -1.837659893204973
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7722.580078125,
-      "chg_pct": 0.5967361074670724,
+      "price": 7722.60009765625,
+      "chg_pct": 0.5969968881235083,
       "signal": 1,
       "note": "+0.60%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52380.83984375,
-      "chg_pct": 0.03678597826829728,
+      "price": 52377.5703125,
+      "chg_pct": 0.030541836347679787,
       "signal": 0,
-      "note": "+0.04%",
+      "note": "+0.03%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 26494.4921875,
-      "chg_pct": 1.2423348105636633,
+      "price": 26477.810546875,
+      "chg_pct": 1.1785899298015192,
       "signal": 1,
-      "note": "+1.24%",
+      "note": "+1.18%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 11473.0341796875,
-      "chg_pct": 3.5148239922681874,
+      "price": 11482.5048828125,
+      "chg_pct": 3.600272893728193,
       "signal": 1,
-      "note": "+3.51%",
+      "note": "+3.60%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.709999084472656,
-      "chg_pct": -3.6976635548914008,
+      "price": 17.520000457763672,
+      "chg_pct": -4.730826322781065,
       "signal": 1,
-      "note": "VIX=17.7(低恐慌)",
+      "note": "VIX=17.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.31800079345703,
-      "chg_pct": 0.35111976480872154,
+      "price": 102.36499786376953,
+      "chg_pct": 0.3972134002878308,
       "signal": -1,
-      "note": "+0.35%(偏空)",
+      "note": "+0.40%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4068.89990234375,
-      "chg_pct": 0.7552496220668695,
+      "price": 4077.0,
+      "chg_pct": 0.9558265300533466,
       "signal": 0,
-      "note": "+0.76%()",
+      "note": "+0.96%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.93000030517578,
-      "chg_pct": -1.7983508182368015,
+      "price": 99.88999938964844,
+      "chg_pct": -1.837659893204973,
       "signal": -1,
-      "note": "-1.80%",
+      "note": "-1.84%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,47 +480,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80542.859375,
-      "chg_pct": 0.6701981436700775,
+      "price": 80713.921875,
+      "chg_pct": 0.8840084789820222,
       "signal": 1,
-      "note": "+0.67%",
+      "note": "+0.88%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
+      "title": "White House tempers tough talk on Canada trade as inflation tops voter concerns ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "title": "A judge halted D.C. golf course renovations. Trump says they'll still start next",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "Trump says he will ban term artificial intelligence - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: Trump says Venezuela sent him 1 million barrels of oil as a 'gift' - PBS",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Another Trump term? - SCOTUSblog",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says He Will Ban Term ‘Artificial Intelligence’ In Latest Push For ‘Super ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -538,19 +538,25 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "Canada, UAE to sign economic partnership amid US tariff war fallout - thecradle.",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Stock Price, News, Quot",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Bull of the Day: Taiwan Semiconductor Manufacturing Company (TSM) - Yahoo Financ",
+      "title": "The U.S.-Taiwan ART’s Export Control Puzzle - Lawfare",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -567,32 +573,26 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "The U.S.-Taiwan ART’s Export Control Puzzle - Lawfare",
+      "label": "聯準會",
+      "title": "Oct 28 Could Be A Huge Day For The Stock Market - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes - CNBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "title": "Bond investors are thinking less about the Fed and more about AI, deficits - Reu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The Fed Is Expected to Hold Rates Steady. Warsh Will Have to Explain Why. - The ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "US Stock Futures Muted as Oil Holds Near April Highs Ahead of Fed Decision - U.S",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed to hit pause on rate hikes, but maybe not for long - Reuters",
+      "title": "FOMC Preview: A hawkish hold as markets watch for signals about timing and exten",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
