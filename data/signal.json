@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-27 18:59",
+  "generated_at": "2026-10-27 19:59",
   "mode": "morning",
   "signal_date": "2026-10-27",
   "trade_date": "2026-10-28",
   "direction": 0,
-  "total_score": -2,
+  "total_score": -1,
   "tw_score": -9,
   "intl_score": 7,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1221,
   "foreign_cash_b": 0,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4021.89990234375,
-    "chg_pct": -0.408577664396831,
+    "price_usd": 4023.5,
+    "chg_pct": -0.36895559390001476,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.4%，影響中性",
-    "oil_usd": 101.27999877929688,
-    "oil_chg": -0.47170140217862094
+    "oil_usd": 101.11000061035156,
+    "oil_chg": -0.6387593477137721
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.049999237060547,
-      "chg_pct": -1.8488317774457004,
+      "price": 17.8700008392334,
+      "chg_pct": -2.8276159199208104,
       "signal": 1,
-      "note": "VIX=18.0(低恐慌)",
+      "note": "VIX=17.9(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.19300079345703,
-      "chg_pct": 0.2285226668071425,
+      "price": 102.22100067138672,
+      "chg_pct": 0.2559842970357677,
       "signal": 0,
-      "note": "+0.23%(中性)",
+      "note": "+0.26%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4021.89990234375,
-      "chg_pct": -0.408577664396831,
+      "price": 4023.5,
+      "chg_pct": -0.36895559390001476,
       "signal": 0,
-      "note": "-0.41%()",
+      "note": "-0.37%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.27999877929688,
-      "chg_pct": -0.47170140217862094,
+      "price": 101.11000061035156,
+      "chg_pct": -0.6387593477137721,
       "signal": -1,
-      "note": "-0.47%",
+      "note": "-0.64%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79788.7734375,
-      "chg_pct": -0.27233085684667646,
-      "signal": 0,
-      "note": "-0.27%",
+      "price": 79762.0,
+      "chg_pct": -0.305794869411256,
+      "signal": -1,
+      "note": "-0.31%",
       "desc": "風險偏好指標"
     }
   },
@@ -544,13 +544,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Bull of the Day: Taiwan Semiconductor Manufacturing Company (TSM) - Yahoo Financ",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Stock Price, News, Quot",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -574,27 +574,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Will the Fed raise interest rates this year? Divided economists weigh in - ABC N",
+      "title": "The Fed Is Expected to Hold Rates Steady. Warsh Will Have to Explain Why. - The ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Bond investors are thinking less about the Fed and more about AI, deficits - Reu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what ",
+      "title": "Here's Exactly What Investors Should Look for From the Federal Reserve's October",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Gold retreats on stronger dollar; traders brace for Fed - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "5 things to watch from the Federal Reserve's next meeting - LancasterOnline",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "There Are Three Paths Forward for the AI Boom. Two of Them Lead to Lower Interes",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
