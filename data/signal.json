@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-28 19:38",
+  "generated_at": "2026-10-28 20:38",
   "mode": "morning",
   "signal_date": "2026-10-28",
   "trade_date": "2026-10-29",
   "direction": 0,
-  "total_score": 3,
+  "total_score": 2,
   "tw_score": -8,
   "intl_score": 10,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 2,
-  "foreign_fut_net": 1050,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-8) vs 國際(+10) 方向相反 → 觀望",
   "threshold": 6,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4060.89990234375,
-    "chg_pct": -0.3362341084804982,
+    "price_usd": 4069.60009765625,
+    "chg_pct": -0.12271142885595201,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 101.68000030517578,
-    "oil_chg": 1.7817805326417036
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 101.81999969482422,
+    "oil_chg": 1.9219200596788184
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.5,
-      "chg_pct": -0.114157860965175,
+      "price": 17.43000030517578,
+      "chg_pct": -0.5136994876504622,
       "signal": 1,
-      "note": "VIX=17.5(低恐慌)",
+      "note": "VIX=17.4(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,85 +448,91 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.38300323486328,
-      "chg_pct": 0.061575000221828075,
+      "price": 102.30799865722656,
+      "chg_pct": -0.011728926537773743,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "-0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4060.89990234375,
-      "chg_pct": -0.3362341084804982,
+      "price": 4069.60009765625,
+      "chg_pct": -0.12271142885595201,
       "signal": 0,
-      "note": "-0.34%()",
+      "note": "-0.12%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.68000030517578,
-      "chg_pct": 1.7817805326417036,
+      "price": 101.81999969482422,
+      "chg_pct": 1.9219200596788184,
       "signal": 1,
-      "note": "+1.78%",
+      "note": "+1.92%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.993000030517578,
-      "chg_pct": 0.14039248689797634,
+      "price": 4.997000217437744,
+      "chg_pct": 0.08011590017457607,
       "signal": 0,
-      "note": "4.99%(+0.14%)",
+      "note": "5.00%(+0.08%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 81338.7734375,
-      "chg_pct": 0.660472491189736,
-      "signal": 1,
-      "note": "+0.66%",
+      "price": 80617.96875,
+      "chg_pct": -0.23155645578431897,
+      "signal": 0,
+      "note": "-0.23%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says he's ending restrictions on climate-warming methane from oil drilling",
+      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump dropping some Canada tariffs but 'replacing' them with other products - CN",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says he approves of Brazil's Flavio Bolsonaro coming to US - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Iran war will end 'when I want it to' as costs reportedly balloon to ",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Judge says Trump could disenfranchise voters in purge of noncitizens from electi",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "WATCH: Trump says Venezuela sent him 1 million barrels of oil as a 'gift' - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "How Trump Could Interfere With the Midterms on Election Day, and the Days After ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
       "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -543,16 +549,16 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (TSM) Sees $135.0 Million in Net ETF Buying on Oct. 26 - Ya",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Pricey Against Cash Flow - ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Taiwan Semiconductor raising prices could mean less competition from Intel: Wedb",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -563,12 +569,6 @@
     {
       "label": "台股/半導體",
       "title": "The U.S.-Taiwan ART’s Export Control Puzzle - Lawfare",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Sees $135.0 Million in Net ETF Buying on Oct. 26 - Gu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,13 +586,13 @@
     },
     {
       "label": "聯準會",
-      "title": "US Fed expected to hold rates steady ahead of key midterm elections - AFP.com",
+      "title": "Fed likely to go into wait-and-see mode on rates - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Treasury yields tick higher ahead of Federal Reserve interest rate decision - CN",
+      "title": "What to Watch at the Federal Reserve’s October Meeting - The New York Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
