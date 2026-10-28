@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28 18:30",
+  "generated_at": "2026-10-28 19:38",
   "mode": "morning",
   "signal_date": "2026-10-28",
   "trade_date": "2026-10-29",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4062.60009765625,
-    "chg_pct": -0.2945074292542848,
+    "price_usd": 4060.89990234375,
+    "chg_pct": -0.3362341084804982,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 101.6500015258789,
-    "oil_chg": 1.7517517249953853
+    "oil_usd": 101.68000030517578,
+    "oil_chg": 1.7817805326417036
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.579999923706055,
-      "chg_pct": 0.34246269620269976,
+      "price": 17.5,
+      "chg_pct": -0.114157860965175,
       "signal": 1,
-      "note": "VIX=17.6(低恐慌)",
+      "note": "VIX=17.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.39700317382812,
-      "chg_pct": 0.07525750511490806,
+      "price": 102.38300323486328,
+      "chg_pct": 0.061575000221828075,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4062.60009765625,
-      "chg_pct": -0.2945074292542848,
+      "price": 4060.89990234375,
+      "chg_pct": -0.3362341084804982,
       "signal": 0,
-      "note": "-0.29%()",
+      "note": "-0.34%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.6500015258789,
-      "chg_pct": 1.7517517249953853,
+      "price": 101.68000030517578,
+      "chg_pct": 1.7817805326417036,
       "signal": 1,
-      "note": "+1.75%",
+      "note": "+1.78%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 81410.15625,
-      "chg_pct": 0.7488120041960543,
+      "price": 81338.7734375,
+      "chg_pct": 0.660472491189736,
       "signal": 1,
-      "note": "+0.75%",
+      "note": "+0.66%",
       "desc": "風險偏好指標"
     }
   },
@@ -508,12 +508,6 @@
     },
     {
       "label": "川普動態",
-      "title": "White House tempers tough talk on Canada trade as inflation tops voter concerns ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Judge says Trump could disenfranchise voters in purge of noncitizens from electi",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -525,14 +519,14 @@
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "川普動態",
+      "title": "How Trump Could Interfere With the Midterms on Election Day, and the Days After ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -549,10 +543,22 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "Trump started a trade war with Canada. GOP candidates became casualties. - The W",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
       "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Pricey Against Cash Flow - ",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan’s UMC approves additional $3.2 billion for capacity expansion - The Might",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -562,13 +568,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "The Last Month Exposed The Risk Narrative Between Nvidia Vs.Taiwan Semiconductor",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Apple vs. Taiwan Semiconductor: Which Tech Stock Is a Better Buy in 2026? - The ",
+      "title": "Taiwan Semiconductor (TSM) Sees $135.0 Million in Net ETF Buying on Oct. 26 - Gu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,15 +586,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Treasury yields tick higher ahead of Federal Reserve interest rate decision - CN",
+      "title": "US Fed expected to hold rates steady ahead of key midterm elections - AFP.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Global Government Bond Yields Rise Ahead of Fed Decision, U.K. Budget - WSJ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Treasury yields tick higher ahead of Federal Reserve interest rate decision - CN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
