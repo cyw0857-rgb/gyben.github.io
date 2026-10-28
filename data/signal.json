@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-28 06:53",
+  "generated_at": "2026-10-28 08:49",
   "mode": "morning",
   "signal_date": "2026-10-22",
   "trade_date": "2026-10-29",
   "direction": 0,
-  "total_score": -5,
+  "total_score": -1,
   "tw_score": -9,
-  "intl_score": 4,
+  "intl_score": 8,
   "news_score": -2,
   "psy_score": 1,
   "inst_score": 2,
   "foreign_fut_net": 1221,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+4) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-9) vs 國際(+8) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 46041.4296875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4077.0,
-    "chg_pct": 0.9558265300533466,
+    "price_usd": 4076.60009765625,
+    "chg_pct": 0.9459240351687288,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 99.88999938964844,
-    "oil_chg": -1.837659893204973
+    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 100.5,
+    "oil_chg": -1.2382096204593727
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 62189.6484375,
-      "chg_pct": -0.8031366061227398,
-      "signal": -1,
-      "note": "-0.80%",
+      "price": 63973.01171875,
+      "chg_pct": 2.867620779432871,
+      "signal": 1,
+      "note": "+2.87%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5469.47021484375,
-      "chg_pct": -1.456310337965626,
-      "signal": -1,
-      "note": "-1.46%",
+      "price": 5828.81005859375,
+      "chg_pct": 6.569920479222602,
+      "signal": 1,
+      "note": "+6.57%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.36499786376953,
-      "chg_pct": 0.3972134002878308,
+      "price": 102.3499984741211,
+      "chg_pct": 0.3825023471462839,
       "signal": -1,
-      "note": "+0.40%(偏空)",
+      "note": "+0.38%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4077.0,
-      "chg_pct": 0.9558265300533466,
+      "price": 4076.60009765625,
+      "chg_pct": 0.9459240351687288,
       "signal": 0,
-      "note": "+0.96%()",
+      "note": "+0.95%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 99.88999938964844,
-      "chg_pct": -1.837659893204973,
+      "price": 100.5,
+      "chg_pct": -1.2382096204593727,
       "signal": -1,
-      "note": "-1.84%",
+      "note": "-1.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,20 +480,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 80713.921875,
-      "chg_pct": 0.8840084789820222,
+      "price": 80608.0703125,
+      "chg_pct": 0.7517050339170999,
       "signal": 1,
-      "note": "+0.88%",
+      "note": "+0.75%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "White House tempers tough talk on Canada trade as inflation tops voter concerns ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
     {
       "label": "川普動態",
       "title": "A judge halted D.C. golf course renovations. Trump says they'll still start next",
@@ -502,9 +496,21 @@
     },
     {
       "label": "川普動態",
+      "title": "White House tempers tough talk on Canada trade as inflation tops voter concerns ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says he will ban term artificial intelligence - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "FactChecking Claims from Trump’s Midterm Rallies - FactCheck.org",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -517,12 +523,6 @@
       "title": "Another Trump term? - SCOTUSblog",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says He Will Ban Term ‘Artificial Intelligence’ In Latest Push For ‘Super ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -574,27 +574,27 @@
     },
     {
       "label": "聯準會",
-      "title": "Oct 28 Could Be A Huge Day For The Stock Market - Yahoo Finance",
+      "title": "5 things to watch for in this week's Federal Reserve meeting - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Bond investors are thinking less about the Fed and more about AI, deficits - Reu",
+      "title": "What the Fed's interest rate decision means for your bank accounts, loans, credi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Reserve expected to hold interest rates steady in last decision before m",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "US Stock Futures Muted as Oil Holds Near April Highs Ahead of Fed Decision - U.S",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "FOMC Preview: A hawkish hold as markets watch for signals about timing and exten",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes - CNBC",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
