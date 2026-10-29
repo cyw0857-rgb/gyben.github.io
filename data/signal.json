@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-29 12:27",
+  "generated_at": "2026-10-29 19:01",
   "mode": "morning",
   "signal_date": "2026-10-29",
   "trade_date": "2026-10-30",
   "direction": 0,
-  "total_score": -5,
+  "total_score": -7,
   "tw_score": -6,
   "intl_score": 1,
   "news_score": -2,
   "psy_score": 1,
-  "inst_score": 1,
-  "foreign_fut_net": 0,
+  "inst_score": -1,
+  "foreign_fut_net": -4605,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-6) vs 國際(+1) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46148.7890625,
-  "tw_chg_pct": -1.885358058411235,
-  "tw_ma5": 46441.959375,
-  "tw_ma10": 46803.1765625,
-  "tw_rsi": 26.155424314351464,
-  "tw_macd": -227.50652998335136,
-  "tw_macds": 78.37304752426473,
+  "tw_last_close": 46368.328125,
+  "tw_chg_pct": -1.4186069919811417,
+  "tw_ma5": 46485.8671875,
+  "tw_ma10": 46825.13046875,
+  "tw_rsi": 26.922677434053497,
+  "tw_macd": -209.99344237650803,
+  "tw_macds": 81.87566504563341,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 46470.7875,
   "tw_ma10_p2": 47022.428515625,
   "tw_ma20_p2": 47930.3283203125,
-  "tw_ma20": 47836.5376953125,
+  "tw_ma20": 47847.5146484375,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4048.39990234375,
-    "chg_pct": -0.0789859619746587,
+    "price_usd": 4039.199951171875,
+    "chg_pct": -0.30605553819460557,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 101.44000244140625,
-    "oil_chg": -1.3037520469016997
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 101.37000274658203,
+    "oil_chg": -1.3718583863214264
   },
   "intl_data": {
     "S&P500": {
@@ -400,74 +400,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.90999984741211,
-      "chg_pct": -3.481738552588061,
+      "price": 17.100000381469727,
+      "chg_pct": 1.123598673992269,
       "signal": 1,
-      "note": "VIX=16.9(低恐慌)",
+      "note": "VIX=17.1(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 64110.140625,
-      "chg_pct": 0.24384518875296057,
-      "signal": 0,
-      "note": "+0.24%",
+      "price": 64659.46875,
+      "chg_pct": 1.102785178331683,
+      "signal": 1,
+      "note": "+1.10%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5879.490234375,
-      "chg_pct": -2.211243826581233,
+      "price": 5937.66015625,
+      "chg_pct": -1.2437510542310672,
       "signal": -1,
-      "note": "-2.21%",
+      "note": "-1.24%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23106.7109375,
-      "chg_pct": 0.0514438051062057,
-      "signal": 0,
-      "note": "+0.05%",
+      "price": 22958.650390625,
+      "chg_pct": -0.5896544249917945,
+      "signal": -1,
+      "note": "-0.59%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3647.1171875,
-      "chg_pct": -0.9331005284928071,
+      "price": 3651.43359375,
+      "chg_pct": -0.8158536833646821,
       "signal": -1,
-      "note": "-0.93%",
+      "note": "-0.82%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46148.7890625,
-      "chg_pct": -1.8853580584112357,
+      "price": 46368.328125,
+      "chg_pct": -1.4186069919811366,
       "signal": -1,
-      "note": "-1.89%",
+      "note": "-1.42%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.1500015258789,
-      "chg_pct": -0.03914366823729111,
+      "price": 102.17500305175781,
+      "chg_pct": -0.014677942352568057,
       "signal": 0,
-      "note": "-0.04%(中性)",
+      "note": "-0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4048.39990234375,
-      "chg_pct": -0.0789859619746587,
+      "price": 4039.199951171875,
+      "chg_pct": -0.30605553819460557,
       "signal": 0,
-      "note": "-0.08%()",
+      "note": "-0.31%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.44000244140625,
-      "chg_pct": -1.3037520469016997,
+      "price": 101.37000274658203,
+      "chg_pct": -1.3718583863214264,
       "signal": -1,
-      "note": "-1.30%",
+      "note": "-1.37%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,67 +480,55 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 79811.03125,
-      "chg_pct": -1.2301787190432223,
+      "price": 80150.796875,
+      "chg_pct": -1.3742121777296086,
       "signal": -1,
-      "note": "-1.23%",
+      "note": "-1.37%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says imported robotics pose national security risks but does not impose ta",
+      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
+      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump calls for Peltola to be criminally charged, removed from Alaska’s U.S. Sen",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "WATCH: Trump calls for Peltola to drop out after report her campaign helped recr",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump is using tariffs as a 'tool for grift,' Raskin says in demand for donor re",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Hegseth says Trump’s arch will be ‘generational national defense opportunity’ - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -549,10 +537,34 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Pricey Against Cash Flow - ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Tracking Cathie Wood: Aggressive Buying in Joby and Kodiak AI, Trimming AMD and ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Bull of the Day: Taiwan Semiconductor Manufacturing Company (TSM) - Yahoo Financ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan semiconductor industry group backs government review of nuclear power res",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -561,40 +573,28 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Apple vs. Taiwan Semiconductor: Which Tech Stock Is a Better Buy in 2026? - The ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Palantir’s Defense Chief Sees Chinese Threat to Taiwan Over AI - Bloomberg",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "聯準會",
-      "title": "Fed leaves rates unchanged as it awaits 'accumulation of more information' - Reu",
+      "title": "Treasury yields ease after Federal Reserve rate hold - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed’s Rate Hold Sends Bond Yields in Different Directions - WSJ",
+      "title": "Did the Fed just make a huge mistake? - CNN",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "What the Fed's interest rate decision means for your bank accounts, loans, credi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Wall Street ends higher as Fed holds key rate steady, focus turns to earnings - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "WATCH: Warsh holds briefing after Fed leaves key interest rate unchanged - PBS",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "The bond market swings, but US stocks remain steady after the Fed says it won't ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
