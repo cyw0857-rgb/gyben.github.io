@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29 19:01",
+  "generated_at": "2026-10-29 20:52",
   "mode": "morning",
   "signal_date": "2026-10-29",
   "trade_date": "2026-10-30",
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4039.199951171875,
-    "chg_pct": -0.30605553819460557,
+    "price_usd": 4036.10009765625,
+    "chg_pct": -0.3825649034060979,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 101.37000274658203,
-    "oil_chg": -1.3718583863214264
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 101.5999984741211,
+    "oil_chg": -1.148083595242726
   },
   "intl_data": {
     "S&P500": {
@@ -400,10 +400,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 17.100000381469727,
-      "chg_pct": 1.123598673992269,
+      "price": 17.170000076293945,
+      "chg_pct": 1.5375531119335055,
       "signal": 1,
-      "note": "VIX=17.1(低恐慌)",
+      "note": "VIX=17.2(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -448,85 +448,91 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.17500305175781,
-      "chg_pct": -0.014677942352568057,
+      "price": 102.15299987792969,
+      "chg_pct": -0.036209572945043275,
       "signal": 0,
-      "note": "-0.01%(中性)",
+      "note": "-0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4039.199951171875,
-      "chg_pct": -0.30605553819460557,
+      "price": 4036.10009765625,
+      "chg_pct": -0.3825649034060979,
       "signal": 0,
-      "note": "-0.31%()",
+      "note": "-0.38%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 101.37000274658203,
-      "chg_pct": -1.3718583863214264,
+      "price": 101.5999984741211,
+      "chg_pct": -1.148083595242726,
       "signal": -1,
-      "note": "-1.37%",
+      "note": "-1.15%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.045000076293945,
-      "chg_pct": 1.0414589517031674,
+      "price": 5.011000156402588,
+      "chg_pct": -0.6739329906280942,
       "signal": 0,
-      "note": "5.05%(+1.04%)",
+      "note": "5.01%(-0.67%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 80150.796875,
-      "chg_pct": -1.3742121777296086,
+      "price": 79984.078125,
+      "chg_pct": -1.5793600827359386,
       "signal": -1,
-      "note": "-1.37%",
+      "note": "-1.58%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "title": "Trump says imported robotics pose national security risks but does not impose ta",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada trade deal coming 'soon' - Yahoo Finance UK",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "title": "Trump is using tariffs as a 'tool for grift,' Raskin says in demand for donor re",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Obama and Trump spar at rallies in Georgia and Ohio: Key takeaways - Al Jazeera",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "WATCH: Trump calls for Peltola to drop out after report her campaign helped recr",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's Approval Is Historically Low This Close to the Midterms - Time Magazine",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
       "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -538,25 +544,25 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump said China was headed for ‘big trouble.’ Yet its economy is growing faster",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Tracking Cathie Wood: Aggressive Buying in Joby and Kodiak AI, Trimming AMD and ",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Looks Pricey Against Cash Flow - ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC Stock: Spending Its Lead To Keep It (NYSE:TSM) - Seeking Alpha",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Bull of the Day: Taiwan Semiconductor Manufacturing Company (TSM) - Yahoo Financ",
+      "title": "Tracking Cathie Wood: Aggressive Buying in Joby and Kodiak AI, Trimming AMD and ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -567,34 +573,28 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor raising prices could mean less competition from Intel: Wedb",
+      "label": "聯準會",
+      "title": "Fed’s Rate Hold Sends Bond Yields in Different Directions - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Treasury yields ease after Federal Reserve rate hold - CNBC",
+      "title": "Federal Reserve makes interest rate decision ahead of midterms - Fox Business",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Did the Fed just make a huge mistake? - CNN",
+      "title": "Federal Reserve holds interest rates steady as midterm elections loom - ABC News",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Wall Street ends higher as Fed holds key rate steady, focus turns to earnings - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The bond market swings, but US stocks remain steady after the Fed says it won't ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "WATCH: Warsh holds briefing after Fed leaves key interest rate unchanged - PBS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
