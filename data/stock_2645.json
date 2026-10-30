@@ -1,7 +1,7 @@
 {
   "symbol": "2645.TW",
   "name": "長榮航太",
-  "updated": "2026-10-30 09:25",
+  "updated": "2026-10-30 12:27",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -8,
   "reasons": [
     "均線空頭排列 MA5<MA10<MA20",
-    "RSI=29 弱勢區",
+    "RSI=32 弱勢區",
     "MACD死叉零軸下",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=29 弱勢區",
+      "text": "RSI=32 弱勢區",
       "score": -2
     },
     {
@@ -38,87 +38,82 @@
       "score": -1
     }
   ],
-  "rsi": 29.0,
-  "macd": -2.03,
-  "macds": -1.7,
-  "k": 10.2,
-  "d": 17.6,
-  "ma5": 167.3,
-  "ma10": 168.7,
-  "ma20": 170.45,
-  "ma60": 175.48,
-  "last_close": 165.0,
-  "chg_pct": -0.9,
+  "rsi": 32.1,
+  "macd": -1.91,
+  "macds": -1.67,
+  "k": 20.6,
+  "d": 21.0,
+  "ma5": 167.6,
+  "ma10": 168.85,
+  "ma20": 170.53,
+  "ma60": 175.51,
+  "last_close": 166.5,
+  "chg_pct": 0.0,
   "ma_bull": false,
   "ma_bear": true,
   "retail": {
-    "mood": "冷清（量縮）",
-    "vol_ratio": 0.11,
+    "mood": "量能正常",
+    "vol_ratio": 1.13,
     "score": 0,
-    "signals": [
-      {
-        "icon": "💤",
-        "text": "量縮 0.1倍，觀望氣氛濃"
-      }
-    ]
+    "signals": []
   },
   "forecast": [
     {
       "month": "2026-11",
-      "price": 162.51,
-      "price_high": 187.93,
-      "price_low": 137.08,
-      "chg_pct": -1.5,
+      "price": 163.71,
+      "price_high": 189.3,
+      "price_low": 138.11,
+      "chg_pct": -1.7,
       "trend": "down",
-      "model_note": "📉 MA5<MA10 空頭  波音↓-10%  油↑壓力+14%  海運↑+9%",
+      "model_note": "📉 MA5<MA10 空頭  波音↓-7%  油↑壓力+14%  海運↑+13%",
       "score": -4.8
     },
     {
       "month": "2026-12",
-      "price": 160.05,
-      "price_high": 195.47,
-      "price_low": 124.63,
-      "chg_pct": -3.0,
+      "price": 160.96,
+      "price_high": 196.55,
+      "price_low": 125.38,
+      "chg_pct": -3.3,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -4.8
     },
     {
       "month": "2027-01",
-      "price": 157.63,
-      "price_high": 200.35,
-      "price_low": 114.91,
-      "chg_pct": -4.5,
+      "price": 158.26,
+      "price_high": 201.12,
+      "price_low": 115.41,
+      "chg_pct": -4.9,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -4.8
     },
     {
       "month": "2027-02",
-      "price": 155.25,
-      "price_high": 203.83,
-      "price_low": 106.66,
-      "chg_pct": -5.9,
+      "price": 155.61,
+      "price_high": 204.27,
+      "price_low": 106.96,
+      "chg_pct": -6.5,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -4.8
     },
     {
       "month": "2027-03",
-      "price": 152.9,
-      "price_high": 206.4,
-      "price_low": 99.4,
-      "chg_pct": -7.3,
+      "price": 153.0,
+      "price_high": 206.49,
+      "price_low": 99.52,
+      "chg_pct": -8.1,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -4.8
     },
     {
       "month": "2027-04",
-      "price": 150.59,
-      "price_high": 208.31,
-      "price_low": 92.87,
-      "chg_pct": -8.7,
+      "price": 150.44,
+      "price_high": 208.05,
+      "price_low": 92.83,
+      "chg_pct": -9.6,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -4.8
@@ -128,21 +123,21 @@
   "support": 170.15,
   "resistance": 182.0,
   "weekly": {
-    "proj_center": 165.0,
-    "proj_high": 173.4,
-    "proj_low": 156.6,
+    "proj_center": 166.5,
+    "proj_high": 174.97,
+    "proj_low": 158.03,
     "support": 170.15,
     "resistance": 182.0,
     "trend_bias": "偏多",
     "op_hint": "逢回偏多操作"
   },
-  "daily_vol_pct": 2.28,
+  "daily_vol_pct": 2.27,
   "slope_per_day": 0.1,
   "model_accuracy": 70.0,
   "model_samples": 20,
-  "total_return": 96.8,
+  "total_return": 98.6,
   "ipo_date": "2022-02-18",
   "model_score": -4.8,
   "model_threshold": 3.5,
-  "model_factors": "MA5<MA10 空頭  波音↓-10%  油↑壓力+14%  海運↑+9%"
+  "model_factors": "MA5<MA10 空頭  波音↓-7%  油↑壓力+14%  海運↑+13%"
 }
