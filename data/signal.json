@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-30 07:20",
+  "generated_at": "2026-10-30 09:25",
   "mode": "morning",
-  "signal_date": "2026-10-28",
+  "signal_date": "2026-10-30",
   "trade_date": "2026-11-02",
-  "direction": -1,
-  "total_score": -14,
-  "tw_score": -8,
-  "intl_score": -4,
+  "direction": 0,
+  "total_score": -12,
+  "tw_score": -6,
+  "intl_score": -8,
   "news_score": -2,
-  "psy_score": 1,
-  "inst_score": -1,
-  "foreign_fut_net": -4605,
+  "psy_score": 2,
+  "inst_score": 1,
+  "foreign_fut_net": 0,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "RSI=23 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 47035.578125,
-  "tw_chg_pct": 2.0377971185448818,
-  "tw_ma5": 46470.7875,
-  "tw_ma10": 47022.428515625,
-  "tw_rsi": 30.681736160921716,
-  "tw_macd": -160.02887466792163,
-  "tw_macds": 154.84294190116876,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 46428.0875,
-  "tw_ma10_p2": 47249.066796875,
-  "tw_ma20_p2": 47986.4138671875,
-  "tw_ma20": 47930.3283203125,
+  "tw_last_close": 44958.25,
+  "tw_chg_pct": -4.416503863265742,
+  "tw_ma5": 46203.8515625,
+  "tw_ma10": 46684.12265625,
+  "tw_rsi": 22.65433229287858,
+  "tw_macd": -322.47830704887747,
+  "tw_macds": 59.37869211115952,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 46470.7875,
+  "tw_ma10_p2": 47022.428515625,
+  "tw_ma20_p2": 47930.3283203125,
+  "tw_ma20": 47777.0107421875,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4026.5,
-    "chg_pct": -0.6195107377643164,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 102.75,
-    "oil_chg": -0.02918737074641579
+    "price_usd": 4011.39990234375,
+    "chg_pct": -0.9922054088150214,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 102.7699966430664,
+    "oil_chg": -0.00973159792689499
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63954.19140625,
-      "chg_pct": 1.0839860433323993,
-      "signal": 1,
-      "note": "+1.08%",
+      "price": 63017.609375,
+      "chg_pct": -1.464457622958034,
+      "signal": -1,
+      "note": "-1.46%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 6012.43994140625,
-      "chg_pct": 6.634933473741094,
-      "signal": 1,
-      "note": "+6.63%",
+      "price": 5655.41015625,
+      "chg_pct": -5.9381846411050265,
+      "signal": -1,
+      "note": "-5.94%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -440,34 +440,34 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 47035.578125,
-      "chg_pct": 2.037797118544892,
-      "signal": 1,
-      "note": "+2.04%",
+      "price": 44958.25,
+      "chg_pct": -4.416503863265739,
+      "signal": -1,
+      "note": "-4.42%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.85399627685547,
-      "chg_pct": -0.3288053200149796,
+      "price": 101.6449966430664,
+      "chg_pct": -0.5333259470781787,
       "signal": 1,
-      "note": "-0.33%(偏多)",
+      "note": "-0.53%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4026.5,
-      "chg_pct": -0.6195107377643164,
+      "price": 4011.39990234375,
+      "chg_pct": -0.9922054088150214,
       "signal": 1,
-      "note": "-0.62%()",
+      "note": "-0.99%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.75,
-      "chg_pct": -0.02918737074641579,
+      "price": 102.7699966430664,
+      "chg_pct": -0.00973159792689499,
       "signal": 0,
-      "note": "-0.03%",
+      "note": "-0.01%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,47 +480,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78687.1328125,
-      "chg_pct": -3.175255048162172,
+      "price": 76727.046875,
+      "chg_pct": -5.587146474354445,
       "signal": -1,
-      "note": "-3.18%",
+      "note": "-5.59%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Canada has been treating the US very nicely - Reuters",
+      "title": "Trump says Canada trade war will end ‘pretty soon,’ but tariff changes keep expo",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot - The New York",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Stolen election rhetoric from Trump isn't new. His ability to act on those claim",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Opinion | Trump Scores on Methane Regulation - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "WATCH LIVE: Trump rallies in South Carolina for Sen. Darline Graham - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Here’s How Much You’re Paying for Trump’s Tariffs and Iran War - Bloomberg.com",
+      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,13 +562,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "The Same $10,000 in AMD and Nvidia Could Produce Very Different Results by 2030 ",
+      "title": "Semiconductor testing company buys land in Fort Worth amid work with Nvidia - Da",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Semiconductor testing company buys land in Fort Worth amid work with Nvidia - Da",
+      "title": "The Same $10,000 in AMD and Nvidia Could Produce Very Different Results by 2030 ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -586,7 +586,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed votes in split decision to hold interest rates steady despite sticky inflati",
+      "title": "Fed holds interest rates steady even as inflation remains stubborn - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
