@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-10-31 09:11",
+  "generated_at": "2026-11-01 08:32",
   "mode": "morning",
-  "signal_date": "2026-10-29",
+  "signal_date": "2026-10-30",
   "trade_date": "2026-11-02",
   "direction": 0,
-  "total_score": -14,
+  "total_score": -15,
   "tw_score": -6,
-  "intl_score": -7,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -1780,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=27 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "RSI=23 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 46368.328125,
-  "tw_chg_pct": -1.4186069919811417,
-  "tw_ma5": 46485.8671875,
-  "tw_ma10": 46825.13046875,
-  "tw_rsi": 26.922677434053497,
-  "tw_macd": -209.99344237650803,
-  "tw_macds": 81.87566504563341,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 46470.7875,
-  "tw_ma10_p2": 47022.428515625,
-  "tw_ma20_p2": 47930.3283203125,
-  "tw_ma20": 47847.5146484375,
+  "tw_last_close": 45211.828125,
+  "tw_chg_pct": -2.4941593686153674,
+  "tw_ma5": 46150.67890625,
+  "tw_ma10": 46483.73046875,
+  "tw_rsi": 23.362929499585803,
+  "tw_macd": -339.0027938020212,
+  "tw_macds": -2.300026723897517,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 46485.8671875,
+  "tw_ma10_p2": 46825.13046875,
+  "tw_ma20_p2": 47847.5146484375,
+  "tw_ma20": 47726.5080078125,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -252,30 +252,30 @@
     "streak": -2
   },
   "stats_real_v60": {
-    "total": 23,
-    "wins": 9,
+    "total": 24,
+    "wins": 10,
     "losses": 14,
-    "win_rate": 39.130434782608695,
-    "total_pnl": -25591.0,
-    "avg_pnl": -1112.6521739130435,
-    "avg_win": 7288.555555555556,
+    "win_rate": 41.66666666666667,
+    "total_pnl": -16381.0,
+    "avg_pnl": -682.5416666666666,
+    "avg_win": 7480.7,
     "avg_lose": -6513.428571428572,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "stats_real_v50": {
-    "total": 60,
-    "wins": 30,
+    "total": 61,
+    "wins": 31,
     "losses": 30,
-    "win_rate": 50.0,
-    "total_pnl": 11684.0,
-    "avg_pnl": 194.73333333333332,
-    "avg_win": 5758.7,
+    "win_rate": 50.81967213114754,
+    "total_pnl": 20894.0,
+    "avg_pnl": 342.5245901639344,
+    "avg_win": 5870.032258064516,
     "avg_lose": -5369.233333333334,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "stats_real_cons": {
     "total": 8,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3884.89990234375,
-    "chg_pct": -3.6339733975492914,
+    "price_usd": 3898.89990234375,
+    "chg_pct": -3.286699489251066,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.6%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 102.94999694824219,
-    "oil_chg": 0.9313695571001838
+    "warning": "黃金大跌 -3.3%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 104.12000274658203,
+    "oil_chg": 2.078434065276501
   },
   "intl_data": {
     "S&P500": {
@@ -384,8 +384,8 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25436.998046875,
-      "chg_pct": -2.8555685765277743,
+      "price": 25437.0,
+      "chg_pct": -2.855561117502253,
       "signal": -1,
       "note": "-2.86%",
       "desc": "科技股連動"
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 64659.46875,
-      "chg_pct": 1.102785178331683,
-      "signal": 1,
-      "note": "+1.10%",
+      "price": 63290.109375,
+      "chg_pct": -2.1178017720722457,
+      "signal": -1,
+      "note": "-2.12%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 5730.740234375,
+      "chg_pct": -3.4848731053964994,
+      "signal": -1,
+      "note": "-3.48%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22958.650390625,
-      "chg_pct": -0.5896544249917945,
-      "signal": -1,
-      "note": "-0.59%",
+      "price": 23294.419921875,
+      "chg_pct": 1.462496817265483,
+      "signal": 1,
+      "note": "+1.46%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3599.01708984375,
+      "chg_pct": -1.4355179638992974,
+      "signal": -1,
+      "note": "-1.44%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 46368.328125,
-      "chg_pct": -1.4186069919811366,
+      "price": 45211.828125,
+      "chg_pct": -2.4941593686153634,
       "signal": -1,
-      "note": "-1.42%",
+      "note": "-2.49%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.96399688720703,
-      "chg_pct": -0.07448454296196212,
+      "price": 101.87999725341797,
+      "chg_pct": -0.1568048418990433,
       "signal": 0,
-      "note": "-0.07%(中性)",
+      "note": "-0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3884.89990234375,
-      "chg_pct": -3.6339733975492914,
+      "price": 3898.89990234375,
+      "chg_pct": -3.286699489251066,
       "signal": 1,
-      "note": "-3.63%()",
+      "note": "-3.29%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.94999694824219,
-      "chg_pct": 0.9313695571001838,
+      "price": 104.12000274658203,
+      "chg_pct": 2.078434065276501,
       "signal": 1,
-      "note": "+0.93%",
+      "note": "+2.08%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,49 +480,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77315.8125,
-      "chg_pct": -0.5905448140039983,
-      "signal": -1,
-      "note": "-0.59%",
+      "price": 77505.921875,
+      "chg_pct": 0.3985985345555794,
+      "signal": 1,
+      "note": "+0.40%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Carney says he can wait out Trump for trade deal - Politico",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "The Surprising Staying Power of Trump’s Tariffs - Council on Foreign Relations",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "As early voting surges, Trump reshuffles his schedule to add back rallies in Iow",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "House Democrats Demand Trump Preserve Grok AI Chats After TIME Report - Time Mag",
+      "title": "Virginia and D.C. sue to block construction of Trump arch - NPR",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump vowed to reduce prices, but his policies have fueled US inflation | Steven",
+      "title": "Kennedy Center leaders threatened payroll to push Trump naming, lawmaker alleges",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge orders Trump administration to stop threatening US election officials - BB",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "D.C. and Virginia Join the Fight to Block Trump’s Triumphal Arch. What Happens N",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump on Iran war: It's going to get wrapped up soon - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Virginia and DC sue to stop Trump’s arch as government looks to start constructi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge Dismisses Trump’s Lawsuit Against Wall Street Journal Publisher Again - WS",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -538,7 +538,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -550,51 +550,51 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Draws New Sunbelt Real Estate Fund Arou",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan semiconductor industry group backs government review of nuclear power res",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Here’s What a $10,000 Investment in TSMC Stock Will Be Worth by 2030 - The Motle",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Ltd. (TSM) is Attracting Investor Att",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Chip-maker could put mega-project in Sherman - WFAA",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Stocks Heads for Correction as Global AI Selloff Deepens - Bloomberg.com",
+      "title": "Taiwan Stocks Near Correction as Global AI Selloff Deepens - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed leaves rates unchanged as it awaits 'accumulation of more information' - Reu",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "WATCH: Warsh holds briefing after Fed leaves key interest rate unchanged - PBS",
+      "title": "'The Fed put is very much back': Wall Street strategists weigh central bank's ne",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "4 Words From Fed Chair Kevin Warsh Should Have Wall Street and Investors Quaking",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "5 ETFs to Buy for Rising Interest Rates - Kiplinger",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "Fed holds rates steady despite concerns over inflation - CNBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed’s Rate Hold Sends Bond Yields in Different Directions - WSJ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
