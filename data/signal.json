@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-02 09:06",
+  "generated_at": "2026-11-02 12:30",
   "mode": "morning",
-  "signal_date": "2026-10-30",
+  "signal_date": "2026-11-02",
   "trade_date": "2026-11-03",
   "direction": 0,
-  "total_score": -17,
-  "tw_score": -6,
-  "intl_score": -8,
+  "total_score": -16,
+  "tw_score": -7,
+  "intl_score": -6,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -1780,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=23 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "RSI=24 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 45211.828125,
-  "tw_chg_pct": -2.4941593686153674,
-  "tw_ma5": 46150.67890625,
-  "tw_ma10": 46483.73046875,
-  "tw_rsi": 23.362929499585803,
-  "tw_macd": -339.0038731957975,
-  "tw_macds": -2.301614061474382,
+  "tw_last_close": 45077.58984375,
+  "tw_chg_pct": -0.29690965133916114,
+  "tw_ma5": 45957.9109375,
+  "tw_ma10": 46294.50234375,
+  "tw_rsi": 24.376773978901767,
+  "tw_macd": -446.9246831036362,
+  "tw_macds": -91.22622786990675,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 46485.8671875,
-  "tw_ma10_p2": 46825.13046875,
-  "tw_ma20_p2": 47847.5146484375,
-  "tw_ma20": 47726.5080078125,
+  "tw_ma5_p2": 46150.67890625,
+  "tw_ma10_p2": 46483.73046875,
+  "tw_ma20_p2": 47726.5080078125,
+  "tw_ma20": 47583.3810546875,
   "stats_real": {
     "total": 16,
     "wins": 9,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3908.199951171875,
-    "chg_pct": 0.23853007415077396,
+    "price_usd": 3915.300048828125,
+    "chg_pct": 0.42063522776043477,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.2%，影響中性",
-    "oil_usd": 102.16000366210938,
-    "oil_chg": -1.8824424056567721
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 100.58999633789062,
+    "oil_chg": -3.390324928518393
   },
   "intl_data": {
     "S&P500": {
@@ -408,66 +408,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63144.26171875,
-      "chg_pct": -0.23044304661544915,
-      "signal": 0,
-      "note": "-0.23%",
+      "price": 63530.76171875,
+      "chg_pct": 0.38023689029214924,
+      "signal": 1,
+      "note": "+0.38%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5743.75,
-      "chg_pct": 0.22701719311866275,
-      "signal": 0,
-      "note": "+0.23%",
+      "price": 5871.35986328125,
+      "chg_pct": 2.4537777521787483,
+      "signal": 1,
+      "note": "+2.45%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23294.419921875,
-      "chg_pct": 1.462496817265483,
+      "price": 23437.41015625,
+      "chg_pct": 0.6138390003037711,
       "signal": 1,
-      "note": "+1.46%",
+      "note": "+0.61%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3599.01708984375,
-      "chg_pct": -1.4355179638992974,
-      "signal": -1,
-      "note": "-1.44%",
+      "price": 3640.93017578125,
+      "chg_pct": 1.164570350493102,
+      "signal": 1,
+      "note": "+1.16%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45211.828125,
-      "chg_pct": -2.4941593686153634,
+      "price": 45043.30859375,
+      "chg_pct": -0.37273328294552344,
       "signal": -1,
-      "note": "-2.49%",
+      "note": "-0.37%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.94200134277344,
-      "chg_pct": 0.06085992444742491,
+      "price": 101.9209976196289,
+      "chg_pct": 0.040243784173798626,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "+0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3908.199951171875,
-      "chg_pct": 0.23853007415077396,
+      "price": 3915.300048828125,
+      "chg_pct": 0.42063522776043477,
       "signal": 0,
-      "note": "+0.24%()",
+      "note": "+0.42%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 102.16000366210938,
-      "chg_pct": -1.8824424056567721,
+      "price": 100.58999633789062,
+      "chg_pct": -3.390324928518393,
       "signal": -1,
-      "note": "-1.88%",
+      "note": "-3.39%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,49 +480,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 78113.7890625,
-      "chg_pct": 0.8769177436486848,
+      "price": 78502.703125,
+      "chg_pct": 1.379165200378383,
       "signal": 1,
-      "note": "+0.88%",
+      "note": "+1.38%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Canada's Carney reports progress in trade talks with U.S. and Trump talks up 'co",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Federal judge rejects Trump administration attempt to pause Alaska’s US Senate e",
+      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Mark Carney says U.S., Canada teams will work on trade deal in ‘coming weeks’ - ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Canadian Prime Minister Carney reports progress in trade talks with Trump days b",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Analysis: Republicans face a midterm reckoning of Trump’s making - AP News",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says he is removing US tariffs on Irish whiskey - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "'Unhinged' for Canada to call dispute with U.S. a trade war, says Trump's tariff",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -556,7 +556,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Weekly Recap: Q3 revenue jump and CoWoS price hikes - TradingView",
+      "title": "Semiconductor Manufacturing Fuels Taiwanese Investment Wave Across Arizona Marke",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -568,31 +568,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Semiconductor Manufacturing Fuels Taiwanese Investment Wave Across Arizona Marke",
+      "title": "Elon Musk 'Softened His Stance' as TSMC Eyes Terafab Role: Report - Tesla (NASDA",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "'The Fed put is very much back': Wall Street strategists weigh central bank's ne",
+      "title": "Fed leaves rates unchanged as it awaits 'accumulation of more information' - Reu",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Federal Reserve makes interest rate decision ahead of midterms - Fox Business",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed holds interest rates steady even as inflation remains stubborn - NPR",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Stocks often rally after midterm elections, but AI spending, rate hikes add risk",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Wall Street's Black October: Why the worst may still be ahead - Ynetnews",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed officials make case for rate hikes amid ongoing inflation concerns - Reuters",
+      "title": "Kevin Warsh is managing US debt costs not inflation as interest rates risk toppi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
