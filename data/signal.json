@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-02 21:51",
+  "generated_at": "2026-11-02 23:32",
   "mode": "morning",
   "signal_date": "2026-11-02",
   "trade_date": "2026-11-03",
   "direction": 0,
-  "total_score": -15,
+  "total_score": -1,
   "tw_score": -7,
-  "intl_score": -7,
+  "intl_score": 7,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 2,
   "foreign_fut_net": 2801,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=24 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+7) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 44920.140625,
@@ -357,69 +357,69 @@
     }
   ],
   "gold": {
-    "price_usd": 3943.300048828125,
-    "chg_pct": 1.13878651918416,
+    "price_usd": 3967.699951171875,
+    "chg_pct": 1.7646015684261898,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 97.20999908447266,
-    "oil_chg": -6.636576526921203
+    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 97.0199966430664,
+    "oil_chg": -6.819060618732742
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7580.06982421875,
-      "chg_pct": -1.8175287778868343,
-      "signal": -1,
-      "note": "-1.82%",
+      "price": 7654.25,
+      "chg_pct": 0.9786212726463305,
+      "signal": 1,
+      "note": "+0.98%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51770.30859375,
-      "chg_pct": -1.0932786156699836,
-      "signal": -1,
-      "note": "-1.09%",
+      "price": 52372.01171875,
+      "chg_pct": 1.1622552411685663,
+      "signal": 1,
+      "note": "+1.16%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25437.0,
-      "chg_pct": -2.855561117502253,
-      "signal": -1,
-      "note": "-2.86%",
+      "price": 25765.39453125,
+      "chg_pct": 1.2910112483783465,
+      "signal": 1,
+      "note": "+1.29%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10688.7998046875,
-      "chg_pct": -7.200781168593828,
-      "signal": -1,
-      "note": "-7.20%",
+      "price": 10848.212890625,
+      "chg_pct": 1.4914030466506678,
+      "signal": 1,
+      "note": "+1.49%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.43000030517578,
-      "chg_pct": 0.05149448425617283,
+      "price": 18.68000030517578,
+      "chg_pct": -3.8105034408392413,
       "signal": 1,
-      "note": "VIX=19.4(低恐慌)",
+      "note": "VIX=18.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 63081.859375,
-      "chg_pct": -0.32904035410351196,
+      "price": 63290.109375,
+      "chg_pct": -2.1178017720722457,
       "signal": -1,
-      "note": "-0.33%",
+      "note": "-2.12%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5859.080078125,
-      "chg_pct": 2.239498537731171,
-      "signal": 1,
-      "note": "+2.24%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,79 +448,79 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.57099914550781,
-      "chg_pct": -0.30329614864589105,
-      "signal": 1,
-      "note": "-0.30%(偏多)",
+      "price": 101.64700317382812,
+      "chg_pct": -0.22869462688567851,
+      "signal": 0,
+      "note": "-0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3943.300048828125,
-      "chg_pct": 1.13878651918416,
+      "price": 3967.699951171875,
+      "chg_pct": 1.7646015684261898,
       "signal": -1,
-      "note": "+1.14%(避險↑)",
+      "note": "+1.76%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.20999908447266,
-      "chg_pct": -6.636576526921203,
+      "price": 97.0199966430664,
+      "chg_pct": -6.819060618732742,
       "signal": -1,
-      "note": "-6.64%",
+      "note": "-6.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.918999671936035,
-      "chg_pct": -0.20288555656445834,
+      "price": 4.880000114440918,
+      "chg_pct": -0.994112139641605,
       "signal": 0,
-      "note": "4.92%(-0.20%)",
+      "note": "4.88%(-0.99%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 77837.5703125,
-      "chg_pct": -0.525100236606115,
+      "price": 77749.4609375,
+      "chg_pct": -0.6377023028210822,
       "signal": -1,
-      "note": "-0.53%",
+      "note": "-0.64%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
+      "title": "Trump Says US-Canada Trade Deal Is Close After Talks With Carney - Bloomberg",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Canada's Carney reports progress in trade talks with U.S. and Trump talks up 'co",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Two days out from Election Day, Trump rallies for Iowa Republicans in Dubuque - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "President Donald Trump doubles down on bid to lift Roger Marshall's campaign wit",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says war in Iran will be put away very soon \"one way or the other\" - CBS N",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Rubio says Trump wants to end Iran war 'peacefully' even as both sides prepare f",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he is removing US tariffs on Irish whiskey - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Trade Chief Is Trying to Sell Americans on an Unpopular Product - Bloomb",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -532,19 +532,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,21 +562,27 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Intel vs. Taiwan Semiconductor: The AI Boom Is Telling Two Very Different Storie",
+      "title": "TSMC’s 1-nanometer Manufacturing Site Likely Tipped By Taiwan’s Minister In Disc",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Here’s What a $10,000 Investment in TSMC Stock Will Be Worth by 2030 - The Motle",
+      "title": "Intel vs. Taiwan Semiconductor: The AI Boom Is Telling Two Very Different Storie",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Mapping the Market: Risk of rise in key US interest rate remains even after rece",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Midterms, Jobs Data, and Apple Earnings Test Wall Street This Week: Will Stocks ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "If the Fed Raises Interest Rates Again in 2026, I Predict These ETFs Will Be the",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -586,15 +592,9 @@
     },
     {
       "label": "聯準會",
-      "title": "AI mania can’t survive higher interest rates - Financial Times",
+      "title": "Wall Street's Black October: Why the worst may still be ahead - Ynetnews",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Kevin Warsh is managing US debt costs not inflation as interest rates risk toppi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
