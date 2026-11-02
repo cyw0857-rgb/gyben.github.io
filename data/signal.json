@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-02 06:23",
+  "generated_at": "2026-11-02 09:06",
   "mode": "morning",
   "signal_date": "2026-10-30",
   "trade_date": "2026-11-03",
   "direction": 0,
-  "total_score": -15,
+  "total_score": -17,
   "tw_score": -6,
   "intl_score": -8,
   "news_score": -2,
@@ -20,8 +20,8 @@
   "tw_ma5": 46150.67890625,
   "tw_ma10": 46483.73046875,
   "tw_rsi": 23.362929499585803,
-  "tw_macd": -339.0027938020212,
-  "tw_macds": -2.300026723897517,
+  "tw_macd": -339.0038731957975,
+  "tw_macds": -2.301614061474382,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 46485.8671875,
   "tw_ma10_p2": 46825.13046875,
@@ -357,13 +357,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3898.89990234375,
-    "chg_pct": -3.286699489251066,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -3.3%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 104.12000274658203,
-    "oil_chg": 2.078434065276501
+    "price_usd": 3908.199951171875,
+    "chg_pct": 0.23853007415077396,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.2%，影響中性",
+    "oil_usd": 102.16000366210938,
+    "oil_chg": -1.8824424056567721
   },
   "intl_data": {
     "S&P500": {
@@ -408,18 +408,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63290.109375,
-      "chg_pct": -2.1178017720722457,
-      "signal": -1,
-      "note": "-2.12%",
+      "price": 63144.26171875,
+      "chg_pct": -0.23044304661544915,
+      "signal": 0,
+      "note": "-0.23%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5730.740234375,
-      "chg_pct": -3.4848731053964994,
-      "signal": -1,
-      "note": "-3.48%",
+      "price": 5743.75,
+      "chg_pct": 0.22701719311866275,
+      "signal": 0,
+      "note": "+0.23%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -448,26 +448,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.87999725341797,
-      "chg_pct": -0.1568048418990433,
+      "price": 101.94200134277344,
+      "chg_pct": 0.06085992444742491,
       "signal": 0,
-      "note": "-0.16%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3898.89990234375,
-      "chg_pct": -3.286699489251066,
-      "signal": 1,
-      "note": "-3.29%()",
+      "price": 3908.199951171875,
+      "chg_pct": 0.23853007415077396,
+      "signal": 0,
+      "note": "+0.24%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 104.12000274658203,
-      "chg_pct": 2.078434065276501,
-      "signal": 1,
-      "note": "+2.08%",
+      "price": 102.16000366210938,
+      "chg_pct": -1.8824424056567721,
+      "signal": -1,
+      "note": "-1.88%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,10 +480,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77567.0234375,
-      "chg_pct": 0.17081922199012717,
-      "signal": 0,
-      "note": "+0.17%",
+      "price": 78113.7890625,
+      "chg_pct": 0.8769177436486848,
+      "signal": 1,
+      "note": "+0.88%",
       "desc": "風險偏好指標"
     }
   },
@@ -496,7 +496,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says US, Canada have 'concept' of a new trade deal - Reuters",
+      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Federal judge rejects Trump administration attempt to pause Alaska’s US Senate e",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Mark Carney says U.S., Canada teams will work on trade deal in ‘coming weeks’ - ",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -508,21 +520,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Federal judge rejects Trump administration attempt to pause Alaska’s US Senate e",
+      "title": "Analysis: Republicans face a midterm reckoning of Trump’s making - AP News",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump Says He May Become ‘Mr. Veto’ If Democrats Win Control Of Congress - Forbe",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "How to think about the midterms — and the political moment the country is in - N",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "關稅/貿易",
+      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -532,19 +538,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,15 +556,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan semiconductor industry group backs government review of nuclear power res",
+      "title": "Weekly Recap: Q3 revenue jump and CoWoS price hikes - TradingView",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "US sell-offs pose challenge for TAIEX - Taipei Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -573,8 +567,8 @@
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "Wall Street's Black October: Why the worst may still be ahead - Ynetnews",
+      "label": "台股/半導體",
+      "title": "Semiconductor Manufacturing Fuels Taiwanese Investment Wave Across Arizona Marke",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -587,6 +581,12 @@
     {
       "label": "聯準會",
       "title": "Stocks often rally after midterm elections, but AI spending, rate hikes add risk",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Wall Street's Black October: Why the worst may still be ahead - Ynetnews",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
