@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-11-03 06:30",
+  "generated_at": "2026-11-03 11:07",
   "mode": "morning",
-  "signal_date": "2026-10-30",
+  "signal_date": "2026-11-03",
   "trade_date": "2026-11-04",
   "direction": 0,
-  "total_score": -16,
-  "tw_score": -6,
+  "total_score": -17,
+  "tw_score": -7,
   "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 2,
   "foreign_fut_net": 2801,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=23 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "RSI=22 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
-  "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 45211.828125,
-  "tw_chg_pct": -2.4941593686153674,
-  "tw_ma5": 46150.67890625,
-  "tw_ma10": 46483.73046875,
-  "tw_rsi": 23.362929499585803,
-  "tw_macd": -339.0038731957975,
-  "tw_macds": -2.301614061474382,
+  "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
+  "tw_last_close": 44288.51171875,
+  "tw_chg_pct": -1.4061151578373954,
+  "tw_ma5": 45564.87734375,
+  "tw_ma10": 45996.482421875,
+  "tw_rsi": 22.280698950485757,
+  "tw_macd": -599.0395504263724,
+  "tw_macds": -194.81237549316813,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 46485.8671875,
-  "tw_ma10_p2": 46825.13046875,
-  "tw_ma20_p2": 47847.5146484375,
-  "tw_ma20": 47726.5080078125,
+  "tw_ma5_p2": 45926.42109375,
+  "tw_ma10_p2": 46278.757421875,
+  "tw_ma20_p2": 47575.50859375,
+  "tw_ma20": 47372.259765625,
   "stats_real": {
-    "total": 16,
-    "wins": 9,
+    "total": 17,
+    "wins": 10,
     "losses": 7,
-    "win_rate": 56.25,
-    "total_pnl": 5655.0,
-    "avg_pnl": 353.4375,
-    "avg_win": 5217.888888888889,
+    "win_rate": 58.82352941176471,
+    "total_pnl": 6729.0,
+    "avg_pnl": 395.8235294117647,
+    "avg_win": 4803.5,
     "avg_lose": -5900.857142857143,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -1
+    "streak": 1
   },
   "stats_sim": {
     "total": 789,
@@ -226,69 +226,69 @@
     }
   ],
   "stats_real_v100": {
-    "total": 5,
-    "wins": 1,
+    "total": 6,
+    "wins": 2,
     "losses": 4,
-    "win_rate": 20.0,
-    "total_pnl": -34142.0,
-    "avg_pnl": -6828.4,
-    "avg_win": 792.0,
+    "win_rate": 33.33333333333333,
+    "total_pnl": -33068.0,
+    "avg_pnl": -5511.333333333333,
+    "avg_win": 933.0,
     "avg_lose": -8733.5,
-    "max_win": 792.0,
+    "max_win": 1074.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "stats_real_v70": {
-    "total": 7,
-    "wins": 1,
-    "losses": 6,
-    "win_rate": 14.285714285714285,
-    "total_pnl": -39487.0,
-    "avg_pnl": -5641.0,
-    "avg_win": 792.0,
-    "avg_lose": -6713.166666666667,
-    "max_win": 792.0,
-    "max_lose": -16729.0,
-    "streak": -2
-  },
-  "stats_real_v60": {
-    "total": 24,
-    "wins": 10,
-    "losses": 14,
-    "win_rate": 41.66666666666667,
-    "total_pnl": -16381.0,
-    "avg_pnl": -682.5416666666666,
-    "avg_win": 7480.7,
-    "avg_lose": -6513.428571428572,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 2
-  },
-  "stats_real_v50": {
-    "total": 61,
-    "wins": 31,
-    "losses": 30,
-    "win_rate": 50.81967213114754,
-    "total_pnl": 20894.0,
-    "avg_pnl": 342.5245901639344,
-    "avg_win": 5870.032258064516,
-    "avg_lose": -5369.233333333334,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 2
-  },
-  "stats_real_cons": {
     "total": 8,
     "wins": 2,
     "losses": 6,
     "win_rate": 25.0,
-    "total_pnl": -23371.0,
-    "avg_pnl": -2921.375,
-    "avg_win": 8454.0,
+    "total_pnl": -38413.0,
+    "avg_pnl": -4801.625,
+    "avg_win": 933.0,
+    "avg_lose": -6713.166666666667,
+    "max_win": 1074.0,
+    "max_lose": -16729.0,
+    "streak": 1
+  },
+  "stats_real_v60": {
+    "total": 25,
+    "wins": 11,
+    "losses": 14,
+    "win_rate": 44.0,
+    "total_pnl": -15307.0,
+    "avg_pnl": -612.28,
+    "avg_win": 6898.272727272727,
+    "avg_lose": -6513.428571428572,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 3
+  },
+  "stats_real_v50": {
+    "total": 62,
+    "wins": 32,
+    "losses": 30,
+    "win_rate": 51.61290322580645,
+    "total_pnl": 21968.0,
+    "avg_pnl": 354.3225806451613,
+    "avg_win": 5720.15625,
+    "avg_lose": -5369.233333333334,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 3
+  },
+  "stats_real_cons": {
+    "total": 9,
+    "wins": 3,
+    "losses": 6,
+    "win_rate": 33.33333333333333,
+    "total_pnl": -22297.0,
+    "avg_pnl": -2477.4444444444443,
+    "avg_win": 5994.0,
     "avg_lose": -6713.166666666667,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": 1
   },
   "cons_recent": [
     {
@@ -354,16 +354,24 @@
       "exit": 49312,
       "pnl": -4766,
       "win": false
+    },
+    {
+      "date": "2026-11-02",
+      "dir": -1,
+      "entry": 45034,
+      "exit": 44921,
+      "pnl": 1074,
+      "win": true
     }
   ],
   "gold": {
-    "price_usd": 3956.60009765625,
-    "chg_pct": 1.4799096349668945,
+    "price_usd": 3959.699951171875,
+    "chg_pct": 1.5594154851622684,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 96.26000213623047,
-    "oil_chg": -7.548982330976345
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 96.66999816894531,
+    "oil_chg": -7.155209739831937
   },
   "intl_data": {
     "S&P500": {
@@ -384,8 +392,8 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25164.31640625,
-      "chg_pct": -1.0719958868970396,
+      "price": 25164.36328125,
+      "chg_pct": -1.0718116080905769,
       "signal": -1,
       "note": "-1.07%",
       "desc": "科技股連動"
@@ -408,66 +416,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 63290.109375,
-      "chg_pct": -2.1178017720722457,
+      "price": 63081.859375,
+      "chg_pct": -0.32904035410351196,
       "signal": -1,
-      "note": "-2.12%",
+      "note": "-0.33%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5730.740234375,
-      "chg_pct": -3.4848731053964994,
+      "price": 5671.06982421875,
+      "chg_pct": -3.2088698464489376,
       "signal": -1,
-      "note": "-3.48%",
+      "note": "-3.21%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23294.419921875,
-      "chg_pct": 1.462496817265483,
+      "price": 23476.30078125,
+      "chg_pct": 0.3547186446451561,
       "signal": 1,
-      "note": "+1.46%",
+      "note": "+0.35%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3604.984130859375,
+      "chg_pct": -0.9083725495130482,
+      "signal": -1,
+      "note": "-0.91%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 45211.828125,
-      "chg_pct": -2.4941593686153634,
+      "price": 44288.51171875,
+      "chg_pct": -1.4061151578373983,
       "signal": -1,
-      "note": "-2.49%",
+      "note": "-1.41%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.7760009765625,
-      "chg_pct": -0.10207722777689787,
+      "price": 101.81600189208984,
+      "chg_pct": -0.06281445136766337,
       "signal": 0,
-      "note": "-0.10%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3956.60009765625,
-      "chg_pct": 1.4799096349668945,
+      "price": 3959.699951171875,
+      "chg_pct": 1.5594154851622684,
       "signal": -1,
-      "note": "+1.48%(避險↑)",
+      "note": "+1.56%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.26000213623047,
-      "chg_pct": -7.548982330976345,
+      "price": 96.66999816894531,
+      "chg_pct": -7.155209739831937,
       "signal": -1,
-      "note": "-7.55%",
+      "note": "-7.16%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -480,47 +488,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76726.6484375,
-      "chg_pct": -1.9448367689377248,
+      "price": 76631.9765625,
+      "chg_pct": -2.0658255824146683,
       "signal": -1,
-      "note": "-1.94%",
+      "note": "-2.07%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump’s Tariffs Are On the Ballot in Michigan - The New York Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump administration promised farmers $15 billion in weeks before midterms - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Tracking the Return on Investment of Trump’s Backers - Center for American Progr",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump makes final midterm pitch in front of revamped Reflecting Pool - ABC7 New ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump to Axios: \"No rush\" to decide on bombing Iran again - Axios",
+      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Ahead of Election Day, Trump sets the stage for potential Republican losses - NB",
+      "title": "Trump Says US-Canada Trade Deal Is Close After Talks With Carney - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -532,19 +540,19 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "‘Who picks a fight with Canada?’ Trade war angers Alaskan businesses ahead of U.",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -556,9 +564,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Intel vs. Taiwan Semiconductor: The AI Boom Is Telling Two Very Different Storie",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Why Did Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Drop? - Yahoo Finan",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -574,27 +582,27 @@
     },
     {
       "label": "聯準會",
-      "title": "US market correction nearing end, Morgan Stanley strategists say - Yahoo Finance",
+      "title": "Dallas Fed president explains why she is pushing for interest rate hikes - Dalla",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed will vote on rates less often. What that could mean for borrowers - CNBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Kevin Warsh Offered a Warning on Inflation. Here's What History Says Is Coming N",
+      "title": "Mapping the Market: Risk of rise in key US interest rate remains even after rece",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Stocks Are Entering Their Historically Strongest Stretch -- But There May Be a C",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Why Fewer Fed Policy Meetings Could Spell Uncertainty for Stocks - Barron's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "US market correction nearing end, Morgan Stanley strategists say - Yahoo Finance",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
