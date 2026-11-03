@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03 13:25",
+  "generated_at": "2026-11-03 20:56",
   "mode": "morning",
   "signal_date": "2026-11-03",
   "trade_date": "2026-11-04",
@@ -8,25 +8,25 @@
   "tw_score": -7,
   "intl_score": -6,
   "news_score": -2,
-  "psy_score": -1,
-  "inst_score": 2,
-  "foreign_fut_net": 2801,
+  "psy_score": 0,
+  "inst_score": 0,
+  "foreign_fut_net": -2382,
   "foreign_cash_b": 0,
   "veto_msg": "RSI=20 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 43307.8984375,
-  "tw_chg_pct": -3.5891298759708645,
-  "tw_ma5": 45368.7546875,
-  "tw_ma10": 45898.42109375,
-  "tw_rsi": 20.101024586650283,
-  "tw_macd": -677.2651113238098,
-  "tw_macds": -210.45748767265565,
+  "tw_last_close": 43307.5390625,
+  "tw_chg_pct": -3.589929906859013,
+  "tw_ma5": 45368.6828125,
+  "tw_ma10": 45898.38515625,
+  "tw_rsi": 20.100303951367778,
+  "tw_macd": -677.2937794149766,
+  "tw_macds": -210.46322129088895,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 45926.42109375,
   "tw_ma10_p2": 46278.757421875,
   "tw_ma20_p2": 47575.50859375,
-  "tw_ma20": 47323.2291015625,
+  "tw_ma20": 47323.2111328125,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -365,13 +365,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3938.5,
-    "chg_pct": -0.783456693146805,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.8%，影響中性",
-    "oil_usd": 97.0199966430664,
-    "oil_chg": 0.5805489984541103
+    "price_usd": 3926.39990234375,
+    "chg_pct": -1.0882757519581499,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 97.31999969482422,
+    "oil_chg": 0.8915619101327552
   },
   "intl_data": {
     "S&P500": {
@@ -408,10 +408,10 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 21.149999618530273,
-      "chg_pct": 8.908339523376954,
+      "price": 21.229999542236328,
+      "chg_pct": 0.37825023711094485,
       "signal": 0,
-      "note": "VIX=21.1(中性)",
+      "note": "VIX=21.2(中性)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -424,58 +424,58 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5628.85986328125,
-      "chg_pct": -3.9292894409018584,
+      "price": 5648.7900390625,
+      "chg_pct": -3.58913065290953,
       "signal": -1,
-      "note": "-3.93%",
+      "note": "-3.59%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23542.30078125,
-      "chg_pct": 0.6368504631229869,
+      "price": 23525.970703125,
+      "chg_pct": 0.5670438777094824,
       "signal": 1,
-      "note": "+0.64%",
+      "note": "+0.57%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3603.656982421875,
-      "chg_pct": -0.9448524045599819,
+      "price": 3608.09765625,
+      "chg_pct": -0.822789843219166,
       "signal": -1,
-      "note": "-0.94%",
+      "note": "-0.82%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43307.8984375,
-      "chg_pct": -3.5891298759708636,
+      "price": 43307.5390625,
+      "chg_pct": -3.589929906859013,
       "signal": -1,
       "note": "-3.59%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.75299835205078,
-      "chg_pct": 0.0029467833422911547,
+      "price": 101.88500213623047,
+      "chg_pct": 0.13268023216753685,
       "signal": 0,
-      "note": "+0.00%(中性)",
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3938.5,
-      "chg_pct": -0.783456693146805,
+      "price": 3926.39990234375,
+      "chg_pct": -1.0882757519581499,
       "signal": 1,
-      "note": "-0.78%()",
+      "note": "-1.09%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 97.0199966430664,
-      "chg_pct": 0.5805489984541103,
+      "price": 97.31999969482422,
+      "chg_pct": 0.8915619101327552,
       "signal": 1,
-      "note": "+0.58%",
+      "note": "+0.89%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -488,31 +488,37 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76688.75,
-      "chg_pct": -1.9932702343756394,
-      "signal": -1,
-      "note": "-1.99%",
+      "price": 77273.890625,
+      "chg_pct": 0.778057879338877,
+      "signal": 1,
+      "note": "+0.78%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump’s Tariffs Are On the Ballot in Michigan - The New York Times",
+      "title": "Exclusive | U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump administration promised farmers $15 billion in weeks before midterms - PBS",
+      "title": "How Trump Is Spending Election Day and Night - Time Magazine",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Supreme Court declines to hear Trump’s California 20,000 ballot case. Here’s wha",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Wall Street is bracing for a fresh wave of tariffs, Iran action (and potentially",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Tariffs Are On the Ballot in Michigan - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -522,13 +528,7 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump to Axios: \"No rush\" to decide on bombing Iran again - Axios",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he had ‘very good talk’ with Netanyahu, discussed Iran - The Washingt",
+      "title": "Trump Says ‘There Hasn’t Been Shooting For Months’—As U.S. Strikes Iran - Forbes",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -540,31 +540,25 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "‘Who picks a fight with Canada?’ Trade war angers Alaskan businesses ahead of U.",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan's AI Stock Boom Is Making Early-Stage Startups a Tougher Pitch - Business",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC’s $265 Billion Campus Is Driving a Real Estate Boom in the Phoenix Suburbs ",
+      "title": "Taiwan’s AI stock boom is making early-stage startups a harder sell - Business I",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -576,31 +570,37 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What's Going on With Taiwan Semiconductor Stock on Monday? - Taiwan Semiconducto",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Mapping the Market: Risk of rise in key US interest rate remains even after rece",
+      "title": "Semiconductor Selloff Returns: TSMC ADR Falls Below $400, Taiwan Stocks Plunge M",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "Federal Reserve makes interest rate decision ahead of midterms - Fox Business",
+      "label": "台股/半導體",
+      "title": "Taiwan's stock market capitalization soars over 60% year to date - Focus Taiwan",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+      "title": "US market correction nearing end, Morgan Stanley strategists say - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "30 Day Federal Funds Futures - CME Group",
+      "title": "Fed Chair Kevin Warsh Just Drove a Dagger Through Wall Street's AI-Driven Rally ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed will vote on rates less often. What that could mean for borrowers - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Midterms, Jobs Data, and Apple Earnings Test Wall Street This Week: Will Stocks ",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
