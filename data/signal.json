@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-04 08:38",
+  "generated_at": "2026-11-04 09:45",
   "mode": "morning",
-  "signal_date": "2026-11-02",
+  "signal_date": "2026-11-04",
   "trade_date": "2026-11-05",
   "direction": 0,
-  "total_score": -4,
+  "total_score": -5,
   "tw_score": -7,
-  "intl_score": 5,
+  "intl_score": 4,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -2382,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 44920.140625,
-  "tw_chg_pct": -0.6451574999213783,
-  "tw_ma5": 45926.42109375,
-  "tw_ma10": 46278.757421875,
-  "tw_rsi": 23.92110978322721,
-  "tw_macd": -459.4965284131249,
-  "tw_macds": -93.75558175986706,
+  "tw_last_close": 43326.80859375,
+  "tw_chg_pct": -3.5470325984759743,
+  "tw_ma5": 45372.53671875,
+  "tw_ma10": 45900.312109375,
+  "tw_rsi": 20.13901713487894,
+  "tw_macd": -675.7566088309322,
+  "tw_macds": -210.1557871740801,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 46150.67890625,
-  "tw_ma10_p2": 46483.73046875,
-  "tw_ma20_p2": 47726.5080078125,
-  "tw_ma20": 47575.50859375,
+  "tw_ma5_p2": 45926.42109375,
+  "tw_ma10_p2": 46278.757421875,
+  "tw_ma20_p2": 47575.50859375,
+  "tw_ma20": 47324.174609375,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -365,13 +365,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3941.699951171875,
-    "chg_pct": -0.7028452689944243,
+    "price_usd": 3963.89990234375,
+    "chg_pct": -0.14359621050658317,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 96.38999938964844,
-    "oil_chg": -0.07256862480676379
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 96.05000305175781,
+    "oil_chg": -0.42504254261478797
   },
   "intl_data": {
     "S&P500": {
@@ -416,66 +416,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 62367.6796875,
-      "chg_pct": -1.132147489905849,
+      "price": 61489.26171875,
+      "chg_pct": -2.5246523676205443,
       "signal": -1,
-      "note": "-1.13%",
+      "note": "-2.52%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5765.4599609375,
-      "chg_pct": -1.5978637591425437,
+      "price": 5621.31005859375,
+      "chg_pct": -4.05814592667831,
       "signal": -1,
-      "note": "-1.60%",
+      "note": "-4.06%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23393.3203125,
-      "chg_pct": 0.4245668746278846,
-      "signal": 1,
-      "note": "+0.42%",
+      "price": 23450.900390625,
+      "chg_pct": 0.24613897196214865,
+      "signal": 0,
+      "note": "+0.25%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3638.031005859375,
+      "chg_pct": 1.0840158588221314,
+      "signal": 1,
+      "note": "+1.08%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44920.140625,
-      "chg_pct": -0.645157499921377,
+      "price": 43326.80859375,
+      "chg_pct": -3.5470325984759756,
       "signal": -1,
-      "note": "-0.65%",
+      "note": "-3.55%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.88999938964844,
-      "chg_pct": 0.13759153773802213,
-      "signal": 0,
-      "note": "+0.14%(中性)",
+      "price": 101.39800262451172,
+      "chg_pct": -0.34594336657324937,
+      "signal": 1,
+      "note": "-0.35%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3941.699951171875,
-      "chg_pct": -0.7028452689944243,
-      "signal": 1,
-      "note": "-0.70%()",
+      "price": 3963.89990234375,
+      "chg_pct": -0.14359621050658317,
+      "signal": 0,
+      "note": "-0.14%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.38999938964844,
-      "chg_pct": -0.07256862480676379,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 96.05000305175781,
+      "chg_pct": -0.42504254261478797,
+      "signal": -1,
+      "note": "-0.43%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -488,10 +488,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76832.7109375,
-      "chg_pct": 0.2026858911750076,
+      "price": 76789.3984375,
+      "chg_pct": 0.14619915811944825,
       "signal": 0,
-      "note": "+0.20%",
+      "note": "+0.15%",
       "desc": "風險偏好指標"
     }
   },
@@ -510,19 +510,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Exclusive | U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says U.S. to End $4 Billion in Aid to Israel at End of Year - The New York",
+      "title": "Trump’s trade chief pushing him to step up negotiations with Canada - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
       "title": "Midterm elections near an end as voters weigh in on Trump’s second term - Spectr",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says U.S. to End $4 Billion in Aid to Israel at End of Year - The New York",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -570,13 +570,19 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Semi or Broadcom: If I Could Only Own 1 for the Next 5 Years, It Would Be",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Human Circuits in Cold War Taiwan: The Radio Corporation of America, KMT Martial",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semi or Broadcom: If I Could Only Own 1 for the Next 5 Years, It Would Be",
+      "label": "聯準會",
+      "title": "Fed will vote on rates less often. What that could mean for borrowers - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -589,12 +595,6 @@
     {
       "label": "聯準會",
       "title": "Fed Chair Kevin Warsh Just Drove a Dagger Through Wall Street's AI-Driven Rally ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed will vote on rates less often. What that could mean for borrowers - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
