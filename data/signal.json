@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-04 09:45",
+  "generated_at": "2026-11-04 12:53",
   "mode": "morning",
   "signal_date": "2026-11-04",
   "trade_date": "2026-11-05",
   "direction": 0,
-  "total_score": -5,
+  "total_score": -4,
   "tw_score": -7,
   "intl_score": 4,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": 1,
   "inst_score": 0,
   "foreign_fut_net": -2382,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-7) vs 國際(+4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 43326.80859375,
-  "tw_chg_pct": -3.5470325984759743,
-  "tw_ma5": 45372.53671875,
-  "tw_ma10": 45900.312109375,
-  "tw_rsi": 20.13901713487894,
-  "tw_macd": -675.7566088309322,
-  "tw_macds": -210.1557871740801,
+  "tw_last_close": 42349.03125,
+  "tw_chg_pct": -2.21325855324338,
+  "tw_ma5": 44431.3734375,
+  "tw_ma10": 45451.08046875,
+  "tw_rsi": 20.1046050300684,
+  "tw_macd": -916.6763653347734,
+  "tw_macds": -351.7058500996659,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 45926.42109375,
-  "tw_ma10_p2": 46278.757421875,
-  "tw_ma20_p2": 47575.50859375,
-  "tw_ma20": 47324.174609375,
+  "tw_ma5_p2": 45368.6828125,
+  "tw_ma10_p2": 45898.38515625,
+  "tw_ma20_p2": 47323.2111328125,
+  "tw_ma20": 47016.87578125,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -239,56 +239,56 @@
     "streak": 2
   },
   "stats_real_v70": {
-    "total": 8,
-    "wins": 2,
-    "losses": 6,
-    "win_rate": 25.0,
-    "total_pnl": -38413.0,
-    "avg_pnl": -4801.625,
-    "avg_win": 933.0,
-    "avg_lose": -6713.166666666667,
-    "max_win": 1074.0,
-    "max_lose": -16729.0,
-    "streak": 1
-  },
-  "stats_real_v60": {
-    "total": 25,
-    "wins": 11,
-    "losses": 14,
-    "win_rate": 44.0,
-    "total_pnl": -15307.0,
-    "avg_pnl": -612.28,
-    "avg_win": 6898.272727272727,
-    "avg_lose": -6513.428571428572,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 3
-  },
-  "stats_real_v50": {
-    "total": 62,
-    "wins": 32,
-    "losses": 30,
-    "win_rate": 51.61290322580645,
-    "total_pnl": 21968.0,
-    "avg_pnl": 354.3225806451613,
-    "avg_win": 5720.15625,
-    "avg_lose": -5369.233333333334,
-    "max_win": 25558.0,
-    "max_lose": -16729.0,
-    "streak": 3
-  },
-  "stats_real_cons": {
     "total": 9,
     "wins": 3,
     "losses": 6,
     "win_rate": 33.33333333333333,
-    "total_pnl": -22297.0,
-    "avg_pnl": -2477.4444444444443,
-    "avg_win": 5994.0,
+    "total_pnl": -26742.0,
+    "avg_pnl": -2971.3333333333335,
+    "avg_win": 4512.333333333333,
+    "avg_lose": -6713.166666666667,
+    "max_win": 11671.0,
+    "max_lose": -16729.0,
+    "streak": 2
+  },
+  "stats_real_v60": {
+    "total": 26,
+    "wins": 12,
+    "losses": 14,
+    "win_rate": 46.15384615384615,
+    "total_pnl": -3636.0,
+    "avg_pnl": -139.84615384615384,
+    "avg_win": 7296.0,
+    "avg_lose": -6513.428571428572,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 4
+  },
+  "stats_real_v50": {
+    "total": 63,
+    "wins": 33,
+    "losses": 30,
+    "win_rate": 52.38095238095239,
+    "total_pnl": 33639.0,
+    "avg_pnl": 533.952380952381,
+    "avg_win": 5900.484848484848,
+    "avg_lose": -5369.233333333334,
+    "max_win": 25558.0,
+    "max_lose": -16729.0,
+    "streak": 4
+  },
+  "stats_real_cons": {
+    "total": 10,
+    "wins": 4,
+    "losses": 6,
+    "win_rate": 40.0,
+    "total_pnl": -10626.0,
+    "avg_pnl": -1062.6,
+    "avg_win": 7413.25,
     "avg_lose": -6713.166666666667,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "cons_recent": [
     {
@@ -362,16 +362,24 @@
       "exit": 44921,
       "pnl": 1074,
       "win": true
+    },
+    {
+      "date": "2026-11-03",
+      "dir": -1,
+      "entry": 44481,
+      "exit": 43309,
+      "pnl": 11671,
+      "win": true
     }
   ],
   "gold": {
-    "price_usd": 3963.89990234375,
-    "chg_pct": -0.14359621050658317,
+    "price_usd": 3955.89990234375,
+    "chg_pct": -0.3451278460162507,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 96.05000305175781,
-    "oil_chg": -0.42504254261478797
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 95.16999816894531,
+    "oil_chg": -1.3373428651991326
   },
   "intl_data": {
     "S&P500": {
@@ -384,8 +392,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 51786.71875,
-      "chg_pct": -0.37946636054271227,
+      "price": 51786.69921875,
+      "chg_pct": -0.37950393221349216,
       "signal": -1,
       "note": "-0.38%",
       "desc": "藍籌股風向球"
@@ -416,66 +424,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 61489.26171875,
-      "chg_pct": -2.5246523676205443,
+      "price": 60138.23046875,
+      "chg_pct": -4.666363571738012,
       "signal": -1,
-      "note": "-2.52%",
+      "note": "-4.67%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5621.31005859375,
-      "chg_pct": -4.05814592667831,
+      "price": 5435.009765625,
+      "chg_pct": -3.784532120315451,
       "signal": -1,
-      "note": "-4.06%",
+      "note": "-3.78%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23450.900390625,
-      "chg_pct": 0.24613897196214865,
+      "price": 23529.66015625,
+      "chg_pct": 0.01568246926580557,
       "signal": 0,
-      "note": "+0.25%",
+      "note": "+0.02%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3638.031005859375,
-      "chg_pct": 1.0840158588221314,
-      "signal": 1,
-      "note": "+1.08%",
+      "price": 3604.372314453125,
+      "chg_pct": -0.10325623196356883,
+      "signal": 0,
+      "note": "-0.10%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43326.80859375,
-      "chg_pct": -3.5470325984759756,
+      "price": 42349.03125,
+      "chg_pct": -2.213258553243382,
       "signal": -1,
-      "note": "-3.55%",
+      "note": "-2.21%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.39800262451172,
-      "chg_pct": -0.34594336657324937,
+      "price": 101.30899810791016,
+      "chg_pct": -0.4334170929629914,
       "signal": 1,
-      "note": "-0.35%(偏多)",
+      "note": "-0.43%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3963.89990234375,
-      "chg_pct": -0.14359621050658317,
+      "price": 3955.89990234375,
+      "chg_pct": -0.3451278460162507,
       "signal": 0,
-      "note": "-0.14%()",
+      "note": "-0.35%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.05000305175781,
-      "chg_pct": -0.42504254261478797,
+      "price": 95.16999816894531,
+      "chg_pct": -1.3373428651991326,
       "signal": -1,
-      "note": "-0.43%",
+      "note": "-1.34%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -488,10 +496,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76789.3984375,
-      "chg_pct": 0.14619915811944825,
-      "signal": 0,
-      "note": "+0.15%",
+      "price": 77115.0,
+      "chg_pct": 0.5708379700885223,
+      "signal": 1,
+      "note": "+0.57%",
       "desc": "風險偏好指標"
     }
   },
@@ -504,33 +512,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says U.S. will stop giving $4 billion in aid to Israel next year - PBS",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says US is close to making a trade deal with Canada - Yahoo! Finance Canad",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump’s trade chief pushing him to step up negotiations with Canada - Politico",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Midterm elections near an end as voters weigh in on Trump’s second term - Spectr",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump Says U.S. to End $4 Billion in Aid to Israel at End of Year - The New York",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says US will stop giving Israel aid after year-end - Al Jazeera",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -564,13 +572,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Until Next Gen Computing Implodes I’ll Keep Buying Taiwan Semiconductor - 24/7 W",
+      "title": "Taiwan Semi or Broadcom: If I Could Only Own 1 for the Next 5 Years, It Would Be",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semi or Broadcom: If I Could Only Own 1 for the Next 5 Years, It Would Be",
+      "title": "Until Next Gen Computing Implodes I’ll Keep Buying Taiwan Semiconductor - 24/7 W",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
