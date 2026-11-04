@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-04 04:19",
+  "generated_at": "2026-11-04 08:38",
   "mode": "morning",
   "signal_date": "2026-11-02",
   "trade_date": "2026-11-05",
   "direction": 0,
-  "total_score": -1,
+  "total_score": -4,
   "tw_score": -7,
-  "intl_score": 7,
+  "intl_score": 5,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -2382,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 44920.140625,
@@ -365,69 +365,69 @@
     }
   ],
   "gold": {
-    "price_usd": 3930.39990234375,
-    "chg_pct": -0.9875099342033159,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 96.62999725341797,
-    "oil_chg": 0.17623695890401206
+    "price_usd": 3941.699951171875,
+    "chg_pct": -0.7028452689944243,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.7%，影響中性",
+    "oil_usd": 96.38999938964844,
+    "oil_chg": -0.07256862480676379
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7566.27978515625,
-      "chg_pct": 0.32991066824035836,
+      "price": 7568.919921875,
+      "chg_pct": 0.3649192442731648,
       "signal": 1,
-      "note": "+0.33%",
+      "note": "+0.36%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51760.7109375,
-      "chg_pct": -0.429496797353211,
+      "price": 51786.71875,
+      "chg_pct": -0.37946636054271227,
       "signal": -1,
-      "note": "-0.43%",
+      "note": "-0.38%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25368.076171875,
-      "chg_pct": 0.8097405435385727,
+      "price": 25372.009765625,
+      "chg_pct": 0.8253721808237376,
       "signal": 1,
-      "note": "+0.81%",
+      "note": "+0.83%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10585.755859375,
-      "chg_pct": 2.4924240346967395,
+      "price": 10600.396484375,
+      "chg_pct": 2.6341761368202787,
       "signal": 1,
-      "note": "+2.49%",
+      "note": "+2.63%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 20.979999542236328,
-      "chg_pct": -0.8037828811353839,
+      "price": 20.829999923706055,
+      "chg_pct": -1.5130009484437794,
       "signal": 0,
-      "note": "VIX=21.0(中性)",
+      "note": "VIX=20.8(中性)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 63081.859375,
-      "chg_pct": -0.32904035410351196,
+      "price": 62367.6796875,
+      "chg_pct": -1.132147489905849,
       "signal": -1,
-      "note": "-0.33%",
+      "note": "-1.13%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5859.080078125,
-      "chg_pct": 2.239498537731171,
-      "signal": 1,
-      "note": "+2.24%",
+      "price": 5765.4599609375,
+      "chg_pct": -1.5978637591425437,
+      "signal": -1,
+      "note": "-1.60%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -456,26 +456,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.86100006103516,
-      "chg_pct": 0.10909096907632063,
+      "price": 101.88999938964844,
+      "chg_pct": 0.13759153773802213,
       "signal": 0,
-      "note": "+0.11%(中性)",
+      "note": "+0.14%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3930.39990234375,
-      "chg_pct": -0.9875099342033159,
+      "price": 3941.699951171875,
+      "chg_pct": -0.7028452689944243,
       "signal": 1,
-      "note": "-0.99%()",
+      "note": "-0.70%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 96.62999725341797,
-      "chg_pct": 0.17623695890401206,
+      "price": 96.38999938964844,
+      "chg_pct": -0.07256862480676379,
       "signal": 0,
-      "note": "+0.18%",
+      "note": "-0.07%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -488,49 +488,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 77626.3203125,
-      "chg_pct": 1.237685046523101,
-      "signal": 1,
-      "note": "+1.24%",
+      "price": 76832.7109375,
+      "chg_pct": 0.2026858911750076,
+      "signal": 0,
+      "note": "+0.20%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
+      "title": "Trump says US close to trade deal with Canada, Carney says work remains - Reuter",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Poll: Canadians and Americans agree, Trump was in the wrong with trade war - Pol",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says 'very bad' Canada is being 'taught a little lesson' as trade action e",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Canada becoming EU ‘associate member’ could be ‘hostile act’ - Al Jaz",
+      "title": "Trump says U.S. will stop giving $4 billion in aid to Israel next year - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "US will scrap Irish whisky tariff, Trump says - Al Jazeera",
+      "title": "Exclusive | U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks - WSJ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Says U.S. to End $4 Billion in Aid to Israel at End of Year - The New York",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Midterm elections near an end as voters weigh in on Trump’s second term - Spectr",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says US will stop giving Israel aid after year-end - Al Jazeera",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -540,19 +540,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump has lost control of his war with Canada - SMH.com.au",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -570,7 +570,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Semiconductor Selloff Returns: TSMC ADR Falls Below $400, Taiwan Stocks Plunge M",
+      "title": "Human Circuits in Cold War Taiwan: The Radio Corporation of America, KMT Martial",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
