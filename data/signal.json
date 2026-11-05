@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-05 21:13",
+  "generated_at": "2026-11-05 23:04",
   "mode": "morning",
   "signal_date": "2026-11-05",
   "trade_date": "2026-11-06",
   "direction": 0,
-  "total_score": -7,
+  "total_score": -19,
   "tw_score": -7,
-  "intl_score": 2,
+  "intl_score": -7,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": -2,
   "inst_score": 0,
   "foreign_fut_net": -2975,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
+  "veto_msg": "RSI=16 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 41574.71875,
@@ -381,69 +381,69 @@
     }
   ],
   "gold": {
-    "price_usd": 4130.39990234375,
-    "chg_pct": 1.4092782308801866,
+    "price_usd": 4119.2001953125,
+    "chg_pct": 1.1343038377731403,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.4%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 89.19999694824219,
-    "oil_chg": 1.2255948343147853
+    "warning": "黃金上漲 +1.1%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 89.72000122070312,
+    "oil_chg": 1.815704067466287
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7688.6201171875,
-      "chg_pct": 1.5814699659663916,
-      "signal": 1,
-      "note": "+1.58%",
+      "price": 7547.7998046875,
+      "chg_pct": -1.8315420758687726,
+      "signal": -1,
+      "note": "-1.83%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 53356.12109375,
-      "chg_pct": 3.0305112616350116,
-      "signal": 1,
-      "note": "+3.03%",
+      "price": 52869.26953125,
+      "chg_pct": -0.9124568138013103,
+      "signal": -1,
+      "note": "-0.91%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25736.509765625,
-      "chg_pct": 1.4366224960777012,
-      "signal": 1,
-      "note": "+1.44%",
+      "price": 24908.615234375,
+      "chg_pct": -3.216809655968885,
+      "signal": -1,
+      "note": "-3.22%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10268.650390625,
-      "chg_pct": -3.1295987677352253,
+      "price": 9549.6240234375,
+      "chg_pct": -7.002150621896249,
       "signal": -1,
-      "note": "-3.13%",
+      "note": "-7.00%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 16.920000076293945,
-      "chg_pct": 1.8663422910965293,
+      "price": 19.969999313354492,
+      "chg_pct": 20.228769292813485,
       "signal": 1,
-      "note": "VIX=16.9(低恐慌)",
+      "note": "VIX=20.0(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 61077.8984375,
-      "chg_pct": -1.7860668232844263,
+      "price": 62188.62890625,
+      "chg_pct": -1.4159862718060534,
       "signal": -1,
-      "note": "-1.79%",
+      "note": "-1.42%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5383.7998046875,
-      "chg_pct": -5.27815915952188,
-      "signal": -1,
-      "note": "-5.28%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -472,42 +472,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.56500244140625,
-      "chg_pct": 0.054182153500468504,
+      "price": 101.5790023803711,
+      "chg_pct": 0.06797383773869291,
       "signal": 0,
-      "note": "+0.05%(中性)",
+      "note": "+0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4130.39990234375,
-      "chg_pct": 1.4092782308801866,
+      "price": 4119.2001953125,
+      "chg_pct": 1.1343038377731403,
       "signal": -1,
-      "note": "+1.41%(避險↑)",
+      "note": "+1.13%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 89.19999694824219,
-      "chg_pct": 1.2255948343147853,
+      "price": 89.72000122070312,
+      "chg_pct": 1.815704067466287,
       "signal": 1,
-      "note": "+1.23%",
+      "note": "+1.82%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.894000053405762,
-      "chg_pct": -1.1712456802281193,
+      "price": 4.880000114440918,
+      "chg_pct": -0.2860633185956162,
       "signal": 0,
-      "note": "4.89%(-1.17%)",
+      "note": "4.88%(-0.29%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 79571.6171875,
-      "chg_pct": -1.0368371094990738,
+      "price": 77753.9921875,
+      "chg_pct": -3.297416010704364,
       "signal": -1,
-      "note": "-1.04%",
+      "note": "-3.30%",
       "desc": "風險偏好指標"
     }
   },
@@ -515,6 +515,12 @@
     {
       "label": "川普動態",
       "title": "Trump Says in Interview That He Will Accept Election Results - The New York Time",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump asking advisers if Hegseth should stay after midterm losses, sources say -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -532,21 +538,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump's arch is on the verge of federal approval. But a judge could block constr",
+      "title": "Analysis | Trump’s favorite economic policy was among Tuesday’s biggest losers -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "A Democratic-controlled Congress will likely try to constrain Trump’s foreign ad",
+      "title": "Republicans were punished in the midterms for Trump's economic policies, The AP ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump concedes Iran war angered voters, triggered Democratic landslide - The Was",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -562,13 +562,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -586,25 +586,25 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Stock Exchange and Bloomberg Establish Strategic Collaboration | Press | ",
+      "title": "The Zacks Analyst Blog Highlights Analog Devices, Taiwan Semiconductor Manufactu",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "A rare strike in Taiwan exposes labor unrest beneath the global AI rush - Rest o",
+      "title": "Taiwan Stock Exchange and Bloomberg Establish Strategic Collaboration | Press | ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Thing",
+      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
+      "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Thing",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
