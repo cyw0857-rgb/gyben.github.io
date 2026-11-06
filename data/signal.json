@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-06 20:58",
+  "generated_at": "2026-11-06 22:41",
   "mode": "morning",
   "signal_date": "2026-11-06",
   "trade_date": "2026-11-09",
   "direction": 0,
-  "total_score": -22,
+  "total_score": -9,
   "tw_score": -7,
-  "intl_score": -12,
+  "intl_score": 2,
   "news_score": -2,
-  "psy_score": -1,
+  "psy_score": -2,
   "inst_score": -1,
   "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=16 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 39701.640625,
@@ -381,53 +381,53 @@
     }
   ],
   "gold": {
-    "price_usd": 4072.300048828125,
-    "chg_pct": -1.0015789758569345,
+    "price_usd": 4042.10009765625,
+    "chg_pct": -1.7357457723046068,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 90.26000213623047,
-    "oil_chg": -0.28722328378019485
+    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 90.66000366210938,
+    "oil_chg": 0.1546697130304113
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7353.72998046875,
-      "chg_pct": -4.355659814302972,
-      "signal": -1,
-      "note": "-4.36%",
+      "price": 7407.990234375,
+      "chg_pct": 0.7378602974322329,
+      "signal": 1,
+      "note": "+0.74%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51523.05859375,
-      "chg_pct": -3.435524289292312,
+      "price": 51221.75,
+      "chg_pct": -0.5848033908968095,
       "signal": -1,
-      "note": "-3.44%",
+      "note": "-0.58%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24315.0,
-      "chg_pct": -5.523319900679156,
-      "signal": -1,
-      "note": "-5.52%",
+      "price": 24730.953125,
+      "chg_pct": 1.7106852765782439,
+      "signal": 1,
+      "note": "+1.71%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9011.1396484375,
-      "chg_pct": -12.246115062360808,
-      "signal": -1,
-      "note": "-12.25%",
+      "price": 9543.302734375,
+      "chg_pct": 5.905613570529619,
+      "signal": 1,
+      "note": "+5.91%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.979999542236328,
-      "chg_pct": -4.258341908956796,
+      "price": 26.84000015258789,
+      "chg_pct": -4.755145983237533,
       "signal": -1,
-      "note": "VIX=27.0(高恐慌⚠️)",
+      "note": "VIX=26.8(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -472,42 +472,42 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.0250015258789,
-      "chg_pct": 0.46774836026247824,
+      "price": 102.34700012207031,
+      "chg_pct": 0.7848321480662961,
       "signal": -1,
-      "note": "+0.47%(偏空)",
+      "note": "+0.78%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4072.300048828125,
-      "chg_pct": -1.0015789758569345,
+      "price": 4042.10009765625,
+      "chg_pct": -1.7357457723046068,
       "signal": 1,
-      "note": "-1.00%()",
+      "note": "-1.74%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.26000213623047,
-      "chg_pct": -0.28722328378019485,
+      "price": 90.66000366210938,
+      "chg_pct": 0.1546697130304113,
       "signal": 0,
-      "note": "-0.29%",
+      "note": "+0.15%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.836999893188477,
-      "chg_pct": -1.1646947199687592,
+      "price": 4.863999843597412,
+      "chg_pct": 0.5581962167697628,
       "signal": 0,
-      "note": "4.84%(-1.16%)",
+      "note": "4.86%(+0.56%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 75938.953125,
-      "chg_pct": -0.0041767003491145396,
+      "price": 75756.953125,
+      "chg_pct": -0.24383288589830743,
       "signal": 0,
-      "note": "-0.00%",
+      "note": "-0.24%",
       "desc": "風險偏好指標"
     }
   },
@@ -532,19 +532,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Analysis | Trump’s favorite economic policy was among Tuesday’s biggest losers -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Exclusive | Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs - WS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump says voters should blame themselves for stock market rout - Axios",
+      "title": "Trump Media’s investors lost $2.2 billion while Trump holds $460 million stake -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Judge halts construction of Trump's arch. And, Labor Department to release jobs ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -574,6 +574,12 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
       "title": "Taiwan Activates Market-Stabilization Measures to Stem AI Bleeding - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
@@ -586,39 +592,33 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
       "title": "Micron Stock Falls After Report of $4.5 Billion Taiwan Pause - Yahoo Finance",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "How do changing interest rates affect the stock market in 2026 - U.S. Bank",
+      "title": "Democratic sweep gives markets a reason to rethink path of interest rates - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Chair Kevin Warsh Is Planning to Break 45 Years of Precedent With a Stunning",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stable Labor Market to Keep Fed on Track to Raise Rates Gradually - The New York",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
       "title": "Fed's Hammack, Barkin favor gradual rate-hike path to lower inflation - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "US Treasury Traders Make Bullish Bets Ahead of Jobs Report - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Democrat sweep gives markets a reason to rethink path of interest rates - CNBC",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
