@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-06 13:11",
+  "generated_at": "2026-11-06 20:58",
   "mode": "morning",
   "signal_date": "2026-11-06",
   "trade_date": "2026-11-09",
   "direction": 0,
   "total_score": -22,
   "tw_score": -7,
-  "intl_score": -10,
+  "intl_score": -12,
   "news_score": -2,
-  "psy_score": -4,
-  "inst_score": 0,
-  "foreign_fut_net": -2975,
+  "psy_score": -1,
+  "inst_score": -1,
+  "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "RSI=17 不在空頭區間(28~55) → 觀望",
+  "veto_msg": "RSI=16 不在空頭區間(28~55) → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 39944.37890625,
-  "tw_chg_pct": -3.9214693274383206,
-  "tw_ma5": 42539.1375,
-  "tw_ma10": 44344.908203125,
-  "tw_rsi": 16.501408093932525,
-  "tw_macd": -1431.6061506123733,
-  "tw_macds": -684.264051137211,
+  "tw_last_close": 39701.640625,
+  "tw_chg_pct": -4.5053296361746265,
+  "tw_ma5": 42490.58984375,
+  "tw_ma10": 44320.634375,
+  "tw_rsi": 16.12807154682062,
+  "tw_macd": -1450.9698881479853,
+  "tw_macds": -688.1367986443333,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 43592.62734375,
   "tw_ma10_p2": 45039.247265625,
   "tw_ma20_p2": 46640.0037109375,
-  "tw_ma20": 46146.0951171875,
+  "tw_ma20": 46133.958203125,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -381,13 +381,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4052.199951171875,
-    "chg_pct": -1.490216332274827,
+    "price_usd": 4072.300048828125,
+    "chg_pct": -1.0015789758569345,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.5%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 91.41000366210938,
-    "oil_chg": 0.9832159213973424
+    "warning": "黃金下跌 -1.0%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 90.26000213623047,
+    "oil_chg": -0.28722328378019485
   },
   "intl_data": {
     "S&P500": {
@@ -424,74 +424,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 28.18000030517578,
-      "chg_pct": 69.65682883607872,
+      "price": 26.979999542236328,
+      "chg_pct": -4.258341908956796,
       "signal": -1,
-      "note": "VIX=28.2(高恐慌⚠️)",
+      "note": "VIX=27.0(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 57381.390625,
-      "chg_pct": -6.052120172868382,
+      "price": 57434.76953125,
+      "chg_pct": -5.964725374397014,
       "signal": -1,
-      "note": "-6.05%",
+      "note": "-5.96%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5111.25,
-      "chg_pct": -5.062406006445479,
+      "price": 5059.68994140625,
+      "chg_pct": -6.020095007972957,
       "signal": -1,
-      "note": "-5.06%",
+      "note": "-6.02%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24533.330078125,
-      "chg_pct": -1.0632358684044665,
+      "price": 24481.859375,
+      "chg_pct": -1.2708042987214767,
       "signal": -1,
-      "note": "-1.06%",
+      "note": "-1.27%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3647.896240234375,
-      "chg_pct": -1.13863585612558,
+      "price": 3649.177490234375,
+      "chg_pct": -1.1039127953618777,
       "signal": -1,
-      "note": "-1.14%",
+      "note": "-1.10%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39944.37890625,
-      "chg_pct": -3.9214693274383245,
+      "price": 39701.640625,
+      "chg_pct": -4.505329636174628,
       "signal": -1,
-      "note": "-3.92%",
+      "note": "-4.51%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.76399993896484,
-      "chg_pct": 0.21073055714036928,
-      "signal": 0,
-      "note": "+0.21%(中性)",
+      "price": 102.0250015258789,
+      "chg_pct": 0.46774836026247824,
+      "signal": -1,
+      "note": "+0.47%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4052.199951171875,
-      "chg_pct": -1.490216332274827,
+      "price": 4072.300048828125,
+      "chg_pct": -1.0015789758569345,
       "signal": 1,
-      "note": "-1.49%()",
+      "note": "-1.00%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 91.41000366210938,
-      "chg_pct": 0.9832159213973424,
-      "signal": 1,
-      "note": "+0.98%",
+      "price": 90.26000213623047,
+      "chg_pct": -0.28722328378019485,
+      "signal": 0,
+      "note": "-0.29%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -504,17 +504,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75536.0078125,
-      "chg_pct": -6.055921577764678,
-      "signal": -1,
-      "note": "-6.06%",
+      "price": 75938.953125,
+      "chg_pct": -0.0041767003491145396,
+      "signal": 0,
+      "note": "-0.00%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Exclusive | Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs - WS",
+      "title": "Trump says he has 'every intention' to keep Hegseth - ABC News - Breaking News, ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Ted Cruz slams Trump's tariffs and says Iran war needs to end - Houston Chronicl",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Donald Trump has taught the world that tariffs are useless - Financial Times",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -526,27 +538,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he has 'every intention' to keep Hegseth - ABC News - Breaking News, ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Exclusive | Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs - WS",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
       "title": "Trump says voters should blame themselves for stock market rout - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he met Putin envoy Dmitriev - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine - NPR",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -562,37 +562,37 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Activates Market-Stabilization Measures to Stem AI Bleeding - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "AI boom turns chip packaging into the next battleground for semiconductors - Reu",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
       "title": "Micron Stock Falls After Report of $4.5 Billion Taiwan Pause - Yahoo Finance",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here'",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "A rare strike in Taiwan exposes labor unrest beneath the global AI rush - Rest o",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC t",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -610,15 +610,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Barkin sees interest rate hikes ahead, but at a gradual pace - CNBC",
+      "title": "US Treasury Traders Make Bullish Bets Ahead of Jobs Report - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Friday’s Jobs Report: A Good Number Is a Green Light for a Fed Rate Increase - B",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Democrat sweep gives markets a reason to rethink path of interest rates - CNBC",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
