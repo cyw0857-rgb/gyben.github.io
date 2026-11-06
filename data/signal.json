@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-06 04:51",
+  "generated_at": "2026-11-06 09:10",
   "mode": "morning",
   "signal_date": "2026-11-04",
   "trade_date": "2026-11-09",
   "direction": 0,
-  "total_score": -19,
+  "total_score": -21,
   "tw_score": -7,
-  "intl_score": -6,
+  "intl_score": -8,
   "news_score": -2,
-  "psy_score": -3,
+  "psy_score": -4,
   "inst_score": 0,
   "foreign_fut_net": -2975,
   "foreign_cash_b": 0,
@@ -381,69 +381,69 @@
     }
   ],
   "gold": {
-    "price_usd": 4112.39990234375,
-    "chg_pct": 0.9673435390068745,
-    "signal": -1,
-    "level": "warn",
-    "warning": "黃金上漲 +1.0%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 90.73999786376953,
-    "oil_chg": 2.973212704863566
+    "price_usd": 4099.10009765625,
+    "chg_pct": 0.6408077008654555,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 +0.6%，影響中性",
+    "oil_usd": 91.16000366210938,
+    "oil_chg": 3.449842057165912
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7369.06005859375,
-      "chg_pct": -4.15627321578017,
+      "price": 7353.72998046875,
+      "chg_pct": -4.355659814302972,
       "signal": -1,
-      "note": "-4.16%",
+      "note": "-4.36%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51573.640625,
-      "chg_pct": -3.3407234862858037,
+      "price": 51523.05859375,
+      "chg_pct": -3.435524289292312,
       "signal": -1,
-      "note": "-3.34%",
+      "note": "-3.44%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24382.7578125,
-      "chg_pct": -5.2600448368999135,
+      "price": 24314.998046875,
+      "chg_pct": -5.5233274896063955,
       "signal": -1,
-      "note": "-5.26%",
+      "note": "-5.52%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9137.0654296875,
-      "chg_pct": -11.019802192999057,
+      "price": 9011.1376953125,
+      "chg_pct": -12.246134082630517,
       "signal": -1,
-      "note": "-11.02%",
+      "note": "-12.25%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.299999237060547,
-      "chg_pct": 58.33833997977131,
+      "price": 28.18000030517578,
+      "chg_pct": 69.65682883607872,
       "signal": -1,
-      "note": "VIX=26.3(高恐慌⚠️)",
+      "note": "VIX=28.2(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 62188.62890625,
-      "chg_pct": -1.4159862718060534,
+      "price": 57292.28125,
+      "chg_pct": -7.873380941765568,
       "signal": -1,
-      "note": "-1.42%",
+      "note": "-7.87%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5683.7998046875,
-      "chg_pct": 0.6197745956727113,
-      "signal": 1,
-      "note": "+0.62%",
+      "price": 4961.6201171875,
+      "chg_pct": -12.705931107995912,
+      "signal": -1,
+      "note": "-12.71%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -472,26 +472,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.57499694824219,
-      "chg_pct": 0.0640279880247595,
+      "price": 101.59300231933594,
+      "chg_pct": 0.0817655219769173,
       "signal": 0,
-      "note": "+0.06%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4112.39990234375,
-      "chg_pct": 0.9673435390068745,
+      "price": 4099.10009765625,
+      "chg_pct": 0.6408077008654555,
       "signal": 0,
-      "note": "+0.97%()",
+      "note": "+0.64%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.73999786376953,
-      "chg_pct": 2.973212704863566,
+      "price": 91.16000366210938,
+      "chg_pct": 3.449842057165912,
       "signal": 1,
-      "note": "+2.97%",
+      "note": "+3.45%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -504,17 +504,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 76135.890625,
-      "chg_pct": -5.309847756633703,
+      "price": 76198.65625,
+      "chg_pct": -5.231786194102398,
       "signal": -1,
-      "note": "-5.31%",
+      "note": "-5.23%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Says in Interview That He Will Accept Election Results - The New York Time",
+      "title": "Trump says he has 'every intention' to keep Hegseth - ABC News - Breaking News, ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -526,31 +526,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump asking advisers if Hegseth should stay after midterm losses, sources say -",
+      "title": "Trump administration held talks with Iran on deporting Iranians during the war, ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Oval Office to become national monument - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he has 'every intention' to keep Hegseth - ABC News - Breaking News, ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump meets with national security team, says Iran war decision coming \"soon\" - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Democrats to investigate Trump deals, with eye on 2028 race - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "A Democratic-controlled Congress will seek to constrain Trump’s foreign adventur",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
+      "title": "Voters have sent a message to Trump on tariffs, but the White House still holds ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -562,33 +556,27 @@
     },
     {
       "label": "關稅/貿易",
+      "title": "El-Sayed calls Canada-U.S. trade war ‘insane’ - BNN Bloomberg",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
       "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Why is Taiwan Semiconductor Manufacturing stock plunging today? - Investing.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here'",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Sees $146.2 Million in Net ETF Buying on Nov. 3 - Yah",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Micron Stock Falls After Report of $4.5 Billion Taiwan Pause - Yahoo Finance",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "台股/半導體",
@@ -597,14 +585,20 @@
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "How do changing interest rates affect the stock market in 2026 - U.S. Bank",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "A rare strike in Taiwan exposes labor unrest beneath the global AI rush - Rest o",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Micron Pauses Work on $4.5 Billion Taiwan Plant After Labor Spat - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Barkin sees interest rate hikes ahead, but at a gradual pace - CNBC",
+      "title": "Treasuries Soar as Tech-Stock Selloff Stokes Haven Demand - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -616,9 +610,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Treasuries Soar as Tech-Stock Selloff Stokes Haven Demand - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "The Federal Reserve's Initial November Inflation Forecast Has Arrived, and Thing",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
