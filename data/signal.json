@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-06 22:41",
+  "generated_at": "2026-11-07 09:25",
   "mode": "morning",
-  "signal_date": "2026-11-06",
+  "signal_date": "2026-11-05",
   "trade_date": "2026-11-09",
   "direction": 0,
-  "total_score": -9,
+  "total_score": -6,
   "tw_score": -7,
-  "intl_score": 2,
+  "intl_score": 5,
   "news_score": -2,
   "psy_score": -2,
   "inst_score": -1,
   "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+2) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+5) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 39701.640625,
-  "tw_chg_pct": -4.5053296361746265,
-  "tw_ma5": 42490.58984375,
-  "tw_ma10": 44320.634375,
-  "tw_rsi": 16.12807154682062,
-  "tw_macd": -1450.9698881479853,
-  "tw_macds": -688.1367986443333,
+  "tw_last_close": 41574.71875,
+  "tw_chg_pct": -3.1995955223325434,
+  "tw_ma5": 43592.62734375,
+  "tw_ma10": 45039.247265625,
+  "tw_rsi": 16.46119452791079,
+  "tw_macd": -1118.6021013138088,
+  "tw_macds": -497.42852626842034,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 43592.62734375,
-  "tw_ma10_p2": 45039.247265625,
-  "tw_ma20_p2": 46640.0037109375,
-  "tw_ma20": 46133.958203125,
+  "tw_ma5_p2": 44551.34921875,
+  "tw_ma10_p2": 45511.068359375,
+  "tw_ma20_p2": 47046.8697265625,
+  "tw_ma20": 46640.0037109375,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -381,170 +381,170 @@
     }
   ],
   "gold": {
-    "price_usd": 4042.10009765625,
-    "chg_pct": -1.7357457723046068,
+    "price_usd": 4079.5,
+    "chg_pct": -0.8265467363559013,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 90.66000366210938,
-    "oil_chg": 0.1546697130304113
+    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 90.33999633789062,
+    "oil_chg": -0.1988514271443787
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7407.990234375,
-      "chg_pct": 0.7378602974322329,
+      "price": 7376.85986328125,
+      "chg_pct": 0.3145326640212812,
       "signal": 1,
-      "note": "+0.74%",
+      "note": "+0.31%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51221.75,
-      "chg_pct": -0.5848033908968095,
+      "price": 51285.73046875,
+      "chg_pct": -0.4606250705558639,
       "signal": -1,
-      "note": "-0.58%",
+      "note": "-0.46%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24730.953125,
-      "chg_pct": 1.7106852765782439,
+      "price": 24579.423828125,
+      "chg_pct": 1.0874926100143945,
       "signal": 1,
-      "note": "+1.71%",
+      "note": "+1.09%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9543.302734375,
-      "chg_pct": 5.905613570529619,
+      "price": 9390.25,
+      "chg_pct": 4.207129912011034,
       "signal": 1,
-      "note": "+5.91%",
+      "note": "+4.21%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.84000015258789,
-      "chg_pct": -4.755145983237533,
+      "price": 25.639999389648438,
+      "chg_pct": -9.013487892194329,
       "signal": -1,
-      "note": "VIX=26.8(高恐慌⚠️)",
+      "note": "VIX=25.6(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 57434.76953125,
-      "chg_pct": -5.964725374397014,
+      "price": 61077.8984375,
+      "chg_pct": -1.7860668232844263,
       "signal": -1,
-      "note": "-5.96%",
+      "note": "-1.79%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5059.68994140625,
-      "chg_pct": -6.020095007972957,
-      "signal": -1,
-      "note": "-6.02%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24481.859375,
-      "chg_pct": -1.2708042987214767,
-      "signal": -1,
-      "note": "-1.27%",
+      "price": 24796.98046875,
+      "chg_pct": 3.668473290620623,
+      "signal": 1,
+      "note": "+3.67%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3649.177490234375,
-      "chg_pct": -1.1039127953618777,
-      "signal": -1,
-      "note": "-1.10%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39701.640625,
-      "chg_pct": -4.505329636174628,
+      "price": 41574.71875,
+      "chg_pct": -3.1995955223325385,
       "signal": -1,
-      "note": "-4.51%",
+      "note": "-3.20%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.34700012207031,
-      "chg_pct": 0.7848321480662961,
+      "price": 102.27899932861328,
+      "chg_pct": 0.7178692810909275,
       "signal": -1,
-      "note": "+0.78%(偏空)",
+      "note": "+0.72%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4042.10009765625,
-      "chg_pct": -1.7357457723046068,
+      "price": 4079.5,
+      "chg_pct": -0.8265467363559013,
       "signal": 1,
-      "note": "-1.74%()",
+      "note": "-0.83%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.66000366210938,
-      "chg_pct": 0.1546697130304113,
+      "price": 90.33999633789062,
+      "chg_pct": -0.1988514271443787,
       "signal": 0,
-      "note": "+0.15%",
+      "note": "-0.20%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.863999843597412,
-      "chg_pct": 0.5581962167697628,
+      "price": 4.859000205993652,
+      "chg_pct": 0.4548338493072306,
       "signal": 0,
-      "note": "4.86%(+0.56%)",
+      "note": "4.86%(+0.45%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 75756.953125,
-      "chg_pct": -0.24383288589830743,
+      "price": 75805.5234375,
+      "chg_pct": -0.1798758758725806,
       "signal": 0,
-      "note": "-0.24%",
+      "note": "-0.18%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says he has 'every intention' to keep Hegseth - ABC News - Breaking News, ",
+      "title": "Schumer says Democrats will stop Trump from placing 'right-winger' on the Suprem",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Ted Cruz slams Trump's tariffs and says Iran war needs to end - Houston Chronicl",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Donald Trump has taught the world that tariffs are useless - Financial Times",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Exclusive | Democrats Are Hatching a Plan to Reverse Trump’s Canada Tariffs - WS",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Media’s investors lost $2.2 billion while Trump holds $460 million stake -",
+      "title": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs? - Car",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Judge halts construction of Trump's arch. And, Labor Department to release jobs ",
+      "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's global health strategy is emerging. What will the Democratic Congress sa",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles - Al Jaz",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump makes hardliner Stephen Miller his chief of staff after midterm defeat - R",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -574,27 +574,27 @@
     },
     {
       "label": "台股/半導體",
+      "title": "TSMC considers making advanced memory chips, The Information reports - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Just Won Big in The Midterms - Yahoo Finance",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
       "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Activates Market-Stabilization Measures to Stem AI Bleeding - WSJ",
+      "title": "Taiwan Semiconductor Just Won Big in The Midterms - 24/7 Wall St.",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "AI boom turns chip packaging into the next battleground for semiconductors - Reu",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Micron Stock Falls After Report of $4.5 Billion Taiwan Pause - Yahoo Finance",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -604,21 +604,21 @@
     },
     {
       "label": "聯準會",
+      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
       "title": "Fed Chair Kevin Warsh Is Planning to Break 45 Years of Precedent With a Stunning",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Stable Labor Market to Keep Fed on Track to Raise Rates Gradually - The New York",
+      "title": "What the Seismic Midterm Result Means for the Fed and Interest Rates - Business ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed's Hammack, Barkin favor gradual rate-hike path to lower inflation - Reuters",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
