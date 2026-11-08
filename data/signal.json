@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-09 02:33",
+  "generated_at": "2026-11-09 06:23",
   "mode": "morning",
   "signal_date": "2026-11-06",
   "trade_date": "2026-11-10",
   "direction": 0,
-  "total_score": -6,
+  "total_score": -8,
   "tw_score": -7,
   "intl_score": 3,
-  "news_score": 0,
+  "news_score": -2,
   "psy_score": -2,
   "inst_score": -1,
   "foreign_fut_net": -4310,
@@ -504,12 +504,121 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75863.1484375,
-      "chg_pct": 0.15257294736114707,
-      "signal": 0,
-      "note": "+0.15%",
+      "price": 74442.8203125,
+      "chg_pct": -1.722507629678754,
+      "signal": -1,
+      "note": "-1.72%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says renewed attacks on Iran “highly unlikely” if talks show progress - CN",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he is unlikely to order Iran attack if talks progress, CNN reports - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Sanders says Democrats should hold Trump accountable but ‘cannot spend all of ou",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Sen.-elect Adam Hamilton says he’d be disappointed if Democrats focus on investi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Abdul El-Sayed says Democrats will work with Trump if 'he wants to act serious' ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout - Y",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC considers making advanced memory chips, The Information reports - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "If the Fed Raises Interest Rates in December, I'm Making This 1 Investing Move -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely,",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "The market bloodbath just exposed Wall Street's true fears about U.S. debt, top ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    }
+  ]
 }
