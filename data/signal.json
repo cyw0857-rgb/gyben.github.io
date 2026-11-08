@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-07 09:25",
+  "generated_at": "2026-11-08 08:57",
   "mode": "morning",
-  "signal_date": "2026-11-05",
+  "signal_date": "2026-11-06",
   "trade_date": "2026-11-09",
   "direction": 0,
-  "total_score": -6,
+  "total_score": -8,
   "tw_score": -7,
-  "intl_score": 5,
+  "intl_score": 3,
   "news_score": -2,
   "psy_score": -2,
   "inst_score": -1,
   "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+5) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+3) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 41574.71875,
-  "tw_chg_pct": -3.1995955223325434,
-  "tw_ma5": 43592.62734375,
-  "tw_ma10": 45039.247265625,
-  "tw_rsi": 16.46119452791079,
-  "tw_macd": -1118.6021013138088,
-  "tw_macds": -497.42852626842034,
+  "tw_last_close": 39701.640625,
+  "tw_chg_pct": -4.5053296361746265,
+  "tw_ma5": 42490.58984375,
+  "tw_ma10": 44320.634375,
+  "tw_rsi": 16.12807154682062,
+  "tw_macd": -1450.9698881479853,
+  "tw_macds": -688.1367986443333,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 44551.34921875,
-  "tw_ma10_p2": 45511.068359375,
-  "tw_ma20_p2": 47046.8697265625,
-  "tw_ma20": 46640.0037109375,
+  "tw_ma5_p2": 43592.62734375,
+  "tw_ma10_p2": 45039.247265625,
+  "tw_ma20_p2": 46640.0037109375,
+  "tw_ma20": 46133.958203125,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -252,30 +252,30 @@
     "streak": 3
   },
   "stats_real_v60": {
-    "total": 28,
+    "total": 29,
     "wins": 14,
-    "losses": 14,
-    "win_rate": 50.0,
-    "total_pnl": 12143.0,
-    "avg_pnl": 433.67857142857144,
+    "losses": 15,
+    "win_rate": 48.275862068965516,
+    "total_pnl": 4214.0,
+    "avg_pnl": 145.31034482758622,
     "avg_win": 7380.785714285715,
-    "avg_lose": -6513.428571428572,
+    "avg_lose": -6607.8,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 6
+    "streak": -1
   },
   "stats_real_v50": {
-    "total": 65,
+    "total": 66,
     "wins": 35,
-    "losses": 30,
-    "win_rate": 53.84615384615385,
-    "total_pnl": 49418.0,
-    "avg_pnl": 760.276923076923,
+    "losses": 31,
+    "win_rate": 53.03030303030303,
+    "total_pnl": 41489.0,
+    "avg_pnl": 628.6212121212121,
     "avg_win": 6014.142857142857,
-    "avg_lose": -5369.233333333334,
+    "avg_lose": -5451.806451612903,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": 6
+    "streak": -1
   },
   "stats_real_cons": {
     "total": 11,
@@ -381,13 +381,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4079.5,
-    "chg_pct": -0.8265467363559013,
+    "price_usd": 4074.89990234375,
+    "chg_pct": -0.9383760217880152,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 90.33999633789062,
-    "oil_chg": -0.1988514271443787
+    "warning": "黃金下跌 -0.9%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 90.83000183105469,
+    "oil_chg": 0.3424714974423575
   },
   "intl_data": {
     "S&P500": {
@@ -408,8 +408,8 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24579.423828125,
-      "chg_pct": 1.0874926100143945,
+      "price": 24579.4296875,
+      "chg_pct": 1.087516707793543,
       "signal": 1,
       "note": "+1.09%",
       "desc": "科技股連動"
@@ -432,66 +432,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 61077.8984375,
-      "chg_pct": -1.7860668232844263,
+      "price": 57434.76953125,
+      "chg_pct": -5.964725374397014,
       "signal": -1,
-      "note": "-1.79%",
+      "note": "-5.96%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 5059.68994140625,
+      "chg_pct": -6.020095007972957,
+      "signal": -1,
+      "note": "-6.02%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24796.98046875,
-      "chg_pct": 3.668473290620623,
-      "signal": 1,
-      "note": "+3.67%",
+      "price": 24481.859375,
+      "chg_pct": -1.2708042987214767,
+      "signal": -1,
+      "note": "-1.27%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3649.177001953125,
+      "chg_pct": -1.1039260282356445,
+      "signal": -1,
+      "note": "-1.10%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 41574.71875,
-      "chg_pct": -3.1995955223325385,
+      "price": 39701.640625,
+      "chg_pct": -4.505329636174628,
       "signal": -1,
-      "note": "-3.20%",
+      "note": "-4.51%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.27899932861328,
-      "chg_pct": 0.7178692810909275,
+      "price": 102.30000305175781,
+      "chg_pct": 0.7385524150282313,
       "signal": -1,
-      "note": "+0.72%(偏空)",
+      "note": "+0.74%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4079.5,
-      "chg_pct": -0.8265467363559013,
+      "price": 4074.89990234375,
+      "chg_pct": -0.9383760217880152,
       "signal": 1,
-      "note": "-0.83%()",
+      "note": "-0.94%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.33999633789062,
-      "chg_pct": -0.1988514271443787,
-      "signal": 0,
-      "note": "-0.20%",
+      "price": 90.83000183105469,
+      "chg_pct": 0.3424714974423575,
+      "signal": 1,
+      "note": "+0.34%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -504,47 +504,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 75805.5234375,
-      "chg_pct": -0.1798758758725806,
+      "price": 75681.0703125,
+      "chg_pct": -0.08694659344175151,
       "signal": 0,
-      "note": "-0.18%",
+      "note": "-0.09%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Schumer says Democrats will stop Trump from placing 'right-winger' on the Suprem",
+      "title": "UFC CEO Dana White declines Trump’s offer to become press secretary, source says",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "After the Midterm Rout, Can Trump Change Course Without Giving Up Tariffs? - Car",
+      "title": "Trump says he's asked UFC's Dana White to be his press secretary - PBS",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff -",
+      "title": "Stephen Miller replaces Susie Wiles as Trump's White House chief of staff after ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump's global health strategy is emerging. What will the Democratic Congress sa",
+      "title": "Trump says he offered UFC CEO Dana White the White House press secretary role - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles - Al Jaz",
+      "title": "Trump says chief of staff Susie Wiles out, Stephen Miller will replace her - ABC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump makes hardliner Stephen Miller his chief of staff after midterm defeat - R",
+      "title": "Trump calls for Justice Department to investigate Democrats - The Washington Pos",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -592,9 +592,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Just Won Big in The Midterms - 24/7 Wall St.",
+      "title": "Why is Taiwan Semiconductor Manufacturing stock plunging today? - Investing.com",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Wall St Week Ahead: As tech swoon roils market, US inflation data on tap - Reute",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "US Treasuries Stumble as Strong Labor Market Lifts Fed-Hike Bets - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -604,21 +616,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
       "title": "Fed Chair Kevin Warsh Is Planning to Break 45 Years of Precedent With a Stunning",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "What the Seismic Midterm Result Means for the Fed and Interest Rates - Business ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
