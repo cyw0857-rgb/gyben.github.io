@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-09 06:23",
+  "generated_at": "2026-11-09 09:17",
   "mode": "morning",
   "signal_date": "2026-11-06",
   "trade_date": "2026-11-10",
   "direction": 0,
-  "total_score": -8,
+  "total_score": -6,
   "tw_score": -7,
-  "intl_score": 3,
+  "intl_score": 6,
   "news_score": -2,
-  "psy_score": -2,
+  "psy_score": -1,
   "inst_score": -1,
   "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+3) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+6) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 39701.640625,
@@ -20,8 +20,8 @@
   "tw_ma5": 42490.58984375,
   "tw_ma10": 44320.634375,
   "tw_rsi": 16.12807154682062,
-  "tw_macd": -1450.9698881479853,
-  "tw_macds": -688.1367986443333,
+  "tw_macd": -1450.9932344922636,
+  "tw_macds": -688.1711313941623,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 43592.62734375,
   "tw_ma10_p2": 45039.247265625,
@@ -381,13 +381,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4074.89990234375,
-    "chg_pct": -0.9383760217880152,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -0.9%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 90.83000183105469,
-    "oil_chg": 0.3424714974423575
+    "price_usd": 4112.39990234375,
+    "chg_pct": 0.9202680040908788,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 90.41000366210938,
+    "oil_chg": -0.4624002647567002
   },
   "intl_data": {
     "S&P500": {
@@ -432,18 +432,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 57434.76953125,
-      "chg_pct": -5.964725374397014,
-      "signal": -1,
-      "note": "-5.96%",
+      "price": 58827.83984375,
+      "chg_pct": 2.4254825498029318,
+      "signal": 1,
+      "note": "+2.43%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5059.68994140625,
-      "chg_pct": -6.020095007972957,
-      "signal": -1,
-      "note": "-6.02%",
+      "price": 5085.41015625,
+      "chg_pct": 0.5083357901690223,
+      "signal": 1,
+      "note": "+0.51%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -472,26 +472,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.30000305175781,
-      "chg_pct": 0.7385524150282313,
-      "signal": -1,
-      "note": "+0.74%(偏空)",
+      "price": 102.21600341796875,
+      "chg_pct": -0.08211107652319777,
+      "signal": 0,
+      "note": "-0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4074.89990234375,
-      "chg_pct": -0.9383760217880152,
-      "signal": 1,
-      "note": "-0.94%()",
+      "price": 4112.39990234375,
+      "chg_pct": 0.9202680040908788,
+      "signal": 0,
+      "note": "+0.92%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.83000183105469,
-      "chg_pct": 0.3424714974423575,
-      "signal": 1,
-      "note": "+0.34%",
+      "price": 90.41000366210938,
+      "chg_pct": -0.4624002647567002,
+      "signal": -1,
+      "note": "-0.46%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -504,10 +504,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 74442.8203125,
-      "chg_pct": -1.722507629678754,
+      "price": 74904.25,
+      "chg_pct": -1.1133400510948679,
       "signal": -1,
-      "note": "-1.72%",
+      "note": "-1.11%",
       "desc": "風險偏好指標"
     }
   },
@@ -532,31 +532,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Sanders says Democrats should hold Trump accountable but ‘cannot spend all of ou",
+      "title": "Trump says his deportation policy might have been \"too tough\" in 60 Minutes inte",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Sen.-elect Adam Hamilton says he’d be disappointed if Democrats focus on investi",
+      "title": "The Kremlin hopes the U.S. election shake-up won't shift Trump's negotiations on",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Abdul El-Sayed says Democrats will work with Trump if 'he wants to act serious' ",
+      "title": "Trump says he’s ‘unlikely’ to renew attacks on Iran if talks show progress - The",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -568,9 +568,15 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "COMMENTARY: Why Taiwan’s AI moat trumps South Korea's memory bet - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -580,33 +586,27 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC considers making advanced memory chips, The Information reports - Reuters",
+      "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap - Bloomberg",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout - T",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Imposes Short-Selling Limit After Stock Market Rout - Bloomberg",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "聯準會",
       "title": "If the Fed Raises Interest Rates in December, I'm Making This 1 Investing Move -",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
