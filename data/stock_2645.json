@@ -1,7 +1,7 @@
 {
   "symbol": "2645.TW",
   "name": "長榮航太",
-  "updated": "2026-11-09 09:17",
+  "updated": "2026-11-09 12:43",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -8,
   "reasons": [
     "均線空頭排列 MA5<MA10<MA20",
-    "RSI=4 弱勢區",
+    "RSI=28 弱勢區",
     "MACD死叉零軸下",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=4 弱勢區",
+      "text": "RSI=28 弱勢區",
       "score": -2
     },
     {
@@ -38,111 +38,106 @@
       "score": -1
     }
   ],
-  "rsi": 3.8,
-  "macd": -5.04,
-  "macds": -3.11,
-  "k": 16.1,
-  "d": 15.0,
-  "ma5": 156.0,
-  "ma10": 161.7,
-  "ma20": 166.2,
-  "ma60": 172.47,
-  "last_close": 147.0,
-  "chg_pct": -4.55,
+  "rsi": 28.4,
+  "macd": -5.09,
+  "macds": -3.51,
+  "k": 28.5,
+  "d": 19.5,
+  "ma5": 154.0,
+  "ma10": 160.35,
+  "ma20": 165.4,
+  "ma60": 171.88,
+  "last_close": 155.5,
+  "chg_pct": 5.78,
   "ma_bull": false,
   "ma_bear": true,
   "retail": {
-    "mood": "過熱（爆量）",
-    "vol_ratio": 2.2,
+    "mood": "量能正常",
+    "vol_ratio": 0.79,
     "score": 0,
-    "signals": [
-      {
-        "icon": "🔥",
-        "text": "爆量 2.2倍，注意追高風險"
-      }
-    ]
+    "signals": []
   },
   "forecast": [
     {
       "month": "2026-12",
-      "price": 146.59,
-      "price_high": 170.13,
-      "price_low": 123.05,
-      "chg_pct": -0.3,
+      "price": 155.25,
+      "price_high": 181.53,
+      "price_low": 128.98,
+      "chg_pct": -0.2,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     },
     {
       "month": "2027-01",
-      "price": 146.18,
-      "price_high": 179.38,
-      "price_low": 112.99,
-      "chg_pct": -0.6,
+      "price": 155.01,
+      "price_high": 192.11,
+      "price_low": 117.91,
+      "chg_pct": -0.3,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     },
     {
       "month": "2027-02",
-      "price": 145.77,
-      "price_high": 186.31,
-      "price_low": 105.23,
-      "chg_pct": -0.8,
+      "price": 154.76,
+      "price_high": 200.13,
+      "price_low": 109.4,
+      "chg_pct": -0.5,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     },
     {
       "month": "2027-03",
-      "price": 145.37,
-      "price_high": 192.05,
-      "price_low": 98.68,
-      "chg_pct": -1.1,
+      "price": 154.52,
+      "price_high": 206.82,
+      "price_low": 102.21,
+      "chg_pct": -0.6,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     },
     {
       "month": "2027-04",
-      "price": 144.96,
-      "price_high": 197.01,
-      "price_low": 92.91,
-      "chg_pct": -1.4,
+      "price": 154.27,
+      "price_high": 212.66,
+      "price_low": 95.89,
+      "chg_pct": -0.8,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     },
     {
       "month": "2027-05",
-      "price": 144.56,
-      "price_high": 201.41,
-      "price_low": 87.7,
-      "chg_pct": -1.7,
+      "price": 154.03,
+      "price_high": 217.88,
+      "price_low": 90.17,
+      "chg_pct": -0.9,
       "trend": "neutral",
       "model_note": "⚪ 觀望（分-2.8）",
       "score": -2.8
     }
   ],
   "trend_label": "月線均線空頭排列 📉",
-  "support": 169.0,
-  "resistance": 179.0,
+  "support": 168.65,
+  "resistance": 178.85,
   "weekly": {
-    "proj_center": 147.0,
-    "proj_high": 154.68,
-    "proj_low": 139.32,
-    "support": 169.0,
-    "resistance": 179.0,
+    "proj_center": 155.5,
+    "proj_high": 164.06,
+    "proj_low": 146.94,
+    "support": 168.65,
+    "resistance": 178.85,
     "trend_bias": "偏多",
     "op_hint": "逢回偏多操作"
   },
-  "daily_vol_pct": 2.34,
+  "daily_vol_pct": 2.46,
   "slope_per_day": 0.1,
   "model_accuracy": 71.4,
   "model_samples": 21,
-  "total_return": 75.3,
+  "total_return": 85.5,
   "ipo_date": "2022-02-18",
   "model_score": -2.8,
   "model_threshold": 3.5,
-  "model_factors": "MA5<MA10 空頭  油↓利多-13%  海運↓-9%"
+  "model_factors": "MA5<MA10 空頭  油↓利多-12%  海運↓-9%"
 }

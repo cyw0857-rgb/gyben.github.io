@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-09 09:17",
+  "generated_at": "2026-11-09 12:43",
   "mode": "morning",
-  "signal_date": "2026-11-06",
+  "signal_date": "2026-11-09",
   "trade_date": "2026-11-10",
   "direction": 0,
   "total_score": -6,
-  "tw_score": -7,
-  "intl_score": 6,
+  "tw_score": -8,
+  "intl_score": 9,
   "news_score": -2,
-  "psy_score": -1,
+  "psy_score": -3,
   "inst_score": -1,
   "foreign_fut_net": -4310,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+6) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 39701.640625,
-  "tw_chg_pct": -4.5053296361746265,
-  "tw_ma5": 42490.58984375,
-  "tw_ma10": 44320.634375,
-  "tw_rsi": 16.12807154682062,
-  "tw_macd": -1450.9932344922636,
-  "tw_macds": -688.1711313941623,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 43592.62734375,
-  "tw_ma10_p2": 45039.247265625,
-  "tw_ma20_p2": 46640.0037109375,
-  "tw_ma20": 46133.958203125,
+  "tw_last_close": 41965.8203125,
+  "tw_chg_pct": 5.702987715007057,
+  "tw_ma5": 41899.72578125,
+  "tw_ma10": 43913.0734375,
+  "tw_rsi": 29.981596052345623,
+  "tw_macd": -1514.2400252992447,
+  "tw_macds": -853.3849101751789,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 42490.58984375,
+  "tw_ma10_p2": 44320.634375,
+  "tw_ma20_p2": 46133.958203125,
+  "tw_ma20": 45741.9306640625,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -381,13 +381,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4112.39990234375,
-    "chg_pct": 0.9202680040908788,
+    "price_usd": 4138.0,
+    "chg_pct": 1.5485066914148462,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +0.9%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 90.41000366210938,
-    "oil_chg": -0.4624002647567002
+    "warning": "黃金上漲 +1.5%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 91.25,
+    "oil_chg": 0.4624002647567002
   },
   "intl_data": {
     "S&P500": {
@@ -432,66 +432,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 58827.83984375,
-      "chg_pct": 2.4254825498029318,
+      "price": 59212.01171875,
+      "chg_pct": 3.0943663603159592,
       "signal": 1,
-      "note": "+2.43%",
+      "note": "+3.09%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5085.41015625,
-      "chg_pct": 0.5083357901690223,
+      "price": 5093.2099609375,
+      "chg_pct": 0.6624915739784187,
       "signal": 1,
-      "note": "+0.51%",
+      "note": "+0.66%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24481.859375,
-      "chg_pct": -1.2708042987214767,
-      "signal": -1,
-      "note": "-1.27%",
+      "price": 24531.150390625,
+      "chg_pct": 0.20133689549468708,
+      "signal": 0,
+      "note": "+0.20%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3649.177001953125,
-      "chg_pct": -1.1039260282356445,
-      "signal": -1,
-      "note": "-1.10%",
+      "price": 3665.94482421875,
+      "chg_pct": 0.45949599749890097,
+      "signal": 1,
+      "note": "+0.46%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39701.640625,
-      "chg_pct": -4.505329636174628,
-      "signal": -1,
-      "note": "-4.51%",
+      "price": 41965.8203125,
+      "chg_pct": 5.702987715007055,
+      "signal": 1,
+      "note": "+5.70%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.21600341796875,
-      "chg_pct": -0.08211107652319777,
+      "price": 102.1520004272461,
+      "chg_pct": -0.1446750929585389,
       "signal": 0,
-      "note": "-0.08%(中性)",
+      "note": "-0.14%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4112.39990234375,
-      "chg_pct": 0.9202680040908788,
-      "signal": 0,
-      "note": "+0.92%()",
+      "price": 4138.0,
+      "chg_pct": 1.5485066914148462,
+      "signal": -1,
+      "note": "+1.55%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 90.41000366210938,
-      "chg_pct": -0.4624002647567002,
-      "signal": -1,
-      "note": "-0.46%",
+      "price": 91.25,
+      "chg_pct": 0.4624002647567002,
+      "signal": 1,
+      "note": "+0.46%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -504,10 +504,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 74904.25,
-      "chg_pct": -1.1133400510948679,
+      "price": 74807.078125,
+      "chg_pct": -1.2416238555481869,
       "signal": -1,
-      "note": "-1.11%",
+      "note": "-1.24%",
       "desc": "風險偏好指標"
     }
   },
@@ -520,33 +520,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he is unlikely to order Iran attack if talks progress, CNN reports - ",
+      "title": "Trump says his immigration crackdown ‘might be too tough’ after midterm losses -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he",
+      "title": "Trump says deportations were ‘too tough’ and hurt him during the midterms - NBC ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secret",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says mass deportation policy was 'too tough' - Le Monde.fr",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Oil falls as Trump says new Iran attacks 'unlikely' - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says his deportation policy might have been \"too tough\" in 60 Minutes inte",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "The Kremlin hopes the U.S. election shake-up won't shift Trump's negotiations on",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he’s ‘unlikely’ to renew attacks on Iran if talks show progress - The",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -574,43 +574,31 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
       "title": "COMMENTARY: Why Taiwan’s AI moat trumps South Korea's memory bet - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout - Y",
+      "title": "Taiwan Activates Market-Stabilization Measures to Stem AI Bleeding - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Asian Markets at Risk of Pressure on Nvidia Probe: Markets Wrap - Bloomberg",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout - T",
+      "title": "Taiwan Semiconductor Just Won Big in The Midterms - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "If the Fed Raises Interest Rates in December, I'm Making This 1 Investing Move -",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed policymakers consider rate hike after strong jobs report - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely,",
+      "title": "Kevin Warsh’s Expected Rate Hike Is a Warning to Retirees That the Fed Won’t Res",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -619,6 +607,18 @@
       "title": "The market bloodbath just exposed Wall Street's true fears about U.S. debt, top ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Stable Labor Market Keeps Fed on Track to Raise Rates Gradually - The New York T",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Trader angst pivots from inflation to growth as tech rout deepens - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
