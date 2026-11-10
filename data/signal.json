@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-10 13:58",
+  "generated_at": "2026-11-10 21:46",
   "mode": "morning",
   "signal_date": "2026-11-10",
   "trade_date": "2026-11-11",
   "direction": 0,
-  "total_score": 1,
+  "total_score": 0,
   "tw_score": -8,
-  "intl_score": 10,
+  "intl_score": 9,
   "news_score": -2,
-  "psy_score": 1,
+  "psy_score": 0,
   "inst_score": 0,
-  "foreign_fut_net": -2785,
+  "foreign_fut_net": -1761,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-8) vs 國際(+10) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
   "tw_last_close": 42711.921875,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4132.2001953125,
-    "chg_pct": 0.430190674747843,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.4%，影響中性",
-    "oil_usd": 86.11000061035156,
-    "oil_chg": -0.8520413088896372
+    "price_usd": 4057.300048828125,
+    "chg_pct": -1.3902041845151294,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.4%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 84.51000213623047,
+    "oil_chg": -2.6942963488800515
   },
   "intl_data": {
     "S&P500": {
@@ -432,42 +432,42 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.920000076293945,
-      "chg_pct": -22.308890208725245,
-      "signal": 1,
-      "note": "VIX=19.9(低恐慌)",
+      "price": 20.780000686645508,
+      "chg_pct": 4.317272123783862,
+      "signal": 0,
+      "note": "VIX=20.8(中性)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 60732.78125,
-      "chg_pct": 3.330097149322422,
+      "price": 60459.578125,
+      "chg_pct": 2.865272307338942,
       "signal": 1,
-      "note": "+3.33%",
+      "note": "+2.87%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5250.47021484375,
-      "chg_pct": 4.615003689703029,
+      "price": 5239.1298828125,
+      "chg_pct": 4.389048903036939,
       "signal": 1,
-      "note": "+4.62%",
+      "note": "+4.39%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24570.0703125,
-      "chg_pct": 0.49540408737530417,
+      "price": 24557.0390625,
+      "chg_pct": 0.44210425070990556,
       "signal": 1,
-      "note": "+0.50%",
+      "note": "+0.44%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3671.40283203125,
-      "chg_pct": 0.2898509357099394,
+      "price": 3663.723388671875,
+      "chg_pct": 0.08007547248330132,
       "signal": 0,
-      "note": "+0.29%",
+      "note": "+0.08%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -480,85 +480,79 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 101.6729965209961,
-      "chg_pct": 0.022621736125929368,
-      "signal": 0,
-      "note": "+0.02%(中性)",
+      "price": 102.02400207519531,
+      "chg_pct": 0.3679297035929607,
+      "signal": -1,
+      "note": "+0.37%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4132.2001953125,
-      "chg_pct": 0.430190674747843,
-      "signal": 0,
-      "note": "+0.43%()",
+      "price": 4057.300048828125,
+      "chg_pct": -1.3902041845151294,
+      "signal": 1,
+      "note": "-1.39%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.11000061035156,
-      "chg_pct": -0.8520413088896372,
+      "price": 84.51000213623047,
+      "chg_pct": -2.6942963488800515,
       "signal": -1,
-      "note": "-0.85%",
+      "note": "-2.69%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.863999843597412,
-      "chg_pct": 0.10289436904309317,
+      "price": 4.946000099182129,
+      "chg_pct": 1.6858605719869728,
       "signal": 0,
-      "note": "4.86%(+0.10%)",
+      "note": "4.95%(+1.69%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 74744.8671875,
-      "chg_pct": 0.21481464799590647,
-      "signal": 0,
-      "note": "+0.21%",
+      "price": 73840.8984375,
+      "chg_pct": -1.8375327657927771,
+      "signal": -1,
+      "note": "-1.84%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "60 Minutes Transcript: Donald Trump, the 2026 post-midterm elections interview -",
+      "title": "Read the full transcript of Ross Douthat's interview with President Trump - CBS ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Trump says FBI is looking into Nvidia CEO Jensen Huang's affair with alle",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Qatar, Saudi prefer peace in Iran conflict - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he will ‘stand by’ Hegseth amid impeachment threats - Politico",
+      "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Says in Interview That He Will Accept Election Results - The New York Time",
+      "title": "Trump plans imperial final act to his presidency - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Media cashes in on high-speed access to social media posts - NBC News",
+      "title": "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can 'end soon'",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Hegseth should be praised, not impeached - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "label": "川普動態",
+      "title": "Trump says Israel, Gulf allies must repay Iran war cost: What does it mean? - Al",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -581,14 +575,20 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical m",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "TSMC's October sales jump as global chip boom rolls on - CNBC",
+      "title": "Taiwan Semiconductor Sales Jump 60% In October As AI Boom Continues - Investor's",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Wants to Enter Into Advanced Memory Production - 24/7 Wall ",
+      "title": "TSMC's October sales jump as global chip boom rolls on - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -600,31 +600,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "What Is Going on With Taiwan Semiconductor Stock on Monday? - Benzinga",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor's October sales offer up 'strong start' to quarter, Wedbush",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Will a Federal Reserve Interest Rate Hike Trigger a Recession? Here's What Histo",
+      "title": "Asian Stocks to Rally on US Tech Surge, Oil Slump: Markets Wrap - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters p",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Will a Federal Reserve Interest Rate Hike Trigger a Recession? Here's What Histo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed December Meeting What To Expect For Interest Rates In 2027 - Forbes",
+      "title": "Nasdaq futures inch lower as Waller comments stall tech rebound; CPI in focus - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Dollar sellers hit pause for U.S. inflation data - CNBC",
+      "title": "Kevin Warsh's Expected Rate Hike Is a Warning to Retirees That the Fed Won't Res",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
