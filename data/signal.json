@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-11 04:38",
+  "generated_at": "2026-11-11 08:52",
   "mode": "morning",
   "signal_date": "2026-11-09",
   "trade_date": "2026-11-12",
   "direction": -1,
-  "total_score": -21,
+  "total_score": -19,
   "tw_score": -9,
-  "intl_score": -10,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
@@ -389,69 +389,69 @@
     }
   ],
   "gold": {
-    "price_usd": 4042.800048828125,
-    "chg_pct": -1.7426163852685626,
+    "price_usd": 4043.199951171875,
+    "chg_pct": -1.7328970428515007,
     "signal": 1,
     "level": "ok",
     "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 86.36000061035156,
-    "oil_chg": -0.56418868437348
+    "oil_usd": 86.30000305175781,
+    "oil_chg": -0.6332705031965714
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7515.7998046875,
-      "chg_pct": -0.4521908383868689,
+      "price": 7520.93017578125,
+      "chg_pct": -0.3842383628232763,
       "signal": -1,
-      "note": "-0.45%",
+      "note": "-0.38%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 52217.8515625,
-      "chg_pct": -0.3281146359736399,
+      "price": 52231.890625,
+      "chg_pct": -0.30131729011877323,
       "signal": -1,
-      "note": "-0.33%",
+      "note": "-0.30%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25039.1171875,
-      "chg_pct": -0.8475121596880585,
+      "price": 25065.875,
+      "chg_pct": -0.7415538042607324,
       "signal": -1,
-      "note": "-0.85%",
+      "note": "-0.74%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9961.0,
-      "chg_pct": -0.7268307609415865,
+      "price": 9998.330078125,
+      "chg_pct": -0.3547922945817434,
       "signal": -1,
-      "note": "-0.73%",
+      "note": "-0.35%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.790000915527344,
-      "chg_pct": -0.6526062262485066,
+      "price": 19.459999084472656,
+      "chg_pct": -2.3092419179692634,
       "signal": 1,
-      "note": "VIX=19.8(低恐慌)",
+      "note": "VIX=19.5(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 58775.5,
-      "chg_pct": 2.3343533537128835,
+      "price": 60499.859375,
+      "chg_pct": 2.933806390417776,
       "signal": 1,
-      "note": "+2.33%",
+      "note": "+2.93%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5018.85009765625,
-      "chg_pct": -0.8071609964829051,
-      "signal": -1,
-      "note": "-0.81%",
+      "price": 5222.7998046875,
+      "chg_pct": 4.06367401023777,
+      "signal": 1,
+      "note": "+4.06%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -480,26 +480,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.24700164794922,
-      "chg_pct": 0.5873095062554654,
+      "price": 102.22200012207031,
+      "chg_pct": 0.5627138097442941,
       "signal": -1,
-      "note": "+0.59%(偏空)",
+      "note": "+0.56%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4042.800048828125,
-      "chg_pct": -1.7426163852685626,
+      "price": 4043.199951171875,
+      "chg_pct": -1.7328970428515007,
       "signal": 1,
-      "note": "-1.74%()",
+      "note": "-1.73%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.36000061035156,
-      "chg_pct": -0.56418868437348,
+      "price": 86.30000305175781,
+      "chg_pct": -0.6332705031965714,
       "signal": -1,
-      "note": "-0.56%",
+      "note": "-0.63%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,17 +512,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 73543.75,
-      "chg_pct": -2.2325553667769533,
+      "price": 73423.1171875,
+      "chg_pct": -2.392921975999949,
       "signal": -1,
-      "note": "-2.23%",
+      "note": "-2.39%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "U.S. Commerce Dept. Inquiry Into Megaspeed Was Halted After Nvidia Intervention ",
+      "title": "‘I Know How Much You Love the American People,’ Trump Told Biden in 2021 Letter ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "How Trump Has Increased His Net Worth by Billions in His Second Term - Time Maga",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "US lawmakers push China chip rules after Nvidia CEO allegations - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -534,27 +546,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Despite Democrats' sweeping midterm wins, Carney says Trump remains central to C",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Arkansas governor embraces Trump, calls for AI guardrails in new book - Arkansas",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says Israel, Gulf allies must repay Iran war cost: What does it mean? - Al",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
       "title": "Trump administration brings White House ballroom battle back to Supreme Court - ",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Israel, Gulf allies must repay Iran war cost: What does it mean? - Al",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -582,13 +582,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 7% Undervalued Despite F",
+      "title": "Taiwan Semiconductor Sales Jump 60% In October As AI Boom Continues - Investor's",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Sales Jump 60% In October As AI Boom Continues - Investor's",
+      "title": "Taiwan Semiconductor Manufacturing (TSM) Stock Could Be 7% Undervalued Despite F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -606,25 +606,25 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Waller plans to support at least a quarter-point rate hike in December - R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets: Markets Wrap - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Wall St ends lower as hot inflation data, Fed comments heighten rate worries - R",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "US stocks stumble after a discouraging update on inflation - KSL",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
       "title": "October Inflation Comes in Hotter Than Expected - Investopedia",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Red hot U.S. inflation reading dials up interest rate worries on markets - Globa",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Interest-Rate Hike Debate Sparked by Fed's Waller, Logan After Hot Inflation - B",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
