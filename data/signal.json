@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-11 08:52",
+  "generated_at": "2026-11-11 12:46",
   "mode": "morning",
-  "signal_date": "2026-11-09",
+  "signal_date": "2026-11-11",
   "trade_date": "2026-11-12",
   "direction": -1,
-  "total_score": -19,
-  "tw_score": -9,
+  "total_score": -17,
+  "tw_score": -7,
   "intl_score": -8,
   "news_score": -2,
   "psy_score": -1,
@@ -15,18 +15,18 @@
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 41661.69921875,
-  "tw_chg_pct": 4.9369712759823825,
-  "tw_ma5": 41838.9015625,
-  "tw_ma10": 43882.661328125,
-  "tw_rsi": 28.28454019052363,
-  "tw_macd": -1538.5089594346791,
-  "tw_macds": -858.249575715334,
+  "tw_last_close": 43755.25,
+  "tw_chg_pct": 2.442709386979547,
+  "tw_ma5": 41881.04609375,
+  "tw_ma10": 43216.19765625,
+  "tw_rsi": 40.820724026296986,
+  "tw_macd": -1379.7088590695203,
+  "tw_macds": -1066.1433110677997,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 42490.58984375,
-  "tw_ma10_p2": 44320.634375,
-  "tw_ma20_p2": 46133.958203125,
-  "tw_ma20": 45726.724609375,
+  "tw_ma5_p2": 41719.778125,
+  "tw_ma10_p2": 43544.23046875,
+  "tw_ma20_p2": 45396.6486328125,
+  "tw_ma20": 45119.3130859375,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 67,
+    "total": 68,
     "wins": 35,
-    "losses": 32,
-    "win_rate": 52.23880597014925,
-    "total_pnl": 28275.0,
-    "avg_pnl": 422.0149253731343,
+    "losses": 33,
+    "win_rate": 51.470588235294116,
+    "total_pnl": 22389.0,
+    "avg_pnl": 329.25,
     "avg_win": 6014.142857142857,
-    "avg_lose": -5694.375,
+    "avg_lose": -5700.181818181818,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -2
+    "streak": -3
   },
   "stats_real_cons": {
     "total": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 4043.199951171875,
-    "chg_pct": -1.7328970428515007,
+    "price_usd": 4049.89990234375,
+    "chg_pct": -1.5700594885466035,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.7%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 86.30000305175781,
-    "oil_chg": -0.6332705031965714
+    "warning": "黃金下跌 -1.6%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 86.66999816894531,
+    "oil_chg": -0.2072542410342314
   },
   "intl_data": {
     "S&P500": {
@@ -408,8 +408,8 @@
     },
     "道瓊": {
       "category": "美股",
-      "price": 52231.890625,
-      "chg_pct": -0.30131729011877323,
+      "price": 52231.8984375,
+      "chg_pct": -0.3013023778506292,
       "signal": -1,
       "note": "-0.30%",
       "desc": "藍籌股風向球"
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 60499.859375,
-      "chg_pct": 2.933806390417776,
+      "price": 61265.6484375,
+      "chg_pct": 1.333238400760012,
       "signal": 1,
-      "note": "+2.93%",
+      "note": "+1.33%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5222.7998046875,
-      "chg_pct": 4.06367401023777,
+      "price": 5357.33984375,
+      "chg_pct": 2.2562899485523316,
       "signal": 1,
-      "note": "+4.06%",
+      "note": "+2.26%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24448.94921875,
-      "chg_pct": -0.13442670242443544,
-      "signal": 0,
-      "note": "-0.13%",
+      "price": 24352.689453125,
+      "chg_pct": -0.8321427060278351,
+      "signal": -1,
+      "note": "-0.83%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
+      "price": 3654.9501953125,
+      "chg_pct": -0.2394478326182817,
       "signal": 0,
-      "note": "+nan%",
+      "note": "-0.24%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 41661.69921875,
-      "chg_pct": 4.936971275982376,
+      "price": 43755.25,
+      "chg_pct": 2.442709386979557,
       "signal": 1,
-      "note": "+4.94%",
+      "note": "+2.44%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.22200012207031,
-      "chg_pct": 0.5627138097442941,
+      "price": 102.26599884033203,
+      "chg_pct": 0.6059983327165019,
       "signal": -1,
-      "note": "+0.56%(偏空)",
+      "note": "+0.61%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 4043.199951171875,
-      "chg_pct": -1.7328970428515007,
+      "price": 4049.89990234375,
+      "chg_pct": -1.5700594885466035,
       "signal": 1,
-      "note": "-1.73%()",
+      "note": "-1.57%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.30000305175781,
-      "chg_pct": -0.6332705031965714,
-      "signal": -1,
-      "note": "-0.63%",
+      "price": 86.66999816894531,
+      "chg_pct": -0.2072542410342314,
+      "signal": 0,
+      "note": "-0.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,10 +512,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 73423.1171875,
-      "chg_pct": -2.392921975999949,
+      "price": 73683.8671875,
+      "chg_pct": -2.0462866577286767,
       "signal": -1,
-      "note": "-2.39%",
+      "note": "-2.05%",
       "desc": "風險偏好指標"
     }
   },
@@ -540,19 +540,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump’s Plan to Import Russian Diesel Stalls on the High Seas - WSJ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says Israel, Gulf allies must repay Iran war cost: What does it mean? - Al",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Despite Democrats' sweeping midterm wins, Carney says Trump remains central to C",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump administration brings White House ballroom battle back to Supreme Court - ",
+      "title": "Kennedy family joins US lawsuits to block Trump’s ‘unlawful’ arch plan - Al Jaze",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -606,25 +606,25 @@
     },
     {
       "label": "聯準會",
-      "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets: Markets Wrap - Bloomberg.com",
+      "title": "Fed officials open door to a quicker round of rate hikes as inflation worsens - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Wall St ends lower as hot inflation data, Fed comments heighten rate worries - R",
+      "title": "Traders Who Rushed to Safety of Bonds Get Rattled in Reversal - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Will a Federal Reserve Interest Rate Hike Trigger a Recession? Here's What Histo",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "US stocks stumble after a discouraging update on inflation - KSL",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "October Inflation Comes in Hotter Than Expected - Investopedia",
+      "title": "US stocks fall on hot inflation report as Nvidia tumbles again - AFP.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
