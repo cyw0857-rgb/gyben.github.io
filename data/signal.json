@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-12 10:01",
+  "generated_at": "2026-11-12 13:48",
   "mode": "morning",
   "signal_date": "2026-11-12",
   "trade_date": "2026-11-13",
   "direction": 0,
-  "total_score": 1,
-  "tw_score": -7,
-  "intl_score": 7,
-  "news_score": -2,
+  "total_score": -2,
+  "tw_score": -8,
+  "intl_score": 4,
+  "news_score": 0,
   "psy_score": 2,
   "inst_score": 0,
   "foreign_fut_net": -779,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-7) vs 國際(+7) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-8) vs 國際(+4) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 44474.51953125,
-  "tw_chg_pct": 4.126711182438458,
-  "tw_ma5": 42024.9,
-  "tw_ma10": 43288.124609375,
-  "tw_rsi": 43.74779231377335,
-  "tw_macd": -1322.3312326450177,
-  "tw_macds": -1054.6677857828993,
+  "tw_last_close": 43022.62109375,
+  "tw_chg_pct": -2.7894416774126407,
+  "tw_ma5": 42271.00625,
+  "tw_ma10": 42931.816796875,
+  "tw_rsi": 37.08557410239155,
+  "tw_macd": -1292.7608549607248,
+  "tw_macds": -1105.0608226953868,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 41719.778125,
-  "tw_ma10_p2": 43544.23046875,
-  "tw_ma20_p2": 45396.6486328125,
-  "tw_ma20": 45155.2765625,
+  "tw_ma5_p2": 41981.42578125,
+  "tw_ma10_p2": 43266.3875,
+  "tw_ma20_p2": 45144.4080078125,
+  "tw_ma20": 44878.4736328125,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 68,
+    "total": 69,
     "wins": 35,
-    "losses": 33,
-    "win_rate": 51.470588235294116,
-    "total_pnl": 22389.0,
-    "avg_pnl": 329.25,
+    "losses": 34,
+    "win_rate": 50.72463768115942,
+    "total_pnl": 11105.0,
+    "avg_pnl": 160.94202898550725,
     "avg_win": 6014.142857142857,
-    "avg_lose": -5700.181818181818,
+    "avg_lose": -5864.411764705882,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -3
+    "streak": -4
   },
   "stats_real_cons": {
     "total": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3987.5,
-    "chg_pct": -1.0594995704731471,
-    "signal": 1,
-    "level": "ok",
-    "warning": "黃金下跌 -1.1%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 85.5,
-    "oil_chg": -0.6276161201549821
+    "price_usd": 3982.60009765625,
+    "chg_pct": -0.44744162839020124,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.4%，影響中性",
+    "oil_usd": 85.4800033569336,
+    "oil_chg": -1.213446708859197
   },
   "intl_data": {
     "S&P500": {
@@ -424,8 +424,8 @@
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10564.111328125,
-      "chg_pct": 5.658757468288162,
+      "price": 10564.1103515625,
+      "chg_pct": 5.658747701032106,
       "signal": 1,
       "note": "+5.66%",
       "desc": "對台股影響最大"
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 61598.08984375,
-      "chg_pct": 1.8830957046973276,
-      "signal": 1,
-      "note": "+1.88%",
+      "price": 60808.73046875,
+      "chg_pct": -0.7181542891389272,
+      "signal": -1,
+      "note": "-0.72%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5393.2001953125,
-      "chg_pct": 2.94076146127706,
-      "signal": 1,
-      "note": "+2.94%",
+      "price": 5312.93994140625,
+      "chg_pct": -1.1612231266856499,
+      "signal": -1,
+      "note": "-1.16%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24075.880859375,
-      "chg_pct": -1.9593494227883361,
+      "price": 24115.130859375,
+      "chg_pct": -0.8257514547881319,
       "signal": -1,
-      "note": "-1.96%",
+      "note": "-0.83%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3681.8203125,
-      "chg_pct": 0.4939623601841029,
-      "signal": 1,
-      "note": "+0.49%",
+      "price": 3674.010986328125,
+      "chg_pct": -0.18018808013895543,
+      "signal": 0,
+      "note": "-0.18%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44474.55859375,
-      "chg_pct": 4.126802638168573,
-      "signal": 1,
-      "note": "+4.13%",
+      "price": 43022.62109375,
+      "chg_pct": -2.7894416774126354,
+      "signal": -1,
+      "note": "-2.79%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 102.87100219726562,
-      "chg_pct": 0.6270163545764537,
-      "signal": -1,
-      "note": "+0.63%(偏空)",
+      "price": 102.97100067138672,
+      "chg_pct": 0.059272186480158834,
+      "signal": 0,
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3987.5,
-      "chg_pct": -1.0594995704731471,
-      "signal": 1,
-      "note": "-1.06%()",
+      "price": 3982.60009765625,
+      "chg_pct": -0.44744162839020124,
+      "signal": 0,
+      "note": "-0.45%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.5,
-      "chg_pct": -0.6276161201549821,
+      "price": 85.4800033569336,
+      "chg_pct": -1.213446708859197,
       "signal": -1,
-      "note": "-0.63%",
+      "note": "-1.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,10 +512,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 73499.9921875,
-      "chg_pct": -0.29859556441036755,
+      "price": 73519.9296875,
+      "chg_pct": -0.2715507077814898,
       "signal": 0,
-      "note": "-0.30%",
+      "note": "-0.27%",
       "desc": "風險偏好指標"
     }
   },
@@ -534,25 +534,25 @@
     },
     {
       "label": "川普動態",
-      "title": "Inside India newsletter: Trump's poll setback fuels hope for U.S.-India trade de",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
       "title": "White House tells Democrats that investigating Trump administration could be cri",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says US won Iran war, Iran responds - NPR",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Inside India newsletter: Trump's poll setback fuels hope for U.S.-India trade de",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
       "title": "Democrats push to rein in Trump on immigration after voter backlash to ICE raids",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Stance on Jensen Huang Is a Tell - The Atlantic",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -576,7 +576,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "US-China Trade War Tariffs: An Up-to-Date Chart - Peterson Institute for Interna",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -600,7 +600,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC's October sales jump as global chip boom rolls on - CNBC",
+      "title": "ETFs Are Buying Taiwan Semiconductor (TSM) on Nov. 9 - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -612,21 +612,21 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters p",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Wall Street thinks the Fed made a 'mistake' — and now more hikes are coming - Ya",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed’s Bowman Warns of Stock Correction If AI Bets Don’t Pan Out - Bloomberg",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed's Waller plans to support at least a quarter-point rate hike in December - R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Stock Market Drops On Hot Inflation Data, Rate-Hike Fears; Amazon Rides Relative",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Forced to Confront Case for Bigger and Faster Rate Rises - WSJ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
