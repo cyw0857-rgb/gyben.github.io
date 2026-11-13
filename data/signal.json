@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-11-13 10:15",
+  "generated_at": "2026-11-13 13:09",
   "mode": "morning",
   "signal_date": "2026-11-13",
   "trade_date": "2026-11-16",
-  "direction": -1,
+  "direction": 0,
   "total_score": -9,
-  "tw_score": -7,
-  "intl_score": -6,
-  "news_score": -1,
+  "tw_score": -4,
+  "intl_score": -8,
+  "news_score": -2,
   "psy_score": 0,
   "inst_score": 3,
   "foreign_fut_net": 4733,
   "foreign_cash_b": 0,
-  "veto_msg": "⚠️ 外資期貨(+4,733口) vs 技術面不一致，提高門檻",
+  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 44348.12890625,
-  "tw_chg_pct": 0.20557236957658986,
-  "tw_ma5": 42536.1078125,
-  "tw_ma10": 43064.367578125,
-  "tw_rsi": 40.812327558382144,
-  "tw_macd": -1187.022340003452,
-  "tw_macds": -1083.9131197039324,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 41981.42578125,
-  "tw_ma10_p2": 43266.3875,
-  "tw_ma20_p2": 45144.4080078125,
-  "tw_ma20": 44944.7490234375,
+  "tw_last_close": 43860.46875,
+  "tw_chg_pct": 1.7836256276220874,
+  "tw_ma5": 43116.621875,
+  "tw_ma10": 42803.605859375,
+  "tw_rsi": 42.6405752078944,
+  "tw_macd": -1170.1732937084453,
+  "tw_macds": -1117.199442254123,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 42284.85625,
+  "tw_ma10_p2": 42938.741796875,
+  "tw_ma20_p2": 44881.9361328125,
+  "tw_ma20": 44643.6681640625,
   "stats_real": {
-    "total": 17,
-    "wins": 10,
+    "total": 18,
+    "wins": 11,
     "losses": 7,
-    "win_rate": 58.82352941176471,
-    "total_pnl": 6729.0,
-    "avg_pnl": 395.8235294117647,
-    "avg_win": 4803.5,
+    "win_rate": 61.111111111111114,
+    "total_pnl": 17545.0,
+    "avg_pnl": 974.7222222222222,
+    "avg_win": 5350.090909090909,
     "avg_lose": -5900.857142857143,
     "max_win": 16116.0,
     "max_lose": -16729.0,
-    "streak": 1
+    "streak": 2
   },
   "stats_sim": {
     "total": 789,
@@ -265,17 +265,17 @@
     "streak": -2
   },
   "stats_real_v50": {
-    "total": 69,
-    "wins": 35,
+    "total": 70,
+    "wins": 36,
     "losses": 34,
-    "win_rate": 50.72463768115942,
-    "total_pnl": 11105.0,
-    "avg_pnl": 160.94202898550725,
-    "avg_win": 6014.142857142857,
+    "win_rate": 51.42857142857142,
+    "total_pnl": 21921.0,
+    "avg_pnl": 313.15714285714284,
+    "avg_win": 6147.527777777777,
     "avg_lose": -5864.411764705882,
     "max_win": 25558.0,
     "max_lose": -16729.0,
-    "streak": -4
+    "streak": 1
   },
   "stats_real_cons": {
     "total": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3914.5,
-    "chg_pct": -2.1497312835895515,
+    "price_usd": 3885.300048828125,
+    "chg_pct": -2.8796388244438194,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -2.1%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 88.04000091552734,
-    "oil_chg": 1.745062010323004
+    "warning": "黃金大跌 -2.9%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 88.73999786376953,
+    "oil_chg": 2.5540264828958015
   },
   "intl_data": {
     "S&P500": {
@@ -416,16 +416,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25366.09375,
-      "chg_pct": -0.39305332000786275,
+      "price": 25366.08984375,
+      "chg_pct": -0.3930686589733063,
       "signal": -1,
       "note": "-0.39%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10506.673828125,
-      "chg_pct": -0.5436948453402398,
+      "price": 10506.669921875,
+      "chg_pct": -0.5437318219513315,
       "signal": -1,
       "note": "-0.54%",
       "desc": "對台股影響最大"
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 61857.05859375,
-      "chg_pct": 0.9934412393040427,
+      "price": 61334.9609375,
+      "chg_pct": 0.8477589501081455,
       "signal": 1,
-      "note": "+0.99%",
+      "note": "+0.85%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5448.2900390625,
-      "chg_pct": 1.3567496434877135,
-      "signal": 1,
-      "note": "+1.36%",
+      "price": 5311.10986328125,
+      "chg_pct": -0.5918344610918513,
+      "signal": -1,
+      "note": "-0.59%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23867.939453125,
-      "chg_pct": -1.8423340354357287,
+      "price": 23786.48046875,
+      "chg_pct": -0.9249634204219883,
       "signal": -1,
-      "note": "-1.84%",
+      "note": "-0.92%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3667.524169921875,
-      "chg_pct": -0.3564294675599768,
-      "signal": -1,
-      "note": "-0.36%",
+      "price": 3663.71337890625,
+      "chg_pct": 0.21563641123312777,
+      "signal": 0,
+      "note": "+0.22%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44348.66015625,
-      "chg_pct": 0.20677274063247197,
-      "signal": 0,
-      "note": "+0.21%",
+      "price": 43860.46875,
+      "chg_pct": 1.7836256276220892,
+      "signal": 1,
+      "note": "+1.78%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.14199829101562,
-      "chg_pct": 0.22543447735943337,
+      "price": 103.16999816894531,
+      "chg_pct": 0.2526425979825957,
       "signal": 0,
-      "note": "+0.23%(中性)",
+      "note": "+0.25%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3914.5,
-      "chg_pct": -2.1497312835895515,
+      "price": 3885.300048828125,
+      "chg_pct": -2.8796388244438194,
       "signal": 1,
-      "note": "-2.15%()",
+      "note": "-2.88%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.04000091552734,
-      "chg_pct": 1.745062010323004,
+      "price": 88.73999786376953,
+      "chg_pct": 2.5540264828958015,
       "signal": 1,
-      "note": "+1.75%",
+      "note": "+2.55%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,20 +512,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 70536.8984375,
-      "chg_pct": -4.6340768350343895,
+      "price": 68394.6484375,
+      "chg_pct": -7.530399942877978,
       "signal": -1,
-      "note": "-4.63%",
+      "note": "-7.53%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Scoop: Lutnick stalled curbing Nvidia chip sales to China — again — after Oval O",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
     {
       "label": "川普動態",
       "title": "Trump threatens to double tariffs on Mexico if it does not halt migrants - Reute",
@@ -540,15 +534,21 @@
     },
     {
       "label": "川普動態",
+      "title": "As Trump abandons America’s allies, Governor Newsom rallies world leaders at UN ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says no deal needed with Iran, closes down Vance negotiations - The Washin",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump: 'I want to get Cuba done' before leaving office - Politico",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump pulls Vance from Iran talks, saying ‘we don’t need a deal’ - Los Angeles T",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
@@ -618,7 +618,7 @@
     },
     {
       "label": "聯準會",
-      "title": "COMMENTARY: Morning Bid: Jumbo Fed hike hits radar - Reuters",
+      "title": "Fed's Hammack signals support for gradual rate-hike path - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
