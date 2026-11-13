@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-13 05:11",
+  "generated_at": "2026-11-13 10:15",
   "mode": "morning",
-  "signal_date": "2026-11-11",
+  "signal_date": "2026-11-13",
   "trade_date": "2026-11-16",
   "direction": -1,
-  "total_score": -11,
+  "total_score": -9,
   "tw_score": -7,
   "intl_score": -6,
-  "news_score": -2,
-  "psy_score": -1,
+  "news_score": -1,
+  "psy_score": 0,
   "inst_score": 3,
   "foreign_fut_net": 4733,
   "foreign_cash_b": 0,
   "veto_msg": "⚠️ 外資期貨(+4,733口) vs 技術面不一致，提高門檻",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 44257.1484375,
-  "tw_chg_pct": 3.6177874810275013,
-  "tw_ma5": 41981.42578125,
-  "tw_ma10": 43266.3875,
-  "tw_rsi": 42.89419389813648,
-  "tw_macd": -1339.6713768757836,
-  "tw_macds": -1058.1358146290524,
+  "tw_last_close": 44348.12890625,
+  "tw_chg_pct": 0.20557236957658986,
+  "tw_ma5": 42536.1078125,
+  "tw_ma10": 43064.367578125,
+  "tw_rsi": 40.812327558382144,
+  "tw_macd": -1187.022340003452,
+  "tw_macds": -1083.9131197039324,
   "tw_prev_close_up": true,
-  "tw_ma5_p2": 41719.778125,
-  "tw_ma10_p2": 43544.23046875,
-  "tw_ma20_p2": 45396.6486328125,
-  "tw_ma20": 45144.4080078125,
+  "tw_ma5_p2": 41981.42578125,
+  "tw_ma10_p2": 43266.3875,
+  "tw_ma20_p2": 45144.4080078125,
+  "tw_ma20": 44944.7490234375,
   "stats_real": {
     "total": 17,
     "wins": 10,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3879.39990234375,
-    "chg_pct": -3.0271240508998876,
+    "price_usd": 3914.5,
+    "chg_pct": -2.1497312835895515,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.0%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 88.95999908447266,
-    "oil_chg": 2.808274979147673
+    "warning": "黃金大跌 -2.1%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 88.04000091552734,
+    "oil_chg": 1.745062010323004
   },
   "intl_data": {
     "S&P500": {
@@ -432,74 +432,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 18.969999313354492,
-      "chg_pct": 8.461975766748163,
+      "price": 18.700000762939453,
+      "chg_pct": 6.918244755036563,
       "signal": 1,
-      "note": "VIX=19.0(低恐慌)",
+      "note": "VIX=18.7(低恐慌)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 61248.58984375,
-      "chg_pct": 1.305023526824353,
+      "price": 61857.05859375,
+      "chg_pct": 0.9934412393040427,
       "signal": 1,
-      "note": "+1.31%",
+      "note": "+0.99%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5375.35986328125,
-      "chg_pct": 2.600240565053872,
+      "price": 5448.2900390625,
+      "chg_pct": 1.3567496434877135,
       "signal": 1,
-      "note": "+2.60%",
+      "note": "+1.36%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 24315.919921875,
-      "chg_pct": -0.9818738326364546,
+      "price": 23867.939453125,
+      "chg_pct": -1.8423340354357287,
       "signal": -1,
-      "note": "-0.98%",
+      "note": "-1.84%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3667.524169921875,
+      "chg_pct": -0.3564294675599768,
+      "signal": -1,
+      "note": "-0.36%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 44257.1484375,
-      "chg_pct": 3.617787481027509,
-      "signal": 1,
-      "note": "+3.62%",
+      "price": 44348.66015625,
+      "chg_pct": 0.20677274063247197,
+      "signal": 0,
+      "note": "+0.21%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.16799926757812,
-      "chg_pct": 0.25070021988906205,
+      "price": 103.14199829101562,
+      "chg_pct": 0.22543447735943337,
       "signal": 0,
-      "note": "+0.25%(中性)",
+      "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3879.39990234375,
-      "chg_pct": -3.0271240508998876,
+      "price": 3914.5,
+      "chg_pct": -2.1497312835895515,
       "signal": 1,
-      "note": "-3.03%()",
+      "note": "-2.15%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.95999908447266,
-      "chg_pct": 2.808274979147673,
+      "price": 88.04000091552734,
+      "chg_pct": 1.745062010323004,
       "signal": 1,
-      "note": "+2.81%",
+      "note": "+1.75%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,14 +512,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 71374.75,
-      "chg_pct": -3.501301089247667,
+      "price": 70536.8984375,
+      "chg_pct": -4.6340768350343895,
       "signal": -1,
-      "note": "-3.50%",
+      "note": "-4.63%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Scoop: Lutnick stalled curbing Nvidia chip sales to China — again — after Oval O",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
     {
       "label": "川普動態",
       "title": "Trump threatens to double tariffs on Mexico if it does not halt migrants - Reute",
@@ -540,21 +546,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says ‘we don’t need a deal with Iran’ - CNBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Democrats want to stop Trump's arch, golf course and more. What are their option",
+      "title": "Trump: 'I want to get Cuba done' before leaving office - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says the U.S. doesn’t ‘need’ a deal with Iran - NBC News",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump says he wants to ‘get Cuba done’ before leaving office - The Hill",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Trump Tariffs Backfire as Canada Warns of Damage to US Economy - Newsweek",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -575,10 +581,16 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Bernstein’s Mark Li Raised His Taiwan Semiconductor Manufacturing (TSM) Target t",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Prediction: $500 a Month Invested in Taiwan Semiconductor Manufacturing Will Be ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -588,27 +600,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Better Buy: Micron Stock vs. Taiwan Semiconductor Stock? - The Motley Fool",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "ETFs Are Net Sellers of Taiwan Semiconductor (TSM) on Nov. 10 - Yahoo Finance",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "In Taiwan, AI-related stocks send investors into a frenzy - Le Monde.fr",
+      "title": "Taiwan's Chip Show Will Go on, With or Without Jensen Huang - Business Insider",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Stocks could be in for a rude awakening if the Fed hikes rates more than expecte",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Bond yields surge most in 19 months as traders brace for Fed rate hikes - CNN",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -618,15 +618,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Forced to Confront Case for Bigger and Faster Rate Rises - WSJ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "COMMENTARY: Morning Bid: Jumbo Fed hike hits radar - Reuters",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "US yields climb, stocks fall as inflation data boosts chances for larger Fed rat",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Fed Forced to Confront Case for Bigger and Faster Rate Rises - WSJ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     }
   ]
 }
