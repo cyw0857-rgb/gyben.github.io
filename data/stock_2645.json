@@ -1,7 +1,7 @@
 {
   "symbol": "2645.TW",
   "name": "長榮航太",
-  "updated": "2026-11-13 22:53",
+  "updated": "2026-11-14 09:54",
   "direction": 0,
   "signal_text": "⚪ 暫時整理",
   "signal_color": "#9ca3af",
@@ -52,10 +52,15 @@
   "ma_bull": false,
   "ma_bear": false,
   "retail": {
-    "mood": "量能正常",
-    "vol_ratio": 0.71,
+    "mood": "冷清（量縮）",
+    "vol_ratio": 0.68,
     "score": 0,
-    "signals": []
+    "signals": [
+      {
+        "icon": "💤",
+        "text": "量縮 0.7倍，觀望氣氛濃"
+      }
+    ]
   },
   "forecast": [
     {
@@ -65,7 +70,7 @@
       "price_low": 149.03,
       "chg_pct": 1.9,
       "trend": "up",
-      "model_note": "📈 金叉↑  油↓利多-14%  海運↓-5%",
+      "model_note": "📈 金叉↑  油↓利多-15%  海運↓-5%",
       "score": 3.8
     },
     {
@@ -139,5 +144,5 @@
   "ipo_date": "2022-02-18",
   "model_score": 3.8,
   "model_threshold": 3.5,
-  "model_factors": "金叉↑  油↓利多-14%  海運↓-5%"
+  "model_factors": "金叉↑  油↓利多-15%  海運↓-5%"
 }
