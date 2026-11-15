@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-15 09:25",
+  "generated_at": "2026-11-16 03:29",
   "mode": "morning",
   "signal_date": "2026-11-13",
-  "trade_date": "2026-11-16",
+  "trade_date": "2026-11-17",
   "direction": 0,
-  "total_score": -12,
+  "total_score": -14,
   "tw_score": -4,
   "intl_score": -8,
-  "news_score": 0,
+  "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1297,
@@ -512,19 +512,25 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62733.390625,
-      "chg_pct": -8.081965616163266,
-      "signal": -1,
-      "note": "-8.08%",
+      "price": 64899.359375,
+      "chg_pct": 1.2027631969994603,
+      "signal": 1,
+      "note": "+1.20%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump Had Urged Nvidia’s Jensen Huang to Fight for His Job - The New York Times",
+      "title": "Trump blasts judge's 2-week halt to his Washington golf project and says adminis",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Opinion | The Success of President Trump’s Tariff Policy - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -534,25 +540,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Canada’s Carney reports progress in trade talks with Trump as he expands ties wi",
+      "title": "Trump rebuffs oversight with claims his critics are ‘corrupt.’ Experts say it’s ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "At the Supreme Court, Trump aims to cut the power of judges again - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "President Trump on Stephen A. Smith: Accomplishments for Black Americans - The W",
+      "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administrati",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "How Trump put a key Asia-Pacific alliance ‘on life support’ - Politico",
+      "title": "Trump's judge appointment blitz faces Republican resistance - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -570,37 +570,37 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Stock Price, News, Quot",
+      "title": "Tears and Disbelief in Taiwan, Where Jensen Huang Is a Celebrity - The New York ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why a Rising TSMC Challenger Could Reshape the Chip Foundry Landscape - The Motl",
+      "title": "Bernstein’s Mark Li Raised His Taiwan Semiconductor Manufacturing (TSM) Target t",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Dividend Increase - TalkMarkets - How",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "TSMC banks record aid as fabs expand - Taipei Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan's Chip Show Will Go on, With or Without Jensen Huang - Business Insider",
+      "title": "Prediction: $500 a Month Invested in Taiwan Semiconductor Manufacturing Will Be ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -612,7 +612,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Goldman Sachs sees a new problem emerging for the Federal Reserve - Yahoo Financ",
+      "title": "Nov. 25 Could Be a Huge Day for the Stock Market - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
