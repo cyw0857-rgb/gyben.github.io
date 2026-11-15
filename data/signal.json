@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-14 09:54",
+  "generated_at": "2026-11-15 09:25",
   "mode": "morning",
   "signal_date": "2026-11-13",
   "trade_date": "2026-11-16",
   "direction": 0,
-  "total_score": -14,
+  "total_score": -12,
   "tw_score": -4,
   "intl_score": -8,
-  "news_score": -2,
+  "news_score": 0,
   "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -1297,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3887.60009765625,
-    "chg_pct": 0.059198743963641505,
+    "price_usd": 3886.300048828125,
+    "chg_pct": 0.02573803792326458,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.1%，影響中性",
-    "oil_usd": 88.91999816894531,
-    "oil_chg": 0.20284010537402905
+    "warning": "黃金小幅變動 +0.0%，影響中性",
+    "oil_usd": 88.55999755859375,
+    "oil_chg": -0.20284010537402905
   },
   "intl_data": {
     "S&P500": {
@@ -416,16 +416,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 25136.2734375,
-      "chg_pct": -0.9059985502914432,
+      "price": 25136.26953125,
+      "chg_pct": -0.9060139497874792,
       "signal": -1,
       "note": "-0.91%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10146.3232421875,
-      "chg_pct": -3.429694492802656,
+      "price": 10146.3203125,
+      "chg_pct": -3.4297223768755525,
       "signal": -1,
       "note": "-3.43%",
       "desc": "對台股影響最大"
@@ -480,52 +480,46 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.41100311279297,
-      "chg_pct": 0.23359983340602591,
+      "price": 103.41000366210938,
+      "chg_pct": 0.23263109181318697,
       "signal": 0,
       "note": "+0.23%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3887.60009765625,
-      "chg_pct": 0.059198743963641505,
+      "price": 3886.300048828125,
+      "chg_pct": 0.02573803792326458,
       "signal": 0,
-      "note": "+0.06%()",
+      "note": "+0.03%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.91999816894531,
-      "chg_pct": 0.20284010537402905,
+      "price": 88.55999755859375,
+      "chg_pct": -0.20284010537402905,
       "signal": 0,
-      "note": "+0.20%",
+      "note": "-0.20%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.154000282287598,
-      "chg_pct": 0.9994143957722122,
+      "price": 5.1539998054504395,
+      "chg_pct": 0.999405051520931,
       "signal": 0,
       "note": "5.15%(+1.00%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 68220.2109375,
-      "chg_pct": -4.377106626222363,
+      "price": 62733.390625,
+      "chg_pct": -8.081965616163266,
       "signal": -1,
-      "note": "-4.38%",
+      "note": "-8.08%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Supreme Court agrees to hear case on Trump administration’s suspension of asylum",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
     {
       "label": "川普動態",
       "title": "Trump Had Urged Nvidia’s Jensen Huang to Fight for His Job - The New York Times",
@@ -534,25 +528,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he would ‘easily’ beat ‘highly overrated’ Obama - The Hill",
+      "title": "Carney says he’s ‘making progress’ with Trump on possible US-Canada trade deal -",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Canada’s Carney reports progress in trade talks with Trump as he expands ties wi",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran - PBS",
+      "title": "At the Supreme Court, Trump aims to cut the power of judges again - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "President Trump on Stephen A. Smith: Accomplishments for Black Americans - The W",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump’s tariffs face a new threat: Republicans - CNN",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider mil",
+      "title": "How Trump put a key Asia-Pacific alliance ‘on life support’ - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -570,37 +570,37 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
       "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "$1000 Invested In Taiwan Semiconductor 5 Years Ago Would Be Worth This Much Toda",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Stock Price, News, Quot",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Just Became Even More of an AI Anchor On Nvidia’s -25% Plum",
+      "title": "Why a Rising TSMC Challenger Could Reshape the Chip Foundry Landscape - The Motl",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufactur (TSM) Stock Forecasts - Yahoo! Finance Canada",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Semiconductor Manufacturing Company Dividend Increase - TalkMarkets - How",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: $500 a Month Invested in Taiwan Semiconductor Manufacturing Will Be ",
+      "title": "Taiwan's Chip Show Will Go on, With or Without Jensen Huang - Business Insider",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -612,19 +612,19 @@
     },
     {
       "label": "聯準會",
-      "title": "Nov. 25 Could Be a Huge Day for the Stock Market - The Motley Fool",
+      "title": "Goldman Sachs sees a new problem emerging for the Federal Reserve - Yahoo Financ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The bond market now has an even bigger fear than AI fallout - MarketWatch",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "A Larger-Than-Normal Fed Rate Hike in December Now Looks More Likely. Here's Why",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Wall Street thinks the Fed made a 'mistake' — and now more hikes are coming - Ya",
+      "title": "Stocks could be in for a rude awakening if the Fed hikes rates more than expecte",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
