@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16 03:29",
+  "generated_at": "2026-11-16 07:27",
   "mode": "morning",
   "signal_date": "2026-11-13",
   "trade_date": "2026-11-17",
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3886.300048828125,
-    "chg_pct": 0.02573803792326458,
+    "price_usd": 3881.39990234375,
+    "chg_pct": -0.12608770354344076,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.0%，影響中性",
-    "oil_usd": 88.55999755859375,
-    "oil_chg": -0.20284010537402905
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 88.30999755859375,
+    "oil_chg": -0.282294497393807
   },
   "intl_data": {
     "S&P500": {
@@ -480,26 +480,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.41000366210938,
-      "chg_pct": 0.23263109181318697,
+      "price": 103.43199920654297,
+      "chg_pct": 0.021270228850841028,
       "signal": 0,
-      "note": "+0.23%(中性)",
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3886.300048828125,
-      "chg_pct": 0.02573803792326458,
+      "price": 3881.39990234375,
+      "chg_pct": -0.12608770354344076,
       "signal": 0,
-      "note": "+0.03%()",
+      "note": "-0.13%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.55999755859375,
-      "chg_pct": -0.20284010537402905,
+      "price": 88.30999755859375,
+      "chg_pct": -0.282294497393807,
       "signal": 0,
-      "note": "-0.20%",
+      "note": "-0.28%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,20 +512,14 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64899.359375,
-      "chg_pct": 1.2027631969994603,
+      "price": 65089.421875,
+      "chg_pct": 1.4991428587614102,
       "signal": 1,
-      "note": "+1.20%",
+      "note": "+1.50%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
-    {
-      "label": "川普動態",
-      "title": "Trump blasts judge's 2-week halt to his Washington golf project and says adminis",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
     {
       "label": "川普動態",
       "title": "Opinion | The Success of President Trump’s Tariff Policy - WSJ",
@@ -534,25 +528,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Carney says he’s ‘making progress’ with Trump on possible US-Canada trade deal -",
+      "title": "Trump says the US doesn't need a deal with Iran. What does that mean for the Mid",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
+      "title": "President Donald Trump Claims, \"Tariffs Don't Cause Inflation, They Cause Wealth",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Senator-elect Scott Colom vows to ensure Trump follows through on his promises -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Golf Course Plans Hit a Legal Obstacle: His Own Social Media Posts - Tim",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump rebuffs oversight with claims his critics are ‘corrupt.’ Experts say it’s ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administrati",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump's judge appointment blitz faces Republican resistance - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -582,13 +582,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Tears and Disbelief in Taiwan, Where Jensen Huang Is a Celebrity - The New York ",
+      "title": "What TSMC Doubters Got Wrong - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Bernstein’s Mark Li Raised His Taiwan Semiconductor Manufacturing (TSM) Target t",
+      "title": "Tears and Disbelief in Taiwan, Where Jensen Huang Is a Celebrity - The New York ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -600,7 +600,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Prediction: $500 a Month Invested in Taiwan Semiconductor Manufacturing Will Be ",
+      "title": "Nvidia Sought Taipei’s Help Over Employee’s Chip Smuggling Case - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -624,7 +624,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Stocks could be in for a rude awakening if the Fed hikes rates more than expecte",
+      "title": "The Fed Is Weighing a Supersized Rate Hike. Here’s How That Could Affect Your 40",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
