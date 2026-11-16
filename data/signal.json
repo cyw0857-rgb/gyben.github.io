@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16 09:28",
+  "generated_at": "2026-11-16 12:48",
   "mode": "morning",
   "signal_date": "2026-11-16",
   "trade_date": "2026-11-17",
   "direction": 0,
-  "total_score": -18,
+  "total_score": -15,
   "tw_score": -5,
-  "intl_score": -11,
+  "intl_score": -8,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 43285.51171875,
-  "tw_chg_pct": -0.8920624951758938,
-  "tw_ma5": 43404.31484375,
-  "tw_ma10": 42621.608203125,
-  "tw_rsi": 40.61023600469159,
-  "tw_macd": -1122.4245428770155,
-  "tw_macds": -1120.637721043584,
+  "tw_last_close": 41832.46875,
+  "tw_chg_pct": -4.218997675575276,
+  "tw_ma5": 43113.70625,
+  "tw_ma10": 42476.30390625,
+  "tw_rsi": 37.01653830974235,
+  "tw_macd": -1238.3368024923984,
+  "tw_macds": -1143.8201729666605,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 43079.55234375,
   "tw_ma10_p2": 42785.07109375,
   "tw_ma20_p2": 44634.40078125,
-  "tw_ma20": 44450.1828125,
+  "tw_ma20": 44377.5306640625,
   "stats_real": {
     "total": 18,
     "wins": 11,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3875.199951171875,
-    "chg_pct": -0.28562122113029137,
+    "price_usd": 3874.699951171875,
+    "chg_pct": -0.2984869287112274,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 88.13999938964844,
-    "oil_chg": -0.474252688034945
+    "oil_usd": 88.31999969482422,
+    "oil_chg": -0.2710003053136288
   },
   "intl_data": {
     "S&P500": {
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 60447.80859375,
-      "chg_pct": -1.135944154912058,
+      "price": 60064.37109375,
+      "chg_pct": -1.7630667470289938,
       "signal": -1,
-      "note": "-1.14%",
+      "note": "-1.76%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5213.18017578125,
-      "chg_pct": -1.462039011518684,
+      "price": 5145.419921875,
+      "chg_pct": -2.742822915171705,
       "signal": -1,
-      "note": "-1.46%",
+      "note": "-2.74%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23637.599609375,
-      "chg_pct": -1.5450793979814157,
-      "signal": -1,
-      "note": "-1.55%",
+      "price": 23835.439453125,
+      "chg_pct": 0.8369709573705358,
+      "signal": 1,
+      "note": "+0.84%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3634.35302734375,
-      "chg_pct": -0.5874739887326803,
+      "price": 3620.002197265625,
+      "chg_pct": -0.3948661555482857,
       "signal": -1,
-      "note": "-0.59%",
+      "note": "-0.39%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 43285.51171875,
-      "chg_pct": -0.8920624951758953,
+      "price": 41835.828125,
+      "chg_pct": -4.211305939603236,
       "signal": -1,
-      "note": "-0.89%",
+      "note": "-4.21%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.43199920654297,
-      "chg_pct": 0.021270228850841028,
+      "price": 103.46199798583984,
+      "chg_pct": 0.05027978134529366,
       "signal": 0,
-      "note": "+0.02%(中性)",
+      "note": "+0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3875.199951171875,
-      "chg_pct": -0.28562122113029137,
+      "price": 3874.699951171875,
+      "chg_pct": -0.2984869287112274,
       "signal": 0,
-      "note": "-0.29%()",
+      "note": "-0.30%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.13999938964844,
-      "chg_pct": -0.474252688034945,
-      "signal": -1,
-      "note": "-0.47%",
+      "price": 88.31999969482422,
+      "chg_pct": -0.2710003053136288,
+      "signal": 0,
+      "note": "-0.27%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,17 +512,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64783.01171875,
-      "chg_pct": 1.0213329884829432,
+      "price": 64801.5390625,
+      "chg_pct": 1.0502241578297231,
       "signal": 1,
-      "note": "+1.02%",
+      "note": "+1.05%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says Interior will appeal ruling delaying golf course renovations - The Hi",
+      "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -540,21 +540,21 @@
     },
     {
       "label": "川普動態",
-      "title": "What to expect from Trump and Xi's upcoming meeting in China - NPR",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his s",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Opinion | The Success of President Trump’s Tariff Policy - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says the US doesn't need a deal with Iran. What does that mean for the Mid",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says Interior will appeal ruling delaying golf course renovations - The Hi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -600,31 +600,31 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Nvidia Sought Taipei’s Help Over Employee’s Chip Smuggling Case - Bloomberg.com",
+      "title": "Tears and Disbelief in Taiwan, Where Jensen Huang Is a Celebrity - The Seattle T",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Roughed-Up Bond Traders Look to Fedspeak, Minutes for Next Move - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Nov. 25 Could Be a Huge Day for the Stock Market - Yahoo Finance",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Chances of a Federal Reserve December Rate Hike Are Climbing. Here’s What Hi",
+      "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January - Yah",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "聯準會",
+      "title": "Nov. 25 Could Be a Huge Day for the Stock Market - The Motley Fool",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
       "title": "The Fed Is Weighing a Supersized Rate Hike. Here’s How That Could Affect Your 40",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Behind the Rising US Bond Yields: Traders Bet on Fed Hikes in December and Janua",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
