@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16 07:27",
+  "generated_at": "2026-11-16 09:28",
   "mode": "morning",
-  "signal_date": "2026-11-13",
+  "signal_date": "2026-11-16",
   "trade_date": "2026-11-17",
   "direction": 0,
-  "total_score": -14,
-  "tw_score": -4,
-  "intl_score": -8,
+  "total_score": -18,
+  "tw_score": -5,
+  "intl_score": -11,
   "news_score": -2,
   "psy_score": 0,
   "inst_score": 0,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 43675.12109375,
-  "tw_chg_pct": 1.3535035383613003,
-  "tw_ma5": 43079.55234375,
-  "tw_ma10": 42785.07109375,
-  "tw_rsi": 41.913993266633256,
-  "tw_macd": -1184.958861728388,
-  "tw_macds": -1120.1565558581115,
+  "tw_last_close": 43285.51171875,
+  "tw_chg_pct": -0.8920624951758938,
+  "tw_ma5": 43404.31484375,
+  "tw_ma10": 42621.608203125,
+  "tw_rsi": 40.61023600469159,
+  "tw_macd": -1122.4245428770155,
+  "tw_macds": -1120.637721043584,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 42284.85625,
-  "tw_ma10_p2": 42938.741796875,
-  "tw_ma20_p2": 44881.9361328125,
-  "tw_ma20": 44634.40078125,
+  "tw_ma5_p2": 43079.55234375,
+  "tw_ma10_p2": 42785.07109375,
+  "tw_ma20_p2": 44634.40078125,
+  "tw_ma20": 44450.1828125,
   "stats_real": {
     "total": 18,
     "wins": 11,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3881.39990234375,
-    "chg_pct": -0.12608770354344076,
+    "price_usd": 3875.199951171875,
+    "chg_pct": -0.28562122113029137,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 -0.1%，影響中性",
-    "oil_usd": 88.30999755859375,
-    "oil_chg": -0.282294497393807
+    "warning": "黃金小幅變動 -0.3%，影響中性",
+    "oil_usd": 88.13999938964844,
+    "oil_chg": -0.474252688034945
   },
   "intl_data": {
     "S&P500": {
@@ -440,18 +440,18 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 61142.3515625,
-      "chg_pct": 0.53106805270423,
-      "signal": 1,
-      "note": "+0.53%",
+      "price": 60447.80859375,
+      "chg_pct": -1.135944154912058,
+      "signal": -1,
+      "note": "-1.14%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5290.52978515625,
-      "chg_pct": -0.9770322569796079,
+      "price": 5213.18017578125,
+      "chg_pct": -1.462039011518684,
       "signal": -1,
-      "note": "-0.98%",
+      "note": "-1.46%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -472,10 +472,10 @@
     },
     "台股加權": {
       "category": "台股",
-      "price": 43675.12109375,
-      "chg_pct": 1.353503538361308,
-      "signal": 1,
-      "note": "+1.35%",
+      "price": 43285.51171875,
+      "chg_pct": -0.8920624951758953,
+      "signal": -1,
+      "note": "-0.89%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
@@ -488,18 +488,18 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 3881.39990234375,
-      "chg_pct": -0.12608770354344076,
+      "price": 3875.199951171875,
+      "chg_pct": -0.28562122113029137,
       "signal": 0,
-      "note": "-0.13%()",
+      "note": "-0.29%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.30999755859375,
-      "chg_pct": -0.282294497393807,
-      "signal": 0,
-      "note": "-0.28%",
+      "price": 88.13999938964844,
+      "chg_pct": -0.474252688034945,
+      "signal": -1,
+      "note": "-0.47%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,35 +512,17 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 65089.421875,
-      "chg_pct": 1.4991428587614102,
+      "price": 64783.01171875,
+      "chg_pct": 1.0213329884829432,
       "signal": 1,
-      "note": "+1.50%",
+      "note": "+1.02%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Opinion | The Success of President Trump’s Tariff Policy - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says the US doesn't need a deal with Iran. What does that mean for the Mid",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "President Donald Trump Claims, \"Tariffs Don't Cause Inflation, They Cause Wealth",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Senator-elect Scott Colom vows to ensure Trump follows through on his promises -",
+      "title": "Trump says Interior will appeal ruling delaying golf course renovations - The Hi",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -552,9 +534,27 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump rebuffs oversight with claims his critics are ‘corrupt.’ Experts say it’s ",
+      "title": "Foreign leaders look beyond Trump on his Asian meeting spree - Politico",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "What to expect from Trump and Xi's upcoming meeting in China - NPR",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his s",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Opinion | The Success of President Trump’s Tariff Policy - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -606,9 +606,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January - Blo",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Roughed-Up Bond Traders Look to Fedspeak, Minutes for Next Move - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -618,9 +618,9 @@
     },
     {
       "label": "聯準會",
-      "title": "A Larger-Than-Normal Fed Rate Hike in December Now Looks More Likely. Here's Why",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "The Chances of a Federal Reserve December Rate Hike Are Climbing. Here’s What Hi",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
