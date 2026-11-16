@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-16 12:48",
+  "generated_at": "2026-11-16 21:11",
   "mode": "morning",
   "signal_date": "2026-11-16",
   "trade_date": "2026-11-17",
   "direction": 0,
   "total_score": -15,
   "tw_score": -5,
-  "intl_score": -8,
+  "intl_score": -9,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": 0,
-  "foreign_fut_net": -1297,
+  "inst_score": 1,
+  "foreign_fut_net": 5178,
   "foreign_cash_b": 0,
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 41832.46875,
-  "tw_chg_pct": -4.218997675575276,
-  "tw_ma5": 43113.70625,
-  "tw_ma10": 42476.30390625,
-  "tw_rsi": 37.01653830974235,
-  "tw_macd": -1238.3368024923984,
-  "tw_macds": -1143.8201729666605,
+  "tw_last_close": 41040.078125,
+  "tw_chg_pct": -6.033281426040693,
+  "tw_ma5": 42955.228125,
+  "tw_ma10": 42397.06484375,
+  "tw_rsi": 35.312440072486055,
+  "tw_macd": -1301.5474506405444,
+  "tw_macds": -1156.4623025962896,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 43079.55234375,
   "tw_ma10_p2": 42785.07109375,
   "tw_ma20_p2": 44634.40078125,
-  "tw_ma20": 44377.5306640625,
+  "tw_ma20": 44337.9111328125,
   "stats_real": {
     "total": 18,
     "wins": 11,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3874.699951171875,
-    "chg_pct": -0.2984869287112274,
+    "price_usd": 3874.0,
+    "chg_pct": -0.31649766290778186,
     "signal": 0,
     "level": "neutral",
     "warning": "黃金小幅變動 -0.3%，影響中性",
-    "oil_usd": 88.31999969482422,
-    "oil_chg": -0.2710003053136288
+    "oil_usd": 87.69999694824219,
+    "oil_chg": -0.9710937602302464
   },
   "intl_data": {
     "S&P500": {
@@ -432,74 +432,74 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 19.299999237060547,
-      "chg_pct": 3.2085478590471457,
-      "signal": 1,
-      "note": "VIX=19.3(低恐慌)",
+      "price": 20.6200008392334,
+      "chg_pct": 6.839386810120372,
+      "signal": 0,
+      "note": "VIX=20.6(中性)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 60064.37109375,
-      "chg_pct": -1.7630667470289938,
+      "price": 59662.01953125,
+      "chg_pct": -2.4211238093071996,
       "signal": -1,
-      "note": "-1.76%",
+      "note": "-2.42%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5145.419921875,
-      "chg_pct": -2.742822915171705,
+      "price": 5100.5,
+      "chg_pct": -3.591885744399749,
       "signal": -1,
-      "note": "-2.74%",
+      "note": "-3.59%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23835.439453125,
-      "chg_pct": 0.8369709573705358,
+      "price": 23753.83984375,
+      "chg_pct": 0.49175989227306105,
       "signal": 1,
-      "note": "+0.84%",
+      "note": "+0.49%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3620.002197265625,
-      "chg_pct": -0.3948661555482857,
+      "price": 3602.56982421875,
+      "chg_pct": -0.8745216242305851,
       "signal": -1,
-      "note": "-0.39%",
+      "note": "-0.87%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 41835.828125,
-      "chg_pct": -4.211305939603236,
+      "price": 41040.078125,
+      "chg_pct": -6.033281426040695,
       "signal": -1,
-      "note": "-4.21%",
+      "note": "-6.03%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.46199798583984,
-      "chg_pct": 0.05027978134529366,
+      "price": 103.46099853515625,
+      "chg_pct": 0.04931328811620583,
       "signal": 0,
       "note": "+0.05%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3874.699951171875,
-      "chg_pct": -0.2984869287112274,
+      "price": 3874.0,
+      "chg_pct": -0.31649766290778186,
       "signal": 0,
-      "note": "-0.30%()",
+      "note": "-0.32%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 88.31999969482422,
-      "chg_pct": -0.2710003053136288,
-      "signal": 0,
-      "note": "-0.27%",
+      "price": 87.69999694824219,
+      "chg_pct": -0.9710937602302464,
+      "signal": -1,
+      "note": "-0.97%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,10 +512,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64801.5390625,
-      "chg_pct": 1.0502241578297231,
-      "signal": 1,
-      "note": "+1.05%",
+      "price": 64105.30859375,
+      "chg_pct": -1.8371529867994538,
+      "signal": -1,
+      "note": "-1.84%",
       "desc": "風險偏好指標"
     }
   },
@@ -528,39 +528,33 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Golf Course Plans Hit a Legal Obstacle: His Own Social Media Posts - Tim",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Foreign leaders look beyond Trump on his Asian meeting spree - Politico",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Transportation head vows to find 'root cause' of ground stop. Trump breaks his s",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says the US doesn't need a deal with Iran. What does that mean for the Mid",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says Interior will appeal ruling delaying golf course renovations - The Hi",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Trump Tariffs Backfire as Canada Warns of Damage to US Economy - Newsweek",
+      "title": "Democrats target Trump’s tariffs. Can they agree on what’s next? - The Christian",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout - NPR",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump to embark on Asia trip in apparent foreign policy push before end of term ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump's tariffs are unpopular -- but they'll be tough to repeal despite Democrat",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Doubles Down on His Terrible Foreign Policy - Slate",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -581,20 +575,26 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "US-China Trade War Tariffs: An Up-to-Date Chart - Peterson Institute for Interna",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "What TSMC Doubters Got Wrong - Yahoo Finance",
+      "title": "Stocks decline in Asia as investor concerns over Nvidia fallout extend into anot",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Why is Taiwan Semiconductor Manufacturing stock tumbling today? - Investing.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Tears and Disbelief in Taiwan, Where Jensen Huang Is a Celebrity - The New York ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC banks record aid as fabs expand - Taipei Times",
+      "title": "America’s Support for Taiwan Looks Alarmingly Fragile - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -606,25 +606,25 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed on Track to Raise Interest Rates Next Month And Maybe Again in January - Yah",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Nov. 25 Could Be a Huge Day for the Stock Market - The Motley Fool",
+      "title": "U.S. Treasury Yields Decline but Fed Rate-Hike Prospects in Focus - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The Fed Is Weighing a Supersized Rate Hike. Here’s How That Could Affect Your 40",
+      "title": "Fed's Collins says gradual rate hikes best to manage economic risks - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "A Larger-Than-Normal Fed Rate Hike in December Now Looks More Likely. Here's Why",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Behind the Rising US Bond Yields: Traders Bet on Fed Hikes in December and Janua",
+      "title": "Stocks’ Next Headache? The Fed Could Raise Rates Well Into 2027 - Barron's",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
