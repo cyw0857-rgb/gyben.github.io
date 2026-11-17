@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17 14:37",
+  "generated_at": "2026-11-17 22:54",
   "mode": "morning",
   "signal_date": "2026-11-17",
   "trade_date": "2026-11-18",
   "direction": 0,
-  "total_score": -23,
+  "total_score": -10,
   "tw_score": -5,
-  "intl_score": -12,
+  "intl_score": 0,
   "news_score": -2,
-  "psy_score": -2,
+  "psy_score": -1,
   "inst_score": -2,
   "foreign_fut_net": -1144,
   "foreign_cash_b": 0,
@@ -389,85 +389,85 @@
     }
   ],
   "gold": {
-    "price_usd": 3876.89990234375,
-    "chg_pct": 0.6202933387944458,
+    "price_usd": 3867.699951171875,
+    "chg_pct": 0.38151962553529717,
     "signal": 0,
     "level": "neutral",
-    "warning": "黃金小幅變動 +0.6%，影響中性",
-    "oil_usd": 85.11000061035156,
-    "oil_chg": -0.7116199272804431
+    "warning": "黃金小幅變動 +0.4%，影響中性",
+    "oil_usd": 87.04000091552734,
+    "oil_chg": 1.5398969622336076
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7416.58984375,
-      "chg_pct": -1.9186248490601372,
-      "signal": -1,
-      "note": "-1.92%",
+      "price": 7408.169921875,
+      "chg_pct": -0.11352821245866135,
+      "signal": 0,
+      "note": "-0.11%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 51608.171875,
-      "chg_pct": -1.4124422159495433,
+      "price": 51429.6484375,
+      "chg_pct": -0.3459208706954416,
       "signal": -1,
-      "note": "-1.41%",
+      "note": "-0.35%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24509.759765625,
-      "chg_pct": -2.492453245085188,
-      "signal": -1,
-      "note": "-2.49%",
+      "price": 24482.7109375,
+      "chg_pct": -0.11035941756938822,
+      "signal": 0,
+      "note": "-0.11%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9610.650390625,
-      "chg_pct": -5.279450139328528,
-      "signal": -1,
-      "note": "-5.28%",
+      "price": 9666.646484375,
+      "chg_pct": 0.5826462463416949,
+      "signal": 1,
+      "note": "+0.58%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 22.90999984741211,
-      "chg_pct": 18.704667114284184,
+      "price": 23.059999465942383,
+      "chg_pct": 0.654734262458833,
       "signal": 0,
-      "note": "VIX=22.9(中性)",
+      "note": "VIX=23.1(中性)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 58947.19140625,
-      "chg_pct": -1.1981292799275503,
+      "price": 58860.4296875,
+      "chg_pct": -1.343551307930735,
       "signal": -1,
-      "note": "-1.20%",
+      "note": "-1.34%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4970.25,
-      "chg_pct": -2.553671208705029,
+      "price": 4968.47998046875,
+      "chg_pct": -2.5883740717821784,
       "signal": -1,
-      "note": "-2.55%",
+      "note": "-2.59%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23531.580078125,
-      "chg_pct": -0.9356793136899083,
+      "price": 23508.169921875,
+      "chg_pct": -1.034232458798191,
       "signal": -1,
-      "note": "-0.94%",
+      "note": "-1.03%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3576.834716796875,
-      "chg_pct": -0.7143608888700944,
+      "price": 3584.579345703125,
+      "chg_pct": -0.4993857805642361,
       "signal": -1,
-      "note": "-0.71%",
+      "note": "-0.50%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -480,55 +480,67 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.51399993896484,
-      "chg_pct": -0.034768818669153656,
+      "price": 103.61599731445312,
+      "chg_pct": 0.0637317824725957,
       "signal": 0,
-      "note": "-0.03%(中性)",
+      "note": "+0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3876.89990234375,
-      "chg_pct": 0.6202933387944458,
+      "price": 3867.699951171875,
+      "chg_pct": 0.38151962553529717,
       "signal": 0,
-      "note": "+0.62%()",
+      "note": "+0.38%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.11000061035156,
-      "chg_pct": -0.7116199272804431,
-      "signal": -1,
-      "note": "-0.71%",
+      "price": 87.04000091552734,
+      "chg_pct": 1.5398969622336076,
+      "signal": 1,
+      "note": "+1.54%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.120999813079834,
-      "chg_pct": -0.6402792707851374,
+      "price": 5.14300012588501,
+      "chg_pct": 0.4296097170123604,
       "signal": 0,
-      "note": "5.12%(-0.64%)",
+      "note": "5.14%(+0.43%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 64255.94140625,
-      "chg_pct": -1.6064927489350462,
-      "signal": -1,
-      "note": "-1.61%",
+      "price": 64845.62890625,
+      "chg_pct": -0.01575007456440654,
+      "signal": 0,
+      "note": "-0.02%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Several companies are using Trump tariff refunds for corporate bonuses - The Gua",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says US trade deal with Thailand to be signed soon - Reuters",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump says he's OK with Jensen Huang returning as Nvidia CEO, sees no national s",
+      "title": "Trump says Thailand will eliminate tariffs on US exports under new deal - The Hi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump arrives in Philippines to kick off Asia trip - NPR",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Several companies are using Trump tariff refunds for corporate bonuses - The Gua",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -540,27 +552,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump administration seeks to deflect responsibility for nationwide ground stop ",
+      "title": "US foreign policy leaders say America should take an active role in world affair",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Says He’s Open to Reinstatement of Jensen Huang as Nvidia Chief - The New ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he ‘would not mind’ if Jensen Huang returned as Nvidia CEO - NBC News",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -581,8 +575,20 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Top Analyst Reports for Taiwan Semiconductor, Johnson & Johnson and Palantir - Y",
+      "title": "Zacks.com featured highlights include NVIDIA, J.M. Smucker, Taiwan Semiconductor",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Applied Materials vs. Taiwan Semiconductor Manufacturing: Which Tech Stock Is a ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -594,21 +600,9 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Why is Taiwan Semiconductor Manufacturing stock tumbling today? - Investing.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan Semiconductor Booked a Record NT$587 Billion Month. The Stock Has Lost Ne",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed's Hammack reiterates case for slow, steady rate hikes -Bloomberg TV - Reuter",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "聯準會",
@@ -618,7 +612,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Stocks’ New Headache? The Fed Could Raise Rates Well Into 2027 - Barron's",
+      "title": "The Stock Market Is Primed for an Explosive Week. Nvidia and the Federal Reserve",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -627,6 +621,12 @@
       "title": "Wall Street kicks off week lower amid Nvidia turmoil and Fed rate concerns - Inv",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed rate hikes could stretch into 2027 as darker threats loom - TheStreet",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
