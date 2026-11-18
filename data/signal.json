@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18 11:13",
+  "generated_at": "2026-11-18 13:57",
   "mode": "morning",
   "signal_date": "2026-11-18",
   "trade_date": "2026-11-19",
   "direction": 0,
-  "total_score": -18,
-  "tw_score": -10,
-  "intl_score": -5,
-  "news_score": 0,
+  "total_score": -16,
+  "tw_score": -9,
+  "intl_score": -2,
+  "news_score": -2,
   "psy_score": -2,
   "inst_score": -2,
   "foreign_fut_net": -1144,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 39690.30859375,
-  "tw_chg_pct": -1.0021941661681355,
-  "tw_ma5": 41517.89765625,
-  "tw_ma10": 41749.66171875,
-  "tw_rsi": 30.30725816168531,
-  "tw_macd": -1588.3252185728052,
-  "tw_macds": -1290.3842089023506,
+  "tw_last_close": 40194.91015625,
+  "tw_chg_pct": 0.2564115055370575,
+  "tw_ma5": 41618.81796875,
+  "tw_ma10": 41800.121875,
+  "tw_rsi": 31.468480957056784,
+  "tw_macd": -1548.0721024759405,
+  "tw_macds": -1282.3335856829776,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 42431.265625,
   "tw_ma10_p2": 42075.521875,
   "tw_ma20_p2": 43986.953515625,
-  "tw_ma20": 43630.3650390625,
+  "tw_ma20": 43655.5951171875,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3802.39990234375,
-    "chg_pct": -1.313264927491565,
+    "price_usd": 3792.300048828125,
+    "chg_pct": -1.8606672338978034,
     "signal": 1,
     "level": "ok",
-    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
-    "oil_usd": 85.1500015258789,
-    "oil_chg": -0.6649553041379941
+    "warning": "黃金下跌 -1.9%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 84.76000213623047,
+    "oil_chg": -1.453319345371177
   },
   "intl_data": {
     "S&P500": {
@@ -416,16 +416,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24328.3828125,
-      "chg_pct": -0.7400193019410237,
+      "price": 24328.380859375,
+      "chg_pct": -0.7400272707053799,
       "signal": -1,
       "note": "-0.74%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9642.8779296875,
-      "chg_pct": 0.33533150986261373,
+      "price": 9642.8798828125,
+      "chg_pct": 0.3353518323685901,
       "signal": 1,
       "note": "+0.34%",
       "desc": "對台股影響最大"
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 58696.5390625,
-      "chg_pct": -0.2784393961616032,
-      "signal": 0,
-      "note": "-0.28%",
+      "price": 59187.75,
+      "chg_pct": 0.5560956898170791,
+      "signal": 1,
+      "note": "+0.56%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4951.4599609375,
-      "chg_pct": -0.342559889506574,
-      "signal": -1,
-      "note": "-0.34%",
+      "price": 5044.919921875,
+      "chg_pct": 1.5384975225167012,
+      "signal": 1,
+      "note": "+1.54%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23293.349609375,
-      "chg_pct": -0.9138112971529264,
+      "price": 23280.330078125,
+      "chg_pct": -0.969194303542909,
       "signal": -1,
-      "note": "-0.91%",
+      "note": "-0.97%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3573.791259765625,
-      "chg_pct": -0.3009514225023695,
-      "signal": -1,
-      "note": "-0.30%",
+      "price": 3588.128173828125,
+      "chg_pct": 0.09900945592407144,
+      "signal": 0,
+      "note": "+0.10%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39690.30859375,
-      "chg_pct": -1.0021941661681402,
-      "signal": -1,
-      "note": "-1.00%",
+      "price": 40194.91015625,
+      "chg_pct": 0.25641150553705433,
+      "signal": 0,
+      "note": "+0.26%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.63300323486328,
-      "chg_pct": 0.08015468919299058,
+      "price": 103.65399932861328,
+      "chg_pct": 0.1584708360508767,
       "signal": 0,
-      "note": "+0.08%(中性)",
+      "note": "+0.16%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3802.39990234375,
-      "chg_pct": -1.313264927491565,
+      "price": 3792.300048828125,
+      "chg_pct": -1.8606672338978034,
       "signal": 1,
-      "note": "-1.31%()",
+      "note": "-1.86%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.1500015258789,
-      "chg_pct": -0.6649553041379941,
+      "price": 84.76000213623047,
+      "chg_pct": -1.453319345371177,
       "signal": -1,
-      "note": "-0.66%",
+      "note": "-1.45%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,14 +512,20 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64426.7890625,
-      "chg_pct": -0.661551315489593,
+      "price": 64585.140625,
+      "chg_pct": -0.4173920333894353,
       "signal": -1,
-      "note": "-0.66%",
+      "note": "-0.42%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump says Thailand will eliminate tariffs on US exports under new deal - The Hi",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
     {
       "label": "川普動態",
       "title": "Trump says US trade deal with Thailand to be signed soon - Reuters",
@@ -534,27 +540,21 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump faces criticism as allies press the White House for answers on tech proble",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
       "title": "Trump holds trade signing ceremony with Thailand but says important details stil",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump berates NBC reporter, says she wouldn’t notice ‘broken windows’ - The Wash",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says trade deal reached between the U.S. and the Philippines - NBC News",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump says report of Iran bomb plot against D.C. is being taken ‘very seriously’",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump berates NBC reporter, says she wouldn’t notice ‘broken windows’ - The Wash",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -582,7 +582,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Pulled Back Amid Broade",
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Tumble As Customer Shock Cl",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Shares Jump 4.66% After Hours - Taiwan Semiconductor (NYSE:",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -594,39 +600,33 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Surging AI Demand and Advanced Chipmaking Strengthens Taiwan Semiconductor Manuf",
+      "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Pulled Back Amid Broade",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "There's Now a 100% Chance of a Fed Rate Hike in December -- but That's Not the W",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed's Musalem: US likely needs several rate hikes by spring to control inflation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Wall Street kicks off week lower amid Nvidia turmoil and Fed rate concerns - Inv",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift. - MarketW",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Stock Market's 40,000-Point Defense Begins Again as Investment Veteran Ra",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "New York Fed’s Williams rules out jumbo rate hike for December - Yahoo Finance",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "US 10-Year Yield Set for Historic Run Above 5% on Fed Cycle - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Stock Market Is Primed for an Explosive Week. Nvidia and the Federal Reserve",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Top Fed official: AI boom could fuel more rate hikes in 2027 - Axios",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     }
   ]
 }
