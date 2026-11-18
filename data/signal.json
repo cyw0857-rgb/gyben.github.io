@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18 05:56",
+  "generated_at": "2026-11-18 11:13",
   "mode": "morning",
-  "signal_date": "2026-11-16",
+  "signal_date": "2026-11-18",
   "trade_date": "2026-11-19",
   "direction": 0,
-  "total_score": -13,
-  "tw_score": -5,
-  "intl_score": -3,
-  "news_score": -1,
+  "total_score": -18,
+  "tw_score": -10,
+  "intl_score": -5,
+  "news_score": 0,
   "psy_score": -2,
   "inst_score": -2,
   "foreign_fut_net": -1144,
@@ -15,18 +15,18 @@
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 41040.078125,
-  "tw_chg_pct": -6.033281426040693,
-  "tw_ma5": 42955.228125,
-  "tw_ma10": 42397.06484375,
-  "tw_rsi": 35.312440072486055,
-  "tw_macd": -1301.5424106731807,
-  "tw_macds": -1156.4548909052824,
+  "tw_last_close": 39690.30859375,
+  "tw_chg_pct": -1.0021941661681355,
+  "tw_ma5": 41517.89765625,
+  "tw_ma10": 41749.66171875,
+  "tw_rsi": 30.30725816168531,
+  "tw_macd": -1588.3252185728052,
+  "tw_macds": -1290.3842089023506,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 43079.55234375,
-  "tw_ma10_p2": 42785.07109375,
-  "tw_ma20_p2": 44634.40078125,
-  "tw_ma20": 44337.9111328125,
+  "tw_ma5_p2": 42431.265625,
+  "tw_ma10_p2": 42075.521875,
+  "tw_ma20_p2": 43986.953515625,
+  "tw_ma20": 43630.3650390625,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3853.199951171875,
-    "chg_pct": 0.005189493170905788,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 +0.0%，影響中性",
-    "oil_usd": 85.54000091552734,
-    "oil_chg": -0.20998635395761933
+    "price_usd": 3802.39990234375,
+    "chg_pct": -1.313264927491565,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 85.1500015258789,
+    "oil_chg": -0.6649553041379941
   },
   "intl_data": {
     "S&P500": {
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 59662.01953125,
-      "chg_pct": -2.4211238093071996,
-      "signal": -1,
-      "note": "-2.42%",
+      "price": 58696.5390625,
+      "chg_pct": -0.2784393961616032,
+      "signal": 0,
+      "note": "-0.28%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5100.5,
-      "chg_pct": -3.591885744399749,
+      "price": 4951.4599609375,
+      "chg_pct": -0.342559889506574,
       "signal": -1,
-      "note": "-3.59%",
+      "note": "-0.34%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23753.83984375,
-      "chg_pct": 0.49175989227306105,
-      "signal": 1,
-      "note": "+0.49%",
+      "price": 23293.349609375,
+      "chg_pct": -0.9138112971529264,
+      "signal": -1,
+      "note": "-0.91%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3573.791259765625,
+      "chg_pct": -0.3009514225023695,
+      "signal": -1,
+      "note": "-0.30%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 41040.078125,
-      "chg_pct": -6.033281426040695,
+      "price": 39690.30859375,
+      "chg_pct": -1.0021941661681402,
       "signal": -1,
-      "note": "-6.03%",
+      "note": "-1.00%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.54399871826172,
-      "chg_pct": -0.005798487029587609,
+      "price": 103.63300323486328,
+      "chg_pct": 0.08015468919299058,
       "signal": 0,
-      "note": "-0.01%(中性)",
+      "note": "+0.08%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3853.199951171875,
-      "chg_pct": 0.005189493170905788,
-      "signal": 0,
-      "note": "+0.01%()",
+      "price": 3802.39990234375,
+      "chg_pct": -1.313264927491565,
+      "signal": 1,
+      "note": "-1.31%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.54000091552734,
-      "chg_pct": -0.20998635395761933,
-      "signal": 0,
-      "note": "-0.21%",
+      "price": 85.1500015258789,
+      "chg_pct": -0.6649553041379941,
+      "signal": -1,
+      "note": "-0.66%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,10 +512,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 64197.890625,
-      "chg_pct": -1.0144854911397247,
+      "price": 64426.7890625,
+      "chg_pct": -0.661551315489593,
       "signal": -1,
-      "note": "-1.01%",
+      "note": "-0.66%",
       "desc": "風險偏好指標"
     }
   },
@@ -528,13 +528,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says Thailand will eliminate tariffs on US exports under new deal - The Hi",
+      "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a di",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Exclusive: US intel indicates Iran developing plans to potentially detonate a di",
+      "title": "Trump faces criticism as allies press the White House for answers on tech proble",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -546,19 +546,19 @@
     },
     {
       "label": "川普動態",
+      "title": "Trump berates NBC reporter, says she wouldn’t notice ‘broken windows’ - The Wash",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says report of Iran bomb plot against D.C. is being taken ‘very seriously’",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
-      "label": "川普動態",
-      "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "關稅/貿易",
-      "title": "Bibliometric Study of Century-Long Trade War Research Reveals Heavy US-China Foc",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -600,13 +600,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Why is Taiwan Semiconductor Manufacturing stock tumbling today? - Investing.com",
+      "title": "Taiwan Stock Market's 40,000-Point Defense Begins Again as Investment Veteran Ra",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "New York Fed’s Williams rules out jumbo rate hike for December - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "US 10-Year Yield Set for Historic Run Above 5% on Fed Rate Cycle - Bloomberg.com",
+      "title": "US 10-Year Yield Set for Historic Run Above 5% on Fed Cycle - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -618,13 +624,7 @@
     },
     {
       "label": "聯準會",
-      "title": "There's Now a 100% Chance of a Fed Rate Hike in December -- but That's Not the W",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed's Hammack reiterates case for slow, steady rate hikes -Bloomberg TV - Reuter",
+      "title": "Top Fed official: AI boom could fuel more rate hikes in 2027 - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
