@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-18 23:30",
+  "generated_at": "2026-11-19 05:38",
   "mode": "morning",
-  "signal_date": "2026-11-18",
-  "trade_date": "2026-11-19",
+  "signal_date": "2026-11-17",
+  "trade_date": "2026-11-20",
   "direction": 0,
   "total_score": -10,
-  "tw_score": -9,
-  "intl_score": 0,
-  "news_score": -1,
+  "tw_score": -5,
+  "intl_score": -4,
+  "news_score": -2,
   "psy_score": -1,
-  "inst_score": -1,
+  "inst_score": 0,
   "foreign_fut_net": -2620,
   "foreign_cash_b": 0,
   "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 40194.91015625,
-  "tw_chg_pct": 0.2564115055370575,
-  "tw_ma5": 41618.81796875,
-  "tw_ma10": 41800.121875,
-  "tw_rsi": 31.468480957056784,
-  "tw_macd": -1548.0721024759405,
-  "tw_macds": -1282.3335856829776,
+  "tw_last_close": 40092.109375,
+  "tw_chg_pct": -2.309860978121614,
+  "tw_ma5": 42431.265625,
+  "tw_ma10": 42075.521875,
+  "tw_rsi": 29.84009334541888,
+  "tw_macd": -1453.6601259975723,
+  "tw_macds": -1215.8989564847368,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 42431.265625,
-  "tw_ma10_p2": 42075.521875,
-  "tw_ma20_p2": 43986.953515625,
-  "tw_ma20": 43655.5951171875,
+  "tw_ma5_p2": 42955.228125,
+  "tw_ma10_p2": 42397.06484375,
+  "tw_ma20_p2": 44337.9111328125,
+  "tw_ma20": 43986.953515625,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,51 +389,51 @@
     }
   ],
   "gold": {
-    "price_usd": 3760.800048828125,
-    "chg_pct": -2.675842442169497,
+    "price_usd": 3728.199951171875,
+    "chg_pct": -3.5194866134904847,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -2.7%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 83.4000015258789,
-    "oil_chg": -3.034531502763604
+    "warning": "黃金大跌 -3.5%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 82.13999938964844,
+    "oil_chg": -4.499479886597803
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7336.3798828125,
-      "chg_pct": -0.056534098562501314,
+      "price": 7323.6298828125,
+      "chg_pct": -0.2302272838388908,
       "signal": 0,
-      "note": "-0.06%",
+      "note": "-0.23%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 50311.3515625,
-      "chg_pct": -0.8827332856615598,
+      "price": 50198.171875,
+      "chg_pct": -1.1057060527248175,
       "signal": -1,
-      "note": "-0.88%",
+      "note": "-1.11%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24436.845703125,
-      "chg_pct": 0.44583667271964306,
+      "price": 24429.884765625,
+      "chg_pct": 0.4172242568739844,
       "signal": 1,
-      "note": "+0.45%",
+      "note": "+0.42%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9687.8427734375,
-      "chg_pct": 0.4662807291122852,
-      "signal": 1,
-      "note": "+0.47%",
+      "price": 9652.796875,
+      "chg_pct": 0.10284263941912289,
+      "signal": 0,
+      "note": "+0.10%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 24.59000015258789,
-      "chg_pct": -3.4171208294165014,
+      "price": 24.559999465942383,
+      "chg_pct": -3.5349554237775216,
       "signal": 0,
       "note": "VIX=24.6(中性)",
       "desc": "<20樂觀 >25恐慌"
@@ -448,34 +448,34 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 4968.47998046875,
+      "chg_pct": -2.5883740717821784,
+      "signal": -1,
+      "note": "-2.59%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23294.75,
-      "chg_pct": -0.9078542591118797,
+      "price": 23508.169921875,
+      "chg_pct": -1.034232458798191,
       "signal": -1,
-      "note": "-0.91%",
+      "note": "-1.03%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3587.831787109375,
-      "chg_pct": 0.09074107321155699,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "+0.09%",
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 40194.91015625,
-      "chg_pct": 0.25641150553705433,
-      "signal": 0,
-      "note": "+0.26%",
+      "price": 40092.109375,
+      "chg_pct": -2.309860978121615,
+      "signal": -1,
+      "note": "-2.31%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
@@ -488,34 +488,34 @@
     },
     "黃金": {
       "category": "商品",
-      "price": 3760.800048828125,
-      "chg_pct": -2.675842442169497,
+      "price": 3728.199951171875,
+      "chg_pct": -3.5194866134904847,
       "signal": 1,
-      "note": "-2.68%()",
+      "note": "-3.52%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.4000015258789,
-      "chg_pct": -3.034531502763604,
+      "price": 82.13999938964844,
+      "chg_pct": -4.499479886597803,
       "signal": -1,
-      "note": "-3.03%",
+      "note": "-4.50%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.0929999351501465,
-      "chg_pct": -0.19596763786765306,
+      "price": 5.065999984741211,
+      "chg_pct": -0.7250671781585228,
       "signal": 0,
-      "note": "5.09%(-0.20%)",
+      "note": "5.07%(-0.73%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63513.76171875,
-      "chg_pct": -2.126829532560638,
+      "price": 62286.4296875,
+      "chg_pct": -4.01811850465152,
       "signal": -1,
-      "note": "-2.13%",
+      "note": "-4.02%",
       "desc": "風險偏好指標"
     }
   },
@@ -528,37 +528,31 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump lands in China with key meetings with Xi and Putin on the agenda - NPR",
+      "title": "Canada’s Carney: Trump ‘listens a lot more in private’ - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump touts ‘landmark’ trade deal with Philippines - The Hill",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Garcia gives Trump allies early warning on the investigations to come - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit - The New York Ti",
+      "title": "House Democrat warns 13 Trump allies to save their records for upcoming investig",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says trade deal reached between the U.S. and the Philippines - NBC News",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Trump plans to meet separately with Putin on his China trip in addition to their",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "label": "川普動態",
+      "title": "Russia Says Europe Is in ‘Humiliating Decline’ as Trump, Putin, and Xi Meet - Ti",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -581,8 +575,14 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "US-China Trade War Tariffs: An Up-to-Date Chart - Peterson Institute for Interna",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Tumble As Customer Shock Cl",
+      "title": "Why You Should Buy and Hold Taiwan Semiconductor (TSM) for Three Years - Yahoo F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -594,39 +594,39 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Shares Jump 4.66% After Hours - Taiwan Semiconductor (NYSE:",
+      "title": "Broadcom Has a $27 Billion Advantage Over Taiwan Semiconductor as Your Portfolio",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Chase Coleman's Tiger Global Made Nvidia Its Biggest Bet With 12 Million Shares,",
+      "title": "Taiwan Semiconductor Shares Jump 4.66% After Hours - Taiwan Semiconductor (NYSE:",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Prediction: Dec. 9 Will Mark a Turning Point for the S&P 500 - Yahoo Finance",
+      "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "The Latest Federal Reserve Interest Rate Forecast Points to 4 Hikes by mid-Septe",
+      "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed's next moves come into focus - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Fed's Hammack reiterates case for slow, steady rate hikes -Bloomberg TV - Reuter",
+      "title": "Wall Street mixed after Nvidia earnings, Fed minutes - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift. - MarketW",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     }
   ]
 }
