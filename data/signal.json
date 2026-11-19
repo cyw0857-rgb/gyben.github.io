@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-19 22:41",
+  "generated_at": "2026-11-20 05:53",
   "mode": "morning",
-  "signal_date": "2026-11-19",
-  "trade_date": "2026-11-20",
+  "signal_date": "2026-11-18",
+  "trade_date": "2026-11-23",
   "direction": 0,
-  "total_score": 0,
+  "total_score": -19,
   "tw_score": -9,
-  "intl_score": 9,
+  "intl_score": -8,
   "news_score": -2,
-  "psy_score": 0,
+  "psy_score": -4,
   "inst_score": 2,
   "foreign_fut_net": 1438,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-9) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 38426.890625,
-  "tw_chg_pct": -4.39861545747251,
-  "tw_ma5": 40685.821875,
-  "tw_ma10": 41485.3390625,
-  "tw_rsi": 30.354076869725574,
-  "tw_macd": -1745.4383474806236,
-  "tw_macds": -1374.954538042507,
+  "tw_last_close": 40194.91015625,
+  "tw_chg_pct": 0.2564115055370575,
+  "tw_ma5": 41618.81796875,
+  "tw_ma10": 41800.121875,
+  "tw_rsi": 31.468480957056784,
+  "tw_macd": -1548.0721024759405,
+  "tw_macds": -1282.3335856829776,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 41618.81796875,
-  "tw_ma10_p2": 41800.121875,
-  "tw_ma20_p2": 43655.5951171875,
-  "tw_ma20": 43262.2931640625,
+  "tw_ma5_p2": 42431.265625,
+  "tw_ma10_p2": 42075.521875,
+  "tw_ma20_p2": 43986.953515625,
+  "tw_ma20": 43655.5951171875,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,178 +389,172 @@
     }
   ],
   "gold": {
-    "price_usd": 3715.39990234375,
-    "chg_pct": -0.7081963893101909,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.7%，影響中性",
-    "oil_usd": 83.66999816894531,
-    "oil_chg": 0.49242856377063987
+    "price_usd": 3628.89990234375,
+    "chg_pct": -3.019856301586852,
+    "signal": 2,
+    "level": "good",
+    "warning": "黃金大跌 -3.0%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 83.19999694824219,
+    "oil_chg": -0.07206964502607198
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7384.6298828125,
-      "chg_pct": 0.8329203001254634,
-      "signal": 1,
-      "note": "+0.83%",
+      "price": 7175.830078125,
+      "chg_pct": -2.0181222570294652,
+      "signal": -1,
+      "note": "-2.02%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 50207.87109375,
-      "chg_pct": 0.0193218565292623,
-      "signal": 0,
-      "note": "+0.02%",
+      "price": 49097.05859375,
+      "chg_pct": -2.1935326330048746,
+      "signal": -1,
+      "note": "-2.19%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24802.53515625,
-      "chg_pct": 1.5254036604603145,
-      "signal": 1,
-      "note": "+1.53%",
+      "price": 23879.19921875,
+      "chg_pct": -2.2541315031165006,
+      "signal": -1,
+      "note": "-2.25%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 10018.2265625,
-      "chg_pct": 3.7857074134599267,
-      "signal": 1,
-      "note": "+3.79%",
+      "price": 9419.72265625,
+      "chg_pct": -2.414606675301764,
+      "signal": -1,
+      "note": "-2.41%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 22.5,
-      "chg_pct": -8.387620157724378,
-      "signal": 0,
-      "note": "VIX=22.5(中性)",
+      "price": 28.440000534057617,
+      "chg_pct": 15.798050295138133,
+      "signal": -1,
+      "note": "VIX=28.4(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 59444.2109375,
-      "chg_pct": 0.711452437212016,
-      "signal": 1,
-      "note": "+0.71%",
+      "price": 59024.28125,
+      "chg_pct": 0.2783730315424398,
+      "signal": 0,
+      "note": "+0.28%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5137.89013671875,
-      "chg_pct": 1.3902522008568607,
+      "price": 5067.43994140625,
+      "chg_pct": 1.991755251636611,
       "signal": 1,
-      "note": "+1.39%",
+      "note": "+1.99%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22841.619140625,
-      "chg_pct": -1.945205934277037,
+      "price": 23294.75,
+      "chg_pct": -0.9078542591118797,
       "signal": -1,
-      "note": "-1.95%",
+      "note": "-0.91%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3577.617431640625,
-      "chg_pct": -0.28470116550624125,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "-0.28%",
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 38426.890625,
-      "chg_pct": -4.398615457472509,
-      "signal": -1,
-      "note": "-4.40%",
+      "price": 40194.91015625,
+      "chg_pct": 0.25641150553705433,
+      "signal": 0,
+      "note": "+0.26%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.64099884033203,
-      "chg_pct": -0.21086247711585676,
+      "price": 103.93599700927734,
+      "chg_pct": 0.0731719607925814,
       "signal": 0,
-      "note": "-0.21%(中性)",
+      "note": "+0.07%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3715.39990234375,
-      "chg_pct": -0.7081963893101909,
+      "price": 3628.89990234375,
+      "chg_pct": -3.019856301586852,
       "signal": 1,
-      "note": "-0.71%()",
+      "note": "-3.02%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.66999816894531,
-      "chg_pct": 0.49242856377063987,
-      "signal": 1,
-      "note": "+0.49%",
+      "price": 83.19999694824219,
+      "chg_pct": -0.07206964502607198,
+      "signal": 0,
+      "note": "-0.07%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 5.085000038146973,
-      "chg_pct": 0.3750504039279485,
+      "price": 5.052000045776367,
+      "chg_pct": -0.2763509476314954,
       "signal": 0,
-      "note": "5.09%(+0.38%)",
+      "note": "5.05%(-0.28%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 63808.41015625,
-      "chg_pct": 1.3036675320036168,
-      "signal": 1,
-      "note": "+1.30%",
+      "price": 61506.51171875,
+      "chg_pct": -2.350878215710765,
+      "signal": -1,
+      "note": "-2.35%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear",
+      "title": "Six Experts on the Significance of Trump, Xi, and Putin’s First Trilateral Meeti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Grows Frustrated With Vance Over Iran War Critique - The New York Times",
+      "title": "No breakthroughs from Trump, Xi and Putin's 3-way talks on nuclear risks - PBS",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Xi, Trump, and Putin Summit Makes History but Not Much Else - Time Magazine",
+      "title": "Trump eyes 2027 to 'see what happens' with Iran - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says people stockpiling food, water amid outages should ‘relax’ - The Hill",
+      "title": "Trump to Axios: I'm \"not rushing into a decision\" on Iran - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump, Xi and Putin meet as global alliances hang in the balance - NPR",
+      "title": "Trump Draws Ire Over Calling Putin His 'Friend' as Europe-U.S. Rift Widens - Tim",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump claims Iran is developing bioweapons: Is there any evidence? - Al Jazeera",
+      "title": "Trump says he’ll be more productive with Democratic Congress - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -581,10 +575,28 @@
       "sent_val": -1
     },
     {
+      "label": "關稅/貿易",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
       "label": "台股/半導體",
       "title": "Taiwan to enact new short-selling curbs in response to market drop - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Here’s What Weighed on Taiwan Semiconductor Manufacturing Company Limited (TSM) ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Slipped 14% This Month Amidst Tech Contraction: 175% Gains ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "台股/半導體",
@@ -593,22 +605,10 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Stock (TSM) Looks Too Cheap for Its Growth Outlook - Yahoo ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Tightens Short Selling Curbs to Support Stock Market - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
       "label": "聯準會",
-      "title": "Traders Are Betting on Interest Rates Staying High for Years - Bloomberg.com",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed’s Goolsbee Won’t Rule Out Larger Rate Increases as Inflation Risks Mount - B",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -618,9 +618,9 @@
     },
     {
       "label": "聯準會",
-      "title": "Dollar eases after seven-session rally, rates and equities in focus - Yahoo Fina",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "The Latest Federal Reserve Interest Rate Forecast Points to 4 Hikes by mid-Septe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
