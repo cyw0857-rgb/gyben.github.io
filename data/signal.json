@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19 10:52",
+  "generated_at": "2026-11-19 13:57",
   "mode": "morning",
   "signal_date": "2026-11-19",
   "trade_date": "2026-11-20",
   "direction": -1,
-  "total_score": -13,
+  "total_score": -12,
   "tw_score": -9,
-  "intl_score": -3,
+  "intl_score": 0,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
@@ -15,18 +15,18 @@
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 38802.890625,
-  "tw_chg_pct": -3.463173635265737,
-  "tw_ma5": 40761.021875,
-  "tw_ma10": 41522.9390625,
-  "tw_rsi": 31.02972782599808,
-  "tw_macd": -1715.4440454863216,
-  "tw_macds": -1368.9556776436466,
+  "tw_last_close": 38426.890625,
+  "tw_chg_pct": -4.39861545747251,
+  "tw_ma5": 40685.821875,
+  "tw_ma10": 41485.3390625,
+  "tw_rsi": 30.354076869725574,
+  "tw_macd": -1745.4383474806236,
+  "tw_macds": -1374.954538042507,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 41618.81796875,
   "tw_ma10_p2": 41800.121875,
   "tw_ma20_p2": 43655.5951171875,
-  "tw_ma20": 43281.0931640625,
+  "tw_ma20": 43262.2931640625,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3739.699951171875,
-    "chg_pct": -3.2218829660262163,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -3.2%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 82.19999694824219,
-    "oil_chg": -4.4297233965343334
+    "price_usd": 3738.5,
+    "chg_pct": -0.09086032316418889,
+    "signal": 0,
+    "level": "neutral",
+    "warning": "黃金小幅變動 -0.1%，影響中性",
+    "oil_usd": 82.13999938964844,
+    "oil_chg": -1.3451870259977614
   },
   "intl_data": {
     "S&P500": {
@@ -416,16 +416,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 24429.884765625,
-      "chg_pct": 0.4172242568739844,
+      "price": 24429.880859375,
+      "chg_pct": 0.4172082005239027,
       "signal": 1,
       "note": "+0.42%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9652.796875,
-      "chg_pct": 0.10284263941912289,
+      "price": 9652.7998046875,
+      "chg_pct": 0.10287302129192027,
       "signal": 0,
       "note": "+0.10%",
       "desc": "對台股影響最大"
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 59140.87109375,
-      "chg_pct": 0.19752861243015982,
-      "signal": 0,
-      "note": "+0.20%",
+      "price": 59272.78125,
+      "chg_pct": 0.42101317413331485,
+      "signal": 1,
+      "note": "+0.42%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4992.22021484375,
-      "chg_pct": -1.4843733212874743,
-      "signal": -1,
-      "note": "-1.48%",
+      "price": 5068.990234375,
+      "chg_pct": 0.030593218403685372,
+      "signal": 0,
+      "note": "+0.03%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22888.759765625,
-      "chg_pct": -1.742840057845652,
+      "price": 22812.1796875,
+      "chg_pct": -2.071583994247631,
       "signal": -1,
-      "note": "-1.74%",
+      "note": "-2.07%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3554.54638671875,
-      "chg_pct": -0.9277369799180172,
+      "price": 3568.813720703125,
+      "chg_pct": -0.530078063332553,
       "signal": -1,
-      "note": "-0.93%",
+      "note": "-0.53%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 38802.890625,
-      "chg_pct": -3.463173635265737,
+      "price": 38426.890625,
+      "chg_pct": -4.398615457472509,
       "signal": -1,
-      "note": "-3.46%",
+      "note": "-4.40%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.85299682617188,
-      "chg_pct": 0.3507575320275708,
-      "signal": -1,
-      "note": "+0.35%(偏空)",
+      "price": 103.88200378417969,
+      "chg_pct": 0.021185416617388292,
+      "signal": 0,
+      "note": "+0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3739.699951171875,
-      "chg_pct": -3.2218829660262163,
-      "signal": 1,
-      "note": "-3.22%()",
+      "price": 3738.5,
+      "chg_pct": -0.09086032316418889,
+      "signal": 0,
+      "note": "-0.09%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.19999694824219,
-      "chg_pct": -4.4297233965343334,
+      "price": 82.13999938964844,
+      "chg_pct": -1.3451870259977614,
       "signal": -1,
-      "note": "-4.43%",
+      "note": "-1.35%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,35 +512,29 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62533.96875,
-      "chg_pct": -3.6366667970877966,
+      "price": 63251.6015625,
+      "chg_pct": -2.530811991921916,
       "signal": -1,
-      "note": "-3.64%",
+      "note": "-2.53%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin - ",
+      "title": "Trump says ‘we’ll wipe them out’ if Iran dirty bombs US - The Hill",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - T",
+      "title": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit - The New York Ti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says US wraps up 'very big trade deal' with Philippines - Reuters",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Russia Says Europe Is in ‘Humiliating Decline’ as Trump, Putin, and Xi Meet - Ti",
+      "title": "Trump says he referred to ex-Nvidia boss Huang's situation 'briefly' in talk wit",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -552,19 +546,19 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says ‘we’ll wipe them out’ if Iran dirty bombs US - The Hill",
+      "title": "Russia Says Europe Is in ‘Humiliating Decline’ as Trump, Putin, and Xi Meet - Ti",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "關稅/貿易",
       "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -577,6 +571,12 @@
     {
       "label": "關稅/貿易",
       "title": "US-China Trade War Tariffs: An Up-to-Date Chart - Peterson Institute for Interna",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -600,21 +600,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Broadcom Has a $27 Billion Advantage Over Taiwan Semiconductor as Your Portfolio",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Taiwan Stock Market: 21 High-Priced Stocks Hit Limit Down; ASMedia Rises Over 3%",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
-      "title": "Fed minutes: Officials favored holding rates steady in October, but they see hik",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The Fed's next moves come into focus - Axios",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate h",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -624,7 +618,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed Saw Need to Keep Raising Rates Despite Holding Steady in October - The New Y",
+      "title": "Stock Market Today: Dow Ends In Red On Rate Shock Fears; Nvidia Sinks As Anthrop",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Officials Saw Higher Rates Ahead When They Held Steady Last Month - WSJ",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
