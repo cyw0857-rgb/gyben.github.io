@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-19 05:38",
+  "generated_at": "2026-11-19 10:52",
   "mode": "morning",
-  "signal_date": "2026-11-17",
+  "signal_date": "2026-11-19",
   "trade_date": "2026-11-20",
-  "direction": 0,
-  "total_score": -10,
-  "tw_score": -5,
-  "intl_score": -4,
+  "direction": -1,
+  "total_score": -13,
+  "tw_score": -9,
+  "intl_score": -3,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
   "foreign_fut_net": -2620,
   "foreign_cash_b": 0,
-  "veto_msg": "看空需: 均線連續2日空頭排列 + MACD死叉向下 → 條件不足",
+  "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 40092.109375,
-  "tw_chg_pct": -2.309860978121614,
-  "tw_ma5": 42431.265625,
-  "tw_ma10": 42075.521875,
-  "tw_rsi": 29.84009334541888,
-  "tw_macd": -1453.6601259975723,
-  "tw_macds": -1215.8989564847368,
+  "tw_last_close": 38802.890625,
+  "tw_chg_pct": -3.463173635265737,
+  "tw_ma5": 40761.021875,
+  "tw_ma10": 41522.9390625,
+  "tw_rsi": 31.02972782599808,
+  "tw_macd": -1715.4440454863216,
+  "tw_macds": -1368.9556776436466,
   "tw_prev_close_up": false,
-  "tw_ma5_p2": 42955.228125,
-  "tw_ma10_p2": 42397.06484375,
-  "tw_ma20_p2": 44337.9111328125,
-  "tw_ma20": 43986.953515625,
+  "tw_ma5_p2": 41618.81796875,
+  "tw_ma10_p2": 41800.121875,
+  "tw_ma20_p2": 43655.5951171875,
+  "tw_ma20": 43281.0931640625,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3728.199951171875,
-    "chg_pct": -3.5194866134904847,
+    "price_usd": 3739.699951171875,
+    "chg_pct": -3.2218829660262163,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.5%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 82.13999938964844,
-    "oil_chg": -4.499479886597803
+    "warning": "黃金大跌 -3.2%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 82.19999694824219,
+    "oil_chg": -4.4297233965343334
   },
   "intl_data": {
     "S&P500": {
@@ -440,66 +440,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 58860.4296875,
-      "chg_pct": -1.343551307930735,
-      "signal": -1,
-      "note": "-1.34%",
+      "price": 59140.87109375,
+      "chg_pct": 0.19752861243015982,
+      "signal": 0,
+      "note": "+0.20%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4968.47998046875,
-      "chg_pct": -2.5883740717821784,
+      "price": 4992.22021484375,
+      "chg_pct": -1.4843733212874743,
       "signal": -1,
-      "note": "-2.59%",
+      "note": "-1.48%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 23508.169921875,
-      "chg_pct": -1.034232458798191,
+      "price": 22888.759765625,
+      "chg_pct": -1.742840057845652,
       "signal": -1,
-      "note": "-1.03%",
+      "note": "-1.74%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 3554.54638671875,
+      "chg_pct": -0.9277369799180172,
+      "signal": -1,
+      "note": "-0.93%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 40092.109375,
-      "chg_pct": -2.309860978121615,
+      "price": 38802.890625,
+      "chg_pct": -3.463173635265737,
       "signal": -1,
-      "note": "-2.31%",
+      "note": "-3.46%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.81199645996094,
-      "chg_pct": 0.3111398230148516,
+      "price": 103.85299682617188,
+      "chg_pct": 0.3507575320275708,
       "signal": -1,
-      "note": "+0.31%(偏空)",
+      "note": "+0.35%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3728.199951171875,
-      "chg_pct": -3.5194866134904847,
+      "price": 3739.699951171875,
+      "chg_pct": -3.2218829660262163,
       "signal": 1,
-      "note": "-3.52%()",
+      "note": "-3.22%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.13999938964844,
-      "chg_pct": -4.499479886597803,
+      "price": 82.19999694824219,
+      "chg_pct": -4.4297233965343334,
       "signal": -1,
-      "note": "-4.50%",
+      "note": "-4.43%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,37 +512,31 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 62286.4296875,
-      "chg_pct": -4.01811850465152,
+      "price": 62533.96875,
+      "chg_pct": -3.6366667970877966,
       "signal": -1,
-      "note": "-4.02%",
+      "note": "-3.64%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
+      "title": "Trump lands in China for trade talks and high-stakes summit with Xi and Putin - ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say - T",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
       "title": "Trump says US wraps up 'very big trade deal' with Philippines - Reuters",
       "sentiment": "✅偏多",
       "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Canada’s Carney: Trump ‘listens a lot more in private’ - The Hill",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "House Democrat warns 13 Trump allies to save their records for upcoming investig",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump plans to meet separately with Putin on his China trip in addition to their",
-      "sentiment": "⚪中性",
-      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -552,9 +546,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Two-Thirds of Americans Disapprove of Trump’s Handling of the Russia-Ukraine War",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "EU governments approve trade deal with Indonesia to offset Trump tariffs - Al Ja",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says ‘we’ll wipe them out’ if Iran dirty bombs US - The Hill",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "關稅/貿易",
@@ -582,13 +582,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Why You Should Buy and Hold Taiwan Semiconductor (TSM) for Three Years - Yahoo F",
+      "title": "Taiwan Semiconductor Stock (TSM) Looks Too Cheap for Its Growth Outlook - Yahoo ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Intel vs. Taiwan Semiconductor Manufacturing: Which Tech Stock Is a Better Buy f",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Intel vs. Taiwan Semiconductor Manufacturing: Which Tech Stock Is a Better Buy f",
+      "title": "Why You Should Buy and Hold Taiwan Semiconductor (TSM) for Three Years - Yahoo F",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -599,22 +605,10 @@
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Shares Jump 4.66% After Hours - Taiwan Semiconductor (NYSE:",
+      "label": "聯準會",
+      "title": "Fed minutes: Officials favored holding rates steady in October, but they see hik",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -624,7 +618,13 @@
     },
     {
       "label": "聯準會",
-      "title": "Wall Street mixed after Nvidia earnings, Fed minutes - Reuters",
+      "title": "The Latest Federal Reserve Interest Rate Forecast Points to 4 Hikes by mid-Septe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed Saw Need to Keep Raising Rates Despite Holding Steady in October - The New Y",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
