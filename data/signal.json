@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-20 22:21",
+  "generated_at": "2026-11-21 10:54",
   "mode": "morning",
   "signal_date": "2026-11-20",
   "trade_date": "2026-11-23",
   "direction": 0,
-  "total_score": -20,
+  "total_score": -21,
   "tw_score": -6,
-  "intl_score": -12,
+  "intl_score": -10,
   "news_score": -2,
-  "psy_score": -2,
+  "psy_score": -5,
   "inst_score": 0,
   "foreign_fut_net": 1310,
   "foreign_cash_b": 0,
@@ -389,53 +389,53 @@
     }
   ],
   "gold": {
-    "price_usd": 3575.89990234375,
-    "chg_pct": -2.973818956891874,
+    "price_usd": 3539.0,
+    "chg_pct": -3.9750373083706414,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -3.0%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 82.37999725341797,
-    "oil_chg": -0.9974784763692774
+    "warning": "黃金大跌 -4.0%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 83.62000274658203,
+    "oil_chg": 0.4927336457402791
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7175.830078125,
-      "chg_pct": -2.0181222570294652,
+      "price": 6910.39013671875,
+      "chg_pct": -3.6990834302978346,
       "signal": -1,
-      "note": "-2.02%",
+      "note": "-3.70%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 49097.05859375,
-      "chg_pct": -2.1935326330048746,
+      "price": 48147.328125,
+      "chg_pct": -1.9343938230770092,
       "signal": -1,
-      "note": "-2.19%",
+      "note": "-1.93%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 23879.19921875,
-      "chg_pct": -2.2541315031165006,
+      "price": 22617.732421875,
+      "chg_pct": -5.282701422770046,
       "signal": -1,
-      "note": "-2.25%",
+      "note": "-5.28%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 9419.7197265625,
-      "chg_pct": -2.4146370259519307,
+      "price": 8408.5908203125,
+      "chg_pct": -10.734171881980052,
       "signal": -1,
-      "note": "-2.41%",
+      "note": "-10.73%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 30.049999237060547,
-      "chg_pct": 5.661036120849983,
+      "price": 35.88999938964844,
+      "chg_pct": 26.195494780913446,
       "signal": -1,
-      "note": "VIX=30.0(高恐慌⚠️)",
+      "note": "VIX=35.9(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -480,79 +480,85 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.70800018310547,
-      "chg_pct": -0.18479435991693874,
+      "price": 103.83999633789062,
+      "chg_pct": -0.057752826859521704,
       "signal": 0,
-      "note": "-0.18%(中性)",
+      "note": "-0.06%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3575.89990234375,
-      "chg_pct": -2.973818956891874,
+      "price": 3539.0,
+      "chg_pct": -3.9750373083706414,
       "signal": 1,
-      "note": "-2.97%()",
+      "note": "-3.98%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 82.37999725341797,
-      "chg_pct": -0.9974784763692774,
-      "signal": -1,
-      "note": "-1.00%",
+      "price": 83.62000274658203,
+      "chg_pct": 0.4927336457402791,
+      "signal": 1,
+      "note": "+0.49%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.984000205993652,
-      "chg_pct": -1.3459983999716087,
+      "price": 4.911999702453613,
+      "chg_pct": -2.7711865014688324,
       "signal": 0,
-      "note": "4.98%(-1.35%)",
+      "note": "4.91%(-2.77%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 61894.55859375,
-      "chg_pct": -0.011731026185240665,
-      "signal": 0,
-      "note": "-0.01%",
+      "price": 58540.578125,
+      "chg_pct": -5.429956939119697,
+      "signal": -1,
+      "note": "-5.43%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "After Putin talks, Trump tells Europe it could save lives and cash if Ukraine wa",
+      "title": "WATCH: 'We will not allow that to happen,' Trump says of reported Iran dirty bom",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "How exactly did Trump get so rich on crypto? We explain - NPR",
+      "title": "Trump says US to penalize firms building data centers abroad - Reuters",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump touts Asia trade deal wins, but US agricultural exports disappoint - Reute",
+      "title": "Live Updates: Trump Speaks on China Summit, Trade Deals and Data Centers - The N",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump says Tehran may be working on chemical or biological weapons as tension mo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump responds to Elon Musk’s ‘I’m not MAGA’ comments - NBC News",
+      "title": "Trump's impact on an Ohio steel plant - NPR",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "‘We’ve Got Time’: Trump Suggests Iran War Will Continue Into 2027 - Time Magazin",
+      "title": "Lauren Boebert says Trump ‘did some things to hurt’ her constituents - The Guard",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he’ll penalize U.S. companies that build data centers in other countr",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -564,7 +570,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -575,10 +581,10 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "High Tariffs Are Not Just Bad Economics but Bad Politics, Too - Cato Institute",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "Arizona-Taiwan partnership opens Tucson semiconductor hub - University of Arizon",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -588,43 +594,37 @@
     },
     {
       "label": "台股/半導體",
-      "title": "AMD Stock Drops Another 7% Before the Bell and Taiwan Semiconductor Slides 4.2% ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Stocks Plunge Again to Head for Worst Week Since 1991 - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC halts advanced chip orders from Chinese designers in Taiwan - Yahoo Finance",
+      "title": "TSMC Stock Slides As Taiwan Market Suffers Worst Week Since 1990: What's Going O",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "Treasuries Eye Longest Rally in Five Months on Haven Demand - Bloomberg.com",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "聯準會",
-      "title": "J.P. Morgan sees Fed rate hikes at next three meetings as inflation persists - R",
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor (TSM) Dropped 9.48% to $318.71 — Navigating the Chip Sector",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "The Latest Federal Reserve Interest Rate Forecast Points to 4 Hikes by mid-Septe",
+      "title": "6 reasons stocks are falling, and what you should do about it - CBS News",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Treasury yields move sharply lower as investors flee to safe havens - CNBC",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Base",
+      "title": "The Odds of a Fed Rate Hike Are 100%. Why That Would Be 100% Bad. - Barron's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed's Cook says rate hikes needed to lower high inflation - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
