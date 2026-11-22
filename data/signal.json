@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21 10:54",
+  "generated_at": "2026-11-22 09:45",
   "mode": "morning",
   "signal_date": "2026-11-20",
   "trade_date": "2026-11-23",
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3539.0,
-    "chg_pct": -3.9750373083706414,
+    "price_usd": 3515.39990234375,
+    "chg_pct": -4.615387265126849,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -4.0%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 83.62000274658203,
-    "oil_chg": 0.4927336457402791
+    "warning": "黃金大跌 -4.6%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 83.9800033569336,
+    "oil_chg": 0.9253746916632567
   },
   "intl_data": {
     "S&P500": {
@@ -416,16 +416,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 22617.732421875,
-      "chg_pct": -5.282701422770046,
+      "price": 22617.73046875,
+      "chg_pct": -5.282709601959734,
       "signal": -1,
       "note": "-5.28%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 8408.5908203125,
-      "chg_pct": -10.734171881980052,
+      "price": 8408.58984375,
+      "chg_pct": -10.734182249194028,
       "signal": -1,
       "note": "-10.73%",
       "desc": "對台股影響最大"
@@ -480,81 +480,81 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.83999633789062,
-      "chg_pct": -0.057752826859521704,
+      "price": 103.80999755859375,
+      "chg_pct": -0.08662556878089987,
       "signal": 0,
-      "note": "-0.06%(中性)",
+      "note": "-0.09%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3539.0,
-      "chg_pct": -3.9750373083706414,
+      "price": 3515.39990234375,
+      "chg_pct": -4.615387265126849,
       "signal": 1,
-      "note": "-3.98%()",
+      "note": "-4.62%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.62000274658203,
-      "chg_pct": 0.4927336457402791,
+      "price": 83.9800033569336,
+      "chg_pct": 0.9253746916632567,
       "signal": 1,
-      "note": "+0.49%",
+      "note": "+0.93%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.911999702453613,
-      "chg_pct": -2.7711865014688324,
+      "price": 4.9120001792907715,
+      "chg_pct": -2.771177062887005,
       "signal": 0,
       "note": "4.91%(-2.77%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 58540.578125,
-      "chg_pct": -5.429956939119697,
-      "signal": -1,
-      "note": "-5.43%",
+      "price": 59976.0390625,
+      "chg_pct": 2.001835039258161,
+      "signal": 1,
+      "note": "+2.00%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "WATCH: 'We will not allow that to happen,' Trump says of reported Iran dirty bom",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says US to penalize firms building data centers abroad - Reuters",
+      "title": "Trump downplays breach into FBI’s crime database while reviving complaints about",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Live Updates: Trump Speaks on China Summit, Trade Deals and Data Centers - The N",
+      "title": "Trump orders federal contractors to check with White House before responding to ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says latest FBI hack could have ‘positive’ impacts - Politico",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump's impact on an Ohio steel plant - NPR",
+      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack - ",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump Moves to Restrict Congressional Oversight of Contractors - The New York Ti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Lauren Boebert says Trump ‘did some things to hurt’ her constituents - The Guard",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he’ll penalize U.S. companies that build data centers in other countr",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump on reported FBI hack: ‘I always like to put things in a positive spin’ - T",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -564,19 +564,19 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "Washing away the US: Tariff evasion on the other side of the US–China trade war ",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -588,33 +588,33 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan stock exchange says it will ensure stable operation of capital markets - ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC Stock Slides As Taiwan Market Suffers Worst Week Since 1990: What's Going O",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor (TSM) Dropped 9.48% to $318.71 — Navigating the Chip Sector",
+      "title": "Taiwan Bans Short Sales of Stocks in New Move to Calm Markets - Bloomberg.com",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "6 reasons stocks are falling, and what you should do about it - CBS News",
+      "label": "台股/半導體",
+      "title": "The AI sell-off now has Taiwan taking emergency steps to calm its chip-heavy mar",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "Treasury yields move sharply lower as investors flee to safe havens - CNBC",
+      "label": "台股/半導體",
+      "title": "Why You Should Buy and Hold Taiwan Semiconductor (TSM) for Three Years - Yahoo F",
       "sentiment": "⚪中性",
       "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Stock market correction? This chief investment officer sees the S&P 500 soaring ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "President Donald Trump's Economy and the AI-Driven Stock Market Are in Trouble, ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -624,7 +624,7 @@
     },
     {
       "label": "聯準會",
-      "title": "Fed's Cook says rate hikes needed to lower high inflation - Reuters",
+      "title": "J.P. Morgan sees Fed rate hikes at next three meetings as inflation persists - Y",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
