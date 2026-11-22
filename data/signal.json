@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-22 09:45",
+  "generated_at": "2026-11-23 04:30",
   "mode": "morning",
   "signal_date": "2026-11-20",
-  "trade_date": "2026-11-23",
+  "trade_date": "2026-11-24",
   "direction": 0,
-  "total_score": -21,
+  "total_score": -22,
   "tw_score": -6,
-  "intl_score": -10,
+  "intl_score": -11,
   "news_score": -2,
   "psy_score": -5,
   "inst_score": 0,
@@ -394,8 +394,8 @@
     "signal": 2,
     "level": "good",
     "warning": "黃金大跌 -4.6%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 83.9800033569336,
-    "oil_chg": 0.9253746916632567
+    "oil_usd": 83.41000366210938,
+    "oil_chg": 0.24036123042577998
   },
   "intl_data": {
     "S&P500": {
@@ -496,10 +496,10 @@
     },
     "原油": {
       "category": "商品",
-      "price": 83.9800033569336,
-      "chg_pct": 0.9253746916632567,
-      "signal": 1,
-      "note": "+0.93%",
+      "price": 83.41000366210938,
+      "chg_pct": 0.24036123042577998,
+      "signal": 0,
+      "note": "+0.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,49 +512,55 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 59976.0390625,
-      "chg_pct": 2.001835039258161,
+      "price": 60521.5390625,
+      "chg_pct": 0.711299929596082,
       "signal": 1,
-      "note": "+2.00%",
+      "note": "+0.71%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump downplays breach into FBI’s crime database while reviving complaints about",
+      "title": "U.S. intelligence chief says Trump's description of Putin as a 'friend' is 'enti",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump orders federal contractors to check with White House before responding to ",
+      "title": "Sen.-elect Abdul El-Sayed says he’s open to working with the Trump administratio",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says latest FBI hack could have ‘positive’ impacts - Politico",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack - ",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Moves to Restrict Congressional Oversight of Contractors - The New York Ti",
+      "title": "Trump says it will be ‘very hard’ to work with Schumer as Senate majority leader",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump on reported FBI hack: ‘I always like to put things in a positive spin’ - T",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Director of National Intelligence defends Trump saying Putin is his ‘friend’ - P",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump keeps losing in court. Here’s how he gets what he wants anyway. - The Wash",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says he'd work with Dems to cap credit card interest, fees - Axios",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -575,56 +581,50 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
       "label": "台股/半導體",
-      "title": "Arizona-Taiwan partnership opens Tucson semiconductor hub - University of Arizon",
+      "title": "Taiwan Mulls Lowering Margin Requirement to Support Stock Market - Bloomberg.com",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan Bans Short Sales of Stocks in New Move to Calm Markets - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Taiwan stocks suffer worst week since 1990 as AI rout drains emerging Asia - Yah",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "The AI sell-off now has Taiwan taking emergency steps to calm its chip-heavy mar",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Retail investors grab odd-lot shares as TSMC plunges - Taipei Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "Why You Should Buy and Hold Taiwan Semiconductor (TSM) for Three Years - Yahoo F",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Stock market correction? This chief investment officer sees the S&P 500 soaring ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "President Donald Trump's Economy and the AI-Driven Stock Market Are in Trouble, ",
+      "title": "Taiwan to enact new short-selling curbs in response to market drop - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "The Odds of a Fed Rate Hike Are 100%. Why That Would Be 100% Bad. - Barron's",
+      "title": "Bessent Warns Fed Risks Overtightening as US Markets Swoon - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "J.P. Morgan sees Fed rate hikes at next three meetings as inflation persists - Y",
+      "title": "Bond Market’s Go-To Trade for Fed Hikes Roiled by Stocks Retreat - Bloomberg.com",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Fed is too busy fighting inflation to rescue the stock market - MarketWatch",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     }
