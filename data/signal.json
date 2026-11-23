@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23 04:30",
+  "generated_at": "2026-11-23 09:02",
   "mode": "morning",
   "signal_date": "2026-11-20",
   "trade_date": "2026-11-24",
   "direction": 0,
-  "total_score": -22,
+  "total_score": -28,
   "tw_score": -6,
-  "intl_score": -11,
+  "intl_score": -12,
   "news_score": -2,
-  "psy_score": -5,
+  "psy_score": -7,
   "inst_score": 0,
   "foreign_fut_net": 1310,
   "foreign_cash_b": 0,
@@ -20,8 +20,8 @@
   "tw_ma5": 39157.45546875,
   "tw_ma10": 41118.50390625,
   "tw_rsi": 27.0602325765239,
-  "tw_macd": -2071.1215604047466,
-  "tw_macds": -1514.187942514955,
+  "tw_macd": -2071.131448642016,
+  "tw_macds": -1514.2024839988112,
   "tw_prev_close_up": false,
   "tw_ma5_p2": 40685.821875,
   "tw_ma10_p2": 41485.3390625,
@@ -389,13 +389,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3515.39990234375,
-    "chg_pct": -4.615387265126849,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -4.6%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 83.41000366210938,
-    "oil_chg": 0.24036123042577998
+    "price_usd": 3574.60009765625,
+    "chg_pct": 1.6840244910125497,
+    "signal": -1,
+    "level": "warn",
+    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 82.95999908447266,
+    "oil_chg": -1.2145799377093303
   },
   "intl_data": {
     "S&P500": {
@@ -448,10 +448,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4869.9599609375,
-      "chg_pct": -5.214789897246816,
+      "price": 4689.8798828125,
+      "chg_pct": -3.697773278824522,
       "signal": -1,
-      "note": "-5.21%",
+      "note": "-3.70%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -480,26 +480,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.80999755859375,
-      "chg_pct": -0.08662556878089987,
+      "price": 103.78700256347656,
+      "chg_pct": -0.02215104099603545,
       "signal": 0,
-      "note": "-0.09%(中性)",
+      "note": "-0.02%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3515.39990234375,
-      "chg_pct": -4.615387265126849,
-      "signal": 1,
-      "note": "-4.62%()",
+      "price": 3574.60009765625,
+      "chg_pct": 1.6840244910125497,
+      "signal": -1,
+      "note": "+1.68%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.41000366210938,
-      "chg_pct": 0.24036123042577998,
-      "signal": 0,
-      "note": "+0.24%",
+      "price": 82.95999908447266,
+      "chg_pct": -1.2145799377093303,
+      "signal": -1,
+      "note": "-1.21%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -512,10 +512,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 60521.5390625,
-      "chg_pct": 0.711299929596082,
+      "price": 61046.1015625,
+      "chg_pct": 1.5842019094145787,
       "signal": 1,
-      "note": "+0.71%",
+      "note": "+1.58%",
       "desc": "風險偏好指標"
     }
   },
@@ -534,7 +534,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says it will be ‘very hard’ to work with Schumer as Senate majority leader",
+      "title": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says FBI hack might expose Russia \"hoax\" - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -547,12 +553,6 @@
     {
       "label": "川普動態",
       "title": "Trump keeps losing in court. Here’s how he gets what he wants anyway. - The Wash",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says he'd work with Dems to cap credit card interest, fees - Axios",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -594,25 +594,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Retail investors grab odd-lot shares as TSMC plunges - Taipei Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Taiwan to enact new short-selling curbs in response to market drop - Reuters",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
-      "label": "聯準會",
-      "title": "Bessent Warns Fed Risks Overtightening as US Markets Swoon - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Prediction: Dec. 9 Will Be a Huge Day for the Stock Market - Yahoo Finance",
+      "label": "台股/半導體",
+      "title": "Retail investors grab odd-lot shares as TSMC plunges - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -624,9 +612,21 @@
     },
     {
       "label": "聯準會",
-      "title": "The Fed is too busy fighting inflation to rescue the stock market - MarketWatch",
+      "title": "Goldman Traders See Entry Point in US Stocks But Warn of Risks - Yahoo Finance",
       "sentiment": "⚠️偏空",
       "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "The Odds of a Fed Rate Hike Are 100%. Why That Would Be 100% Bad. - Barron's",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "The Stock Market Sounds an Alarm as Investors Get Bad News About President Donal",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
