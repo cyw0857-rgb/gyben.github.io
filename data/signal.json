@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25 00:26",
+  "generated_at": "2026-11-25 01:27",
   "mode": "morning",
   "signal_date": "2026-11-23",
   "trade_date": "2026-11-26",
   "direction": -1,
-  "total_score": -14,
+  "total_score": -15,
   "tw_score": -9,
   "intl_score": -6,
-  "news_score": 0,
-  "psy_score": -1,
+  "news_score": -2,
+  "psy_score": 0,
   "inst_score": 0,
   "foreign_fut_net": -692,
   "foreign_cash_b": 0,
@@ -397,53 +397,53 @@
     }
   ],
   "gold": {
-    "price_usd": 3564.300048828125,
-    "chg_pct": -2.3853824791888063,
+    "price_usd": 3565.60009765625,
+    "chg_pct": -2.3497783584982592,
     "signal": 2,
     "level": "good",
-    "warning": "黃金大跌 -2.4%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 80.22000122070312,
-    "oil_chg": 0.062371277160864026
+    "warning": "黃金大跌 -2.3%，市場風險偏好回升 → 明日偏多 ✅✅",
+    "oil_usd": 81.0199966430664,
+    "oil_chg": 1.060245096089262
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7174.33984375,
-      "chg_pct": -0.8681581170989285,
+      "price": 7200.7998046875,
+      "chg_pct": -0.5025461275624887,
       "signal": -1,
-      "note": "-0.87%",
+      "note": "-0.50%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 49744.3203125,
-      "chg_pct": 0.30045527082127776,
+      "price": 49957.21875,
+      "chg_pct": 0.729726594131139,
       "signal": 1,
-      "note": "+0.30%",
+      "note": "+0.73%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 23584.486328125,
-      "chg_pct": -2.096651857833581,
+      "price": 23729.05078125,
+      "chg_pct": -1.4965394031306514,
       "signal": -1,
-      "note": "-2.10%",
+      "note": "-1.50%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 8747.0791015625,
-      "chg_pct": -8.771029774103363,
+      "price": 8850.0732421875,
+      "chg_pct": -7.69683697449309,
       "signal": -1,
-      "note": "-8.77%",
+      "note": "-7.70%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 28.639999389648438,
-      "chg_pct": 7.588273804401618,
+      "price": 27.139999389648438,
+      "chg_pct": 1.9534129752867957,
       "signal": -1,
-      "note": "VIX=28.6(高恐慌⚠️)",
+      "note": "VIX=27.1(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -456,10 +456,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 4708.5400390625,
+      "chg_pct": -3.314604702497915,
+      "signal": -1,
+      "note": "-3.31%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -488,10 +488,10 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.79100036621094,
-      "chg_pct": -0.5070929161817542,
+      "price": 103.85399627685547,
+      "chg_pct": -0.446705731721614,
       "signal": 1,
-      "note": "-0.51%(偏多)",
+      "note": "-0.45%(偏多)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
@@ -504,28 +504,137 @@
     },
     "原油": {
       "category": "商品",
-      "price": 80.11000061035156,
-      "chg_pct": -0.07483791937641665,
-      "signal": 0,
-      "note": "-0.07%",
+      "price": 81.0199966430664,
+      "chg_pct": 1.060245096089262,
+      "signal": 1,
+      "note": "+1.06%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.883999824523926,
-      "chg_pct": -0.6913459780174008,
+      "price": 4.894000053405762,
+      "chg_pct": -0.48800664430567453,
       "signal": 0,
-      "note": "4.88%(-0.69%)",
+      "note": "4.89%(-0.49%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 59749.171875,
-      "chg_pct": -2.3881538827155975,
+      "price": 59760.55078125,
+      "chg_pct": -2.3695642351773563,
       "signal": -1,
-      "note": "-2.39%",
+      "note": "-2.37%",
       "desc": "風險偏好指標"
     }
   },
-  "news": []
+  "news": [
+    {
+      "label": "川普動態",
+      "title": "Trump sealed deal for Nvidia to rehire Jensen Huang as CEO - CNBC",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration set to unveil new tariffs after probe on excess factory cap",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration tees up tariff hikes on EU, China, others - Politico",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair -",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Democrats probe whether Trump Jr.-aligned businesses benefit from government acc",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "Which justices favor the Trump administration the most (and least) on the emerge",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Fallout of the U.S.–Canada Trade War Won’t Be Limited to North America - Car",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Manufacturing Company in Brazos County and Arizona - KBTX N",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "TSMC unit seeks Texas property tax limit for proposed $22.6 billion chip making ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Semiconductor Stocks Fall 2.78% After Taipei Shares Hit the 10% Limit - T",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Taiwan Stock V-Shaped Rebound Crushes Shorts: 00632R Logs NT$39.469 Million Defa",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "What The Bond Market Is Saying About The Stock Market Correction - Forbes",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Billionaire Bill Ackman sounds the alarm on Wall Street's next big risk - Yahoo ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed's John Williams indicates higher interest rates likely 'over time' to addres",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Citadel Securities Says 2018 Playbook Warns of More Market Pain - Bloomberg",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    }
+  ]
 }
