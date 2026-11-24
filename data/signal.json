@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-24 13:40",
+  "generated_at": "2026-11-24 16:28",
   "mode": "morning",
   "signal_date": "2026-11-24",
   "trade_date": "2026-11-25",
   "direction": 0,
-  "total_score": -4,
+  "total_score": -1,
   "tw_score": -8,
   "intl_score": 8,
   "news_score": -2,
   "psy_score": 0,
-  "inst_score": -2,
-  "foreign_fut_net": -5579,
+  "inst_score": 0,
+  "foreign_fut_net": -692,
   "foreign_cash_b": 0,
   "veto_msg": "台灣技術(-8) vs 國際(+8) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 40129.96875,
-  "tw_chg_pct": 9.01360421501034,
-  "tw_ma5": 38319.38984375,
-  "tw_ma10": 40375.327734375,
-  "tw_rsi": 43.442924882065164,
-  "tw_macd": -2083.1368344151197,
-  "tw_macds": -1744.2321905518158,
+  "tw_last_close": 40122.3515625,
+  "tw_chg_pct": 8.9929120218883,
+  "tw_ma5": 38317.86640625,
+  "tw_ma10": 40374.566015625,
+  "tw_rsi": 43.4228760250411,
+  "tw_macd": -2083.744473304003,
+  "tw_macds": -1744.3537183295925,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 38311.81796875,
   "tw_ma10_p2": 40633.523046875,
   "tw_ma20_p2": 42258.0921875,
-  "tw_ma20": 41959.7791015625,
+  "tw_ma20": 41959.3982421875,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -397,13 +397,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3631.10009765625,
-    "chg_pct": -0.5559458079206833,
-    "signal": 0,
-    "level": "neutral",
-    "warning": "黃金小幅變動 -0.6%，影響中性",
-    "oil_usd": 79.2699966430664,
-    "oil_chg": -1.122616373250126
+    "price_usd": 3621.39990234375,
+    "chg_pct": -0.8216026949210271,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -0.8%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 79.9000015258789,
+    "oil_chg": -0.3367801537146502
   },
   "intl_data": {
     "S&P500": {
@@ -448,66 +448,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 58706.41015625,
-      "chg_pct": 4.021786873583779,
+      "price": 58644.62890625,
+      "chg_pct": 3.9123167832958723,
       "signal": 1,
-      "note": "+4.02%",
+      "note": "+3.91%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 5040.39990234375,
-      "chg_pct": 7.04804165469782,
+      "price": 5006.02978515625,
+      "chg_pct": 6.318088911334438,
       "signal": 1,
-      "note": "+7.05%",
+      "note": "+6.32%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22299.44921875,
-      "chg_pct": -0.3765725242627378,
+      "price": 22219.650390625,
+      "chg_pct": -0.733076072326845,
       "signal": -1,
-      "note": "-0.38%",
+      "note": "-0.73%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3553.107177734375,
-      "chg_pct": 0.40009572605515453,
-      "signal": 1,
-      "note": "+0.40%",
+      "price": 3548.369384765625,
+      "chg_pct": 0.2662199818688946,
+      "signal": 0,
+      "note": "+0.27%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 40129.96875,
-      "chg_pct": 9.01360421501035,
+      "price": 40122.3515625,
+      "chg_pct": 8.992912021888309,
       "signal": 1,
-      "note": "+9.01%",
+      "note": "+8.99%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 104.27999877929688,
-      "chg_pct": -0.03834443600878229,
+      "price": 104.33300018310547,
+      "chg_pct": 0.012462124539188447,
       "signal": 0,
-      "note": "-0.04%(中性)",
+      "note": "+0.01%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3631.10009765625,
-      "chg_pct": -0.5559458079206833,
+      "price": 3621.39990234375,
+      "chg_pct": -0.8216026949210271,
       "signal": 1,
-      "note": "-0.56%()",
+      "note": "-0.82%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 79.2699966430664,
-      "chg_pct": -1.122616373250126,
+      "price": 79.9000015258789,
+      "chg_pct": -0.3367801537146502,
       "signal": -1,
-      "note": "-1.12%",
+      "note": "-0.34%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -520,10 +520,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 60640.5,
-      "chg_pct": -0.8525079660166863,
+      "price": 60068.16015625,
+      "chg_pct": -1.8670247348885247,
       "signal": -1,
-      "note": "-0.85%",
+      "note": "-1.87%",
       "desc": "風險偏好指標"
     }
   },
@@ -542,7 +542,7 @@
     },
     {
       "label": "川普動態",
-      "title": "WATCH: Trump delivers address on Newsom's move to grant clemency for California'",
+      "title": "Exclusive / Huang reinstatement came at Trump’s behest - Semafor",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -554,13 +554,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump says he spoke ‘directly and indirectly’ with Nvidia’s board about reinstat",
+      "title": "WATCH: Trump delivers address on Newsom's move to grant clemency for California'",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump, incoming Iowa governor, punt Army lead detonation back and forth - The Hi",
+      "title": "Trump says he spoke ‘directly and indirectly’ with Nvidia’s board about reinstat",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -626,9 +626,9 @@
     },
     {
       "label": "聯準會",
-      "title": "2-year Treasury yield jumps as stocks rebound, investors await New York Fed Pres",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Fed's Williams says inflation still too high, signals more rate hikes possible -",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
