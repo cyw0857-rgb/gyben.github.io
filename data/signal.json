@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-25 12:40",
+  "generated_at": "2026-11-25 15:03",
   "mode": "morning",
   "signal_date": "2026-11-25",
   "trade_date": "2026-11-26",
   "direction": -1,
-  "total_score": -15,
+  "total_score": -20,
   "tw_score": -8,
-  "intl_score": -6,
+  "intl_score": -10,
   "news_score": -2,
   "psy_score": -1,
   "inst_score": 0,
-  "foreign_fut_net": -692,
+  "foreign_fut_net": -2508,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 38426.87890625,
-  "tw_chg_pct": -4.225755944560983,
-  "tw_ma5": 37964.26015625,
-  "tw_ma10": 39791.5390625,
-  "tw_rsi": 42.783190417552895,
-  "tw_macd": -2072.3657959961492,
-  "tw_macds": -1809.9685149899692,
+  "tw_last_close": 38195.4296875,
+  "tw_chg_pct": -4.802614502787472,
+  "tw_ma5": 37917.9703125,
+  "tw_ma10": 39768.394140625,
+  "tw_rsi": 42.33392102901331,
+  "tw_macd": -2090.828981537459,
+  "tw_macds": -1813.661152098231,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 38317.86640625,
   "tw_ma10_p2": 40374.566015625,
   "tw_ma20_p2": 41959.3982421875,
-  "tw_ma20": 41528.96328125,
+  "tw_ma20": 41517.3908203125,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -405,13 +405,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3550.0,
-    "chg_pct": -2.777014434345132,
-    "signal": 2,
-    "level": "good",
-    "warning": "黃金大跌 -2.8%，市場風險偏好回升 → 明日偏多 ✅✅",
-    "oil_usd": 80.77999877929688,
-    "oil_chg": 0.7608839020628201
+    "price_usd": 3516.60009765625,
+    "chg_pct": -1.2717876955972984,
+    "signal": 1,
+    "level": "ok",
+    "warning": "黃金下跌 -1.3%，風險情緒改善 → 明日偏多 ✅",
+    "oil_usd": 80.54000091552734,
+    "oil_chg": -1.840343790454154
   },
   "intl_data": {
     "S&P500": {
@@ -432,16 +432,16 @@
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 23733.53515625,
-      "chg_pct": -1.4779239742967627,
+      "price": 23733.5390625,
+      "chg_pct": -1.4779077587664196,
       "signal": -1,
       "note": "-1.48%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 8832.5009765625,
-      "chg_pct": -7.880109547987744,
+      "price": 8832.5,
+      "chg_pct": -7.880119733192452,
       "signal": -1,
       "note": "-7.88%",
       "desc": "對台股影響最大"
@@ -456,82 +456,82 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 57100.8515625,
-      "chg_pct": -2.6324275087798763,
+      "price": 57011.62109375,
+      "chg_pct": -2.784582054582604,
       "signal": -1,
-      "note": "-2.63%",
+      "note": "-2.78%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4741.47021484375,
-      "chg_pct": -5.284818142651991,
+      "price": 4697.509765625,
+      "chg_pct": -6.16296811589227,
       "signal": -1,
-      "note": "-5.28%",
+      "note": "-6.16%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22265.6796875,
-      "chg_pct": 0.20715581058116406,
-      "signal": 0,
-      "note": "+0.21%",
+      "price": 22040.919921875,
+      "chg_pct": -0.804380202243914,
+      "signal": -1,
+      "note": "-0.80%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3512.656494140625,
-      "chg_pct": -1.0064455919206385,
+      "price": 3478.297607421875,
+      "chg_pct": -1.9747464569403899,
       "signal": -1,
-      "note": "-1.01%",
+      "note": "-1.97%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 38455.01171875,
-      "chg_pct": -4.155638388125696,
+      "price": 38195.4296875,
+      "chg_pct": -4.80261450278747,
       "signal": -1,
-      "note": "-4.16%",
+      "note": "-4.80%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.97699737548828,
-      "chg_pct": -0.32879823652161627,
-      "signal": 1,
-      "note": "-0.33%(偏多)",
+      "price": 104.03600311279297,
+      "chg_pct": 0.21771077884059656,
+      "signal": 0,
+      "note": "+0.22%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3550.0,
-      "chg_pct": -2.777014434345132,
+      "price": 3516.60009765625,
+      "chg_pct": -1.2717876955972984,
       "signal": 1,
-      "note": "-2.78%()",
+      "note": "-1.27%()",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 80.77999877929688,
-      "chg_pct": 0.7608839020628201,
-      "signal": 1,
-      "note": "+0.76%",
+      "price": 80.54000091552734,
+      "chg_pct": -1.840343790454154,
+      "signal": -1,
+      "note": "-1.84%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.904000282287598,
-      "chg_pct": -0.28466731059394823,
+      "price": 4.9039998054504395,
+      "chg_pct": -0.2846770063470339,
       "signal": 0,
       "note": "4.90%(-0.28%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 59002.66015625,
-      "chg_pct": -3.6077253801720124,
+      "price": 59136.1484375,
+      "chg_pct": -3.3896464150761343,
       "signal": -1,
-      "note": "-3.61%",
+      "note": "-3.39%",
       "desc": "風險偏好指標"
     }
   },
@@ -544,9 +544,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump vows to meet with Abdul El-Sayed on golden ‘Trumpcare,’ tells The Post he ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump prepares a new round of targeted tariffs - Axios",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -556,7 +556,13 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump prepares a new round of targeted tariffs - Axios",
+      "title": "India news: Trump administration set to unveil new tariffs after probe - DW.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration set to unveil new tariffs after probe on excess factory cap",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -567,14 +573,20 @@
       "sent_val": 0
     },
     {
-      "label": "川普動態",
-      "title": "Trump administration set to unveil new tariffs after probe on excess factory cap",
+      "label": "關稅/貿易",
+      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "What Is a Trade War? History, Tariffs, & Impact - Britannica",
+      "title": "Canada Shows the Limits of Trump’s Hardball Trade Tactics - Council on Foreign R",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -585,16 +597,10 @@
       "sent_val": -1
     },
     {
-      "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "Beyond trade diversion: How the US-China trade war reshaped global production - ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "label": "台股/半導體",
+      "title": "TSMC confirms Texas tax abatement filing, investment under review - Focus Taiwan",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "台股/半導體",
@@ -604,21 +610,21 @@
     },
     {
       "label": "台股/半導體",
+      "title": "Jensen Huang Boost Fades Fast as Taiwan Stocks Tumble 8% - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "台股/半導體",
       "title": "Pima County helps launch international semiconductor hub in downtown Tucson - Pi",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "台股/半導體",
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock May Be Reasonable After New ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC unit seeks Texas property tax limit for proposed $22.6 billion chip making ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "label": "聯準會",
+      "title": "Bond Traders Rush to Hedge Risk of Fed Hikes Stalling Economy - Bloomberg.com",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "聯準會",
@@ -628,21 +634,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Bill Ackman says Federal Reserve is 'about to make another mistake' - Fox Busine",
+      "title": "AI market whipsaw puts Kevin Warsh's rate-hike strategy to the test - Yahoo Fina",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "2-year Treasury yield jumps as stocks rebound, investors await New York Fed Pres",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "The U.S. may enter a recession if the Fed raises rates, hedge-fund manager Bill ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "聯準會",
-      "title": "Bond Traders Rush to Hedge Risk of Fed Hikes Stalling Economy - Bloomberg.com",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
