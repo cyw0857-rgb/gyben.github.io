@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-26 23:47",
+  "generated_at": "2026-11-27 00:44",
   "mode": "morning",
-  "signal_date": "2026-11-26",
-  "trade_date": "2026-11-27",
+  "signal_date": "2026-11-25",
+  "trade_date": "2026-11-30",
   "direction": -1,
-  "total_score": -14,
-  "tw_score": -7,
-  "intl_score": -3,
-  "news_score": -1,
+  "total_score": -19,
+  "tw_score": -8,
+  "intl_score": -5,
+  "news_score": -2,
   "psy_score": -3,
-  "inst_score": 1,
-  "foreign_fut_net": 0,
+  "inst_score": 0,
+  "foreign_fut_net": -583,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率80% → 正常門檻 ±6",
-  "tw_last_close": 39151.80859375,
-  "tw_chg_pct": 2.503909274158489,
-  "tw_ma5": 38062.95390625,
-  "tw_ma10": 39374.387890625,
-  "tw_rsi": 48.698550456099554,
-  "tw_macd": -1996.2518315789712,
-  "tw_macds": -1850.1792879943791,
-  "tw_prev_close_up": false,
-  "tw_ma5_p2": 37917.9703125,
-  "tw_ma10_p2": 39768.394140625,
-  "tw_ma20_p2": 41517.3908203125,
-  "tw_ma20": 41156.56484375,
+  "tw_last_close": 38195.4296875,
+  "tw_chg_pct": -4.802614502787472,
+  "tw_ma5": 37917.9703125,
+  "tw_ma10": 39768.394140625,
+  "tw_rsi": 42.33392102901331,
+  "tw_macd": -2090.828981537459,
+  "tw_macds": -1813.661152098231,
+  "tw_prev_close_up": true,
+  "tw_ma5_p2": 38317.86640625,
+  "tw_ma10_p2": 40374.566015625,
+  "tw_ma20_p2": 41959.3982421875,
+  "tw_ma20": 41517.3908203125,
   "stats_real": {
     "total": 19,
     "wins": 12,
@@ -405,13 +405,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3601.199951171875,
-    "chg_pct": 1.8496493421743567,
+    "price_usd": 3597.5,
+    "chg_pct": 1.7450067967594578,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.8%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 84.86000061035156,
-    "oil_chg": 1.410134202763376
+    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 85.0999984741211,
+    "oil_chg": 1.6969385322259407
   },
   "intl_data": {
     "S&P500": {
@@ -448,8 +448,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.799999237060547,
-      "chg_pct": -5.266884518370551,
+      "price": 26.770000457763672,
+      "chg_pct": -5.372924738681784,
       "signal": -1,
       "note": "VIX=26.8(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
@@ -472,50 +472,50 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22226.880859375,
-      "chg_pct": 1.1876125729409528,
-      "signal": 1,
-      "note": "+1.19%",
+      "price": 21966.009765625,
+      "chg_pct": -1.1415149227866206,
+      "signal": -1,
+      "note": "-1.14%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3476.881591796875,
-      "chg_pct": 0.011840202769441687,
+      "price": NaN,
+      "chg_pct": NaN,
       "signal": 0,
-      "note": "+0.01%",
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39151.80859375,
-      "chg_pct": 2.503909274158496,
-      "signal": 1,
-      "note": "+2.50%",
+      "price": 38195.4296875,
+      "chg_pct": -4.80261450278747,
+      "signal": -1,
+      "note": "-4.80%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.76699829101562,
-      "chg_pct": 0.0935662426773045,
+      "price": 103.7750015258789,
+      "chg_pct": 0.10128615683244784,
       "signal": 0,
-      "note": "+0.09%(中性)",
+      "note": "+0.10%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3601.199951171875,
-      "chg_pct": 1.8496493421743567,
+      "price": 3597.5,
+      "chg_pct": 1.7450067967594578,
       "signal": -1,
-      "note": "+1.85%(避險↑)",
+      "note": "+1.75%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 84.86000061035156,
-      "chg_pct": 1.410134202763376,
+      "price": 85.0999984741211,
+      "chg_pct": 1.6969385322259407,
       "signal": 1,
-      "note": "+1.41%",
+      "note": "+1.70%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -528,49 +528,49 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 60424.078125,
-      "chg_pct": 0.07598588040657007,
+      "price": 60467.16015625,
+      "chg_pct": 0.14733950109657104,
       "signal": 0,
-      "note": "+0.08%",
+      "note": "+0.15%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump proposes new tariffs on China, Europe and other trade partners - The Washi",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump administration tees up tariff hikes on EU, China, others - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump Is Bringing Tariffs Back, and China Will Likely Get Hit Hardest: WSJ - Yah",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto",
+      "title": "Are Trump’s tariffs aimed at securing US-friendly trade deals? - Al Jazeera",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump says he's working on a 'fair' trade deal with Canada - CBC",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "China and Brazil Lead Pushback Against Trump’s ‘Unacceptable’ Tariff Threats - T",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump administration proposes new tariffs on goods from major U.S. trading partn",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "How Trump's proposed tariffs for India compare with rival nations - Reuters",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff propo",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump’s Latest Tariffs Revive Focus on Pressuring China - The New York Times",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "關稅/貿易",
@@ -586,13 +586,13 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
+      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "關稅/貿易",
-      "title": "How the trade war with Canada is hitting US states—and could sway midterm electi",
+      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -604,33 +604,21 @@
     },
     {
       "label": "台股/半導體",
-      "title": "World’s leading semiconductor manufacturer eyes Brazos County for 3,200+ acre fa",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
       "title": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC unit seeks Texas property tax limit for proposed $22.6 billion chip making ",
+      "title": "World’s leading semiconductor manufacturer eyes Brazos County for 3,200+ acre fa",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
-      "label": "聯準會",
-      "title": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New ",
+      "label": "台股/半導體",
+      "title": "Taiwan outlines US investment support - Taipei Times",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Why are investors freaking out even as the U.S. economy surges? - CBS News",
-      "sentiment": "✅偏多",
-      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -640,9 +628,21 @@
     },
     {
       "label": "聯準會",
-      "title": "The small-cap Santa Claus rally is on — but a December Fed rate hike has spoiled",
+      "title": "Newly proposed tariffs raise chances of the Fed keeping interest rates higher fo",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Why are investors freaking out even as the U.S. economy surges? - CBS News",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "聯準會",
+      "title": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
