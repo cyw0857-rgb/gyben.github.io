@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-27 00:44",
+  "generated_at": "2026-11-27 06:39",
   "mode": "morning",
   "signal_date": "2026-11-25",
   "trade_date": "2026-11-30",
   "direction": -1,
-  "total_score": -19,
+  "total_score": -20,
   "tw_score": -8,
-  "intl_score": -5,
+  "intl_score": -6,
   "news_score": -2,
   "psy_score": -3,
   "inst_score": 0,
@@ -405,13 +405,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3597.5,
-    "chg_pct": 1.7450067967594578,
+    "price_usd": 3593.39990234375,
+    "chg_pct": 1.6290472515468006,
     "signal": -1,
     "level": "warn",
-    "warning": "黃金上漲 +1.7%，避險需求增加 → 明日偏空 ⚠️",
-    "oil_usd": 85.0999984741211,
-    "oil_chg": 1.6969385322259407
+    "warning": "黃金上漲 +1.6%，避險需求增加 → 明日偏空 ⚠️",
+    "oil_usd": 84.91000366210938,
+    "oil_chg": 1.4698892835179824
   },
   "intl_data": {
     "S&P500": {
@@ -448,8 +448,8 @@
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.770000457763672,
-      "chg_pct": -5.372924738681784,
+      "price": 26.799999237060547,
+      "chg_pct": -5.266884518370551,
       "signal": -1,
       "note": "VIX=26.8(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
@@ -464,10 +464,10 @@
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": NaN,
-      "chg_pct": NaN,
-      "signal": 0,
-      "note": "+nan%",
+      "price": 4697.509765625,
+      "chg_pct": -6.16296811589227,
+      "signal": -1,
+      "note": "-6.16%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
@@ -496,26 +496,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.7750015258789,
-      "chg_pct": 0.10128615683244784,
+      "price": 103.80000305175781,
+      "chg_pct": 0.12540260934570308,
       "signal": 0,
-      "note": "+0.10%(中性)",
+      "note": "+0.13%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3597.5,
-      "chg_pct": 1.7450067967594578,
+      "price": 3593.39990234375,
+      "chg_pct": 1.6290472515468006,
       "signal": -1,
-      "note": "+1.75%(避險↑)",
+      "note": "+1.63%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.0999984741211,
-      "chg_pct": 1.6969385322259407,
+      "price": 84.91000366210938,
+      "chg_pct": 1.4698892835179824,
       "signal": 1,
-      "note": "+1.70%",
+      "note": "+1.47%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -528,8 +528,8 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 60467.16015625,
-      "chg_pct": 0.14733950109657104,
+      "price": 60471.109375,
+      "chg_pct": 0.15388030357345842,
       "signal": 0,
       "note": "+0.15%",
       "desc": "風險偏好指標"
@@ -538,37 +538,43 @@
   "news": [
     {
       "label": "川普動態",
-      "title": "Are Trump’s tariffs aimed at securing US-friendly trade deals? - Al Jazeera",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "川普動態",
-      "title": "China and Brazil Lead Pushback Against Trump’s ‘Unacceptable’ Tariff Threats - T",
+      "title": "Trump proposes new tariffs on China, Europe and other trade partners - The Washi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump administration proposes new tariffs on goods from major U.S. trading partn",
+      "title": "Trump administration tees up tariff hikes on EU, China, others - Politico",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "How Trump's proposed tariffs for India compare with rival nations - Reuters",
+      "title": "Trump Is Bringing Tariffs Back, and China Will Likely Get Hit Hardest: WSJ - Yah",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "China reserves right to take ‘necessary measures’ after Trump’s new tariff propo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump floats 'concept' of US-Canada deal that includes pipeline talking to Carne",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Latest Tariffs Revive Focus on Pressuring China - The New York Times",
+      "title": "Trump Says US-Canada Trade Deal Is Close After Talks With Carney - Bloomberg.com",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
+      "sentiment": "✅偏多",
+      "sent_val": 1
+    },
+    {
+      "label": "關稅/貿易",
+      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -586,13 +592,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "The US-China trade war seems to have subsided – but the sense of calm is mislead",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "關稅/貿易",
-      "title": "The Abject Failure of the US–Canada Trade War - Intereconomics | Review of Europ",
+      "title": "Tracking the Impact of the Trump Tariffs & Trade War - Tax Foundation",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -604,7 +604,7 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer ",
+      "title": "Trump to visit Arizona manufacturer of semiconductor chips, including Nvidia's -",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -622,25 +622,25 @@
     },
     {
       "label": "聯準會",
-      "title": "Hawkish Fed poised to raise rates despite stock market turmoil - Financial Times",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
       "title": "Newly proposed tariffs raise chances of the Fed keeping interest rates higher fo",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "聯準會",
-      "title": "Why are investors freaking out even as the U.S. economy surges? - CBS News",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "Hawkish Fed poised to raise rates despite stock market turmoil - Financial Times",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New ",
+      "title": "The Fed is likely to raise rates in December. What it means for your holiday spe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Fed rate-hike bets deliver fresh blow to your holiday budget - Yahoo Finance",
       "sentiment": "⚪中性",
       "sent_val": 0
     }
