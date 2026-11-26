@@ -1,7 +1,7 @@
 {
   "symbol": "2408.TW",
   "name": "南亞科",
-  "updated": "2026-11-26 11:51",
+  "updated": "2026-11-26 14:58",
   "direction": -1,
   "signal_text": "🔴 明日看跌",
   "signal_color": "#ef4444",
@@ -12,7 +12,7 @@
   "tech_score": -7,
   "reasons": [
     "均線空頭排列 MA5<MA10<MA20",
-    "RSI=42 中性偏空",
+    "RSI=43 中性偏空",
     "MACD死叉零軸下",
     "跌破MA20壓力"
   ],
@@ -24,7 +24,7 @@
     },
     {
       "icon": "📉",
-      "text": "RSI=42 中性偏空",
+      "text": "RSI=43 中性偏空",
       "score": -1
     },
     {
@@ -38,87 +38,82 @@
       "score": -1
     }
   ],
-  "rsi": 41.9,
-  "macd": -43.17,
-  "macds": -39.76,
-  "k": 24.2,
-  "d": 19.8,
-  "ma5": 286.4,
-  "ma10": 309.65,
-  "ma20": 352.4,
-  "ma60": 445.43,
-  "last_close": 299.0,
-  "chg_pct": 7.36,
+  "rsi": 43.4,
+  "macd": -42.62,
+  "macds": -39.65,
+  "k": 26.2,
+  "d": 20.4,
+  "ma5": 287.8,
+  "ma10": 310.35,
+  "ma20": 352.75,
+  "ma60": 445.54,
+  "last_close": 306.0,
+  "chg_pct": 9.87,
   "ma_bull": false,
   "ma_bear": true,
   "retail": {
-    "mood": "冷清（量縮）",
-    "vol_ratio": 0.62,
+    "mood": "量能正常",
+    "vol_ratio": 0.83,
     "score": 0,
-    "signals": [
-      {
-        "icon": "💤",
-        "text": "量縮 0.6倍，觀望氣氛濃"
-      }
-    ]
+    "signals": []
   },
   "forecast": [
     {
       "month": "2026-12",
-      "price": 297.08,
-      "price_high": 365.27,
-      "price_low": 228.88,
-      "chg_pct": -0.6,
+      "price": 305.18,
+      "price_high": 376.33,
+      "price_low": 234.03,
+      "chg_pct": -0.3,
       "trend": "down",
-      "model_note": "📉 死叉↓  美光↓-32%  費半↓-18%  台股↓-14%",
+      "model_note": "📉 死叉↓  美光↓-32%  費半↓-18%  台股↓-13%",
       "score": -7.5
     },
     {
       "month": "2027-01",
-      "price": 295.17,
-      "price_high": 390.99,
-      "price_low": 199.34,
-      "chg_pct": -1.3,
+      "price": 304.36,
+      "price_high": 404.72,
+      "price_low": 204.0,
+      "chg_pct": -0.5,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -7.5
     },
     {
       "month": "2027-02",
-      "price": 293.27,
-      "price_high": 409.88,
-      "price_low": 176.66,
-      "chg_pct": -1.9,
+      "price": 303.55,
+      "price_high": 424.97,
+      "price_low": 182.13,
+      "chg_pct": -0.8,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -7.5
     },
     {
       "month": "2027-03",
-      "price": 291.38,
-      "price_high": 407.94,
-      "price_low": 174.83,
-      "chg_pct": -2.5,
+      "price": 302.73,
+      "price_high": 423.83,
+      "price_low": 181.64,
+      "chg_pct": -1.1,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -7.5
     },
     {
       "month": "2027-04",
-      "price": 289.51,
-      "price_high": 405.31,
-      "price_low": 173.71,
-      "chg_pct": -3.2,
+      "price": 301.92,
+      "price_high": 422.69,
+      "price_low": 181.15,
+      "chg_pct": -1.3,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -7.5
     },
     {
       "month": "2027-05",
-      "price": 287.65,
-      "price_high": 402.71,
-      "price_low": 172.59,
-      "chg_pct": -3.8,
+      "price": 301.11,
+      "price_high": 421.56,
+      "price_low": 180.67,
+      "chg_pct": -1.6,
       "trend": "down",
       "model_note": "📉 MA5<MA10 空頭（外部因素待觀察）",
       "score": -7.5
@@ -128,21 +123,21 @@
   "support": 348.45,
   "resistance": 524.4,
   "weekly": {
-    "proj_center": 299.0,
-    "proj_high": 332.49,
-    "proj_low": 265.51,
+    "proj_center": 306.0,
+    "proj_high": 340.81,
+    "proj_low": 271.19,
     "support": 348.45,
     "resistance": 524.4,
     "trend_bias": "中性",
     "op_hint": "區間操作"
   },
-  "daily_vol_pct": 5.01,
+  "daily_vol_pct": 5.09,
   "slope_per_day": -0.047,
   "model_accuracy": 53.8,
   "model_samples": 132,
-  "total_return": -65.1,
+  "total_return": -64.3,
   "ipo_date": "2000-08-18",
   "model_score": -7.5,
   "model_threshold": 3.5,
-  "model_factors": "死叉↓  美光↓-32%  費半↓-18%  台股↓-14%"
+  "model_factors": "死叉↓  美光↓-32%  費半↓-18%  台股↓-13%"
 }
