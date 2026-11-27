@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-27 23:35",
+  "generated_at": "2026-11-28 00:30",
   "mode": "morning",
-  "signal_date": "2026-11-27",
+  "signal_date": "2026-11-26",
   "trade_date": "2026-11-30",
   "direction": 0,
-  "total_score": -5,
-  "tw_score": -8,
+  "total_score": -4,
+  "tw_score": -7,
   "intl_score": 9,
   "news_score": -2,
   "psy_score": -3,
   "inst_score": 1,
   "foreign_fut_net": -79,
   "foreign_cash_b": 0,
-  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
+  "veto_msg": "台灣技術(-7) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 39308.078125,
-  "tw_chg_pct": 0.39913745204338547,
-  "tw_ma5": 38717.91171875,
-  "tw_ma10": 38937.68359375,
-  "tw_rsi": 43.90886164809012,
-  "tw_macd": -1886.9376707815318,
-  "tw_macds": -1857.5309645518098,
-  "tw_prev_close_up": true,
-  "tw_ma5_p2": 38062.95390625,
-  "tw_ma10_p2": 39374.387890625,
-  "tw_ma20_p2": 41156.56484375,
-  "tw_ma20": 40861.37734375,
+  "tw_last_close": 39151.80859375,
+  "tw_chg_pct": 2.503909274158489,
+  "tw_ma5": 38062.95390625,
+  "tw_ma10": 39374.387890625,
+  "tw_rsi": 48.698550456099554,
+  "tw_macd": -1996.2518315789712,
+  "tw_macds": -1850.1792879943791,
+  "tw_prev_close_up": false,
+  "tw_ma5_p2": 37917.9703125,
+  "tw_ma10_p2": 39768.394140625,
+  "tw_ma20_p2": 41517.3908203125,
+  "tw_ma20": 41156.56484375,
   "stats_real": {
     "total": 20,
     "wins": 12,
@@ -413,53 +413,53 @@
     }
   ],
   "gold": {
-    "price_usd": 3656.699951171875,
-    "chg_pct": 3.4193082378575115,
+    "price_usd": 3646.199951171875,
+    "chg_pct": 3.1223457440796176,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +3.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 83.87999725341797,
-    "oil_chg": 0.23900208832792902
+    "warning": "黃金大漲 +3.1%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 83.43000030517578,
+    "oil_chg": -0.29875716908253525
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7250.89013671875,
-      "chg_pct": 0.9482450193343687,
+      "price": 7268.97998046875,
+      "chg_pct": 1.2000951983887789,
       "signal": 1,
-      "note": "+0.95%",
+      "note": "+1.20%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 50591.21875,
-      "chg_pct": 0.8135622509357364,
+      "price": 50678.76953125,
+      "chg_pct": 0.9880254552969661,
       "signal": 1,
-      "note": "+0.81%",
+      "note": "+0.99%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 23888.7265625,
-      "chg_pct": 1.2843565671546622,
+      "price": 23969.666015625,
+      "chg_pct": 1.627526824021007,
       "signal": 1,
-      "note": "+1.28%",
+      "note": "+1.63%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 8961.3681640625,
-      "chg_pct": 2.125478982315535,
+      "price": 9060.26953125,
+      "chg_pct": 3.25257802691616,
       "signal": 1,
-      "note": "+2.13%",
+      "note": "+3.25%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.579999923706055,
-      "chg_pct": -0.8208929836470471,
+      "price": 25.510000228881836,
+      "chg_pct": -4.813429272023365,
       "signal": -1,
-      "note": "VIX=26.6(高恐慌⚠️)",
+      "note": "VIX=25.5(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
@@ -480,105 +480,105 @@
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22694.76953125,
-      "chg_pct": 2.1050577219324538,
+      "price": 22226.880859375,
+      "chg_pct": 1.1876125729409528,
       "signal": 1,
-      "note": "+2.11%",
+      "note": "+1.19%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3606.48681640625,
-      "chg_pct": 3.7276138029165717,
-      "signal": 1,
-      "note": "+3.73%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39308.078125,
-      "chg_pct": 0.3991374520433932,
+      "price": 39151.80859375,
+      "chg_pct": 2.503909274158496,
       "signal": 1,
-      "note": "+0.40%",
+      "note": "+2.50%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.98799896240234,
-      "chg_pct": 0.3067433192569395,
+      "price": 104.02799987792969,
+      "chg_pct": 0.3453281714165358,
       "signal": -1,
-      "note": "+0.31%(偏空)",
+      "note": "+0.35%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3656.699951171875,
-      "chg_pct": 3.4193082378575115,
+      "price": 3646.199951171875,
+      "chg_pct": 3.1223457440796176,
       "signal": -1,
-      "note": "+3.42%(避險↑)",
+      "note": "+3.12%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 83.87999725341797,
-      "chg_pct": 0.23900208832792902,
+      "price": 83.43000030517578,
+      "chg_pct": -0.29875716908253525,
       "signal": 0,
-      "note": "+0.24%",
+      "note": "-0.30%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
       "category": "債券",
-      "price": 4.8480000495910645,
-      "chg_pct": -1.1419200261210316,
+      "price": 4.911999702453613,
+      "chg_pct": 1.3201248392715526,
       "signal": 0,
-      "note": "4.85%(-1.14%)",
+      "note": "4.91%(+1.32%)",
       "desc": "殖利率高→股市壓力"
     },
     "比特幣": {
       "category": "加密",
-      "price": 59862.1796875,
-      "chg_pct": -1.0455976071255197,
+      "price": 59988.3203125,
+      "chg_pct": -0.8370824773808352,
       "signal": -1,
-      "note": "-1.05%",
+      "note": "-0.84%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump embraced Xi, then slapped new tariffs on China: What’s his game plan? - Al",
+      "title": "Trump proposes a new wave of tariffs on China, E.U. and other trade partners - N",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Says He Was ‘A Little Concerned’ By Stock Selloff, Insists Nvidia CEO Huan",
+      "title": "Trump proposes new tariffs on China, Europe and other trade partners - The Washi",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Demands Probe Into ‘Fake’ Economic Figures - Time Magazine",
+      "title": "Trump administration tees up tariff hikes on EU, China, others - Politico",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "First Thing: Trump claims revised economic data shows pre-midterms figures were ",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump says he's working on a 'fair' trade deal with Canada - CBC",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "川普動態",
-      "title": "A Guide to Trump’s Second-Term Sanctions - Council on Foreign Relations",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "關稅/貿易",
@@ -624,13 +624,19 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Taiwan shares end slightly higher on late buying of TSMC - Focus Taiwan",
+      "title": "Taiwan's economy expected to grow at its fastest rate in nearly 50 years due to ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Dow rallies 300 points as benchmark heads for best week since April 2025: Live u",
+      "title": "The S&P 500 is in a correction. Bear markets and recessions don't always follow ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "聯準會",
+      "title": "Sliding stock market confronts jobs data, rate view as next tests - Yahoo Financ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -645,12 +651,6 @@
       "title": "Hawkish Fed poised to raise rates despite stock market turmoil - Financial Times",
       "sentiment": "⚪中性",
       "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "Wild Market Swings Are Colliding With a Fed Bent on Taming Inflation - WSJ",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
     }
   ]
 }
