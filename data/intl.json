@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 04:28",
+  "updated": "2026-11-27 11:05",
   "data": {
     "S&P500": {
       "category": "美股",
@@ -43,35 +43,43 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 57440.36,
-      "chg_pct": -0.73,
-      "signal": -1,
-      "note": "-0.73%",
+      "price": 58172.04,
+      "chg_pct": 0.53,
+      "signal": 1,
+      "note": "+0.53%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4740.2,
-      "chg_pct": -0.67,
-      "signal": -1,
-      "note": "-0.67%",
+      "price": 4829.4,
+      "chg_pct": 1.2,
+      "signal": 1,
+      "note": "+1.20%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22226.88,
-      "chg_pct": -0.66,
-      "signal": -1,
-      "note": "-0.66%",
+      "price": 22394.56,
+      "chg_pct": 0.09,
+      "signal": 1,
+      "note": "+0.09%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3466.76,
-      "chg_pct": -0.25,
+      "price": 3480.57,
+      "chg_pct": 0.15,
       "signal": 0,
-      "note": "-0.25%",
+      "note": "+0.15%",
       "desc": "中國市場情緒"
+    },
+    "台股加權": {
+      "category": "台股",
+      "price": 39374.49,
+      "chg_pct": 0.24,
+      "signal": 0,
+      "note": "+0.24%",
+      "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
@@ -107,19 +115,11 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 60611.85,
-      "chg_pct": -0.46,
-      "signal": 0,
-      "note": "-0.46%",
+      "price": 61405.6,
+      "chg_pct": 0.85,
+      "signal": 1,
+      "note": "+0.85%",
       "desc": "風險偏好指標"
-    },
-    "台股加權": {
-      "category": "台股",
-      "price": 39262.39,
-      "chg_pct": -0.04,
-      "signal": 0,
-      "note": "-0.04%",
-      "desc": "台股現貨參考"
     }
   }
 }
