@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27 11:51",
+  "generated_at": "2026-11-27 14:48",
   "mode": "morning",
   "signal_date": "2026-11-27",
   "trade_date": "2026-11-30",
@@ -10,23 +10,23 @@
   "news_score": -2,
   "psy_score": -3,
   "inst_score": 1,
-  "foreign_fut_net": 0,
+  "foreign_fut_net": -79,
   "foreign_cash_b": 0,
   "veto_msg": "",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
-  "tw_last_close": 39379.078125,
-  "tw_chg_pct": 0.5804828420781671,
-  "tw_ma5": 38732.11171875,
-  "tw_ma10": 38944.78359375,
-  "tw_rsi": 44.11423847229723,
-  "tw_macd": -1881.2738531177165,
-  "tw_macds": -1856.3982010190466,
+  "tw_last_close": 39308.078125,
+  "tw_chg_pct": 0.39913745204338547,
+  "tw_ma5": 38717.91171875,
+  "tw_ma10": 38937.68359375,
+  "tw_rsi": 43.90886164809012,
+  "tw_macd": -1886.9376707815318,
+  "tw_macds": -1857.5309645518098,
   "tw_prev_close_up": true,
   "tw_ma5_p2": 38062.95390625,
   "tw_ma10_p2": 39374.387890625,
   "tw_ma20_p2": 41156.56484375,
-  "tw_ma20": 40864.92734375,
+  "tw_ma20": 40861.37734375,
   "stats_real": {
     "total": 20,
     "wins": 12,
@@ -413,13 +413,13 @@
     }
   ],
   "gold": {
-    "price_usd": 3656.300048828125,
-    "chg_pct": 3.4079981428796424,
+    "price_usd": 3676.199951171875,
+    "chg_pct": 3.9708100120164582,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +3.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 85.68000030517578,
-    "oil_chg": 2.390057352660282
+    "warning": "黃金大漲 +4.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 86.08999633789062,
+    "oil_chg": 2.8800143689361106
   },
   "intl_data": {
     "S&P500": {
@@ -464,66 +464,66 @@
     },
     "日經225": {
       "category": "亞股",
-      "price": 58469.16015625,
-      "chg_pct": 1.6869811617493056,
+      "price": 58711.109375,
+      "chg_pct": 2.1077685577608642,
       "signal": 1,
-      "note": "+1.69%",
+      "note": "+2.11%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4872.39990234375,
-      "chg_pct": 3.42141281629856,
+      "price": 4907.10986328125,
+      "chg_pct": 4.158165396321398,
       "signal": 1,
-      "note": "+3.42%",
+      "note": "+4.16%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22378.0703125,
-      "chg_pct": 0.6802099407539242,
+      "price": 22682.80078125,
+      "chg_pct": 2.051209635573761,
       "signal": 1,
-      "note": "+0.68%",
+      "note": "+2.05%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3486.758056640625,
-      "chg_pct": 0.2840469229338399,
-      "signal": 0,
-      "note": "+0.28%",
+      "price": 3602.152587890625,
+      "chg_pct": 3.602955318222503,
+      "signal": 1,
+      "note": "+3.60%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
       "category": "台股",
-      "price": 39379.078125,
-      "chg_pct": 0.5804828420781567,
+      "price": 39308.078125,
+      "chg_pct": 0.3991374520433932,
       "signal": 1,
-      "note": "+0.58%",
+      "note": "+0.40%",
       "desc": "台股現貨參考"
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.68800354003906,
-      "chg_pct": 0.017367967022057465,
+      "price": 103.71199798583984,
+      "chg_pct": 0.040512990871367095,
       "signal": 0,
-      "note": "+0.02%(中性)",
+      "note": "+0.04%(中性)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3656.300048828125,
-      "chg_pct": 3.4079981428796424,
+      "price": 3676.199951171875,
+      "chg_pct": 3.9708100120164582,
       "signal": -1,
-      "note": "+3.41%(避險↑)",
+      "note": "+3.97%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 85.68000030517578,
-      "chg_pct": 2.390057352660282,
+      "price": 86.08999633789062,
+      "chg_pct": 2.8800143689361106,
       "signal": 1,
-      "note": "+2.39%",
+      "note": "+2.88%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -536,10 +536,10 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 61419.921875,
-      "chg_pct": 1.7253291249641989,
+      "price": 61616.62109375,
+      "chg_pct": 2.0511076696958153,
       "signal": 1,
-      "note": "+1.73%",
+      "note": "+2.05%",
       "desc": "風險偏好指標"
     }
   },
@@ -552,9 +552,9 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump's new tariffs aim to prise global trade from China's grip - Reuters",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Trump Is Bringing Tariffs Back, and China Will Likely Get Hit Hardest: WSJ - Yah",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     },
     {
       "label": "川普動態",
@@ -564,15 +564,15 @@
     },
     {
       "label": "川普動態",
-      "title": "Trump Is Bringing Tariffs Back, and China Will Likely Get Hit Hardest: WSJ - Yah",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
       "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
       "sentiment": "✅偏多",
       "sent_val": 1
+    },
+    {
+      "label": "川普動態",
+      "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "川普動態",
@@ -606,13 +606,13 @@
     },
     {
       "label": "台股/半導體",
-      "title": "World’s leading semiconductor manufacturer eyes Brazos County for 3,200+ acre fa",
+      "title": "TSMC (TSM) Is Building a Semiconductor Moat That Rivals May Struggle to Cross - ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC (TSM) Is Building a Semiconductor Moat That Rivals May Struggle to Cross - ",
+      "title": "World’s leading semiconductor manufacturer eyes Brazos County for 3,200+ acre fa",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
@@ -624,15 +624,15 @@
     },
     {
       "label": "台股/半導體",
-      "title": "Trump to visit Arizona manufacturer of semiconductor chips, including Nvidia's -",
+      "title": "TSMC unit seeks Texas property tax limit for proposed $22.6 billion chip making ",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Newly proposed tariffs raise chances of the Fed keeping interest rates higher fo",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "Stock futures rise as Wall Street gets set to wrap up a volatile holiday week: L",
+      "sentiment": "✅偏多",
+      "sent_val": 1
     },
     {
       "label": "聯準會",
@@ -642,15 +642,15 @@
     },
     {
       "label": "聯準會",
-      "title": "Why are investors freaking out even as the U.S. economy surges? - CBS News",
-      "sentiment": "✅偏多",
-      "sent_val": 1
+      "title": "The Fed is likely to raise rates in December. What it means for your holiday spe",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
+      "title": "A divided Fed leaves markets guessing on future rate hikes - Yahoo Finance",
+      "sentiment": "⚪中性",
+      "sent_val": 0
     }
   ]
 }
