@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-27 14:48",
+  "generated_at": "2026-11-27 23:35",
   "mode": "morning",
   "signal_date": "2026-11-27",
   "trade_date": "2026-11-30",
-  "direction": -1,
-  "total_score": -14,
+  "direction": 0,
+  "total_score": -5,
   "tw_score": -8,
-  "intl_score": 0,
+  "intl_score": 9,
   "news_score": -2,
   "psy_score": -3,
   "inst_score": 1,
   "foreign_fut_net": -79,
   "foreign_cash_b": 0,
-  "veto_msg": "",
+  "veto_msg": "台灣技術(-8) vs 國際(+9) 方向相反 → 觀望",
   "threshold": 6,
   "threshold_reason": "近5筆勝率60% → 正常門檻 ±6",
   "tw_last_close": 39308.078125,
@@ -413,85 +413,85 @@
     }
   ],
   "gold": {
-    "price_usd": 3676.199951171875,
-    "chg_pct": 3.9708100120164582,
+    "price_usd": 3656.699951171875,
+    "chg_pct": 3.4193082378575115,
     "signal": -2,
     "level": "danger",
-    "warning": "黃金大漲 +4.0%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
-    "oil_usd": 86.08999633789062,
-    "oil_chg": 2.8800143689361106
+    "warning": "黃金大漲 +3.4%，市場恐慌情緒強烈 → 明日偏空 ⚠️⚠️",
+    "oil_usd": 83.87999725341797,
+    "oil_chg": 0.23900208832792902
   },
   "intl_data": {
     "S&P500": {
       "category": "美股",
-      "price": 7182.77978515625,
-      "chg_pct": -0.2542678815435381,
-      "signal": 0,
-      "note": "-0.25%",
+      "price": 7250.89013671875,
+      "chg_pct": 0.9482450193343687,
+      "signal": 1,
+      "note": "+0.95%",
       "desc": "美股漲→台股漲"
     },
     "道瓊": {
       "category": "美股",
-      "price": 50182.94921875,
-      "chg_pct": 0.3283771920610628,
+      "price": 50591.21875,
+      "chg_pct": 0.8135622509357364,
       "signal": 1,
-      "note": "+0.33%",
+      "note": "+0.81%",
       "desc": "藍籌股風向球"
     },
     "NASDAQ": {
       "category": "美股",
-      "price": 23585.80078125,
-      "chg_pct": -0.6224873621289493,
-      "signal": -1,
-      "note": "-0.62%",
+      "price": 23888.7265625,
+      "chg_pct": 1.2843565671546622,
+      "signal": 1,
+      "note": "+1.28%",
       "desc": "科技股連動"
     },
     "費城半導體": {
       "category": "半導體",
-      "price": 8774.8603515625,
-      "chg_pct": -0.6525858866402491,
-      "signal": -1,
-      "note": "-0.65%",
+      "price": 8961.3681640625,
+      "chg_pct": 2.125478982315535,
+      "signal": 1,
+      "note": "+2.13%",
       "desc": "對台股影響最大"
     },
     "VIX恐慌": {
       "category": "情緒",
-      "price": 26.799999237060547,
-      "chg_pct": -5.266884518370551,
+      "price": 26.579999923706055,
+      "chg_pct": -0.8208929836470471,
       "signal": -1,
-      "note": "VIX=26.8(高恐慌⚠️)",
+      "note": "VIX=26.6(高恐慌⚠️)",
       "desc": "<20樂觀 >25恐慌"
     },
     "日經225": {
       "category": "亞股",
-      "price": 58711.109375,
-      "chg_pct": 2.1077685577608642,
+      "price": 57499.16015625,
+      "chg_pct": 0.8551573401119221,
       "signal": 1,
-      "note": "+2.11%",
+      "note": "+0.86%",
       "desc": "亞股風向球"
     },
     "韓KOSPI": {
       "category": "亞股",
-      "price": 4907.10986328125,
-      "chg_pct": 4.158165396321398,
-      "signal": 1,
-      "note": "+4.16%",
+      "price": NaN,
+      "chg_pct": NaN,
+      "signal": 0,
+      "note": "+nan%",
       "desc": "半導體競爭對手"
     },
     "恒生指數": {
       "category": "亞股",
-      "price": 22682.80078125,
-      "chg_pct": 2.051209635573761,
+      "price": 22694.76953125,
+      "chg_pct": 2.1050577219324538,
       "signal": 1,
-      "note": "+2.05%",
+      "note": "+2.11%",
       "desc": "港股/中概股連動"
     },
     "上證指數": {
       "category": "A股",
-      "price": 3602.152587890625,
-      "chg_pct": 3.602955318222503,
+      "price": 3606.48681640625,
+      "chg_pct": 3.7276138029165717,
       "signal": 1,
-      "note": "+3.60%",
+      "note": "+3.73%",
       "desc": "中國市場情緒"
     },
     "台股加權": {
@@ -504,26 +504,26 @@
     },
     "美元指數": {
       "category": "外匯",
-      "price": 103.71199798583984,
-      "chg_pct": 0.040512990871367095,
-      "signal": 0,
-      "note": "+0.04%(中性)",
+      "price": 103.98799896240234,
+      "chg_pct": 0.3067433192569395,
+      "signal": -1,
+      "note": "+0.31%(偏空)",
       "desc": "強美元→外資匯出"
     },
     "黃金": {
       "category": "商品",
-      "price": 3676.199951171875,
-      "chg_pct": 3.9708100120164582,
+      "price": 3656.699951171875,
+      "chg_pct": 3.4193082378575115,
       "signal": -1,
-      "note": "+3.97%(避險↑)",
+      "note": "+3.42%(避險↑)",
       "desc": "避險情緒指標"
     },
     "原油": {
       "category": "商品",
-      "price": 86.08999633789062,
-      "chg_pct": 2.8800143689361106,
-      "signal": 1,
-      "note": "+2.88%",
+      "price": 83.87999725341797,
+      "chg_pct": 0.23900208832792902,
+      "signal": 0,
+      "note": "+0.24%",
       "desc": "油漲→通膨預期"
     },
     "美債10Y": {
@@ -536,47 +536,47 @@
     },
     "比特幣": {
       "category": "加密",
-      "price": 61616.62109375,
-      "chg_pct": 2.0511076696958153,
-      "signal": 1,
-      "note": "+2.05%",
+      "price": 59862.1796875,
+      "chg_pct": -1.0455976071255197,
+      "signal": -1,
+      "note": "-1.05%",
       "desc": "風險偏好指標"
     }
   },
   "news": [
     {
       "label": "川普動態",
-      "title": "Trump proposes new tariffs on China, Europe and other trade partners - The Washi",
+      "title": "Trump embraced Xi, then slapped new tariffs on China: What’s his game plan? - Al",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump Is Bringing Tariffs Back, and China Will Likely Get Hit Hardest: WSJ - Yah",
+      "title": "Trump Says He Was ‘A Little Concerned’ By Stock Selloff, Insists Nvidia CEO Huan",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
     {
       "label": "川普動態",
-      "title": "Trump administration tees up tariff hikes on EU, China, others - Politico",
-      "sentiment": "⚠️偏空",
-      "sent_val": -1
-    },
-    {
-      "label": "川普動態",
-      "title": "Trump says aides have ‘concept’ of Canada trade deal - The Hill",
-      "sentiment": "✅偏多",
-      "sent_val": 1
-    },
-    {
-      "label": "川普動態",
-      "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto",
+      "title": "Trump Demands Probe Into ‘Fake’ Economic Figures - Time Magazine",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "川普動態",
-      "title": "Trump’s Tariffs Are On the Ballot in Michigan - The New York Times",
+      "title": "First Thing: Trump claims revised economic data shows pre-midterms figures were ",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "川普動態",
+      "title": "A Guide to Trump’s Second-Term Sanctions - Council on Foreign Relations",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "川普動態",
+      "title": "What are tariffs, how do they work and why is Trump using them? - BBC",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -588,7 +588,7 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "New trade war could be brewing following tariff proposal - KABB",
+      "title": "New trade war could be brewing after Trump announces proposed tariff hikes - Bal",
       "sentiment": "⚠️偏空",
       "sent_val": -1
     },
@@ -600,37 +600,43 @@
     },
     {
       "label": "關稅/貿易",
-      "title": "Trump strikes again even as America feels the pain - SMH.com.au",
+      "title": "New trade war could be brewing following tariff proposal - KABB",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
+    },
+    {
+      "label": "台股/半導體",
+      "title": "What Is Going on With Taiwan Semiconductor Stock on Friday? - Benzinga",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "台股/半導體",
+      "title": "Foreign Funds on Pace for Record Taiwan Stock Exodus in AI Rout - Bloomberg.com",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
     {
       "label": "台股/半導體",
-      "title": "TSMC (TSM) Is Building a Semiconductor Moat That Rivals May Struggle to Cross - ",
+      "title": "Not Nvidia. Not Micron. If I Could Buy and Hold Only 1 Artificial Intelligence (",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "台股/半導體",
-      "title": "World’s leading semiconductor manufacturer eyes Brazos County for 3,200+ acre fa",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "Taiwan’s AI boom thrusts nuclear power back onto the ballot - South China Mornin",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "台股/半導體",
-      "title": "TSMC unit seeks Texas property tax limit for proposed $22.6 billion chip making ",
+      "title": "Taiwan shares end slightly higher on late buying of TSMC - Focus Taiwan",
       "sentiment": "⚪中性",
       "sent_val": 0
     },
     {
       "label": "聯準會",
-      "title": "Stock futures rise as Wall Street gets set to wrap up a volatile holiday week: L",
+      "title": "Dow rallies 300 points as benchmark heads for best week since April 2025: Live u",
+      "sentiment": "⚪中性",
+      "sent_val": 0
+    },
+    {
+      "label": "聯準會",
+      "title": "Why are investors freaking out even as the U.S. economy surges? - CBS News",
       "sentiment": "✅偏多",
       "sent_val": 1
     },
@@ -642,15 +648,9 @@
     },
     {
       "label": "聯準會",
-      "title": "The Fed is likely to raise rates in December. What it means for your holiday spe",
-      "sentiment": "⚪中性",
-      "sent_val": 0
-    },
-    {
-      "label": "聯準會",
-      "title": "A divided Fed leaves markets guessing on future rate hikes - Yahoo Finance",
-      "sentiment": "⚪中性",
-      "sent_val": 0
+      "title": "Wild Market Swings Are Colliding With a Fed Bent on Taming Inflation - WSJ",
+      "sentiment": "⚠️偏空",
+      "sent_val": -1
     }
   ]
 }
